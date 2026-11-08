@@ -13,7 +13,7 @@ namespace JXServer.Application.Characters;
 
 /// <summary>
 /// Application service orchestrating character roster queries (`0x37`), character creation (`0x45`),
-/// and character deletion (`0x3A`) (`FR-004`, `FR-005`, `FR-006`).
+/// character deletion (`0x3A`), and unit-of-work persistence (`FR-004`, `FR-005`, `FR-006`, `Constitution VI`).
 /// </summary>
 public sealed class CharacterAppService : ICharacterAppService
 {
@@ -95,12 +95,23 @@ public sealed class CharacterAppService : ICharacterAppService
                     input.StarterVillageMapId,
                     cancellationToken);
 
+                created = await _characterRepository.InsertAsync(created, autoSave: true, cancellationToken: cancellationToken);
+
                 TimeSpan ticketTtl = TimeSpan.FromSeconds(Math.Max(5, cfg.HandoffTicketTtlSeconds));
-                (bool permitted, Guid ticketGuid, ushort resolvedMapId) = await _sessionLeaseManager.TryIssueHandoffTicketAsync(
+                (bool permitted, Guid ticketGuid, ushort resolvedMapId, bool wasRedirected) = _sessionLeaseManager.TryIssueHandoffTicket(
                     lease,
                     created,
-                    ticketTtl,
-                    cancellationToken);
+                    ticketTtl);
+
+                if (wasRedirected)
+                {
+                    await _characterRepository.UpdateAsync(created, autoSave: true, cancellationToken: cancellationToken);
+                }
+
+                if (permitted)
+                {
+                    await _sessionLeaseRepository.UpsertAsync(lease, cancellationToken);
+                }
 
                 var handoff = new WorldHandoffTicketDto(
                     Permitted: permitted,

@@ -3,6 +3,7 @@ using JXServer.Adapter.LegacyJX1.GameServer;
 using JXServer.Domain.SessionLeases;
 using JXServer.ZoneEngine.PlayerSessions;
 using JXServer.ZoneEngine.WorldZones;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace JXServer.Adapter.LegacyJX1.Bishop;
 
@@ -14,11 +15,12 @@ public sealed class LegacySessionEvictionNotifier : ISessionEvictionNotifier
 {
     private readonly ConcurrentDictionary<string, BishopClientSession> _bishopSessions = new(StringComparer.Ordinal);
     private readonly ConcurrentDictionary<string, GameServerClientSession> _gameServerSessions = new(StringComparer.Ordinal);
-    private readonly IZoneClusterRouter _zoneClusterRouter;
+    private readonly IServiceProvider _serviceProvider;
 
-    public LegacySessionEvictionNotifier(IZoneClusterRouter zoneClusterRouter)
+    public LegacySessionEvictionNotifier(IServiceProvider serviceProvider)
     {
-        _zoneClusterRouter = zoneClusterRouter;
+        ArgumentNullException.ThrowIfNull(serviceProvider);
+        _serviceProvider = serviceProvider;
     }
 
     public void RegisterBishopSession(BishopClientSession session) =>
@@ -50,7 +52,8 @@ public sealed class LegacySessionEvictionNotifier : ISessionEvictionNotifier
 
         if (activeCharacterId.HasValue && activeCharacterId.Value != Guid.Empty)
         {
-            await _zoneClusterRouter.EvictAccountFromAllZonesAsync(
+            IZoneClusterRouter zoneClusterRouter = _serviceProvider.GetRequiredService<IZoneClusterRouter>();
+            await zoneClusterRouter.EvictAccountFromAllZonesAsync(
                 accountId,
                 evictedLeaseEpoch,
                 activeCharacterId,

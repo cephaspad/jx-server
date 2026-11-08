@@ -1,6 +1,5 @@
 using JXServer.Application.Configuration;
 using JXServer.Application.Logging;
-using JXServer.Application.SessionLeases;
 using JXServer.Contracts.Characters;
 using JXServer.Contracts.SessionLeases;
 using JXServer.Domain.Characters;
@@ -13,7 +12,7 @@ namespace JXServer.Application.SessionLeases;
 
 /// <summary>
 /// Application service orchestrating character selection (`0x64`), single-use handoff ticket issuance (`0x34`) and redemption (`0x42`),
-/// heartbeat updates, and session lease release (`FR-007`, `FR-008`).
+/// heartbeat updates, and session lease release (`FR-007`, `FR-008`, `Constitution VI`).
 /// </summary>
 public sealed class SessionLeaseAppService : ISessionLeaseAppService
 {
@@ -70,16 +69,22 @@ public sealed class SessionLeaseAppService : ISessionLeaseAppService
             }
 
             TimeSpan ticketTtl = TimeSpan.FromSeconds(Math.Max(5, cfg.HandoffTicketTtlSeconds));
-            (bool permitted, Guid ticketGuid, ushort resolvedMapId) = await _sessionLeaseManager.TryIssueHandoffTicketAsync(
+            (bool permitted, Guid ticketGuid, ushort resolvedMapId, bool wasRedirected) = _sessionLeaseManager.TryIssueHandoffTicket(
                 lease,
                 character,
-                ticketTtl,
-                cancellationToken);
+                ticketTtl);
 
             if (!permitted)
             {
                 return CreateDeniedTicket(input.AccountId, input.LeaseEpoch, character.RoleName, cfg);
             }
+
+            if (wasRedirected)
+            {
+                await _characterRepository.UpdateAsync(character, autoSave: true, cancellationToken: cancellationToken);
+            }
+
+            await _sessionLeaseRepository.UpsertAsync(lease, cancellationToken);
 
             ApplicationLogMessages.LogHandoffTicketIssued(
                 _logger,

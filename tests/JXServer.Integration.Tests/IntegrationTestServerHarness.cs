@@ -1,19 +1,13 @@
-using System.Buffers.Binary;
-using System.Net.Sockets;
-using System.Runtime.InteropServices;
 using JXServer.Adapter.LegacyJX1;
 using JXServer.Adapter.LegacyJX1.Bishop;
-using JXServer.Adapter.LegacyJX1.Ciphers;
 using JXServer.Adapter.LegacyJX1.GameServer;
-using JXServer.Adapter.LegacyJX1.Packets;
 using JXServer.Application;
 using JXServer.Application.Configuration;
 using JXServer.GameAssets;
+using JXServer.GameAssets.Configuration;
 using JXServer.Infrastructure;
-using JXServer.Infrastructure.EntityFrameworkCore;
 using JXServer.ZoneEngine;
 using Microsoft.Data.Sqlite;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -44,7 +38,8 @@ public sealed class IntegrationTestServerHarness : IAsyncDisposable
 
     public static async Task<IntegrationTestServerHarness> StartAsync(
         bool autoProvisionAccounts = true,
-        bool fallbackUnloadedStarterVillage = true)
+        bool fallbackUnloadedStarterVillage = true,
+        ushort[]? excludedWorldSetMapIds = null)
     {
         string dbName = $"file:jxserver_test_{Guid.NewGuid():N}?mode=memory&cache=shared";
         var keepAliveConn = new SqliteConnection($"Data Source={dbName}");
@@ -75,7 +70,13 @@ public sealed class IntegrationTestServerHarness : IAsyncDisposable
 
         builder.Services
             .AddJXServerInfrastructure(builder.Configuration)
-            .AddJXServerGameAssets(builder.Configuration)
+            .AddJXServerGameAssets(builder.Configuration, opts =>
+            {
+                if (excludedWorldSetMapIds is { Length: > 0 })
+                {
+                    opts.ExcludedWorldSetMapIds = excludedWorldSetMapIds;
+                }
+            })
             .AddJXServerApplication(builder.Configuration)
             .AddJXServerZoneEngine(builder.Configuration)
             .AddJXServerLegacyJX1Adapter(builder.Configuration);

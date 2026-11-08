@@ -5,6 +5,7 @@ namespace JXServer.Domain.Accounts;
 
 /// <summary>
 /// Domain service managing account credential verification and optional first-login auto-provisioning (`FR-003`).
+/// Does not perform persistence directly; the calling <c>AccountAppService</c> persists newly provisioned or updated aggregates (`Constitution VI`).
 /// </summary>
 public sealed class AccountManager
 {
@@ -18,9 +19,9 @@ public sealed class AccountManager
     }
 
     /// <summary>
-    /// Verifies credentials (and optionally auto-provisions a missing account per `FR-003`), returning the status code and account.
+    /// Verifies credentials (and optionally constructs a missing account per `FR-003`), returning the status code, account, and whether it is newly provisioned.
     /// </summary>
-    public async Task<(LoginResultCode ResultCode, Account? Account)> VerifyOrProvisionAsync(
+    public async Task<(LoginResultCode ResultCode, Account? Account, bool IsNewlyProvisioned)> VerifyOrProvisionAsync(
         string userName,
         string passwordOrMd5Hex,
         uint protocolVersion,
@@ -29,7 +30,7 @@ public sealed class AccountManager
     {
         if (protocolVersion != AccountConsts.RequiredProtocolVersion)
         {
-            return (LoginResultCode.InvalidProtocolVersion, null);
+            return (LoginResultCode.InvalidProtocolVersion, null, false);
         }
 
         string trimmedUserName = (userName ?? string.Empty).TrimEnd('\0').Trim();
@@ -37,7 +38,7 @@ public sealed class AccountManager
             trimmedUserName.Length > AccountConsts.MaxUserNameByteLength ||
             string.IsNullOrWhiteSpace(passwordOrMd5Hex))
         {
-            return (LoginResultCode.AccountOrPasswordError, null);
+            return (LoginResultCode.AccountOrPasswordError, null, false);
         }
 
         string normalizedUserName = Account.NormalizeUserName(trimmedUserName);
@@ -47,13 +48,13 @@ public sealed class AccountManager
         {
             if (!autoProvisionAccounts)
             {
-                return (LoginResultCode.AccountOrPasswordError, null);
+                return (LoginResultCode.AccountOrPasswordError, null, false);
             }
 
             string normalizedMd5 = KsgPasswordHasher.NormalizeClientPasswordOrHash(passwordOrMd5Hex);
             if (!KsgPasswordHasher.IsHexDigest32(normalizedMd5))
             {
-                return (LoginResultCode.AccountOrPasswordError, null);
+                return (LoginResultCode.AccountOrPasswordError, null, false);
             }
 
             account = new Account(
@@ -65,21 +66,19 @@ public sealed class AccountManager
                 remainingTimeSeconds: 86_400u,
                 createdAtUtc: _timeProvider.GetUtcNow());
 
-            account = await _accountRepository.InsertAsync(account, autoSave: true, cancellationToken: cancellationToken);
+            return (LoginResultCode.Success, account, true);
         }
-        else
+
+        if (!account.VerifyPassword(passwordOrMd5Hex))
         {
-            if (!account.VerifyPassword(passwordOrMd5Hex))
-            {
-                return (LoginResultCode.AccountOrPasswordError, null);
-            }
-
-            if (account.Status != AccountStatus.Active)
-            {
-                return (LoginResultCode.AccountFrozen, null);
-            }
+            return (LoginResultCode.AccountOrPasswordError, null, false);
         }
 
-        return (LoginResultCode.Success, account);
+        if (account.Status != AccountStatus.Active)
+        {
+            return (LoginResultCode.AccountFrozen, null, false);
+        }
+
+        return (LoginResultCode.Success, account, false);
     }
 }

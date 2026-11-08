@@ -156,8 +156,8 @@ description: "Actionable, dependency-ordered task list for Milestone 1: Foundati
 
 **Purpose**: Final verification across all 5 Constitution Gates, documentation alignment, and end-to-end validation per `quickstart.md`.
 
-- [ ] T047 [P] Verify all source and test files strictly obey the Constitution's `One-Type-Per-File`, `sealed` concrete class, pluralized feature folder, ABP DDD, and 18-Hz Game Server naming conventions across `src/` and `tests/`
-- [ ] T048 Execute full build, formatting, and test suite verification (`dotnet build JXServer.slnx -warnaserror` and `dotnet test JXServer.slnx`) with `0` warnings and `100%` passing tests per `specs/001-gateway-world-entry/quickstart.md`
+- [X] T047 [P] Verify all source and test files strictly obey the Constitution's `One-Type-Per-File`, `sealed` concrete class, pluralized feature folder, ABP DDD, and 18-Hz Game Server naming conventions across `src/` and `tests/`
+- [X] T048 Execute full build, formatting, and test suite verification (`dotnet build JXServer.slnx -warnaserror` and `dotnet test JXServer.slnx`) with `0` warnings and `100%` passing tests per `specs/001-gateway-world-entry/quickstart.md`
 
 ---
 
@@ -219,3 +219,12 @@ Task T034: GameServer wire packet structs (0x42, 0x49, 0x44, 0x45, 0x46, 0x4C, 0
 2. Complete **Phase 3 (`US4`)** to load Map `53` (`Ba Lăng Huyện`) and starter templates from `d:\Projects\jx-linux-bin`.
 3. Complete **Phase 4 (`US1`)** to achieve a working end-to-end login and world entry into Ba Lăng Huyện (`Map 53`).
 4. Complete **Phase 5 (`US2`)** and **Phase 6 (`US3`)** to enable full character creation/deletion and zero-stuck-account lease fencing for the 100-bot `JX-Swarm` test gate.
+
+
+---
+
+## Phase 8: Convergence
+
+- [X] T049 [CRITICAL] Refactor `AccountManager`, `CharacterManager`, and `SessionLeaseManager` in `src/JXServer.Domain/` so domain services do not call repository save operations (`autoSave: true`) or `ISessionEvictionNotifier` directly, moving persistence and eviction orchestration to `AccountAppService`, `CharacterAppService`, and `SessionLeaseAppService` in `src/JXServer.Application/` per Constitution VI (`contradicts`)
+- [X] T050 Add integration tests for `AutoProvisionAccounts = false` rejection (`0x00050003`), invalid password on subsequent login (`0x00050003`), incompatible protocol version (`0x0005000A`), and frozen account (`0x0005000B`) in `tests/JXServer.Integration.Tests/GatewayWorldEntryIntegrationTests.cs` per FR-002, FR-003, US1/AC4 (`partial`)
+- [X] T051 Add integration tests for all 5 elemental series (`Kim`, `Mộc`, `Thủy`, `Hỏa`, `Thổ`) initial stat verification, cross-account duplicate character name rejection, and unloaded starter village fallback (`FallbackUnloadedStarterVillage = true` redirecting to Map `53` vs `false` rejecting with `bSucceeded = 0` / `bPermit = 0`) in `tests/JXServer.Integration.Tests/CharacterLifecycleIntegrationTests.cs` per FR-005, FR-007, US2/AC1-AC2, T043 (`partial`)

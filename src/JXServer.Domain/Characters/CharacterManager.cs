@@ -1,5 +1,4 @@
 using JXServer.Domain.Accounts;
-using JXServer.Domain.Characters;
 using JXServer.GameAssets.PlayerTemplates;
 using JXServer.GameAssets.WorldMaps;
 using JXServer.Primitives.Characters;
@@ -9,8 +8,9 @@ using JXServer.Primitives.ErrorCodes;
 namespace JXServer.Domain.Characters;
 
 /// <summary>
-/// Domain service enforcing character creation rules (`< 3` per account, `6..30` TCVN3 bytes, `goddess_rolename.flt`,
+/// Domain service enforcing character creation rules (`&lt; 3` per account, `6..30` TCVN3 bytes, `goddess_rolename.flt`,
 /// global uniqueness, and starter village resolution with fallback to Map `53` per `FR-005`).
+/// Does not call repository save operations directly (`Constitution VI`).
 /// </summary>
 public sealed class CharacterManager
 {
@@ -32,7 +32,7 @@ public sealed class CharacterManager
     }
 
     /// <summary>
-    /// Validates and creates a new <see cref="Character"/> initialized from <see cref="IPlayerTemplateCatalog"/> (`FR-005`).
+    /// Validates business invariants and constructs a new <see cref="Character"/> initialized from <see cref="IPlayerTemplateCatalog"/> (`FR-005`).
     /// </summary>
     public async Task<Character> CreateAsync(
         Account account,
@@ -115,7 +115,7 @@ public sealed class CharacterManager
         IEnumerable<CharacterSkillValue> starterSkills = baseTemplate.StarterSkills
             .Select(s => new CharacterSkillValue(s.SkillId, s.Level, 0, 0));
 
-        var character = new Character(
+        return new Character(
             Guid.NewGuid(),
             account.Id,
             freeSlotIndex,
@@ -137,8 +137,6 @@ public sealed class CharacterManager
             baseTemplate.InitialStaminaMax,
             starterSkills,
             _timeProvider.GetUtcNow());
-
-        return await _characterRepository.InsertAsync(character, autoSave: true, cancellationToken: cancellationToken);
     }
 
     private static byte FindFirstFreeSlotIndex(IReadOnlyList<Character> existing)

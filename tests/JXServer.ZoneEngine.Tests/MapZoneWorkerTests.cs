@@ -1,5 +1,4 @@
 using JXServer.Contracts.Characters;
-using JXServer.Contracts.SessionLeases;
 using JXServer.GameAssets.WorldMaps;
 using JXServer.Primitives.Characters;
 using JXServer.ZoneEngine.Configuration;
@@ -107,53 +106,5 @@ public sealed class MapZoneWorkerTests
         Assert.Equal(0, worker.ActivePlayerCount);
         Assert.Equal(PlayerDetachReason.HeartbeatTimeout, sink.LastDisconnectReason);
         Assert.Equal(1, leaseSpy.ReleaseCount);
-    }
-
-    private sealed class RecordingOutboundSink : IPlayerOutboundSink
-    {
-        public int InitialSyncBurstCount { get; private set; }
-        public int ActiveConfirmationCount { get; private set; }
-        public List<uint> SentPings { get; } = [];
-        public List<uint> SentPingReplies { get; } = [];
-        public PlayerDetachReason? LastDisconnectReason { get; private set; }
-
-        public void SendInitialWorldSyncBurst(PlayerZoneState playerState, string mapNameUnicode, uint currentFrameTick, IReadOnlyList<CharacterSkillDto> skills) =>
-            InitialSyncBurstCount++;
-
-        public void SendActiveWorldConfirmation(PlayerZoneState playerState) =>
-            ActiveConfirmationCount++;
-
-        public void SendServerPing(uint serverTimestamp) =>
-            SentPings.Add(serverTimestamp);
-
-        public void SendServerPingReply(uint echoedClientTimestamp) =>
-            SentPingReplies.Add(echoedClientTimestamp);
-
-        public void Disconnect(PlayerDetachReason reason) =>
-            LastDisconnectReason = reason;
-    }
-
-    private sealed class SpySessionLeaseAppService : ISessionLeaseAppService
-    {
-        public int HeartbeatCount { get; private set; }
-        public int ReleaseCount { get; private set; }
-
-        public Task<WorldHandoffTicketDto> SelectCharacterForWorldEntryAsync(SelectCharacterInput input, CancellationToken cancellationToken = default) =>
-            throw new NotSupportedException();
-
-        public Task<RedeemHandoffTicketResultDto> RedeemWorldHandoffTicketAsync(RedeemHandoffTicketInput input, CancellationToken cancellationToken = default) =>
-            throw new NotSupportedException();
-
-        public Task<bool> RecordHeartbeatAsync(Guid accountId, long leaseEpoch, CancellationToken cancellationToken = default)
-        {
-            HeartbeatCount++;
-            return Task.FromResult(true);
-        }
-
-        public Task CompleteLogoutOrEvictAsync(ReleaseSessionLeaseInput input, CancellationToken cancellationToken = default)
-        {
-            ReleaseCount++;
-            return Task.CompletedTask;
-        }
     }
 }

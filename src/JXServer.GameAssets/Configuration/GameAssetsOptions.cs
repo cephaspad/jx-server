@@ -36,4 +36,9 @@ public sealed class GameAssetsOptions
     /// If empty, starter maps (<c>53</c>) are eagerly preloaded and remaining maps in <c>worldset.ini</c> load on demand.
     /// </summary>
     public ushort[] EagerObstacleLoadMapIds { get; set; } = [53];
+
+    /// <summary>
+    /// Gets or sets an optional list of map IDs to exclude from the active <c>worldset.ini</c> map set.
+    /// </summary>
+    public ushort[] ExcludedWorldSetMapIds { get; set; } = [];
 }

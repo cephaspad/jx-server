@@ -51,6 +51,11 @@ public sealed class MapCatalog : IMapCatalog
         byte[] worldSetBytes = File.ReadAllBytes(worldSetPath);
         Dictionary<string, Dictionary<string, string>> worldSetSections = IniFileParser.ParseSections(worldSetBytes);
         HashSet<ushort> loadedWorldMapIds = ParseWorldSetMapIds(worldSetSections);
+        if (_options.ExcludedWorldSetMapIds is { Length: > 0 })
+        {
+            loadedWorldMapIds.ExceptWith(_options.ExcludedWorldSetMapIds);
+        }
+
         if (loadedWorldMapIds.Count == 0)
         {
             throw new InvalidDataException($"No active World entries were found in '{worldSetPath}' (FR-012).");

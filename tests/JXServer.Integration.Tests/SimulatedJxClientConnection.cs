@@ -30,12 +30,16 @@ public sealed class SimulatedJxClientConnection : IAsyncDisposable
         int port,
         CancellationToken cancellationToken = default)
     {
+        using var timeoutCts = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
+        timeoutCts.CancelAfter(TimeSpan.FromSeconds(5));
+        CancellationToken ct = timeoutCts.Token;
+
         var client = new TcpClient { NoDelay = true };
-        await client.ConnectAsync("127.0.0.1", port, cancellationToken);
+        await client.ConnectAsync("127.0.0.1", port, ct);
         NetworkStream stream = client.GetStream();
 
         byte[] handshakeWire = new byte[44];
-        await ReadExactAsync(stream, handshakeWire, cancellationToken);
+        await ReadExactAsync(stream, handshakeWire, ct);
 
         ushort len = BinaryPrimitives.ReadUInt16LittleEndian(handshakeWire.AsSpan(0, 2));
         if (len != 44)
@@ -68,8 +72,12 @@ public sealed class SimulatedJxClientConnection : IAsyncDisposable
 
     public async Task<byte[]> ReadNextDecryptedPayloadAsync(CancellationToken cancellationToken = default)
     {
+        using var timeoutCts = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
+        timeoutCts.CancelAfter(TimeSpan.FromSeconds(5));
+        CancellationToken ct = timeoutCts.Token;
+
         byte[] header = new byte[2];
-        await ReadExactAsync(_stream, header, cancellationToken);
+        await ReadExactAsync(_stream, header, ct);
         ushort frameLen = BinaryPrimitives.ReadUInt16LittleEndian(header);
         if (frameLen < 3)
         {
@@ -77,9 +85,30 @@ public sealed class SimulatedJxClientConnection : IAsyncDisposable
         }
 
         byte[] payload = new byte[frameLen - 2];
-        await ReadExactAsync(_stream, payload, cancellationToken);
+        await ReadExactAsync(_stream, payload, ct);
         KsgStreamCipher.EncodeDecodeByValue(payload, ServerKey);
         return payload;
+    }
+
+    public async Task WaitForRemoteDisconnectAsync(CancellationToken cancellationToken = default)
+    {
+        using var timeoutCts = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
+        timeoutCts.CancelAfter(TimeSpan.FromSeconds(5));
+        CancellationToken ct = timeoutCts.Token;
+
+        byte[] buf = new byte[16];
+        try
+        {
+            while (await _stream.ReadAsync(buf, ct) > 0)
+            {
+            }
+        }
+        catch (IOException)
+        {
+        }
+        catch (SocketException)
+        {
+        }
     }
 
     public ValueTask DisposeAsync()

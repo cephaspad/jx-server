@@ -52,8 +52,18 @@ public sealed class EfCoreAccountRepository : IAccountRepository
     {
         ArgumentNullException.ThrowIfNull(account);
         await using JXServerDbContext dbContext = await _dbContextFactory.CreateDbContextAsync(cancellationToken);
-        dbContext.Accounts.Update(account);
+        Account? existing = await dbContext.Accounts
+            .FirstOrDefaultAsync(x => x.Id == account.Id, cancellationToken);
+
+        if (existing is null)
+        {
+            dbContext.Accounts.Update(account);
+            await dbContext.SaveChangesAsync(cancellationToken);
+            return account;
+        }
+
+        dbContext.Entry(existing).CurrentValues.SetValues(account);
         await dbContext.SaveChangesAsync(cancellationToken);
-        return account;
+        return existing;
     }
 }

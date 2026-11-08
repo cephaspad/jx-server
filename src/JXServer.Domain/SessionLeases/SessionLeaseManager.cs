@@ -3,46 +3,46 @@ using JXServer.Domain.Characters;
 using JXServer.GameAssets.PlayerTemplates;
 using JXServer.GameAssets.WorldMaps;
 using JXServer.Primitives.Accounts;
-using JXServer.Primitives.SessionLeases;
 
 namespace JXServer.Domain.SessionLeases;
 
 /// <summary>
-/// Domain service coordinating <see cref="SessionLease"/> epoch fencing, active session takeover (`FR-008`),
+/// Domain service coordinating <see cref="SessionLease"/> epoch fencing, active session takeover rules (`FR-008`),
 /// and world handoff ticket resolution with unloaded-map fallback (`FR-007`).
+/// Purely enforces cross-aggregate domain rules without calling database save operations or external notifications directly (`Constitution VI`).
 /// </summary>
 public sealed class SessionLeaseManager
 {
     private readonly ISessionLeaseRepository _sessionLeaseRepository;
-    private readonly IAccountRepository _accountRepository;
-    private readonly ICharacterRepository _characterRepository;
     private readonly IMapCatalog _mapCatalog;
     private readonly IPlayerTemplateCatalog _playerTemplateCatalog;
-    private readonly ISessionEvictionNotifier _evictionNotifier;
     private readonly TimeProvider _timeProvider;
 
     public SessionLeaseManager(
         ISessionLeaseRepository sessionLeaseRepository,
-        IAccountRepository accountRepository,
-        ICharacterRepository characterRepository,
         IMapCatalog mapCatalog,
         IPlayerTemplateCatalog playerTemplateCatalog,
-        ISessionEvictionNotifier evictionNotifier,
         TimeProvider timeProvider)
     {
         _sessionLeaseRepository = sessionLeaseRepository;
-        _accountRepository = accountRepository;
-        _characterRepository = characterRepository;
         _mapCatalog = mapCatalog;
         _playerTemplateCatalog = playerTemplateCatalog;
-        _evictionNotifier = evictionNotifier;
         _timeProvider = timeProvider;
     }
 
     /// <summary>
-    /// Acquires or supersedes a gateway session lease for <paramref name="account"/> according to <paramref name="kickOnline"/> (`FR-008`).
+    /// Evaluates whether <paramref name="account"/> can acquire or supersede a gateway session lease according to <paramref name="kickOnline"/> (`FR-008`),
+    /// advancing the <paramref name="account"/> epoch and transitioning the <see cref="SessionLease"/> in memory.
     /// </summary>
-    public async Task<(LoginResultCode ResultCode, SessionLease? Lease)> TryAcquireGatewayLeaseAsync(
+    public async Task<(
+        LoginResultCode ResultCode,
+        SessionLease? Lease,
+        bool HasEvictedActiveLease,
+        long EvictedEpoch,
+        string? OldBishopConnectionId,
+        string? OldGameServerConnectionId,
+        Guid? OldCharacterId,
+        int? OldMapId)> TryAcquireGatewayLeaseAsync(
         Account account,
         bool kickOnline,
         string? bishopConnectionId,
@@ -57,7 +57,7 @@ public sealed class SessionLeaseManager
         bool hasActiveLease = existingLease is not null && existingLease.IsActive(nowUtc, heartbeatTimeout);
         if (hasActiveLease && !kickOnline)
         {
-            return (LoginResultCode.AccountAlreadyOnline, null);
+            return (LoginResultCode.AccountAlreadyOnline, null, false, 0, null, null, null, null);
         }
 
         long evictedEpoch = existingLease?.LeaseEpoch ?? 0;
@@ -67,12 +67,10 @@ public sealed class SessionLeaseManager
         int? oldMapId = existingLease?.AssignedMapId;
 
         long newEpoch = account.AdvanceLeaseEpoch(nowUtc);
-        if (existingLease is not null && newEpoch <= existingLease.LeaseEpoch)
+        while (existingLease is not null && newEpoch <= existingLease.LeaseEpoch)
         {
-            newEpoch = existingLease.LeaseEpoch + 1;
+            newEpoch = account.AdvanceLeaseEpoch(nowUtc);
         }
-
-        await _accountRepository.UpdateAsync(account, autoSave: true, cancellationToken: cancellationToken);
 
         if (existingLease is null)
         {
@@ -83,39 +81,32 @@ public sealed class SessionLeaseManager
             existingLease.BeginGatewaySession(newEpoch, nowUtc, bishopConnectionId);
         }
 
-        await _sessionLeaseRepository.UpsertAsync(existingLease, cancellationToken);
-
-        if (hasActiveLease)
-        {
-            await _evictionNotifier.EvictSessionAsync(
-                account.Id,
-                evictedEpoch,
-                oldBishopConnId,
-                oldGsConnId,
-                oldCharacterId,
-                oldMapId,
-                cancellationToken);
-        }
-
-        return (LoginResultCode.Success, existingLease);
+        return (
+            LoginResultCode.Success,
+            existingLease,
+            hasActiveLease,
+            evictedEpoch,
+            oldBishopConnId,
+            oldGsConnId,
+            oldCharacterId,
+            oldMapId);
     }
 
     /// <summary>
     /// Validates that <paramref name="character"/>'s map is loaded (or redirects to the fallback starter village per `FR-007`)
-    /// and issues a single-use 16-byte handoff ticket on <paramref name="lease"/>.
+    /// and issues a single-use 16-byte handoff ticket on <paramref name="lease"/> in memory.
     /// </summary>
-    public async Task<(bool Permitted, Guid TicketGuid, ushort ResolvedMapId)> TryIssueHandoffTicketAsync(
+    public (bool Permitted, Guid TicketGuid, ushort ResolvedMapId, bool WasRedirected) TryIssueHandoffTicket(
         SessionLease lease,
         Character character,
-        TimeSpan ticketTtl,
-        CancellationToken cancellationToken = default)
+        TimeSpan ticketTtl)
     {
         ArgumentNullException.ThrowIfNull(lease);
         ArgumentNullException.ThrowIfNull(character);
 
         if (!_mapCatalog.TryResolveActiveOrFallbackMapId(character.MapId, out ushort resolvedMapId, out bool wasRedirected))
         {
-            return (false, Guid.Empty, 0);
+            return (false, Guid.Empty, 0, false);
         }
 
         DateTimeOffset nowUtc = _timeProvider.GetUtcNow();
@@ -138,14 +129,11 @@ public sealed class SessionLeaseManager
                 character.CurrentMana,
                 character.CurrentStamina,
                 nowUtc);
-
-            await _characterRepository.UpdateAsync(character, autoSave: true, cancellationToken: cancellationToken);
         }
 
         Guid ticketGuid = Guid.NewGuid();
         lease.IssueWorldHandoffTicket(character.Id, character.RoleName, resolvedMapId, ticketGuid, nowUtc, ticketTtl);
-        await _sessionLeaseRepository.UpsertAsync(lease, cancellationToken);
 
-        return (true, ticketGuid, resolvedMapId);
+        return (true, ticketGuid, resolvedMapId, wasRedirected);
     }
 }
