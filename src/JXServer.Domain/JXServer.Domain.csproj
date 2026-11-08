@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\JXServer.Primitives\JXServer.Primitives.csproj" />
+    <ProjectReference Include="..\JXServer.GameAssets\JXServer.GameAssets.csproj" />
+  </ItemGroup>
+</Project>

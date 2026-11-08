@@ -1,0 +1,287 @@
+using System.Buffers;
+using System.IO.Pipelines;
+using System.Net.Sockets;
+using System.Security.Cryptography;
+using System.Threading.Channels;
+using JXServer.Adapter.LegacyJX1.Framing;
+using JXServer.Adapter.LegacyJX1.Logging;
+using JXServer.Adapter.LegacyJX1.Packets;
+using JXServer.Contracts.Characters;
+using JXServer.ZoneEngine.PlayerSessions;
+using JXServer.ZoneEngine.WorldZones;
+using Microsoft.Extensions.Logging;
+
+namespace JXServer.Adapter.LegacyJX1.GameServer;
+
+/// <summary>
+/// Represents an active client TCP session connected to the GameServer (<c>6666</c>) and implements <see cref="IPlayerOutboundSink"/>.
+/// </summary>
+public sealed class GameServerClientSession : IPlayerOutboundSink, IAsyncDisposable
+{
+    private readonly TcpClient _tcpClient;
+    private readonly IReadOnlyDictionary<byte, IGameServerPacketHandler> _handlers;
+    private readonly IZoneClusterRouter _zoneClusterRouter;
+    private readonly ILogger _logger;
+    private readonly JxFramePipeProcessor _frameProcessor = new();
+    private readonly Channel<byte[]> _outboundChannel = Channel.CreateUnbounded<byte[]>(new UnboundedChannelOptions
+    {
+        SingleReader = true,
+        SingleWriter = false
+    });
+    private readonly CancellationTokenSource _cts = new();
+
+    private NetworkStream? _stream;
+    private int _disposed;
+    private int _cleanLogoutCompleted;
+
+    public string ConnectionId { get; } = Guid.NewGuid().ToString("N");
+
+    public Guid? AccountId { get; private set; }
+
+    public Guid? CharacterId { get; private set; }
+
+    public ushort? AttachedMapId { get; private set; }
+
+    public long LeaseEpoch { get; private set; }
+
+    public bool IsAttachedToWorld => AccountId.HasValue && CharacterId.HasValue && AttachedMapId.HasValue && LeaseEpoch > 0;
+
+    public GameServerClientSession(
+        TcpClient tcpClient,
+        IReadOnlyDictionary<byte, IGameServerPacketHandler> handlers,
+        IZoneClusterRouter zoneClusterRouter,
+        ILogger logger)
+    {
+        _tcpClient = tcpClient;
+        _handlers = handlers;
+        _zoneClusterRouter = zoneClusterRouter;
+        _logger = logger;
+    }
+
+    public void SetWorldAttached(Guid accountId, Guid characterId, ushort mapId, long leaseEpoch)
+    {
+        AccountId = accountId;
+        CharacterId = characterId;
+        AttachedMapId = mapId;
+        LeaseEpoch = leaseEpoch;
+    }
+
+    public void MarkCleanLogoutCompleted() =>
+        Interlocked.Exchange(ref _cleanLogoutCompleted, 1);
+
+    public async Task RunAsync(CancellationToken serverStoppingToken)
+    {
+        using var linkedCts = CancellationTokenSource.CreateLinkedTokenSource(serverStoppingToken, _cts.Token);
+        CancellationToken ct = linkedCts.Token;
+
+        Task? writerTask = null;
+        try
+        {
+            _tcpClient.NoDelay = true;
+            _stream = _tcpClient.GetStream();
+
+            uint clientKey = GenerateNonZeroKey();
+            uint serverKey = GenerateNonZeroKey();
+
+            var handshakeWriter = new ArrayBufferWriter<byte>(64);
+            _frameProcessor.WriteHandshakeFrame(handshakeWriter, clientKey, serverKey);
+            await _stream.WriteAsync(handshakeWriter.WrittenMemory, ct);
+            await _stream.FlushAsync(ct);
+
+            writerTask = Task.Run(() => PumpOutboundFramesAsync(ct), ct);
+
+            var reader = PipeReader.Create(_stream, new StreamPipeReaderOptions(leaveOpen: true));
+            while (!ct.IsCancellationRequested)
+            {
+                ReadResult readResult = await reader.ReadAsync(ct);
+                ReadOnlySequence<byte> buffer = readResult.Buffer;
+
+                bool keepConnection = true;
+                while (_frameProcessor.TryReadC2SFrame(ref buffer, out byte[] payload))
+                {
+                    if (!ProtocolSizeTable.IsValidGameServerC2SPayload(payload) ||
+                        !_handlers.TryGetValue(payload[0], out IGameServerPacketHandler? handler))
+                    {
+                        LegacyAdapterLogMessages.LogMalformedOrUnauthorizedPacket(
+                            _logger,
+                            ConnectionId,
+                            payload.Length > 0 ? payload[0] : (byte)0,
+                            payload.Length);
+                        keepConnection = false;
+                        break;
+                    }
+
+                    if (!await handler.HandleAsync(this, payload, ct))
+                    {
+                        keepConnection = false;
+                        break;
+                    }
+                }
+
+                reader.AdvanceTo(buffer.Start, buffer.End);
+
+                if (!keepConnection || readResult.IsCompleted)
+                {
+                    break;
+                }
+            }
+        }
+        catch (OperationCanceledException)
+        {
+        }
+        catch (Exception)
+        {
+        }
+        finally
+        {
+            _outboundChannel.Writer.TryComplete();
+            if (writerTask is not null)
+            {
+                try
+                {
+                    await writerTask;
+                }
+                catch
+                {
+                }
+            }
+
+            if (IsAttachedToWorld &&
+                Volatile.Read(ref _cleanLogoutCompleted) == 0 &&
+                CharacterId.HasValue &&
+                AttachedMapId.HasValue)
+            {
+                _zoneClusterRouter.TryDispatchToZone(
+                    AttachedMapId.Value,
+                    new DetachPlayerZoneCommand(CharacterId.Value, LeaseEpoch, PlayerDetachReason.SocketClosed));
+            }
+
+            await DisposeAsync();
+        }
+    }
+
+    public void SendInitialWorldSyncBurst(
+        PlayerZoneState playerState,
+        string mapNameUnicode,
+        uint currentFrameTick,
+        IReadOnlyList<CharacterSkillDto> skills)
+    {
+        var writer = new ArrayBufferWriter<byte>(1024);
+
+        SyncWorldS2CPacket worldSync = SyncWorldS2CPacket.Create(
+            playerState.MapId,
+            playerState.CurrentMpsX,
+            playerState.CurrentMpsY,
+            currentFrameTick,
+            mapNameUnicode);
+        _frameProcessor.WriteEncryptedS2CStruct(writer, in worldSync);
+
+        SyncCurPlayerS2CPacket curPlayer = SyncCurPlayerS2CPacket.Create(playerState);
+        _frameProcessor.WriteEncryptedS2CStruct(writer, in curPlayer);
+
+        SyncCurPlayerSkillS2CPacket skillSync = SyncCurPlayerSkillS2CPacket.Create(skills);
+        _frameProcessor.WriteEncryptedS2CStruct(writer, in skillSync);
+
+        SyncCurPlayerNormalS2CPacket normalSync = SyncCurPlayerNormalS2CPacket.Create(playerState);
+        _frameProcessor.WriteEncryptedS2CStruct(writer, in normalSync);
+
+        SyncNpcFullS2CPacket selfNpc = SyncNpcFullS2CPacket.CreateFromPlayer(playerState);
+        _frameProcessor.WriteEncryptedS2CFrame(writer, selfNpc.ToPayloadBytes());
+
+        DisabledFuncFlagS2CPacket disabledFlags = DisabledFuncFlagS2CPacket.Create(0);
+        _frameProcessor.WriteEncryptedS2CStruct(writer, in disabledFlags);
+
+        SyncEndS2CPacket syncEnd = SyncEndS2CPacket.Create();
+        _frameProcessor.WriteEncryptedS2CStruct(writer, in syncEnd);
+
+        EnqueueOutboundWireBytes(writer.WrittenSpan.ToArray());
+    }
+
+    public void SendActiveWorldConfirmation(PlayerZoneState playerState)
+    {
+        var writer = new ArrayBufferWriter<byte>(64);
+
+        SyncCurPlayerNormalS2CPacket normalSync = SyncCurPlayerNormalS2CPacket.Create(playerState);
+        _frameProcessor.WriteEncryptedS2CStruct(writer, in normalSync);
+
+        SyncNpcMinPlayerS2CPacket minPlayer = SyncNpcMinPlayerS2CPacket.Create(playerState);
+        _frameProcessor.WriteEncryptedS2CStruct(writer, in minPlayer);
+
+        EnqueueOutboundWireBytes(writer.WrittenSpan.ToArray());
+    }
+
+    public void SendServerPing(uint serverTimestamp)
+    {
+        var writer = new ArrayBufferWriter<byte>(16);
+        PingS2CPacket ping = PingS2CPacket.Create(serverTimestamp);
+        _frameProcessor.WriteEncryptedS2CStruct(writer, in ping);
+        EnqueueOutboundWireBytes(writer.WrittenSpan.ToArray());
+    }
+
+    public void SendServerPingReply(uint echoedClientTimestamp)
+    {
+        var writer = new ArrayBufferWriter<byte>(16);
+        PingReplyS2CPacket reply = PingReplyS2CPacket.Create(echoedClientTimestamp);
+        _frameProcessor.WriteEncryptedS2CStruct(writer, in reply);
+        EnqueueOutboundWireBytes(writer.WrittenSpan.ToArray());
+    }
+
+    public void Disconnect(PlayerDetachReason reason)
+    {
+        try
+        {
+            _cts.Cancel();
+            _tcpClient.Close();
+        }
+        catch
+        {
+        }
+    }
+
+    public ValueTask DisposeAsync()
+    {
+        if (Interlocked.Exchange(ref _disposed, 1) == 0)
+        {
+            Disconnect(PlayerDetachReason.SocketClosed);
+            _cts.Dispose();
+            _tcpClient.Dispose();
+        }
+
+        return ValueTask.CompletedTask;
+    }
+
+    private void EnqueueOutboundWireBytes(byte[] wireBytes) =>
+        _outboundChannel.Writer.TryWrite(wireBytes);
+
+    private async Task PumpOutboundFramesAsync(CancellationToken ct)
+    {
+        while (await _outboundChannel.Reader.WaitToReadAsync(ct))
+        {
+            while (_outboundChannel.Reader.TryRead(out byte[]? wireBytes))
+            {
+                if (_stream is not null)
+                {
+                    await _stream.WriteAsync(wireBytes, ct);
+                }
+            }
+
+            if (_stream is not null)
+            {
+                await _stream.FlushAsync(ct);
+            }
+        }
+    }
+
+    private static uint GenerateNonZeroKey()
+    {
+        Span<byte> buf = stackalloc byte[4];
+        uint key;
+        do
+        {
+            RandomNumberGenerator.Fill(buf);
+            key = BitConverter.ToUInt32(buf);
+        }
+        while (key == 0);
+        return key;
+    }
+}

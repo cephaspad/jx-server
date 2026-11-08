@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\JXServer.Primitives\JXServer.Primitives.csproj" />
+    <ProjectReference Include="..\..\src\JXServer.GameAssets\JXServer.GameAssets.csproj" />
+    <ProjectReference Include="..\..\src\JXServer.Contracts\JXServer.Contracts.csproj" />
+    <ProjectReference Include="..\..\src\JXServer.Domain\JXServer.Domain.csproj" />
+    <ProjectReference Include="..\..\src\JXServer.ZoneEngine\JXServer.ZoneEngine.csproj" />
+    <ProjectReference Include="..\..\src\JXServer.Application\JXServer.Application.csproj" />
+    <ProjectReference Include="..\..\src\JXServer.Infrastructure\JXServer.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\JXServer.Adapter.LegacyJX1\JXServer.Adapter.LegacyJX1.csproj" />
+    <ProjectReference Include="..\..\src\JXServer.Host\JXServer.Host.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" />
+    <PackageReference Include="Microsoft.Extensions.TimeProvider.Testing" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+    <PackageReference Include="xunit.v3" />
+  </ItemGroup>
+</Project>

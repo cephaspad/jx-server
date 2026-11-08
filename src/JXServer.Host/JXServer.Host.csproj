@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JXServer.Primitives\JXServer.Primitives.csproj" />
+    <ProjectReference Include="..\JXServer.GameAssets\JXServer.GameAssets.csproj" />
+    <ProjectReference Include="..\JXServer.Contracts\JXServer.Contracts.csproj" />
+    <ProjectReference Include="..\JXServer.Domain\JXServer.Domain.csproj" />
+    <ProjectReference Include="..\JXServer.ZoneEngine\JXServer.ZoneEngine.csproj" />
+    <ProjectReference Include="..\JXServer.Application\JXServer.Application.csproj" />
+    <ProjectReference Include="..\JXServer.Infrastructure\JXServer.Infrastructure.csproj" />
+    <ProjectReference Include="..\JXServer.Adapter.LegacyJX1\JXServer.Adapter.LegacyJX1.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

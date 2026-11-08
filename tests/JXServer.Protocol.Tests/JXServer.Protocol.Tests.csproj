@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\JXServer.Primitives\JXServer.Primitives.csproj" />
+    <ProjectReference Include="..\..\src\JXServer.Contracts\JXServer.Contracts.csproj" />
+    <ProjectReference Include="..\..\src\JXServer.Adapter.LegacyJX1\JXServer.Adapter.LegacyJX1.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+    <PackageReference Include="xunit.v3" />
+  </ItemGroup>
+</Project>

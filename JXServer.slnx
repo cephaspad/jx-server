@@ -1,0 +1,18 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/JXServer.Primitives/JXServer.Primitives.csproj" />
+    <Project Path="src/JXServer.GameAssets/JXServer.GameAssets.csproj" />
+    <Project Path="src/JXServer.Contracts/JXServer.Contracts.csproj" />
+    <Project Path="src/JXServer.Domain/JXServer.Domain.csproj" />
+    <Project Path="src/JXServer.ZoneEngine/JXServer.ZoneEngine.csproj" />
+    <Project Path="src/JXServer.Application/JXServer.Application.csproj" />
+    <Project Path="src/JXServer.Infrastructure/JXServer.Infrastructure.csproj" />
+    <Project Path="src/JXServer.Adapter.LegacyJX1/JXServer.Adapter.LegacyJX1.csproj" />
+    <Project Path="src/JXServer.Host/JXServer.Host.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/JXServer.Protocol.Tests/JXServer.Protocol.Tests.csproj" />
+    <Project Path="tests/JXServer.ZoneEngine.Tests/JXServer.ZoneEngine.Tests.csproj" />
+    <Project Path="tests/JXServer.Integration.Tests/JXServer.Integration.Tests.csproj" />
+  </Folder>
+</Solution>
