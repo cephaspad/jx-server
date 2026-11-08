@@ -1,17 +1,11 @@
 <!--
 Sync Impact Report:
-- Version change: [CONSTITUTION_VERSION] (template) → 1.0.0
+- Version change: 1.0.0 → 1.1.0
 - Modified principles:
-  - [PRINCIPLE_1_NAME] → I. Hybrid Distributed Control Plane & Sharded 18-Hz Zone Architecture
-  - [PRINCIPLE_2_NAME] → II. Multi-Protocol Transport Abstraction & Evolutionary Client Compatibility
-  - [PRINCIPLE_3_NAME] → III. Zero-Hallucination Evidence & Ground-Truth Fidelity (NON-NEGOTIABLE)
-  - [PRINCIPLE_4_NAME] → IV. Zero-Dupe Economy & Lease-Fenced Session Integrity
-  - [PRINCIPLE_5_NAME] → V. UTF-8 Domain Core & Boundary-Only Legacy Transcoding
-- Added principles:
-  - VI. Clean Modular Boundaries, SOLID Design & Compilation-Checked Scripting
-- Added sections:
-  - Technical Stack, Performance & Structural Constraints (replaces [SECTION_2_NAME])
-  - Development Workflow & Verification Gates (replaces [SECTION_3_NAME])
+  - VI. Clean Modular Boundaries, SOLID Design & Compilation-Checked Scripting → VI. Clean Modular Boundaries, ABP DDD Role Separation & Compilation-Checked Scripting
+- Modified sections:
+  - Technical Stack, Performance & Structural Constraints (standardized persistence on SQL Server + SQLite via EF Core 10, and expanded ABP Framework DDD Naming Conventions alongside the 5 Real-Time 18-Hz Game Server Naming Conventions)
+- Added sections: None
 - Removed sections: None
 - Follow-up TODOs: None
 -->
@@ -60,26 +54,40 @@ Sync Impact Report:
 
 *Rationale*: Prevents legacy single-byte encoding corruption from polluting domain logic, modern client adapters, database queries, and administrative tools.
 
-### VI. Clean Modular Boundaries, SOLID Design & Compilation-Checked Scripting
+### VI. Clean Modular Boundaries, ABP DDD Role Separation & Compilation-Checked Scripting
 - Dependencies MUST flow strictly inward across four architectural tiers:
-  1. **Primitives Tier**: Zero-dependency shared constants, enumerations, coordinate and fixed-point math primitives, error codes, and encoding transcoders.
+  1. **Primitives (Domain.Shared) Tier**: Zero-dependency shared constants, enumerations, coordinate and fixed-point math primitives, structured error codes, and encoding transcoders.
   2. **Simulation & Asset Engine Tier**: Self-contained libraries for static asset loading (`/maps`, `/settings`), the 18-Hz Zone Engine, and strongly-typed gameplay scripting interfaces, free of database or web middleware dependencies.
-  3. **Control-Plane DDD Tier**: Domain aggregates, domain services, application contracts, application use-case orchestrators, and persistence/cluster infrastructure implementations.
+  3. **Control-Plane DDD Tier**: Domain aggregates, domain services, application contracts, application use-case orchestrators, and EF Core persistence/cluster infrastructure implementations.
   4. **Adapters & Host Tier**: Legacy and modern network transport adapters, cluster communication bindings, and the executable server host.
+- **ABP DDD Role Separation**:
+  - **Domain Aggregates & Entities** MUST protect their internal state behind private or internal setters, provide a protected parameterless constructor for ORM materialization alongside invariant-enforcing public constructors, and reference other aggregates solely by identifier rather than navigation properties.
+  - **Domain Services (`*Manager`)** MUST contain only core cross-aggregate business rules, MUST NOT perform authorization or send external notifications, and MUST NOT call database save operations directly.
+  - **Application Services (`*AppService`)** MUST act as the transaction/unit-of-work boundary that orchestrates domain managers and repositories, persists changes, and accepts/returns only DTOs (never leaking domain entities outside the application layer).
 - **Open/Closed Dispatching & Scripting**: Network opcode handlers, NPC dialog scripts, item usage scripts, and mission/event controllers MUST be registered through extensible handler registries rather than monolithic conditional switch blocks.
-- **Encapsulated Domain Invariants**: Domain aggregate roots MUST protect their internal state behind private or internal setters and expose state transitions solely through invariant-enforcing domain methods.
 
-*Rationale*: Enables parallel development across subsystems, keeps the 18-Hz simulation core lightweight and testable in isolation, and replaces fragile untyped scripts with compilation-checked C# modules.
+*Rationale*: Combines ABP Framework's battle-tested DDD boundaries in the Control Plane with zero-overhead data-oriented execution in the 18-Hz Zone Engine.
 
 ## Technical Stack, Performance & Structural Constraints
 
-- **Runtime & Compiler Baseline**:
+- **Runtime, Compiler & Persistence Baseline**:
   - Target .NET 10 and C# 14 using the XML solution format, centralized build properties, and central package version management.
   - Enforce nullable reference types, the latest Roslyn analysis level, and warnings-as-errors across all projects.
-- **File Organization & Naming Discipline**:
-  - **One Type Per File**: Every class, structure, record, interface, or enumeration MUST reside in its own dedicated source file whose filename matches the type name exactly.
-  - **Pluralized Feature/Aggregate Directories**: Generic technical bucket folders (such as Entities, Dtos, Services, Helpers, or Utils) at the project root are forbidden. Files MUST be grouped into pluralized domain feature folders mirrored consistently across architectural layers.
-  - **Role-Explicit Suffixes**: Use explicit suffixes matching architectural responsibility (such as `*Consts`, `*ErrorCodes`, `*Manager` for domain services, `I*Repository`, `I*AppService` / `*AppService`, directional DTOs `Create*Dto` / `Update*Dto` / `Get*Input` / `*Dto`, `*Packet`, `*PacketHandler`, and `*Options`).
+  - Standardize relational persistence on **EF Core 10 with Microsoft SQL Server** as the primary production database provider and **SQLite (WAL) / InMemory** for lightweight local development and automated test suites.
+- **ABP DDD & 18-Hz Game Server Naming Conventions (Mandatory)**:
+  - **One Type Per File & Sealed Concrete Classes**: Every class, structure, record, interface, or enumeration MUST reside in its own dedicated source file matching the exact type name. Concrete implementation classes (`*AppService`, `*Manager`, `EfCore*Repository`, `*PacketHandler`, `*TickSystem`) MUST be marked sealed by default.
+  - **Pluralized Feature/Aggregate Folders**: Generic technical bucket folders (`Entities/`, `Dtos/`, `Services/`, `Repositories/`, `Helpers/`, `Utils/`) at the project root are strictly forbidden. Source files MUST be organized into pluralized aggregate/feature directories (`Accounts/`, `Characters/`, `SessionLeases/`, `WorldZones/`) mirrored consistently across layers.
+  - **ABP DDD Layer Suffixes**:
+    - **Primitives Tier**: `<Feature>Consts` for validation limits and `<Module>ErrorCodes` formatted as `JXServer:<Domain>:<Code>`.
+    - **Domain Tier**: Singular nouns for Aggregate Roots and Entities (never suffixed with `Entity` or `Model`), `<Feature>Manager` for domain services, `<Rule>Specification` for reusable query filters, and `I<Aggregate>Repository` for repository interfaces.
+    - **Contracts & Application Tiers**: `I<Feature>AppService` and `<Feature>AppService` for application services; directional DTOs strictly separated into `<Entity>Dto` / `<Entity>SummaryDto` (read), `Create<Entity>Dto` (create), `Update<Entity>Dto` (update), `Get<Entities>Input` (query), and `<Event>Eto` (distributed event transfer objects).
+    - **Infrastructure Tier**: `EfCore<Aggregate>Repository` for EF Core repository implementations.
+  - **Five Real-Time Game Server & Binary Protocol Suffixes**:
+    1. **Directional Packet Contracts**: Client-to-server packets MUST be suffixed with `*C2SPacket` and server-to-client packets with `*S2CPacket`, dispatched via `I<Endpoint>PacketHandler` / `<Action>PacketHandler`.
+    2. **Zone Simulation vs. ORM Separation**: In-memory 18-Hz zone representations MUST use `*ZoneState` or `*Slot` suffixes (never reusing EF Core `Character` or `Account` entities inside the zone loop), mutated via `<Action>ZoneCommand` and processed by `<Subsystem>TickSystem`.
+    3. **Unit-Explicit Coordinate & Timing Naming**: Spatial properties and parameters MUST explicitly include their coordinate unit suffix (`*MpsX`/`*MpsY` for world pixels, `*CellX`/`*CellY` for 32x32 obstacle cells, `*RegionX`/`*RegionY`/`*RegionId` for 512x1024 regions), and time values MUST distinguish between `*Frames` (18-Hz ticks) and `*Ms` / `*Seconds`.
+    4. **Immutable Static Assets**: Pre-loaded `/settings` and `/maps` records MUST be suffixed with `*Template` or `*MapDescriptor` and exposed via singleton read-only `I<Asset>Catalog` / `<Asset>Catalog` registries.
+    5. **Source-Generated Logging**: Each module MUST define structured log methods inside a dedicated `<Module>LogMessages` class rather than allocating interpolated strings on hot paths.
 - **Real-Time 18-Hz Hot-Path Standards**:
   - **Non-Blocking Simulation Loop**: Database queries, disk I/O, HTTP calls, and cross-zone blocking locks MUST NEVER execute inside the 18-Hz zone tick thread.
   - **Zero-Allocation Hot Paths**: Packet framing, stream cipher routines, region broadcasts, and per-tick missile/combat evaluations MUST utilize pooled buffers and stack/span memory to prevent garbage collection pauses under high player density.
@@ -91,7 +99,7 @@ Sync Impact Report:
 2. **Symmetric Protocol & Formula Unit Gate**: Every legacy packet serializer/deserializer, cipher routine, and core mathematical formula (five-elements damage, 64-direction trigonometry, coordinate conversion, item generation) MUST pass deterministic unit tests against verified test vectors before integration into a Zone or Gateway.
 3. **Autonomous Swarm & Headless Integration Gate**: New gateway and zone features MUST be validated end-to-end by connecting automated headless client sessions (compatible with `jx-swarm`) to verify full handshake, world entry, movement, combat, and state synchronization without manual guesswork.
 4. **High-Density Stress & Fault Isolation Gate**: Malformed client packets, sudden socket drops, or script exceptions for a single player MUST be contained to that session without crashing the Zone loop, Edge Gateway, or sibling player sessions.
-5. **Structural & Zero-Warning Build Gate**: All plans, specifications, task breakdowns, and pull requests MUST pass formatting verification, build with zero warnings under warnings-as-errors, and strictly respect the one-type-per-file and feature-folder conventions.
+5. **Structural & Zero-Warning Build Gate**: All plans, specifications, task breakdowns, and pull requests MUST pass formatting verification, build with zero warnings under warnings-as-errors, and strictly respect the one-type-per-file, ABP DDD, and 18-Hz game server naming conventions.
 
 ## Governance
 
@@ -103,4 +111,4 @@ Sync Impact Report:
   3. Incrementing the semantic version below (`MAJOR` for backward-incompatible governance or architectural redefinitions, `MINOR` for new principles or expanded constraints, `PATCH` for wording clarifications).
 - Every feature specification, implementation plan, task list, and code review MUST explicitly verify compliance with this Constitution.
 
-**Version**: 1.0.0 | **Ratified**: 2026-11-08 | **Last Amended**: 2026-11-08
+**Version**: 1.1.0 | **Ratified**: 2026-11-08 | **Last Amended**: 2026-11-08
