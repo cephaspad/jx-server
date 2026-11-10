@@ -1,0 +1,1990 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 113,
+  "code": "map-113-mat-that-thieu-lam",
+  "name": "M\u1EADt th\u1EA5t Thi\u1EBFu L\u00C2m",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 97,
+    "topRegionY": 96,
+    "rightRegionX": 118,
+    "bottomRegionY": 106
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": [
+    {
+      "npcTemplateId": 191,
+      "npcCode": "npc-191",
+      "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+      "entityKind": "Monster",
+      "level": 45,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 53376,
+          "mpsY": 100256,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53376,
+          "mpsY": 100832,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54528,
+          "mpsY": 101248,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54048,
+          "mpsY": 101408,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54624,
+          "mpsY": 102080,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52672,
+          "mpsY": 102912,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55264,
+          "mpsY": 103584,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56256,
+          "mpsY": 106080,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58528,
+          "mpsY": 105536,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59840,
+          "mpsY": 105696,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55424,
+          "mpsY": 108192,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 191,
+      "npcCode": "npc-191",
+      "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+      "entityKind": "Monster",
+      "level": 47,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 55204,
+          "mpsY": 100110,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55769,
+          "mpsY": 100218,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59036,
+          "mpsY": 100022,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59582,
+          "mpsY": 99404,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 60071,
+          "mpsY": 100347,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52570,
+          "mpsY": 101054,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52929,
+          "mpsY": 100755,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53687,
+          "mpsY": 100920,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54212,
+          "mpsY": 101091,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53831,
+          "mpsY": 100657,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53978,
+          "mpsY": 101048,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54715,
+          "mpsY": 100452,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54643,
+          "mpsY": 100649,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54297,
+          "mpsY": 100812,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54472,
+          "mpsY": 101016,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54915,
+          "mpsY": 100528,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55575,
+          "mpsY": 100412,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55328,
+          "mpsY": 100410,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56102,
+          "mpsY": 100644,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56294,
+          "mpsY": 100618,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55858,
+          "mpsY": 100679,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56753,
+          "mpsY": 101357,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58815,
+          "mpsY": 100784,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58858,
+          "mpsY": 101065,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58629,
+          "mpsY": 101050,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59724,
+          "mpsY": 100651,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51504,
+          "mpsY": 102238,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52574,
+          "mpsY": 101704,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52528,
+          "mpsY": 101776,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53144,
+          "mpsY": 102125,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53365,
+          "mpsY": 101818,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53644,
+          "mpsY": 101869,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55161,
+          "mpsY": 101558,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55151,
+          "mpsY": 101786,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55426,
+          "mpsY": 101876,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57323,
+          "mpsY": 102310,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57205,
+          "mpsY": 102288,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56911,
+          "mpsY": 101635,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57619,
+          "mpsY": 102254,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57398,
+          "mpsY": 101911,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58215,
+          "mpsY": 102162,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58030,
+          "mpsY": 101924,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58119,
+          "mpsY": 101667,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58427,
+          "mpsY": 102397,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58520,
+          "mpsY": 102279,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58436,
+          "mpsY": 101444,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50816,
+          "mpsY": 103008,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51232,
+          "mpsY": 102784,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52332,
+          "mpsY": 103090,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52864,
+          "mpsY": 102752,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54675,
+          "mpsY": 102844,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54890,
+          "mpsY": 103005,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55938,
+          "mpsY": 102508,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56173,
+          "mpsY": 102736,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56560,
+          "mpsY": 102873,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56475,
+          "mpsY": 103120,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56683,
+          "mpsY": 103219,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56927,
+          "mpsY": 102508,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57165,
+          "mpsY": 102677,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56875,
+          "mpsY": 102825,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58871,
+          "mpsY": 102768,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58751,
+          "mpsY": 102478,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59093,
+          "mpsY": 102896,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59331,
+          "mpsY": 103052,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59156,
+          "mpsY": 103195,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59600,
+          "mpsY": 103330,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59401,
+          "mpsY": 103399,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50707,
+          "mpsY": 103484,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50911,
+          "mpsY": 103828,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51304,
+          "mpsY": 104052,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51270,
+          "mpsY": 104241,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51418,
+          "mpsY": 104282,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52580,
+          "mpsY": 103434,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52924,
+          "mpsY": 103740,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53290,
+          "mpsY": 103879,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54336,
+          "mpsY": 103488,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58007,
+          "mpsY": 104339,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58189,
+          "mpsY": 104160,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58537,
+          "mpsY": 104183,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59621,
+          "mpsY": 103673,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 60287,
+          "mpsY": 104285,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59957,
+          "mpsY": 103700,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59953,
+          "mpsY": 103952,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 60187,
+          "mpsY": 103920,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 60487,
+          "mpsY": 104207,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51652,
+          "mpsY": 104477,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51863,
+          "mpsY": 104794,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52147,
+          "mpsY": 105082,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53808,
+          "mpsY": 104715,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54245,
+          "mpsY": 105163,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55494,
+          "mpsY": 104841,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55705,
+          "mpsY": 104574,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55921,
+          "mpsY": 104801,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57184,
+          "mpsY": 105408,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57344,
+          "mpsY": 105248,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58217,
+          "mpsY": 105456,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57868,
+          "mpsY": 105190,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58833,
+          "mpsY": 104470,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58375,
+          "mpsY": 105386,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58927,
+          "mpsY": 104863,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59125,
+          "mpsY": 104749,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59433,
+          "mpsY": 105159,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59536,
+          "mpsY": 105430,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59745,
+          "mpsY": 105070,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59938,
+          "mpsY": 105289,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 60147,
+          "mpsY": 104890,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 60291,
+          "mpsY": 105104,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 60315,
+          "mpsY": 104766,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 60439,
+          "mpsY": 104546,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52992,
+          "mpsY": 105760,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53180,
+          "mpsY": 105959,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53104,
+          "mpsY": 106227,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53489,
+          "mpsY": 106248,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53347,
+          "mpsY": 106396,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54572,
+          "mpsY": 106344,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55947,
+          "mpsY": 106410,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56493,
+          "mpsY": 106160,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56519,
+          "mpsY": 105773,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56763,
+          "mpsY": 105612,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57052,
+          "mpsY": 105857,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57080,
+          "mpsY": 106367,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56909,
+          "mpsY": 106160,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57383,
+          "mpsY": 106166,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58551,
+          "mpsY": 105894,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53612,
+          "mpsY": 106730,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53810,
+          "mpsY": 106521,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54318,
+          "mpsY": 106531,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54532,
+          "mpsY": 106775,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56122,
+          "mpsY": 107093,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55813,
+          "mpsY": 106852,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56357,
+          "mpsY": 107386,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56577,
+          "mpsY": 107446,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57387,
+          "mpsY": 106530,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57831,
+          "mpsY": 106691,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57612,
+          "mpsY": 106932,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57616,
+          "mpsY": 107161,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57964,
+          "mpsY": 107040,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54648,
+          "mpsY": 107562,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54508,
+          "mpsY": 107638,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54907,
+          "mpsY": 107772,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55117,
+          "mpsY": 108364,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55256,
+          "mpsY": 108179,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55907,
+          "mpsY": 107830,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55813,
+          "mpsY": 108047,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56075,
+          "mpsY": 108003,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56209,
+          "mpsY": 107539,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57250,
+          "mpsY": 108344,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57440,
+          "mpsY": 108032,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57755,
+          "mpsY": 107851,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57607,
+          "mpsY": 108136,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58083,
+          "mpsY": 107717,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57958,
+          "mpsY": 107594,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56958,
+          "mpsY": 108644,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57120,
+          "mpsY": 108675,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 191,
+      "npcCode": "npc-191",
+      "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+      "entityKind": "Monster",
+      "level": 50,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 55648,
+          "mpsY": 99808,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 60192,
+          "mpsY": 99872,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52192,
+          "mpsY": 101760,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5317\u533A\\\u5C11\u6797\u6D3E\\\u5C11\u6797\u5BC6\u5BA4\\npc\\\u6218\u6597_sll40_\u602A\u726901.lua",
+          "isSpecialNpc": true
+        },
+        {
+          "mpsX": 53376,
+          "mpsY": 103328,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5317\u533A\\\u5C11\u6797\u6D3E\\\u5C11\u6797\u5BC6\u5BA4\\npc\\\u6218\u6597_sll40_\u602A\u726901.lua",
+          "isSpecialNpc": true
+        },
+        {
+          "mpsX": 52416,
+          "mpsY": 105152,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5317\u533A\\\u5C11\u6797\u6D3E\\\u5C11\u6797\u5BC6\u5BA4\\npc\\\u6218\u6597_sll40_\u602A\u726901.lua",
+          "isSpecialNpc": true
+        },
+        {
+          "mpsX": 54624,
+          "mpsY": 105408,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5317\u533A\\\u5C11\u6797\u6D3E\\\u5C11\u6797\u5BC6\u5BA4\\npc\\\u6218\u6597_sll40_\u602A\u726901.lua",
+          "isSpecialNpc": true
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 191,
+      "npcCode": "npc-191",
+      "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+      "entityKind": "Monster",
+      "level": 40,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 55360,
+          "mpsY": 99708,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54336,
+          "mpsY": 102432,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 191,
+      "npcCode": "npc-191",
+      "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+      "entityKind": "Monster",
+      "level": 42,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 59296,
+          "mpsY": 100256,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59872,
+          "mpsY": 99904,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56966,
+          "mpsY": 101110,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59136,
+          "mpsY": 100736,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55616,
+          "mpsY": 102016,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55104,
+          "mpsY": 103456,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57696,
+          "mpsY": 104992,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52864,
+          "mpsY": 105984,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54752,
+          "mpsY": 106080,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58189,
+          "mpsY": 107282,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54625,
+          "mpsY": 108007,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 191,
+      "npcCode": "npc-191",
+      "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+      "entityKind": "Monster",
+      "level": 44,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": true,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 59283,
+          "mpsY": 99635,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": true
+        },
+        {
+          "mpsX": 52512,
+          "mpsY": 105440,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57600,
+          "mpsY": 104608,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58332,
+          "mpsY": 105700,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56096,
+          "mpsY": 106624,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 191,
+      "npcCode": "npc-191",
+      "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+      "entityKind": "Monster",
+      "level": 46,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 54752,
+          "mpsY": 101344,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54816,
+          "mpsY": 101760,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50432,
+          "mpsY": 103232,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57568,
+          "mpsY": 104864,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59200,
+          "mpsY": 105280,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56768,
+          "mpsY": 106400,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57088,
+          "mpsY": 106752,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 191,
+      "npcCode": "npc-191",
+      "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+      "entityKind": "Monster",
+      "level": 43,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 55488,
+          "mpsY": 100800,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56323,
+          "mpsY": 101280,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52000,
+          "mpsY": 101536,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51744,
+          "mpsY": 101801,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57696,
+          "mpsY": 101952,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53504,
+          "mpsY": 103168,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58656,
+          "mpsY": 102688,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55904,
+          "mpsY": 103968,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58560,
+          "mpsY": 104672,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55648,
+          "mpsY": 105696,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59712,
+          "mpsY": 105568,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55619,
+          "mpsY": 108557,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 191,
+      "npcCode": "npc-191",
+      "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+      "entityKind": "Monster",
+      "level": 41,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 56192,
+          "mpsY": 101024,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57830,
+          "mpsY": 101744,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54272,
+          "mpsY": 103136,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55296,
+          "mpsY": 103072,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57856,
+          "mpsY": 104800,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58048,
+          "mpsY": 105120,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54592,
+          "mpsY": 105696,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 191,
+      "npcCode": "npc-191",
+      "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+      "entityKind": "Monster",
+      "level": 48,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 56448,
+          "mpsY": 100646,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53664,
+          "mpsY": 101376,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55648,
+          "mpsY": 102176,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57600,
+          "mpsY": 101792,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59968,
+          "mpsY": 105504,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55648,
+          "mpsY": 106560,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55744,
+          "mpsY": 108352,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 191,
+      "npcCode": "npc-191",
+      "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+      "entityKind": "Monster",
+      "level": 49,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52000,
+          "mpsY": 103136,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52627,
+          "mpsY": 102444,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55232,
+          "mpsY": 103392,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53344,
+          "mpsY": 104064,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    }
+  ]
+}

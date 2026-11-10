@@ -1,0 +1,3877 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 199,
+  "code": "map-199-vu-lang-dong",
+  "name": "V\u0169 L\u0102ng \u0110\u1ED9ng",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 84,
+    "topRegionY": 87,
+    "rightRegionX": 118,
+    "bottomRegionY": 104
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": [
+    {
+      "npcTemplateId": 169,
+      "npcCode": "npc-169",
+      "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+      "entityKind": "DialogNpc",
+      "level": 94,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50816,
+          "mpsY": 90848,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52608,
+          "mpsY": 90816,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45504,
+          "mpsY": 94848,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55968,
+          "mpsY": 94592,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44000,
+          "mpsY": 98144,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52000,
+          "mpsY": 98240,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44800,
+          "mpsY": 98368,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55424,
+          "mpsY": 98944,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59008,
+          "mpsY": 98496,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53088,
+          "mpsY": 101472,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58976,
+          "mpsY": 101440,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55296,
+          "mpsY": 102976,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53312,
+          "mpsY": 104288,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "npc-159",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 91,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51264,
+          "mpsY": 91040,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52288,
+          "mpsY": 90304,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53568,
+          "mpsY": 91072,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54176,
+          "mpsY": 92128,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49056,
+          "mpsY": 92512,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57920,
+          "mpsY": 98496,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52640,
+          "mpsY": 99968,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54560,
+          "mpsY": 100128,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 60160,
+          "mpsY": 99808,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52000,
+          "mpsY": 102688,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 149,
+      "npcCode": "npc-149",
+      "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 99,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51456,
+          "mpsY": 90816,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50400,
+          "mpsY": 91360,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49792,
+          "mpsY": 92608,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50048,
+          "mpsY": 92800,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46432,
+          "mpsY": 94368,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44608,
+          "mpsY": 98272,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54432,
+          "mpsY": 97696,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54240,
+          "mpsY": 100128,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59488,
+          "mpsY": 102016,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "npc-159",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 92,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52512,
+          "mpsY": 90720,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50336,
+          "mpsY": 93536,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51072,
+          "mpsY": 94016,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46752,
+          "mpsY": 94976,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54880,
+          "mpsY": 95680,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49792,
+          "mpsY": 96928,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52032,
+          "mpsY": 98720,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53152,
+          "mpsY": 100320,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48864,
+          "mpsY": 100704,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59840,
+          "mpsY": 100576,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52384,
+          "mpsY": 102560,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 169,
+      "npcCode": "npc-169",
+      "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+      "entityKind": "DialogNpc",
+      "level": 96,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 53216,
+          "mpsY": 90688,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49856,
+          "mpsY": 92064,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46496,
+          "mpsY": 94752,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56704,
+          "mpsY": 94528,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48320,
+          "mpsY": 95712,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52032,
+          "mpsY": 98048,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52576,
+          "mpsY": 98016,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56672,
+          "mpsY": 100480,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58752,
+          "mpsY": 102144,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55808,
+          "mpsY": 103360,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51648,
+          "mpsY": 106144,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51200,
+          "mpsY": 106176,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52672,
+          "mpsY": 105536,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51872,
+          "mpsY": 106784,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "npc-159",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 91,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 53248,
+          "mpsY": 91040,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47968,
+          "mpsY": 92448,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52160,
+          "mpsY": 93056,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46816,
+          "mpsY": 93664,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51936,
+          "mpsY": 93344,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45536,
+          "mpsY": 95328,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48864,
+          "mpsY": 95264,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55200,
+          "mpsY": 95360,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57504,
+          "mpsY": 95968,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52384,
+          "mpsY": 96608,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43616,
+          "mpsY": 97952,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50912,
+          "mpsY": 100960,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56160,
+          "mpsY": 100928,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53696,
+          "mpsY": 103104,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "npc-159",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 92,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 53632,
+          "mpsY": 90944,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46496,
+          "mpsY": 94208,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51168,
+          "mpsY": 94304,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51648,
+          "mpsY": 94432,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52288,
+          "mpsY": 97408,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57824,
+          "mpsY": 97856,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44992,
+          "mpsY": 98656,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48768,
+          "mpsY": 98784,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50432,
+          "mpsY": 99136,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55424,
+          "mpsY": 98624,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55552,
+          "mpsY": 98720,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50976,
+          "mpsY": 100608,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51744,
+          "mpsY": 100736,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56032,
+          "mpsY": 103360,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "npc-159",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 92,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49600,
+          "mpsY": 92096,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52864,
+          "mpsY": 91168,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46912,
+          "mpsY": 93312,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48800,
+          "mpsY": 94592,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54496,
+          "mpsY": 96192,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51456,
+          "mpsY": 98976,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53184,
+          "mpsY": 98752,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57696,
+          "mpsY": 100064,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53856,
+          "mpsY": 103200,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "npc-159",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 93,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50144,
+          "mpsY": 91360,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52288,
+          "mpsY": 92928,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46688,
+          "mpsY": 93568,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53824,
+          "mpsY": 94080,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58432,
+          "mpsY": 97024,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46304,
+          "mpsY": 98144,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54816,
+          "mpsY": 97600,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59296,
+          "mpsY": 98400,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52800,
+          "mpsY": 101184,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50272,
+          "mpsY": 101952,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51136,
+          "mpsY": 103040,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52224,
+          "mpsY": 103040,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53024,
+          "mpsY": 102592,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56032,
+          "mpsY": 104256,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 169,
+      "npcCode": "npc-169",
+      "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+      "entityKind": "DialogNpc",
+      "level": 95,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49728,
+          "mpsY": 92000,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53824,
+          "mpsY": 91584,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47584,
+          "mpsY": 92960,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52576,
+          "mpsY": 92704,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46592,
+          "mpsY": 94912,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53568,
+          "mpsY": 94592,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54112,
+          "mpsY": 94368,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56192,
+          "mpsY": 95136,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46528,
+          "mpsY": 95232,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53056,
+          "mpsY": 95424,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47200,
+          "mpsY": 97920,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47424,
+          "mpsY": 98432,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57824,
+          "mpsY": 99456,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56384,
+          "mpsY": 100384,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58368,
+          "mpsY": 102336,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 149,
+      "npcCode": "npc-149",
+      "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 97,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49984,
+          "mpsY": 91840,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59840,
+          "mpsY": 100960,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52032,
+          "mpsY": 103200,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 169,
+      "npcCode": "npc-169",
+      "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+      "entityKind": "DialogNpc",
+      "level": 96,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50272,
+          "mpsY": 91680,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49856,
+          "mpsY": 92992,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43680,
+          "mpsY": 97088,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59840,
+          "mpsY": 99168,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 169,
+      "npcCode": "npc-169",
+      "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+      "entityKind": "DialogNpc",
+      "level": 94,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50784,
+          "mpsY": 91488,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55968,
+          "mpsY": 94368,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47968,
+          "mpsY": 95424,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45824,
+          "mpsY": 98304,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": true
+        },
+        {
+          "mpsX": 50976,
+          "mpsY": 99424,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54464,
+          "mpsY": 100352,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58176,
+          "mpsY": 101920,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50784,
+          "mpsY": 102624,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53920,
+          "mpsY": 102656,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51168,
+          "mpsY": 105056,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52576,
+          "mpsY": 104960,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 169,
+      "npcCode": "npc-169",
+      "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+      "entityKind": "DialogNpc",
+      "level": 95,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 53952,
+          "mpsY": 91200,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55456,
+          "mpsY": 92960,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50624,
+          "mpsY": 93824,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54208,
+          "mpsY": 93856,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50208,
+          "mpsY": 95744,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55968,
+          "mpsY": 95360,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49696,
+          "mpsY": 97152,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45792,
+          "mpsY": 97696,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51968,
+          "mpsY": 100096,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54880,
+          "mpsY": 101408,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58496,
+          "mpsY": 102240,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51264,
+          "mpsY": 103264,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53728,
+          "mpsY": 103744,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54048,
+          "mpsY": 103776,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 149,
+      "npcCode": "npc-149",
+      "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 97,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 54528,
+          "mpsY": 91872,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55904,
+          "mpsY": 93216,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53856,
+          "mpsY": 96992,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54752,
+          "mpsY": 96544,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54400,
+          "mpsY": 96320,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52480,
+          "mpsY": 103072,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 169,
+      "npcCode": "npc-169",
+      "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+      "entityKind": "DialogNpc",
+      "level": 94,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 47040,
+          "mpsY": 92864,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55936,
+          "mpsY": 93600,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51680,
+          "mpsY": 96224,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57888,
+          "mpsY": 99168,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55808,
+          "mpsY": 99488,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55424,
+          "mpsY": 102240,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52864,
+          "mpsY": 104864,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 169,
+      "npcCode": "npc-169",
+      "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+      "entityKind": "DialogNpc",
+      "level": 96,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 47040,
+          "mpsY": 93152,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50496,
+          "mpsY": 93280,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50688,
+          "mpsY": 93952,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56992,
+          "mpsY": 94880,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54336,
+          "mpsY": 97600,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55168,
+          "mpsY": 98240,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50656,
+          "mpsY": 99776,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55584,
+          "mpsY": 100704,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53280,
+          "mpsY": 101376,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52928,
+          "mpsY": 102688,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57152,
+          "mpsY": 103648,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51456,
+          "mpsY": 105824,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 169,
+      "npcCode": "npc-169",
+      "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+      "entityKind": "DialogNpc",
+      "level": 95,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 47360,
+          "mpsY": 92992,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48736,
+          "mpsY": 93056,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45952,
+          "mpsY": 94784,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46272,
+          "mpsY": 95008,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48576,
+          "mpsY": 94848,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56992,
+          "mpsY": 94592,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44256,
+          "mpsY": 96160,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50976,
+          "mpsY": 95552,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57440,
+          "mpsY": 95776,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45664,
+          "mpsY": 97792,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59232,
+          "mpsY": 97952,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50336,
+          "mpsY": 99360,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58752,
+          "mpsY": 101664,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51360,
+          "mpsY": 106336,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "npc-159",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 93,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 47584,
+          "mpsY": 92480,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51776,
+          "mpsY": 93664,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54336,
+          "mpsY": 94176,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44384,
+          "mpsY": 98048,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49760,
+          "mpsY": 97696,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52928,
+          "mpsY": 97856,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45088,
+          "mpsY": 98336,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58080,
+          "mpsY": 98848,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54624,
+          "mpsY": 100256,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54752,
+          "mpsY": 101184,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54976,
+          "mpsY": 100896,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49664,
+          "mpsY": 101760,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 149,
+      "npcCode": "npc-149",
+      "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 98,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 47712,
+          "mpsY": 92896,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54272,
+          "mpsY": 97056,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43680,
+          "mpsY": 97760,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55392,
+          "mpsY": 101312,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "npc-159",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 91,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 47840,
+          "mpsY": 92288,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48832,
+          "mpsY": 92576,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53760,
+          "mpsY": 94848,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57152,
+          "mpsY": 94976,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43936,
+          "mpsY": 95936,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47264,
+          "mpsY": 95648,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57984,
+          "mpsY": 98144,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58176,
+          "mpsY": 99200,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48736,
+          "mpsY": 100320,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48672,
+          "mpsY": 100032,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55904,
+          "mpsY": 100928,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 169,
+      "npcCode": "npc-169",
+      "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+      "entityKind": "DialogNpc",
+      "level": 96,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 47872,
+          "mpsY": 92736,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49280,
+          "mpsY": 92992,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55360,
+          "mpsY": 93280,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44320,
+          "mpsY": 95872,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50336,
+          "mpsY": 96192,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52096,
+          "mpsY": 96192,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58688,
+          "mpsY": 97216,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43808,
+          "mpsY": 97568,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49216,
+          "mpsY": 98080,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50432,
+          "mpsY": 97472,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51872,
+          "mpsY": 98784,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58432,
+          "mpsY": 101888,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57888,
+          "mpsY": 102816,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56960,
+          "mpsY": 103456,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 169,
+      "npcCode": "npc-169",
+      "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+      "entityKind": "DialogNpc",
+      "level": 95,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48320,
+          "mpsY": 92320,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56352,
+          "mpsY": 94176,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49440,
+          "mpsY": 94848,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51936,
+          "mpsY": 96128,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59072,
+          "mpsY": 98016,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51264,
+          "mpsY": 99104,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53632,
+          "mpsY": 98752,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57600,
+          "mpsY": 98464,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50304,
+          "mpsY": 99968,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53056,
+          "mpsY": 100160,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50784,
+          "mpsY": 100800,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57120,
+          "mpsY": 100608,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54976,
+          "mpsY": 101984,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59040,
+          "mpsY": 102048,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51584,
+          "mpsY": 103040,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51328,
+          "mpsY": 105280,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52768,
+          "mpsY": 104768,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 149,
+      "npcCode": "npc-149",
+      "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 99,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48384,
+          "mpsY": 92608,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49120,
+          "mpsY": 93024,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54912,
+          "mpsY": 92320,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55680,
+          "mpsY": 95168,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57504,
+          "mpsY": 96160,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54560,
+          "mpsY": 100640,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50944,
+          "mpsY": 102464,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "npc-159",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 93,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48736,
+          "mpsY": 92704,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49280,
+          "mpsY": 92288,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47904,
+          "mpsY": 95808,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58016,
+          "mpsY": 96576,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58528,
+          "mpsY": 96480,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52320,
+          "mpsY": 98208,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58048,
+          "mpsY": 99648,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59584,
+          "mpsY": 101696,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59552,
+          "mpsY": 101376,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51040,
+          "mpsY": 102848,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53280,
+          "mpsY": 102656,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55872,
+          "mpsY": 103904,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "npc-159",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 93,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49504,
+          "mpsY": 92224,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46720,
+          "mpsY": 93312,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54880,
+          "mpsY": 93472,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50912,
+          "mpsY": 94208,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45120,
+          "mpsY": 96032,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43584,
+          "mpsY": 96352,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54560,
+          "mpsY": 96832,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46080,
+          "mpsY": 97952,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 60000,
+          "mpsY": 100288,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57664,
+          "mpsY": 100608,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55296,
+          "mpsY": 102656,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 149,
+      "npcCode": "npc-149",
+      "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 97,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49376,
+          "mpsY": 92832,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49856,
+          "mpsY": 97056,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51296,
+          "mpsY": 96352,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47776,
+          "mpsY": 98752,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55136,
+          "mpsY": 98528,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57536,
+          "mpsY": 99616,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55776,
+          "mpsY": 103712,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 169,
+      "npcCode": "npc-169",
+      "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+      "entityKind": "DialogNpc",
+      "level": 95,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49760,
+          "mpsY": 92832,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56096,
+          "mpsY": 93856,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53504,
+          "mpsY": 95136,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56896,
+          "mpsY": 94496,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53728,
+          "mpsY": 98944,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53920,
+          "mpsY": 99360,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 60160,
+          "mpsY": 100768,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50976,
+          "mpsY": 102624,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "npc-159",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 91,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50112,
+          "mpsY": 92960,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52160,
+          "mpsY": 94112,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45056,
+          "mpsY": 95456,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53984,
+          "mpsY": 96800,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47360,
+          "mpsY": 97952,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52896,
+          "mpsY": 99552,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53312,
+          "mpsY": 99840,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57632,
+          "mpsY": 100256,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50912,
+          "mpsY": 102784,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55392,
+          "mpsY": 103200,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57536,
+          "mpsY": 103040,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 169,
+      "npcCode": "npc-169",
+      "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+      "entityKind": "DialogNpc",
+      "level": 94,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 54656,
+          "mpsY": 92640,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44256,
+          "mpsY": 95712,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54624,
+          "mpsY": 97184,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48544,
+          "mpsY": 98912,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55328,
+          "mpsY": 98368,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53536,
+          "mpsY": 99840,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53600,
+          "mpsY": 102144,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52512,
+          "mpsY": 105472,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "npc-159",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 92,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50048,
+          "mpsY": 93216,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55040,
+          "mpsY": 93312,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46048,
+          "mpsY": 94368,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46976,
+          "mpsY": 95168,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49696,
+          "mpsY": 94976,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49920,
+          "mpsY": 95200,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58944,
+          "mpsY": 97344,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48480,
+          "mpsY": 99520,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51328,
+          "mpsY": 103104,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 149,
+      "npcCode": "npc-149",
+      "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 99,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50496,
+          "mpsY": 93696,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53504,
+          "mpsY": 94400,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "npc-159",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 92,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52064,
+          "mpsY": 93888,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46272,
+          "mpsY": 97600,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46944,
+          "mpsY": 98176,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59648,
+          "mpsY": 99360,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51904,
+          "mpsY": 105472,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "npc-159",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 93,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52352,
+          "mpsY": 93376,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46784,
+          "mpsY": 95392,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51168,
+          "mpsY": 95680,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57632,
+          "mpsY": 95648,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52672,
+          "mpsY": 97312,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43936,
+          "mpsY": 98304,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51872,
+          "mpsY": 100320,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 60064,
+          "mpsY": 99616,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53056,
+          "mpsY": 101024,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53984,
+          "mpsY": 103136,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 169,
+      "npcCode": "npc-169",
+      "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+      "entityKind": "DialogNpc",
+      "level": 96,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 55712,
+          "mpsY": 93792,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45984,
+          "mpsY": 95200,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55424,
+          "mpsY": 95264,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50304,
+          "mpsY": 96512,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54912,
+          "mpsY": 96384,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54144,
+          "mpsY": 97408,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54560,
+          "mpsY": 97888,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51712,
+          "mpsY": 100384,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56480,
+          "mpsY": 101152,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "npc-159",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 91,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49056,
+          "mpsY": 95168,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45024,
+          "mpsY": 96192,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55232,
+          "mpsY": 95808,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57440,
+          "mpsY": 95424,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": true
+        },
+        {
+          "mpsX": 43744,
+          "mpsY": 97376,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47168,
+          "mpsY": 98240,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48960,
+          "mpsY": 98208,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50752,
+          "mpsY": 100576,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52704,
+          "mpsY": 100608,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 149,
+      "npcCode": "npc-149",
+      "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 98,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52032,
+          "mpsY": 94688,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44928,
+          "mpsY": 95584,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58816,
+          "mpsY": 97440,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45536,
+          "mpsY": 98592,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50848,
+          "mpsY": 99008,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 149,
+      "npcCode": "npc-149",
+      "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 99,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52448,
+          "mpsY": 94592,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59136,
+          "mpsY": 97728,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52608,
+          "mpsY": 102304,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57248,
+          "mpsY": 103456,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 169,
+      "npcCode": "npc-169",
+      "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+      "entityKind": "DialogNpc",
+      "level": 94,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 53696,
+          "mpsY": 94208,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54592,
+          "mpsY": 96000,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55584,
+          "mpsY": 95552,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55008,
+          "mpsY": 97760,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48480,
+          "mpsY": 98560,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59104,
+          "mpsY": 98336,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47744,
+          "mpsY": 99360,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50496,
+          "mpsY": 99520,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57376,
+          "mpsY": 103168,
+          "dirIndex": 0,
+          "nameOverride": "Th\u00FAy Y\u00CAn m\u00D4n Xu\u00C2n H\u01AF\u01A0ng b\u00E0 b\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 149,
+      "npcCode": "npc-149",
+      "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 98,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 47648,
+          "mpsY": 95648,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57856,
+          "mpsY": 96256,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48896,
+          "mpsY": 98592,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55968,
+          "mpsY": 99840,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 149,
+      "npcCode": "npc-149",
+      "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 98,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50016,
+          "mpsY": 95328,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50592,
+          "mpsY": 96896,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48992,
+          "mpsY": 100960,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59648,
+          "mpsY": 100864,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50496,
+          "mpsY": 102624,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 149,
+      "npcCode": "npc-149",
+      "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 97,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 43616,
+          "mpsY": 96512,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46528,
+          "mpsY": 98112,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52736,
+          "mpsY": 97664,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59008,
+          "mpsY": 101216,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53408,
+          "mpsY": 104160,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 149,
+      "npcCode": "npc-149",
+      "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 99,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49984,
+          "mpsY": 96928,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55264,
+          "mpsY": 96320,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58176,
+          "mpsY": 96256,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48000,
+          "mpsY": 98880,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50400,
+          "mpsY": 100160,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53248,
+          "mpsY": 101856,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 149,
+      "npcCode": "npc-149",
+      "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 98,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 59712,
+          "mpsY": 98912,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54400,
+          "mpsY": 100224,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    }
+  ]
+}

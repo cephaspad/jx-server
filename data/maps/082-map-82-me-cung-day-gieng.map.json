@@ -1,0 +1,3806 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 82,
+  "code": "map-82-me-cung-day-gieng",
+  "name": "M\u00CA cung \u0111\u00E1y gi\u1EBFng",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 80,
+    "topRegionY": 90,
+    "rightRegionX": 115,
+    "bottomRegionY": 109
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": [
+    {
+      "npcTemplateId": 41,
+      "npcCode": "npc-41",
+      "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+      "entityKind": "Monster",
+      "level": 12,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49602,
+          "mpsY": 93982,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48393,
+          "mpsY": 95085,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51271,
+          "mpsY": 94626,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48416,
+          "mpsY": 95808,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50828,
+          "mpsY": 95999,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46848,
+          "mpsY": 96534,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53355,
+          "mpsY": 96996,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45751,
+          "mpsY": 97646,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47795,
+          "mpsY": 98040,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48137,
+          "mpsY": 98067,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50540,
+          "mpsY": 97865,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45198,
+          "mpsY": 98825,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49760,
+          "mpsY": 98624,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55118,
+          "mpsY": 98568,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46438,
+          "mpsY": 99788,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47425,
+          "mpsY": 99360,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45451,
+          "mpsY": 100859,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47569,
+          "mpsY": 100872,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44645,
+          "mpsY": 101745,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45868,
+          "mpsY": 103161,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54711,
+          "mpsY": 103386,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46626,
+          "mpsY": 103902,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51962,
+          "mpsY": 104047,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44924,
+          "mpsY": 104826,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50954,
+          "mpsY": 104950,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54848,
+          "mpsY": 104896,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52287,
+          "mpsY": 106049,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54222,
+          "mpsY": 105818,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49568,
+          "mpsY": 106880,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50015,
+          "mpsY": 107060,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49973,
+          "mpsY": 107482,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50061,
+          "mpsY": 106616,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52312,
+          "mpsY": 109431,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51953,
+          "mpsY": 109738,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 18,
+      "npcCode": "npc-18",
+      "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+      "entityKind": "Monster",
+      "level": 19,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49551,
+          "mpsY": 94132,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50443,
+          "mpsY": 93285,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50823,
+          "mpsY": 93652,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47615,
+          "mpsY": 96026,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50714,
+          "mpsY": 95393,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53504,
+          "mpsY": 96384,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46196,
+          "mpsY": 97317,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51656,
+          "mpsY": 99266,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50613,
+          "mpsY": 100308,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54016,
+          "mpsY": 99334,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41744,
+          "mpsY": 101658,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55313,
+          "mpsY": 101608,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58069,
+          "mpsY": 101475,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44768,
+          "mpsY": 105024,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47396,
+          "mpsY": 104498,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53663,
+          "mpsY": 104571,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47100,
+          "mpsY": 107145,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50652,
+          "mpsY": 110572,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 41,
+      "npcCode": "npc-41",
+      "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+      "entityKind": "Monster",
+      "level": 11,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49696,
+          "mpsY": 93600,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50357,
+          "mpsY": 93798,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50784,
+          "mpsY": 93984,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49120,
+          "mpsY": 94912,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51712,
+          "mpsY": 94784,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51881,
+          "mpsY": 94392,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52828,
+          "mpsY": 95824,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47430,
+          "mpsY": 96829,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51450,
+          "mpsY": 97193,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52023,
+          "mpsY": 96422,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45360,
+          "mpsY": 98058,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46376,
+          "mpsY": 97859,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48603,
+          "mpsY": 97445,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54145,
+          "mpsY": 97617,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54822,
+          "mpsY": 98250,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45036,
+          "mpsY": 98426,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50108,
+          "mpsY": 98606,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45808,
+          "mpsY": 100005,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48668,
+          "mpsY": 100171,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49454,
+          "mpsY": 99577,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49228,
+          "mpsY": 99371,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51227,
+          "mpsY": 99422,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54503,
+          "mpsY": 99961,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54688,
+          "mpsY": 100285,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45875,
+          "mpsY": 100827,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47916,
+          "mpsY": 100860,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49529,
+          "mpsY": 101148,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57291,
+          "mpsY": 100988,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57760,
+          "mpsY": 101152,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47458,
+          "mpsY": 101458,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55241,
+          "mpsY": 101853,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58227,
+          "mpsY": 101382,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45866,
+          "mpsY": 102489,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48442,
+          "mpsY": 102426,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49297,
+          "mpsY": 103132,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53164,
+          "mpsY": 102844,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56881,
+          "mpsY": 102740,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44208,
+          "mpsY": 104273,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55795,
+          "mpsY": 103703,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45241,
+          "mpsY": 105156,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54163,
+          "mpsY": 105438,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54484,
+          "mpsY": 105648,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47194,
+          "mpsY": 107442,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50239,
+          "mpsY": 106825,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50176,
+          "mpsY": 107648,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53313,
+          "mpsY": 108375,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48384,
+          "mpsY": 108544,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48800,
+          "mpsY": 109024,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49297,
+          "mpsY": 109276,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49767,
+          "mpsY": 109657,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51579,
+          "mpsY": 110058,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 21,
+      "npcCode": "npc-21",
+      "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+      "entityKind": "Monster",
+      "level": 17,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50275,
+          "mpsY": 93406,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51108,
+          "mpsY": 94666,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50500,
+          "mpsY": 95997,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45484,
+          "mpsY": 97967,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48685,
+          "mpsY": 97600,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54208,
+          "mpsY": 97376,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54688,
+          "mpsY": 98400,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55708,
+          "mpsY": 99075,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44688,
+          "mpsY": 99348,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52160,
+          "mpsY": 99584,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52422,
+          "mpsY": 99697,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53770,
+          "mpsY": 99963,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45800,
+          "mpsY": 101025,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50123,
+          "mpsY": 101170,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55032,
+          "mpsY": 101205,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49972,
+          "mpsY": 101393,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50271,
+          "mpsY": 101903,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46354,
+          "mpsY": 102900,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49105,
+          "mpsY": 102987,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51097,
+          "mpsY": 102725,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56160,
+          "mpsY": 103328,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43765,
+          "mpsY": 103968,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46798,
+          "mpsY": 103803,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47781,
+          "mpsY": 104309,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54393,
+          "mpsY": 103733,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48463,
+          "mpsY": 105303,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55122,
+          "mpsY": 104494,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50720,
+          "mpsY": 107136,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47870,
+          "mpsY": 108062,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52460,
+          "mpsY": 109157,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 21,
+      "npcCode": "npc-21",
+      "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+      "entityKind": "Monster",
+      "level": 13,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50779,
+          "mpsY": 93345,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51092,
+          "mpsY": 93857,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51915,
+          "mpsY": 94715,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47858,
+          "mpsY": 95817,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49506,
+          "mpsY": 96604,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49248,
+          "mpsY": 99104,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56224,
+          "mpsY": 99168,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46778,
+          "mpsY": 99993,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52630,
+          "mpsY": 99497,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47640,
+          "mpsY": 101086,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57248,
+          "mpsY": 100896,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42016,
+          "mpsY": 102016,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44449,
+          "mpsY": 101862,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57599,
+          "mpsY": 102069,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54764,
+          "mpsY": 103196,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53472,
+          "mpsY": 104640,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54144,
+          "mpsY": 105600,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55215,
+          "mpsY": 106353,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49664,
+          "mpsY": 109669,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 41,
+      "npcCode": "npc-41",
+      "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+      "entityKind": "Monster",
+      "level": 13,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50955,
+          "mpsY": 93942,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51212,
+          "mpsY": 95176,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51499,
+          "mpsY": 94363,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47680,
+          "mpsY": 95744,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49767,
+          "mpsY": 96479,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52863,
+          "mpsY": 96311,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53782,
+          "mpsY": 96740,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45943,
+          "mpsY": 98197,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48928,
+          "mpsY": 97728,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51508,
+          "mpsY": 97494,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50016,
+          "mpsY": 98368,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52351,
+          "mpsY": 98762,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52259,
+          "mpsY": 99199,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53239,
+          "mpsY": 99229,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44537,
+          "mpsY": 99538,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50656,
+          "mpsY": 100032,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56224,
+          "mpsY": 99904,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57052,
+          "mpsY": 99993,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57156,
+          "mpsY": 100338,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43069,
+          "mpsY": 100360,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44950,
+          "mpsY": 100908,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48478,
+          "mpsY": 100543,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49440,
+          "mpsY": 101216,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54935,
+          "mpsY": 100946,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55628,
+          "mpsY": 101154,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57391,
+          "mpsY": 100533,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41919,
+          "mpsY": 102134,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42360,
+          "mpsY": 102329,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44708,
+          "mpsY": 102117,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45056,
+          "mpsY": 101728,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45376,
+          "mpsY": 101440,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50006,
+          "mpsY": 101584,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50551,
+          "mpsY": 102054,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57122,
+          "mpsY": 102374,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57857,
+          "mpsY": 101649,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43482,
+          "mpsY": 103296,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51373,
+          "mpsY": 102555,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43782,
+          "mpsY": 103729,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47202,
+          "mpsY": 103905,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49469,
+          "mpsY": 103479,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50419,
+          "mpsY": 103970,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54289,
+          "mpsY": 103844,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44939,
+          "mpsY": 105180,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44718,
+          "mpsY": 104902,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55104,
+          "mpsY": 104736,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45232,
+          "mpsY": 105486,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52625,
+          "mpsY": 105678,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54321,
+          "mpsY": 105635,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50939,
+          "mpsY": 107406,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48131,
+          "mpsY": 108183,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50688,
+          "mpsY": 107616,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53969,
+          "mpsY": 107542,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54146,
+          "mpsY": 107712,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53089,
+          "mpsY": 108758,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 21,
+      "npcCode": "npc-21",
+      "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+      "entityKind": "Monster",
+      "level": 16,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49387,
+          "mpsY": 94812,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52563,
+          "mpsY": 95975,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52981,
+          "mpsY": 96481,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54976,
+          "mpsY": 98272,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44916,
+          "mpsY": 98580,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45576,
+          "mpsY": 98459,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46528,
+          "mpsY": 99296,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44263,
+          "mpsY": 99332,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49088,
+          "mpsY": 99840,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54086,
+          "mpsY": 99889,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56704,
+          "mpsY": 100320,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44941,
+          "mpsY": 101951,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45303,
+          "mpsY": 101905,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45824,
+          "mpsY": 102272,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55097,
+          "mpsY": 102035,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46151,
+          "mpsY": 102985,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53760,
+          "mpsY": 104320,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44800,
+          "mpsY": 104640,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48480,
+          "mpsY": 104928,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48240,
+          "mpsY": 105287,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52484,
+          "mpsY": 105597,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46782,
+          "mpsY": 106823,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 21,
+      "npcCode": "npc-21",
+      "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+      "entityKind": "Monster",
+      "level": 15,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49301,
+          "mpsY": 94295,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47283,
+          "mpsY": 96151,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50332,
+          "mpsY": 96024,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47104,
+          "mpsY": 97024,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49553,
+          "mpsY": 96967,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": true
+        },
+        {
+          "mpsX": 50976,
+          "mpsY": 98016,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51247,
+          "mpsY": 97458,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45275,
+          "mpsY": 98529,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47229,
+          "mpsY": 99059,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50253,
+          "mpsY": 98415,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51781,
+          "mpsY": 98903,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46673,
+          "mpsY": 99649,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50854,
+          "mpsY": 99880,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50795,
+          "mpsY": 100198,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42092,
+          "mpsY": 101355,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58066,
+          "mpsY": 100878,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42239,
+          "mpsY": 102329,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44672,
+          "mpsY": 101400,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50489,
+          "mpsY": 101895,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44911,
+          "mpsY": 102419,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45504,
+          "mpsY": 103008,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": true
+        },
+        {
+          "mpsX": 52771,
+          "mpsY": 102887,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54946,
+          "mpsY": 103214,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57127,
+          "mpsY": 102646,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": true
+        },
+        {
+          "mpsX": 43934,
+          "mpsY": 103903,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55712,
+          "mpsY": 104000,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44905,
+          "mpsY": 104977,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54304,
+          "mpsY": 105376,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45314,
+          "mpsY": 105478,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46294,
+          "mpsY": 106160,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52100,
+          "mpsY": 106076,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54353,
+          "mpsY": 105841,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49870,
+          "mpsY": 107250,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50467,
+          "mpsY": 107305,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51323,
+          "mpsY": 107005,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51406,
+          "mpsY": 106700,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54886,
+          "mpsY": 106708,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48366,
+          "mpsY": 108157,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48324,
+          "mpsY": 108526,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50377,
+          "mpsY": 107671,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51702,
+          "mpsY": 109989,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 41,
+      "npcCode": "npc-41",
+      "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+      "entityKind": "Monster",
+      "level": 14,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49490,
+          "mpsY": 94345,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47928,
+          "mpsY": 96052,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46894,
+          "mpsY": 97042,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49984,
+          "mpsY": 96800,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46261,
+          "mpsY": 97297,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48800,
+          "mpsY": 97280,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54610,
+          "mpsY": 97560,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44373,
+          "mpsY": 99156,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46801,
+          "mpsY": 99106,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48317,
+          "mpsY": 98455,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53696,
+          "mpsY": 98848,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55456,
+          "mpsY": 99072,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55666,
+          "mpsY": 98689,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48608,
+          "mpsY": 99744,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51197,
+          "mpsY": 100018,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52552,
+          "mpsY": 99536,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55786,
+          "mpsY": 99483,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42231,
+          "mpsY": 101345,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42616,
+          "mpsY": 100835,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42859,
+          "mpsY": 101315,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43460,
+          "mpsY": 100632,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47799,
+          "mpsY": 101056,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49870,
+          "mpsY": 101318,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50018,
+          "mpsY": 101079,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50640,
+          "mpsY": 100590,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55437,
+          "mpsY": 100703,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57142,
+          "mpsY": 100844,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41965,
+          "mpsY": 101689,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42336,
+          "mpsY": 101664,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47940,
+          "mpsY": 101616,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50985,
+          "mpsY": 101701,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51336,
+          "mpsY": 101528,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43271,
+          "mpsY": 103421,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46307,
+          "mpsY": 103171,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54600,
+          "mpsY": 102875,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54623,
+          "mpsY": 102467,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43872,
+          "mpsY": 104096,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47340,
+          "mpsY": 104172,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56223,
+          "mpsY": 103583,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48344,
+          "mpsY": 105132,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51207,
+          "mpsY": 104569,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53351,
+          "mpsY": 104842,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55328,
+          "mpsY": 104448,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48259,
+          "mpsY": 105514,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49593,
+          "mpsY": 106159,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55048,
+          "mpsY": 106002,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46399,
+          "mpsY": 106573,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46680,
+          "mpsY": 106682,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47264,
+          "mpsY": 107136,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50592,
+          "mpsY": 107452,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50992,
+          "mpsY": 107107,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54594,
+          "mpsY": 107240,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54994,
+          "mpsY": 106510,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48924,
+          "mpsY": 109235,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50213,
+          "mpsY": 110064,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51667,
+          "mpsY": 110176,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 21,
+      "npcCode": "npc-21",
+      "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+      "entityKind": "Monster",
+      "level": 14,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49888,
+          "mpsY": 94272,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47812,
+          "mpsY": 96222,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46697,
+          "mpsY": 96919,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51609,
+          "mpsY": 97123,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53626,
+          "mpsY": 97133,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46233,
+          "mpsY": 97622,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52187,
+          "mpsY": 98927,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48550,
+          "mpsY": 100213,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43320,
+          "mpsY": 100810,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43584,
+          "mpsY": 100512,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45482,
+          "mpsY": 100509,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49708,
+          "mpsY": 101146,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55383,
+          "mpsY": 101087,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41657,
+          "mpsY": 101801,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42569,
+          "mpsY": 101537,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47708,
+          "mpsY": 101464,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55378,
+          "mpsY": 101437,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49374,
+          "mpsY": 102892,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54498,
+          "mpsY": 102684,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47196,
+          "mpsY": 104357,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52374,
+          "mpsY": 103611,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50432,
+          "mpsY": 104512,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51040,
+          "mpsY": 104512,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52783,
+          "mpsY": 105510,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54443,
+          "mpsY": 107159,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52986,
+          "mpsY": 108563,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51328,
+          "mpsY": 110208,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50689,
+          "mpsY": 110835,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 18,
+      "npcCode": "npc-18",
+      "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+      "entityKind": "Monster",
+      "level": 18,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51822,
+          "mpsY": 94625,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51334,
+          "mpsY": 95383,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52922,
+          "mpsY": 96014,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46956,
+          "mpsY": 96647,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48374,
+          "mpsY": 97888,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51060,
+          "mpsY": 97492,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54356,
+          "mpsY": 97744,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53116,
+          "mpsY": 98967,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48324,
+          "mpsY": 100309,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52736,
+          "mpsY": 99430,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56996,
+          "mpsY": 100201,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42866,
+          "mpsY": 100929,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43369,
+          "mpsY": 100421,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54894,
+          "mpsY": 100689,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55624,
+          "mpsY": 101318,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55352,
+          "mpsY": 100978,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44535,
+          "mpsY": 101901,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45166,
+          "mpsY": 102330,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49738,
+          "mpsY": 101461,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48355,
+          "mpsY": 105612,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50048,
+          "mpsY": 107304,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50771,
+          "mpsY": 107470,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54272,
+          "mpsY": 107424,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55136,
+          "mpsY": 106632,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53179,
+          "mpsY": 108528,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51298,
+          "mpsY": 110445,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 41,
+      "npcCode": "npc-41",
+      "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+      "entityKind": "Monster",
+      "level": 10,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48608,
+          "mpsY": 95584,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50298,
+          "mpsY": 95639,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52960,
+          "mpsY": 95776,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49444,
+          "mpsY": 96791,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50318,
+          "mpsY": 96363,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45984,
+          "mpsY": 97600,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50496,
+          "mpsY": 98496,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52949,
+          "mpsY": 98975,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53146,
+          "mpsY": 98561,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56056,
+          "mpsY": 99245,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44357,
+          "mpsY": 99843,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51645,
+          "mpsY": 99572,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54111,
+          "mpsY": 100240,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45679,
+          "mpsY": 100812,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50181,
+          "mpsY": 100517,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42141,
+          "mpsY": 101881,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42272,
+          "mpsY": 102528,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45303,
+          "mpsY": 102845,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52014,
+          "mpsY": 103489,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48700,
+          "mpsY": 105234,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53804,
+          "mpsY": 104525,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51694,
+          "mpsY": 106657,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54345,
+          "mpsY": 107191,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52536,
+          "mpsY": 109034,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50291,
+          "mpsY": 110477,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50504,
+          "mpsY": 110572,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50854,
+          "mpsY": 110782,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 18,
+      "npcCode": "npc-18",
+      "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+      "entityKind": "Monster",
+      "level": 19,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48557,
+          "mpsY": 95280,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5357\u533A\\\u6B66\u5F53\u6D3E\\\u4E95\u5E95\u8FF7\u5BAB\\npc\\wdenemy01\\wdenemy01.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 18,
+      "npcCode": "npc-18",
+      "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+      "entityKind": "Monster",
+      "level": 17,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52670,
+          "mpsY": 96124,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55208,
+          "mpsY": 98085,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55918,
+          "mpsY": 99329,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47420,
+          "mpsY": 101253,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44763,
+          "mpsY": 101504,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55237,
+          "mpsY": 101447,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54211,
+          "mpsY": 104020,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48735,
+          "mpsY": 105369,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 41,
+      "npcCode": "npc-41",
+      "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+      "entityKind": "Monster",
+      "level": 19,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52437,
+          "mpsY": 96488,
+          "dirIndex": 0,
+          "nameOverride": "H\u01AF\u01A0u \u0110\u1ED1m",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5357\u533A\\\u6B66\u5F53\u6D3E\\\u4E95\u5E95\u8FF7\u5BAB\\npc\\wdenemy01\\wdenemy01.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 18,
+      "npcCode": "npc-18",
+      "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+      "entityKind": "Monster",
+      "level": 20,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 47404,
+          "mpsY": 98918,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5357\u533A\\\u6B66\u5F53\u6D3E\\\u4E95\u5E95\u8FF7\u5BAB\\npc\\wdenemy01\\wdenemy01.lua",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50017,
+          "mpsY": 98768,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52460,
+          "mpsY": 99066,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43393,
+          "mpsY": 100020,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44424,
+          "mpsY": 99344,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49852,
+          "mpsY": 100987,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42087,
+          "mpsY": 101668,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50131,
+          "mpsY": 101588,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45959,
+          "mpsY": 103321,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56059,
+          "mpsY": 103605,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49858,
+          "mpsY": 110056,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50390,
+          "mpsY": 110616,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 18,
+      "npcCode": "npc-18",
+      "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+      "entityKind": "Monster",
+      "level": 16,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 53962,
+          "mpsY": 99721,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50392,
+          "mpsY": 100471,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57472,
+          "mpsY": 101152,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41811,
+          "mpsY": 101931,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51665,
+          "mpsY": 102005,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50176,
+          "mpsY": 104224,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52345,
+          "mpsY": 105807,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EB1n l\u1EB1n \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 21,
+      "npcCode": "npc-21",
+      "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+      "entityKind": "Monster",
+      "level": 20,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 55782,
+          "mpsY": 101183,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5357\u533A\\\u6B66\u5F53\u6D3E\\\u4E95\u5E95\u8FF7\u5BAB\\npc\\wdenemy01\\wdenemy01.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 21,
+      "npcCode": "npc-21",
+      "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+      "entityKind": "Monster",
+      "level": 19,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49617,
+          "mpsY": 106515,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5357\u533A\\\u6B66\u5F53\u6D3E\\\u4E95\u5E95\u8FF7\u5BAB\\npc\\wdenemy01\\wdenemy01.lua",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49240,
+          "mpsY": 109094,
+          "dirIndex": 0,
+          "nameOverride": "Kim Ho\u00E0n M\u00E3ng X\u00E0",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5357\u533A\\\u6B66\u5F53\u6D3E\\\u4E95\u5E95\u8FF7\u5BAB\\npc\\wdenemy01\\wdenemy01.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    }
+  ]
+}

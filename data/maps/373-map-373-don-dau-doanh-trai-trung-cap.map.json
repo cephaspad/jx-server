@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 373,
+  "code": "map-373-don-dau-doanh-trai-trung-cap",
+  "name": "\u0111\u01A0n \u0110\u1EA5u Doanh tr\u1EA1i (Trung c\u1EA5p)",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 97,
+    "topRegionY": 97,
+    "rightRegionX": 101,
+    "bottomRegionY": 101
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": []
+}

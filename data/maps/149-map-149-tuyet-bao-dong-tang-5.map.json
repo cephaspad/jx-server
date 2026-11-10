@@ -1,0 +1,386 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 149,
+  "code": "map-149-tuyet-bao-dong-tang-5",
+  "name": "Tuy\u1EBFt B\u00E1o \u0110\u1ED9ng t\u1EA7ng 5",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 97,
+    "topRegionY": 98,
+    "rightRegionX": 101,
+    "bottomRegionY": 101
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": [
+    {
+      "npcTemplateId": 145,
+      "npcCode": "npc-145",
+      "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 78,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50429,
+          "mpsY": 102289,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51491,
+          "mpsY": 102460,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 154,
+      "npcCode": "npc-154",
+      "nameOverride": "Hoa Nam s\u01A0n  t\u1EB7c 1",
+      "entityKind": "Monster",
+      "level": 71,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50574,
+          "mpsY": 102280,
+          "dirIndex": 0,
+          "nameOverride": "Hoa Nam s\u01A0n  t\u1EB7c 1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 160,
+      "npcCode": "npc-160",
+      "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 1",
+      "entityKind": "Monster",
+      "level": 74,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50914,
+          "mpsY": 102072,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 160,
+      "npcCode": "npc-160",
+      "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 1",
+      "entityKind": "Monster",
+      "level": 76,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51088,
+          "mpsY": 102118,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 160,
+      "npcCode": "npc-160",
+      "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 1",
+      "entityKind": "Monster",
+      "level": 76,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51407,
+          "mpsY": 102261,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 154,
+      "npcCode": "npc-154",
+      "nameOverride": "Hoa Nam s\u01A0n  t\u1EB7c 1",
+      "entityKind": "Monster",
+      "level": 73,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50358,
+          "mpsY": 102514,
+          "dirIndex": 0,
+          "nameOverride": "Hoa Nam s\u01A0n  t\u1EB7c 1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51408,
+          "mpsY": 103831,
+          "dirIndex": 0,
+          "nameOverride": "Hoa Nam s\u01A0n  t\u1EB7c 1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 160,
+      "npcCode": "npc-160",
+      "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 1",
+      "entityKind": "Monster",
+      "level": 76,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50587,
+          "mpsY": 102874,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51146,
+          "mpsY": 103480,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 154,
+      "npcCode": "npc-154",
+      "nameOverride": "Hoa Nam s\u01A0n  t\u1EB7c 1",
+      "entityKind": "Monster",
+      "level": 73,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50718,
+          "mpsY": 103055,
+          "dirIndex": 0,
+          "nameOverride": "Hoa Nam s\u01A0n  t\u1EB7c 1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 154,
+      "npcCode": "npc-154",
+      "nameOverride": "Hoa Nam s\u01A0n  t\u1EB7c 1",
+      "entityKind": "Monster",
+      "level": 73,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50997,
+          "mpsY": 103326,
+          "dirIndex": 0,
+          "nameOverride": "Hoa Nam s\u01A0n  t\u1EB7c 1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 160,
+      "npcCode": "npc-160",
+      "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 1",
+      "entityKind": "Monster",
+      "level": 76,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51131,
+          "mpsY": 102769,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 145,
+      "npcCode": "npc-145",
+      "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 77,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51162,
+          "mpsY": 102545,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 160,
+      "npcCode": "npc-160",
+      "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 1",
+      "entityKind": "Monster",
+      "level": 75,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50970,
+          "mpsY": 102665,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 145,
+      "npcCode": "npc-145",
+      "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 78,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51308,
+          "mpsY": 102772,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 154,
+      "npcCode": "npc-154",
+      "nameOverride": "Hoa Nam s\u01A0n  t\u1EB7c 1",
+      "entityKind": "Monster",
+      "level": 71,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51872,
+          "mpsY": 103040,
+          "dirIndex": 0,
+          "nameOverride": "Hoa Nam s\u01A0n  t\u1EB7c 1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 145,
+      "npcCode": "npc-145",
+      "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 79,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51495,
+          "mpsY": 103857,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    }
+  ]
+}

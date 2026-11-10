@@ -1,0 +1,244 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jxserver.local/schemas/map.schema.json",
+  "title": "JXData Standard v1 - Unified Map Document",
+  "type": "object",
+  "required": ["schemaVersion", "id", "code", "name", "regionBounds", "regions", "portals", "spawnGroups"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "type": "string", "const": "1.0.0" },
+    "id": { "type": "integer", "minimum": 1 },
+    "code": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "mapType": {
+      "type": "string",
+      "enum": ["City", "Capital", "Field", "Cave", "Battle", "Mission", "Prison", "Other"],
+      "default": "Field"
+    },
+    "worldMapPos": {
+      "type": "object",
+      "required": ["x", "y"],
+      "properties": {
+        "x": { "type": "integer" },
+        "y": { "type": "integer" }
+      },
+      "additionalProperties": false
+    },
+    "mapRules": {
+      "type": "object",
+      "properties": {
+        "defaultFightMode": { "type": "integer", "enum": [0, 1] },
+        "allowPk": { "type": "boolean", "default": true },
+        "allowTownPortal": { "type": "boolean", "default": true },
+        "allowRecall": { "type": "boolean", "default": true },
+        "forbidHeartTeleport": { "type": "boolean", "default": false },
+        "forbiddenSkillIds": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 1 }
+        },
+        "forbiddenItemCodes": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "expMultiplierPercent": { "type": "integer", "minimum": 0, "default": 100 },
+        "normalLootTableCode": { "type": "string" },
+        "goldenLootTableCode": { "type": "string" },
+        "autoGoldenNpcRate": { "type": "integer", "minimum": 0, "default": 0 },
+        "goldenType": { "type": "integer", "minimum": 0, "default": 0 },
+        "npcAutoLevel": {
+          "type": "object",
+          "required": ["enabled", "minLevel", "maxLevel"],
+          "properties": {
+            "enabled": { "type": "boolean" },
+            "minLevel": { "type": "integer", "minimum": 1 },
+            "maxLevel": { "type": "integer", "minimum": 1 }
+          },
+          "additionalProperties": false
+        },
+        "npcAutoSeries": {
+          "type": "object",
+          "required": ["enabled"],
+          "properties": {
+            "enabled": { "type": "boolean" },
+            "metalWeight": { "type": "integer", "minimum": 0, "default": 20 },
+            "woodWeight": { "type": "integer", "minimum": 0, "default": 20 },
+            "waterWeight": { "type": "integer", "minimum": 0, "default": 20 },
+            "fireWeight": { "type": "integer", "minimum": 0, "default": 20 },
+            "earthWeight": { "type": "integer", "minimum": 0, "default": 20 }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "regionBounds": {
+      "type": "object",
+      "required": ["leftRegionX", "topRegionY", "rightRegionX", "bottomRegionY"],
+      "properties": {
+        "leftRegionX": { "type": "integer", "minimum": 0 },
+        "topRegionY": { "type": "integer", "minimum": 0 },
+        "rightRegionX": { "type": "integer", "minimum": 0 },
+        "bottomRegionY": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "regions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["regionX", "regionY", "obstacleRleBase64"],
+        "properties": {
+          "regionX": { "type": "integer", "minimum": 0 },
+          "regionY": { "type": "integer", "minimum": 0 },
+          "obstacleRleBase64": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "portals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["trapId", "code", "action", "targetMapId", "targetMpsX", "targetMpsY", "targetFightMode", "triggerCells"],
+        "properties": {
+          "trapId": { "type": "integer", "minimum": 0 },
+          "code": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "scriptPath": { "type": "string" },
+          "action": { "type": "string", "enum": ["toggleFightMode", "teleport", "randomTeleport", "customScript"] },
+          "targetMapId": { "type": "integer", "minimum": 0 },
+          "targetMpsX": { "type": "integer", "minimum": 0 },
+          "targetMpsY": { "type": "integer", "minimum": 0 },
+          "targetFightMode": { "type": "integer", "enum": [0, 1] },
+          "alternateMpsX": { "type": "integer", "minimum": 0, "default": 0 },
+          "alternateMpsY": { "type": "integer", "minimum": 0, "default": 0 },
+          "alternateFightMode": { "type": "integer", "enum": [0, 1], "default": 0 },
+          "dismountHorse": { "type": "boolean", "default": false },
+          "minLevel": { "type": "integer", "minimum": 1, "default": 1 },
+          "maxPkValue": { "type": "integer", "minimum": 0 },
+          "requiredCamp": { "type": "integer", "minimum": 0 },
+          "requiredFactionId": { "type": "integer", "minimum": 0 },
+          "bounceMpsX": { "type": "integer", "minimum": 0, "default": 0 },
+          "bounceMpsY": { "type": "integer", "minimum": 0, "default": 0 },
+          "deniedMessage": { "type": "string" },
+          "randomTargets": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["targetMapId", "targetMpsX", "targetMpsY"],
+              "properties": {
+                "targetMapId": { "type": "integer", "minimum": 1 },
+                "targetMpsX": { "type": "integer", "minimum": 0 },
+                "targetMpsY": { "type": "integer", "minimum": 0 },
+                "targetFightMode": { "type": "integer", "enum": [0, 1], "default": 1 },
+                "weight": { "type": "integer", "minimum": 1, "default": 1 }
+              },
+              "additionalProperties": false
+            }
+          },
+          "triggerCells": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["regionX", "regionY", "cellY", "startCellX", "cellCount"],
+              "properties": {
+                "regionX": { "type": "integer", "minimum": 0 },
+                "regionY": { "type": "integer", "minimum": 0 },
+                "cellY": { "type": "integer", "minimum": 0, "maximum": 31 },
+                "startCellX": { "type": "integer", "minimum": 0, "maximum": 15 },
+                "cellCount": { "type": "integer", "minimum": 1, "maximum": 16 }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "spawnGroups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["npcTemplateId", "npcCode", "level", "series", "camp", "fightMode", "respawnFrames", "spawns"],
+        "properties": {
+          "npcTemplateId": { "type": "integer", "minimum": 0 },
+          "npcCode": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "nameOverride": { "type": "string" },
+          "entityKind": { "type": "string", "enum": ["Monster", "DialogNpc", "Partner"] },
+          "level": { "type": "integer", "minimum": 1 },
+          "series": { "type": "integer", "minimum": -1, "maximum": 4 },
+          "camp": { "type": "integer", "minimum": 0 },
+          "fightMode": { "type": "integer", "enum": [0, 1] },
+          "isSpecialNpc": { "type": "boolean", "default": false },
+          "goldenType": { "type": "integer", "minimum": 0, "default": 0 },
+          "respawnFrames": { "type": "integer", "minimum": 0 },
+          "aiProfile": { "type": "string" },
+          "scriptCode": { "type": "string" },
+          "scriptPath": { "type": "string" },
+          "lootTableCode": { "type": "string" },
+          "spawns": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["mpsX", "mpsY"],
+              "properties": {
+                "mpsX": { "type": "integer", "minimum": 0 },
+                "mpsY": { "type": "integer", "minimum": 0 },
+                "dirIndex": { "type": "integer", "minimum": 0, "maximum": 63, "default": 0 },
+                "nameOverride": { "type": "string" },
+                "scriptCode": { "type": "string" },
+                "scriptPath": { "type": "string" },
+                "isSpecialNpc": { "type": "boolean" }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "mapObjects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["objTemplateId", "mpsX", "mpsY"],
+        "properties": {
+          "objTemplateId": { "type": "integer", "minimum": 1 },
+          "objCode": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "nameOverride": { "type": "string" },
+          "mpsX": { "type": "integer", "minimum": 0 },
+          "mpsY": { "type": "integer", "minimum": 0 },
+          "dirIndex": { "type": "integer", "minimum": 0, "maximum": 63, "default": 0 },
+          "state": { "type": "integer", "minimum": 0, "default": 0 },
+          "scriptPath": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "namedPointGroups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["code", "points"],
+        "properties": {
+          "code": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "description": { "type": "string" },
+          "points": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["mpsX", "mpsY"],
+              "properties": {
+                "mpsX": { "type": "integer", "minimum": 0 },
+                "mpsY": { "type": "integer", "minimum": 0 },
+                "label": { "type": "string" }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

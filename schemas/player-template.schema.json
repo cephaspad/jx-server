@@ -1,0 +1,374 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jxserver.local/schemas/player-template.schema.json",
+  "title": "JXData Standard v1 - Player Progression, Five-Elements, Factions & Starter Villages",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "characterTemplates",
+    "seriesGrowthRules",
+    "fiveElementsMatrix",
+    "levelExpTable",
+    "starterVillages"
+  ],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "type": "string", "const": "1.0.0" },
+    "characterTemplates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "code",
+          "elementSeries",
+          "gender",
+          "baseStrength",
+          "baseDexterity",
+          "baseVitality",
+          "baseEnergy",
+          "initialLifeMax",
+          "initialManaMax",
+          "initialStaminaMax"
+        ],
+        "properties": {
+          "id": { "type": "integer", "minimum": 0, "maximum": 9 },
+          "code": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "elementSeries": { "type": "integer", "minimum": 0, "maximum": 4 },
+          "gender": { "type": "integer", "enum": [0, 1] },
+          "baseStrength": { "type": "integer", "minimum": 0 },
+          "baseDexterity": { "type": "integer", "minimum": 0 },
+          "baseVitality": { "type": "integer", "minimum": 0 },
+          "baseEnergy": { "type": "integer", "minimum": 0 },
+          "baseLucky": { "type": "integer", "minimum": 0, "default": 0 },
+          "initialLifeMax": { "type": "integer", "minimum": 1 },
+          "initialManaMax": { "type": "integer", "minimum": 1 },
+          "initialStaminaMax": { "type": "integer", "minimum": 1 },
+          "starterSkills": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["skillId", "level"],
+              "properties": {
+                "skillId": { "type": "integer", "minimum": 1 },
+                "skillCode": { "type": "string" },
+                "level": { "type": "integer", "minimum": 1 }
+              },
+              "additionalProperties": false
+            }
+          },
+          "starterItems": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["itemCode", "container", "stackCount"],
+              "properties": {
+                "itemCode": { "type": "string" },
+                "container": { "type": "string", "enum": ["equip", "equipRoom", "immediacy"] },
+                "gridX": { "type": "integer", "minimum": 0, "default": 0 },
+                "gridY": { "type": "integer", "minimum": 0, "default": 0 },
+                "stackCount": { "type": "integer", "minimum": 1, "default": 1 }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "seriesGrowthRules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "elementSeries",
+          "code",
+          "lifePerLevel",
+          "manaPerLevel",
+          "staminaMalePerLevel",
+          "staminaFemalePerLevel",
+          "lifePerVitality",
+          "manaPerEnergy",
+          "staminaPerVitality"
+        ],
+        "properties": {
+          "elementSeries": { "type": "integer", "minimum": 0, "maximum": 4 },
+          "code": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "name": { "type": "string" },
+          "lifePerLevel": { "type": "integer" },
+          "manaPerLevel": { "type": "integer" },
+          "staminaMalePerLevel": { "type": "integer" },
+          "staminaFemalePerLevel": { "type": "integer" },
+          "lifePerVitality": { "type": "integer" },
+          "manaPerEnergy": { "type": "integer" },
+          "staminaPerVitality": { "type": "integer" },
+          "leadExpShare": { "type": "integer", "default": 25 },
+          "baseFireResist": { "type": "integer", "default": 0 },
+          "baseColdResist": { "type": "integer", "default": 0 },
+          "basePoisonResist": { "type": "integer", "default": 0 },
+          "baseLightResist": { "type": "integer", "default": 0 },
+          "basePhysicsResist": { "type": "integer", "default": 0 },
+          "staminaMaleBase": { "type": "integer", "default": 180 },
+          "staminaFemaleBase": { "type": "integer", "default": 180 },
+          "attributePointsPerLevel": { "type": "integer", "default": 5 },
+          "skillPointsPerLevel": { "type": "integer", "default": 1 }
+        },
+        "additionalProperties": false
+      }
+    },
+    "fiveElementsMatrix": {
+      "type": "object",
+      "required": ["generates", "conquers", "conqueredDamageBonusPercent", "conqueredDamagePenaltyPercent"],
+      "properties": {
+        "generates": {
+          "type": "array",
+          "minItems": 5,
+          "maxItems": 5,
+          "items": { "type": "integer", "minimum": 0, "maximum": 4 },
+          "description": "Index = source series (0=Metal,1=Wood,2=Water,3=Fire,4=Earth), Value = generated series (Metal->Water->Wood->Fire->Earth->Metal)"
+        },
+        "conquers": {
+          "type": "array",
+          "minItems": 5,
+          "maxItems": 5,
+          "items": { "type": "integer", "minimum": 0, "maximum": 4 },
+          "description": "Index = attacker series, Value = conquered series (Metal->Wood->Earth->Water->Fire->Metal)"
+        },
+        "conqueredDamageBonusPercent": { "type": "integer", "default": 20 },
+        "conqueredDamagePenaltyPercent": { "type": "integer", "default": -20 }
+      },
+      "additionalProperties": false
+    },
+    "levelExpTable": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["level", "expRequired"],
+        "properties": {
+          "level": { "type": "integer", "minimum": 1, "maximum": 255 },
+          "expRequired": { "type": "integer", "minimum": 0 },
+          "leadExpRequired": { "type": "integer", "minimum": 0 }
+        },
+        "additionalProperties": false
+      }
+    },
+    "factions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "code", "name", "elementSeries", "camp"],
+        "properties": {
+          "id": { "type": "integer", "minimum": 0, "maximum": 15 },
+          "code": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "name": { "type": "string", "minLength": 1 },
+          "elementSeries": { "type": "integer", "minimum": 0, "maximum": 4 },
+          "camp": { "type": "integer", "minimum": 1, "maximum": 3 },
+          "allowedGenders": {
+            "type": "array",
+            "items": { "type": "integer", "enum": [0, 1] }
+          },
+          "skillIds": {
+            "type": "array",
+            "items": { "type": "integer", "minimum": 1 }
+          },
+          "titles": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["rankId", "titleName"],
+              "properties": {
+                "rankId": { "type": "integer", "minimum": 1 },
+                "titleName": { "type": "string", "minLength": 1 }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "starterVillages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "code", "name", "mapId", "defaultRevivalPointId", "revivalPoints"],
+        "properties": {
+          "id": { "type": "integer", "minimum": 0 },
+          "code": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "name": { "type": "string", "minLength": 1 },
+          "description": { "type": "string" },
+          "mapId": { "type": "integer", "minimum": 1 },
+          "defaultRevivalPointId": { "type": "integer", "minimum": 0 },
+          "revivalPoints": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["revivalPointId", "mpsX", "mpsY"],
+              "properties": {
+                "revivalPointId": { "type": "integer", "minimum": 0 },
+                "mpsX": { "type": "integer", "minimum": 0 },
+                "mpsY": { "type": "integer", "minimum": 0 }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "pkRules": {
+      "type": "object",
+      "properties": {
+        "switchToPeaceCooldownFrames": { "type": "integer", "minimum": 0, "default": 3240 },
+        "maxPkValue": { "type": "integer", "minimum": 1, "default": 10 },
+        "penaltiesByPkValue": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["pkValue", "expLossPerMil", "moneyDropPerMil", "bagItemDropPerMil", "equipDropPerMil", "durabilityLoss"],
+            "properties": {
+              "pkValue": { "type": "integer", "minimum": 0, "maximum": 10 },
+              "expLossPerMil": { "type": "integer", "minimum": 0 },
+              "maxExpLoss": { "type": "integer", "minimum": 0 },
+              "moneyDropPerMil": { "type": "integer", "minimum": 0 },
+              "bagItemDropPerMil": { "type": "integer", "minimum": 0 },
+              "equipDropPerMil": { "type": "integer", "minimum": 0 },
+              "durabilityLoss": { "type": "integer", "minimum": 0 }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "meridians": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "code", "name", "taskVariableId", "acupoints"],
+        "properties": {
+          "id": { "type": "integer", "minimum": 1, "maximum": 16 },
+          "code": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "name": { "type": "string", "minLength": 1 },
+          "taskVariableId": { "type": "integer", "minimum": 1 },
+              "acupoints": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["level", "name", "successRatePerTenThousand", "fallbackLevel", "magicAffixIds"],
+                  "properties": {
+                    "level": { "type": "integer", "minimum": 1 },
+                    "name": { "type": "string", "minLength": 1 },
+                    "description": { "type": "string" },
+                    "successRatePerTenThousand": { "type": "integer", "minimum": 0, "maximum": 10000 },
+                    "fallbackLevel": { "type": "integer", "minimum": 0 },
+                    "zhenYuanCost": { "type": "integer", "minimum": 0, "default": 0 },
+                    "huMaiDanCost": { "type": "integer", "minimum": 0, "default": 0 },
+                    "magicAffixIds": {
+                      "type": "array",
+                      "items": { "type": "integer", "minimum": 0 }
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "staminaRules": {
+          "type": "object",
+          "properties": {
+            "normalRegenPerTick": { "type": "integer", "minimum": 0, "default": 1 },
+            "exerciseRunDrainPerTick": { "type": "integer", "minimum": 0, "default": 1 },
+            "fightRunDrainPerTick": { "type": "integer", "minimum": 0, "default": 1 },
+            "killRunDrainPerTick": { "type": "integer", "minimum": 0, "default": 18 },
+            "sitRegenPerMil": { "type": "integer", "minimum": 0, "default": 10 }
+          },
+          "additionalProperties": false
+        },
+        "teamResistEffects": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["memberSeries", "grantedResistType", "bonusByTeammateSeries"],
+            "properties": {
+              "memberSeries": { "type": "integer", "minimum": 0, "maximum": 4 },
+              "grantedResistType": {
+                "type": "string",
+                "enum": ["physics", "poison", "fire", "cold", "light"]
+              },
+              "bonusByTeammateSeries": {
+                "type": "array",
+                "minItems": 5,
+                "maxItems": 5,
+                "items": { "type": "integer", "minimum": 0 }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "tongConfig": {
+          "type": "object",
+          "properties": {
+            "levels": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["level", "workshopUpperLevel", "maxWorkshopCount", "weeklyBuildUpper", "upgradeFund"],
+                "properties": {
+                  "level": { "type": "integer", "minimum": 0 },
+                  "workshopUpperLevel": { "type": "integer", "minimum": 1 },
+                  "maxWorkshopCount": { "type": "integer", "minimum": 0 },
+                  "weeklyBuildUpper": { "type": "integer", "minimum": 0 },
+                  "upgradeFund": { "type": "integer", "minimum": 0 },
+                  "upgradeWorkshopCount": { "type": "integer", "minimum": 0, "default": 0 },
+                  "upgradeHiWorkshopCount": { "type": "integer", "minimum": 0, "default": 0 },
+                  "upgradeHiWorkshopLevel": { "type": "integer", "minimum": 0, "default": 0 }
+                },
+                "additionalProperties": false
+              }
+            },
+            "workshops": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["id", "code", "name", "costCoefficient"],
+                "properties": {
+                  "id": { "type": "integer", "minimum": 1 },
+                  "code": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+                  "name": { "type": "string", "minLength": 1 },
+                  "description": { "type": "string" },
+                  "costCoefficient": { "type": "number", "minimum": 0 },
+                  "scriptPath": { "type": "string" }
+                },
+                "additionalProperties": false
+              }
+            },
+            "stunts": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["id", "code", "name", "skillId", "maxMembers", "weeklyMaintenanceCost"],
+                "properties": {
+                  "id": { "type": "integer", "minimum": 1 },
+                  "code": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+                  "name": { "type": "string", "minLength": 1 },
+                  "description": { "type": "string" },
+                  "skillId": { "type": "integer", "minimum": 1 },
+                  "maxMembers": { "type": "integer", "minimum": 1 },
+                  "maxCountPerMember": { "type": "integer", "minimum": 1, "default": 1 },
+                  "cycleWeeks": { "type": "integer", "minimum": 1, "default": 4 },
+                  "weeklyMaintenanceCost": { "type": "integer", "minimum": 0 },
+                  "rightLimit": { "type": "integer", "enum": [1, 2], "default": 2 }
+                },
+                "additionalProperties": false
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }

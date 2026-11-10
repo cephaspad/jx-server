@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 106,
+  "code": "map-106-dai-hung-bao-dien",
+  "name": "\u0111\u1EA1i H\u00F9ng b\u1EA3o \u0110i\u1EC7n",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 97,
+    "topRegionY": 98,
+    "rightRegionX": 101,
+    "bottomRegionY": 101
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": []
+}

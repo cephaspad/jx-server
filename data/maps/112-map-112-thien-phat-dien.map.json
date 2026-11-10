@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 112,
+  "code": "map-112-thien-phat-dien",
+  "name": "Thi\u00CAn Ph\u1EADt \u0110i\u1EC7n",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 98,
+    "topRegionY": 98,
+    "rightRegionX": 101,
+    "bottomRegionY": 100
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": []
+}

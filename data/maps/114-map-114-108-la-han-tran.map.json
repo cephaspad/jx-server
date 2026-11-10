@@ -1,0 +1,2506 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 114,
+  "code": "map-114-108-la-han-tran",
+  "name": "108 La H\u00E1n tr\u1EADn",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 92,
+    "topRegionY": 98,
+    "rightRegionX": 116,
+    "bottomRegionY": 112
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": [
+    {
+      "npcTemplateId": 191,
+      "npcCode": "npc-191",
+      "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+      "entityKind": "Monster",
+      "level": 67,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52480,
+          "mpsY": 101088,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52064,
+          "mpsY": 101408,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48224,
+          "mpsY": 107040,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58464,
+          "mpsY": 106720,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50652,
+          "mpsY": 108252,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56704,
+          "mpsY": 107648,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54048,
+          "mpsY": 109344,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53184,
+          "mpsY": 110784,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52288,
+          "mpsY": 112288,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55008,
+          "mpsY": 112832,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 411,
+      "npcCode": "npc-411",
+      "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+      "entityKind": "Monster",
+      "level": 63,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52736,
+          "mpsY": 101280,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53792,
+          "mpsY": 102176,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53600,
+          "mpsY": 103072,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53728,
+          "mpsY": 104096,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": true
+        },
+        {
+          "mpsX": 54336,
+          "mpsY": 106400,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50880,
+          "mpsY": 107264,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51552,
+          "mpsY": 106848,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53920,
+          "mpsY": 106592,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56832,
+          "mpsY": 106752,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57216,
+          "mpsY": 109568,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 411,
+      "npcCode": "npc-411",
+      "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+      "entityKind": "Monster",
+      "level": 70,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": true,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52865,
+          "mpsY": 100728,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5317\u533A\\\u5C11\u6797\u6D3E\\\u4E00\u767E\u96F6\u516B\u7F57\u6C49\u9635\\npc\\\u6218\u6597_sll60_01.lua",
+          "isSpecialNpc": true
+        },
+        {
+          "mpsX": 58844,
+          "mpsY": 106843,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5317\u533A\\\u5C11\u6797\u6D3E\\\u4E00\u767E\u96F6\u516B\u7F57\u6C49\u9635\\npc\\\u6218\u6597_sll60_01.lua",
+          "isSpecialNpc": true
+        },
+        {
+          "mpsX": 50415,
+          "mpsY": 108374,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5317\u533A\\\u5C11\u6797\u6D3E\\\u4E00\u767E\u96F6\u516B\u7F57\u6C49\u9635\\npc\\\u6218\u6597_sll60_01.lua",
+          "isSpecialNpc": true
+        },
+        {
+          "mpsX": 54186,
+          "mpsY": 114681,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5317\u533A\\\u5C11\u6797\u6D3E\\\u4E00\u767E\u96F6\u516B\u7F57\u6C49\u9635\\npc\\\u6218\u6597_sll60_01.lua",
+          "isSpecialNpc": true
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 411,
+      "npcCode": "npc-411",
+      "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+      "entityKind": "Monster",
+      "level": 64,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 53376,
+          "mpsY": 101152,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53984,
+          "mpsY": 102432,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49536,
+          "mpsY": 106048,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51808,
+          "mpsY": 106368,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48576,
+          "mpsY": 106624,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53568,
+          "mpsY": 107072,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55072,
+          "mpsY": 107808,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56896,
+          "mpsY": 109312,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 411,
+      "npcCode": "npc-411",
+      "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+      "entityKind": "Monster",
+      "level": 64,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51776,
+          "mpsY": 101792,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52096,
+          "mpsY": 101856,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52576,
+          "mpsY": 101440,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53952,
+          "mpsY": 103616,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53536,
+          "mpsY": 106432,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53888,
+          "mpsY": 106880,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57376,
+          "mpsY": 106720,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55808,
+          "mpsY": 108416,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57536,
+          "mpsY": 108992,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54912,
+          "mpsY": 113472,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 191,
+      "npcCode": "npc-191",
+      "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+      "entityKind": "Monster",
+      "level": 66,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51936,
+          "mpsY": 102080,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53440,
+          "mpsY": 102976,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54496,
+          "mpsY": 104064,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48416,
+          "mpsY": 105408,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48128,
+          "mpsY": 105472,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57664,
+          "mpsY": 109216,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52864,
+          "mpsY": 110304,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53920,
+          "mpsY": 109792,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53568,
+          "mpsY": 111040,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52800,
+          "mpsY": 113696,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 191,
+      "npcCode": "npc-191",
+      "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+      "entityKind": "Monster",
+      "level": 67,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51744,
+          "mpsY": 102368,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48928,
+          "mpsY": 105792,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49408,
+          "mpsY": 105664,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54656,
+          "mpsY": 106688,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57216,
+          "mpsY": 108928,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 191,
+      "npcCode": "npc-191",
+      "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+      "entityKind": "Monster",
+      "level": 68,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51936,
+          "mpsY": 101536,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55424,
+          "mpsY": 101952,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50752,
+          "mpsY": 106112,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52160,
+          "mpsY": 106080,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50016,
+          "mpsY": 107584,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58752,
+          "mpsY": 108064,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52512,
+          "mpsY": 108576,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51392,
+          "mpsY": 111552,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54176,
+          "mpsY": 112160,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52736,
+          "mpsY": 113568,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55040,
+          "mpsY": 113376,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 191,
+      "npcCode": "npc-191",
+      "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+      "entityKind": "Monster",
+      "level": 66,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52832,
+          "mpsY": 102272,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50464,
+          "mpsY": 105280,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52736,
+          "mpsY": 105536,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57632,
+          "mpsY": 105952,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57760,
+          "mpsY": 105792,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58144,
+          "mpsY": 106400,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48896,
+          "mpsY": 106784,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58432,
+          "mpsY": 108384,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53856,
+          "mpsY": 110240,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52800,
+          "mpsY": 112672,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53504,
+          "mpsY": 112928,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53344,
+          "mpsY": 113120,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53312,
+          "mpsY": 114144,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 411,
+      "npcCode": "npc-411",
+      "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+      "entityKind": "Monster",
+      "level": 64,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 53216,
+          "mpsY": 101440,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50144,
+          "mpsY": 105088,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50400,
+          "mpsY": 105760,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54272,
+          "mpsY": 106752,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56736,
+          "mpsY": 107424,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54720,
+          "mpsY": 108096,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55296,
+          "mpsY": 108736,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58016,
+          "mpsY": 109152,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56096,
+          "mpsY": 111520,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 411,
+      "npcCode": "npc-411",
+      "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+      "entityKind": "Monster",
+      "level": 65,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 53216,
+          "mpsY": 101856,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53792,
+          "mpsY": 104416,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55648,
+          "mpsY": 105696,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53312,
+          "mpsY": 108160,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51584,
+          "mpsY": 110816,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53376,
+          "mpsY": 111232,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55456,
+          "mpsY": 112288,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53632,
+          "mpsY": 113568,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 191,
+      "npcCode": "npc-191",
+      "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+      "entityKind": "Monster",
+      "level": 68,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52928,
+          "mpsY": 102176,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55680,
+          "mpsY": 103552,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57344,
+          "mpsY": 109408,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54112,
+          "mpsY": 109632,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54110,
+          "mpsY": 114408,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 411,
+      "npcCode": "npc-411",
+      "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+      "entityKind": "Monster",
+      "level": 65,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 53280,
+          "mpsY": 101568,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51392,
+          "mpsY": 106304,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54240,
+          "mpsY": 107584,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55584,
+          "mpsY": 108256,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55904,
+          "mpsY": 107776,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 411,
+      "npcCode": "npc-411",
+      "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+      "entityKind": "Monster",
+      "level": 63,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 53984,
+          "mpsY": 101824,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52672,
+          "mpsY": 105312,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54944,
+          "mpsY": 105056,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52000,
+          "mpsY": 106144,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57792,
+          "mpsY": 106016,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54848,
+          "mpsY": 108256,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52416,
+          "mpsY": 110784,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54496,
+          "mpsY": 112384,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 411,
+      "npcCode": "npc-411",
+      "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+      "entityKind": "Monster",
+      "level": 65,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 54432,
+          "mpsY": 102208,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55104,
+          "mpsY": 102592,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54176,
+          "mpsY": 103584,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50880,
+          "mpsY": 106816,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58336,
+          "mpsY": 106592,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 59136,
+          "mpsY": 107392,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58922,
+          "mpsY": 107378,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54944,
+          "mpsY": 107744,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53984,
+          "mpsY": 110432,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55136,
+          "mpsY": 110592,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 191,
+      "npcCode": "npc-191",
+      "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+      "entityKind": "Monster",
+      "level": 66,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 55200,
+          "mpsY": 101984,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55264,
+          "mpsY": 106144,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51136,
+          "mpsY": 107200,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54208,
+          "mpsY": 107200,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53568,
+          "mpsY": 107968,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 411,
+      "npcCode": "npc-411",
+      "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+      "entityKind": "Monster",
+      "level": 63,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 55328,
+          "mpsY": 101792,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51936,
+          "mpsY": 102592,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53120,
+          "mpsY": 102688,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55136,
+          "mpsY": 103008,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50912,
+          "mpsY": 106592,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54144,
+          "mpsY": 106656,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56128,
+          "mpsY": 107008,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51104,
+          "mpsY": 107744,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56672,
+          "mpsY": 109440,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58208,
+          "mpsY": 109248,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51520,
+          "mpsY": 112352,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 191,
+      "npcCode": "npc-191",
+      "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+      "entityKind": "Monster",
+      "level": 66,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51168,
+          "mpsY": 102432,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53664,
+          "mpsY": 103968,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49024,
+          "mpsY": 105888,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55808,
+          "mpsY": 105568,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50912,
+          "mpsY": 107840,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52672,
+          "mpsY": 108192,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56096,
+          "mpsY": 108096,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52960,
+          "mpsY": 110400,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52224,
+          "mpsY": 112160,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53120,
+          "mpsY": 113120,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 411,
+      "npcCode": "npc-411",
+      "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+      "entityKind": "Monster",
+      "level": 63,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51392,
+          "mpsY": 102688,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53344,
+          "mpsY": 102880,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53312,
+          "mpsY": 103552,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53248,
+          "mpsY": 106400,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56992,
+          "mpsY": 109152,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53248,
+          "mpsY": 111328,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52896,
+          "mpsY": 112928,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 191,
+      "npcCode": "npc-191",
+      "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+      "entityKind": "Monster",
+      "level": 68,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52320,
+          "mpsY": 102752,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54144,
+          "mpsY": 102496,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55456,
+          "mpsY": 103264,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55200,
+          "mpsY": 104672,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52000,
+          "mpsY": 106656,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54048,
+          "mpsY": 106848,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49600,
+          "mpsY": 108288,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50912,
+          "mpsY": 108096,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53408,
+          "mpsY": 107520,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51008,
+          "mpsY": 111136,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54656,
+          "mpsY": 112608,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55680,
+          "mpsY": 111872,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53962,
+          "mpsY": 114588,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 411,
+      "npcCode": "npc-411",
+      "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+      "entityKind": "Monster",
+      "level": 65,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52224,
+          "mpsY": 102848,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49984,
+          "mpsY": 107264,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48960,
+          "mpsY": 107840,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54272,
+          "mpsY": 109952,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 191,
+      "npcCode": "npc-191",
+      "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+      "entityKind": "Monster",
+      "level": 67,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 54496,
+          "mpsY": 103328,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49824,
+          "mpsY": 105504,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57664,
+          "mpsY": 106432,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57024,
+          "mpsY": 107072,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49408,
+          "mpsY": 108224,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49952,
+          "mpsY": 107968,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53088,
+          "mpsY": 109472,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53728,
+          "mpsY": 109184,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54272,
+          "mpsY": 110624,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 411,
+      "npcCode": "npc-411",
+      "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+      "entityKind": "Monster",
+      "level": 64,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 54976,
+          "mpsY": 102752,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58112,
+          "mpsY": 105824,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49056,
+          "mpsY": 106624,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50688,
+          "mpsY": 106976,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56032,
+          "mpsY": 107360,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 58144,
+          "mpsY": 108992,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54496,
+          "mpsY": 110720,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52960,
+          "mpsY": 113568,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 191,
+      "npcCode": "npc-191",
+      "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+      "entityKind": "Monster",
+      "level": 66,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52160,
+          "mpsY": 103424,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54016,
+          "mpsY": 104416,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51040,
+          "mpsY": 106720,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56160,
+          "mpsY": 107552,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55616,
+          "mpsY": 112896,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 191,
+      "npcCode": "npc-191",
+      "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+      "entityKind": "Monster",
+      "level": 68,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 53472,
+          "mpsY": 104160,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55136,
+          "mpsY": 105280,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52256,
+          "mpsY": 105760,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50546,
+          "mpsY": 108117,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51776,
+          "mpsY": 109696,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54112,
+          "mpsY": 110752,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51680,
+          "mpsY": 111712,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52416,
+          "mpsY": 112512,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 191,
+      "npcCode": "npc-191",
+      "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+      "entityKind": "Monster",
+      "level": 68,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 54240,
+          "mpsY": 103712,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54048,
+          "mpsY": 103520,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52288,
+          "mpsY": 105312,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48416,
+          "mpsY": 105984,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48608,
+          "mpsY": 105856,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50176,
+          "mpsY": 105536,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55072,
+          "mpsY": 105696,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48864,
+          "mpsY": 106496,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49472,
+          "mpsY": 107872,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53088,
+          "mpsY": 108448,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54624,
+          "mpsY": 109792,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54304,
+          "mpsY": 112896,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 411,
+      "npcCode": "npc-411",
+      "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+      "entityKind": "Monster",
+      "level": 65,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 54176,
+          "mpsY": 104320,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52032,
+          "mpsY": 105504,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57248,
+          "mpsY": 106304,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48768,
+          "mpsY": 107072,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55968,
+          "mpsY": 107232,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56224,
+          "mpsY": 107936,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54208,
+          "mpsY": 110432,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53952,
+          "mpsY": 110688,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54784,
+          "mpsY": 113376,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 411,
+      "npcCode": "npc-411",
+      "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+      "entityKind": "Monster",
+      "level": 64,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 55616,
+          "mpsY": 103424,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51712,
+          "mpsY": 105920,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56448,
+          "mpsY": 107200,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54080,
+          "mpsY": 110080,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54848,
+          "mpsY": 110208,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56480,
+          "mpsY": 111936,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53536,
+          "mpsY": 113664,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 191,
+      "npcCode": "npc-191",
+      "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+      "entityKind": "Monster",
+      "level": 67,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48064,
+          "mpsY": 105600,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52224,
+          "mpsY": 105920,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52864,
+          "mpsY": 105600,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53632,
+          "mpsY": 107328,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56896,
+          "mpsY": 107232,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57216,
+          "mpsY": 108032,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53536,
+          "mpsY": 110144,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53920,
+          "mpsY": 109984,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56192,
+          "mpsY": 112032,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53760,
+          "mpsY": 112672,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 411,
+      "npcCode": "npc-411",
+      "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+      "entityKind": "Monster",
+      "level": 63,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49568,
+          "mpsY": 105568,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49088,
+          "mpsY": 107456,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48768,
+          "mpsY": 107648,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52928,
+          "mpsY": 108576,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55168,
+          "mpsY": 112704,
+          "dirIndex": 0,
+          "nameOverride": "Ni c\u00D4 chi\u1EBFn \u0110\u1EA5u",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 191,
+      "npcCode": "npc-191",
+      "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+      "entityKind": "Monster",
+      "level": 67,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51136,
+          "mpsY": 106336,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51520,
+          "mpsY": 106208,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53504,
+          "mpsY": 106208,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53984,
+          "mpsY": 113248,
+          "dirIndex": 0,
+          "nameOverride": "N\u1EEF Th\u00EDch Kh\u00E1ch",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    }
+  ]
+}

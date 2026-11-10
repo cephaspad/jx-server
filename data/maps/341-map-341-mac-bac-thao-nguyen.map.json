@@ -1,0 +1,6748 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 341,
+  "code": "map-341-mac-bac-thao-nguyen",
+  "name": "M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 75,
+    "topRegionY": 74,
+    "rightRegionX": 100,
+    "bottomRegionY": 101
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": [
+    {
+      "npcTemplateId": 673,
+      "npcCode": "npc-673",
+      "nameOverride": "Th\u1EE7y T\u1EB7c",
+      "entityKind": "Monster",
+      "level": 65,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 39149,
+          "mpsY": 77302,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39636,
+          "mpsY": 77302,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40010,
+          "mpsY": 77181,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40497,
+          "mpsY": 77181,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40756,
+          "mpsY": 76939,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40785,
+          "mpsY": 77653,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41244,
+          "mpsY": 76939,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41233,
+          "mpsY": 77615,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41763,
+          "mpsY": 77074,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41855,
+          "mpsY": 77732,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42144,
+          "mpsY": 77426,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42208,
+          "mpsY": 77798,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42683,
+          "mpsY": 77545,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43048,
+          "mpsY": 77506,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43731,
+          "mpsY": 77550,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44054,
+          "mpsY": 77541,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44894,
+          "mpsY": 77243,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45249,
+          "mpsY": 77276,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46040,
+          "mpsY": 77455,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46415,
+          "mpsY": 77419,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47162,
+          "mpsY": 77413,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47511,
+          "mpsY": 77294,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48210,
+          "mpsY": 77280,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48550,
+          "mpsY": 77298,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48544,
+          "mpsY": 77802,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49597,
+          "mpsY": 77253,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49258,
+          "mpsY": 77208,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49524,
+          "mpsY": 77602,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49309,
+          "mpsY": 77661,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39178,
+          "mpsY": 78017,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39414,
+          "mpsY": 78350,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39162,
+          "mpsY": 78449,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39626,
+          "mpsY": 77978,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39901,
+          "mpsY": 78350,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39859,
+          "mpsY": 77833,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40039,
+          "mpsY": 77896,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40146,
+          "mpsY": 78094,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40175,
+          "mpsY": 78809,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40487,
+          "mpsY": 77858,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40633,
+          "mpsY": 78094,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40822,
+          "mpsY": 78262,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41165,
+          "mpsY": 77918,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42705,
+          "mpsY": 78050,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43040,
+          "mpsY": 78029,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43728,
+          "mpsY": 78086,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44052,
+          "mpsY": 78037,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44900,
+          "mpsY": 77867,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45261,
+          "mpsY": 77858,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46082,
+          "mpsY": 78004,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46446,
+          "mpsY": 78029,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47155,
+          "mpsY": 77919,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47559,
+          "mpsY": 77847,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47327,
+          "mpsY": 78760,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47294,
+          "mpsY": 78354,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47641,
+          "mpsY": 78760,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47673,
+          "mpsY": 78326,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48456,
+          "mpsY": 78530,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48214,
+          "mpsY": 77838,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48943,
+          "mpsY": 78530,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49859,
+          "mpsY": 78658,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50172,
+          "mpsY": 78625,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39193,
+          "mpsY": 79370,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39891,
+          "mpsY": 79026,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39443,
+          "mpsY": 79064,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39558,
+          "mpsY": 79667,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42982,
+          "mpsY": 78987,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42962,
+          "mpsY": 79373,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43360,
+          "mpsY": 78861,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43343,
+          "mpsY": 79398,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44203,
+          "mpsY": 79099,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44232,
+          "mpsY": 79813,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44691,
+          "mpsY": 79099,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44680,
+          "mpsY": 79775,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45303,
+          "mpsY": 79279,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46078,
+          "mpsY": 79242,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47072,
+          "mpsY": 79490,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46693,
+          "mpsY": 79519,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48038,
+          "mpsY": 79728,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47659,
+          "mpsY": 79756,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48485,
+          "mpsY": 79245,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48933,
+          "mpsY": 79207,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49897,
+          "mpsY": 79044,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50187,
+          "mpsY": 79018,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50281,
+          "mpsY": 79745,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50633,
+          "mpsY": 79867,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39140,
+          "mpsY": 79925,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43358,
+          "mpsY": 80305,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43009,
+          "mpsY": 80278,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43303,
+          "mpsY": 80666,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43846,
+          "mpsY": 80305,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44316,
+          "mpsY": 80282,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44803,
+          "mpsY": 80282,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45055,
+          "mpsY": 80066,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45379,
+          "mpsY": 80807,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45931,
+          "mpsY": 80807,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46300,
+          "mpsY": 80051,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46726,
+          "mpsY": 79924,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47039,
+          "mpsY": 79924,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47692,
+          "mpsY": 80162,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48005,
+          "mpsY": 80162,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48229,
+          "mpsY": 80559,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48568,
+          "mpsY": 80581,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49145,
+          "mpsY": 80423,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49543,
+          "mpsY": 80003,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49189,
+          "mpsY": 79982,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49572,
+          "mpsY": 80439,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50619,
+          "mpsY": 80149,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50332,
+          "mpsY": 80128,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39800,
+          "mpsY": 81701,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39442,
+          "mpsY": 81710,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43387,
+          "mpsY": 81019,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43011,
+          "mpsY": 80951,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43438,
+          "mpsY": 81688,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43835,
+          "mpsY": 80981,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43833,
+          "mpsY": 81693,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44342,
+          "mpsY": 81654,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44345,
+          "mpsY": 80997,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44829,
+          "mpsY": 81654,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44792,
+          "mpsY": 80959,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45328,
+          "mpsY": 81465,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45816,
+          "mpsY": 81465,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46376,
+          "mpsY": 81443,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46864,
+          "mpsY": 81443,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47447,
+          "mpsY": 81434,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47811,
+          "mpsY": 81408,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48240,
+          "mpsY": 81022,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48564,
+          "mpsY": 80981,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49166,
+          "mpsY": 81506,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49510,
+          "mpsY": 81903,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49547,
+          "mpsY": 81441,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50228,
+          "mpsY": 81272,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50638,
+          "mpsY": 81268,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50649,
+          "mpsY": 81832,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50331,
+          "mpsY": 81782,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39577,
+          "mpsY": 82382,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39625,
+          "mpsY": 82794,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39490,
+          "mpsY": 82122,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39936,
+          "mpsY": 82373,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39958,
+          "mpsY": 82901,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40429,
+          "mpsY": 82813,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40749,
+          "mpsY": 82786,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43403,
+          "mpsY": 82176,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43778,
+          "mpsY": 82125,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44371,
+          "mpsY": 82369,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44819,
+          "mpsY": 82330,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45357,
+          "mpsY": 82179,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45805,
+          "mpsY": 82141,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46405,
+          "mpsY": 82158,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46637,
+          "mpsY": 82625,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46853,
+          "mpsY": 82119,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47125,
+          "mpsY": 82625,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47472,
+          "mpsY": 81999,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47719,
+          "mpsY": 82640,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47735,
+          "mpsY": 82011,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48206,
+          "mpsY": 82640,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48650,
+          "mpsY": 82188,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49194,
+          "mpsY": 82005,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49840,
+          "mpsY": 82942,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50153,
+          "mpsY": 82942,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49807,
+          "mpsY": 82536,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50563,
+          "mpsY": 82807,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50186,
+          "mpsY": 82508,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50836,
+          "mpsY": 82670,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40374,
+          "mpsY": 83187,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40930,
+          "mpsY": 83878,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40720,
+          "mpsY": 83364,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41238,
+          "mpsY": 83924,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41922,
+          "mpsY": 83392,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41563,
+          "mpsY": 83401,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41612,
+          "mpsY": 83812,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43440,
+          "mpsY": 83014,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43402,
+          "mpsY": 83579,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43761,
+          "mpsY": 83511,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43753,
+          "mpsY": 83058,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43665,
+          "mpsY": 83900,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44024,
+          "mpsY": 83891,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44489,
+          "mpsY": 83098,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44518,
+          "mpsY": 83813,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44977,
+          "mpsY": 83098,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44966,
+          "mpsY": 83775,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45480,
+          "mpsY": 83196,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45509,
+          "mpsY": 83911,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45967,
+          "mpsY": 83196,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45956,
+          "mpsY": 83872,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46431,
+          "mpsY": 83695,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46666,
+          "mpsY": 83340,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46918,
+          "mpsY": 83695,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47114,
+          "mpsY": 83302,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47748,
+          "mpsY": 83354,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48196,
+          "mpsY": 83316,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48817,
+          "mpsY": 83613,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48866,
+          "mpsY": 83016,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49264,
+          "mpsY": 83575,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49267,
+          "mpsY": 83003,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49934,
+          "mpsY": 83942,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50549,
+          "mpsY": 83186,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40449,
+          "mpsY": 84440,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40831,
+          "mpsY": 84347,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41471,
+          "mpsY": 84206,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41264,
+          "mpsY": 84391,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41853,
+          "mpsY": 84646,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42221,
+          "mpsY": 84147,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42229,
+          "mpsY": 84478,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42157,
+          "mpsY": 84958,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42500,
+          "mpsY": 84493,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42516,
+          "mpsY": 84949,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43833,
+          "mpsY": 84674,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43714,
+          "mpsY": 84311,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44103,
+          "mpsY": 84532,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44921,
+          "mpsY": 84706,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44545,
+          "mpsY": 84701,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45701,
+          "mpsY": 84843,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46460,
+          "mpsY": 84409,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46472,
+          "mpsY": 84847,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46144,
+          "mpsY": 84811,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46907,
+          "mpsY": 84371,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46959,
+          "mpsY": 84847,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47165,
+          "mpsY": 84403,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47652,
+          "mpsY": 84403,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49100,
+          "mpsY": 84650,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49067,
+          "mpsY": 84245,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49414,
+          "mpsY": 84650,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49446,
+          "mpsY": 84216,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49854,
+          "mpsY": 84692,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49932,
+          "mpsY": 84329,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50302,
+          "mpsY": 84653,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50240,
+          "mpsY": 84015,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41671,
+          "mpsY": 85575,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42158,
+          "mpsY": 85575,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42116,
+          "mpsY": 85907,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42205,
+          "mpsY": 85370,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42924,
+          "mpsY": 85122,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42646,
+          "mpsY": 85930,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42919,
+          "mpsY": 85999,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43784,
+          "mpsY": 85362,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44500,
+          "mpsY": 85289,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44093,
+          "mpsY": 85208,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44948,
+          "mpsY": 85251,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46077,
+          "mpsY": 85298,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45775,
+          "mpsY": 85312,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46501,
+          "mpsY": 85561,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46351,
+          "mpsY": 85907,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46948,
+          "mpsY": 85523,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47194,
+          "mpsY": 85117,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47213,
+          "mpsY": 85900,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47641,
+          "mpsY": 85079,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48363,
+          "mpsY": 85178,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48384,
+          "mpsY": 85613,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48792,
+          "mpsY": 85687,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48775,
+          "mpsY": 85172,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49429,
+          "mpsY": 85307,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49458,
+          "mpsY": 85907,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49816,
+          "mpsY": 85317,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49833,
+          "mpsY": 85850,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50399,
+          "mpsY": 85445,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50458,
+          "mpsY": 86006,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50801,
+          "mpsY": 85451,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50808,
+          "mpsY": 85961,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40117,
+          "mpsY": 86474,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41700,
+          "mpsY": 86289,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43868,
+          "mpsY": 86594,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44286,
+          "mpsY": 87039,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44274,
+          "mpsY": 86567,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44923,
+          "mpsY": 86871,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45103,
+          "mpsY": 86419,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45692,
+          "mpsY": 86880,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46056,
+          "mpsY": 86079,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46248,
+          "mpsY": 86829,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46907,
+          "mpsY": 86472,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47461,
+          "mpsY": 86379,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47229,
+          "mpsY": 86668,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43967,
+          "mpsY": 87042,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45237,
+          "mpsY": 87297,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42866,
+          "mpsY": 88854,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43354,
+          "mpsY": 88854,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42895,
+          "mpsY": 89569,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43343,
+          "mpsY": 89531,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43581,
+          "mpsY": 90195,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43610,
+          "mpsY": 90909,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43983,
+          "mpsY": 90190,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43910,
+          "mpsY": 90794,
+          "dirIndex": 0,
+          "nameOverride": "Th\u1EE7y T\u1EB7c",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 710,
+      "npcCode": "npc-710",
+      "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+      "entityKind": "Monster",
+      "level": 65,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 39436,
+          "mpsY": 77691,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40297,
+          "mpsY": 77570,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41043,
+          "mpsY": 77328,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43901,
+          "mpsY": 77773,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45081,
+          "mpsY": 77603,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46259,
+          "mpsY": 77807,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47348,
+          "mpsY": 77648,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48374,
+          "mpsY": 77630,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49458,
+          "mpsY": 77253,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39701,
+          "mpsY": 78739,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40433,
+          "mpsY": 78483,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42848,
+          "mpsY": 77895,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47523,
+          "mpsY": 78540,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43160,
+          "mpsY": 79250,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44490,
+          "mpsY": 79488,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46921,
+          "mpsY": 79705,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48743,
+          "mpsY": 78919,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50045,
+          "mpsY": 78922,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44146,
+          "mpsY": 80704,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44603,
+          "mpsY": 80671,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47887,
+          "mpsY": 79942,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48417,
+          "mpsY": 80810,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49376,
+          "mpsY": 80248,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50502,
+          "mpsY": 79987,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45615,
+          "mpsY": 81854,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46663,
+          "mpsY": 81832,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47611,
+          "mpsY": 81797,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49373,
+          "mpsY": 81717,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50489,
+          "mpsY": 81627,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39773,
+          "mpsY": 82615,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39637,
+          "mpsY": 81943,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43610,
+          "mpsY": 82012,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44629,
+          "mpsY": 82043,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50036,
+          "mpsY": 82723,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39435,
+          "mpsY": 83605,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39813,
+          "mpsY": 83909,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40575,
+          "mpsY": 83123,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41759,
+          "mpsY": 83634,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43604,
+          "mpsY": 83338,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44777,
+          "mpsY": 83487,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45767,
+          "mpsY": 83585,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46924,
+          "mpsY": 83014,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48006,
+          "mpsY": 83028,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49075,
+          "mpsY": 83288,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50762,
+          "mpsY": 83024,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39676,
+          "mpsY": 84627,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41038,
+          "mpsY": 84313,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41958,
+          "mpsY": 84326,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43903,
+          "mpsY": 84921,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43861,
+          "mpsY": 84133,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44758,
+          "mpsY": 84963,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46718,
+          "mpsY": 84083,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47452,
+          "mpsY": 84791,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49296,
+          "mpsY": 84431,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50112,
+          "mpsY": 84366,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39840,
+          "mpsY": 85814,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39888,
+          "mpsY": 85028,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40754,
+          "mpsY": 85377,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41105,
+          "mpsY": 85781,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41895,
+          "mpsY": 85907,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42352,
+          "mpsY": 85191,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42724,
+          "mpsY": 85511,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46002,
+          "mpsY": 85149,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46759,
+          "mpsY": 85235,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48602,
+          "mpsY": 85399,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49616,
+          "mpsY": 85706,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50601,
+          "mpsY": 85840,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39490,
+          "mpsY": 86192,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39916,
+          "mpsY": 86675,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40204,
+          "mpsY": 86258,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42048,
+          "mpsY": 86538,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42759,
+          "mpsY": 86939,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44097,
+          "mpsY": 86752,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45301,
+          "mpsY": 86867,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46228,
+          "mpsY": 86246,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47148,
+          "mpsY": 86269,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39708,
+          "mpsY": 87909,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48772,
+          "mpsY": 87110,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49921,
+          "mpsY": 87241,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50763,
+          "mpsY": 87137,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39776,
+          "mpsY": 88574,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40180,
+          "mpsY": 88108,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46729,
+          "mpsY": 88787,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47612,
+          "mpsY": 88862,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49170,
+          "mpsY": 89072,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50034,
+          "mpsY": 89012,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39335,
+          "mpsY": 89776,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39686,
+          "mpsY": 89410,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40338,
+          "mpsY": 89983,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40633,
+          "mpsY": 89468,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41189,
+          "mpsY": 89851,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41562,
+          "mpsY": 89545,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42289,
+          "mpsY": 89931,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42047,
+          "mpsY": 89550,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43153,
+          "mpsY": 89243,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44871,
+          "mpsY": 89137,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46329,
+          "mpsY": 90073,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50910,
+          "mpsY": 89117,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39934,
+          "mpsY": 91082,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40925,
+          "mpsY": 90866,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42020,
+          "mpsY": 90314,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43796,
+          "mpsY": 90529,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47290,
+          "mpsY": 90161,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48087,
+          "mpsY": 90141,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48991,
+          "mpsY": 90127,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49795,
+          "mpsY": 90190,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50802,
+          "mpsY": 90120,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39459,
+          "mpsY": 91498,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40651,
+          "mpsY": 91333,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41219,
+          "mpsY": 91485,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41960,
+          "mpsY": 91551,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42290,
+          "mpsY": 91168,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46139,
+          "mpsY": 91219,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47225,
+          "mpsY": 91624,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48088,
+          "mpsY": 91682,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48873,
+          "mpsY": 91692,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49840,
+          "mpsY": 91604,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50715,
+          "mpsY": 91788,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39670,
+          "mpsY": 92858,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40094,
+          "mpsY": 92490,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40717,
+          "mpsY": 92723,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41002,
+          "mpsY": 92353,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41885,
+          "mpsY": 92340,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41532,
+          "mpsY": 92852,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45682,
+          "mpsY": 92414,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46474,
+          "mpsY": 92643,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47684,
+          "mpsY": 92702,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50745,
+          "mpsY": 92951,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39901,
+          "mpsY": 94134,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40239,
+          "mpsY": 93551,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41090,
+          "mpsY": 93884,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41281,
+          "mpsY": 93427,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42847,
+          "mpsY": 93190,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43828,
+          "mpsY": 93436,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47007,
+          "mpsY": 93831,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47898,
+          "mpsY": 93642,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48855,
+          "mpsY": 93189,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49784,
+          "mpsY": 93223,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39913,
+          "mpsY": 94851,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40728,
+          "mpsY": 95035,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41111,
+          "mpsY": 94557,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41836,
+          "mpsY": 94580,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41596,
+          "mpsY": 94860,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43051,
+          "mpsY": 94279,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44592,
+          "mpsY": 94798,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45575,
+          "mpsY": 94259,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47484,
+          "mpsY": 94974,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48275,
+          "mpsY": 94551,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49123,
+          "mpsY": 94449,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49814,
+          "mpsY": 94561,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50635,
+          "mpsY": 94321,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39566,
+          "mpsY": 95232,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40384,
+          "mpsY": 96225,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40205,
+          "mpsY": 95977,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40834,
+          "mpsY": 96167,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41161,
+          "mpsY": 95887,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41879,
+          "mpsY": 96044,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42202,
+          "mpsY": 95637,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44277,
+          "mpsY": 95710,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45682,
+          "mpsY": 95440,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46630,
+          "mpsY": 95631,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50729,
+          "mpsY": 95610,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39937,
+          "mpsY": 96985,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40184,
+          "mpsY": 97234,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41177,
+          "mpsY": 96873,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42440,
+          "mpsY": 96277,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43485,
+          "mpsY": 97199,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43704,
+          "mpsY": 96755,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45577,
+          "mpsY": 96474,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39875,
+          "mpsY": 98278,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40685,
+          "mpsY": 97483,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40990,
+          "mpsY": 98141,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43967,
+          "mpsY": 97314,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43596,
+          "mpsY": 97858,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44213,
+          "mpsY": 97798,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45310,
+          "mpsY": 97631,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46504,
+          "mpsY": 97385,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47279,
+          "mpsY": 97359,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48211,
+          "mpsY": 97336,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49135,
+          "mpsY": 97372,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49807,
+          "mpsY": 98299,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39699,
+          "mpsY": 99327,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40153,
+          "mpsY": 98541,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40498,
+          "mpsY": 98751,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43516,
+          "mpsY": 98801,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43186,
+          "mpsY": 98397,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43950,
+          "mpsY": 98456,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44222,
+          "mpsY": 99086,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45487,
+          "mpsY": 98775,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46217,
+          "mpsY": 98486,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46871,
+          "mpsY": 99272,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48112,
+          "mpsY": 98454,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48946,
+          "mpsY": 98531,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40057,
+          "mpsY": 99693,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40637,
+          "mpsY": 100227,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41018,
+          "mpsY": 99646,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41215,
+          "mpsY": 100049,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41632,
+          "mpsY": 99472,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43366,
+          "mpsY": 99992,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43020,
+          "mpsY": 99554,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43836,
+          "mpsY": 99459,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43971,
+          "mpsY": 99965,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45181,
+          "mpsY": 100153,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46228,
+          "mpsY": 100332,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47409,
+          "mpsY": 100100,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48302,
+          "mpsY": 99928,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49333,
+          "mpsY": 99700,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50145,
+          "mpsY": 99833,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39662,
+          "mpsY": 100407,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41929,
+          "mpsY": 101372,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42421,
+          "mpsY": 100761,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42864,
+          "mpsY": 100486,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43527,
+          "mpsY": 100993,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43621,
+          "mpsY": 100497,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46041,
+          "mpsY": 101229,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48693,
+          "mpsY": 100999,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49588,
+          "mpsY": 100907,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50593,
+          "mpsY": 100899,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40561,
+          "mpsY": 102237,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41145,
+          "mpsY": 102010,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41468,
+          "mpsY": 101717,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41592,
+          "mpsY": 101433,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42307,
+          "mpsY": 102282,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42904,
+          "mpsY": 101456,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43035,
+          "mpsY": 101603,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43373,
+          "mpsY": 102329,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43865,
+          "mpsY": 101718,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45065,
+          "mpsY": 101633,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45812,
+          "mpsY": 102321,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46751,
+          "mpsY": 101803,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47812,
+          "mpsY": 101416,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48561,
+          "mpsY": 101943,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49456,
+          "mpsY": 102017,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50340,
+          "mpsY": 101815,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EE5c Ba Kim s\u01A0n  \u0110\u1EA3o",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 259,
+      "npcCode": "npc-259",
+      "nameOverride": "D\u01AF\u1EE3c 3",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 41539,
+          "mpsY": 80225,
+          "dirIndex": 0,
+          "nameOverride": "D\u01AF\u1EE3c 3",
+          "scriptPath": "\\script\\\u4E1C\u5317\u533A\\\u6F20\u5317\u8349\u539F\\npc\\npc_yaofan.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 387,
+      "npcCode": "npc-387",
+      "nameOverride": "H\u1ECDc tr\u00F2 th\u1EE3 r\u00E8n \u1EA5t 4",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 41238,
+          "mpsY": 81085,
+          "dirIndex": 0,
+          "nameOverride": "H\u1ECDc tr\u00F2 th\u1EE3 r\u00E8n \u1EA5t 4",
+          "scriptPath": "\\script\\\u4E1C\u5317\u533A\\\u6F20\u5317\u8349\u539F\\npc\\npc_tiejiang.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 709,
+      "npcCode": "npc-709",
+      "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+      "entityKind": "Monster",
+      "level": 65,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 39710,
+          "mpsY": 83561,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39571,
+          "mpsY": 83788,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39910,
+          "mpsY": 84746,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39653,
+          "mpsY": 84926,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39398,
+          "mpsY": 85913,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39622,
+          "mpsY": 85738,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40804,
+          "mpsY": 85811,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40976,
+          "mpsY": 85334,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39768,
+          "mpsY": 86184,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39587,
+          "mpsY": 86608,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42800,
+          "mpsY": 86291,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42557,
+          "mpsY": 86365,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42595,
+          "mpsY": 86784,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48460,
+          "mpsY": 86778,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48788,
+          "mpsY": 86675,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49620,
+          "mpsY": 86712,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49952,
+          "mpsY": 86858,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50519,
+          "mpsY": 86770,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50790,
+          "mpsY": 86792,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39970,
+          "mpsY": 87838,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48462,
+          "mpsY": 87186,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49649,
+          "mpsY": 87261,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50530,
+          "mpsY": 87158,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39803,
+          "mpsY": 88203,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40082,
+          "mpsY": 88488,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44608,
+          "mpsY": 88571,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44865,
+          "mpsY": 88611,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44566,
+          "mpsY": 89033,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45231,
+          "mpsY": 88841,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46357,
+          "mpsY": 88135,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46500,
+          "mpsY": 88995,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46771,
+          "mpsY": 88140,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47240,
+          "mpsY": 88210,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47270,
+          "mpsY": 88759,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47654,
+          "mpsY": 88215,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48798,
+          "mpsY": 88420,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48828,
+          "mpsY": 88969,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49211,
+          "mpsY": 88424,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49662,
+          "mpsY": 88359,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49692,
+          "mpsY": 88908,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50024,
+          "mpsY": 88338,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50568,
+          "mpsY": 89014,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50538,
+          "mpsY": 88465,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50900,
+          "mpsY": 88444,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39408,
+          "mpsY": 89414,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39716,
+          "mpsY": 89792,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40357,
+          "mpsY": 89579,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40694,
+          "mpsY": 89951,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41265,
+          "mpsY": 89460,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41484,
+          "mpsY": 89996,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41999,
+          "mpsY": 89915,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45395,
+          "mpsY": 89920,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45957,
+          "mpsY": 89420,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45987,
+          "mpsY": 89970,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46370,
+          "mpsY": 89425,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46919,
+          "mpsY": 89508,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46948,
+          "mpsY": 90058,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47332,
+          "mpsY": 89513,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47715,
+          "mpsY": 89489,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47745,
+          "mpsY": 90038,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48619,
+          "mpsY": 89474,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48129,
+          "mpsY": 89494,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49032,
+          "mpsY": 89479,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48649,
+          "mpsY": 90024,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49423,
+          "mpsY": 89537,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49462,
+          "mpsY": 90015,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49814,
+          "mpsY": 89730,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50443,
+          "mpsY": 89623,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50856,
+          "mpsY": 89628,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39509,
+          "mpsY": 90987,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40685,
+          "mpsY": 90853,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41269,
+          "mpsY": 90974,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42232,
+          "mpsY": 90434,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45768,
+          "mpsY": 90566,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45797,
+          "mpsY": 91116,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45718,
+          "mpsY": 90273,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46181,
+          "mpsY": 90571,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46853,
+          "mpsY": 90971,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47266,
+          "mpsY": 90976,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47716,
+          "mpsY": 91030,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48501,
+          "mpsY": 91039,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48129,
+          "mpsY": 91035,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48914,
+          "mpsY": 91044,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49471,
+          "mpsY": 91107,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49884,
+          "mpsY": 91112,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50473,
+          "mpsY": 90173,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39757,
+          "mpsY": 91472,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40943,
+          "mpsY": 91296,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41600,
+          "mpsY": 91502,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42233,
+          "mpsY": 91495,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41995,
+          "mpsY": 91149,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45310,
+          "mpsY": 91762,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45723,
+          "mpsY": 91767,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46515,
+          "mpsY": 91996,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46102,
+          "mpsY": 91991,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46883,
+          "mpsY": 91521,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47312,
+          "mpsY": 92049,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47746,
+          "mpsY": 91579,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47725,
+          "mpsY": 92054,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48531,
+          "mpsY": 91589,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49500,
+          "mpsY": 91656,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50343,
+          "mpsY": 91136,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50373,
+          "mpsY": 91685,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50756,
+          "mpsY": 91140,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39764,
+          "mpsY": 92445,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40050,
+          "mpsY": 92875,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40719,
+          "mpsY": 92362,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40985,
+          "mpsY": 92773,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41775,
+          "mpsY": 92773,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41637,
+          "mpsY": 92371,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42527,
+          "mpsY": 92732,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42844,
+          "mpsY": 92808,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43506,
+          "mpsY": 93095,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43919,
+          "mpsY": 93100,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45340,
+          "mpsY": 92311,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46132,
+          "mpsY": 92540,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46636,
+          "mpsY": 93179,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47526,
+          "mpsY": 92990,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47342,
+          "mpsY": 92599,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47940,
+          "mpsY": 92995,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48483,
+          "mpsY": 92536,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48512,
+          "mpsY": 93086,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48896,
+          "mpsY": 92541,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49413,
+          "mpsY": 92570,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49442,
+          "mpsY": 93120,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49826,
+          "mpsY": 92575,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50421,
+          "mpsY": 92519,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50446,
+          "mpsY": 92936,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50777,
+          "mpsY": 92529,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39951,
+          "mpsY": 93623,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40208,
+          "mpsY": 94091,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40965,
+          "mpsY": 93568,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41299,
+          "mpsY": 93879,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42556,
+          "mpsY": 93281,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42759,
+          "mpsY": 94027,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43106,
+          "mpsY": 93939,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43536,
+          "mpsY": 93645,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45291,
+          "mpsY": 93801,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45586,
+          "mpsY": 93849,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47049,
+          "mpsY": 93184,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46665,
+          "mpsY": 93728,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47556,
+          "mpsY": 93539,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47904,
+          "mpsY": 93899,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48317,
+          "mpsY": 93904,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48752,
+          "mpsY": 93797,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49442,
+          "mpsY": 93908,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49165,
+          "mpsY": 93802,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49855,
+          "mpsY": 93913,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50676,
+          "mpsY": 93673,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50263,
+          "mpsY": 93668,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39640,
+          "mpsY": 94803,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40843,
+          "mpsY": 94621,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40992,
+          "mpsY": 94946,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41598,
+          "mpsY": 94530,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41818,
+          "mpsY": 94903,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42722,
+          "mpsY": 94484,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44330,
+          "mpsY": 95215,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44044,
+          "mpsY": 95194,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44340,
+          "mpsY": 94446,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44346,
+          "mpsY": 94821,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44584,
+          "mpsY": 94446,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45347,
+          "mpsY": 94899,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45302,
+          "mpsY": 94210,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45719,
+          "mpsY": 94975,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46634,
+          "mpsY": 95149,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47525,
+          "mpsY": 94327,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47112,
+          "mpsY": 94322,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47142,
+          "mpsY": 94871,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47933,
+          "mpsY": 94448,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48781,
+          "mpsY": 94346,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49472,
+          "mpsY": 94458,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50395,
+          "mpsY": 94307,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39946,
+          "mpsY": 95248,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40835,
+          "mpsY": 95906,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41046,
+          "mpsY": 96237,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41929,
+          "mpsY": 95672,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42484,
+          "mpsY": 95740,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42105,
+          "mpsY": 95954,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44008,
+          "mpsY": 95722,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45340,
+          "mpsY": 95337,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45205,
+          "mpsY": 95822,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45619,
+          "mpsY": 95827,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46351,
+          "mpsY": 95266,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46418,
+          "mpsY": 95655,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50496,
+          "mpsY": 95299,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50494,
+          "mpsY": 95668,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50771,
+          "mpsY": 95337,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40072,
+          "mpsY": 96269,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40278,
+          "mpsY": 96952,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40734,
+          "mpsY": 96972,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43487,
+          "mpsY": 96722,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43761,
+          "mpsY": 97103,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45008,
+          "mpsY": 97039,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45235,
+          "mpsY": 96371,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45311,
+          "mpsY": 97103,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46546,
+          "mpsY": 96737,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46132,
+          "mpsY": 96733,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46908,
+          "mpsY": 96706,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46937,
+          "mpsY": 97255,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47321,
+          "mpsY": 96711,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47839,
+          "mpsY": 96684,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47869,
+          "mpsY": 97233,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48252,
+          "mpsY": 96689,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48763,
+          "mpsY": 96719,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48793,
+          "mpsY": 97269,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49177,
+          "mpsY": 96724,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39927,
+          "mpsY": 97391,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40159,
+          "mpsY": 98170,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40548,
+          "mpsY": 98240,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41065,
+          "mpsY": 97500,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43286,
+          "mpsY": 97828,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43853,
+          "mpsY": 97911,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43784,
+          "mpsY": 97485,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44968,
+          "mpsY": 97528,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45494,
+          "mpsY": 98293,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45846,
+          "mpsY": 97834,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46259,
+          "mpsY": 97839,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46162,
+          "mpsY": 97282,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47741,
+          "mpsY": 97802,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48574,
+          "mpsY": 97879,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48154,
+          "mpsY": 97806,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48988,
+          "mpsY": 97884,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49550,
+          "mpsY": 97855,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49843,
+          "mpsY": 97924,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39826,
+          "mpsY": 98596,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40000,
+          "mpsY": 99296,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40879,
+          "mpsY": 98768,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43264,
+          "mpsY": 98829,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43590,
+          "mpsY": 98383,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43915,
+          "mpsY": 99068,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44217,
+          "mpsY": 98317,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45202,
+          "mpsY": 98326,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45159,
+          "mpsY": 98674,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45875,
+          "mpsY": 98383,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46500,
+          "mpsY": 98620,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46529,
+          "mpsY": 99169,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46913,
+          "mpsY": 98625,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47770,
+          "mpsY": 98351,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48392,
+          "mpsY": 99180,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48604,
+          "mpsY": 98428,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48134,
+          "mpsY": 99273,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48961,
+          "mpsY": 99048,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49375,
+          "mpsY": 99052,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49521,
+          "mpsY": 98310,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49773,
+          "mpsY": 99180,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50187,
+          "mpsY": 99185,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39615,
+          "mpsY": 99792,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 39891,
+          "mpsY": 100149,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40906,
+          "mpsY": 100273,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40742,
+          "mpsY": 99804,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41265,
+          "mpsY": 99538,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41510,
+          "mpsY": 99883,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43404,
+          "mpsY": 99427,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43032,
+          "mpsY": 100028,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43671,
+          "mpsY": 99986,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44062,
+          "mpsY": 99541,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44966,
+          "mpsY": 99682,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44918,
+          "mpsY": 100002,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45272,
+          "mpsY": 99736,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45856,
+          "mpsY": 99680,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45886,
+          "mpsY": 100229,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46269,
+          "mpsY": 99685,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47176,
+          "mpsY": 99588,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47206,
+          "mpsY": 100138,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47470,
+          "mpsY": 99698,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48008,
+          "mpsY": 99725,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48322,
+          "mpsY": 100347,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48991,
+          "mpsY": 99597,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48646,
+          "mpsY": 100239,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49803,
+          "mpsY": 99730,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50635,
+          "mpsY": 100251,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50221,
+          "mpsY": 100246,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42133,
+          "mpsY": 100984,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43245,
+          "mpsY": 100502,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43085,
+          "mpsY": 101093,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43906,
+          "mpsY": 100483,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44693,
+          "mpsY": 100981,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45028,
+          "mpsY": 101192,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45670,
+          "mpsY": 100576,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45745,
+          "mpsY": 101230,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46083,
+          "mpsY": 100581,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47575,
+          "mpsY": 100854,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47583,
+          "mpsY": 101362,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47853,
+          "mpsY": 100768,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48409,
+          "mpsY": 100888,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49611,
+          "mpsY": 100456,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49330,
+          "mpsY": 100860,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49356,
+          "mpsY": 100442,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50251,
+          "mpsY": 100796,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40585,
+          "mpsY": 101866,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 40894,
+          "mpsY": 102164,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41194,
+          "mpsY": 101499,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 41525,
+          "mpsY": 102026,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42310,
+          "mpsY": 101388,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42169,
+          "mpsY": 101727,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 42688,
+          "mpsY": 102298,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43422,
+          "mpsY": 101818,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43510,
+          "mpsY": 101424,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 43753,
+          "mpsY": 102345,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 44723,
+          "mpsY": 101530,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45550,
+          "mpsY": 102311,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45634,
+          "mpsY": 101894,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 45937,
+          "mpsY": 102047,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46508,
+          "mpsY": 101461,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46536,
+          "mpsY": 101799,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46818,
+          "mpsY": 101523,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48612,
+          "mpsY": 101472,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48240,
+          "mpsY": 101854,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48280,
+          "mpsY": 101427,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49141,
+          "mpsY": 101476,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49171,
+          "mpsY": 102026,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49451,
+          "mpsY": 101549,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50026,
+          "mpsY": 101811,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50019,
+          "mpsY": 101395,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50348,
+          "mpsY": 101390,
+          "dirIndex": 0,
+          "nameOverride": "Kinh Phong M\u1EA1c B\u1EAFc Th\u1EA3o Nguy\u00CAn",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    }
+  ]
+}

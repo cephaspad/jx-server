@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 104,
+  "code": "map-104-tang-kinh-cac",
+  "name": "T\u00E0ng Kinh C\u00E1c",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 98,
+    "topRegionY": 98,
+    "rightRegionX": 100,
+    "bottomRegionY": 100
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": [
+    {
+      "npcTemplateId": 72,
+      "npcCode": "npc-72",
+      "nameOverride": "V\u00F5 \u0111ang Ch\u01AF\u1EDFng m\u00D4n",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51126,
+          "mpsY": 101972,
+          "dirIndex": 0,
+          "nameOverride": "V\u00F5 \u0111ang Ch\u01AF\u1EDFng m\u00D4n",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5317\u533A\\\u5C11\u6797\u6D3E\\\u85CF\u7ECF\u9601\\npc\\\u8DEF\u4EBA_\u7384\u6148.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    }
+  ]
+}

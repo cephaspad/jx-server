@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 57,
+  "code": "map-57-hoanh-son-dai-dinh",
+  "name": "Ho\u00E0nh S\u01A0n \u0110\u1EA1i \u0110\u00ECnh",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 98,
+    "topRegionY": 98,
+    "rightRegionX": 101,
+    "bottomRegionY": 100
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": [
+    {
+      "npcTemplateId": 138,
+      "npcCode": "npc-138",
+      "nameOverride": "Tr\u01AF\u01A0ng L\u00C2m T\u00C2m",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51086,
+          "mpsY": 102131,
+          "dirIndex": 0,
+          "nameOverride": "Tr\u01AF\u01A0ng L\u00C2m T\u00C2m",
+          "scriptPath": "\\script\\\u4E24\u6E56\u533A\\\u8861\u5C71\u6D3E\\\u8861\u5C71\u5927\u5385\\npc\\\u8861\u5C71\u6D3E_\u72EC\u5B64\u5251\u5BF9\u8BDD.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 139,
+      "npcCode": "npc-139",
+      "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51123,
+          "mpsY": 102163,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "\\script\\\u4E24\u6E56\u533A\\\u8861\u5C71\u6D3E\\\u8861\u5C71\u5927\u5385\\npc\\\u8861\u5C71\u6D3E_\u5F20\u7433\u5FC3\u5BF9\u8BDD.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    }
+  ]
+}

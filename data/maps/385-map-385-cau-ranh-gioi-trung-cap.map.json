@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 385,
+  "code": "map-385-cau-ranh-gioi-trung-cap",
+  "name": "C\u1EA7u ranh gi\u1EDBi (trung c\u1EA5p)",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 83,
+    "topRegionY": 68,
+    "rightRegionX": 99,
+    "bottomRegionY": 99
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": []
+}

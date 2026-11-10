@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jxserver.local/schemas/shop-catalog.schema.json",
+  "title": "JXData Standard v1 - Multi-Currency Shop Merchandise Catalog",
+  "type": "object",
+  "required": ["schemaVersion", "shops"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "type": "string", "const": "1.0.0" },
+    "shops": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "code", "name", "currencyType", "goods"],
+        "properties": {
+          "id": { "type": "integer", "minimum": 1 },
+          "code": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "name": { "type": "string", "minLength": 1 },
+          "currencyType": {
+            "type": "string",
+            "enum": ["gold", "fuYuan", "coin", "battleScore", "tongContribution", "honor"],
+            "default": "gold"
+          },
+          "buyPriceScalePercent": { "type": "integer", "minimum": 1, "default": 100 },
+          "sellBackDivisor": { "type": "integer", "minimum": 1, "default": 4 },
+          "goods": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["goodsId"],
+              "properties": {
+                "goodsId": { "type": "integer", "minimum": 1 },
+                "itemCode": { "type": "string" },
+                "genre": { "type": "integer", "minimum": 0 },
+                "detailType": { "type": "integer", "minimum": 0 },
+                "particularType": { "type": "integer", "minimum": 0 },
+                "level": { "type": "integer", "minimum": 0, "default": 1 },
+                "elementSeries": { "type": "integer", "minimum": -1, "maximum": 4, "default": -1 },
+                "price": { "type": "integer", "minimum": 0 },
+                "expireWallClockMinutes": { "type": "integer", "minimum": 0, "default": 0 },
+                "expireOnlineMinutes": { "type": "integer", "minimum": 0, "default": 0 }
+              },
+              "anyOf": [
+                { "required": ["itemCode"] },
+                { "required": ["genre", "detailType", "particularType"] }
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

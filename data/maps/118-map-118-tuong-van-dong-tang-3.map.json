@@ -1,0 +1,1160 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 118,
+  "code": "map-118-tuong-van-dong-tang-3",
+  "name": "T\u01AF\u1EDDng V\u00C2n \u0110\u1ED9ng t\u1EA7ng 3",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 88,
+    "topRegionY": 90,
+    "rightRegionX": 106,
+    "bottomRegionY": 100
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": [
+    {
+      "npcTemplateId": 159,
+      "npcCode": "npc-159",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 61,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51104,
+          "mpsY": 93984,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53024,
+          "mpsY": 94624,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52800,
+          "mpsY": 94336,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46848,
+          "mpsY": 100160,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50496,
+          "mpsY": 101024,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 157,
+      "npcCode": "npc-157",
+      "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 64,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51104,
+          "mpsY": 93760,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51936,
+          "mpsY": 93376,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48352,
+          "mpsY": 99776,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 157,
+      "npcCode": "npc-157",
+      "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 65,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51040,
+          "mpsY": 93312,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53280,
+          "mpsY": 95392,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49664,
+          "mpsY": 101088,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "npc-159",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 62,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51616,
+          "mpsY": 93408,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52512,
+          "mpsY": 94272,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49568,
+          "mpsY": 98496,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52768,
+          "mpsY": 99328,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "npc-159",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 63,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50400,
+          "mpsY": 94432,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48800,
+          "mpsY": 97760,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47456,
+          "mpsY": 99744,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51584,
+          "mpsY": 100032,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 157,
+      "npcCode": "npc-157",
+      "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 66,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50624,
+          "mpsY": 94400,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53696,
+          "mpsY": 98496,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 143,
+      "npcCode": "npc-143",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 69,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50368,
+          "mpsY": 94688,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53312,
+          "mpsY": 95648,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48864,
+          "mpsY": 99616,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "npc-159",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 63,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50624,
+          "mpsY": 94624,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53600,
+          "mpsY": 98048,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46784,
+          "mpsY": 100416,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "npc-159",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 62,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50688,
+          "mpsY": 94272,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 157,
+      "npcCode": "npc-157",
+      "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 64,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49566,
+          "mpsY": 95404,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49760,
+          "mpsY": 98400,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49184,
+          "mpsY": 100704,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "npc-159",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 63,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49466,
+          "mpsY": 95354,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51072,
+          "mpsY": 99200,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51968,
+          "mpsY": 99328,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "npc-159",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 62,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49414,
+          "mpsY": 95493,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "npc-159",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 63,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50144,
+          "mpsY": 95680,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49685,
+          "mpsY": 95534,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 157,
+      "npcCode": "npc-157",
+      "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 65,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50464,
+          "mpsY": 96224,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49120,
+          "mpsY": 99168,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53248,
+          "mpsY": 99168,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48576,
+          "mpsY": 99616,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 157,
+      "npcCode": "npc-157",
+      "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 66,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50528,
+          "mpsY": 95968,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54176,
+          "mpsY": 97600,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51008,
+          "mpsY": 99072,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48096,
+          "mpsY": 99968,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51008,
+          "mpsY": 100992,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 157,
+      "npcCode": "npc-157",
+      "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 66,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50336,
+          "mpsY": 95328,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 143,
+      "npcCode": "npc-143",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 69,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 53184,
+          "mpsY": 96000,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48256,
+          "mpsY": 99584,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50944,
+          "mpsY": 99808,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47040,
+          "mpsY": 100576,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51136,
+          "mpsY": 100576,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 157,
+      "npcCode": "npc-157",
+      "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 66,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 53536,
+          "mpsY": 95392,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 157,
+      "npcCode": "npc-157",
+      "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 65,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 47939,
+          "mpsY": 97152,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 157,
+      "npcCode": "npc-157",
+      "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 65,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50112,
+          "mpsY": 97184,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48928,
+          "mpsY": 99104,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50656,
+          "mpsY": 98624,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "npc-159",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 61,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50496,
+          "mpsY": 97184,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54016,
+          "mpsY": 97344,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 143,
+      "npcCode": "npc-143",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 68,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50464,
+          "mpsY": 96512,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51360,
+          "mpsY": 99520,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50784,
+          "mpsY": 101440,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "npc-159",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 62,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 53888,
+          "mpsY": 97120,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50912,
+          "mpsY": 100256,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53184,
+          "mpsY": 99424,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 157,
+      "npcCode": "npc-157",
+      "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 64,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50400,
+          "mpsY": 97280,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52992,
+          "mpsY": 99136,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47744,
+          "mpsY": 99392,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "npc-159",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 61,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 53632,
+          "mpsY": 97280,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51808,
+          "mpsY": 99520,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50144,
+          "mpsY": 101408,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 143,
+      "npcCode": "npc-143",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 67,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 54240,
+          "mpsY": 97728,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 143,
+      "npcCode": "npc-143",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 67,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 53376,
+          "mpsY": 98976,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "npc-159",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 62,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 46496,
+          "mpsY": 99584,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 143,
+      "npcCode": "npc-143",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 68,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 46432,
+          "mpsY": 99456,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 157,
+      "npcCode": "npc-157",
+      "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 64,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 46656,
+          "mpsY": 100192,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 157,
+      "npcCode": "npc-157",
+      "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 64,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52512,
+          "mpsY": 99392,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47264,
+          "mpsY": 100384,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50688,
+          "mpsY": 100992,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 143,
+      "npcCode": "npc-143",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 68,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52960,
+          "mpsY": 99520,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 143,
+      "npcCode": "npc-143",
+      "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 67,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51072,
+          "mpsY": 101856,
+          "dirIndex": 0,
+          "nameOverride": "Hoa B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    }
+  ]
+}

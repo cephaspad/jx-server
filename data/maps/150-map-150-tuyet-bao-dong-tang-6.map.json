@@ -1,0 +1,341 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 150,
+  "code": "map-150-tuyet-bao-dong-tang-6",
+  "name": "Tuy\u1EBFt B\u00E1o \u0110\u1ED9ng t\u1EA7ng 6",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 97,
+    "topRegionY": 98,
+    "rightRegionX": 101,
+    "bottomRegionY": 100
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": [
+    {
+      "npcTemplateId": 155,
+      "npcCode": "npc-155",
+      "nameOverride": "Hoa Nam s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 81,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51136,
+          "mpsY": 101225,
+          "dirIndex": 0,
+          "nameOverride": "Hoa Nam s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50646,
+          "mpsY": 101797,
+          "dirIndex": 0,
+          "nameOverride": "Hoa Nam s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 167,
+      "npcCode": "npc-167",
+      "nameOverride": "s\u01A0n  t\u1EB7c 06",
+      "entityKind": "Monster",
+      "level": 85,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50173,
+          "mpsY": 101864,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 06",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 167,
+      "npcCode": "npc-167",
+      "nameOverride": "s\u01A0n  t\u1EB7c 06",
+      "entityKind": "Monster",
+      "level": 86,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50633,
+          "mpsY": 101608,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 06",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 167,
+      "npcCode": "npc-167",
+      "nameOverride": "s\u01A0n  t\u1EB7c 06",
+      "entityKind": "Monster",
+      "level": 86,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50493,
+          "mpsY": 101830,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 06",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50206,
+          "mpsY": 102084,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 06",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51059,
+          "mpsY": 102473,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 06",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 167,
+      "npcCode": "npc-167",
+      "nameOverride": "s\u01A0n  t\u1EB7c 06",
+      "entityKind": "Monster",
+      "level": 86,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50666,
+          "mpsY": 101965,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 06",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 144,
+      "npcCode": "npc-144",
+      "nameOverride": "Nam b\u1ED9 s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 87,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51103,
+          "mpsY": 101428,
+          "dirIndex": 0,
+          "nameOverride": "Nam b\u1ED9 s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50895,
+          "mpsY": 101909,
+          "dirIndex": 0,
+          "nameOverride": "Nam b\u1ED9 s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50746,
+          "mpsY": 102010,
+          "dirIndex": 0,
+          "nameOverride": "Nam b\u1ED9 s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 167,
+      "npcCode": "npc-167",
+      "nameOverride": "s\u01A0n  t\u1EB7c 06",
+      "entityKind": "Monster",
+      "level": 84,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50811,
+          "mpsY": 101512,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 06",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 167,
+      "npcCode": "npc-167",
+      "nameOverride": "s\u01A0n  t\u1EB7c 06",
+      "entityKind": "Monster",
+      "level": 85,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50839,
+          "mpsY": 101770,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 06",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51147,
+          "mpsY": 102452,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 06",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 167,
+      "npcCode": "npc-167",
+      "nameOverride": "s\u01A0n  t\u1EB7c 06",
+      "entityKind": "Monster",
+      "level": 86,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50743,
+          "mpsY": 101860,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 06",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 155,
+      "npcCode": "npc-155",
+      "nameOverride": "Hoa Nam s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 81,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50800,
+          "mpsY": 101658,
+          "dirIndex": 0,
+          "nameOverride": "Hoa Nam s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 167,
+      "npcCode": "npc-167",
+      "nameOverride": "s\u01A0n  t\u1EB7c 06",
+      "entityKind": "Monster",
+      "level": 84,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51223,
+          "mpsY": 101424,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 06",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 155,
+      "npcCode": "npc-155",
+      "nameOverride": "Hoa Nam s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 83,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50983,
+          "mpsY": 102501,
+          "dirIndex": 0,
+          "nameOverride": "Hoa Nam s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    }
+  ]
+}

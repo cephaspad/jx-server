@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 208,
+  "code": "map-208-dai-lao",
+  "name": "\u0111\u1EA1i lao",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 96,
+    "topRegionY": 94,
+    "rightRegionX": 113,
+    "bottomRegionY": 102
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": [
+    {
+      "npcTemplateId": 211,
+      "npcCode": "npc-211",
+      "nameOverride": "Ch\u1EE7 t\u1EEDu \u0110i\u1EBFm Gi\u00E1p",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 57277,
+          "mpsY": 97751,
+          "dirIndex": 0,
+          "nameOverride": "Ch\u1EE7 t\u1EEDu \u0110i\u1EBFm Gi\u00E1p",
+          "scriptPath": "\\script\\global\\\u6D17pk\u7684\u7262\u5934.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    }
+  ]
+}

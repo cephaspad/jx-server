@@ -1,0 +1,851 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 130,
+  "code": "map-130-luu-tien-dong-tang-6",
+  "name": "L\u01AFu Ti\u00CAn \u0110\u1ED9ng t\u1EA7ng 6",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 91,
+    "topRegionY": 97,
+    "rightRegionX": 102,
+    "bottomRegionY": 105
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": [
+    {
+      "npcTemplateId": 142,
+      "npcCode": "npc-142",
+      "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 98,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48803,
+          "mpsY": 101000,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 140,
+      "npcCode": "npc-140",
+      "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 91,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49094,
+          "mpsY": 101135,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48832,
+          "mpsY": 104832,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50272,
+          "mpsY": 104736,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 141,
+      "npcCode": "npc-141",
+      "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 95,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48480,
+          "mpsY": 101408,
+          "dirIndex": 0,
+          "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 140,
+      "npcCode": "npc-140",
+      "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 93,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48416,
+          "mpsY": 101824,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 141,
+      "npcCode": "npc-141",
+      "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 95,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49344,
+          "mpsY": 102144,
+          "dirIndex": 0,
+          "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50112,
+          "mpsY": 104704,
+          "dirIndex": 0,
+          "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 141,
+      "npcCode": "npc-141",
+      "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 94,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49280,
+          "mpsY": 101376,
+          "dirIndex": 0,
+          "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51936,
+          "mpsY": 105312,
+          "dirIndex": 0,
+          "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48480,
+          "mpsY": 106464,
+          "dirIndex": 0,
+          "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 141,
+      "npcCode": "npc-141",
+      "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 95,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49952,
+          "mpsY": 102144,
+          "dirIndex": 0,
+          "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50652,
+          "mpsY": 102234,
+          "dirIndex": 0,
+          "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 141,
+      "npcCode": "npc-141",
+      "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 96,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 47456,
+          "mpsY": 103328,
+          "dirIndex": 0,
+          "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51072,
+          "mpsY": 104256,
+          "dirIndex": 0,
+          "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47360,
+          "mpsY": 104448,
+          "dirIndex": 0,
+          "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 141,
+      "npcCode": "npc-141",
+      "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 95,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49728,
+          "mpsY": 102464,
+          "dirIndex": 0,
+          "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48960,
+          "mpsY": 104768,
+          "dirIndex": 0,
+          "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49984,
+          "mpsY": 104640,
+          "dirIndex": 0,
+          "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51456,
+          "mpsY": 104800,
+          "dirIndex": 0,
+          "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48256,
+          "mpsY": 105920,
+          "dirIndex": 0,
+          "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 141,
+      "npcCode": "npc-141",
+      "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 94,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50080,
+          "mpsY": 102880,
+          "dirIndex": 0,
+          "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 140,
+      "npcCode": "npc-140",
+      "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 93,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50613,
+          "mpsY": 102451,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50976,
+          "mpsY": 106592,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 140,
+      "npcCode": "npc-140",
+      "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 92,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51023,
+          "mpsY": 102542,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 141,
+      "npcCode": "npc-141",
+      "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 94,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50789,
+          "mpsY": 102559,
+          "dirIndex": 0,
+          "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47808,
+          "mpsY": 104512,
+          "dirIndex": 0,
+          "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51136,
+          "mpsY": 107008,
+          "dirIndex": 0,
+          "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 141,
+      "npcCode": "npc-141",
+      "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 96,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 47712,
+          "mpsY": 103872,
+          "dirIndex": 0,
+          "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 140,
+      "npcCode": "npc-140",
+      "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 93,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 47744,
+          "mpsY": 103680,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 142,
+      "npcCode": "npc-142",
+      "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 97,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49856,
+          "mpsY": 103904,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 142,
+      "npcCode": "npc-142",
+      "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 98,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49920,
+          "mpsY": 103648,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 140,
+      "npcCode": "npc-140",
+      "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 91,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50848,
+          "mpsY": 103744,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50816,
+          "mpsY": 104640,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 141,
+      "npcCode": "npc-141",
+      "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 96,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 47936,
+          "mpsY": 105248,
+          "dirIndex": 0,
+          "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 142,
+      "npcCode": "npc-142",
+      "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 99,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51232,
+          "mpsY": 104800,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 141,
+      "npcCode": "npc-141",
+      "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 96,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51264,
+          "mpsY": 104608,
+          "dirIndex": 0,
+          "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 140,
+      "npcCode": "npc-140",
+      "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 91,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51904,
+          "mpsY": 105024,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50368,
+          "mpsY": 107136,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 140,
+      "npcCode": "npc-140",
+      "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 93,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48096,
+          "mpsY": 105824,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 141,
+      "npcCode": "npc-141",
+      "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 94,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48576,
+          "mpsY": 105696,
+          "dirIndex": 0,
+          "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 142,
+      "npcCode": "npc-142",
+      "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 97,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48384,
+          "mpsY": 106336,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51360,
+          "mpsY": 106656,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 141,
+      "npcCode": "npc-141",
+      "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 96,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51360,
+          "mpsY": 106368,
+          "dirIndex": 0,
+          "nameOverride": "Giang Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 140,
+      "npcCode": "npc-140",
+      "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 92,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49056,
+          "mpsY": 106752,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 140,
+      "npcCode": "npc-140",
+      "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 91,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49216,
+          "mpsY": 106912,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 142,
+      "npcCode": "npc-142",
+      "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 98,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50560,
+          "mpsY": 106688,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u00D4ng B\u1EAFc s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 140,
+      "npcCode": "npc-140",
+      "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 92,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50240,
+          "mpsY": 107040,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    }
+  ]
+}

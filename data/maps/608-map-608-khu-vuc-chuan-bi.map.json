@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 608,
+  "code": "map-608-khu-vuc-chuan-bi",
+  "name": "Khu v\u1EF1c chu\u1EA9n b\u1ECB",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 92,
+    "topRegionY": 93,
+    "rightRegionX": 105,
+    "bottomRegionY": 101
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": []
+}

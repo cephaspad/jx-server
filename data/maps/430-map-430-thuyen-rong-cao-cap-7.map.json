@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 430,
+  "code": "map-430-thuyen-rong-cao-cap-7",
+  "name": "Thuy\u1EC1n R\u1ED3ng cao c\u1EA5p (7)",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 97,
+    "topRegionY": 98,
+    "rightRegionX": 104,
+    "bottomRegionY": 101
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": []
+}

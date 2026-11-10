@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 585,
+  "code": "map-585-khu-vuc-hoat-dong-dip-xuan",
+  "name": "Khu v\u1EF1c ho\u1EA1t \u0110\u1ED9ng d\u1ECBp xu\u00C2n",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 80,
+    "topRegionY": 81,
+    "rightRegionX": 105,
+    "bottomRegionY": 100
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": []
+}

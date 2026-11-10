@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 354,
+  "code": "map-354-doanh-trai-trung-cap",
+  "name": "Doanh tr\u1EA1i (trung c\u1EA5p)",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 68,
+    "topRegionY": 72,
+    "rightRegionX": 101,
+    "bottomRegionY": 100
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": []
+}

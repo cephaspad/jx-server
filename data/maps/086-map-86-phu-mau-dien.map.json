@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 86,
+  "code": "map-86-phu-mau-dien",
+  "name": "Ph\u1EE5 M\u1EABu \u0110i\u1EC7n",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 98,
+    "topRegionY": 98,
+    "rightRegionX": 101,
+    "bottomRegionY": 100
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": [
+    {
+      "npcTemplateId": 79,
+      "npcCode": "npc-79",
+      "nameOverride": "V\u00F5 \u0111ang Th\u1ECB \u0111\u1ED3ng Thanh Phong",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51323,
+          "mpsY": 101900,
+          "dirIndex": 0,
+          "nameOverride": "V\u00F5 \u0111ang Th\u1ECB \u0111\u1ED3ng Thanh Phong",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5357\u533A\\\u6B66\u5F53\u6D3E\\\u7236\u6BCD\u6BBF\\npc\\wdnpc04\\wdnpc04.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    }
+  ]
+}

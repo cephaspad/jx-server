@@ -1,0 +1,293 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 236,
+  "code": "map-236-dao-hoa-dao-2",
+  "name": "\u0111\u00E0o Hoa \u0110\u1EA3o (2)",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 91,
+    "topRegionY": 95,
+    "rightRegionX": 108,
+    "bottomRegionY": 106
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": [
+    {
+      "npcTemplateId": 371,
+      "npcCode": "npc-371",
+      "nameOverride": "Nam trung ni\u00CAn 8",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51931,
+          "mpsY": 99902,
+          "dirIndex": 0,
+          "nameOverride": "Nam trung ni\u00CAn 8",
+          "scriptPath": "\\script\\\u6C5F\u5357\u533A\\\u6843\u82B1\u5C9B\\npc\\\u8DEF\u4EBA_\u8C22\u4FDD\u4E49.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 215,
+      "npcCode": "npc-215",
+      "nameOverride": "Ch\u1EE7 t\u1EA1p h\u00F3a B\u00EDnh",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 53970,
+          "mpsY": 101373,
+          "dirIndex": 0,
+          "nameOverride": "Ch\u1EE7 t\u1EA1p h\u00F3a B\u00EDnh",
+          "scriptPath": "\\script\\\u6C5F\u5357\u533A\\\u6843\u82B1\u5C9B\\npc\\\u8DEF\u4EBA_\u5B8C\u989C\u5929\u8D50.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 87,
+      "npcCode": "npc-87",
+      "nameOverride": "Ph\u1EA5t V\u00C2n Ti\u00CAn T\u1EED",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48936,
+          "mpsY": 101487,
+          "dirIndex": 0,
+          "nameOverride": "Ph\u1EA5t V\u00C2n Ti\u00CAn T\u1EED",
+          "scriptPath": "\\script\\\u6C5F\u5357\u533A\\\u6843\u82B1\u5C9B\\npc\\\u8DEF\u4EBA_\u6C88\u827E\u51B0.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 84,
+      "npcCode": "npc-84",
+      "nameOverride": "B\u00E1i Nguy\u1EC7t Ti\u00CAn T\u1EED",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50099,
+          "mpsY": 102006,
+          "dirIndex": 0,
+          "nameOverride": "B\u00E1i Nguy\u1EC7t Ti\u00CAn T\u1EED",
+          "scriptPath": "\\script\\\u6C5F\u5357\u533A\\\u6843\u82B1\u5C9B\\npc\\\u8DEF\u4EBA_\u9759\u6148.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 174,
+      "npcCode": "npc-174",
+      "nameOverride": "C\u00E1i Bang Tri\u1EC7u \u0111\u00E0 ch\u1EE7",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50758,
+          "mpsY": 101788,
+          "dirIndex": 0,
+          "nameOverride": "C\u00E1i Bang Tri\u1EC7u \u0111\u00E0 ch\u1EE7",
+          "scriptPath": "\\script\\\u6C5F\u5357\u533A\\\u6843\u82B1\u5C9B\\npc\\\u8DEF\u4EBA_\u4EC7\u5EF6.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 240,
+      "npcCode": "npc-240",
+      "nameOverride": "Thuy\u1EC1n phu \u1EA5t",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48673,
+          "mpsY": 103631,
+          "dirIndex": 0,
+          "nameOverride": "Thuy\u1EC1n phu \u1EA5t",
+          "scriptPath": "\\script\\\u6C5F\u5357\u533A\\\u6843\u82B1\u5C9B\\npc\\\u8DEF\u4EBA_\u8239\u592B.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 389,
+      "npcCode": "npc-389",
+      "nameOverride": "B\u00E0 ch\u1EE7 v\u1EADt nu\u00D4i 4",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50212,
+          "mpsY": 103557,
+          "dirIndex": 0,
+          "nameOverride": "B\u00E0 ch\u1EE7 v\u1EADt nu\u00D4i 4",
+          "scriptPath": "\\script\\\u6C5F\u5357\u533A\\\u6843\u82B1\u5C9B\\npc\\\u8DEF\u4EBA_\u6843\u82B1\u9690\u58EB.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 377,
+      "npcCode": "npc-377",
+      "nameOverride": "Nam trung ni\u00CAn 14",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52643,
+          "mpsY": 103680,
+          "dirIndex": 0,
+          "nameOverride": "Nam trung ni\u00CAn 14",
+          "scriptPath": "\\script\\\u6C5F\u5357\u533A\\\u6843\u82B1\u5C9B\\npc\\\u8DEF\u4EBA_\u5510\u4E09\u5200.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 72,
+      "npcCode": "npc-72",
+      "nameOverride": "V\u00F5 \u0111ang Ch\u01AF\u1EDFng m\u00D4n",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 53410,
+          "mpsY": 103649,
+          "dirIndex": 0,
+          "nameOverride": "V\u00F5 \u0111ang Ch\u01AF\u1EDFng m\u00D4n",
+          "scriptPath": "\\script\\\u6C5F\u5357\u533A\\\u6843\u82B1\u5C9B\\npc\\\u8DEF\u4EBA_\u7A7A\u60E0.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 108,
+      "npcCode": "npc-108",
+      "nameOverride": "\u0111\u01AF\u1EDDng Nh\u1EA5t Tr\u1EA7n",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50174,
+          "mpsY": 104514,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u01AF\u1EDDng Nh\u1EA5t Tr\u1EA7n",
+          "scriptPath": "\\script\\\u6C5F\u5357\u533A\\\u6843\u82B1\u5C9B\\npc\\\u8DEF\u4EBA_\u51AF\u541B\u8861.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 89,
+      "npcCode": "npc-89",
+      "nameOverride": "U Lan Ti\u00CAn T\u1EED",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51800,
+          "mpsY": 105588,
+          "dirIndex": 0,
+          "nameOverride": "U Lan Ti\u00CAn T\u1EED",
+          "scriptPath": "\\script\\\u6C5F\u5357\u533A\\\u6843\u82B1\u5C9B\\npc\\\u8DEF\u4EBA_\u5B5F\u661F\u7476.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 331,
+      "npcCode": "npc-331",
+      "nameOverride": "Nam thanh ni\u00CAn 14",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 53598,
+          "mpsY": 106103,
+          "dirIndex": 0,
+          "nameOverride": "Nam thanh ni\u00CAn 14",
+          "scriptPath": "\\script\\\u6C5F\u5357\u533A\\\u6843\u82B1\u5C9B\\npc\\\u8DEF\u4EBA_\u53F6\u98DE.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    }
+  ]
+}

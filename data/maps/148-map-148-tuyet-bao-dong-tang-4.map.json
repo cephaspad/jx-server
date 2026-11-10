@@ -1,0 +1,573 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 148,
+  "code": "map-148-tuyet-bao-dong-tang-4",
+  "name": "Tuy\u1EBFt B\u00E1o \u0110\u1ED9ng t\u1EA7ng 4",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 94,
+    "topRegionY": 99,
+    "rightRegionX": 105,
+    "bottomRegionY": 105
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": [
+    {
+      "npcTemplateId": 151,
+      "npcCode": "npc-151",
+      "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 61,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51746,
+          "mpsY": 103034,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51072,
+          "mpsY": 103648,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 151,
+      "npcCode": "npc-151",
+      "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 62,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51871,
+          "mpsY": 102865,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49076,
+          "mpsY": 105069,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50453,
+          "mpsY": 105158,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "npc-162",
+      "nameOverride": "s\u01A0n  t\u1EB7c 01",
+      "entityKind": "Monster",
+      "level": 64,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52373,
+          "mpsY": 103003,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 151,
+      "npcCode": "npc-151",
+      "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 63,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52343,
+          "mpsY": 103161,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51740,
+          "mpsY": 103816,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49518,
+          "mpsY": 105155,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "npc-162",
+      "nameOverride": "s\u01A0n  t\u1EB7c 01",
+      "entityKind": "Monster",
+      "level": 65,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50016,
+          "mpsY": 103584,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51168,
+          "mpsY": 103520,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 146,
+      "npcCode": "npc-146",
+      "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+      "entityKind": "Monster",
+      "level": 68,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50324,
+          "mpsY": 104179,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 146,
+      "npcCode": "npc-146",
+      "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+      "entityKind": "Monster",
+      "level": 68,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50470,
+          "mpsY": 104226,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51510,
+          "mpsY": 104389,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49012,
+          "mpsY": 105536,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 146,
+      "npcCode": "npc-146",
+      "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+      "entityKind": "Monster",
+      "level": 68,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51592,
+          "mpsY": 104089,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "npc-162",
+      "nameOverride": "s\u01A0n  t\u1EB7c 01",
+      "entityKind": "Monster",
+      "level": 64,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52195,
+          "mpsY": 103456,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48876,
+          "mpsY": 105277,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "npc-162",
+      "nameOverride": "s\u01A0n  t\u1EB7c 01",
+      "entityKind": "Monster",
+      "level": 66,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52106,
+          "mpsY": 103595,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "npc-162",
+      "nameOverride": "s\u01A0n  t\u1EB7c 01",
+      "entityKind": "Monster",
+      "level": 66,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48901,
+          "mpsY": 105046,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48840,
+          "mpsY": 106456,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "npc-162",
+      "nameOverride": "s\u01A0n  t\u1EB7c 01",
+      "entityKind": "Monster",
+      "level": 66,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49113,
+          "mpsY": 105308,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49644,
+          "mpsY": 105356,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 151,
+      "npcCode": "npc-151",
+      "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 63,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49672,
+          "mpsY": 105076,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "npc-162",
+      "nameOverride": "s\u01A0n  t\u1EB7c 01",
+      "entityKind": "Monster",
+      "level": 65,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50605,
+          "mpsY": 105171,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51810,
+          "mpsY": 105350,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "npc-162",
+      "nameOverride": "s\u01A0n  t\u1EB7c 01",
+      "entityKind": "Monster",
+      "level": 65,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48704,
+          "mpsY": 106368,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "npc-162",
+      "nameOverride": "s\u01A0n  t\u1EB7c 01",
+      "entityKind": "Monster",
+      "level": 65,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49504,
+          "mpsY": 106176,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 151,
+      "npcCode": "npc-151",
+      "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 61,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49462,
+          "mpsY": 106476,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "npc-162",
+      "nameOverride": "s\u01A0n  t\u1EB7c 01",
+      "entityKind": "Monster",
+      "level": 66,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51208,
+          "mpsY": 106189,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 151,
+      "npcCode": "npc-151",
+      "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 62,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51381,
+          "mpsY": 106214,
+          "dirIndex": 0,
+          "nameOverride": "T\u00C2y Nam s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 146,
+      "npcCode": "npc-146",
+      "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+      "entityKind": "Monster",
+      "level": 67,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51968,
+          "mpsY": 105516,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    }
+  ]
+}

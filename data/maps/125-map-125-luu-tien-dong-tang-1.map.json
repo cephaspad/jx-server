@@ -1,0 +1,1379 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 125,
+  "code": "map-125-luu-tien-dong-tang-1",
+  "name": "L\u01AFu Ti\u00CAn \u0110\u1ED9ng t\u1EA7ng 1",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 98,
+    "topRegionY": 92,
+    "rightRegionX": 114,
+    "bottomRegionY": 102
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": [
+    {
+      "npcTemplateId": 162,
+      "npcCode": "npc-162",
+      "nameOverride": "s\u01A0n  t\u1EB7c 01",
+      "entityKind": "Monster",
+      "level": 55,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51680,
+          "mpsY": 96192,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53440,
+          "mpsY": 101088,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "\\script\\\u897F\u5317\u5317\u533A\\\u9EC4\u6CB3\u6E90\u5934\\\u7559\u4ED9\u6D1E\u4E00\u5C42\\npc\\\u6218\u6597_kll60_\u4E2D\u539F\u5C71\u8D3C\u9996\u9886.lua",
+          "isSpecialNpc": true
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "npc-162",
+      "nameOverride": "s\u01A0n  t\u1EB7c 01",
+      "entityKind": "Monster",
+      "level": 55,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51936,
+          "mpsY": 96160,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53184,
+          "mpsY": 98656,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55840,
+          "mpsY": 98688,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 146,
+      "npcCode": "npc-146",
+      "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+      "entityKind": "Monster",
+      "level": 58,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 54082,
+          "mpsY": 95957,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 146,
+      "npcCode": "npc-146",
+      "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+      "entityKind": "Monster",
+      "level": 59,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 54677,
+          "mpsY": 96189,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55680,
+          "mpsY": 102048,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 161,
+      "npcCode": "npc-161",
+      "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 53,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 55200,
+          "mpsY": 95872,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50976,
+          "mpsY": 99392,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53152,
+          "mpsY": 101440,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 146,
+      "npcCode": "npc-146",
+      "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+      "entityKind": "Monster",
+      "level": 59,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 54945,
+          "mpsY": 96000,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 161,
+      "npcCode": "npc-161",
+      "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 52,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52096,
+          "mpsY": 96384,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52224,
+          "mpsY": 97056,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53600,
+          "mpsY": 100864,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "npc-162",
+      "nameOverride": "s\u01A0n  t\u1EB7c 01",
+      "entityKind": "Monster",
+      "level": 55,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52000,
+          "mpsY": 96544,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53952,
+          "mpsY": 96384,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52768,
+          "mpsY": 100096,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 161,
+      "npcCode": "npc-161",
+      "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 52,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 53984,
+          "mpsY": 96800,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54686,
+          "mpsY": 96889,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53184,
+          "mpsY": 100608,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52832,
+          "mpsY": 100928,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53760,
+          "mpsY": 103648,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "npc-162",
+      "nameOverride": "s\u01A0n  t\u1EB7c 01",
+      "entityKind": "Monster",
+      "level": 56,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 54272,
+          "mpsY": 96576,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54848,
+          "mpsY": 96512,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53344,
+          "mpsY": 100672,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55178,
+          "mpsY": 100679,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51541,
+          "mpsY": 102387,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "npc-162",
+      "nameOverride": "s\u01A0n  t\u1EB7c 01",
+      "entityKind": "Monster",
+      "level": 56,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 55200,
+          "mpsY": 96672,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50816,
+          "mpsY": 100800,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57248,
+          "mpsY": 102976,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 161,
+      "npcCode": "npc-161",
+      "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 52,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 55232,
+          "mpsY": 97120,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53024,
+          "mpsY": 98176,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50688,
+          "mpsY": 99712,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 146,
+      "npcCode": "npc-146",
+      "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+      "entityKind": "Monster",
+      "level": 58,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 55328,
+          "mpsY": 96256,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52544,
+          "mpsY": 102688,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54240,
+          "mpsY": 103456,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54400,
+          "mpsY": 104032,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 161,
+      "npcCode": "npc-161",
+      "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 52,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52192,
+          "mpsY": 97728,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51040,
+          "mpsY": 99264,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56096,
+          "mpsY": 99520,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55488,
+          "mpsY": 101088,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52416,
+          "mpsY": 102016,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 146,
+      "npcCode": "npc-146",
+      "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+      "entityKind": "Monster",
+      "level": 57,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52000,
+          "mpsY": 98240,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56224,
+          "mpsY": 103424,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 161,
+      "npcCode": "npc-161",
+      "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 53,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52256,
+          "mpsY": 97600,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53548,
+          "mpsY": 98870,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53632,
+          "mpsY": 104288,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54848,
+          "mpsY": 103776,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "npc-162",
+      "nameOverride": "s\u01A0n  t\u1EB7c 01",
+      "entityKind": "Monster",
+      "level": 55,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": true,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 53120,
+          "mpsY": 98272,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": true
+        },
+        {
+          "mpsX": 53376,
+          "mpsY": 101248,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54080,
+          "mpsY": 101312,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57543,
+          "mpsY": 103292,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 161,
+      "npcCode": "npc-161",
+      "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 51,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 53440,
+          "mpsY": 98176,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51639,
+          "mpsY": 102074,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "npc-162",
+      "nameOverride": "s\u01A0n  t\u1EB7c 01",
+      "entityKind": "Monster",
+      "level": 56,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 55744,
+          "mpsY": 97856,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50688,
+          "mpsY": 100064,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54336,
+          "mpsY": 101536,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "npc-162",
+      "nameOverride": "s\u01A0n  t\u1EB7c 01",
+      "entityKind": "Monster",
+      "level": 54,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 55840,
+          "mpsY": 98240,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52832,
+          "mpsY": 100736,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "npc-162",
+      "nameOverride": "s\u01A0n  t\u1EB7c 01",
+      "entityKind": "Monster",
+      "level": 54,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51328,
+          "mpsY": 99008,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51520,
+          "mpsY": 98784,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52096,
+          "mpsY": 102752,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52960,
+          "mpsY": 103744,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 146,
+      "npcCode": "npc-146",
+      "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+      "entityKind": "Monster",
+      "level": 58,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51712,
+          "mpsY": 98656,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55712,
+          "mpsY": 102304,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53280,
+          "mpsY": 103424,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53824,
+          "mpsY": 104352,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56736,
+          "mpsY": 103648,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 161,
+      "npcCode": "npc-161",
+      "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 51,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 55648,
+          "mpsY": 98368,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53664,
+          "mpsY": 101184,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55552,
+          "mpsY": 102624,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 146,
+      "npcCode": "npc-146",
+      "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+      "entityKind": "Monster",
+      "level": 59,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 56064,
+          "mpsY": 99200,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "npc-162",
+      "nameOverride": "s\u01A0n  t\u1EB7c 01",
+      "entityKind": "Monster",
+      "level": 56,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50624,
+          "mpsY": 99936,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 161,
+      "npcCode": "npc-161",
+      "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 53,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50784,
+          "mpsY": 100160,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53664,
+          "mpsY": 99328,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 161,
+      "npcCode": "npc-161",
+      "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 52,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 53024,
+          "mpsY": 100192,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55680,
+          "mpsY": 100096,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55936,
+          "mpsY": 101824,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 146,
+      "npcCode": "npc-146",
+      "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+      "entityKind": "Monster",
+      "level": 59,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52789,
+          "mpsY": 100347,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 56192,
+          "mpsY": 100128,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 146,
+      "npcCode": "npc-146",
+      "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+      "entityKind": "Monster",
+      "level": 58,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 56288,
+          "mpsY": 99360,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 146,
+      "npcCode": "npc-146",
+      "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+      "entityKind": "Monster",
+      "level": 57,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 56384,
+          "mpsY": 99584,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57391,
+          "mpsY": 103334,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52768,
+          "mpsY": 103456,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "npc-162",
+      "nameOverride": "s\u01A0n  t\u1EB7c 01",
+      "entityKind": "Monster",
+      "level": 54,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 53248,
+          "mpsY": 101312,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "npc-162",
+      "nameOverride": "s\u01A0n  t\u1EB7c 01",
+      "entityKind": "Monster",
+      "level": 56,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 56000,
+          "mpsY": 100416,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51520,
+          "mpsY": 101728,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54208,
+          "mpsY": 101440,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55168,
+          "mpsY": 102976,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53952,
+          "mpsY": 104224,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 146,
+      "npcCode": "npc-146",
+      "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+      "entityKind": "Monster",
+      "level": 57,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51648,
+          "mpsY": 101536,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 146,
+      "npcCode": "npc-146",
+      "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+      "entityKind": "Monster",
+      "level": 57,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51456,
+          "mpsY": 101504,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh1",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 161,
+      "npcCode": "npc-161",
+      "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 51,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52480,
+          "mpsY": 101568,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "npc-162",
+      "nameOverride": "s\u01A0n  t\u1EB7c 01",
+      "entityKind": "Monster",
+      "level": 54,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52352,
+          "mpsY": 102880,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52512,
+          "mpsY": 103040,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "npc-162",
+      "nameOverride": "s\u01A0n  t\u1EB7c 01",
+      "entityKind": "Monster",
+      "level": 55,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 56864,
+          "mpsY": 103136,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 57493,
+          "mpsY": 102762,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 01",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 161,
+      "npcCode": "npc-161",
+      "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+      "entityKind": "Monster",
+      "level": 55,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": true,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 54080,
+          "mpsY": 104096,
+          "dirIndex": 0,
+          "nameOverride": "Trung Nguy\u00CAn s\u01A0n  t\u1EB7c 2",
+          "scriptPath": "\\script\\\u897F\u5317\u5317\u533A\\\u9EC4\u6CB3\u6E90\u5934\\\u7559\u4ED9\u6D1E\u4E00\u5C42\\npc\\\u6218\u6597_kll60_\u4E2D\u539F\u5C71\u8D3C\u9996\u9886.lua",
+          "isSpecialNpc": true
+        }
+      ]
+    }
+  ]
+}

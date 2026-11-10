@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jxserver.local/schemas/loot-table.schema.json",
+  "title": "JXData Standard v1 - Weighted Monster Loot Table Catalog",
+  "type": "object",
+  "required": ["schemaVersion", "lootTables"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "type": "string", "const": "1.0.0" },
+    "lootTables": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/lootTableEntry" }
+    }
+  },
+  "$defs": {
+    "lootTableEntry": {
+      "type": "object",
+      "required": ["id", "code", "moneyDropChance", "minMoneyGold", "maxMoneyGold", "weightedPools"],
+      "properties": {
+        "id": { "type": "integer", "minimum": 1 },
+        "code": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+        "legacyIniPath": { "type": "string" },
+        "randRange": { "type": "integer", "minimum": 1, "default": 1000000 },
+        "magicRate": { "type": "integer", "minimum": 0, "default": 1 },
+        "moneyDropChance": { "type": "number", "minimum": 0, "maximum": 1 },
+        "moneyRate": { "type": "integer", "minimum": 0 },
+        "moneyScale": { "type": "integer", "minimum": 0, "default": 50 },
+        "minMoneyGold": { "type": "integer", "minimum": 0 },
+        "maxMoneyGold": { "type": "integer", "minimum": 0 },
+        "minItemLevel": { "type": "integer", "minimum": 1, "maximum": 20, "default": 1 },
+        "minItemLevelScale": { "type": "integer", "minimum": 0, "default": 20 },
+        "maxItemLevel": { "type": "integer", "minimum": 1, "maximum": 20, "default": 10 },
+        "maxItemLevelScale": { "type": "integer", "minimum": 0, "default": 10 },
+        "maxDropsPerKill": { "type": "integer", "minimum": 0, "default": 1 },
+        "blueAffixLuckFactor": { "type": "number", "minimum": 0, "default": 1.0 },
+        "scriptDropTableCode": { "type": "string" },
+        "weightedPools": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["weight"],
+            "properties": {
+              "weight": { "type": "integer", "minimum": 1 },
+              "itemCode": { "type": "string" },
+              "genre": { "type": "integer", "minimum": 0 },
+              "quality": { "type": "integer", "enum": [0, 1, 2, 3], "default": 0 },
+              "detailType": { "type": "integer", "minimum": 0 },
+              "particularType": { "type": "integer", "minimum": 0 },
+              "elementSeries": { "type": "integer", "minimum": -1, "maximum": 4, "default": -1 },
+              "minLevel": { "type": "integer", "minimum": 0, "maximum": 20 },
+              "maxLevel": { "type": "integer", "minimum": 0, "maximum": 20 },
+              "goldEquipId": { "type": "integer", "minimum": 1 }
+            },
+            "anyOf": [
+              { "required": ["itemCode"] },
+              { "required": ["genre", "detailType", "particularType"] },
+              { "required": ["goldEquipId"] }
+            ],
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

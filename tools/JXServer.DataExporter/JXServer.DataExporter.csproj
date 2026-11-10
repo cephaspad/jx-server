@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\JXServer.Primitives\JXServer.Primitives.csproj" />
+    <ProjectReference Include="..\..\src\JXServer.GameAssets\JXServer.GameAssets.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MemoryPack" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,633 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 152,
+  "code": "map-152-tuyet-bao-dong-tang-8",
+  "name": "Tuy\u1EBFt B\u00E1o \u0110\u1ED9ng t\u1EA7ng 8",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 93,
+    "topRegionY": 99,
+    "rightRegionX": 105,
+    "bottomRegionY": 105
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": [
+    {
+      "npcTemplateId": 144,
+      "npcCode": "npc-144",
+      "nameOverride": "Nam b\u1ED9 s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 92,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52213,
+          "mpsY": 102754,
+          "dirIndex": 0,
+          "nameOverride": "Nam b\u1ED9 s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51872,
+          "mpsY": 105184,
+          "dirIndex": 0,
+          "nameOverride": "Nam b\u1ED9 s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 144,
+      "npcCode": "npc-144",
+      "nameOverride": "Nam b\u1ED9 s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 93,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52019,
+          "mpsY": 102787,
+          "dirIndex": 0,
+          "nameOverride": "Nam b\u1ED9 s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 192,
+      "npcCode": "npc-192",
+      "nameOverride": "Ni C\u00D4 Thanh H\u00F2a",
+      "entityKind": "Monster",
+      "level": 96,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52296,
+          "mpsY": 103077,
+          "dirIndex": 0,
+          "nameOverride": "Ni C\u00D4 Thanh H\u00F2a",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 144,
+      "npcCode": "npc-144",
+      "nameOverride": "Nam b\u1ED9 s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 93,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50200,
+          "mpsY": 104391,
+          "dirIndex": 0,
+          "nameOverride": "Nam b\u1ED9 s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50389,
+          "mpsY": 104219,
+          "dirIndex": 0,
+          "nameOverride": "Nam b\u1ED9 s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 144,
+      "npcCode": "npc-144",
+      "nameOverride": "Nam b\u1ED9 s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 93,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51475,
+          "mpsY": 103552,
+          "dirIndex": 0,
+          "nameOverride": "Nam b\u1ED9 s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 176,
+      "npcCode": "npc-176",
+      "nameOverride": "\u0111\u1EC7 \u0111\u01AF\u1EDDng M\u00D4n",
+      "entityKind": "DialogNpc",
+      "level": 98,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51639,
+          "mpsY": 103886,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u1EC7 \u0111\u01AF\u1EDDng M\u00D4n",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 176,
+      "npcCode": "npc-176",
+      "nameOverride": "\u0111\u1EC7 \u0111\u01AF\u1EDDng M\u00D4n",
+      "entityKind": "DialogNpc",
+      "level": 99,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49480,
+          "mpsY": 105125,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u1EC7 \u0111\u01AF\u1EDDng M\u00D4n",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 192,
+      "npcCode": "npc-192",
+      "nameOverride": "Ni C\u00D4 Thanh H\u00F2a",
+      "entityKind": "Monster",
+      "level": 95,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49824,
+          "mpsY": 105440,
+          "dirIndex": 0,
+          "nameOverride": "Ni C\u00D4 Thanh H\u00F2a",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 176,
+      "npcCode": "npc-176",
+      "nameOverride": "\u0111\u1EC7 \u0111\u01AF\u1EDDng M\u00D4n",
+      "entityKind": "DialogNpc",
+      "level": 98,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49824,
+          "mpsY": 104928,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u1EC7 \u0111\u01AF\u1EDDng M\u00D4n",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 144,
+      "npcCode": "npc-144",
+      "nameOverride": "Nam b\u1ED9 s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 92,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51095,
+          "mpsY": 104676,
+          "dirIndex": 0,
+          "nameOverride": "Nam b\u1ED9 s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 192,
+      "npcCode": "npc-192",
+      "nameOverride": "Ni C\u00D4 Thanh H\u00F2a",
+      "entityKind": "Monster",
+      "level": 94,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51005,
+          "mpsY": 104984,
+          "dirIndex": 0,
+          "nameOverride": "Ni C\u00D4 Thanh H\u00F2a",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 176,
+      "npcCode": "npc-176",
+      "nameOverride": "\u0111\u1EC7 \u0111\u01AF\u1EDDng M\u00D4n",
+      "entityKind": "DialogNpc",
+      "level": 97,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51616,
+          "mpsY": 104960,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u1EC7 \u0111\u01AF\u1EDDng M\u00D4n",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 192,
+      "npcCode": "npc-192",
+      "nameOverride": "Ni C\u00D4 Thanh H\u00F2a",
+      "entityKind": "Monster",
+      "level": 96,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48678,
+          "mpsY": 106058,
+          "dirIndex": 0,
+          "nameOverride": "Ni C\u00D4 Thanh H\u00F2a",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53216,
+          "mpsY": 106752,
+          "dirIndex": 0,
+          "nameOverride": "Ni C\u00D4 Thanh H\u00F2a",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 176,
+      "npcCode": "npc-176",
+      "nameOverride": "\u0111\u1EC7 \u0111\u01AF\u1EDDng M\u00D4n",
+      "entityKind": "DialogNpc",
+      "level": 99,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48893,
+          "mpsY": 105716,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u1EC7 \u0111\u01AF\u1EDDng M\u00D4n",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49664,
+          "mpsY": 105536,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u1EC7 \u0111\u01AF\u1EDDng M\u00D4n",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 176,
+      "npcCode": "npc-176",
+      "nameOverride": "\u0111\u1EC7 \u0111\u01AF\u1EDDng M\u00D4n",
+      "entityKind": "DialogNpc",
+      "level": 99,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48899,
+          "mpsY": 106255,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u1EC7 \u0111\u01AF\u1EDDng M\u00D4n",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 144,
+      "npcCode": "npc-144",
+      "nameOverride": "Nam b\u1ED9 s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 92,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51502,
+          "mpsY": 106056,
+          "dirIndex": 0,
+          "nameOverride": "Nam b\u1ED9 s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52960,
+          "mpsY": 106240,
+          "dirIndex": 0,
+          "nameOverride": "Nam b\u1ED9 s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 192,
+      "npcCode": "npc-192",
+      "nameOverride": "Ni C\u00D4 Thanh H\u00F2a",
+      "entityKind": "Monster",
+      "level": 94,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51380,
+          "mpsY": 105813,
+          "dirIndex": 0,
+          "nameOverride": "Ni C\u00D4 Thanh H\u00F2a",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 192,
+      "npcCode": "npc-192",
+      "nameOverride": "Ni C\u00D4 Thanh H\u00F2a",
+      "entityKind": "Monster",
+      "level": 95,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52192,
+          "mpsY": 106208,
+          "dirIndex": 0,
+          "nameOverride": "Ni C\u00D4 Thanh H\u00F2a",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52736,
+          "mpsY": 106208,
+          "dirIndex": 0,
+          "nameOverride": "Ni C\u00D4 Thanh H\u00F2a",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52809,
+          "mpsY": 106654,
+          "dirIndex": 0,
+          "nameOverride": "Ni C\u00D4 Thanh H\u00F2a",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 176,
+      "npcCode": "npc-176",
+      "nameOverride": "\u0111\u1EC7 \u0111\u01AF\u1EDDng M\u00D4n",
+      "entityKind": "DialogNpc",
+      "level": 97,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52032,
+          "mpsY": 106080,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u1EC7 \u0111\u01AF\u1EDDng M\u00D4n",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 192,
+      "npcCode": "npc-192",
+      "nameOverride": "Ni C\u00D4 Thanh H\u00F2a",
+      "entityKind": "Monster",
+      "level": 94,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52576,
+          "mpsY": 105920,
+          "dirIndex": 0,
+          "nameOverride": "Ni C\u00D4 Thanh H\u00F2a",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53053,
+          "mpsY": 106657,
+          "dirIndex": 0,
+          "nameOverride": "Ni C\u00D4 Thanh H\u00F2a",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 192,
+      "npcCode": "npc-192",
+      "nameOverride": "Ni C\u00D4 Thanh H\u00F2a",
+      "entityKind": "Monster",
+      "level": 94,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52288,
+          "mpsY": 106688,
+          "dirIndex": 0,
+          "nameOverride": "Ni C\u00D4 Thanh H\u00F2a",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 144,
+      "npcCode": "npc-144",
+      "nameOverride": "Nam b\u1ED9 s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 91,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52683,
+          "mpsY": 106942,
+          "dirIndex": 0,
+          "nameOverride": "Nam b\u1ED9 s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 144,
+      "npcCode": "npc-144",
+      "nameOverride": "Nam b\u1ED9 s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+      "entityKind": "Monster",
+      "level": 92,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52908,
+          "mpsY": 106888,
+          "dirIndex": 0,
+          "nameOverride": "Nam b\u1ED9 s\u01A0n  t\u1EB7c \u0110\u1EA7u l\u0129nh",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 176,
+      "npcCode": "npc-176",
+      "nameOverride": "\u0111\u1EC7 \u0111\u01AF\u1EDDng M\u00D4n",
+      "entityKind": "DialogNpc",
+      "level": 97,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 53103,
+          "mpsY": 106919,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u1EC7 \u0111\u01AF\u1EDDng M\u00D4n",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    }
+  ]
+}

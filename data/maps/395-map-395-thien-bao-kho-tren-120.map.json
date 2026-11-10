@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 395,
+  "code": "map-395-thien-bao-kho-tren-120",
+  "name": "Thi\u00CAn B\u1EA3o kh\u1ED1 (tr\u00CAn 120)",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 75,
+    "topRegionY": 74,
+    "rightRegionX": 100,
+    "bottomRegionY": 100
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": [
+    {
+      "npcTemplateId": 842,
+      "npcCode": "npc-842",
+      "nameOverride": "Ti\u00CAu Tr\u1EA5n",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 2,
+      "camp": 6,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 44352,
+          "mpsY": 78144,
+          "dirIndex": 0,
+          "nameOverride": "Ti\u00CAu Tr\u1EA5n",
+          "scriptPath": "\\\\script\\\\task\\\\tollgate\\\\messenger\\\\qianbaoku\\\\messenger_turenpc.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 377,
+      "npcCode": "npc-377",
+      "nameOverride": "D\u1ECBch quan",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 45184,
+          "mpsY": 102496,
+          "dirIndex": 0,
+          "nameOverride": "D\u1ECBch quan",
+          "scriptPath": "\\\\script\\\\task\\\\tollgate\\\\messenger\\\\messenger_turerukou.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    }
+  ]
+}

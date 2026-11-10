@@ -1,0 +1,182 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jxserver.local/schemas/npc-catalog.schema.json",
+  "title": "JXData Standard v1 - NPC & Monster Archetype Catalog",
+  "type": "object",
+  "required": ["schemaVersion", "npcs"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "type": "string", "const": "1.0.0" },
+    "npcs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "code", "name", "entityKind", "defaultCamp", "elementSeries", "walkSpeedMpsPerFrame", "runSpeedMpsPerFrame", "baseLife"],
+        "properties": {
+          "id": { "type": "integer", "minimum": 0 },
+          "code": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "name": { "type": "string", "minLength": 1 },
+          "entityKind": { "type": "string", "enum": ["Monster", "DialogNpc", "Partner", "Player"] },
+          "defaultCamp": { "type": "integer", "minimum": 0 },
+          "elementSeries": { "type": "integer", "minimum": -1, "maximum": 4 },
+          "walkSpeedMpsPerFrame": { "type": "integer", "minimum": 0 },
+          "runSpeedMpsPerFrame": { "type": "integer", "minimum": 0 },
+          "attackSpeedFrames": { "type": "integer", "minimum": 1, "default": 18 },
+          "castSpeedFrames": { "type": "integer", "minimum": 1, "default": 18 },
+          "hitRecoverFrames": { "type": "integer", "minimum": 0, "default": 12 },
+          "attackRadiusMps": { "type": "integer", "minimum": 0, "default": 64 },
+          "activeRadiusMps": { "type": "integer", "minimum": 0, "default": 256 },
+          "visionRadiusMps": { "type": "integer", "minimum": 0, "default": 400 },
+          "pursuitRadiusMps": { "type": "integer", "minimum": 0, "default": 512 },
+          "dialogRadiusCells": { "type": "integer", "minimum": 1, "default": 4 },
+          "respawnFrames": { "type": "integer", "minimum": 0, "default": 180 },
+          "baseLife": { "type": "integer", "minimum": 1 },
+          "baseExp": { "type": "integer", "minimum": 0, "default": 0 },
+          "treasureDropCount": { "type": "integer", "minimum": 0, "default": 1 },
+          "primarySkillId": { "type": "integer", "minimum": 0, "default": 0 },
+          "auraSkillId": { "type": "integer", "minimum": 0, "default": 0 },
+          "auraSkillLevel": { "type": "integer", "minimum": 0, "default": 0 },
+          "passiveSkillId": { "type": "integer", "minimum": 0, "default": 0 },
+          "passiveSkillLevel": { "type": "integer", "minimum": 0, "default": 0 },
+          "skills": {
+            "type": "array",
+            "maxItems": 4,
+            "items": {
+              "type": "object",
+              "required": ["skillId"],
+              "properties": {
+                "skillId": { "type": "integer", "minimum": 0 },
+                "skillCode": { "type": "string" },
+                "baseLevel": { "type": "integer", "minimum": 0, "default": 1 },
+                "levelStep": { "type": "integer", "default": 0 },
+                "castWeight": { "type": "integer", "minimum": 0, "default": 25 }
+              },
+              "additionalProperties": false
+            }
+          },
+          "aiConfig": {
+            "type": "object",
+            "properties": {
+              "aiMode": { "type": "integer", "minimum": 0, "default": 3 },
+              "aiMaxTimeFrames": { "type": "integer", "minimum": 0, "default": 36 },
+              "aiParams": {
+                "type": "array",
+                "maxItems": 9,
+                "items": { "type": "integer" }
+              }
+            },
+            "additionalProperties": false
+          },
+          "combatScaling": {
+            "type": "object",
+            "properties": {
+              "levelScriptCode": { "type": "string" },
+              "expParams": { "$ref": "#/$defs/scalingParamQuartet" },
+              "lifeParams": { "$ref": "#/$defs/scalingParamQuartet" },
+              "attackRatingParams": { "$ref": "#/$defs/scalingParamQuartet" },
+              "defenseParams": { "$ref": "#/$defs/scalingParamQuartet" },
+              "minDamageParams": { "$ref": "#/$defs/scalingParamQuartet" },
+              "maxDamageParams": { "$ref": "#/$defs/scalingParamQuartet" },
+              "lifeReplenish": { "$ref": "#/$defs/baseAndPerLevel" },
+              "physicsResist": { "$ref": "#/$defs/resistScaling" },
+              "coldResist": { "$ref": "#/$defs/resistScaling" },
+              "fireResist": { "$ref": "#/$defs/resistScaling" },
+              "lightResist": { "$ref": "#/$defs/resistScaling" },
+              "poisonResist": { "$ref": "#/$defs/resistScaling" },
+              "physicalDamageBase": { "$ref": "#/$defs/elementalDamageScaling" },
+              "poisonDamageBase": { "$ref": "#/$defs/elementalDamageScaling" },
+              "coldDamageBase": { "$ref": "#/$defs/elementalDamageScaling" },
+              "fireDamageBase": { "$ref": "#/$defs/elementalDamageScaling" },
+              "lightingDamageBase": { "$ref": "#/$defs/elementalDamageScaling" }
+            },
+            "additionalProperties": false
+          },
+          "actionScriptPath": { "type": "string" },
+          "lootTableCode": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "lootTables": {
+      "type": "array",
+      "items": {
+        "$ref": "https://jxserver.local/schemas/loot-table.schema.json#/$defs/lootTableEntry"
+      }
+    },
+    "partnerConfig": {
+      "type": "object",
+      "properties": {
+        "maxSkillSlotsByLevel": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["level", "maxSkillSlots"],
+            "properties": {
+              "level": { "type": "integer", "minimum": 1 },
+              "maxSkillSlots": { "type": "integer", "minimum": 1 },
+              "expRequired": { "type": "integer", "minimum": 0 }
+            },
+            "additionalProperties": false
+          }
+        },
+        "aptitudeModes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "code", "name"],
+            "properties": {
+              "id": { "type": "integer", "minimum": 0 },
+              "code": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+              "name": { "type": "string", "minLength": 1 },
+              "lifeWeight": { "type": "number", "minimum": 0 },
+              "attackWeight": { "type": "number", "minimum": 0 },
+              "defenseWeight": { "type": "number", "minimum": 0 },
+              "attackRatingWeight": { "type": "number", "minimum": 0 }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "$defs": {
+    "scalingParamQuartet": {
+      "type": "object",
+      "properties": {
+        "param": { "type": "number", "default": 100 },
+        "param1": { "type": "number", "default": 0 },
+        "param2": { "type": "number", "default": 0 },
+        "param3": { "type": "number", "default": 0 }
+      },
+      "additionalProperties": false
+    },
+    "baseAndPerLevel": {
+      "type": "object",
+      "properties": {
+        "base": { "type": "number", "default": 0 },
+        "perLevel": { "type": "number", "default": 0 }
+      },
+      "additionalProperties": false
+    },
+    "resistScaling": {
+      "type": "object",
+      "properties": {
+        "base": { "type": "number", "default": 0 },
+        "perLevel": { "type": "number", "default": 0 },
+        "max": { "type": "integer", "default": 75 }
+      },
+      "additionalProperties": false
+    },
+    "elementalDamageScaling": {
+      "type": "object",
+      "properties": {
+        "base": { "type": "number", "default": 0 },
+        "perLevel": { "type": "number", "default": 0 },
+        "magicMode": { "type": "integer", "enum": [0, 1, 2], "default": 0 }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

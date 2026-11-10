@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 84,
+  "code": "map-84-tu-tieu-dai-dien",
+  "name": "T\u1EED Ti\u00CAu \u0110\u1EA1i \u0110i\u1EC7n",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 98,
+    "topRegionY": 98,
+    "rightRegionX": 101,
+    "bottomRegionY": 100
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": [
+    {
+      "npcTemplateId": 73,
+      "npcCode": "npc-73",
+      "nameOverride": "V\u00F5 \u0111ang H\u1ED9 ph\u00E1p Di\u1EC7p Ti\u1EBFp M\u1EF9",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51270,
+          "mpsY": 101705,
+          "dirIndex": 0,
+          "nameOverride": "V\u00F5 \u0111ang H\u1ED9 ph\u00E1p Di\u1EC7p Ti\u1EBFp M\u1EF9",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5357\u533A\\\u6B66\u5F53\u6D3E\\\u7D2B\u9704\u5927\u6BBF\\npc\\wdnpc02\\wdnpc02.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    }
+  ]
+}

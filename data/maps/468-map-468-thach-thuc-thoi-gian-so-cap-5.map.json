@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 468,
+  "code": "map-468-thach-thuc-thoi-gian-so-cap-5",
+  "name": "Th\u00E1ch th\u1EE9c th\u1EDDi gian (S\u01A0 c\u1EA5p 5)",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 93,
+    "topRegionY": 97,
+    "rightRegionX": 104,
+    "bottomRegionY": 104
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": []
+}

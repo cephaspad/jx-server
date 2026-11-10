@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 605,
+  "code": "map-605-vo-lam-de-nhat-bang",
+  "name": "V\u00F5 L\u00C2m \u0111\u1EC7 Nh\u1EA5t Bang",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 97,
+    "topRegionY": 78,
+    "rightRegionX": 132,
+    "bottomRegionY": 102
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": []
+}

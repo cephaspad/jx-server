@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 232,
+  "code": "map-232-noi-o-chu-van-tuyen",
+  "name": "N\u01A0i \u1EDF Chu V\u00C2n Tuy\u1EC1n",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 99,
+    "topRegionY": 99,
+    "rightRegionX": 102,
+    "bottomRegionY": 100
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": [
+    {
+      "npcTemplateId": 550,
+      "npcCode": "npc-550",
+      "nameOverride": "Boss D\u1EA1 Xoa",
+      "entityKind": "Monster",
+      "level": 90,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51688,
+          "mpsY": 102409,
+          "dirIndex": 0,
+          "nameOverride": "Boss D\u1EA1 Xoa",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5357\u533A\\\u4F0F\u725B\u5C71\\\u5468\u4E91\u6CC9\u5C45\u6240\\npc\\\u6218\u6597_\u96F7\u51B3.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    }
+  ]
+}

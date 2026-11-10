@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 364,
+  "code": "map-364-don-dau-tham-lam-trung-cap",
+  "name": "\u0111\u01A0n \u0110\u1EA5u Th\u00C2m l\u00C2m (Trung c\u1EA5p)",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 97,
+    "topRegionY": 97,
+    "rightRegionX": 100,
+    "bottomRegionY": 100
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": []
+}

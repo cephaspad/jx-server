@@ -1,0 +1,307 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jxserver.local/schemas/item-catalog.schema.json",
+  "title": "JXData Standard v1 - Item, Magic Affix, Golden Set & Ground Object Catalog",
+  "type": "object",
+  "required": ["schemaVersion", "items", "magicAffixes"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "type": "string", "const": "1.0.0" },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "code", "name", "genre", "detailType", "particularType", "level", "gridWidthCells", "gridHeightCells"],
+        "properties": {
+          "id": { "type": "integer", "minimum": 0 },
+          "code": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "name": { "type": "string", "minLength": 1 },
+          "description": { "type": "string" },
+          "genre": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "0=Equipment, 1=Medicine, 2=QuestKey, 3=TownPortal, 4=Mine/Material, 6=MagicScript, 7=PlatinaEquip"
+          },
+          "quality": {
+            "type": "integer",
+            "enum": [0, 1, 2, 3, 4],
+            "default": 0,
+            "description": "0=Normal(White/Blue), 1=Golden, 2=Purple(Enchased), 3=Platina, 4=Broken"
+          },
+          "detailType": { "type": "integer", "minimum": 0 },
+          "particularType": { "type": "integer", "minimum": 0 },
+          "level": { "type": "integer", "minimum": 0, "maximum": 20 },
+          "elementSeries": { "type": "integer", "minimum": -1, "maximum": 4, "default": -1 },
+          "gridWidthCells": { "type": "integer", "minimum": 1, "maximum": 6 },
+          "gridHeightCells": { "type": "integer", "minimum": 1, "maximum": 10 },
+          "objDataId": { "type": "integer", "minimum": 0, "default": 0 },
+          "appearanceResId": { "type": "integer", "minimum": 0 },
+          "npcMaskTemplateId": { "type": "integer", "minimum": 0 },
+          "priceGold": { "type": "integer", "minimum": 0, "default": 0 },
+          "wealthValue": { "type": "integer", "minimum": 0, "default": 0 },
+          "maxStackCount": { "type": "integer", "minimum": 1, "default": 1 },
+          "maxEnchaseSockets": { "type": "integer", "minimum": 0, "maximum": 6, "default": 0 },
+          "baseAttributes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["attributeId", "minValue", "maxValue"],
+              "properties": {
+                "attributeId": { "type": "integer", "minimum": 0 },
+                "attributeCode": { "type": "string" },
+                "minValue": { "type": "integer" },
+                "maxValue": { "type": "integer" },
+                "durationFrames": { "type": "integer", "minimum": 0 }
+              },
+              "additionalProperties": false
+            }
+          },
+          "requirements": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["requirementType", "minValue"],
+              "properties": {
+                "requirementType": { "type": "integer", "minimum": 0 },
+                "requirementCode": {
+                  "type": "string",
+                  "enum": ["strength", "dexterity", "vitality", "energy", "level", "series", "gender", "faction", "repute", "fuYuan", "transLife"]
+                },
+                "minValue": { "type": "integer" }
+              },
+              "additionalProperties": false
+            }
+          },
+          "fixedMagicAffixes": {
+            "type": "array",
+            "maxItems": 6,
+            "items": {
+              "type": "object",
+              "required": ["affixId"],
+              "properties": {
+                "affixId": { "type": "integer", "minimum": 0 },
+                "affixCode": { "type": "string" },
+                "isHiddenSeriesSlot": { "type": "boolean", "default": false }
+              },
+              "additionalProperties": false
+            }
+          },
+          "suiteBinding": {
+            "type": "object",
+            "properties": {
+              "suiteId": { "type": "integer", "minimum": 0 },
+              "extSuiteId": { "type": "integer", "minimum": 0 },
+              "extSuitePieceIndex": { "type": "integer", "minimum": 0 },
+              "extHiddenAffixIds": {
+                "type": "array",
+                "items": { "type": "integer", "minimum": 0 }
+              }
+            },
+            "additionalProperties": false
+          },
+          "scriptUsage": {
+            "type": "object",
+            "properties": {
+              "scriptPath": { "type": "string" },
+              "actionCode": { "type": "string" },
+              "castSkillId": { "type": "integer", "minimum": 0 },
+              "castType": { "type": "integer", "default": 0 },
+              "isBroadcast": { "type": "boolean", "default": false },
+              "canPutInQuickBelt": { "type": "boolean", "default": true },
+              "consumeOnUse": { "type": "boolean", "default": true }
+            },
+            "additionalProperties": false
+          },
+          "expirationPolicy": {
+            "type": "object",
+            "properties": {
+              "wallClockMinutes": { "type": "integer", "minimum": 0, "default": 0 },
+              "onlineMinutes": { "type": "integer", "minimum": 0, "default": 0 },
+              "consumeType": { "type": "integer", "enum": [0, 1], "default": 0 }
+            },
+            "additionalProperties": false
+          },
+          "restrictions": {
+            "type": "object",
+            "properties": {
+              "forbidMove": { "type": "boolean", "default": false },
+              "forbidThrowAway": { "type": "boolean", "default": false },
+              "forbidTrade": { "type": "boolean", "default": false },
+              "forbidSell": { "type": "boolean", "default": false },
+              "forbidDropOnDeath": { "type": "boolean", "default": false },
+              "isValuable": { "type": "boolean", "default": false }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "magicAffixes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "code", "nameTemplate", "isSuffix", "elementSeries", "level", "dropWeight"],
+        "properties": {
+          "id": { "type": "integer", "minimum": 1 },
+          "code": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "attributeId": { "type": "integer", "minimum": 0 },
+          "attributeCode": { "type": "string" },
+          "nameTemplate": { "type": "string" },
+          "description": { "type": "string" },
+          "isSuffix": { "type": "boolean" },
+          "isGoldenOnly": { "type": "boolean", "default": false },
+          "elementSeries": { "type": "integer", "minimum": -1, "maximum": 4 },
+          "level": { "type": "integer", "minimum": 1, "maximum": 20 },
+          "baseValue": { "type": "integer", "minimum": 0, "default": 0 },
+          "dropWeight": { "type": "integer", "minimum": 0 },
+          "weightsByEquipPart": {
+            "type": "object",
+            "properties": {
+              "meleeWeapon": { "type": "integer", "minimum": 0, "default": 0 },
+              "rangeWeapon": { "type": "integer", "minimum": 0, "default": 0 },
+              "sword": { "type": "integer", "minimum": 0, "default": 0 },
+              "blade": { "type": "integer", "minimum": 0, "default": 0 },
+              "staff": { "type": "integer", "minimum": 0, "default": 0 },
+              "spear": { "type": "integer", "minimum": 0, "default": 0 },
+              "hammer": { "type": "integer", "minimum": 0, "default": 0 },
+              "dualBlades": { "type": "integer", "minimum": 0, "default": 0 },
+              "darts": { "type": "integer", "minimum": 0, "default": 0 },
+              "throwingKnife": { "type": "integer", "minimum": 0, "default": 0 },
+              "crossbow": { "type": "integer", "minimum": 0, "default": 0 },
+              "armor": { "type": "integer", "minimum": 0, "default": 0 },
+              "ring": { "type": "integer", "minimum": 0, "default": 0 },
+              "necklace": { "type": "integer", "minimum": 0, "default": 0 },
+              "amulet": { "type": "integer", "minimum": 0, "default": 0 },
+              "boot": { "type": "integer", "minimum": 0, "default": 0 },
+              "belt": { "type": "integer", "minimum": 0, "default": 0 },
+              "helm": { "type": "integer", "minimum": 0, "default": 0 },
+              "cuff": { "type": "integer", "minimum": 0, "default": 0 },
+              "sachet": { "type": "integer", "minimum": 0, "default": 0 },
+              "pendant": { "type": "integer", "minimum": 0, "default": 0 },
+              "horse": { "type": "integer", "minimum": 0, "default": 0 },
+              "mask": { "type": "integer", "minimum": 0, "default": 0 },
+              "mantle": { "type": "integer", "minimum": 0, "default": 0 },
+              "signet": { "type": "integer", "minimum": 0, "default": 0 },
+              "shipin": { "type": "integer", "minimum": 0, "default": 0 }
+            },
+            "additionalProperties": false
+          },
+          "weightsBySeries": {
+            "type": "object",
+            "properties": {
+              "metal": { "type": "integer", "minimum": 0, "default": 100 },
+              "wood": { "type": "integer", "minimum": 0, "default": 100 },
+              "water": { "type": "integer", "minimum": 0, "default": 100 },
+              "fire": { "type": "integer", "minimum": 0, "default": 100 },
+              "earth": { "type": "integer", "minimum": 0, "default": 100 }
+            },
+            "additionalProperties": false
+          },
+          "param0Min": { "type": "integer" },
+          "param0Max": { "type": "integer" },
+          "param1Min": { "type": "integer", "default": -1 },
+          "param1Max": { "type": "integer", "default": -1 },
+          "param2Min": { "type": "integer", "default": 0 },
+          "param2Max": { "type": "integer", "default": 0 }
+        },
+        "additionalProperties": true
+      }
+    },
+    "equipmentSets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "code", "name", "pieceCount", "activationThresholds"],
+        "properties": {
+          "id": { "type": "integer", "minimum": 1 },
+          "code": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "name": { "type": "string", "minLength": 1 },
+          "pieceCount": { "type": "integer", "minimum": 1, "maximum": 15 },
+          "activationThresholds": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["equippedPieces", "unlockedHiddenSlots"],
+              "properties": {
+                "equippedPieces": { "type": "integer", "minimum": 1 },
+                "unlockedHiddenSlots": { "type": "integer", "minimum": 0 }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "groundObjects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "code", "name", "kind"],
+        "properties": {
+          "id": { "type": "integer", "minimum": 1 },
+          "code": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "name": { "type": "string", "minLength": 1 },
+          "kind": {
+            "type": "string",
+            "enum": ["Item", "Money", "Prop", "Box", "Switch", "Door", "TrapObj"]
+          },
+          "lifeFrames": { "type": "integer", "minimum": 0, "default": 1080 },
+          "obstacleKind": { "type": "integer", "minimum": 0, "default": 0 },
+          "scriptPath": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "craftingRecipes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "code", "name", "recipeKind", "outputItem", "ingredients"],
+        "properties": {
+          "id": { "type": "integer", "minimum": 1 },
+          "code": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "name": { "type": "string", "minLength": 1 },
+          "recipeKind": {
+            "type": "string",
+            "enum": ["atlasCompound", "purpleEnchase", "goldenRecoin", "platinaUpgrade", "fusion"]
+          },
+          "atlasItemCode": { "type": "string" },
+          "outputItem": {
+            "type": "object",
+            "properties": {
+              "itemCode": { "type": "string" },
+              "quality": { "type": "integer", "enum": [0, 1, 2, 3] },
+              "genre": { "type": "integer", "minimum": 0 },
+              "detailType": { "type": "integer", "minimum": 0 },
+              "particularType": { "type": "integer", "minimum": 0 },
+              "level": { "type": "integer", "minimum": 0 },
+              "elementSeries": { "type": "integer", "minimum": -1, "maximum": 4 }
+            },
+            "additionalProperties": false
+          },
+          "ingredients": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "itemCode": { "type": "string" },
+                "genre": { "type": "integer", "minimum": 0 },
+                "detailType": { "type": "integer", "minimum": 0 },
+                "particularType": { "type": "integer", "minimum": 0 },
+                "minLevel": { "type": "integer", "minimum": 0 },
+                "elementSeries": { "type": "integer", "minimum": -1, "maximum": 4 },
+                "requiredMagicId": { "type": "integer", "minimum": 0 },
+                "count": { "type": "integer", "minimum": 1, "default": 1 }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

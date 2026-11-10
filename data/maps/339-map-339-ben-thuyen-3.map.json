@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 339,
+  "code": "map-339-ben-thuyen-3",
+  "name": "B\u1EBFn thuy\u1EC1n 3",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 97,
+    "topRegionY": 98,
+    "rightRegionX": 104,
+    "bottomRegionY": 101
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": []
+}

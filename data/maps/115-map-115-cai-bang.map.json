@@ -1,0 +1,2918 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 115,
+  "code": "map-115-cai-bang",
+  "name": "C\u00E1i Bang",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 79,
+    "topRegionY": 85,
+    "rightRegionX": 110,
+    "bottomRegionY": 126
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": [
+    {
+      "npcTemplateId": 5,
+      "npcCode": "npc-5",
+      "nameOverride": "S\u00F3i \u0110\u1ECF",
+      "entityKind": "Monster",
+      "level": 25,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 47936,
+          "mpsY": 95104,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49696,
+          "mpsY": 95008,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50361,
+          "mpsY": 98270,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47371,
+          "mpsY": 99945,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47808,
+          "mpsY": 101760,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53792,
+          "mpsY": 102720,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52832,
+          "mpsY": 104576,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 39,
+      "npcCode": "npc-39",
+      "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+      "entityKind": "Monster",
+      "level": 21,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48416,
+          "mpsY": 94848,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51424,
+          "mpsY": 99040,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51200,
+          "mpsY": 98912,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50400,
+          "mpsY": 100128,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52448,
+          "mpsY": 99872,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52032,
+          "mpsY": 100480,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46848,
+          "mpsY": 102592,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47502,
+          "mpsY": 102425,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54208,
+          "mpsY": 102811,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48960,
+          "mpsY": 103904,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50016,
+          "mpsY": 105952,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53504,
+          "mpsY": 105664,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53120,
+          "mpsY": 107808,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 7,
+      "npcCode": "npc-7",
+      "nameOverride": "S\u00F3i tuy\u1EBFt",
+      "entityKind": "Monster",
+      "level": 29,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49120,
+          "mpsY": 94240,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48162,
+          "mpsY": 99437,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52672,
+          "mpsY": 104960,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52384,
+          "mpsY": 107936,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 39,
+      "npcCode": "npc-39",
+      "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+      "entityKind": "Monster",
+      "level": 21,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49600,
+          "mpsY": 94464,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50995,
+          "mpsY": 97215,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48993,
+          "mpsY": 97663,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48102,
+          "mpsY": 98600,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50575,
+          "mpsY": 99090,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54336,
+          "mpsY": 102624,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51520,
+          "mpsY": 106848,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51680,
+          "mpsY": 108512,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 39,
+      "npcCode": "npc-39",
+      "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+      "entityKind": "Monster",
+      "level": 22,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49472,
+          "mpsY": 94592,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46464,
+          "mpsY": 97696,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52768,
+          "mpsY": 97952,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49312,
+          "mpsY": 101632,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51232,
+          "mpsY": 106240,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54048,
+          "mpsY": 107328,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52672,
+          "mpsY": 109728,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 7,
+      "npcCode": "npc-7",
+      "nameOverride": "S\u00F3i tuy\u1EBFt",
+      "entityKind": "Monster",
+      "level": 29,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49664,
+          "mpsY": 94592,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51737,
+          "mpsY": 97882,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52192,
+          "mpsY": 99616,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 39,
+      "npcCode": "npc-39",
+      "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+      "entityKind": "Monster",
+      "level": 21,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50432,
+          "mpsY": 95104,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50050,
+          "mpsY": 97202,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52156,
+          "mpsY": 96739,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46400,
+          "mpsY": 98080,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49760,
+          "mpsY": 98304,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46784,
+          "mpsY": 99616,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55008,
+          "mpsY": 100864,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53408,
+          "mpsY": 105568,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50176,
+          "mpsY": 107136,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53344,
+          "mpsY": 106976,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 39,
+      "npcCode": "npc-39",
+      "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+      "entityKind": "Monster",
+      "level": 22,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 47456,
+          "mpsY": 95904,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47968,
+          "mpsY": 98112,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53440,
+          "mpsY": 100128,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 39,
+      "npcCode": "npc-39",
+      "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+      "entityKind": "Monster",
+      "level": 21,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 47328,
+          "mpsY": 95808,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49760,
+          "mpsY": 95968,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48160,
+          "mpsY": 102336,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 5,
+      "npcCode": "npc-5",
+      "nameOverride": "S\u00F3i \u0110\u1ECF",
+      "entityKind": "Monster",
+      "level": 25,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48064,
+          "mpsY": 95808,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48832,
+          "mpsY": 95392,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53824,
+          "mpsY": 99232,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46752,
+          "mpsY": 99968,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46432,
+          "mpsY": 101472,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49376,
+          "mpsY": 102784,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54272,
+          "mpsY": 105184,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52256,
+          "mpsY": 105536,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49984,
+          "mpsY": 106816,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52320,
+          "mpsY": 109600,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 5,
+      "npcCode": "npc-5",
+      "nameOverride": "S\u00F3i \u0110\u1ECF",
+      "entityKind": "Monster",
+      "level": 26,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48384,
+          "mpsY": 95520,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51940,
+          "mpsY": 95701,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52740,
+          "mpsY": 96114,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46624,
+          "mpsY": 97536,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54112,
+          "mpsY": 104224,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50880,
+          "mpsY": 107360,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51148,
+          "mpsY": 107981,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 5,
+      "npcCode": "npc-5",
+      "nameOverride": "S\u00F3i \u0110\u1ECF",
+      "entityKind": "Monster",
+      "level": 24,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48960,
+          "mpsY": 95456,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48885,
+          "mpsY": 96404,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50816,
+          "mpsY": 96928,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48032,
+          "mpsY": 98240,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50240,
+          "mpsY": 97504,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52448,
+          "mpsY": 97664,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46976,
+          "mpsY": 98880,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48352,
+          "mpsY": 98784,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49252,
+          "mpsY": 98949,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48032,
+          "mpsY": 101824,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55744,
+          "mpsY": 101728,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55456,
+          "mpsY": 102752,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52128,
+          "mpsY": 108096,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53152,
+          "mpsY": 109056,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 5,
+      "npcCode": "npc-5",
+      "nameOverride": "S\u00F3i \u0110\u1ECF",
+      "entityKind": "Monster",
+      "level": 24,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48672,
+          "mpsY": 95488,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48641,
+          "mpsY": 96777,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50256,
+          "mpsY": 96262,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48849,
+          "mpsY": 97957,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48832,
+          "mpsY": 99040,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49889,
+          "mpsY": 99987,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48160,
+          "mpsY": 101760,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52096,
+          "mpsY": 106208,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52512,
+          "mpsY": 108576,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52864,
+          "mpsY": 109856,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 5,
+      "npcCode": "npc-5",
+      "nameOverride": "S\u00F3i \u0110\u1ECF",
+      "entityKind": "Monster",
+      "level": 24,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50528,
+          "mpsY": 95552,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51392,
+          "mpsY": 96905,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47072,
+          "mpsY": 97376,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48580,
+          "mpsY": 103793,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49248,
+          "mpsY": 104768,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50816,
+          "mpsY": 105952,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50720,
+          "mpsY": 107136,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 5,
+      "npcCode": "npc-5",
+      "nameOverride": "S\u00F3i \u0110\u1ECF",
+      "entityKind": "Monster",
+      "level": 25,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51392,
+          "mpsY": 95904,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52416,
+          "mpsY": 95776,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53984,
+          "mpsY": 102368,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54688,
+          "mpsY": 101568,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55552,
+          "mpsY": 101824,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49184,
+          "mpsY": 106368,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51552,
+          "mpsY": 108160,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52928,
+          "mpsY": 109696,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 39,
+      "npcCode": "npc-39",
+      "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+      "entityKind": "Monster",
+      "level": 23,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51253,
+          "mpsY": 96090,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48000,
+          "mpsY": 97632,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52896,
+          "mpsY": 97888,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47773,
+          "mpsY": 100438,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55616,
+          "mpsY": 101056,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47687,
+          "mpsY": 102551,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54048,
+          "mpsY": 103008,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55616,
+          "mpsY": 103584,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53440,
+          "mpsY": 104832,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53088,
+          "mpsY": 106976,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 5,
+      "npcCode": "npc-5",
+      "nameOverride": "S\u00F3i \u0110\u1ECF",
+      "entityKind": "Monster",
+      "level": 26,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52197,
+          "mpsY": 95669,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46144,
+          "mpsY": 98208,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54752,
+          "mpsY": 100800,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47552,
+          "mpsY": 101632,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52160,
+          "mpsY": 109216,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 39,
+      "npcCode": "npc-39",
+      "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+      "entityKind": "Monster",
+      "level": 23,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 46848,
+          "mpsY": 96672,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47360,
+          "mpsY": 101312,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48896,
+          "mpsY": 103296,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49120,
+          "mpsY": 102880,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49184,
+          "mpsY": 104544,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 39,
+      "npcCode": "npc-39",
+      "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+      "entityKind": "Monster",
+      "level": 23,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 47328,
+          "mpsY": 96416,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47264,
+          "mpsY": 97088,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54560,
+          "mpsY": 101920,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47776,
+          "mpsY": 103040,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54784,
+          "mpsY": 103840,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52896,
+          "mpsY": 107264,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 39,
+      "npcCode": "npc-39",
+      "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+      "entityKind": "Monster",
+      "level": 23,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 47616,
+          "mpsY": 96288,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52096,
+          "mpsY": 100256,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53888,
+          "mpsY": 104448,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52512,
+          "mpsY": 110080,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 7,
+      "npcCode": "npc-7",
+      "nameOverride": "S\u00F3i tuy\u1EBFt",
+      "entityKind": "Monster",
+      "level": 28,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49696,
+          "mpsY": 97088,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46368,
+          "mpsY": 101120,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49760,
+          "mpsY": 105568,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 5,
+      "npcCode": "npc-5",
+      "nameOverride": "S\u00F3i \u0110\u1ECF",
+      "entityKind": "Monster",
+      "level": 24,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51643,
+          "mpsY": 96730,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50304,
+          "mpsY": 99584,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47744,
+          "mpsY": 101600,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47904,
+          "mpsY": 101504,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54581,
+          "mpsY": 102584,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 5,
+      "npcCode": "npc-5",
+      "nameOverride": "S\u00F3i \u0110\u1ECF",
+      "entityKind": "Monster",
+      "level": 24,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52653,
+          "mpsY": 97080,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47808,
+          "mpsY": 98016,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49440,
+          "mpsY": 99744,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49344,
+          "mpsY": 105120,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48832,
+          "mpsY": 105984,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53024,
+          "mpsY": 109536,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 7,
+      "npcCode": "npc-7",
+      "nameOverride": "S\u00F3i tuy\u1EBFt",
+      "entityKind": "Monster",
+      "level": 28,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52844,
+          "mpsY": 96629,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49411,
+          "mpsY": 98734,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48225,
+          "mpsY": 100151,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48832,
+          "mpsY": 100288,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51200,
+          "mpsY": 99776,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51620,
+          "mpsY": 107351,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53984,
+          "mpsY": 107456,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 5,
+      "npcCode": "npc-5",
+      "nameOverride": "S\u00F3i \u0110\u1ECF",
+      "entityKind": "Monster",
+      "level": 25,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 46272,
+          "mpsY": 98016,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52050,
+          "mpsY": 97985,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49728,
+          "mpsY": 100960,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55328,
+          "mpsY": 104864,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51744,
+          "mpsY": 108064,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53952,
+          "mpsY": 107680,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 5,
+      "npcCode": "npc-5",
+      "nameOverride": "S\u00F3i \u0110\u1ECF",
+      "entityKind": "Monster",
+      "level": 26,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 46944,
+          "mpsY": 97984,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49568,
+          "mpsY": 99168,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46880,
+          "mpsY": 100256,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51808,
+          "mpsY": 99936,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53596,
+          "mpsY": 103139,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53504,
+          "mpsY": 104672,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51456,
+          "mpsY": 106240,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53760,
+          "mpsY": 105760,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 7,
+      "npcCode": "npc-7",
+      "nameOverride": "S\u00F3i tuy\u1EBFt",
+      "entityKind": "Monster",
+      "level": 27,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 47392,
+          "mpsY": 97280,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48845,
+          "mpsY": 97632,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55392,
+          "mpsY": 100800,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55296,
+          "mpsY": 100896,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55232,
+          "mpsY": 103744,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 7,
+      "npcCode": "npc-7",
+      "nameOverride": "S\u00F3i tuy\u1EBFt",
+      "entityKind": "Monster",
+      "level": 27,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48256,
+          "mpsY": 97344,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51264,
+          "mpsY": 97280,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 46912,
+          "mpsY": 98688,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53184,
+          "mpsY": 100000,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54016,
+          "mpsY": 100544,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53024,
+          "mpsY": 108800,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 5,
+      "npcCode": "npc-5",
+      "nameOverride": "S\u00F3i \u0110\u1ECF",
+      "entityKind": "Monster",
+      "level": 26,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48631,
+          "mpsY": 97577,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49856,
+          "mpsY": 97440,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51328,
+          "mpsY": 98112,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49440,
+          "mpsY": 101248,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53600,
+          "mpsY": 103936,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55456,
+          "mpsY": 104064,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53344,
+          "mpsY": 105856,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 166,
+      "npcCode": "npc-166",
+      "nameOverride": "s\u01A0n  t\u1EB7c 05",
+      "entityKind": "Monster",
+      "level": 27,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49070,
+          "mpsY": 97427,
+          "dirIndex": 0,
+          "nameOverride": "s\u01A0n  t\u1EB7c 05",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5357\u533A\\\u4E10\u5E2E\\\u4E10\u5E2E\\npc\\\u6218\u6597_\u5B5F\u8FDC\u624D.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 7,
+      "npcCode": "npc-7",
+      "nameOverride": "S\u00F3i tuy\u1EBFt",
+      "entityKind": "Monster",
+      "level": 29,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50278,
+          "mpsY": 97903,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47936,
+          "mpsY": 101088,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47648,
+          "mpsY": 101408,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 7,
+      "npcCode": "npc-7",
+      "nameOverride": "S\u00F3i tuy\u1EBFt",
+      "entityKind": "Monster",
+      "level": 28,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50912,
+          "mpsY": 97984,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47600,
+          "mpsY": 98742,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53152,
+          "mpsY": 105664,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52192,
+          "mpsY": 109824,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 5,
+      "npcCode": "npc-5",
+      "nameOverride": "S\u00F3i \u0110\u1ECF",
+      "entityKind": "Monster",
+      "level": 25,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50752,
+          "mpsY": 98080,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48000,
+          "mpsY": 102400,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55232,
+          "mpsY": 103552,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51776,
+          "mpsY": 106688,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52800,
+          "mpsY": 109184,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 7,
+      "npcCode": "npc-7",
+      "nameOverride": "S\u00F3i tuy\u1EBFt",
+      "entityKind": "Monster",
+      "level": 27,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52320,
+          "mpsY": 97888,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47712,
+          "mpsY": 104128,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54720,
+          "mpsY": 103680,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 39,
+      "npcCode": "npc-39",
+      "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+      "entityKind": "Monster",
+      "level": 23,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50112,
+          "mpsY": 100160,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52096,
+          "mpsY": 100800,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54944,
+          "mpsY": 101024,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53664,
+          "mpsY": 102784,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52096,
+          "mpsY": 106400,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53568,
+          "mpsY": 105536,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54432,
+          "mpsY": 106784,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52416,
+          "mpsY": 108192,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 7,
+      "npcCode": "npc-7",
+      "nameOverride": "S\u00F3i tuy\u1EBFt",
+      "entityKind": "Monster",
+      "level": 29,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50624,
+          "mpsY": 100224,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 7,
+      "npcCode": "npc-7",
+      "nameOverride": "S\u00F3i tuy\u1EBFt",
+      "entityKind": "Monster",
+      "level": 29,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52320,
+          "mpsY": 100128,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54176,
+          "mpsY": 99712,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 39,
+      "npcCode": "npc-39",
+      "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+      "entityKind": "Monster",
+      "level": 21,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52768,
+          "mpsY": 100000,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48128,
+          "mpsY": 103296,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54240,
+          "mpsY": 105664,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54752,
+          "mpsY": 105600,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52640,
+          "mpsY": 109568,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 39,
+      "npcCode": "npc-39",
+      "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+      "entityKind": "Monster",
+      "level": 22,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 55072,
+          "mpsY": 99616,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54880,
+          "mpsY": 103360,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55072,
+          "mpsY": 105184,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51296,
+          "mpsY": 105888,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53632,
+          "mpsY": 107968,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53408,
+          "mpsY": 108288,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 7,
+      "npcCode": "npc-7",
+      "nameOverride": "S\u00F3i tuy\u1EBFt",
+      "entityKind": "Monster",
+      "level": 27,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 46752,
+          "mpsY": 100672,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52032,
+          "mpsY": 107232,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 39,
+      "npcCode": "npc-39",
+      "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+      "entityKind": "Monster",
+      "level": 22,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49216,
+          "mpsY": 100992,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54869,
+          "mpsY": 101910,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53312,
+          "mpsY": 103520,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 51616,
+          "mpsY": 105760,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54560,
+          "mpsY": 106464,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 50976,
+          "mpsY": 107744,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53344,
+          "mpsY": 108608,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 7,
+      "npcCode": "npc-7",
+      "nameOverride": "S\u00F3i tuy\u1EBFt",
+      "entityKind": "Monster",
+      "level": 27,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49312,
+          "mpsY": 100864,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 55392,
+          "mpsY": 103232,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 39,
+      "npcCode": "npc-39",
+      "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+      "entityKind": "Monster",
+      "level": 22,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48576,
+          "mpsY": 102048,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54400,
+          "mpsY": 104768,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 54368,
+          "mpsY": 105088,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49536,
+          "mpsY": 106432,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52544,
+          "mpsY": 108768,
+          "dirIndex": 0,
+          "nameOverride": "Tuy\u1EBFt Qu\u00E1i",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 7,
+      "npcCode": "npc-7",
+      "nameOverride": "S\u00F3i tuy\u1EBFt",
+      "entityKind": "Monster",
+      "level": 28,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 55424,
+          "mpsY": 101696,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53856,
+          "mpsY": 105984,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i tuy\u1EBFt",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 5,
+      "npcCode": "npc-5",
+      "nameOverride": "S\u00F3i \u0110\u1ECF",
+      "entityKind": "Monster",
+      "level": 26,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "isSpecialNpc": false,
+      "respawnFrames": 180,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 54496,
+          "mpsY": 103776,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53856,
+          "mpsY": 107072,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 52256,
+          "mpsY": 108512,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 53280,
+          "mpsY": 107776,
+          "dirIndex": 0,
+          "nameOverride": "S\u00F3i \u0110\u1ECF",
+          "scriptPath": "",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 174,
+      "npcCode": "npc-174",
+      "nameOverride": "C\u00E1i Bang Tri\u1EC7u \u0111\u00E0 ch\u1EE7",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 47789,
+          "mpsY": 113568,
+          "dirIndex": 0,
+          "nameOverride": "C\u00E1i Bang Tri\u1EC7u \u0111\u00E0 ch\u1EE7",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5357\u533A\\\u4E10\u5E2E\\\u4E10\u5E2E\\npc\\\u4E10\u5E2E\u5356\u88C5\u5907.lua",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 47219,
+          "mpsY": 114449,
+          "dirIndex": 0,
+          "nameOverride": "C\u00E1i Bang Tri\u1EC7u \u0111\u00E0 ch\u1EE7",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5357\u533A\\\u4E10\u5E2E\\\u4E10\u5E2E\\npc\\\u8DEF\u4EBA_\u4E10\u5E2E\u5F1F\u5B501.lua",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48565,
+          "mpsY": 114007,
+          "dirIndex": 0,
+          "nameOverride": "C\u00E1i Bang Tri\u1EC7u \u0111\u00E0 ch\u1EE7",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5357\u533A\\\u4E10\u5E2E\\\u4E10\u5E2E\\npc\\\u4E10\u5E2E\u5356\u836F\u54C1.lua",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 49620,
+          "mpsY": 114727,
+          "dirIndex": 0,
+          "nameOverride": "C\u00E1i Bang Tri\u1EC7u \u0111\u00E0 ch\u1EE7",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5357\u533A\\\u4E10\u5E2E\\\u4E10\u5E2E\\npc\\\u4E10\u5E2E\u5356\u6B66\u5668.lua",
+          "isSpecialNpc": false
+        },
+        {
+          "mpsX": 48788,
+          "mpsY": 117434,
+          "dirIndex": 0,
+          "nameOverride": "C\u00E1i Bang Tri\u1EC7u \u0111\u00E0 ch\u1EE7",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5357\u533A\\\u4E10\u5E2E\\\u4E10\u5E2E\\npc\\\u4E10\u5E2E\u5E2E\u52A9NPC.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 102,
+      "npcCode": "npc-102",
+      "nameOverride": "\u0111\u1EC7 t\u1EED 5 t\u00FAi",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48815,
+          "mpsY": 115642,
+          "dirIndex": 0,
+          "nameOverride": "\u0111\u1EC7 t\u1EED 5 t\u00FAi",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5357\u533A\\\u4E10\u5E2E\\\u4E10\u5E2E\\npc\\\u8DEF\u4EBA_\u7F57\u5321\u751F.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 98,
+      "npcCode": "npc-98",
+      "nameOverride": "Truy\u1EC1n c\u00D4ng tr\u01AF\u1EDFng l\u00E3o",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48973,
+          "mpsY": 118546,
+          "dirIndex": 0,
+          "nameOverride": "Truy\u1EC1n c\u00D4ng tr\u01AF\u1EDFng l\u00E3o",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5357\u533A\\\u4E10\u5E2E\\\u4E10\u5E2E\\npc\\\u8DEF\u4EBA_\u4F55\u4EBA\u6211.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 101,
+      "npcCode": "npc-101",
+      "nameOverride": "Ch\u01AF\u1EDFng B\u1ED5ng tr\u01AF\u1EDFng l\u00E3o",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48352,
+          "mpsY": 121214,
+          "dirIndex": 0,
+          "nameOverride": "Ch\u01AF\u1EDFng B\u1ED5ng tr\u01AF\u1EDFng l\u00E3o",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5357\u533A\\\u4E10\u5E2E\\\u4E10\u5E2E\\npc\\\u8DEF\u4EBA_\u4F58\u4E09\u4E08.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 100,
+      "npcCode": "npc-100",
+      "nameOverride": "Ch\u01AF\u1EDFng B\u00E1t tr\u01AF\u1EDFng l\u00E3o",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49788,
+          "mpsY": 121233,
+          "dirIndex": 0,
+          "nameOverride": "Ch\u01AF\u1EDFng B\u00E1t tr\u01AF\u1EDFng l\u00E3o",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5357\u533A\\\u4E10\u5E2E\\\u4E10\u5E2E\\npc\\\u8DEF\u4EBA_\u5B5F\u82CD\u6D6A.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 99,
+      "npcCode": "npc-99",
+      "nameOverride": "Ch\u1EA5p ph\u00E1p tr\u01AF\u1EDFng l\u00E3o",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "isSpecialNpc": false,
+      "respawnFrames": 0,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49051,
+          "mpsY": 123797,
+          "dirIndex": 0,
+          "nameOverride": "Ch\u1EA5p ph\u00E1p tr\u01AF\u1EDFng l\u00E3o",
+          "scriptPath": "\\script\\\u4E2D\u539F\u5357\u533A\\\u4E10\u5E2E\\\u4E10\u5E2E\\npc\\\u8DEF\u4EBA_\u9B4F\u4E86\u7FC1.lua",
+          "isSpecialNpc": false
+        }
+      ]
+    }
+  ]
+}

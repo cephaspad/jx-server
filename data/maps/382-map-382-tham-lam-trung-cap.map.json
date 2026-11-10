@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": 382,
+  "code": "map-382-tham-lam-trung-cap",
+  "name": "Th\u00C2m l\u00C2m (trung c\u1EA5p)",
+  "mapType": "Field",
+  "regionBounds": {
+    "leftRegionX": 97,
+    "topRegionY": 78,
+    "rightRegionX": 132,
+    "bottomRegionY": 102
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": []
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "1.0.0",
+  "lootTables": [
+    {
+      "id": 1,
+      "code": "default-monster-loot",
+      "randRange": 1000000,
+      "magicRate": 100,
+      "moneyDropChance": 0.75,
+      "minMoneyGold": 25,
+      "maxMoneyGold": 120,
+      "minItemLevel": 1,
+      "maxItemLevel": 5,
+      "maxDropsPerKill": 2,
+      "blueAffixLuckFactor": 1,
+      "weightedPools": [
+        {
+          "weight": 300000,
+          "itemCode": "equip-melee-sword-lvl1",
+          "genre": 0,
+          "quality": 0,
+          "detailType": 0,
+          "particularType": 0,
+          "elementSeries": 0,
+          "minLevel": 1,
+          "maxLevel": 3
+        },
+        {
+          "weight": 250000,
+          "itemCode": "equip-armor-cloth-lvl1",
+          "genre": 0,
+          "quality": 0,
+          "detailType": 2,
+          "particularType": 0,
+          "elementSeries": 1,
+          "minLevel": 1,
+          "maxLevel": 3
+        },
+        {
+          "weight": 250000,
+          "itemCode": "kim-sang-duoc",
+          "genre": 1,
+          "quality": 0,
+          "detailType": 0,
+          "particularType": 0,
+          "elementSeries": 0,
+          "minLevel": 1,
+          "maxLevel": 1
+        },
+        {
+          "weight": 200000,
+          "itemCode": "ngung-than-dan",
+          "genre": 1,
+          "quality": 0,
+          "detailType": 1,
+          "particularType": 0,
+          "elementSeries": 2,
+          "minLevel": 1,
+          "maxLevel": 1
+        }
+      ]
+    }
+  ]
+}

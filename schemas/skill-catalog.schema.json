@@ -1,0 +1,359 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jxserver.local/schemas/skill-catalog.schema.json",
+  "title": "JXData Standard v1 - Skill & Missile Catalog",
+  "type": "object",
+  "required": ["schemaVersion", "skills", "missiles"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "type": "string", "const": "1.0.0" },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "code", "name", "style", "elementSeries", "isOffensive", "castRangeMps", "waitFrames"],
+        "properties": {
+          "id": { "type": "integer", "minimum": 1 },
+          "code": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "name": { "type": "string", "minLength": 1 },
+          "description": { "type": "string" },
+          "style": {
+            "type": "string",
+            "enum": [
+              "melee",
+              "projectile",
+              "selfBuff",
+              "targetBuff",
+              "aura",
+              "passive",
+              "summonNpc",
+              "jump",
+              "jumpAndAttack",
+              "runAndAttack",
+              "multiAttack",
+              "corpseExplode",
+              "strideObstacle",
+              "steal"
+            ]
+          },
+          "elementSeries": { "type": "integer", "minimum": -1, "maximum": 4 },
+          "charClass": { "type": "integer", "minimum": -1, "default": 0 },
+          "isOffensive": { "type": "boolean" },
+          "isPhysical": { "type": "boolean", "default": false },
+          "isMelee": { "type": "boolean", "default": false },
+          "isAura": { "type": "boolean", "default": false },
+          "isBaseSkill": { "type": "boolean", "default": true },
+          "isWeaponSkill": { "type": "boolean", "default": false },
+          "isExpSkill": { "type": "boolean", "default": false },
+          "useAttackRating": { "type": "boolean", "default": true },
+          "doHurtAnimation": { "type": "boolean", "default": true },
+          "peaceCanUse": { "type": "boolean", "default": false },
+          "clientSend": { "type": "boolean", "default": true },
+          "lrSkillInfo": {
+            "type": "string",
+            "enum": ["both", "leftOnly", "rightOnly", "none"],
+            "default": "both"
+          },
+          "reqLevel": { "type": "integer", "minimum": 0, "default": 0 },
+          "maxLevel": { "type": "integer", "minimum": 1, "maximum": 64, "default": 20 },
+          "equipLimit": { "type": "integer", "minimum": -2, "default": -2 },
+          "horseLimit": { "type": "integer", "enum": [0, 1, 2], "default": 0 },
+          "castRangeMps": { "type": "integer", "minimum": 0 },
+          "waitFrames": { "type": "integer", "minimum": 0 },
+          "minFramesPerCast": { "type": "integer", "minimum": 0, "default": 0 },
+          "minFramesPerCastOnHorse": { "type": "integer", "minimum": 0, "default": 0 },
+          "stateSpecialId": { "type": "integer", "minimum": 0, "default": 0 },
+          "statePriority": { "type": "integer", "minimum": 0, "default": 0 },
+          "charAnimId": { "type": "integer", "minimum": 0, "default": 9 },
+          "stopWhenMove": { "type": "integer", "enum": [0, 1, 2], "default": 0 },
+          "heelAtParent": { "type": "boolean", "default": false },
+          "byMissile": { "type": "boolean", "default": false },
+          "relativePosType": { "type": "integer", "default": 0 },
+          "param1": { "type": "integer", "default": 0 },
+          "param2": { "type": "integer", "default": 0 },
+          "targeting": {
+            "type": "object",
+            "properties": {
+              "targetOnly": { "type": "boolean", "default": false },
+              "targetEnemy": { "type": "boolean", "default": true },
+              "targetAlly": { "type": "boolean", "default": false },
+              "targetSelf": { "type": "boolean", "default": false },
+              "targetOther": { "type": "boolean", "default": false },
+              "targetObj": { "type": "boolean", "default": false },
+              "targetNoNpc": { "type": "boolean", "default": false }
+            },
+            "additionalProperties": false
+          },
+          "missileId": { "type": "integer", "minimum": 0 },
+          "missileForm": {
+            "type": "string",
+            "enum": ["wall", "line", "spread", "circle", "random", "zone", "atTarget", "atFirer", "meleeBlur", "meleeJump", "meleeJumpAttack", "meleeRunAttack", "meleeMany"],
+            "default": "line"
+          },
+          "missileGenerateStyle": {
+            "type": "string",
+            "enum": ["none", "sameTime", "order", "randomOrder", "randomSame", "centerExtendLine"],
+            "default": "none"
+          },
+          "missileGenerateDelayFrames": { "type": "integer", "minimum": 0, "default": 0 },
+          "childSkill": {
+            "type": "object",
+            "required": ["skillId"],
+            "properties": {
+              "skillId": { "type": "integer", "minimum": 0 },
+              "skillLevel": { "type": "integer", "minimum": -1, "default": -1 },
+              "count": { "type": "integer", "minimum": 1, "default": 1 }
+            },
+            "additionalProperties": false
+          },
+          "eventSkills": {
+            "type": "object",
+            "properties": {
+              "eventSkillLevel": { "type": "integer", "minimum": -1, "default": 0 },
+              "onStartSkillId": { "type": "integer", "minimum": 0, "default": 0 },
+              "onStartMinParentLevel": { "type": "integer", "minimum": 1, "default": 1 },
+              "onFlySkillId": { "type": "integer", "minimum": 0, "default": 0 },
+              "onFlyIntervalFrames": { "type": "integer", "minimum": 0, "default": 0 },
+              "onFlyMinParentLevel": { "type": "integer", "minimum": 1, "default": 1 },
+              "onCollideSkillId": { "type": "integer", "minimum": 0, "default": 0 },
+              "onCollideMinParentLevel": { "type": "integer", "minimum": 1, "default": 1 },
+              "onVanishSkillId": { "type": "integer", "minimum": 0, "default": 0 },
+              "onVanishMinParentLevel": { "type": "integer", "minimum": 1, "default": 1 }
+            },
+            "additionalProperties": false
+          },
+          "procTriggers": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["triggerOn", "triggeredSkillId"],
+              "properties": {
+                "triggerOn": {
+                  "type": "string",
+                  "enum": ["onHitReceived", "onHitDealt", "onLowLife", "onCritDealt", "onKill", "onDeath"]
+                },
+                "triggeredSkillId": { "type": "integer", "minimum": 1 },
+                "triggeredSkillLevel": { "type": "integer", "minimum": -1, "default": -1 },
+                "chancePercent": { "$ref": "#/$defs/parameterCurve" },
+                "cooldownFrames": { "$ref": "#/$defs/parameterCurve" }
+              },
+              "additionalProperties": false
+            }
+          },
+          "expScaling": {
+            "type": "object",
+            "properties": {
+              "expBase": { "type": "integer", "minimum": 0 },
+              "expGrowthFactor": { "type": "number", "minimum": 0 },
+              "expByLevel": {
+                "type": "array",
+                "items": { "type": "integer", "minimum": 0 }
+              }
+            },
+            "additionalProperties": false
+          },
+          "costScaling": {
+            "type": "object",
+            "properties": {
+              "costType": {
+                "type": "string",
+                "enum": ["mana", "life", "stamina", "money"],
+                "default": "mana"
+              },
+              "baseMana": { "type": "integer", "minimum": 0 },
+              "manaPerLevel": { "type": "integer" },
+              "baseStamina": { "type": "integer", "minimum": 0 },
+              "baseLife": { "type": "integer", "minimum": 0 },
+              "valuesByLevel": {
+                "type": "array",
+                "items": { "type": "integer", "minimum": 0 }
+              },
+              "points": {
+                "type": "array",
+                "items": { "$ref": "#/$defs/curvePoint" }
+              }
+            },
+            "additionalProperties": false
+          },
+          "effectScaling": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["attributeCode", "curve"],
+              "properties": {
+                "attributeId": { "type": "integer", "minimum": 0 },
+                "attributeCode": { "type": "string" },
+                "slotCategory": {
+                  "type": "string",
+                  "enum": ["damage", "immediate", "state", "missileMechanic", "skillMechanic", "synergy"],
+                  "default": "damage"
+                },
+                "curve": {
+                  "type": "string",
+                  "enum": ["constant", "linear", "piecewise", "conic", "sqrt", "table"]
+                },
+                "baseMin": { "type": "integer" },
+                "perLevelMin": { "type": "integer" },
+                "baseMax": { "type": "integer" },
+                "perLevelMax": { "type": "integer" },
+                "durationFrames": { "type": "integer", "minimum": 0 },
+                "valuesByLevel": {
+                  "type": "array",
+                  "items": { "type": "integer" }
+                },
+                "param0": { "$ref": "#/$defs/parameterCurve" },
+                "param1": { "$ref": "#/$defs/parameterCurve" },
+                "param2": { "$ref": "#/$defs/parameterCurve" }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "missiles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "code", "name", "moveKind", "speedMpsPerFrame", "lifeFrames", "hitRadiusMps"],
+        "properties": {
+          "id": { "type": "integer", "minimum": 1 },
+          "code": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "name": { "type": "string", "minLength": 1 },
+          "moveKind": {
+            "type": "string",
+            "enum": [
+              "stand",
+              "stationary",
+              "line64",
+              "random",
+              "circle",
+              "spread",
+              "spiral",
+              "helix",
+              "follow",
+              "motion",
+              "parabola",
+              "singleLine",
+              "rollBack",
+              "toss"
+            ]
+          },
+          "followKind": {
+            "type": "string",
+            "enum": ["none", "npc", "missile"],
+            "default": "none"
+          },
+          "collideFollowTarget": { "type": "boolean", "default": false },
+          "speedMpsPerFrame": { "type": "integer", "minimum": 0 },
+          "heightMps": { "type": "integer", "minimum": 0, "default": 0 },
+          "zSpeedMpsPerFrame": { "type": "integer", "default": 0 },
+          "zAccelMpsPerFrame2": { "type": "integer", "default": 0 },
+          "lifeFrames": { "type": "integer", "minimum": 1 },
+          "hitRadiusMps": { "type": "integer", "minimum": 1 },
+          "collideRadiusCells": { "type": "integer", "minimum": 0, "default": 1 },
+          "damageRadiusCells": { "type": "integer", "minimum": 0, "default": 1 },
+          "isRangeDamage": { "type": "boolean", "default": false },
+          "damageIntervalFrames": { "type": "integer", "minimum": 0, "default": 0 },
+          "pierceCount": { "type": "integer", "minimum": 0, "default": 1 },
+          "collideVanish": { "type": "boolean", "default": true },
+          "canCollideFriend": { "type": "boolean", "default": false },
+          "canDestroy": { "type": "boolean", "default": false },
+          "canSlow": { "type": "boolean", "default": false },
+          "autoExplode": { "type": "boolean", "default": false },
+          "mustHit": { "type": "boolean", "default": false },
+          "responseSkillId": { "type": "integer", "minimum": 0, "default": 0 },
+          "subMissileId": { "type": "integer", "minimum": 0, "default": 0 },
+          "param1": { "type": "integer", "default": 0 },
+          "param2": { "type": "integer", "default": 0 },
+          "param3": { "type": "integer", "default": 0 }
+        },
+        "additionalProperties": false
+      }
+    },
+    "weaponSkillMappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["weaponTypeId", "name", "basicSkillId"],
+        "properties": {
+          "weaponTypeId": { "type": "integer", "minimum": 0 },
+          "name": { "type": "string" },
+          "basicSkillId": { "type": "integer", "minimum": 1 }
+        },
+        "additionalProperties": false
+      }
+    },
+    "attributeConstRules": {
+      "type": "object",
+      "properties": {
+        "ignoreSkillRule": {
+          "type": "object",
+          "required": ["stateSkillId", "durationFrames", "eligibleCurseSkillIds"],
+          "properties": {
+            "stateSkillId": { "type": "integer", "minimum": 1 },
+            "durationFrames": { "type": "integer", "minimum": 1 },
+            "eligibleCurseSkillIds": {
+              "type": "array",
+              "items": { "type": "integer", "minimum": 1 }
+            }
+          },
+          "additionalProperties": false
+        },
+        "returnSkillRule": {
+          "type": "object",
+          "required": ["stateSkillId", "durationFrames", "eligibleCurseSkillIds"],
+          "properties": {
+            "stateSkillId": { "type": "integer", "minimum": 1 },
+            "durationFrames": { "type": "integer", "minimum": 1 },
+            "eligibleCurseSkillIds": {
+              "type": "array",
+              "items": { "type": "integer", "minimum": 1 }
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "$defs": {
+    "curvePoint": {
+      "type": "object",
+      "required": ["level", "value"],
+      "properties": {
+        "level": { "type": "integer", "minimum": 1, "maximum": 64 },
+        "value": { "type": "number" },
+        "interpolation": {
+          "type": "string",
+          "enum": ["linear", "conic", "sqrt"],
+          "default": "linear"
+        }
+      },
+      "additionalProperties": false
+    },
+    "parameterCurve": {
+      "type": "object",
+      "properties": {
+        "curve": {
+          "type": "string",
+          "enum": ["constant", "linear", "piecewise", "conic", "sqrt", "table"],
+          "default": "linear"
+        },
+        "base": { "type": "number" },
+        "perLevel": { "type": "number" },
+        "valuesByLevel": {
+          "type": "array",
+          "items": { "type": "integer" }
+        },
+        "points": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/curvePoint" }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
