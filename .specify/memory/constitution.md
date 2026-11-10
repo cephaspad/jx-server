@@ -1,10 +1,11 @@
 <!--
 Sync Impact Report:
-- Version change: 1.0.0 → 1.1.0
+- Version change: 1.1.0 → 1.2.0
 - Modified principles:
-  - VI. Clean Modular Boundaries, SOLID Design & Compilation-Checked Scripting → VI. Clean Modular Boundaries, ABP DDD Role Separation & Compilation-Checked Scripting
+  - V. UTF-8 Domain Core & Boundary-Only Legacy Transcoding → V. UTF-8 Domain Core, Dual-Tier Game Data Standard & Boundary-Only Protocol Transcoding
+  - VI. Clean Modular Boundaries, ABP DDD Role Separation & Compilation-Checked Scripting → VI. Clean Modular Boundaries, ABP DDD Role Separation & C# 14 Fluent Scripting API
 - Modified sections:
-  - Technical Stack, Performance & Structural Constraints (standardized persistence on SQL Server + SQLite via EF Core 10, and expanded ABP Framework DDD Naming Conventions alongside the 5 Real-Time 18-Hz Game Server Naming Conventions)
+  - Technical Stack, Performance & Structural Constraints (mandated JXData Standard v1: Canonical UTF-8 JSON + JSON Schema authoring format, MemoryPack runtime snapshots, dual id + code identifiers, and C# 14 Fluent Scripting API with Hot-Reload)
 - Added sections: None
 - Removed sections: None
 - Follow-up TODOs: None
@@ -48,25 +49,30 @@ Sync Impact Report:
 
 *Rationale*: Eradicates the classic item duplication and account-lock vulnerabilities inherent in the legacy asynchronous binary blob persistence model.
 
-### V. UTF-8 Domain Core & Boundary-Only Legacy Transcoding
-- All internal domain entities, control-plane contracts, zone simulation states, scripting APIs, logs, and database schemas MUST use standard UTF-8 Unicode strings exclusively.
-- Legacy byte encodings required by original game assets and the legacy client (TCVN3/ABC for Vietnamese text and GBK/Windows-1252 for raw asset identifiers and script paths) MUST be transcoded strictly at the Legacy Protocol Adapter and Static Game Asset Loader boundaries.
+### V. UTF-8 Domain Core, Dual-Tier Game Data Standard & Boundary-Only Protocol Transcoding
+- All internal domain entities, control-plane contracts, zone simulation states, scripting APIs, canonical game data files, logs, and database schemas MUST use standard UTF-8 Unicode strings exclusively.
+- Static game data MUST adhere to the **Dual-Tier Game Data Standard (`JXData Standard v1` — [docs/data-architecture-standard.md](../../docs/data-architecture-standard.md))**:
+  1. **Tier 1 — Authoring Source of Truth**: Domain-structured UTF-8 JSON documents under `data/` (`maps/`, `npcs/`, `players/`, `skills/`, `items/`, `loot/`, `shops/`) validated against JSON Schema (Draft 2020-12) contracts under `schemas/*.schema.json`.
+  2. **Tier 2 — Runtime Delivery Snapshot**: Pre-compiled zero-copy binary snapshots (`MemoryPack` `.pack` files verified by `SHA-256` checksums) generated from the canonical JSON files for instantaneous loading into immutable `FrozenDictionary` / `ReadOnlyMemory<T>` catalogs.
+- Legacy byte encodings (`TCVN3`/`ABC` and `GBK`/`Windows-1252`) required by the original game client wire protocol MUST be transcoded strictly at the `JXServer.Adapter.LegacyJX1` network boundary.
 
-*Rationale*: Prevents legacy single-byte encoding corruption from polluting domain logic, modern client adapters, database queries, and administrative tools.
+*Rationale*: Ensures human/AI-readable, Git-diffable, schema-validated game data alongside sub-millisecond zero-allocation runtime loading without polluting the server core with legacy encodings.
 
-### VI. Clean Modular Boundaries, ABP DDD Role Separation & Compilation-Checked Scripting
+### VI. Clean Modular Boundaries, ABP DDD Role Separation & C# 14 Fluent Scripting API
 - Dependencies MUST flow strictly inward across four architectural tiers:
   1. **Primitives (Domain.Shared) Tier**: Zero-dependency shared constants, enumerations, coordinate and fixed-point math primitives, structured error codes, and encoding transcoders.
-  2. **Simulation & Asset Engine Tier**: Self-contained libraries for static asset loading (`/maps`, `/settings`), the 18-Hz Zone Engine, and strongly-typed gameplay scripting interfaces, free of database or web middleware dependencies.
+  2. **Simulation & Asset Engine Tier**: Self-contained libraries for static asset catalogs (`JXServer.GameAssets`), the 18-Hz Zone Engine (`JXServer.ZoneEngine`), and strongly-typed gameplay scripting (`JXServer.Scripts`), free of database or web middleware dependencies.
   3. **Control-Plane DDD Tier**: Domain aggregates, domain services, application contracts, application use-case orchestrators, and EF Core persistence/cluster infrastructure implementations.
   4. **Adapters & Host Tier**: Legacy and modern network transport adapters, cluster communication bindings, and the executable server host.
 - **ABP DDD Role Separation**:
   - **Domain Aggregates & Entities** MUST protect their internal state behind private or internal setters, provide a protected parameterless constructor for ORM materialization alongside invariant-enforcing public constructors, and reference other aggregates solely by identifier rather than navigation properties.
   - **Domain Services (`*Manager`)** MUST contain only core cross-aggregate business rules, MUST NOT perform authorization or send external notifications, and MUST NOT call database save operations directly.
   - **Application Services (`*AppService`)** MUST act as the transaction/unit-of-work boundary that orchestrates domain managers and repositories, persists changes, and accepts/returns only DTOs (never leaking domain entities outside the application layer).
-- **Open/Closed Dispatching & Scripting**: Network opcode handlers, NPC dialog scripts, item usage scripts, and mission/event controllers MUST be registered through extensible handler registries rather than monolithic conditional switch blocks.
+- **Declarative Data Rules & C# 14 Fluent Scripting API (Mandatory)**:
+  - Static game catalogs and formulas (map portals, skill scaling curves, monster stat scaling, loot tables, and shop merchandise lists) MUST be defined declaratively in `data/**/*.json`.
+  - All interactive gameplay scripts—including **all NPC dialogs**, quests, item usage scripts, and dynamic missions/battlegrounds—MUST be implemented using the **C# 14 Fluent Scripting API (`JXServer.Scripts`)** (`INpcDialogScript`, `IItemUsageScript`, `IMissionController`) with compile-time Roslyn verification, thread-safe per-session contexts, zero-allocation 18-Hz execution, and runtime hot-reload via collectible `AssemblyLoadContext`. Embedding untyped dynamic scripting VMs (such as Lua) in the runtime server is strictly forbidden.
 
-*Rationale*: Combines ABP Framework's battle-tested DDD boundaries in the Control Plane with zero-overhead data-oriented execution in the 18-Hz Zone Engine.
+*Rationale*: Combines ABP Framework's battle-tested DDD boundaries in the Control Plane with zero-overhead data-oriented execution and compile-time verified, hot-reloadable C# 14 Fluent Scripting in the 18-Hz Zone Engine.
 
 ## Technical Stack, Performance & Structural Constraints
 
@@ -74,8 +80,8 @@ Sync Impact Report:
   - Target .NET 10 and C# 14 using the XML solution format, centralized build properties, and central package version management.
   - Enforce nullable reference types, the latest Roslyn analysis level, and warnings-as-errors across all projects.
   - Standardize relational persistence on **EF Core 10 with Microsoft SQL Server** as the primary production database provider and **SQLite (WAL) / InMemory** for lightweight local development and automated test suites.
-- **ABP DDD & 18-Hz Game Server Naming Conventions (Mandatory)**:
-  - **One Type Per File & Sealed Concrete Classes**: Every class, structure, record, interface, or enumeration MUST reside in its own dedicated source file matching the exact type name. Concrete implementation classes (`*AppService`, `*Manager`, `EfCore*Repository`, `*PacketHandler`, `*TickSystem`) MUST be marked sealed by default.
+- **ABP DDD, 18-Hz Game Server & `JXData Standard v1` Naming Conventions (Mandatory)**:
+  - **One Type Per File & Sealed Concrete Classes**: Every class, structure, record, interface, or enumeration MUST reside in its own dedicated source file matching the exact type name. Concrete implementation classes (`*AppService`, `*Manager`, `EfCore*Repository`, `*PacketHandler`, `*TickSystem`, `*Script`) MUST be marked sealed by default.
   - **Pluralized Feature/Aggregate Folders**: Generic technical bucket folders (`Entities/`, `Dtos/`, `Services/`, `Repositories/`, `Helpers/`, `Utils/`) at the project root are strictly forbidden. Source files MUST be organized into pluralized aggregate/feature directories (`Accounts/`, `Characters/`, `SessionLeases/`, `WorldZones/`) mirrored consistently across layers.
   - **ABP DDD Layer Suffixes**:
     - **Primitives Tier**: `<Feature>Consts` for validation limits and `<Module>ErrorCodes` formatted as `JXServer:<Domain>:<Code>`.
@@ -85,8 +91,8 @@ Sync Impact Report:
   - **Five Real-Time Game Server & Binary Protocol Suffixes**:
     1. **Directional Packet Contracts**: Client-to-server packets MUST be suffixed with `*C2SPacket` and server-to-client packets with `*S2CPacket`, dispatched via `I<Endpoint>PacketHandler` / `<Action>PacketHandler`.
     2. **Zone Simulation vs. ORM Separation**: In-memory 18-Hz zone representations MUST use `*ZoneState` or `*Slot` suffixes (never reusing EF Core `Character` or `Account` entities inside the zone loop), mutated via `<Action>ZoneCommand` and processed by `<Subsystem>TickSystem`.
-    3. **Unit-Explicit Coordinate & Timing Naming**: Spatial properties and parameters MUST explicitly include their coordinate unit suffix (`*MpsX`/`*MpsY` for world pixels, `*CellX`/`*CellY` for 32x32 obstacle cells, `*RegionX`/`*RegionY`/`*RegionId` for 512x1024 regions), and time values MUST distinguish between `*Frames` (18-Hz ticks) and `*Ms` / `*Seconds`.
-    4. **Immutable Static Assets**: Pre-loaded `/settings` and `/maps` records MUST be suffixed with `*Template` or `*MapDescriptor` and exposed via singleton read-only `I<Asset>Catalog` / `<Asset>Catalog` registries.
+    3. **Unit-Explicit Coordinate & Timing Naming**: Spatial properties and parameters in both C# and JSON schemas MUST explicitly include their coordinate unit suffix (`*MpsX`/`*MpsY`/`*RadiusMps` for world pixels, `*CellX`/`*CellY`/`*WidthCells`/`*HeightCells` for 32x32 obstacle cells, `*RegionX`/`*RegionY`/`*RegionId` for 512x1024 regions), and time values MUST distinguish between `*Frames` (18-Hz ticks) and `*Ms` / `*Seconds` / `*Minutes`.
+    4. **Immutable Static Assets & Dual Identifiers (`id` + `code`)**: Pre-loaded game data records MUST be suffixed with `*Template` or `*Descriptor` and exposed via singleton read-only `I<Asset>Catalog` / `<Asset>Catalog` registries. Every primary record in `data/**/*.json` MUST define both a numeric `id` (for wire-protocol fidelity) and a `kebab-case` string `code` (for human/AI readability), with obstacle grids stored inline as RLE + Base64 inside unified `*.map.json` documents.
     5. **Source-Generated Logging**: Each module MUST define structured log methods inside a dedicated `<Module>LogMessages` class rather than allocating interpolated strings on hot paths.
 - **Real-Time 18-Hz Hot-Path Standards**:
   - **Non-Blocking Simulation Loop**: Database queries, disk I/O, HTTP calls, and cross-zone blocking locks MUST NEVER execute inside the 18-Hz zone tick thread.
@@ -96,7 +102,7 @@ Sync Impact Report:
 ## Development Workflow & Verification Gates
 
 1. **Ground-Truth Specification Gate**: Before implementing any protocol packet, asset loader, or combat/item mechanic, verify that its exact structure and formulas are documented with traceable references to `jx-swarm` docs, `jx-win-src` source files, or `jx-linux-bin` binary addresses.
-2. **Symmetric Protocol & Formula Unit Gate**: Every legacy packet serializer/deserializer, cipher routine, and core mathematical formula (five-elements damage, 64-direction trigonometry, coordinate conversion, item generation) MUST pass deterministic unit tests against verified test vectors before integration into a Zone or Gateway.
+2. **Symmetric Protocol, Schema & Formula Unit Gate**: Every legacy packet serializer/deserializer, cipher routine, canonical JSON asset file against `schemas/*.schema.json`, and core mathematical formula (five-elements damage, 64-direction trigonometry, coordinate conversion, item generation) MUST pass deterministic unit tests against verified test vectors before integration into a Zone or Gateway.
 3. **Autonomous Swarm & Headless Integration Gate**: New gateway and zone features MUST be validated end-to-end by connecting automated headless client sessions (compatible with `jx-swarm`) to verify full handshake, world entry, movement, combat, and state synchronization without manual guesswork.
 4. **High-Density Stress & Fault Isolation Gate**: Malformed client packets, sudden socket drops, or script exceptions for a single player MUST be contained to that session without crashing the Zone loop, Edge Gateway, or sibling player sessions.
 5. **Structural & Zero-Warning Build Gate**: All plans, specifications, task breakdowns, and pull requests MUST pass formatting verification, build with zero warnings under warnings-as-errors, and strictly respect the one-type-per-file, ABP DDD, and 18-Hz game server naming conventions.
@@ -111,4 +117,4 @@ Sync Impact Report:
   3. Incrementing the semantic version below (`MAJOR` for backward-incompatible governance or architectural redefinitions, `MINOR` for new principles or expanded constraints, `PATCH` for wording clarifications).
 - Every feature specification, implementation plan, task list, and code review MUST explicitly verify compliance with this Constitution.
 
-**Version**: 1.1.0 | **Ratified**: 2026-11-08 | **Last Amended**: 2026-11-08
+**Version**: 1.2.0 | **Ratified**: 2026-11-08 | **Last Amended**: 2026-11-09
