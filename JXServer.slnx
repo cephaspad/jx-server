@@ -10,6 +10,9 @@
     <Project Path="src/JXServer.Adapter.LegacyJX1/JXServer.Adapter.LegacyJX1.csproj" />
     <Project Path="src/JXServer.Host/JXServer.Host.csproj" />
   </Folder>
+  <Folder Name="/tools/">
+    <Project Path="tools/JXServer.DataExporter/JXServer.DataExporter.csproj" />
+  </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/JXServer.Protocol.Tests/JXServer.Protocol.Tests.csproj" />
     <Project Path="tests/JXServer.ZoneEngine.Tests/JXServer.ZoneEngine.Tests.csproj" />

@@ -4,6 +4,7 @@ using JXServer.GameAssets.WorldMaps;
 using JXServer.Primitives.Characters;
 using JXServer.Primitives.Encodings;
 using JXServer.Primitives.ErrorCodes;
+using JXServer.Primitives.Items;
 
 namespace JXServer.Domain.Characters;
 
@@ -112,11 +113,37 @@ public sealed class CharacterManager
         }
 
         byte freeSlotIndex = FindFirstFreeSlotIndex(existingCharacters);
+        Guid characterId = Guid.NewGuid();
         IEnumerable<CharacterSkillValue> starterSkills = baseTemplate.StarterSkills
             .Select(s => new CharacterSkillValue(s.SkillId, s.Level, 0, 0));
 
+        var starterItems = new List<CharacterItem>();
+        IReadOnlyList<StarterItemTemplate> starterItemTemplates = _playerTemplateCatalog.DefaultStarterItems;
+        for (int i = 0; i < starterItemTemplates.Count; i++)
+        {
+            StarterItemTemplate st = starterItemTemplates[i];
+            starterItems.Add(new CharacterItem(
+                id: Guid.NewGuid(),
+                characterId: characterId,
+                genre: st.Genre,
+                detailType: st.DetailType,
+                particularType: st.ParticularType,
+                level: Math.Max((byte)1, st.Level),
+                series: ElementSeries.Metal,
+                quality: ItemQualityKind.Normal,
+                randomSeed: (uint)(1001 + i),
+                generatorVersion: ItemConsts.GeneratorVersion,
+                luck: 0,
+                currentDurability: 1,
+                maxDurability: 1,
+                stackCount: Math.Max((ushort)1, st.StackCount),
+                containerPlace: st.ContainerPlace,
+                gridX: st.GridX,
+                gridY: st.GridY));
+        }
+
         return new Character(
-            Guid.NewGuid(),
+            characterId,
             account.Id,
             freeSlotIndex,
             trimmedName,
@@ -136,7 +163,8 @@ public sealed class CharacterManager
             baseTemplate.InitialManaMax,
             baseTemplate.InitialStaminaMax,
             starterSkills,
-            _timeProvider.GetUtcNow());
+            _timeProvider.GetUtcNow(),
+            starterItems);
     }
 
     private static byte FindFirstFreeSlotIndex(IReadOnlyList<Character> existing)

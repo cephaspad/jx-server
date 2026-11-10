@@ -41,8 +41,8 @@ public sealed class SessionLeaseFencingIntegrationTests
         }
 
         await gs1.SendEncryptedStructAsync(SyncEndC2SPacket.Create(1u, 1u));
-        _ = await gs1.ReadNextDecryptedPayloadAsync(); // 0x46
-        _ = await gs1.ReadNextDecryptedPayloadAsync(); // 0x4E
+        _ = await gs1.ReadUntilOpcodeAsync(ProtocolOpcodes.s2c_synccurplayernormal); // 0x46
+        _ = await gs1.ReadUntilOpcodeAsync(ProtocolOpcodes.s2c_syncnpcminplayer); // 0x4E
 
         // Replay of single-use ticket1 on another GameServer connection must be rejected
         await using (var replayGs = await SimulatedJxClientConnection.ConnectAndCompleteHandshakeAsync(harness.GameServerPort))
@@ -82,7 +82,7 @@ public sealed class SessionLeaseFencingIntegrationTests
         }
 
         await gs2.SendEncryptedStructAsync(SyncEndC2SPacket.Create(2u, 2u));
-        byte[] confirm = await gs2.ReadNextDecryptedPayloadAsync();
+        byte[] confirm = await gs2.ReadUntilOpcodeAsync(ProtocolOpcodes.s2c_synccurplayernormal);
         Assert.Equal(ProtocolOpcodes.s2c_synccurplayernormal, confirm[0]);
     }
 
@@ -123,15 +123,24 @@ public sealed class SessionLeaseFencingIntegrationTests
                 await gs.SendEncryptedStructAsync(LogicLoginC2SPacket.Create(ticket));
                 for (int i = 0; i < 7; i++)
                 {
-                    _ = await gs.ReadNextDecryptedPayloadAsync();
+                    _ = await gs.ReadUntilOpcodeAsync(i switch
+                    {
+                        0 => ProtocolOpcodes.s2c_syncworld,
+                        1 => ProtocolOpcodes.s2c_synccurplayer,
+                        2 => ProtocolOpcodes.s2c_synccurplayerskill,
+                        3 => ProtocolOpcodes.s2c_synccurplayernormal,
+                        4 => ProtocolOpcodes.s2c_syncnpc,
+                        5 => ProtocolOpcodes.s2c_disabledfuncflag,
+                        _ => ProtocolOpcodes.s2c_syncend,
+                    });
                 }
 
                 await gs.SendEncryptedStructAsync(SyncEndC2SPacket.Create((uint)botIdx, 100u));
-                _ = await gs.ReadNextDecryptedPayloadAsync(); // 0x46
-                _ = await gs.ReadNextDecryptedPayloadAsync(); // 0x4E
+                _ = await gs.ReadUntilOpcodeAsync(ProtocolOpcodes.s2c_synccurplayernormal); // 0x46
+                _ = await gs.ReadUntilOpcodeAsync(ProtocolOpcodes.s2c_syncnpcminplayer); // 0x4E
 
                 await gs.SendEncryptedStructAsync(PingReplyC2SPacket.Create(1u, (uint)botIdx));
-                var pingReply = MemoryMarshal.Read<PingReplyS2CPacket>(await gs.ReadNextDecryptedPayloadAsync());
+                var pingReply = MemoryMarshal.Read<PingReplyS2CPacket>(await gs.ReadUntilOpcodeAsync(ProtocolOpcodes.s2c_pingreply));
                 Assert.Equal((uint)botIdx, pingReply.EchoedClientTimestamp);
 
                 await gs.SendEncryptedStructAsync(CloseConnectionC2SPacket.Create());

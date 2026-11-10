@@ -1,6 +1,13 @@
 using System.Collections.Frozen;
+using JXServer.Contracts.Characters;
 using JXServer.Contracts.SessionLeases;
+using JXServer.GameAssets.Items;
+using JXServer.GameAssets.LootTables;
+using JXServer.GameAssets.NpcTemplates;
+using JXServer.GameAssets.PlayerTemplates;
+using JXServer.GameAssets.Skills;
 using JXServer.GameAssets.WorldMaps;
+using JXServer.ZoneEngine.Chats;
 using JXServer.ZoneEngine.Configuration;
 using JXServer.ZoneEngine.PlayerSessions;
 using Microsoft.Extensions.Logging;
@@ -22,7 +29,16 @@ public sealed class ZoneClusterRouter : IZoneClusterRouter
         ISessionLeaseAppService sessionLeaseAppService,
         IOptions<ZoneEngineOptions> options,
         TimeProvider timeProvider,
-        ILogger<ZoneClusterRouter> logger)
+        ILogger<ZoneClusterRouter> logger,
+        INpcTemplateCatalog? npcTemplateCatalog = null,
+        ITrapScriptCatalog? trapScriptCatalog = null,
+        ICharacterAppService? characterAppService = null,
+        ISkillTemplateCatalog? skillTemplateCatalog = null,
+        IMissileTemplateCatalog? missileTemplateCatalog = null,
+        IPlayerTemplateCatalog? playerTemplateCatalog = null,
+        IItemTemplateCatalog? itemTemplateCatalog = null,
+        ILootTableCatalog? lootTableCatalog = null,
+        ItemGenerator? itemGenerator = null)
     {
         ArgumentNullException.ThrowIfNull(mapCatalog);
         ArgumentNullException.ThrowIfNull(sessionLeaseAppService);
@@ -34,11 +50,29 @@ public sealed class ZoneClusterRouter : IZoneClusterRouter
         var dict = new Dictionary<ushort, MapZoneWorker>();
         foreach (MapDescriptor desc in mapCatalog.ActiveMaps)
         {
-            dict[desc.MapId] = new MapZoneWorker(desc, sessionLeaseAppService, cfg, timeProvider, logger);
+            dict[desc.MapId] = new MapZoneWorker(
+                desc,
+                sessionLeaseAppService,
+                cfg,
+                timeProvider,
+                logger,
+                mapCatalog,
+                npcTemplateCatalog,
+                trapScriptCatalog,
+                characterAppService,
+                this,
+                skillTemplateCatalog,
+                missileTemplateCatalog,
+                playerTemplateCatalog,
+                itemTemplateCatalog,
+                lootTableCatalog,
+                itemGenerator);
         }
 
         _workersByMapId = dict.ToFrozenDictionary();
     }
+
+    public bool IsMapLoaded(ushort mapId) => _workersByMapId.ContainsKey(mapId);
 
     public bool TryGetWorker(ushort mapId, out MapZoneWorker? worker) =>
         _workersByMapId.TryGetValue(mapId, out worker);
@@ -48,6 +82,38 @@ public sealed class ZoneClusterRouter : IZoneClusterRouter
         ArgumentNullException.ThrowIfNull(command);
         return _workersByMapId.TryGetValue(mapId, out MapZoneWorker? worker) &&
                worker.TryEnqueueCommand(command);
+    }
+
+    public bool TryTransferPlayerAcrossMaps(
+        PlayerZoneState player,
+        ushort targetMapId,
+        int arrivalMpsX,
+        int arrivalMpsY,
+        byte arrivalFightMode)
+    {
+        ArgumentNullException.ThrowIfNull(player);
+        if (!_workersByMapId.TryGetValue(targetMapId, out MapZoneWorker? targetWorker))
+        {
+            return false;
+        }
+
+        return targetWorker.TryEnqueueCommand(new AttachTransferredPlayerZoneCommand(
+            player,
+            arrivalMpsX,
+            arrivalMpsY,
+            arrivalFightMode));
+    }
+
+    public void RouteClusterChat(DeliverClusterChatZoneCommand chatCommand)
+    {
+        ArgumentNullException.ThrowIfNull(chatCommand);
+        foreach (MapZoneWorker worker in _workersByMapId.Values)
+        {
+            if (worker.ActivePlayerCount > 0)
+            {
+                worker.TryEnqueueCommand(chatCommand);
+            }
+        }
     }
 
     public async Task EvictAccountFromAllZonesAsync(

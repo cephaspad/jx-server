@@ -1,7 +1,9 @@
+using JXServer.Primitives.Combat;
+
 namespace JXServer.Contracts.Characters;
 
 /// <summary>
-/// DTO carrying updated character coordinates and vitals when detaching from a map zone.
+/// DTO carrying updated character coordinates, vitals, progression, and inventory when detaching from a map zone.
 /// </summary>
 public sealed record UpdateCharacterWorldSnapshotDto(
     Guid CharacterId,
@@ -10,4 +12,25 @@ public sealed record UpdateCharacterWorldSnapshotDto(
     int MapMpsY,
     int CurrentLife,
     int CurrentMana,
-    ushort CurrentStamina);
+    ushort CurrentStamina,
+    long LeaseEpoch = 0,
+    byte FightMode = 0,
+    byte? Level = null,
+    long? Experience = null,
+    int? LeadExperience = null,
+    ushort? Strength = null,
+    ushort? Dexterity = null,
+    ushort? Vitality = null,
+    ushort? Energy = null,
+    ushort? UnallocatedAttributePoints = null,
+    ushort? UnallocatedSkillPoints = null,
+    ushort? MaxLife = null,
+    ushort? MaxMana = null,
+    ushort? MaxStamina = null,
+    int? InventoryMoney = null,
+    int? RepositoryMoney = null,
+    PlayerPkMode? PkState = null,
+    sbyte? PkValue = null,
+    ushort? ActiveAuraSkillId = null,
+    IReadOnlyList<CharacterSkillDto>? Skills = null,
+    IReadOnlyList<CharacterItemDto>? Items = null);

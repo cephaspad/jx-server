@@ -34,4 +34,75 @@ public static partial class ZoneEngineLogMessages
         long leaseEpoch,
         ushort mapId,
         PlayerDetachReason reason);
+
+    [LoggerMessage(
+        EventId = 3003,
+        Level = LogLevel.Information,
+        Message = "Spawned {NpcCount} static NPCs/monsters across regions on Map {MapId} ('{MapName}').")]
+    public static partial void LogStaticNpcsSpawned(
+        ILogger logger,
+        int npcCount,
+        ushort mapId,
+        string mapName);
+
+    [LoggerMessage(
+        EventId = 3004,
+        Level = LogLevel.Information,
+        Message = "Player '{RoleName}' (NpcId={RuntimeNpcId}) transitioned via trap 0x{TrapId:X8} from Map {SourceMapId} to Map {TargetMapId} ({TargetMpsX}, {TargetMpsY}).")]
+    public static partial void LogPlayerMapTransition(
+        ILogger logger,
+        string roleName,
+        uint runtimeNpcId,
+        uint trapId,
+        ushort sourceMapId,
+        ushort targetMapId,
+        int targetMpsX,
+        int targetMpsY);
+
+    [LoggerMessage(
+        EventId = 3005,
+        Level = LogLevel.Debug,
+        Message = "Entity {AttackerNpcId} dealt {FinalDamage} damage to Entity {DefenderNpcId} via Skill {SkillId} on Map {MapId} (RemainingLife={RemainingLife}).")]
+    public static partial void LogCombatDamageApplied(
+        ILogger logger,
+        uint attackerNpcId,
+        uint defenderNpcId,
+        ushort skillId,
+        int finalDamage,
+        int remainingLife,
+        ushort mapId);
+
+    [LoggerMessage(
+        EventId = 3006,
+        Level = LogLevel.Information,
+        Message = "Entity {DefeatedNpcId} was defeated by Entity {KillerNpcId} on Map {MapId} (ExpAwarded={ExpAwarded}, DroppedObjects={DroppedObjects}).")]
+    public static partial void LogEntityDefeated(
+        ILogger logger,
+        uint defeatedNpcId,
+        uint killerNpcId,
+        ushort mapId,
+        long expAwarded,
+        int droppedObjects);
+
+    [LoggerMessage(
+        EventId = 3007,
+        Level = LogLevel.Information,
+        Message = "Player '{RoleName}' (NpcId={RuntimeNpcId}) leveled up to Level {NewLevel} on Map {MapId}.")]
+    public static partial void LogPlayerLeveledUp(
+        ILogger logger,
+        string roleName,
+        uint runtimeNpcId,
+        ushort newLevel,
+        ushort mapId);
+
+    [LoggerMessage(
+        EventId = 3008,
+        Level = LogLevel.Debug,
+        Message = "Player '{RoleName}' (CharacterId={CharacterId}) skill cast {SkillId} rejected: {Reason}.")]
+    public static partial void LogSkillCastRejected(
+        ILogger logger,
+        string roleName,
+        Guid characterId,
+        int skillId,
+        string reason);
 }

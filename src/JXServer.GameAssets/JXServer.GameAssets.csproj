@@ -3,6 +3,7 @@
     <ProjectReference Include="..\JXServer.Primitives\JXServer.Primitives.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="MemoryPack" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />

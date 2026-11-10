@@ -1,4 +1,11 @@
+using System;
+using System.Collections.Generic;
 using JXServer.Primitives.Characters;
+using JXServer.Primitives.Chats;
+using JXServer.Primitives.Combat;
+using JXServer.Primitives.WorldZones;
+using JXServer.ZoneEngine.Combat;
+using JXServer.ZoneEngine.Items;
 
 namespace JXServer.ZoneEngine.PlayerSessions;
 
@@ -8,7 +15,10 @@ namespace JXServer.ZoneEngine.PlayerSessions;
 /// </summary>
 public sealed class PlayerZoneState
 {
-    public uint RuntimeNpcId { get; }
+    private readonly Dictionary<int, ushort> _learnedSkills = [];
+    private readonly Dictionary<int, long> _skillReadyTickBySkillId = [];
+
+    public uint RuntimeNpcId { get; set; }
 
     public Guid AccountId { get; }
 
@@ -30,9 +40,47 @@ public sealed class PlayerZoneState
 
     public ushort MapId { get; set; }
 
+    public int RevivalMapId { get; set; } = CharacterConsts.DefaultSpawnMapId;
+
+    public int RevivalPointId { get; set; } = CharacterConsts.DefaultRevivalPointId;
+
     public int CurrentMpsX { get; set; }
 
     public int CurrentMpsY { get; set; }
+
+    public int TargetMpsX { get; set; }
+
+    public int TargetMpsY { get; set; }
+
+    public int RegionX => CurrentMpsX / WorldCoordinateConsts.RegionWidthMps;
+
+    public int RegionY => CurrentMpsY / WorldCoordinateConsts.RegionHeightMps;
+
+    public EntityDoingPosture Doing { get; set; } = EntityDoingPosture.Stand;
+
+    public EntityCamp Camp { get; set; } = EntityCamp.Begin;
+
+    public byte Dir { get; set; }
+
+    public byte FightMode { get; set; }
+
+    public PlayerPkMode PkState { get; set; } = PlayerPkMode.Peace;
+
+    public sbyte PkValue { get; set; }
+
+    public long LastPkModeChangeTick { get; set; }
+
+    public int ActiveAuraSkillId { get; set; }
+
+    public int WalkSpeed { get; set; } = 10;
+
+    public int RunSpeed { get; set; } = 20;
+
+    public uint LastTriggeredTrapId { get; set; }
+
+    public uint SubscribedChatChannelMask { get; set; } = ChatConsts.DefaultSubscribedChannelMask;
+
+    public long LastSitRegenTick { get; set; }
 
     public int CurrentLife { get; set; }
 
@@ -82,7 +130,77 @@ public sealed class PlayerZoneState
 
     public long LastPingReceivedTick { get; set; }
 
+    // Combat & Equipment aggregated bonus stats
+    public int BonusLifeMax { get; set; }
+
+    public int BonusManaMax { get; set; }
+
+    public int BonusStaminaMax { get; set; }
+
+    public int BonusStrength { get; set; }
+
+    public int BonusDexterity { get; set; }
+
+    public int BonusVitality { get; set; }
+
+    public int BonusEnergy { get; set; }
+
+    public int WeaponMinDamage { get; set; }
+
+    public int WeaponMaxDamage { get; set; }
+
+    public int BonusPhysicsDamage { get; set; }
+
+    public int BonusAttackRating { get; set; }
+
+    public int BonusDefense { get; set; }
+
+    public int PhysicsResistPercent { get; set; }
+
+    public int ColdResistPercent { get; set; }
+
+    public int FireResistPercent { get; set; }
+
+    public int LightResistPercent { get; set; }
+
+    public int PoisonResistPercent { get; set; }
+
+    // Medicine gradual regeneration state
+    public int MedicineLifeRegenPerTick { get; set; }
+
+    public int MedicineLifeRemainingFrames { get; set; }
+
+    public int MedicineManaRegenPerTick { get; set; }
+
+    public int MedicineManaRemainingFrames { get; set; }
+
+    public EntityStatusEffectState StatusEffects { get; } = new();
+
+    public PlayerInventoryGrid Inventory { get; } = new();
+
+    public IReadOnlyDictionary<int, ushort> LearnedSkills => _learnedSkills;
+
     public IPlayerOutboundSink OutboundSink { get; }
+
+    public int EffectiveStrength => Strength + BonusStrength;
+
+    public int EffectiveDexterity => Dexterity + BonusDexterity;
+
+    public int EffectiveVitality => Vitality + BonusVitality;
+
+    public int EffectiveEnergy => Energy + BonusEnergy;
+
+    public int EffectiveAttackRating => Math.Max(10, (EffectiveDexterity * 4) + (Level * 5) + BonusAttackRating);
+
+    public int EffectiveDefense => Math.Max(0, (EffectiveDexterity * 2) + (Level * 2) + BonusDefense);
+
+    public int EffectiveWalkSpeed => StatusEffects.IsFrozen ? Math.Max(3, WalkSpeed / 2) : WalkSpeed;
+
+    public int EffectiveRunSpeed => StatusEffects.IsFrozen ? Math.Max(6, RunSpeed / 2) : RunSpeed;
+
+    public byte LifePercent => MaxLife > 0
+        ? (byte)Math.Clamp((CurrentLife * 100) / MaxLife, 0, 100)
+        : (byte)100;
 
     public PlayerZoneState(
         uint runtimeNpcId,
@@ -134,6 +252,8 @@ public sealed class PlayerZoneState
         MapId = mapId;
         CurrentMpsX = currentMpsX;
         CurrentMpsY = currentMpsY;
+        TargetMpsX = currentMpsX;
+        TargetMpsY = currentMpsY;
         CurrentLife = currentLife;
         MaxLife = maxLife;
         CurrentMana = currentMana;
@@ -154,6 +274,43 @@ public sealed class PlayerZoneState
         FactionJoinCount = factionJoinCount;
         LastPingSentTick = initialTick;
         LastPingReceivedTick = initialTick;
+        LastSitRegenTick = initialTick;
         OutboundSink = outboundSink;
+    }
+
+    public void SetLearnedSkill(int skillId, ushort level)
+    {
+        if (skillId > 0 && level > 0)
+        {
+            _learnedSkills[skillId] = level;
+        }
+    }
+
+    public bool TryGetLearnedSkillLevel(int skillId, out ushort level) =>
+        _learnedSkills.TryGetValue(skillId, out level);
+
+    public bool IsSkillOffCooldown(int skillId, long currentTick) =>
+        !_skillReadyTickBySkillId.TryGetValue(skillId, out long readyTick) || currentTick >= readyTick;
+
+    public void SetSkillCooldown(int skillId, long readyTick) =>
+        _skillReadyTickBySkillId[skillId] = readyTick;
+
+    public EntityFullSyncSnapshot CreateFullSyncSnapshot()
+    {
+        ushort templateId = Gender == CharacterGender.Male ? (ushort)1 : (ushort)2;
+        uint packedSettingIdx = ((uint)Level << 16) | templateId;
+        return new EntityFullSyncSnapshot(
+            NpcId: RuntimeNpcId,
+            MpsX: CurrentMpsX,
+            MpsY: CurrentMpsY,
+            NpcSettingIdx: packedSettingIdx,
+            Series: Series,
+            LifePer: LifePercent,
+            Doing: Doing,
+            Camp: Camp,
+            Dir: Dir,
+            Kind: EntityKind.Player,
+            IsSpecialNpc: false,
+            NameUtf8: RoleNameUnicode);
     }
 }

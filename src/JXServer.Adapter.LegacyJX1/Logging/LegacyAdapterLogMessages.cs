@@ -28,4 +28,26 @@ public static partial class LegacyAdapterLogMessages
         string connectionId,
         byte opcode,
         int length);
+
+    [LoggerMessage(
+        EventId = 4004,
+        Level = LogLevel.Warning,
+        Message = "Rejected movement command on session '{ConnectionId}' (CharacterId={CharacterId}, Opcode=0x{Opcode:X2}) due to invalid dwCheckValue=0x{CheckValue:X8}.")]
+    public static partial void LogInvalidMovementCheckValue(
+        ILogger logger,
+        string connectionId,
+        Guid characterId,
+        byte opcode,
+        uint checkValue);
+
+    [LoggerMessage(
+        EventId = 4005,
+        Level = LogLevel.Warning,
+        Message = "Rejected combat or inventory packet on session '{ConnectionId}' (CharacterId={CharacterId}, Opcode=0x{Opcode:X2}, Reason={Reason}).")]
+    public static partial void LogCombatOrInventoryPacketRejected(
+        ILogger logger,
+        string connectionId,
+        Guid characterId,
+        byte opcode,
+        string reason);
 }

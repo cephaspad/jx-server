@@ -26,4 +26,52 @@ public static partial class GameAssetsLogMessages
         int templateCount,
         int villageCount,
         int filterCount);
+
+    [LoggerMessage(
+        EventId = 1003,
+        Level = LogLevel.Information,
+        Message = "Loaded {NpcTemplateCount} NPC templates from '{NpcSettingsPath}' and {AutoExecSpawnCount} autoexec dialog NPCs.")]
+    public static partial void LogNpcTemplatesLoaded(
+        ILogger logger,
+        int npcTemplateCount,
+        string npcSettingsPath,
+        int autoExecSpawnCount);
+
+    [LoggerMessage(
+        EventId = 1004,
+        Level = LogLevel.Information,
+        Message = "Indexed {TrapBindingCount} map trap script bindings from '{ScriptRootPath}'.")]
+    public static partial void LogTrapScriptsLoaded(
+        ILogger logger,
+        int trapBindingCount,
+        string scriptRootPath);
+
+    [LoggerMessage(
+        EventId = 1005,
+        Level = LogLevel.Information,
+        Message = "Loaded {SkillCount} skill templates and {MissileCount} missile templates via '{SourceTier}'.")]
+    public static partial void LogSkillAndMissileCatalogsLoaded(
+        ILogger logger,
+        int skillCount,
+        int missileCount,
+        string sourceTier);
+
+    [LoggerMessage(
+        EventId = 1006,
+        Level = LogLevel.Information,
+        Message = "Loaded {ItemTemplateCount} item templates and {AffixCount} magic affixes via '{SourceTier}'.")]
+    public static partial void LogItemCatalogLoaded(
+        ILogger logger,
+        int itemTemplateCount,
+        int affixCount,
+        string sourceTier);
+
+    [LoggerMessage(
+        EventId = 1007,
+        Level = LogLevel.Information,
+        Message = "Loaded {LootTableCount} loot drop tables via '{SourceTier}'.")]
+    public static partial void LogLootTablesLoaded(
+        ILogger logger,
+        int lootTableCount,
+        string sourceTier);
 }

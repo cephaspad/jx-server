@@ -16,6 +16,8 @@ public sealed class JXServerDbContext : DbContext
 
     public DbSet<Character> Characters => Set<Character>();
 
+    public DbSet<CharacterItem> CharacterItems => Set<CharacterItem>();
+
     public JXServerDbContext(DbContextOptions<JXServerDbContext> options)
         : base(options)
     {
@@ -103,7 +105,36 @@ public sealed class JXServerDbContext : DbContext
                 skillBuilder.Property(s => s.ExpPercent).IsRequired();
             });
 
+            builder.HasMany(x => x.Items)
+                .WithOne()
+                .HasForeignKey(x => x.CharacterId)
+                .OnDelete(DeleteBehavior.Cascade);
+
             builder.Navigation(x => x.Skills)
+                .UsePropertyAccessMode(PropertyAccessMode.Field);
+
+            builder.Navigation(x => x.Items)
+                .UsePropertyAccessMode(PropertyAccessMode.Field);
+        });
+
+        modelBuilder.Entity<CharacterItem>(builder =>
+        {
+            builder.ToTable("CharacterItems");
+            builder.HasKey(x => x.Id);
+
+            builder.Property(x => x.CreatorName)
+                .IsRequired()
+                .HasMaxLength(CharacterConsts.FixedRoleNameBufferSize);
+
+            builder.OwnsMany(x => x.MagicAttributes, attrBuilder =>
+            {
+                attrBuilder.ToTable("CharacterItemMagicAttributes");
+                attrBuilder.WithOwner().HasForeignKey("CharacterItemId");
+                attrBuilder.HasKey("CharacterItemId", nameof(ItemMagicAttributeValue.SlotIndex));
+                attrBuilder.Property(m => m.SlotIndex).ValueGeneratedNever();
+            });
+
+            builder.Navigation(x => x.MagicAttributes)
                 .UsePropertyAccessMode(PropertyAccessMode.Field);
         });
     }

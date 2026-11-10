@@ -44,6 +44,30 @@ public static class LegacyJX1AdapterServiceCollectionExtensions
         services.AddSingleton<IGameServerPacketHandler, SyncEndPacketHandler>();
         services.AddSingleton<IGameServerPacketHandler, PingReplyPacketHandler>();
         services.AddSingleton<IGameServerPacketHandler, CloseConnectionPacketHandler>();
+        services.AddSingleton<IGameServerPacketHandler, RequestPlayerPacketHandler>();
+        services.AddSingleton<IGameServerPacketHandler, RequestNpcPacketHandler>();
+        services.AddSingleton<IGameServerPacketHandler, NpcWalkPacketHandler>();
+        services.AddSingleton<IGameServerPacketHandler, NpcRunPacketHandler>();
+        services.AddSingleton<IGameServerPacketHandler, NpcJumpPacketHandler>();
+        services.AddSingleton<IGameServerPacketHandler, NpcSitPacketHandler>();
+        services.AddSingleton<IGameServerPacketHandler, ChatSetChannelPacketHandler>();
+        services.AddSingleton<IGameServerPacketHandler, PlayerTalkPacketHandler>();
+        services.AddSingleton<IGameServerPacketHandler, PlayerSendChatPacketHandler>();
+        services.AddSingleton<IGameServerPacketHandler, NpcSkillPacketHandler>();
+        services.AddSingleton<IGameServerPacketHandler, AutoAttackNpcPacketHandler>();
+        services.AddSingleton<IGameServerPacketHandler, ChangeAuraSkillPacketHandler>();
+        services.AddSingleton<IGameServerPacketHandler, PkApplyChangeNormalFlagPacketHandler>();
+        services.AddSingleton<IGameServerPacketHandler, PlayerAddBaseAttributePacketHandler>();
+        services.AddSingleton<IGameServerPacketHandler, PlayerApplyAddSkillPointPacketHandler>();
+        services.AddSingleton<IGameServerPacketHandler, PlayerRevivePacketHandler>();
+        services.AddSingleton<IGameServerPacketHandler, RequestObjPacketHandler>();
+        services.AddSingleton<IGameServerPacketHandler, ObjMouseClickPacketHandler>();
+        services.AddSingleton<IGameServerPacketHandler, PlayerPickupItemPacketHandler>();
+        services.AddSingleton<IGameServerPacketHandler, PlayerMoveItemPacketHandler>();
+        services.AddSingleton<IGameServerPacketHandler, PlayerEatItemPacketHandler>();
+        services.AddSingleton<IGameServerPacketHandler, PlayerThrowAwayItemPacketHandler>();
+        services.AddSingleton<IGameServerPacketHandler, ThrowAwayAllMedicinePacketHandler>();
+        services.AddSingleton<IGameServerPacketHandler, PlayerDivideItemPacketHandler>();
 
         // Listeners
         services.AddSingleton<BishopTcpListenerHostedService>();

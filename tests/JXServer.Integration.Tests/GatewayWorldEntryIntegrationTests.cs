@@ -99,7 +99,7 @@ public sealed class GatewayWorldEntryIntegrationTests
 
             // Send 9-byte 0x70 c2s_ping and verify 5-byte 0x99 s2c_pingreply
             await gs.SendEncryptedStructAsync(PingReplyC2SPacket.Create(worldSync.Frame, 0xCAFEBABEu));
-            byte[] pingReplyBytes = await gs.ReadNextDecryptedPayloadAsync();
+            byte[] pingReplyBytes = await gs.ReadUntilOpcodeAsync(ProtocolOpcodes.s2c_pingreply);
             var pingReply = MemoryMarshal.Read<PingReplyS2CPacket>(pingReplyBytes);
             Assert.Equal(ProtocolOpcodes.s2c_pingreply, pingReply.ProtocolType);
             Assert.Equal(0xCAFEBABEu, pingReply.EchoedClientTimestamp);

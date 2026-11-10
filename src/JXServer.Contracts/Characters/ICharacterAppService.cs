@@ -1,7 +1,8 @@
 namespace JXServer.Contracts.Characters;
 
 /// <summary>
-/// Control-plane application service port for character roster retrieval, creation (`0x45`), and deletion (`0x3A`).
+/// Control-plane application service port for character roster retrieval, creation (`0x45`), deletion (`0x3A`),
+/// and durable coordinate/vital persistence (`FR-012`).
 /// </summary>
 public interface ICharacterAppService
 {
@@ -24,5 +25,12 @@ public interface ICharacterAppService
     /// </summary>
     Task<DeleteCharacterResultDto> DeleteCharacterAsync(
         DeleteCharacterDto input,
+        CancellationToken cancellationToken = default);
+
+    /// <summary>
+    /// Persists an active character's updated map ID, pixel coordinates, and vitals (`FR-012`).
+    /// </summary>
+    Task<bool> UpdateCharacterWorldSnapshotAsync(
+        UpdateCharacterWorldSnapshotDto input,
         CancellationToken cancellationToken = default);
 }

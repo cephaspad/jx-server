@@ -21,6 +21,21 @@ public sealed class GameAssetsOptions
     public string GatewayRootPath { get; set; } = @"d:\Projects\jx-linux-bin\gateway";
 
     /// <summary>
+    /// Gets or sets the canonical UTF-8 JSON game data directory (<c>JXData Standard v1</c> Tier 1).
+    /// </summary>
+    public string DataDirectory { get; set; } = @"d:\Projects\jx-server\data";
+
+    /// <summary>
+    /// Gets or sets the compiled <c>MemoryPack</c> snapshot directory (<c>JXData Standard v1</c> Tier 2).
+    /// </summary>
+    public string ArtifactsDirectory { get; set; } = @"d:\Projects\jx-server\artifacts";
+
+    /// <summary>
+    /// Gets or sets a value indicating whether to prefer loading <c>MemoryPack</c> binary snapshots from <see cref="ArtifactsDirectory"/> when present.
+    /// </summary>
+    public bool PreferBinarySnapshots { get; set; } = true;
+
+    /// <summary>
     /// Gets or sets the default fallback starter village map ID (<c>53</c> = Ba Lăng Huyện).
     /// </summary>
     public ushort DefaultFallbackStarterVillageMapId { get; set; } = 53;
@@ -35,7 +50,7 @@ public sealed class GameAssetsOptions
     /// Gets or sets an optional subset of map IDs whose <c>Region_S.dat</c> obstacle grids are eagerly preloaded on startup.
     /// If empty, starter maps (<c>53</c>) are eagerly preloaded and remaining maps in <c>worldset.ini</c> load on demand.
     /// </summary>
-    public ushort[] EagerObstacleLoadMapIds { get; set; } = [53];
+    public ushort[] EagerObstacleLoadMapIds { get; set; } = [53, 54, 70, 74, 199];
 
     /// <summary>
     /// Gets or sets an optional list of map IDs to exclude from the active <c>worldset.ini</c> map set.

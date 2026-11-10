@@ -25,6 +25,7 @@ public sealed class EfCoreCharacterRepository : ICharacterRepository
         await using JXServerDbContext dbContext = await _dbContextFactory.CreateDbContextAsync(cancellationToken);
         return await dbContext.Characters
             .Include(x => x.Skills)
+            .Include(x => x.Items)
             .AsNoTracking()
             .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
     }
@@ -35,6 +36,7 @@ public sealed class EfCoreCharacterRepository : ICharacterRepository
         await using JXServerDbContext dbContext = await _dbContextFactory.CreateDbContextAsync(cancellationToken);
         return await dbContext.Characters
             .Include(x => x.Skills)
+            .Include(x => x.Items)
             .AsNoTracking()
             .FirstOrDefaultAsync(x => x.NormalizedRoleName == normalizedRoleName, cancellationToken);
     }
@@ -45,6 +47,7 @@ public sealed class EfCoreCharacterRepository : ICharacterRepository
         await using JXServerDbContext dbContext = await _dbContextFactory.CreateDbContextAsync(cancellationToken);
         return await dbContext.Characters
             .Include(x => x.Skills)
+            .Include(x => x.Items)
             .AsNoTracking()
             .Where(x => x.AccountId == accountId)
             .OrderBy(x => x.SlotIndex)
@@ -76,21 +79,81 @@ public sealed class EfCoreCharacterRepository : ICharacterRepository
         await using JXServerDbContext dbContext = await _dbContextFactory.CreateDbContextAsync(cancellationToken);
         Character? existing = await dbContext.Characters
             .Include(x => x.Skills)
+            .Include(x => x.Items)
             .FirstOrDefaultAsync(x => x.Id == character.Id, cancellationToken);
 
         if (existing is null)
         {
             dbContext.Characters.Update(character);
-        }
-        else
-        {
-            dbContext.Entry(existing).CurrentValues.SetValues(character);
             await dbContext.SaveChangesAsync(cancellationToken);
-            return existing;
+            return character;
         }
 
+        // Remove existing CharacterItems from DbSet before replacing the collection so newly added items are tracked as Added
+        if (existing.Items.Count > 0)
+        {
+            dbContext.CharacterItems.RemoveRange(existing.Items);
+        }
+
+        var freshItems = new List<CharacterItem>(character.Items.Count);
+        foreach (CharacterItem item in character.Items)
+        {
+            var cloned = new CharacterItem(
+                Guid.NewGuid(),
+                character.Id,
+                item.Genre,
+                item.DetailType,
+                item.ParticularType,
+                item.Level,
+                item.Series,
+                item.Quality,
+                item.RandomSeed,
+                item.GeneratorVersion,
+                item.Luck,
+                item.CurrentDurability,
+                item.MaxDurability,
+                item.StackCount,
+                item.ContainerPlace,
+                item.GridX,
+                item.GridY,
+                item.BindState,
+                item.ExpireTimeUnixSeconds,
+                item.CreatorName,
+                item.MagicAttributes);
+            freshItems.Add(cloned);
+            await dbContext.CharacterItems.AddAsync(cloned, cancellationToken);
+        }
+
+        existing.UpdateWorldSnapshot(
+            character.MapId,
+            character.MapMpsX,
+            character.MapMpsY,
+            character.CurrentLife,
+            character.CurrentMana,
+            character.CurrentStamina,
+            character.Level,
+            character.Experience,
+            character.LeadExperience,
+            character.Strength,
+            character.Dexterity,
+            character.Vitality,
+            character.Energy,
+            character.UnallocatedAttributePoints,
+            character.UnallocatedSkillPoints,
+            character.MaxLife,
+            character.MaxMana,
+            character.MaxStamina,
+            character.InventoryMoney,
+            character.RepositoryMoney,
+            character.PkState,
+            character.PkValue,
+            character.ActiveAuraSkillId,
+            character.Skills,
+            freshItems,
+            character.UpdatedAtUtc);
+
         await dbContext.SaveChangesAsync(cancellationToken);
-        return character;
+        return existing;
     }
 
     /// <inheritdoc />
@@ -100,6 +163,7 @@ public sealed class EfCoreCharacterRepository : ICharacterRepository
         await using JXServerDbContext dbContext = await _dbContextFactory.CreateDbContextAsync(cancellationToken);
         Character? existing = await dbContext.Characters
             .Include(x => x.Skills)
+            .Include(x => x.Items)
             .FirstOrDefaultAsync(x => x.Id == character.Id, cancellationToken);
 
         if (existing is not null)

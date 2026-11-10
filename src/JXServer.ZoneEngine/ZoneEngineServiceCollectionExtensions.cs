@@ -29,7 +29,7 @@ public static class ZoneEngineServiceCollectionExtensions
         }
 
         services.AddSingleton<ZoneClusterRouter>();
-        services.AddSingleton<IZoneClusterRouter>( static sp => sp.GetRequiredService<ZoneClusterRouter>());
+        services.AddSingleton<IZoneClusterRouter>(static sp => sp.GetRequiredService<ZoneClusterRouter>());
         services.AddHostedService<ZoneEngineHostedService>();
 
         return services;

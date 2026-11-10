@@ -38,11 +38,11 @@ public readonly record struct SyncNpcFullS2CPacket(
         ushort templateId = state.Gender == CharacterGender.Male ? (ushort)1 : (ushort)2;
 
         return new SyncNpcFullS2CPacket(
-            Camp: 0,
+            Camp: (byte)state.Camp,
             Series: state.Series,
             LifePercent: lifePercent,
             MapMpsY: state.CurrentMpsY,
-            DoingState: 1,
+            DoingState: (byte)state.Doing,
             StateInfo: 0,
             MapMpsX: state.CurrentMpsX,
             MenuState: 0,
@@ -54,6 +54,29 @@ public readonly record struct SyncNpcFullS2CPacket(
             Level: state.Level,
             RankFfId: 0,
             NameUnicode: state.RoleNameUnicode);
+    }
+
+    public static SyncNpcFullS2CPacket CreateFromSnapshot(in EntityFullSyncSnapshot snapshot)
+    {
+        ushort templateId = (ushort)(snapshot.NpcSettingIdx & 0xFFFFu);
+        ushort level = (ushort)(snapshot.NpcSettingIdx >> 16);
+        return new SyncNpcFullS2CPacket(
+            Camp: (byte)snapshot.Camp,
+            Series: snapshot.Series,
+            LifePercent: snapshot.LifePer,
+            MapMpsY: snapshot.MpsY,
+            DoingState: (byte)snapshot.Doing,
+            StateInfo: 0,
+            MapMpsX: snapshot.MpsX,
+            MenuState: 0,
+            GoldType: snapshot.IsSpecialNpc ? (short)1 : (short)0,
+            Kind: snapshot.Kind,
+            NpcId: snapshot.NpcId,
+            MasterId: 0,
+            TemplateId: templateId,
+            Level: level,
+            RankFfId: 0,
+            NameUnicode: snapshot.NameUtf8 ?? string.Empty);
     }
 
     public byte[] ToPayloadBytes()

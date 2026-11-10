@@ -1,4 +1,5 @@
 using JXServer.Primitives.Characters;
+using JXServer.Primitives.Combat;
 
 namespace JXServer.Contracts.Characters;
 
@@ -38,4 +39,8 @@ public sealed record CharacterDto(
     byte CurrentFactionId,
     byte FirstFactionId,
     ushort FactionJoinCount,
-    IReadOnlyList<CharacterSkillDto> Skills);
+    IReadOnlyList<CharacterSkillDto> Skills,
+    PlayerPkMode PkState = PlayerPkMode.Peace,
+    sbyte PkValue = 0,
+    ushort ActiveAuraSkillId = 0,
+    IReadOnlyList<CharacterItemDto>? Items = null);

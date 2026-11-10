@@ -1,3 +1,4 @@
+using JXServer.Application.Characters;
 using JXServer.Application.Configuration;
 using JXServer.Application.Logging;
 using JXServer.Contracts.Characters;
@@ -218,15 +219,7 @@ public sealed class SessionLeaseAppService : ISessionLeaseAppService
                 Character? character = await _characterRepository.FindAsync(snap.CharacterId, cancellationToken);
                 if (character is not null && character.AccountId == input.AccountId)
                 {
-                    character.UpdateWorldSnapshot(
-                        snap.MapId,
-                        snap.MapMpsX,
-                        snap.MapMpsY,
-                        snap.CurrentLife,
-                        snap.CurrentMana,
-                        snap.CurrentStamina,
-                        nowUtc);
-
+                    CharacterAppService.ApplyWorldSnapshot(character, snap, nowUtc);
                     await _characterRepository.UpdateAsync(character, autoSave: true, cancellationToken: cancellationToken);
                 }
             }
@@ -285,6 +278,40 @@ public sealed class SessionLeaseAppService : ISessionLeaseAppService
             character.FactionJoinCount,
             character.Skills
                 .Select(s => new CharacterSkillDto(s.SkillId, s.BaseLevel, s.BonusLevel, s.ExpPercent))
+                .ToArray(),
+            character.PkState,
+            character.PkValue,
+            character.ActiveAuraSkillId,
+            character.Items
+                .Select(i => new CharacterItemDto(
+                    i.Id,
+                    i.Genre,
+                    i.DetailType,
+                    i.ParticularType,
+                    i.Level,
+                    i.Series,
+                    i.Quality,
+                    i.RandomSeed,
+                    i.GeneratorVersion,
+                    i.Luck,
+                    i.CurrentDurability,
+                    i.MaxDurability,
+                    i.StackCount,
+                    i.ContainerPlace,
+                    i.GridX,
+                    i.GridY,
+                    i.MagicAttributes
+                        .Select(m => new CharacterItemMagicAttributeDto(
+                            m.SlotIndex,
+                            m.AttributeId,
+                            m.Value0,
+                            m.Value1,
+                            m.Value2,
+                            m.EnchaseLevel))
+                        .ToArray(),
+                    i.BindState,
+                    i.ExpireTimeUnixSeconds,
+                    i.CreatorName))
                 .ToArray());
 
     private static WorldHandoffTicketDto CreateDeniedTicket(

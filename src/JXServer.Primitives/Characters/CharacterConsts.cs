@@ -13,4 +13,6 @@ public static class CharacterConsts
     public const int MaxSkillSlots = 80;
     public const long ExpHighDivisor = 2_000_000_000L;
     public const byte NoFactionId = 0xFF;
+    public const int DefaultSpawnMapId = 53;
+    public const int DefaultRevivalPointId = 19;
 }

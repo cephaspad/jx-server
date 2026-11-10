@@ -1,4 +1,5 @@
 using JXServer.Primitives.Characters;
+using JXServer.Primitives.Combat;
 using JXServer.Primitives.ErrorCodes;
 
 namespace JXServer.Domain.Characters;
@@ -9,6 +10,7 @@ namespace JXServer.Domain.Characters;
 public sealed class Character
 {
     private readonly List<CharacterSkillValue> _skills = [];
+    private readonly List<CharacterItem> _items = [];
 
     public Guid Id { get; private set; }
 
@@ -76,7 +78,25 @@ public sealed class Character
 
     public ushort FactionJoinCount { get; private set; }
 
+    public PlayerPkMode PkState { get; private set; }
+
+    public sbyte PkValue { get; private set; }
+
+    public int Repute { get; private set; }
+
+    public int FuYuan { get; private set; }
+
+    public int Honor { get; private set; }
+
+    public byte TransLifeCount { get; private set; }
+
+    public int ZhenYuan { get; private set; }
+
+    public ushort ActiveAuraSkillId { get; private set; }
+
     public IReadOnlyList<CharacterSkillValue> Skills => _skills;
+
+    public IReadOnlyList<CharacterItem> Items => _items;
 
     public DateTimeOffset CreatedAtUtc { get; private set; }
 
@@ -109,7 +129,8 @@ public sealed class Character
         ushort maxMana,
         ushort maxStamina,
         IEnumerable<CharacterSkillValue>? starterSkills = null,
-        DateTimeOffset? createdAtUtc = null)
+        DateTimeOffset? createdAtUtc = null,
+        IEnumerable<CharacterItem>? starterItems = null)
     {
         if (id == Guid.Empty)
         {
@@ -171,6 +192,14 @@ public sealed class Character
         CurrentFactionId = CharacterConsts.NoFactionId;
         FirstFactionId = CharacterConsts.NoFactionId;
         FactionJoinCount = 0;
+        PkState = PlayerPkMode.Peace;
+        PkValue = 0;
+        Repute = 0;
+        FuYuan = 0;
+        Honor = 0;
+        TransLifeCount = 0;
+        ZhenYuan = 0;
+        ActiveAuraSkillId = 0;
         CreatedAtUtc = now;
         UpdatedAtUtc = now;
         ConcurrencyStamp = Guid.NewGuid();
@@ -180,6 +209,14 @@ public sealed class Character
             foreach (CharacterSkillValue skill in starterSkills)
             {
                 _skills.Add(skill);
+            }
+        }
+
+        if (starterItems is not null)
+        {
+            foreach (CharacterItem item in starterItems)
+            {
+                _items.Add(item);
             }
         }
     }
@@ -202,6 +239,74 @@ public sealed class Character
         CurrentLife = Math.Clamp(currentLife, 1, MaxLife);
         CurrentMana = Math.Clamp(currentMana, 0, MaxMana);
         CurrentStamina = (ushort)Math.Clamp((int)currentStamina, 0, MaxStamina);
+        UpdatedAtUtc = updatedAtUtc ?? DateTimeOffset.UtcNow;
+        ConcurrencyStamp = Guid.NewGuid();
+    }
+
+    public void UpdateWorldSnapshot(
+        ushort mapId,
+        int mpsX,
+        int mpsY,
+        int currentLife,
+        int currentMana,
+        ushort currentStamina,
+        byte level,
+        long experience,
+        int leadExperience,
+        ushort strength,
+        ushort dexterity,
+        ushort vitality,
+        ushort energy,
+        ushort unallocatedAttributePoints,
+        ushort unallocatedSkillPoints,
+        ushort maxLife,
+        ushort maxMana,
+        ushort maxStamina,
+        int inventoryMoney,
+        int repositoryMoney,
+        PlayerPkMode pkState,
+        sbyte pkValue,
+        ushort activeAuraSkillId,
+        IEnumerable<CharacterSkillValue>? skills,
+        IEnumerable<CharacterItem>? items,
+        DateTimeOffset? updatedAtUtc = null)
+    {
+        MapId = mapId;
+        MapMpsX = mpsX;
+        MapMpsY = mpsY;
+        Level = Math.Max((byte)1, level);
+        Experience = Math.Max(0, experience);
+        LeadExperience = Math.Max(0, leadExperience);
+        Strength = strength;
+        Dexterity = dexterity;
+        Vitality = vitality;
+        Energy = energy;
+        UnallocatedAttributePoints = unallocatedAttributePoints;
+        UnallocatedSkillPoints = unallocatedSkillPoints;
+        MaxLife = Math.Max((ushort)1, maxLife);
+        MaxMana = Math.Max((ushort)1, maxMana);
+        MaxStamina = Math.Max((ushort)1, maxStamina);
+        CurrentLife = Math.Clamp(currentLife, 1, MaxLife);
+        CurrentMana = Math.Clamp(currentMana, 0, MaxMana);
+        CurrentStamina = (ushort)Math.Clamp((int)currentStamina, 0, MaxStamina);
+        InventoryMoney = Math.Max(0, inventoryMoney);
+        RepositoryMoney = Math.Max(0, repositoryMoney);
+        PkState = pkState;
+        PkValue = pkValue;
+        ActiveAuraSkillId = activeAuraSkillId;
+
+        if (skills is not null)
+        {
+            _skills.Clear();
+            _skills.AddRange(skills);
+        }
+
+        if (items is not null)
+        {
+            _items.Clear();
+            _items.AddRange(items);
+        }
+
         UpdatedAtUtc = updatedAtUtc ?? DateTimeOffset.UtcNow;
         ConcurrencyStamp = Guid.NewGuid();
     }

@@ -35,6 +35,8 @@ public sealed class SyncEndPacketHandler : IGameServerPacketHandler
             return ValueTask.FromResult(false);
         }
 
+        session.SetClientSyncTokens(request.ClientToken, request.ClientTick);
+
         bool dispatched = _zoneClusterRouter.TryDispatchToZone(
             session.AttachedMapId.Value,
             new CompletePlayerSyncZoneCommand(

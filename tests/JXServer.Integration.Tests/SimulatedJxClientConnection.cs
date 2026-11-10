@@ -90,6 +90,22 @@ public sealed class SimulatedJxClientConnection : IAsyncDisposable
         return payload;
     }
 
+    public async Task<byte[]> ReadUntilOpcodeAsync(byte expectedOpcode, CancellationToken cancellationToken = default)
+    {
+        using var timeoutCts = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
+        timeoutCts.CancelAfter(TimeSpan.FromSeconds(5));
+        CancellationToken ct = timeoutCts.Token;
+
+        while (true)
+        {
+            byte[] payload = await ReadNextDecryptedPayloadAsync(ct);
+            if (payload.Length > 0 && payload[0] == expectedOpcode)
+            {
+                return payload;
+            }
+        }
+    }
+
     public async Task WaitForRemoteDisconnectAsync(CancellationToken cancellationToken = default)
     {
         using var timeoutCts = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
