@@ -68,6 +68,7 @@ public sealed class MapZoneWorker
     private uint _nextStaticNpcId = 1;
     private uint _nextRuntimePlayerNpcId = 10000;
     private long _currentFrameTick;
+    private bool _hasZoneActivity;
 
     public MapDescriptor MapDescriptor => _mapDescriptor;
 
@@ -250,6 +251,7 @@ public sealed class MapZoneWorker
 
         while (_commandChannel.Reader.TryRead(out IZoneCommand? cmd))
         {
+            _hasZoneActivity = true;
             if (_extensionRegistry.TryGetCommandRoute(cmd.GetType(), out ZoneCommandRoute route))
             {
                 try
@@ -403,12 +405,48 @@ public sealed class MapZoneWorker
         {
             while (await timer.WaitForNextTickAsync(stoppingToken))
             {
+                if (_playersByCharacterId.Count == 0 &&
+                    !_commandChannel.Reader.TryPeek(out _) &&
+                    _missileSystem.ActiveMissileCount == 0 &&
+                    _groundObjectSystem.ActiveGroundObjectCount == 0 &&
+                    !HasActiveMonsterSimulationState())
+                {
+                    Interlocked.Increment(ref _currentFrameTick);
+                    continue;
+                }
+
                 await StepSingleTickAsync(stoppingToken);
             }
         }
         catch (OperationCanceledException) when (stoppingToken.IsCancellationRequested)
         {
         }
+    }
+
+    private bool HasActiveMonsterSimulationState()
+    {
+        if (!_hasZoneActivity)
+        {
+            return false;
+        }
+
+        foreach (NpcZoneState npc in _npcsById.Values)
+        {
+            if (npc.Kind == EntityKind.DialogNpc)
+            {
+                continue;
+            }
+
+            if (npc.CurLife < npc.MaxLife ||
+                npc.AiState != MonsterAiStateKind.IdlePatrol ||
+                npc.Doing != EntityDoingPosture.Stand)
+            {
+                return true;
+            }
+        }
+
+        _hasZoneActivity = false;
+        return false;
     }
 
     private void SpawnInitialStaticNpcs()

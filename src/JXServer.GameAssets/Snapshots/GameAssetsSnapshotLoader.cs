@@ -1,4 +1,5 @@
 using System;
+using System.Buffers;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
@@ -6,6 +7,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
+using System.Threading;
 using JXServer.GameAssets.Configuration;
 using JXServer.GameAssets.Items;
 using JXServer.GameAssets.LootTables;
@@ -30,7 +32,8 @@ public static class GameAssetsSnapshotLoader
 {
     public const string DefaultSnapshotFileName = "jxdata.pack";
 
-    private static readonly ConcurrentDictionary<(string DataDir, string PackPath, bool PreferBinary, long PackWriteTicks, long DataStamp), (GameAssetsSnapshotBundle Bundle, string SourceTier)> BundleCache = new();
+    private static readonly ConcurrentDictionary<(string DataDir, string PackPath, bool PreferBinary, long PackWriteTicks, long DataStamp), Lazy<(GameAssetsSnapshotBundle? Bundle, string SourceTier)>> BundleCache = new();
+    private static readonly ConcurrentDictionary<(string DataDir, long DataStamp), Lazy<string>> ShaByStampCache = new();
 
     public static string ComputeDataDirectorySha256Hex(string dataDirectory)
     {
@@ -48,19 +51,40 @@ public static class GameAssetsSnapshotLoader
             return string.Empty;
         }
 
-        using var sha = SHA256.Create();
-        foreach (string file in jsonFiles)
+        using var hasher = IncrementalHash.CreateHash(HashAlgorithmName.SHA256);
+        byte[] ioBuffer = ArrayPool<byte>.Shared.Rent(64 * 1024);
+        try
         {
-            string relPath = Path.GetRelativePath(dataDirectory, file).Replace('\\', '/');
-            byte[] pathBytes = Encoding.UTF8.GetBytes(relPath);
-            sha.TransformBlock(pathBytes, 0, pathBytes.Length, null, 0);
+            foreach (string file in jsonFiles)
+            {
+                string relPath = Path.GetRelativePath(dataDirectory, file).Replace('\\', '/');
+                int maxPathBytes = Encoding.UTF8.GetMaxByteCount(relPath.Length);
+                if (maxPathBytes <= ioBuffer.Length)
+                {
+                    int written = Encoding.UTF8.GetBytes(relPath, ioBuffer);
+                    hasher.AppendData(ioBuffer.AsSpan(0, written));
+                }
+                else
+                {
+                    hasher.AppendData(Encoding.UTF8.GetBytes(relPath));
+                }
 
-            byte[] contentBytes = File.ReadAllBytes(file);
-            sha.TransformBlock(contentBytes, 0, contentBytes.Length, null, 0);
+                using var fs = new FileStream(file, FileMode.Open, FileAccess.Read, FileShare.Read, bufferSize: 1, FileOptions.SequentialScan);
+                int bytesRead;
+                while ((bytesRead = fs.Read(ioBuffer, 0, ioBuffer.Length)) > 0)
+                {
+                    hasher.AppendData(ioBuffer.AsSpan(0, bytesRead));
+                }
+            }
+
+            Span<byte> digest = stackalloc byte[SHA256.HashSizeInBytes];
+            hasher.GetHashAndReset(digest);
+            return Convert.ToHexString(digest);
         }
-
-        sha.TransformFinalBlock([], 0, 0);
-        return Convert.ToHexString(sha.Hash ?? []);
+        finally
+        {
+            ArrayPool<byte>.Shared.Return(ioBuffer);
+        }
     }
 
     public static bool TryLoadBundle(
@@ -69,8 +93,6 @@ public static class GameAssetsSnapshotLoader
         out string sourceTier)
     {
         ArgumentNullException.ThrowIfNull(options);
-        bundle = null;
-        sourceTier = "LegacyFallback";
 
         string dataDir = ResolveDirectory(options.DataDirectory);
         string artifactsDir = ResolveDirectory(options.ArtifactsDirectory);
@@ -79,16 +101,41 @@ public static class GameAssetsSnapshotLoader
         long packWriteTicks = File.Exists(packPath) ? File.GetLastWriteTimeUtc(packPath).Ticks : -1L;
         long dataStamp = ComputeDataDirectoryFastStamp(dataDir);
         var cacheKey = (dataDir, packPath, options.PreferBinarySnapshots, packWriteTicks, dataStamp);
-        if (BundleCache.TryGetValue(cacheKey, out (GameAssetsSnapshotBundle Bundle, string SourceTier) cached))
+
+        Lazy<(GameAssetsSnapshotBundle? Bundle, string SourceTier)> lazyEntry = BundleCache.GetOrAdd(
+            cacheKey,
+            static key => new Lazy<(GameAssetsSnapshotBundle? Bundle, string SourceTier)>(
+                () => LoadBundleCore(key.DataDir, key.PackPath, key.PreferBinary, key.PackWriteTicks, key.DataStamp),
+                LazyThreadSafetyMode.ExecutionAndPublication));
+
+        (GameAssetsSnapshotBundle? loadedBundle, string resolvedTier) = lazyEntry.Value;
+        if (loadedBundle is not null)
         {
-            bundle = cached.Bundle;
-            sourceTier = cached.SourceTier;
+            bundle = loadedBundle;
+            sourceTier = resolvedTier;
             return true;
         }
 
-        string currentSha = ComputeDataDirectorySha256Hex(dataDir);
+        BundleCache.TryRemove(cacheKey, out _);
+        bundle = null;
+        sourceTier = "LegacyFallback";
+        return false;
+    }
 
-        if (options.PreferBinarySnapshots && packWriteTicks >= 0)
+    private static (GameAssetsSnapshotBundle? Bundle, string SourceTier) LoadBundleCore(
+        string dataDir,
+        string packPath,
+        bool preferBinarySnapshots,
+        long packWriteTicks,
+        long dataStamp)
+    {
+        string currentSha = dataStamp >= 0
+            ? ShaByStampCache.GetOrAdd(
+                (dataDir, dataStamp),
+                static k => new Lazy<string>(() => ComputeDataDirectorySha256Hex(k.DataDir), LazyThreadSafetyMode.ExecutionAndPublication)).Value
+            : string.Empty;
+
+        if (preferBinarySnapshots && packWriteTicks >= 0)
         {
             try
             {
@@ -98,10 +145,7 @@ public static class GameAssetsSnapshotLoader
                     (string.IsNullOrEmpty(currentSha) ||
                      string.Equals(deserialized.SourceJsonSha256Hex, currentSha, StringComparison.OrdinalIgnoreCase)))
                 {
-                    bundle = deserialized;
-                    sourceTier = $"Tier2:MemoryPack({packPath})";
-                    BundleCache.TryAdd(cacheKey, (bundle, sourceTier));
-                    return true;
+                    return (deserialized, $"Tier2:MemoryPack({packPath})");
                 }
             }
             catch
@@ -112,13 +156,11 @@ public static class GameAssetsSnapshotLoader
 
         if (!string.IsNullOrEmpty(currentSha))
         {
-            bundle = LoadFromCanonicalJsonDirectory(dataDir, currentSha);
-            sourceTier = $"Tier1:CanonicalJson({dataDir})";
-            BundleCache.TryAdd(cacheKey, (bundle, sourceTier));
-            return true;
+            GameAssetsSnapshotBundle bundle = LoadFromCanonicalJsonDirectory(dataDir, currentSha);
+            return (bundle, $"Tier1:CanonicalJson({dataDir})");
         }
 
-        return false;
+        return (null, "LegacyFallback");
     }
 
     private static long ComputeDataDirectoryFastStamp(string dataDirectory)

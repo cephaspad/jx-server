@@ -12,6 +12,7 @@ using Xunit;
 
 namespace JXServer.ZoneEngine.Tests.SimulationHarnesses;
 
+[Collection(NonParallelZoneBenchmarkCollection.Name)]
 public sealed class ZoneSimulationHarnessAdversarialTests
 {
     private static CharacterDto CreateTestCharacter(

@@ -13,6 +13,7 @@ using Xunit;
 
 namespace JXServer.ZoneEngine.Tests;
 
+[Collection(NonParallelZoneBenchmarkCollection.Name)]
 public sealed class HighDensityAoiBenchmarkTests
 {
     [Fact]
@@ -81,6 +82,10 @@ public sealed class HighDensityAoiBenchmarkTests
         {
             await worker.StepSingleTickAsync();
         }
+
+        GC.Collect();
+        GC.WaitForPendingFinalizers();
+        GC.Collect();
 
         // Issue concurrent movement across region boundary (X=51712 -> X=52800) and chat commands over 180 ticks (10 seconds @ 18 Hz)
         const int totalTicks = 180;

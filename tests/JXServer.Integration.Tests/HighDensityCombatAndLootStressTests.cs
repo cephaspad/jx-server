@@ -24,6 +24,7 @@ using Xunit;
 
 namespace JXServer.Integration.Tests;
 
+[Collection(NonParallelStressTestCollection.Name)]
 public sealed class HighDensityCombatAndLootStressTests : IPlayerOutboundSink, ISessionLeaseAppService
 {
     private int _itemSyncCount;
@@ -177,6 +178,10 @@ public sealed class HighDensityCombatAndLootStressTests : IPlayerOutboundSink, I
         {
             await worker.StepSingleTickAsync();
         }
+
+        GC.Collect();
+        GC.WaitForPendingFinalizers();
+        GC.Collect();
 
         // 3. Measure 180 ticks (10 seconds @ 18 Hz) of 50 players casting multi-projectiles, monster AI/respawns, and loot drops
         const int totalTicks = 180;

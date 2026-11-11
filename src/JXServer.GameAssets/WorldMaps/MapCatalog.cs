@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
+using System.Threading;
 using JXServer.GameAssets.Configuration;
 using JXServer.GameAssets.Logging;
 using JXServer.GameAssets.NpcTemplates;
@@ -21,12 +22,15 @@ namespace JXServer.GameAssets.WorldMaps;
 /// </summary>
 public sealed class MapCatalog : IMapCatalog
 {
+    private static readonly ConcurrentDictionary<string, Lazy<FrozenDictionary<ushort, string>>> MapFileIndexCache = new(StringComparer.OrdinalIgnoreCase);
+    private static readonly ConcurrentDictionary<(string MapFilePath, long LastWriteTicks), Lazy<(FrozenDictionary<(int RegionX, int RegionY), RegionObstacleGrid> Obstacles, FrozenDictionary<(int RegionX, int RegionY), RegionTrapGrid> Traps)>> ParsedMapGridCache = new();
+    private static readonly RegionObstacleGrid EmptyZeroOriginGrid = new(0, 0, new int[512]);
+
     private readonly GameAssetsOptions _options;
     private readonly INpcTemplateCatalog? _npcTemplateCatalog;
     private readonly FrozenDictionary<ushort, MapDescriptor> _activeMaps;
-    private readonly ConcurrentDictionary<(ushort MapId, int RegionX, int RegionY), RegionObstacleGrid?> _regionGrids = new();
-    private readonly ConcurrentDictionary<(ushort MapId, int RegionX, int RegionY), RegionTrapGrid?> _regionTraps = new();
-    private readonly ConcurrentDictionary<ushort, bool> _loadedMapJson = new();
+    private readonly ConcurrentDictionary<(ushort MapId, int RegionX, int RegionY), RegionObstacleGrid> _emptyFallbackGrids = new();
+    private readonly ConcurrentDictionary<ushort, Lazy<(FrozenDictionary<(int RegionX, int RegionY), RegionObstacleGrid> Obstacles, FrozenDictionary<(int RegionX, int RegionY), RegionTrapGrid> Traps)>> _loadedMaps = new();
 
     public IReadOnlyCollection<MapDescriptor> ActiveMaps => _activeMaps.Values;
 
@@ -69,6 +73,14 @@ public sealed class MapCatalog : IMapCatalog
                 20);
         }
 
+        if (_options.ExcludedWorldSetMapIds is { Length: > 0 })
+        {
+            foreach (ushort excludedMapId in _options.ExcludedWorldSetMapIds)
+            {
+                descriptors.Remove(excludedMapId);
+            }
+        }
+
         HashSet<ushort> eagerSet = _options.EagerObstacleLoadMapIds is { Length: > 0 }
             ? [.. _options.EagerObstacleLoadMapIds]
             : [];
@@ -78,7 +90,7 @@ public sealed class MapCatalog : IMapCatalog
         {
             if (eagerSet.Contains(mapId))
             {
-                LoadMapJsonData(mapId);
+                _ = EnsureMapDataLoaded(mapId);
                 eagerCount++;
             }
         }
@@ -100,10 +112,10 @@ public sealed class MapCatalog : IMapCatalog
             return false;
         }
 
-        EnsureMapDataLoaded(mapId);
-
-        if (_regionGrids.TryGetValue((mapId, regionX, regionY), out grid) && grid is not null)
+        var (obstacles, _) = EnsureMapDataLoaded(mapId);
+        if (obstacles.TryGetValue((regionX, regionY), out RegionObstacleGrid? loadedGrid))
         {
+            grid = loadedGrid;
             return true;
         }
 
@@ -112,7 +124,9 @@ public sealed class MapCatalog : IMapCatalog
             regionY >= desc.RegionBeginY &&
             regionY < desc.RegionBeginY + desc.RegionHeight)
         {
-            grid = _regionGrids.GetOrAdd((mapId, regionX, regionY), static key => new RegionObstacleGrid(key.RegionX, key.RegionY, new int[512]));
+            grid = regionX == 0 && regionY == 0
+                ? EmptyZeroOriginGrid
+                : _emptyFallbackGrids.GetOrAdd((mapId, regionX, regionY), static key => new RegionObstacleGrid(key.RegionX, key.RegionY, new int[512]));
             return true;
         }
 
@@ -128,8 +142,8 @@ public sealed class MapCatalog : IMapCatalog
             return false;
         }
 
-        EnsureMapDataLoaded(mapId);
-        return _regionTraps.TryGetValue((mapId, regionX, regionY), out trapGrid) && trapGrid is not null;
+        var (_, traps) = EnsureMapDataLoaded(mapId);
+        return traps.TryGetValue((regionX, regionY), out trapGrid);
     }
 
     public int GetCellObstacle(ushort mapId, int mpsX, int mpsY)
@@ -214,35 +228,65 @@ public sealed class MapCatalog : IMapCatalog
         return false;
     }
 
-    private void EnsureMapDataLoaded(ushort mapId)
-    {
-        if (!_loadedMapJson.ContainsKey(mapId))
-        {
-            LoadMapJsonData(mapId);
-        }
-    }
+    private (FrozenDictionary<(int RegionX, int RegionY), RegionObstacleGrid> Obstacles, FrozenDictionary<(int RegionX, int RegionY), RegionTrapGrid> Traps) EnsureMapDataLoaded(ushort mapId) =>
+        _loadedMaps.GetOrAdd(
+            mapId,
+            id => new Lazy<(FrozenDictionary<(int RegionX, int RegionY), RegionObstacleGrid> Obstacles, FrozenDictionary<(int RegionX, int RegionY), RegionTrapGrid> Traps)>(
+                () => LoadMapJsonData(id),
+                LazyThreadSafetyMode.ExecutionAndPublication)).Value;
 
-    private void LoadMapJsonData(ushort mapId)
+    private (FrozenDictionary<(int RegionX, int RegionY), RegionObstacleGrid> Obstacles, FrozenDictionary<(int RegionX, int RegionY), RegionTrapGrid> Traps) LoadMapJsonData(ushort mapId)
     {
-        if (!_loadedMapJson.TryAdd(mapId, true))
-        {
-            return;
-        }
-
-        string mapsDir = Path.Combine(_options.DataDirectory, "maps");
+        string mapsDir = Path.GetFullPath(Path.Combine(_options.DataDirectory, "maps"));
         if (!Directory.Exists(mapsDir))
         {
-            return;
+            return (FrozenDictionary<(int RegionX, int RegionY), RegionObstacleGrid>.Empty, FrozenDictionary<(int RegionX, int RegionY), RegionTrapGrid>.Empty);
         }
 
-        string prefix = $"{mapId:D3}_";
-        string? mapFile = Directory.EnumerateFiles(mapsDir, "*.map.json")
-            .FirstOrDefault(f => Path.GetFileName(f).StartsWith(prefix, StringComparison.OrdinalIgnoreCase));
+        FrozenDictionary<ushort, string> fileIndex = MapFileIndexCache.GetOrAdd(
+            mapsDir,
+            static dir => new Lazy<FrozenDictionary<ushort, string>>(
+                () => BuildMapFileIndex(dir),
+                LazyThreadSafetyMode.ExecutionAndPublication)).Value;
 
-        if (mapFile is null || !File.Exists(mapFile))
+        if (!fileIndex.TryGetValue(mapId, out string? mapFile) || !File.Exists(mapFile))
         {
-            return;
+            return (FrozenDictionary<(int RegionX, int RegionY), RegionObstacleGrid>.Empty, FrozenDictionary<(int RegionX, int RegionY), RegionTrapGrid>.Empty);
         }
+
+        long writeTicks = File.GetLastWriteTimeUtc(mapFile).Ticks;
+        return ParsedMapGridCache.GetOrAdd(
+            (mapFile, writeTicks),
+            static key => new Lazy<(FrozenDictionary<(int RegionX, int RegionY), RegionObstacleGrid> Obstacles, FrozenDictionary<(int RegionX, int RegionY), RegionTrapGrid> Traps)>(
+                () => ParseMapGridsFromFile(key.MapFilePath),
+                LazyThreadSafetyMode.ExecutionAndPublication)).Value;
+    }
+
+    private static FrozenDictionary<ushort, string> BuildMapFileIndex(string mapsDir)
+    {
+        var index = new Dictionary<ushort, string>();
+        if (!Directory.Exists(mapsDir))
+        {
+            return FrozenDictionary<ushort, string>.Empty;
+        }
+
+        foreach (string file in Directory.EnumerateFiles(mapsDir, "*.map.json"))
+        {
+            ReadOnlySpan<char> fileName = Path.GetFileName(file.AsSpan());
+            int underscoreIdx = fileName.IndexOf('_');
+            if (underscoreIdx > 0 && ushort.TryParse(fileName[..underscoreIdx], out ushort id))
+            {
+                index.TryAdd(id, file);
+            }
+        }
+
+        return index.ToFrozenDictionary();
+    }
+
+    private static (FrozenDictionary<(int RegionX, int RegionY), RegionObstacleGrid> Obstacles, FrozenDictionary<(int RegionX, int RegionY), RegionTrapGrid> Traps) ParseMapGridsFromFile(string mapFile)
+    {
+        var obstacles = new Dictionary<(int RegionX, int RegionY), RegionObstacleGrid>();
+        var traps = new Dictionary<(int RegionX, int RegionY), RegionTrapGrid>();
 
         try
         {
@@ -265,7 +309,7 @@ public sealed class MapCatalog : IMapCatalog
                         ? ObstacleRleCodec.DecodeBase64ToCells(rleBase64)
                         : new int[512];
 
-                    _regionGrids[(mapId, rx, ry)] = new RegionObstacleGrid(rx, ry, cells);
+                    obstacles[(rx, ry)] = new RegionObstacleGrid(rx, ry, cells);
                 }
             }
 
@@ -311,7 +355,7 @@ public sealed class MapCatalog : IMapCatalog
 
                 foreach (var ((rx, ry), trapCells) in trapsByRegion)
                 {
-                    _regionTraps[(mapId, rx, ry)] = new RegionTrapGrid(rx, ry, trapCells);
+                    traps[(rx, ry)] = new RegionTrapGrid(rx, ry, trapCells);
                 }
             }
         }
@@ -319,5 +363,7 @@ public sealed class MapCatalog : IMapCatalog
         {
             // Graceful fallback on corrupt JSON
         }
+
+        return (obstacles.ToFrozenDictionary(), traps.ToFrozenDictionary());
     }
 }
