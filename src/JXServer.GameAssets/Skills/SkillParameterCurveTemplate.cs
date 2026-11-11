@@ -18,7 +18,7 @@ public sealed partial record SkillParameterCurveTemplate(
 {
     public int Evaluate(int skillLevel)
     {
-        int clampedLevel = Math.Clamp(skillLevel, 1, 63);
+        int clampedLevel = Math.Clamp(skillLevel, 1, 64);
         if (ValuesByLevel is { Count: > 0 })
         {
             int idx = Math.Clamp(clampedLevel - 1, 0, ValuesByLevel.Count - 1);

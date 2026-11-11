@@ -15,9 +15,8 @@
   "$defs": {
     "lootTableEntry": {
       "type": "object",
-      "required": ["id", "code", "moneyDropChance", "minMoneyGold", "maxMoneyGold", "weightedPools"],
+      "required": ["code", "moneyDropChance", "minMoneyGold", "maxMoneyGold", "weightedPools"],
       "properties": {
-        "id": { "type": "integer", "minimum": 1 },
         "code": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
         "legacyIniPath": { "type": "string" },
         "randRange": { "type": "integer", "minimum": 1, "default": 1000000 },
@@ -27,11 +26,13 @@
         "moneyScale": { "type": "integer", "minimum": 0, "default": 50 },
         "minMoneyGold": { "type": "integer", "minimum": 0 },
         "maxMoneyGold": { "type": "integer", "minimum": 0 },
-        "minItemLevel": { "type": "integer", "minimum": 1, "maximum": 20, "default": 1 },
+        "minItemLevel": { "type": "integer", "minimum": 0, "maximum": 30, "default": 1 },
         "minItemLevelScale": { "type": "integer", "minimum": 0, "default": 20 },
-        "maxItemLevel": { "type": "integer", "minimum": 1, "maximum": 20, "default": 10 },
+        "maxItemLevel": { "type": "integer", "minimum": 0, "maximum": 30, "default": 10 },
         "maxItemLevelScale": { "type": "integer", "minimum": 0, "default": 10 },
         "maxDropsPerKill": { "type": "integer", "minimum": 0, "default": 1 },
+        "isTeamShare": { "type": "boolean", "default": false },
+        "teamShareRate": { "type": "integer", "minimum": 0, "default": 0 },
         "blueAffixLuckFactor": { "type": "number", "minimum": 0, "default": 1.0 },
         "scriptDropTableCode": { "type": "string" },
         "weightedPools": {
@@ -40,16 +41,20 @@
             "type": "object",
             "required": ["weight"],
             "properties": {
-              "weight": { "type": "integer", "minimum": 1 },
+              "weight": { "type": "integer", "minimum": 0 },
               "itemCode": { "type": "string" },
               "genre": { "type": "integer", "minimum": 0 },
-              "quality": { "type": "integer", "enum": [0, 1, 2, 3], "default": 0 },
+              "quality": { "type": "integer", "enum": [0, 1, 2, 3, 4], "default": 0 },
               "detailType": { "type": "integer", "minimum": 0 },
               "particularType": { "type": "integer", "minimum": 0 },
-              "elementSeries": { "type": "integer", "minimum": -1, "maximum": 4, "default": -1 },
-              "minLevel": { "type": "integer", "minimum": 0, "maximum": 20 },
-              "maxLevel": { "type": "integer", "minimum": 0, "maximum": 20 },
-              "goldEquipId": { "type": "integer", "minimum": 1 }
+              "elementSeries": { "type": "integer", "minimum": -1, "maximum": 6, "default": -1 },
+              "minLevel": { "type": "integer", "minimum": 0, "maximum": 30 },
+              "maxLevel": { "type": "integer", "minimum": 0, "maximum": 30 },
+              "goldEquipId": { "type": "integer", "minimum": 1 },
+              "magicLevel1": { "type": "integer", "minimum": 0 },
+              "minSocket": { "type": "integer", "minimum": 0 },
+              "maxSocket": { "type": "integer", "minimum": 0 },
+              "enchasableRate": { "type": "integer", "minimum": 0 }
             },
             "anyOf": [
               { "required": ["itemCode"] },

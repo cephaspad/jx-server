@@ -178,6 +178,7 @@ public sealed class BlueItemGeneratorAndLootTests
         NpcZoneState monster = worker.StaticNpcs[1u];
         monster.CurLife = 10;
         monster.TreasureDropCount = 3;
+        monster.LootTableCode = "npcdroprate-changgemenareaboss";
 
         // 1. Slay monster -> verify GroundObjectSlot instances spawn and broadcast 0x64 (SendGroundObjectAdd)
         worker.TryEnqueueCommand(new CastSkillZoneCommand(char1Id, 1L, 53, -1, (int)monster.NpcId));

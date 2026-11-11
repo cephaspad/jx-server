@@ -75,7 +75,9 @@ jx-server/
     ├── maps/
     │   └── 053_ba-lang-huyen.map.json
     ├── npcs/
-    │   └── core.npcs.json
+    │   ├── core.npcs.json
+    │   ├── global-spawns.npcs.json
+    │   └── event-spawns.npcs.json
     ├── players/
     │   └── progression.players.json
     ├── skills/
@@ -96,10 +98,22 @@ jx-server/
 
 ## 3. Core Standardization Rules (Mandatory for All Contributors)
 
-### Rule 1: Dual Identifier Convention (`id` + `code`)
-Every primary record in a JSON catalog MUST carry both:
-- **`id`** (`integer`): The exact numeric identifier used by the legacy wire protocol (`s2c_*` / `c2s_*` packets) and original C++ tables (e.g., `"id": 53` for Ba Lăng Huyện, `"id": 0` for 0-based `npcs.txt` template `Đông Bắc Hổ`).
-- **`code`** (`string`, `kebab-case` ASCII slug): A human-readable, self-descriptive slug (e.g., `"code": "ba-lang-huyen"`, `"code": "vo-dang-kiem-phap"`, `"code": "tho-dia-phu"`) used for cross-referencing in JSON, logs, and tests.
+### Rule 1: Zero Synthetic IDs & Symmetric Semantic `code` Convention
+1. **Zero Synthetic IDs (100% Engine-Faithful Keys)**:
+   - **`id`** (`integer`) is ONLY emitted when the C++ Engine / wire protocol (`s2c_*` / `c2s_*`) natively identifies the entity by a single integer ID:
+     - **Map**: `id` (`1..999` `SubWorld` ID), **NPC**: `id` (`0`-based `0..2539` `TemplateId` in `npcs.txt`), **Skill**: `id` (`SkillId`), **Missile**: `id` (`MissleId`), **Shop**: `id` (`1`-based `Sale(shopId)` row in `buysell.txt`), **GroundObject**: `id` (`DataID` in `objdata.txt`), **Player / Faction / Meridian / Tong**: exact C++ ID.
+   - **Item & MagicAffix** NEVER invent synthetic `100,000+` / `200,000+` IDs: they emit exact `1`-based **`rowId`** of their source `.txt` table (`GoldId` `1..7148` in `goldequip.txt`, `PlatinaId` `1..8783` in `platinaequip.txt`, `rowId` `1..6320` in `magicattrib_ge.txt`) paired with their natural composite key `(quality, genre, detailType, particularType, level)` or `affixPool`.
+   - **LootTable** (`droprate/**/*.ini`) is identified purely by **`code`** (no artificial integer `id`).
+2. **Semantic, Symmetric `code` (`kebab-case` ASCII, Zero Redundant Prefixes)**:
+   - Never emit redundant prefixes such as `map-53-ba-lang-huyen` or `npc-0-dong-bac-ho`. Map files are named `<id:D3>_<code-slug>.map.json` (e.g., `053_ba-lang-huyen.map.json`).
+   - **ID-Based Domains (`Map`, `NPC`, `Skill`, `Missile`, `Shop`, `Object`)**:
+     - Unique display name within its catalog $\rightarrow$ pure `<slug>` (e.g., `ba-lang-huyen`, `dong-bac-ho`, `vo-dang-kiem-phap`).
+     - Duplicate display name ($\ge 2$ records in the same catalog) $\rightarrow$ **ALL** colliding members append `-<id>` symmetrically (e.g., `tieu-dao-tu-2533` & `tieu-dao-tu-2537`, `thieu-lam-de-tu-phong-107` & `thieu-lam-de-tu-phong-108`) so no caller ever binds to an ambiguous shared name.
+   - **Item, MagicAffix & LootTable Domains**:
+     - **Items**: Globally unique display name $\rightarrow$ pure `<slug>` (e.g., `tho-dia-phu`, `vo-lam-mat-tich`, `thanh-phong-kiem`). When colliding, disambiguate semantically by `-lv<level>` and `-<series>` (`kim`/`moc`/`thuy`/`hoa`/`tho`) first, then by table row (`-hk<rowId>` for Golden, `-bk<rowId>` for Platina, `-r<rowId>` for others, e.g., `bon-tieu-lv1`..`bon-tieu-lv10`, `mong-long-chinh-hong-tang-mao-hk1`).
+     - **MagicAffixes**: `<pool>-<slug>-r<rowId>` (`blue-`, `purple-`, `gold-`).
+     - **LootTables**: Derived from relative path under `settings/droprate/` (e.g., `npcdroprate10`, `goldennpc-golden-lv40`).
+   - **CJK Transliteration**: Untranslated Chinese names (`2017VIP·雪域战狼`, `放爆竹特效`) are transliterated to ASCII Pinyin/Hán-Việt when generating `code` so slugs never lose meaning.
 
 ### Rule 2: Unit-Explicit Coordinate & Timing Property Names
 To prevent unit conversion bugs across the 18-Hz simulation loop, every spatial coordinate and duration field in JSON MUST include its explicit unit suffix, matching the C# naming conventions in [`.specify/memory/constitution.md`](../.specify/memory/constitution.md):
@@ -108,14 +122,48 @@ To prevent unit conversion bugs across the 18-Hz simulation loop, every spatial 
 - **Spatial Regions (`16x32` Cells = `512x1024` Mps)**: `*RegionX`, `*RegionY`, `*LeftRegionX`, `*TopRegionY`, `*RightRegionX`, `*BottomRegionY`.
 - **Time Durations**: `*Frames` (for 18-Hz simulation ticks where `18 Frames = 1 Second`) or `*Seconds` / `*Minutes` / `*Ms`.
 
-### Rule 3: Declarative Data Over Imperative Lua
+### Rule 3: Declarative Data Over Imperative Lua (Dual Curve + Pre-Evaluated Table)
 Static game data MUST NEVER be hidden inside imperative script files:
-- **Map Portals & Town Gates**: Declared in the `portals` array of `*.map.json` (supporting bidirectional `toggleFightMode` with `alternateMpsX`/`alternateMpsY`/`alternateFightMode`, cross-map `teleport`, weighted `randomTeleport` for battlegrounds/ferries, horse dismounting, and level/PK/faction gates).
-- **Skill Level Scaling (`Level 1..64`)**: Declared as structured 3-parameter (`param0`, `param1`, `param2`) scaling curves (`constant`, `linear`, `piecewise` matching Lua `Link`, `conic` matching Lua `Conic`, `sqrt` matching Lua `Extrac`, or explicit lookup `table`) inside `*.skills.json` rather than invoking a Lua VM during skill casting or level-up.
+- **Map Portals & Town Gates (`TRAP_SECTION` + `script/**/trap/*.lua`)**: 100% of `trapId` (`uint32`) entries present in `Region_S.dat` are preserved in the `portals` array of `*.map.json`:
+  - Static portals & bidirectional town gates use `"teleport"`, `"toggleFightMode"`, or `"randomTeleport"`.
+  - Mission/battlefield traps use `"customScript"` with `scriptCode` / `scriptPath`.
+  - Orphan `trapId` hashes in `Region_S.dat` without a corresponding `.lua` file on disk are preserved with `"action": "unmapped"` and their `triggerCells` intact so zero spatial data from `Region_S.dat` is ever lost.
+- **Skill Level Scaling (`Level 1..64`)**: Each parameter curve (`param0`, `param1`, `param2`) stores **both**:
+  1. The declarative control points (`curve`: `"constant"`, `"linear"`, `"piecewise"`, `"conic"`, `"sqrt"` + `points`) matching the `SKILLS` table in `script/skill/**/*.lua` for human readability and authoring.
+  2. The pre-evaluated `valuesByLevel` integer array (`[lv1..lvMax]`) computed via exact IEEE 754 `double` + `Math.Floor` (`Link`/`Conic`/`Extrac`/`Line`) so the `18-Hz` `ZoneEngine` performs $O(1)$ array lookup with zero integer-division rounding drift across fractional `19`-step (`level 1..20`) intervals.
 - **Monster Level Scaling & Spawns**: Monster stat growth formulas (`npclevelscript/*.lua`) are declared inside `combatScaling` on NPC templates, while map-level elemental/level overrides (`maplist.ini`) and `spawnGroups` live inside `*.map.json`.
 
-### Rule 4: Schema Declaration Header
-Every `.json` file under `data/` MUST declare `"$schema"` and `"schemaVersion": "1.0.0"` at the root object so IDEs and CI pipelines validate changes automatically.
+### Rule 4: Literal UTF-8 Formatting, Domain-Grouped Files, Referential Integrity & 4-Layer Parity Verification
+- Every `.json` file under `data/` MUST declare `"$schema"` and `"schemaVersion": "1.0.0"` at the root object and serialize with **unescaped literal UTF-8 Vietnamese/CJK text** (`JavaScriptEncoder.UnsafeRelaxedJsonEscaping`, e.g., `"Ba Lăng huyện"`, `"Thanh Phong Kiếm"` — never `\uXXXX` escape sequences).
+- Large catalogs (`data/items/`, `data/skills/`, `data/npcs/`) are split into logical category files, validated via `anyOf` at the schema root.
+- **100% Foreign-Key Referential Integrity**: Every `*Code` cross-reference (`npcCode`, `itemCode`, `skillCode`, `lootTableCode`) in Maps, Shops, Players, and LootTables MUST resolve to an existing canonical `code` in its target catalog.
+- **4-Layer Ground-Truth Parity Verifier (`artifacts/migration-parity-report.json`)**: Verifies (1) 100% file inventory coverage (`Unaccounted == 0`), (2) 1:1 physical row & record counts across all domains, (3) bitwise/cell-by-cell round-trip reconstruction (`obstacleRleBase64`, `triggerCells`, `fixedMagicAffixes`, `valuesByLevel`), and (4) 100% JSON Schema + Referential Integrity validation across all 7 domains.
+
+### Rule 5: Physical `KTabFile` Line Indexing (`lineIdx`), Row-2 Baseline Default Inheritance & Empty-Name Rows
+- In Kingsoft's C++ `KTabFile`, Row 1 (`lineIdx = 0`) is the column header row, and **Row 2 (`lineIdx = 1`) is both the first data record AND the baseline default template row**: whenever a cell in Row 3+ (`lineIdx >= 2`) is empty (`""`) for a template attribute (e.g., in `npcs.txt`, `skills.txt`, `missles.txt`), the exporter inherits the default value from Row 2 (except for optional list slots such as `Skill1..4`, `MagicAttrib1..6`, or `Goods1..116`).
+- Physical line indices MUST NEVER be shifted by skipping blank or tab-only rows (`StringSplitOptions.RemoveEmptyEntries` is forbidden on index-sensitive tables):
+  - `npcs.txt` uses exact `0`-based `id = lineIdx - 1` (`0..2539`); for rows with an empty `Name` column (such as `lineIdx = 2535` / `id = 2534` `enemy046`, or `magicscript.txt` rows `1232..1237` where `Name` is a space and the item name is in the description column), a deterministic fallback name/slug (`npc-2534`, or derived from description) is generated so subsequent IDs (`2535` *Hoàng Bảo Câu*, `2536` *Bậc Thầy Dị Dung*, `2537` *Tiêu Dao Tử*) never shift.
+  - `buysell.txt` (`shopId = lineIdx`), `goods.txt` (`goodsId = lineIdx`), `goldequip.txt` (`rowId = lineIdx`), `platinaequip.txt` (`rowId = lineIdx`), and `magicattrib_ge.txt` (`rowId = lineIdx`) preserve their exact `1`-based physical row index, skipping tab-only rows (`buysell.txt` lines `173..174`) without decrementing the `shopId` of subsequent rows (`175..179`).
+
+### Rule 6: Per-Cell Hybrid `TCVN3` / `GBK` (CP936) Decoding & Raw Path Resolution
+- Legacy `jx-linux-bin` files mix `GBK` (CP936) and `TCVN3` within the same file:
+  - Column headers (`名称`, `魔法属性索引1`), `.lua` / `.spr` / `.ini` file paths (`\script\skill\special\长兵物理攻击.lua`), and ~15% of newer items/skills (`2017VIP·雪域战狼`, `放爆竹特效`, `magicattrib_ge.txt`) are encoded in **GBK (CP936)**.
+  - Vietnamese display names and descriptions are encoded in **TCVN3**.
+- The exporter decodes headers and file paths using raw bytes / `GBK` (CP936) so disk lookups match 100%, and applies per-cell heuristic detection on text columns (decoding as `TCVN3` by default, and falling back to `GBK` + Hanzi-to-Pinyin/Hán-Việt slugging when valid CJK byte sequences are detected).
+
+### Rule 7: Canonical `KBasPropTbl` Item Lookup (`rowId` + Natural Composite Key) & Stack Overrides
+- Every item in `data/items/*.items.json` preserves its exact `1`-based **`rowId`** within its source `.txt` table (`GoldEquipId` `1..7148` in `goldequip.txt`, `PlatinaId` `1..8783` in `platinaequip.txt`, `magicscript_stack.txt`, and `questkey_stack.txt`) alongside its natural composite key `(quality, genre, detailType, particularType, level)` — with zero synthetic `id` numbers.
+- `IItemTemplateCatalog` supports $O(1)$ lookup by `code`, `(quality, rowId)`, and `(quality, genre, detailType, particularType, level)`.
+- Only the canonical C++ `KBasPropTbl` files are loaded from `settings/item/004/` (ignoring admin backup copies such as `goldequip1.txt`, `goldequip_.txt`, `magicscript2.txt`, `questkey_.txt`, `horse--.txt`, `*_2006.txt`), and stack overrides from `magicscript_stack.txt` (`0`-based) and `questkey_stack.txt` (`1`-based) are merged directly into each item's `maxStackCount` and `stackingRules`.
+
+### Rule 8: Over-Cap Skill Curve Evaluation (`+AllSkill`) & Procedural Lua Execution + `autoexec.lua` Map Spawns
+- **Over-Cap Skill Levels & Procedural Lua (`script/skill/**/*.lua`)**:
+  - Pre-evaluated `valuesByLevel` arrays are computed up to `Math.Min(64, Math.Max(maxLevel + 15, Math.Max(maxControlPointLevel, 30)))` so `+AllSkill` (`allskill_v` / *Kỹ năng vốn có +N*) equipment works natively in $O(1)$ array lookup beyond `MaxLevel = 20`.
+  - The exporter evaluates both declarative `SKILLS` / `SKILLS_4P` tables (including `FileName2Id(...)` expressions) and procedural `GetSkillLevelData(levelname, data, level)` functions across all `316` skill Lua scripts.
+- **3-Tier NPC & Trap Placement Architecture (`Region_S.dat` vs `global-spawns.npcs.json` vs `event-spawns.npcs.json`)**:
+  1. **Map-Specific Fixed Spawns (`data/maps/<id:D3>_<code-slug>.map.json`)**: Contains ONLY the native spatial placements baked into that map's binary `Region_S.dat` (`NPC_SECTION`, `TRAP_SECTION`, `OBJ_SECTION`).
+  2. **Global Cross-Map Functional Spawns (`data/npcs/global-spawns.npcs.json`)**: Contains permanent system NPCs and traps placed across multiple cities/villages in `script/global/autoexec.lua` (e.g., *Nhiếp Thí Trần* across 7 cities, *Người hướng dẫn bang hội* across 8 starter villages, *Dịch Quan*, *Phạt Ác Sứ*, *Tiêu Dao Tử*, *Thợ Rèn Huyền Tinh*, *Hắc Sa Động Trap*) with `"spawnCategory": "globalPermanent"` and `"enabledByDefault": true`.
+  3. **Event & Feature-Gated Spawns (`data/npcs/event-spawns.npcs.json`)**: Contains conditional feature and seasonal event NPCs/traps from `autoexec.lua` and event scripts (e.g., *Tiếp Đầu Công Thành Chiến*, *Bình Bình Cô Nương - Viêm Đế*, *Long Ngũ*, *Ông Già Noel*, *Hằng Nga*, *Sự kiện Tháng 1..12*) tagged with `"spawnCategory": "eventOrFeature"` and `"featureFlag": "CFG_..."` so server operators can toggle features/events centrally without touching map files.
 
 ---
 
@@ -130,9 +178,9 @@ Consolidates `.wor`, `maplist.ini`, `forbitheart.txt`, `settings/battles/maps/*`
   - `autoGoldenNpcRate` and `goldenType` (automatic promotion of normal spawns into Blue/Golden Bosses).
   - `npcAutoLevel` (`{ "enabled", "minLevel", "maxLevel" }`) and `npcAutoSeries` (`{ "enabled", "metalWeight", "woodWeight", "waterWeight", "fireWeight", "earthWeight" }`) for dynamic monster level/series assignment on spawn.
 - **`regionBounds`**: `{ "leftRegionX", "topRegionY", "rightRegionX", "bottomRegionY" }`.
-- **`regions`**: Sparse array of non-empty regions `{ "regionX", "regionY", "obstacleRleBase64" }`, where `obstacleRleBase64` encodes the `16 x 32` `int32` barrier matrix (`ObstacleKind` in bits `0..3` + `4x4` `SubCellMask` in bits `4..19`) using run-length encoding + Base64.
+- **`regions`**: Sparse array of non-empty regions `{ "regionX", "regionY", "obstacleRleBase64" }`, where `obstacleRleBase64` encodes the `16 x 32 = 512` `int32` barrier matrix in `(cellX * 32 + cellY)` order (`ObstacleKind` in bits `0..3` + `4x4` `SubCellMask` in bits `4..19`) as a sequence of **6-byte Little-Endian RLE pairs (`UInt16 runLength` in `1..512` + `Int32 cellValue`)** encoded in Base64. Regions where all 512 cells equal `0` (`Obstacle_NULL`) are omitted from `regions`.
 - **`portals`**: Declarative trap definitions replacing `TRAP_SECTION` + `script/**/trap/*.lua`:
-  - `trapId`, `code`, `action` (`"toggleFightMode"` | `"teleport"` | `"randomTeleport"` | `"customScript"`), primary destination (`targetMapId`, `targetMpsX`, `targetMpsY`, `targetFightMode`), bidirectional town-gate return destination (`alternateMpsX`, `alternateMpsY`, `alternateFightMode`), `randomTargets` array, `dismountHorse`, `minLevel`, `maxPkValue`, `requiredCamp`, `requiredFactionId`, `bounceMpsX`, `bounceMpsY`, `deniedMessage`, and `triggerCells`.
+  - `trapId`, `code`, `scriptCode`, `scriptPath`, `action` (`"toggleFightMode"` | `"teleport"` | `"randomTeleport"` | `"customScript"` | `"unmapped"`), primary destination (`targetMapId`, `targetMpsX`, `targetMpsY`, `targetFightMode`), bidirectional town-gate return destination (`alternateMpsX`, `alternateMpsY`, `alternateFightMode`), `randomTargets` array, `dismountHorse`, `minLevel`, `maxPkValue`, `requiredCamp`, `requiredFactionId`, `bounceMpsX`, `bounceMpsY`, `deniedMessage`, and `triggerCells`.
 - **`spawnGroups`**: Grouped NPC/monster placements replacing `NPC_SECTION` + `autoexec.lua`:
   - `npcTemplateId` (`0`-based), `npcCode`, `nameOverride`, `entityKind`, `level`, `series` (`-1` for map auto-series or `0..4`), `camp`, `fightMode`, `isSpecialNpc` (Blue/Gold Boss flag), `goldenType`, `respawnFrames`, `aiProfile`, `scriptCode` (binding to `[NpcScript("...")]` in `JXServer.Scripts`), `scriptPath`, `lootTableCode`, and `spawns` (`[{ "mpsX", "mpsY", "dirIndex", ... }]`).
 - **`mapObjects`** & **`namedPointGroups`**: Static interactive objects replacing `OBJ_SECTION` (`Region_S.dat` Section 3, e.g., chests, signposts, switches/doors) and named coordinate groups for battlegrounds/missions (`settings/battles/maps/*`).
@@ -158,10 +206,10 @@ Consolidates `settings/item/004/*.txt` (`meleeweapon`, `rangeweapon`, `armor`, `
 - **`items`**:
   - `id`, `code`, `name`, `genre` (`0`=Equip, `1`=Medicine, `2`=QuestKey, `3`=TownPortal, `4`=Material/Mine, `6`=MagicScript, `7`=PlatinaEquip), `quality` (`0`=White/Blue, `1`=Golden, `2`=Purple, `3`=Platina, `4`=Broken), `detailType` (`0..14`), `particularType`, `level` (`0..20`), `elementSeries`, `gridWidthCells`, `gridHeightCells`, `appearanceResId`, `npcMaskTemplateId`, `priceGold`, `wealthValue` (`Tài Phú`), `maxStackCount`, `maxEnchaseSockets`.
   - **`baseAttributes`** & **`requirements`**: Up to 7 base attribute ranges and up to 6 equipment requirements (`strength`, `dexterity`, `vitality`, `energy`, `level`, `series`, `gender`, `faction`, `repute`, `fuYuan`, `transLife`).
-  - **`fixedMagicAffixes`** & **`suiteBinding`**: For Golden (`goldequip.txt`) and Platina (`platinaequip.txt`) equipment and set bonus activation.
+  - **`fixedMagicAffixes`** & **`suiteBinding`**: For Golden (`goldequip.txt`) and Platina (`platinaequip.txt`) equipment and set bonus activation. Each entry in `fixedMagicAffixes` preserves the 1-based `affixRowId` from `magicattrib_ge.txt` AND inlines the resolved `(attributeId, attributeCode, param0Min..Max, param1Min..Max, param2Min..Max)` range so item JSON documents are self-contained.
   - **`scriptUsage`**, **`expirationPolicy`** & **`restrictions`**: For `magicscript.txt` consumables/skill books/chests, time-limited items (`wallClockMinutes`, `onlineMinutes`, `consumeType`), and `forbititem.ini` trade/drop/throw restrictions.
 - **`magicAffixes`**:
-  - `id`, `code`, `attributeId`, `attributeCode`, `nameTemplate`, `isSuffix` (explicit vs. Five-Elements hidden slot), `isGoldenOnly`, `elementSeries`, `level`, `baseValue`, `dropWeight` (fallback), **`weightsByEquipPart`** (covering both general slots and all 9 weapon sub-types `sword`, `blade`, `staff`, `spear`, `hammer`, `dualBlades`, `darts`, `throwingKnife`, `crossbow` from `magicattriblevel.txt`), **`weightsBySeries`** (`metal..earth`), and 3-parameter value ranges (`param0Min..Max`, `param1Min..Max`, `param2Min..Max`).
+  - `id`, `rowId` (1-based index within its legacy table), `affixPool` (`"blueRandom"` from `magicattrib.txt`, `"purpleEnchase"` from `magicattriblevel.txt`, `"goldenFixed"` from `magicattrib_ge.txt`), `code`, `attributeId`, `attributeCode`, `nameTemplate`, `isSuffix` (explicit vs. Five-Elements hidden slot), `isGoldenOnly`, `elementSeries`, `level`, `baseValue`, `dropWeight` (fallback), **`weightsByEquipPart`** (covering both general slots and all 9 weapon sub-types `sword`, `blade`, `staff`, `spear`, `hammer`, `dualBlades`, `darts`, `throwingKnife`, `crossbow` from `magicattriblevel.txt`), **`weightsBySeries`** (`metal..earth`), and 3-parameter value ranges (`param0Min..Max`, `param1Min..Max`, `param2Min..Max`).
 - **`equipmentSets`**, **`groundObjects`** & **`craftingRecipes`**: Set activation thresholds (`suite_activate_count.txt`), `objdata.txt` ground templates, and compounding/enchasing/recoin recipes (`atlas_compound.txt`, `recoin_goldenequip.txt`, `fusion.txt`).
 
 ### 4.4. NPC, Monster, Golden Boss & Partner Catalog (`data/npcs/*.npcs.json` — [npc-catalog.schema.json](../schemas/npc-catalog.schema.json))

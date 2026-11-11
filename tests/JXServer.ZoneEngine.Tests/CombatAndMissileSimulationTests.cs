@@ -204,19 +204,19 @@ public sealed class CombatAndMissileSimulationTests
             Skills:
             [
                 new CharacterSkillDto(53, 1, 0),
-                new CharacterSkillDto(100, 3, 0), // Hỏa Liên Phần Hoa (projectile missileId = 1)
+                new CharacterSkillDto(88, 5, 0), // Bất Diệt Bất Tuyệt (projectile missileId = 3, collideVanish = true, doHurtAnimation = true)
             ]);
 
         worker.TryEnqueueCommand(new AttachPlayerZoneCommand(dto, 1L, sink));
         worker.TryEnqueueCommand(new CompletePlayerSyncZoneCommand(charId, 1L, 0x1111u, 1u));
         await worker.StepSingleTickAsync();
 
-        // 1. Attempt to cast offensive skill 100 while FightMode == 0 -> rejected
-        worker.TryEnqueueCommand(new CastSkillZoneCommand(charId, 1L, 100, 52128, 101696));
+        // 1. Attempt to cast offensive skill 88 while FightMode == 0 -> rejected
+        worker.TryEnqueueCommand(new CastSkillZoneCommand(charId, 1L, 88, 52128, 101696));
         await worker.StepSingleTickAsync();
         Assert.Empty(sink.SkillCastBroadcasts);
 
-        // 2. Switch to FightMode == 1 and cast projectile skill 100 toward monster at (52128, 101696)
+        // 2. Switch to FightMode == 1 and cast projectile skill 88 toward monster at (52128, 101696)
         NpcZoneState monster = worker.StaticNpcs[1u];
         uint initialMonsterHp = monster.CurLife;
 
@@ -229,11 +229,11 @@ public sealed class CombatAndMissileSimulationTests
             }
         }
 
-        worker.TryEnqueueCommand(new CastSkillZoneCommand(charId, 1L, 100, 52128, 101696));
+        worker.TryEnqueueCommand(new CastSkillZoneCommand(charId, 1L, 88, 52128, 101696));
         await worker.StepSingleTickAsync();
 
         Assert.Single(sink.SkillCastBroadcasts);
-        Assert.Equal(100u, sink.SkillCastBroadcasts[0].SkillId);
+        Assert.Equal(88u, sink.SkillCastBroadcasts[0].SkillId);
         Assert.Equal(1, worker.ActiveMissileCount);
 
         // Step ticks until projectile collides with monster

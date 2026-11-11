@@ -44,12 +44,15 @@ public sealed class MissileTemplateCatalog : IMissileTemplateCatalog
             byCode[m.Code] = m;
         }
 
-        foreach (MissileTemplate fallback in CreateDefaultMissiles())
+        if (missiles.Count < 20)
         {
-            if (!byId.ContainsKey(fallback.Id))
+            foreach (MissileTemplate fallback in CreateDefaultMissiles())
             {
-                byId[fallback.Id] = fallback;
-                byCode.TryAdd(fallback.Code, fallback);
+                if (!byId.ContainsKey(fallback.Id))
+                {
+                    byId[fallback.Id] = fallback;
+                    byCode.TryAdd(fallback.Code, fallback);
+                }
             }
         }
 

@@ -12,7 +12,7 @@
     "name": { "type": "string", "minLength": 1 },
     "mapType": {
       "type": "string",
-      "enum": ["City", "Capital", "Field", "Cave", "Battle", "Mission", "Prison", "Other"],
+      "enum": ["City", "Capital", "Field", "Cave", "Battle", "Battlefield", "Mission", "Prison", "Country", "Tong", "Other", "Others"],
       "default": "Field"
     },
     "worldMapPos": {
@@ -45,6 +45,9 @@
         "goldenLootTableCode": { "type": "string" },
         "autoGoldenNpcRate": { "type": "integer", "minimum": 0, "default": 0 },
         "goldenType": { "type": "integer", "minimum": 0, "default": 0 },
+        "newWorldScriptPath": { "type": "string" },
+        "newWorldParam": { "type": "string" },
+        "mapInfo": { "type": "string" },
         "npcAutoLevel": {
           "type": "object",
           "required": ["enabled", "minLevel", "maxLevel"],
@@ -90,7 +93,10 @@
         "properties": {
           "regionX": { "type": "integer", "minimum": 0 },
           "regionY": { "type": "integer", "minimum": 0 },
-          "obstacleRleBase64": { "type": "string" }
+          "obstacleRleBase64": {
+            "type": "string",
+            "description": "Base64-encoded sequence of 6-byte Little-Endian RLE pairs (UInt16 runLength + Int32 cellValue) across the 512 cells in (cellX * 32 + cellY) order. Regions with all 512 cells == 0 are omitted."
+          }
         },
         "additionalProperties": false
       }
@@ -99,16 +105,22 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["trapId", "code", "action", "targetMapId", "targetMpsX", "targetMpsY", "targetFightMode", "triggerCells"],
+        "required": ["trapId", "code", "action", "triggerCells"],
         "properties": {
           "trapId": { "type": "integer", "minimum": 0 },
           "code": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "spawnSource": {
+            "type": "string",
+            "enum": ["regionDat", "autoexecScript", "mapInitScript"],
+            "default": "regionDat"
+          },
+          "scriptCode": { "type": "string" },
           "scriptPath": { "type": "string" },
-          "action": { "type": "string", "enum": ["toggleFightMode", "teleport", "randomTeleport", "customScript"] },
-          "targetMapId": { "type": "integer", "minimum": 0 },
-          "targetMpsX": { "type": "integer", "minimum": 0 },
-          "targetMpsY": { "type": "integer", "minimum": 0 },
-          "targetFightMode": { "type": "integer", "enum": [0, 1] },
+          "action": { "type": "string", "enum": ["toggleFightMode", "teleport", "randomTeleport", "customScript", "unmapped"] },
+          "targetMapId": { "type": "integer", "minimum": 0, "default": 0 },
+          "targetMpsX": { "type": "integer", "minimum": 0, "default": 0 },
+          "targetMpsY": { "type": "integer", "minimum": 0, "default": 0 },
+          "targetFightMode": { "type": "integer", "enum": [0, 1], "default": 0 },
           "alternateMpsX": { "type": "integer", "minimum": 0, "default": 0 },
           "alternateMpsY": { "type": "integer", "minimum": 0, "default": 0 },
           "alternateFightMode": { "type": "integer", "enum": [0, 1], "default": 0 },
@@ -162,6 +174,11 @@
         "properties": {
           "npcTemplateId": { "type": "integer", "minimum": 0 },
           "npcCode": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "spawnSource": {
+            "type": "string",
+            "enum": ["regionDat", "autoexecScript", "mapInitScript"],
+            "default": "regionDat"
+          },
           "nameOverride": { "type": "string" },
           "entityKind": { "type": "string", "enum": ["Monster", "DialogNpc", "Partner"] },
           "level": { "type": "integer", "minimum": 1 },

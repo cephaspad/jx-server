@@ -185,7 +185,9 @@ public sealed class GroundObjectTickSystem
             return spawned;
         }
 
-        int dropRolls = Math.Max(1, Math.Min(slainMonster.TreasureDropCount, lootTable.MaxDropsPerKill));
+        int dropRolls = lootTable.MaxDropsPerKill > 0
+            ? Math.Max(1, Math.Min(slainMonster.TreasureDropCount, lootTable.MaxDropsPerKill))
+            : Math.Max(1, slainMonster.TreasureDropCount);
         long totalPoolWeight = 0;
         for (int i = 0; i < lootTable.WeightedPools.Count; i++)
         {

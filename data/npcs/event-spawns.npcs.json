@@ -1,0 +1,256 @@
+{
+  "$schema": "../../schemas/npc-catalog.schema.json",
+  "schemaVersion": "1.0.0",
+  "worldSpawnGroups": [
+    {
+      "code": "cfg-defaultseasonalscript-nguoi-tiep-dan-thien-tri-mat-canh",
+      "name": "NgƯời tiếp dẫn ThiÊn Trì Mật Cảnh",
+      "spawnCategory": "eventOrFeature",
+      "enabledByDefault": false,
+      "npcTemplateId": 312,
+      "entityKind": "DialogNpc",
+      "level": 95,
+      "series": 4,
+      "camp": 6,
+      "fightMode": 0,
+      "placements": [
+        {
+          "mapId": 934,
+          "mpsX": 0,
+          "mpsY": 0
+        }
+      ],
+      "featureFlag": "CFG_DefaultSeasonalScript",
+      "npcCode": "ong-gia-1",
+      "scriptPath": "\\script\\missions\\tianchimijing\\floor1\\floor1_enternpc.lua"
+    },
+    {
+      "code": "cfg-defaultseasonalscript-be-nguyet-my-nhan",
+      "name": "Bế Nguyệt Mỹ NhÂn",
+      "spawnCategory": "eventOrFeature",
+      "enabledByDefault": false,
+      "npcTemplateId": 383,
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": -1,
+      "camp": 6,
+      "fightMode": 0,
+      "placements": [
+        {
+          "mapId": 53,
+          "mpsX": 51872,
+          "mpsY": 102208,
+          "mapCode": "ba-lang-huyen"
+        },
+        {
+          "mapId": 78,
+          "mpsX": 50240,
+          "mpsY": 103424,
+          "mapCode": "tuong-duong"
+        }
+      ],
+      "featureFlag": "CFG_DefaultSeasonalScript",
+      "npcCode": "nu-trung-nien-3",
+      "scriptPath": "\\script\\offline_benguyet\\npc.lua"
+    },
+    {
+      "code": "cfg-defaultseasonalscript-tiep-dau-cong-thanh-chien",
+      "name": "Tiếp đầu CÔng Thành Chiến",
+      "spawnCategory": "eventOrFeature",
+      "enabledByDefault": false,
+      "npcTemplateId": 950,
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": -1,
+      "camp": 6,
+      "fightMode": 0,
+      "placements": [
+        {
+          "mapId": 1,
+          "mpsX": 52544,
+          "mpsY": 104640
+        },
+        {
+          "mapId": 11,
+          "mpsX": 101952,
+          "mpsY": 165824
+        },
+        {
+          "mapId": 37,
+          "mpsX": 54144,
+          "mpsY": 102784
+        },
+        {
+          "mapId": 78,
+          "mpsX": 50624,
+          "mpsY": 108160,
+          "mapCode": "tuong-duong"
+        },
+        {
+          "mapId": 80,
+          "mpsX": 54144,
+          "mpsY": 102976,
+          "mapCode": "duong-chau"
+        },
+        {
+          "mapId": 162,
+          "mpsX": 53760,
+          "mpsY": 104832
+        },
+        {
+          "mapId": 176,
+          "mpsX": 54048,
+          "mpsY": 105248
+        }
+      ],
+      "featureFlag": "CFG_DefaultSeasonalScript",
+      "npcCode": "duong-anh",
+      "scriptPath": "\\script\\missions\\sevencity\\dialog_npc.lua"
+    },
+    {
+      "code": "cfg-defaultseasonalscript-chu-duoc-diem",
+      "name": "Chủ dƯợc Điếm",
+      "spawnCategory": "eventOrFeature",
+      "enabledByDefault": false,
+      "npcTemplateId": 389,
+      "entityKind": "DialogNpc",
+      "level": 80,
+      "series": -1,
+      "camp": 6,
+      "fightMode": 0,
+      "placements": [
+        {
+          "mapId": 851,
+          "mpsX": 50464,
+          "mpsY": 101888
+        },
+        {
+          "mapId": 851,
+          "mpsX": 51424,
+          "mpsY": 101696
+        }
+      ],
+      "featureFlag": "CFG_DefaultSeasonalScript",
+      "npcCode": "chu-duoc-diem-1",
+      "scriptPath": "\\script\\missions\\yandibaozang\\npc\\yaoshang.lua"
+    },
+    {
+      "code": "cfg-defaultseasonalscript-binh-binh-co-nuong-5",
+      "name": "Bình Bình CÔ NƯƠng",
+      "spawnCategory": "eventOrFeature",
+      "enabledByDefault": false,
+      "npcTemplateId": 1321,
+      "entityKind": "DialogNpc",
+      "level": 80,
+      "series": -1,
+      "camp": 6,
+      "fightMode": 0,
+      "placements": [
+        {
+          "mapId": 176,
+          "mpsX": 43936,
+          "mpsY": 95040
+        },
+        {
+          "mapId": 176,
+          "mpsX": 45440,
+          "mpsY": 105888
+        },
+        {
+          "mapId": 176,
+          "mpsX": 49888,
+          "mpsY": 93344
+        },
+        {
+          "mapId": 176,
+          "mpsX": 53248,
+          "mpsY": 103808
+        }
+      ],
+      "featureFlag": "CFG_DefaultSeasonalScript",
+      "npcCode": "dinh-dinh-co-nuong",
+      "scriptPath": "\\script\\missions\\yandibaozang\\npc\\yandibaozang_main.lua"
+    },
+    {
+      "code": "cfg-defaultseasonalscript-binh-binh-co-nuong-6",
+      "name": "Bình Bình CÔ NƯƠng",
+      "spawnCategory": "eventOrFeature",
+      "enabledByDefault": false,
+      "npcTemplateId": 1320,
+      "entityKind": "DialogNpc",
+      "level": 80,
+      "series": -1,
+      "camp": 6,
+      "fightMode": 0,
+      "placements": [
+        {
+          "mapId": 37,
+          "mpsX": 51904,
+          "mpsY": 96608
+        },
+        {
+          "mapId": 37,
+          "mpsX": 52544,
+          "mpsY": 100640
+        },
+        {
+          "mapId": 37,
+          "mpsX": 54848,
+          "mpsY": 101536
+        }
+      ],
+      "featureFlag": "CFG_DefaultSeasonalScript",
+      "npcCode": "binh-binh-co-nuong",
+      "scriptPath": "\\script\\missions\\yandibaozang\\npc\\yandibaozang_main.lua"
+    },
+    {
+      "code": "cfg-defaultseasonalscript-viem-de-bao-tang",
+      "name": "ViÊm  Đế bảo tàng",
+      "spawnCategory": "eventOrFeature",
+      "enabledByDefault": false,
+      "npcTemplateId": 1320,
+      "entityKind": "DialogNpc",
+      "level": 80,
+      "series": -1,
+      "camp": 6,
+      "fightMode": 0,
+      "placements": [
+        {
+          "mapId": 37,
+          "mpsX": 59424,
+          "mpsY": 94976
+        }
+      ],
+      "featureFlag": "CFG_DefaultSeasonalScript",
+      "npcCode": "binh-binh-co-nuong",
+      "scriptPath": "\\script\\missions\\yandibaozang\\npc\\yandibaozang_main.lua"
+    },
+    {
+      "code": "cfg-defaultseasonalscript-duoc-thuong",
+      "name": "DƯợc thƯƠng",
+      "spawnCategory": "eventOrFeature",
+      "enabledByDefault": false,
+      "npcTemplateId": 389,
+      "entityKind": "DialogNpc",
+      "level": 80,
+      "series": -1,
+      "camp": 6,
+      "fightMode": 0,
+      "placements": [
+        {
+          "mapId": 852,
+          "mpsX": 50464,
+          "mpsY": 101888
+        },
+        {
+          "mapId": 852,
+          "mpsX": 51424,
+          "mpsY": 101696
+        }
+      ],
+      "featureFlag": "CFG_DefaultSeasonalScript",
+      "npcCode": "chu-duoc-diem-1",
+      "scriptPath": "\\script\\missions\\yandibaozang\\npc\\yaoshang.lua"
+    }
+  ]
+}

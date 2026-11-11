@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/map.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": 108,
+  "code": "thieu-lam-de-tu-phong-108",
+  "name": "Thiếu LÂm đệ tử phòng",
+  "mapType": "Field",
+  "mapRules": {
+    "defaultFightMode": 1,
+    "allowPk": true,
+    "forbidHeartTeleport": false
+  },
+  "regionBounds": {
+    "leftRegionX": 0,
+    "topRegionY": 0,
+    "rightRegionX": 0,
+    "bottomRegionY": 0
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": []
+}

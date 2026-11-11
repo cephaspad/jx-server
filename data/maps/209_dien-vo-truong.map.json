@@ -1,0 +1,24 @@
+{
+  "$schema": "../../schemas/map.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": 209,
+  "code": "dien-vo-truong",
+  "name": "Diễn võ trƯờng",
+  "mapType": "Field",
+  "mapRules": {
+    "defaultFightMode": 1,
+    "allowPk": true,
+    "forbidHeartTeleport": false,
+    "newWorldScriptPath": "\\script\\maps\\newworldscript.lua",
+    "newWorldParam": "PARTNER_OFF|USETOWNP_OFF|STALL_OFF|TISHENZHIREN|NOTONGCLAIMWAR"
+  },
+  "regionBounds": {
+    "leftRegionX": 0,
+    "topRegionY": 0,
+    "rightRegionX": 0,
+    "bottomRegionY": 0
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": []
+}

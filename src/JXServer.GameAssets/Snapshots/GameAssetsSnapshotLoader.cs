@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -10,6 +11,7 @@ using JXServer.GameAssets.Items;
 using JXServer.GameAssets.LootTables;
 using JXServer.GameAssets.NpcTemplates;
 using JXServer.GameAssets.PlayerTemplates;
+using JXServer.GameAssets.Shops;
 using JXServer.GameAssets.Skills;
 using JXServer.GameAssets.WorldMaps;
 using JXServer.Primitives.Characters;
@@ -27,6 +29,8 @@ namespace JXServer.GameAssets.Snapshots;
 public static class GameAssetsSnapshotLoader
 {
     public const string DefaultSnapshotFileName = "jxdata.pack";
+
+    private static readonly ConcurrentDictionary<(string DataDir, string PackPath, bool PreferBinary, long PackWriteTicks, long DataStamp), (GameAssetsSnapshotBundle Bundle, string SourceTier)> BundleCache = new();
 
     public static string ComputeDataDirectorySha256Hex(string dataDirectory)
     {
@@ -72,9 +76,19 @@ public static class GameAssetsSnapshotLoader
         string artifactsDir = ResolveDirectory(options.ArtifactsDirectory);
         string packPath = Path.Combine(artifactsDir, DefaultSnapshotFileName);
 
+        long packWriteTicks = File.Exists(packPath) ? File.GetLastWriteTimeUtc(packPath).Ticks : -1L;
+        long dataStamp = ComputeDataDirectoryFastStamp(dataDir);
+        var cacheKey = (dataDir, packPath, options.PreferBinarySnapshots, packWriteTicks, dataStamp);
+        if (BundleCache.TryGetValue(cacheKey, out (GameAssetsSnapshotBundle Bundle, string SourceTier) cached))
+        {
+            bundle = cached.Bundle;
+            sourceTier = cached.SourceTier;
+            return true;
+        }
+
         string currentSha = ComputeDataDirectorySha256Hex(dataDir);
 
-        if (options.PreferBinarySnapshots && File.Exists(packPath))
+        if (options.PreferBinarySnapshots && packWriteTicks >= 0)
         {
             try
             {
@@ -86,6 +100,7 @@ public static class GameAssetsSnapshotLoader
                 {
                     bundle = deserialized;
                     sourceTier = $"Tier2:MemoryPack({packPath})";
+                    BundleCache.TryAdd(cacheKey, (bundle, sourceTier));
                     return true;
                 }
             }
@@ -99,10 +114,28 @@ public static class GameAssetsSnapshotLoader
         {
             bundle = LoadFromCanonicalJsonDirectory(dataDir, currentSha);
             sourceTier = $"Tier1:CanonicalJson({dataDir})";
+            BundleCache.TryAdd(cacheKey, (bundle, sourceTier));
             return true;
         }
 
         return false;
+    }
+
+    private static long ComputeDataDirectoryFastStamp(string dataDirectory)
+    {
+        if (!Directory.Exists(dataDirectory))
+        {
+            return -1L;
+        }
+
+        long hash = 17L;
+        foreach (string file in Directory.EnumerateFiles(dataDirectory, "*.json", SearchOption.AllDirectories))
+        {
+            var info = new FileInfo(file);
+            hash = unchecked((hash * 31L) ^ info.Length ^ info.LastWriteTimeUtc.Ticks);
+        }
+
+        return hash;
     }
 
     public static GameAssetsSnapshotBundle LoadFromCanonicalJsonDirectory(string dataDirectory, string? precomputedSha256 = null)
@@ -146,13 +179,19 @@ public static class GameAssetsSnapshotLoader
         }
 
         var npcs = new List<NpcTemplate>();
+        var portalTrapBindings = new List<PortalTrapBindingTemplate>();
+        var autoExecSpawns = new List<StaticNpcSpawnTemplate>();
+        bool hasWorldSpawnGroups = false;
         string npcsDir = Path.Combine(dataDirectory, "npcs");
         if (Directory.Exists(npcsDir))
         {
             foreach (string file in Directory.GetFiles(npcsDir, "*.json").OrderBy(f => f, StringComparer.Ordinal))
             {
                 using JsonDocument doc = JsonDocument.Parse(File.ReadAllBytes(file));
-                ParseNpcCatalogJson(doc.RootElement, npcs, lootTables);
+                if (ParseNpcCatalogJson(doc.RootElement, npcs, lootTables, autoExecSpawns, portalTrapBindings))
+                {
+                    hasWorldSpawnGroups = true;
+                }
             }
         }
 
@@ -179,15 +218,28 @@ public static class GameAssetsSnapshotLoader
         }
 
         var mapDescriptors = new List<MapDescriptor>();
-        var portalTrapBindings = new List<PortalTrapBindingTemplate>();
-        var autoExecSpawns = new List<StaticNpcSpawnTemplate>();
         string mapsDir = Path.Combine(dataDirectory, "maps");
         if (Directory.Exists(mapsDir))
         {
+            Dictionary<int, string> npcNamesById = npcs
+                .GroupBy(n => n.TemplateId)
+                .ToDictionary(g => g.Key, g => g.First().Name);
+
             foreach (string file in Directory.GetFiles(mapsDir, "*.json").OrderBy(f => f, StringComparer.Ordinal))
             {
                 using JsonDocument doc = JsonDocument.Parse(File.ReadAllBytes(file));
-                ParseMapJson(doc.RootElement, mapDescriptors, portalTrapBindings, autoExecSpawns);
+                ParseMapJson(doc.RootElement, npcNamesById, mapDescriptors, portalTrapBindings, autoExecSpawns, !hasWorldSpawnGroups);
+            }
+        }
+
+        var shops = new List<ShopTemplate>();
+        string shopsDir = Path.Combine(dataDirectory, "shops");
+        if (Directory.Exists(shopsDir))
+        {
+            foreach (string file in Directory.GetFiles(shopsDir, "*.json").OrderBy(f => f, StringComparer.Ordinal))
+            {
+                using JsonDocument doc = JsonDocument.Parse(File.ReadAllBytes(file));
+                ParseShopCatalogJson(doc.RootElement, shops);
             }
         }
 
@@ -208,7 +260,8 @@ public static class GameAssetsSnapshotLoader
             levelExpTable,
             defaultStarterItems,
             mapDescriptors,
-            portalTrapBindings);
+            portalTrapBindings,
+            shops);
     }
 
     public static string ResolveDirectory(string configuredPath)
@@ -434,14 +487,15 @@ public static class GameAssetsSnapshotLoader
         {
             foreach (JsonElement it in itemsArr.EnumerateArray())
             {
-                int id = it.GetProperty("id").GetInt32();
+                int id = GetInt(it, "rowId", GetInt(it, "id", items.Count + 1));
                 string code = it.GetProperty("code").GetString() ?? $"item-{id}";
                 string name = it.GetProperty("name").GetString() ?? code;
-                ItemGenreKind genre = (ItemGenreKind)GetInt(it, "genre", 0);
+                int rawGenre = GetInt(it, "genre", 0);
+                ItemGenreKind genre = rawGenre == 5 ? ItemGenreKind.TownPortal : (ItemGenreKind)rawGenre;
                 ItemQualityKind quality = (ItemQualityKind)GetInt(it, "quality", 0);
                 int detailType = GetInt(it, "detailType", 0);
                 int particularType = GetInt(it, "particularType", 0);
-                byte level = (byte)Math.Clamp(GetInt(it, "level", 1), 0, 20);
+                byte level = (byte)Math.Clamp(GetInt(it, "level", 1), 0, 30);
                 int seriesVal = GetInt(it, "elementSeries", 0);
                 ElementSeries series = (ElementSeries)Math.Clamp(seriesVal, 0, 4);
                 byte width = (byte)Math.Clamp(GetInt(it, "gridWidthCells", 1), 1, 6);
@@ -502,15 +556,16 @@ public static class GameAssetsSnapshotLoader
         {
             foreach (JsonElement ma in maArr.EnumerateArray())
             {
-                int id = ma.GetProperty("id").GetInt32();
+                int id = GetInt(ma, "rowId", GetInt(ma, "id", magicAffixes.Count + 1));
                 string code = ma.GetProperty("code").GetString() ?? $"affix-{id}";
                 int attrId = GetInt(ma, "attributeId", id);
                 string attrCode = GetString(ma, "attributeCode", code);
                 string nameTpl = GetString(ma, "nameTemplate", code);
                 bool isSuffix = GetBool(ma, "isSuffix", false);
                 bool isGoldenOnly = GetBool(ma, "isGoldenOnly", false);
+                string affixPool = GetString(ma, "affixPool", isGoldenOnly ? "goldenFixed" : "blueRandom");
                 ElementSeries series = (ElementSeries)Math.Clamp(GetInt(ma, "elementSeries", 0), 0, 4);
-                int level = Math.Clamp(GetInt(ma, "level", 1), 1, 20);
+                int level = Math.Clamp(GetInt(ma, "level", 1), 1, 30);
                 int dropWeight = GetInt(ma, "dropWeight", 100);
 
                 var equipWeights = new EquipPartWeightsTemplate(100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100);
@@ -568,7 +623,8 @@ public static class GameAssetsSnapshotLoader
                     GetInt(ma, "param1Min", -1),
                     GetInt(ma, "param1Max", -1),
                     GetInt(ma, "param2Min", 0),
-                    GetInt(ma, "param2Max", 0)));
+                    GetInt(ma, "param2Max", 0),
+                    affixPool));
             }
         }
 
@@ -598,7 +654,7 @@ public static class GameAssetsSnapshotLoader
         {
             foreach (JsonElement lt in ltArr.EnumerateArray())
             {
-                int id = lt.GetProperty("id").GetInt32();
+                int id = GetInt(lt, "id", lootTables.Count + 1);
                 string code = lt.GetProperty("code").GetString() ?? $"loot-{id}";
                 int randRange = GetInt(lt, "randRange", 1000000);
                 int magicRate = GetInt(lt, "magicRate", 1);
@@ -617,7 +673,11 @@ public static class GameAssetsSnapshotLoader
                     {
                         int weight = GetInt(wp, "weight", 100);
                         string? itemCode = wp.TryGetProperty("itemCode", out JsonElement ic) ? ic.GetString() : null;
-                        ItemGenreKind? genre = wp.TryGetProperty("genre", out JsonElement g) ? (ItemGenreKind)g.GetInt32() : null;
+                        ItemGenreKind? genre = null;
+                        if (wp.TryGetProperty("genre", out JsonElement g) && g.TryGetInt32(out int rawPoolGenre))
+                        {
+                            genre = rawPoolGenre == 5 ? ItemGenreKind.TownPortal : (ItemGenreKind)rawPoolGenre;
+                        }
                         ItemQualityKind quality = (ItemQualityKind)GetInt(wp, "quality", 0);
                         int? detail = wp.TryGetProperty("detailType", out JsonElement dt) ? dt.GetInt32() : null;
                         int? particular = wp.TryGetProperty("particularType", out JsonElement pt) ? pt.GetInt32() : null;
@@ -657,12 +717,15 @@ public static class GameAssetsSnapshotLoader
         }
     }
 
-    private static void ParseNpcCatalogJson(
+    private static bool ParseNpcCatalogJson(
         JsonElement root,
         List<NpcTemplate> npcs,
-        List<LootTableTemplate> lootTables)
+        List<LootTableTemplate> lootTables,
+        List<StaticNpcSpawnTemplate> autoExecSpawns,
+        List<PortalTrapBindingTemplate> portalTrapBindings)
     {
         ParseLootCatalogJson(root, lootTables);
+        bool foundWorldSpawns = false;
 
         if (root.TryGetProperty("npcs", out JsonElement npcArr) && npcArr.ValueKind == JsonValueKind.Array)
         {
@@ -700,7 +763,7 @@ public static class GameAssetsSnapshotLoader
                     {
                         skillSlots.Add(new NpcSkillSlotTemplate(
                             GetInt(sk, "skillId", 1),
-                            (byte)Math.Clamp(GetInt(sk, "baseLevel", 1), 1, 63),
+                            (byte)Math.Clamp(GetInt(sk, "baseLevel", 1), 1, 64),
                             GetInt(sk, "castWeight", 25)));
                     }
                 }
@@ -761,6 +824,100 @@ public static class GameAssetsSnapshotLoader
                     scaling));
             }
         }
+
+        if (root.TryGetProperty("worldSpawnGroups", out JsonElement wsgArr) && wsgArr.ValueKind == JsonValueKind.Array)
+        {
+            foundWorldSpawns = true;
+            foreach (JsonElement wsg in wsgArr.EnumerateArray())
+            {
+                string cat = GetString(wsg, "spawnCategory", "globalPermanent");
+                bool enabled = GetBool(wsg, "enabledByDefault", string.Equals(cat, "globalPermanent", StringComparison.OrdinalIgnoreCase));
+                if (!enabled || !string.Equals(cat, "globalPermanent", StringComparison.OrdinalIgnoreCase))
+                {
+                    continue;
+                }
+
+                ushort groupMapId = (ushort)GetInt(wsg, "mapId", 0);
+                int tplId = GetInt(wsg, "npcTemplateId", 0);
+                string entityKindStr = GetString(wsg, "entityKind", "DialogNpc");
+                EntityKind kind = Enum.TryParse<EntityKind>(entityKindStr, ignoreCase: true, out EntityKind parsedKind)
+                    ? parsedKind
+                    : EntityKind.DialogNpc;
+                short level = (short)Math.Max(1, GetInt(wsg, "level", 1));
+                ElementSeries series = (ElementSeries)Math.Clamp(GetInt(wsg, "series", 0), 0, 4);
+                EntityCamp camp = (EntityCamp)Math.Clamp(GetInt(wsg, "camp", 0), 0, 7);
+                bool isSpecial = GetBool(wsg, "isSpecialNpc", false);
+                string groupName = GetString(wsg, "name", GetString(wsg, "nameOverride", $"NPC #{tplId}"));
+                string groupScript = GetString(wsg, "scriptPath", string.Empty);
+
+                if (wsg.TryGetProperty("placements", out JsonElement plArr) && plArr.ValueKind == JsonValueKind.Array)
+                {
+                    foreach (JsonElement pl in plArr.EnumerateArray())
+                    {
+                        ushort placementMapId = (ushort)GetInt(pl, "mapId", groupMapId);
+                        if (placementMapId == 0)
+                        {
+                            continue;
+                        }
+
+                        autoExecSpawns.Add(new StaticNpcSpawnTemplate(
+                            tplId,
+                            placementMapId,
+                            GetInt(pl, "mpsX", 0),
+                            GetInt(pl, "mpsY", 0),
+                            level,
+                            kind,
+                            camp,
+                            series,
+                            isSpecial,
+                            GetString(pl, "nameOverride", groupName),
+                            GetString(pl, "scriptPathOverride", groupScript)));
+                    }
+                }
+                else if (wsg.TryGetProperty("spawns", out JsonElement spArr) && spArr.ValueKind == JsonValueKind.Array)
+                {
+                    foreach (JsonElement sp in spArr.EnumerateArray())
+                    {
+                        ushort spawnMapId = (ushort)GetInt(sp, "mapId", groupMapId);
+                        if (spawnMapId == 0)
+                        {
+                            continue;
+                        }
+
+                        autoExecSpawns.Add(new StaticNpcSpawnTemplate(
+                            tplId,
+                            spawnMapId,
+                            GetInt(sp, "mpsX", 0),
+                            GetInt(sp, "mpsY", 0),
+                            level,
+                            kind,
+                            camp,
+                            series,
+                            GetBool(sp, "isSpecialNpc", isSpecial),
+                            GetString(sp, "nameOverride", groupName),
+                            GetString(sp, "scriptPath", groupScript)));
+                    }
+                }
+            }
+        }
+
+        if (root.TryGetProperty("worldPortals", out JsonElement wpArr) && wpArr.ValueKind == JsonValueKind.Array)
+        {
+            foreach (JsonElement p in wpArr.EnumerateArray())
+            {
+                string cat = GetString(p, "spawnCategory", "globalPermanent");
+                bool enabled = GetBool(p, "enabledByDefault", string.Equals(cat, "globalPermanent", StringComparison.OrdinalIgnoreCase));
+                if (!enabled)
+                {
+                    continue;
+                }
+
+                ushort mapId = (ushort)GetInt(p, "mapId", 0);
+                TryAddPortalBinding(p, mapId, portalTrapBindings);
+            }
+        }
+
+        return foundWorldSpawns;
     }
 
     private static void ParsePlayerCatalogJson(
@@ -929,9 +1086,11 @@ public static class GameAssetsSnapshotLoader
 
     private static void ParseMapJson(
         JsonElement root,
+        IReadOnlyDictionary<int, string> npcNamesById,
         List<MapDescriptor> mapDescriptors,
         List<PortalTrapBindingTemplate> portalTrapBindings,
-        List<StaticNpcSpawnTemplate> autoExecSpawns)
+        List<StaticNpcSpawnTemplate> autoExecSpawns,
+        bool includeMapDialogNpcsInAutoExec)
     {
         if (!root.TryGetProperty("id", out JsonElement idProp))
         {
@@ -968,7 +1127,10 @@ public static class GameAssetsSnapshotLoader
                 ElementSeries series = (ElementSeries)Math.Clamp(GetInt(sg, "series", 0), 0, 4);
                 EntityCamp camp = (EntityCamp)Math.Clamp(GetInt(sg, "camp", 0), 0, 7);
                 bool isSpecial = GetBool(sg, "isSpecialNpc", false);
-                string groupName = GetString(sg, "nameOverride", $"NPC #{tplId}");
+                string fallbackNpcName = npcNamesById.TryGetValue(tplId, out string? tplName) && !string.IsNullOrWhiteSpace(tplName)
+                    ? tplName
+                    : $"NPC #{tplId}";
+                string groupName = GetString(sg, "nameOverride", fallbackNpcName);
                 string groupScript = GetString(sg, "scriptPath", string.Empty);
 
                 if (sg.TryGetProperty("spawns", out JsonElement spArr) && spArr.ValueKind == JsonValueKind.Array)
@@ -995,7 +1157,7 @@ public static class GameAssetsSnapshotLoader
                             spawnScript);
 
                         mapSpawns.Add(spawnTpl);
-                        if (kind == EntityKind.DialogNpc)
+                        if (includeMapDialogNpcsInAutoExec && kind == EntityKind.DialogNpc)
                         {
                             autoExecSpawns.Add(spawnTpl);
                         }
@@ -1008,41 +1170,7 @@ public static class GameAssetsSnapshotLoader
         {
             foreach (JsonElement p in pArr.EnumerateArray())
             {
-                uint trapId = (uint)GetInt(p, "trapId", 0);
-                string scriptPath = GetString(p, "scriptPath", string.Empty);
-                string actionStr = GetString(p, "action", "teleport");
-                PortalTrapActionKind action = actionStr switch
-                {
-                    "toggleFightMode" => PortalTrapActionKind.ToggleFightStateAndSetPos,
-                    _ => PortalTrapActionKind.ChangeMapPortal,
-                };
-                ushort targetMapId = (ushort)GetInt(p, "targetMapId", mapId);
-                int targetMpsX = GetInt(p, "targetMpsX", 0);
-                int targetMpsY = GetInt(p, "targetMpsY", 0);
-                byte targetFightMode = (byte)GetInt(p, "targetFightMode", 0);
-                int altMpsX = GetInt(p, "alternateMpsX", 0);
-                int altMpsY = GetInt(p, "alternateMpsY", 0);
-                byte altFightMode = (byte)GetInt(p, "alternateFightMode", 0);
-                ushort minLvl = (ushort)Math.Max(1, GetInt(p, "minLevel", 1));
-                int bounceX = GetInt(p, "bounceMpsX", 0);
-                int bounceY = GetInt(p, "bounceMpsY", 0);
-                string? deniedMsg = p.TryGetProperty("deniedMessage", out JsonElement dm) ? dm.GetString() : null;
-
-                portalTrapBindings.Add(new PortalTrapBindingTemplate(
-                    trapId,
-                    scriptPath,
-                    action,
-                    targetMapId,
-                    targetMpsX,
-                    targetMpsY,
-                    targetFightMode,
-                    altMpsX,
-                    altMpsY,
-                    altFightMode,
-                    minLvl,
-                    bounceX,
-                    bounceY,
-                    deniedMsg));
+                TryAddPortalBinding(p, mapId, portalTrapBindings);
             }
         }
 
@@ -1058,6 +1186,96 @@ public static class GameAssetsSnapshotLoader
         {
             RegionNpcSpawns = mapSpawns,
         });
+    }
+
+    private static void TryAddPortalBinding(JsonElement p, ushort mapId, List<PortalTrapBindingTemplate> portalTrapBindings)
+    {
+        uint trapId = GetUInt(p, "trapId", 0u);
+        string scriptPath = GetString(p, "scriptPath", string.Empty);
+        if (trapId == 0u && !string.IsNullOrWhiteSpace(scriptPath))
+        {
+            trapId = Archives.PakFilePathHasher.ComputeHash(scriptPath);
+        }
+
+        string actionStr = GetString(p, "action", "teleport");
+        if (string.Equals(actionStr, "unmapped", StringComparison.OrdinalIgnoreCase))
+        {
+            return;
+        }
+
+        PortalTrapActionKind action = actionStr switch
+        {
+            "toggleFightMode" => PortalTrapActionKind.ToggleFightStateAndSetPos,
+            _ => PortalTrapActionKind.ChangeMapPortal,
+        };
+        ushort targetMapId = (ushort)GetInt(p, "targetMapId", mapId);
+        int targetMpsX = GetInt(p, "targetMpsX", 0);
+        int targetMpsY = GetInt(p, "targetMpsY", 0);
+        byte targetFightMode = (byte)GetInt(p, "targetFightMode", 0);
+        int altMpsX = GetInt(p, "alternateMpsX", 0);
+        int altMpsY = GetInt(p, "alternateMpsY", 0);
+        byte altFightMode = (byte)GetInt(p, "alternateFightMode", 0);
+        ushort minLvl = (ushort)Math.Max(1, GetInt(p, "minLevel", 1));
+        int bounceX = GetInt(p, "bounceMpsX", 0);
+        int bounceY = GetInt(p, "bounceMpsY", 0);
+        string? deniedMsg = p.TryGetProperty("deniedMessage", out JsonElement dm) ? dm.GetString() : null;
+
+        portalTrapBindings.Add(new PortalTrapBindingTemplate(
+            trapId,
+            scriptPath,
+            action,
+            targetMapId,
+            targetMpsX,
+            targetMpsY,
+            targetFightMode,
+            altMpsX,
+            altMpsY,
+            altFightMode,
+            minLvl,
+            bounceX,
+            bounceY,
+            deniedMsg));
+    }
+
+    private static void ParseShopCatalogJson(JsonElement root, List<ShopTemplate> shops)
+    {
+        if (!root.TryGetProperty("shops", out JsonElement shopsArr) || shopsArr.ValueKind != JsonValueKind.Array)
+        {
+            return;
+        }
+
+        foreach (JsonElement sh in shopsArr.EnumerateArray())
+        {
+            int id = GetInt(sh, "id", shops.Count + 1);
+            string code = GetString(sh, "code", $"shop-{id}");
+            string name = GetString(sh, "name", code);
+            string currencyType = GetString(sh, "currencyType", "gold");
+            int buyScale = GetInt(sh, "buyPriceScalePercent", 100);
+            int sellDiv = GetInt(sh, "sellBackDivisor", 4);
+            var goods = new List<ShopGoodTemplate>();
+            if (sh.TryGetProperty("goods", out JsonElement gArr) && gArr.ValueKind == JsonValueKind.Array)
+            {
+                foreach (JsonElement g in gArr.EnumerateArray())
+                {
+                    goods.Add(new ShopGoodTemplate(
+                        GoodsId: GetInt(g, "goodsId", 1),
+                        ItemCode: g.TryGetProperty("itemCode", out JsonElement ic) && ic.ValueKind == JsonValueKind.String ? ic.GetString() : null,
+                        Genre: GetInt(g, "genre", 0),
+                        DetailType: GetInt(g, "detailType", 0),
+                        ParticularType: GetInt(g, "particularType", 0),
+                        Level: (byte)Math.Clamp(GetInt(g, "level", 1), 0, 30),
+                        ElementSeries: Math.Clamp(GetInt(g, "elementSeries", -1), -1, 6),
+                        Price: GetInt(g, "price", 0),
+                        DiscountPrice: GetInt(g, "discountPrice", 0),
+                        CurrencyTypeOverride: g.TryGetProperty("currencyTypeOverride", out JsonElement co) && co.ValueKind == JsonValueKind.String ? co.GetString() : null,
+                        ConsumeType: GetInt(g, "consumeType", 0),
+                        ExpireWallClockMinutes: GetInt(g, "expireWallClockMinutes", 0),
+                        ExpireOnlineMinutes: GetInt(g, "expireOnlineMinutes", 0)));
+                }
+            }
+
+            shops.Add(new ShopTemplate(id, code, name, currencyType, buyScale, sellDiv, goods));
+        }
     }
 
     private static SkillParameterCurveTemplate? ParseParameterCurve(JsonElement parent, string propName)
@@ -1157,6 +1375,26 @@ public static class GameAssetsSnapshotLoader
         el.TryGetProperty(name, out JsonElement p) && p.ValueKind == JsonValueKind.Number && p.TryGetInt32(out int v)
             ? v
             : fallback;
+
+    private static uint GetUInt(JsonElement el, string name, uint fallback)
+    {
+        if (!el.TryGetProperty(name, out JsonElement p) || p.ValueKind != JsonValueKind.Number)
+        {
+            return fallback;
+        }
+
+        if (p.TryGetUInt32(out uint uv))
+        {
+            return uv;
+        }
+
+        if (p.TryGetInt64(out long lv) && lv is >= 0 and <= uint.MaxValue)
+        {
+            return (uint)lv;
+        }
+
+        return fallback;
+    }
 
     private static bool GetBool(JsonElement el, string name, bool fallback) =>
         el.TryGetProperty(name, out JsonElement p) && (p.ValueKind == JsonValueKind.True || p.ValueKind == JsonValueKind.False)

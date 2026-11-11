@@ -25,4 +25,5 @@ public sealed partial record MagicAffixTemplate(
     int Param1Min = 0,
     int Param1Max = 0,
     int Param2Min = 0,
-    int Param2Max = 0);
+    int Param2Max = 0,
+    string AffixPool = "blueRandom");

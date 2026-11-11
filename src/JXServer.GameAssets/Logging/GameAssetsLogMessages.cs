@@ -74,4 +74,13 @@ public static partial class GameAssetsLogMessages
         ILogger logger,
         int lootTableCount,
         string sourceTier);
+
+    [LoggerMessage(
+        EventId = 1008,
+        Level = LogLevel.Information,
+        Message = "Loaded {ShopCount} NPC shops via '{SourceTier}'.")]
+    public static partial void LogShopCatalogLoaded(
+        ILogger logger,
+        int shopCount,
+        string sourceTier);
 }

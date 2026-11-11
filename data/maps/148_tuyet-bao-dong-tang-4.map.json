@@ -1,0 +1,869 @@
+{
+  "$schema": "../../schemas/map.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": 148,
+  "code": "tuyet-bao-dong-tang-4",
+  "name": "Tuyết Báo Động tầng 4",
+  "mapType": "Field",
+  "mapRules": {
+    "defaultFightMode": 1,
+    "allowPk": true,
+    "forbidHeartTeleport": false,
+    "normalLootTableCode": "npcdroprate60",
+    "goldenLootTableCode": "goldennpc-golden-lv40",
+    "autoGoldenNpcRate": 2000,
+    "goldenType": 13,
+    "npcAutoLevel": {
+      "enabled": true,
+      "minLevel": 65,
+      "maxLevel": 65
+    },
+    "npcAutoSeries": {
+      "enabled": true,
+      "metalWeight": 0,
+      "woodWeight": 30,
+      "waterWeight": 70,
+      "fireWeight": 0,
+      "earthWeight": 0
+    }
+  },
+  "regionBounds": {
+    "leftRegionX": 94,
+    "topRegionY": 99,
+    "rightRegionX": 105,
+    "bottomRegionY": 105
+  },
+  "regions": [
+    {
+      "regionX": 99,
+      "regionY": 99,
+      "obstacleRleBase64": "XwEAAAAAAQBRAAAAHgAAAAAAAQBRAAAAAQARAAAAHQAAAAAAAQBRAAAAAgARAAAAHAAAAAAAAQBRAAAAAwARAAAAHAAAAAAABAARAAAAHAAAAAAABAARAAAA"
+    },
+    {
+      "regionX": 100,
+      "regionY": 99,
+      "obstacleRleBase64": "HgAAAAAAAQBBAAAAAQARAAAAHwAAAAAAAQBBAAAAwAEAAAAA"
+    },
+    {
+      "regionX": 101,
+      "regionY": 99,
+      "obstacleRleBase64": "3wAAAAAAAQBRAAAAHgAAAAAAAQBRAAAAAQARAAAAHQAAAAAAAQBRAAAAAgARAAAAGgAAAAAAAQBRAAAABAARAAAAAQAhAAAAGQAAAAAAAQBRAAAABgARAAAAGAAAAAAAAQBRAAAABwARAAAAFwAAAAAAAQBRAAAACAARAAAAFwAAAAAAAgARAAAAAQAhAAAAAwAAAAAAAQBBAAAAAgARAAAAFwAAAAAAAgARAAAABQAAAAAAAgARAAAAFwAAAAAAAgARAAAAAQAxAAAABAAAAAAAAgARAAAA"
+    },
+    {
+      "regionX": 102,
+      "regionY": 99,
+      "obstacleRleBase64": "FwAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAwAAAAAAAQBBAAAAAQARAAAAGAAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAwAAAAAAAQARAAAAGQAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQAAAAAAAQBRAAAAAQARAAAAGgAAAAAAAQBBAAAABQARAAAAGwAAAAAAAQBBAAAABAARAAAAHAAAAAAABAARAAAAHAAAAAAABAARAAAAIAEAAAAA"
+    },
+    {
+      "regionX": 97,
+      "regionY": 100,
+      "obstacleRleBase64": "/wAAAAAAAQBRAAAAHgAAAAAAAQBRAAAAAQARAAAAHQAAAAAAAQBRAAAAAgARAAAAGgAAAAAAAQBRAAAABQARAAAAGQAAAAAAAQBRAAAABgARAAAAGQAAAAAABwARAAAAGQAAAAAAAwARAAAAAQAhAAAAAQBBAAAAAgARAAAAGQAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQAAAAAAAQBBAAAAAQARAAAAGgAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQAAAAAAAQBBAAAA"
+    },
+    {
+      "regionX": 98,
+      "regionY": 100,
+      "obstacleRleBase64": "GwAAAAAAAQBBAAAAAgARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAgARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAgARAAAAHgAAAAAAAQBBAAAAAQARAAAASgEAAAAAAQBRAAAAAgARAAAAHAAAAAAAAQBRAAAAAwARAAAAEwAAAAAA"
+    },
+    {
+      "regionX": 99,
+      "regionY": 100,
+      "obstacleRleBase64": "CAAAAAAAAQBRAAAABAARAAAAAQAxAAAAGQAAAAAAAQBRAAAABwARAAAAAQAxAAAAFgAAAAAAAQBRAAAACQARAAAAFQAAAAAAAQBRAAAACgARAAAAAQAxAAAAEwAAAAAAAQBRAAAADAARAAAAAQAxAAAAEgAAAAAADgARAAAAAQAxAAAAEAAAAAAAAQBRAAAABQARAAAAAQAhAAAABgAAAAAAAQBBAAAAAgARAAAAAQAxAAAACwAAAAAAAQBRAAAAAgAAAAAAAQBRAAAABQARAAAAAQAhAAAACAAAAAAAAQBBAAAAAwARAAAAAQAxAAAACQAAAAAAAQARAAAAAQAAAAAAAQBRAAAABgARAAAACwAAAAAAAQBBAAAAAgARAAAAAQAxAAAACAAAAAAAAQARAAAAAQBRAAAABgARAAAAAQAhAAAADAAAAAAAAQBBAAAAAwARAAAAAQAxAAAABgAAAAAABgARAAAAAQAhAAAAEAAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAwAAAAAAAQBRAAAABwARAAAAEgAAAAAAAQBBAAAADAARAAAAAQAhAAAAGgAAAAAAAQBBAAAAAwARAAAAAQAhAAAAHAAAAAAAAwARAAAAAQAxAAAAHAAAAAAABAARAAAAAQAxAAAAGwAAAAAA"
+    },
+    {
+      "regionX": 100,
+      "regionY": 100,
+      "obstacleRleBase64": "BQARAAAAAQAxAAAAGgAAAAAABgARAAAAGgAAAAAAAQBBAAAABQARAAAAGwAAAAAAAQBBAAAABAARAAAAAQAxAAAAGwAAAAAAAQBBAAAABgARAAAAAQAxAAAAGQAAAAAAAQBBAAAABwARAAAAAQAxAAAAGAAAAAAAAwARAAAAAQAhAAAAAQBBAAAAAwARAAAAAQAxAAAAFwAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQAAAAAAAQBBAAAAAwARAAAAAQAxAAAAFwAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQAAAAAAAQBBAAAAAwARAAAAAQAxAAAAFwAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAgAAAAAAAwARAAAAGAAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQBRAAAAAgARAAAAAQAhAAAAGQAAAAAAAQBBAAAABQARAAAAGwAAAAAAAQBBAAAABAARAAAAGwAAAAAAAQBRAAAABAARAAAAGgAAAAAAAQBRAAAABQARAAAAGQAAAAAAAQBRAAAABQARAAAAAQAhAAAAEgAAAAAA"
+    },
+    {
+      "regionX": 101,
+      "regionY": 100,
+      "obstacleRleBase64": "BgAAAAAAAQBRAAAABgARAAAAAQAxAAAAFwAAAAAAAQBRAAAAAgARAAAAAgASAAAABAARAAAAFgAAAAAAAQBRAAAAAwARAAAAAgASAAAABAARAAAAFAAAAAAAAQBRAAAABgARAAAAAQAhAAAAFwAAAAAAAQBRAAAABQARAAAAAQAhAAAAGAAAAAAAAQBRAAAABQARAAAAAQAhAAAAGQAAAAAABQARAAAAAQAhAAAAGgAAAAAABAARAAAAAQAhAAAAGwAAAAAAAQAhAAAAAgARAAAAAQAhAAAAHAAAAAAAAQBRAAAAAgARAAAAHQAAAAAAAgARAAAAAQAhAAAAHQAAAAAAAQARAAAAAQAhAAAAHgAAAAAAAQARAAAAAQAxAAAAHgAAAAAAAgARAAAAHgAAAAAAAgARAAAAHgAAAAAAAQARAAAAAQAhAAAAHgAAAAAA"
+    },
+    {
+      "regionX": 102,
+      "regionY": 100,
+      "obstacleRleBase64": "AQARAAAAAQAxAAAAHgAAAAAABgARAAAAAQAxAAAAGQAAAAAAAwARAAAAAQAhAAAAAQBBAAAABAARAAAAAQAxAAAAFgAAAAAAAQARAAAAAQAhAAAAAwAAAAAABgARAAAAAQAxAAAADwAAAAAAAQBRAAAABAARAAAAAQAhAAAAAwAAAAAAAQBRAAAABwARAAAAAQAxAAAADQAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAgAAAAAAAQAxAAAAAQAAAAAAAQBRAAAABgARAAAAAQAhAAAAAQBBAAAABAARAAAAAQAxAAAACAAAAAAAAQBRAAAAAwARAAAAAQAhAAAAAwAAAAAABAARAAAAAQAhAAAAAQAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQAAAAAABQARAAAAAQAxAAAABgAAAAAAAQBRAAAAAgARAAAAAQAhAAAADAAAAAAAAQBBAAAACQARAAAAAQAxAAAABAAAAAAAAQBRAAAAAgARAAAAAQAhAAAADgAAAAAAAQBBAAAACQARAAAAAQAxAAAAAgAAAAAAAQBRAAAAAgARAAAAAQAhAAAAEAAAAAAADgARAAAAAQAhAAAAEQAAAAAAAQBBAAAABAARAAAAAQAhAAAAAQAAAAAAAQBBAAAABAARAAAAAQAhAAAAFAAAAAAAAQBBAAAAAwARAAAAAwAAAAAABAARAAAAFgAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQAAAAAAAQBRAAAABAARAAAAAQAxAAAAFgAAAAAAAQBBAAAACgARAAAAAQAxAAAAFQAAAAAAAQBBAAAABAARAAAAAQAhAAAAAQBBAAAABAARAAAAFQAAAAAAAQBRAAAABAARAAAAAwAAAAAAAQBBAAAAAgARAAAACAAAAAAA"
+    },
+    {
+      "regionX": 103,
+      "regionY": 100,
+      "obstacleRleBase64": "DAAAAAAAAQBRAAAABQARAAAAAQAxAAAAAgAAAAAAAQBRAAAAAgARAAAAFAAAAAAACwARAAAAAQAhAAAAFAAAAAAABwARAAAAAQAhAAAArAEAAAAA"
+    },
+    {
+      "regionX": 94,
+      "regionY": 101,
+      "obstacleRleBase64": "fwEAAAAAAQBRAAAAHwAAAAAAAQARAAAAHgAAAAAAAQBRAAAAAQARAAAAHQAAAAAAAQBRAAAAAgARAAAAHAAAAAAAAQBRAAAAAwARAAAA"
+    },
+    {
+      "regionX": 95,
+      "regionY": 101,
+      "obstacleRleBase64": "GwAAAAAAAQBRAAAABAARAAAAGgAAAAAAAQBRAAAABQARAAAAGQAAAAAAAQBRAAAABgARAAAAFwAAAAAAAQBRAAAACAARAAAAFgAAAAAAAQBRAAAACQARAAAAFQAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAQBBAAAABgARAAAAFAAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAgAAAAAABQARAAAAAQAhAAAAFAAAAAAAAwARAAAAAwAAAAAAAQBBAAAAAgARAAAAAQAhAAAAFgAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAwAAAAAAAgARAAAAGAAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAgAAAAAAAgARAAAAAQAxAAAAGAAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQAAAAAAAQBBAAAAAgARAAAAAQAxAAAAGAAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQBRAAAABAARAAAAGAAAAAAAAQBBAAAABwARAAAAGQAAAAAAAQBBAAAABAARAAAAAQAhAAAAGwAAAAAAAQBBAAAAAwARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAgARAAAAAQAxAAAA"
+    },
+    {
+      "regionX": 96,
+      "regionY": 101,
+      "obstacleRleBase64": "HQAAAAAAAQBBAAAAAgARAAAAHgAAAAAAAQBBAAAAAQARAAAACQEAAAAAAQBRAAAAAQARAAAAAQAxAAAAHAAAAAAAAQBRAAAABAARAAAAGgAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAQBBAAAAAQARAAAAGQAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAgAAAAAAAQARAAAAGAAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAwAAAAAAAQARAAAAFwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAwAAAAAAAQBRAAAAAQARAAAAEwAAAAAA"
+    },
+    {
+      "regionX": 97,
+      "regionY": 101,
+      "obstacleRleBase64": "AwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAgAAAAAAAQBRAAAAAwARAAAAFgAAAAAAAwARAAAAAQAAAAAAAQBRAAAABAARAAAAAQAhAAAAFgAAAAAACQARAAAAAQAxAAAAFgAAAAAABgARAAAAAQAhAAAAAQBBAAAAAgARAAAAAQAxAAAADgAAAAAAAQBRAAAAAwARAAAAAgAAAAAAAQBRAAAABQARAAAAAQAhAAAAAgAAAAAAAQBBAAAAAgARAAAADgAAAAAABAARAAAAAQAAAAAAAQBRAAAABQARAAAAAQAhAAAABAAAAAAAAQBBAAAAAQARAAAAAQAxAAAADQAAAAAAAgARAAAAAQAhAAAAAQAAAAAAAQBRAAAABgARAAAABgAAAAAABgARAAAAAQAxAAAACAAAAAAAAgARAAAAAQAxAAAAAQAAAAAABgARAAAAAQAhAAAACgAAAAAAAQBBAAAABAARAAAAAQAxAAAABQAAAAAAAwARAAAAAQAxAAAABAARAAAAAQAhAAAADwAAAAAAAQBBAAAADgARAAAAAQAhAAAAFwAAAAAAAQBBAAAABwARAAAAAQAxAAAAHAAAAAAABAARAAAAHAAAAAAAAwARAAAAAQAhAAAAHAAAAAAAAwARAAAAHQAAAAAAAwARAAAAHQAAAAAAAwARAAAAAQAxAAAAHAAAAAAA"
+    },
+    {
+      "regionX": 98,
+      "regionY": 101,
+      "obstacleRleBase64": "AQBBAAAACAARAAAAAQAxAAAAFwAAAAAAAgARAAAAAQAhAAAACwARAAAAAQAxAAAAEAAAAAAABgARAAAAAQAhAAAAAwAAAAAAAQBBAAAABQARAAAAAQAxAAAADwAAAAAABQARAAAAAQAhAAAABAAAAAAAAQBRAAAABgARAAAAAQAxAAAADwAAAAAABAARAAAAAQAxAAAAAgAAAAAAAQBRAAAABAARAAAAAQAhAAAAAQAAAAAAAQBBAAAAAgARAAAAAQAxAAAADgAAAAAACwARAAAAAQAhAAAAAwAAAAAAAwARAAAADgAAAAAABAARAAAAAQAhAAAAAwAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAwAAAAAAAwARAAAAFwAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAgAAAAAAAQBBAAAAAQARAAAAAQAhAAAAGAAAAAAAAwARAAAAAQAxAAAAAgAAAAAAAQARAAAAFwAAAAAAAQBRAAAABQARAAAAAQAxAAAAAQBRAAAAAQARAAAAFgAAAAAAAQBRAAAACQARAAAAEQAAAAAAAQBRAAAABgARAAAAAQAhAAAAAgAAAAAAAQBBAAAABAARAAAAEAAAAAAAAQBRAAAABwARAAAAAQAxAAAABAAAAAAAAwARAAAADwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAQBBAAAABQARAAAAAQAxAAAAAgAAAAAAAQBRAAAAAgARAAAAAQAhAAAADwAAAAAAAgARAAAAAQAhAAAAAgAAAAAAAQBBAAAACgARAAAAEAAAAAAAAgARAAAAAQAxAAAAAwAAAAAACAARAAAAAQAhAAAAEAAAAAAA"
+    },
+    {
+      "regionX": 99,
+      "regionY": 101,
+      "obstacleRleBase64": "AQAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQBRAAAACAARAAAAAQAhAAAAEwAAAAAAAQBBAAAABwARAAAAAQAhAAAAGAAAAAAABwARAAAAGAAAAAAAAQBRAAAABwARAAAAFwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAQBBAAAABAARAAAAFgAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAgAAAAAABAARAAAAFgAAAAAAAgARAAAAAQAhAAAAAgAAAAAAAQBRAAAABAARAAAAFgAAAAAAAQARAAAAAQAhAAAAAgAAAAAABAARAAAAAQAhAAAAFwAAAAAAAQARAAAAAQAxAAAAAQAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGQAAAAAABQARAAAAAQAhAAAAGgAAAAAABAARAAAAAQAhAAAAGwAAAAAAAwARAAAAAQAhAAAAHAAAAAAAAwARAAAAfQAAAAAA"
+    },
+    {
+      "regionX": 100,
+      "regionY": 101,
+      "obstacleRleBase64": "8gEAAAAAAQBRAAAADQARAAAA"
+    },
+    {
+      "regionX": 101,
+      "regionY": 101,
+      "obstacleRleBase64": "EQAAAAAAAQBRAAAABgARAAAAAQAhAAAAFwAAAAAAAQBRAAAABQARAAAAAQAhAAAAGAAAAAAAAQBRAAAABQARAAAAAQAhAAAAGQAAAAAABgARAAAAGgAAAAAAAwARAAAAAQAhAAAAAQBBAAAAAQARAAAAGQAAAAAAAQBRAAAAAgARAAAAAQAhAAAAHAAAAAAAAgARAAAAAQAhAAAAHQAAAAAAAgARAAAAHgAAAAAAAgARAAAAHQAAAAAAAQBRAAAAAgARAAAAGwAAAAAAAQBRAAAAAwARAAAAAQAhAAAAGgAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGgAAAAAAAQBRAAAAAwARAAAAAQAhAAAAGgAAAAAAAQBRAAAAAgARAAAAAQAhAAAAHAAAAAAAAgARAAAAAQAhAAAAHQAAAAAAAQARAAAAAQAhAAAAFwAAAAAA"
+    },
+    {
+      "regionX": 102,
+      "regionY": 101,
+      "obstacleRleBase64": "BgAAAAAAAQBRAAAAAQARAAAAHQAAAAAAAwARAAAAAQAxAAAAGwAAAAAAAQBRAAAABAARAAAAFwAAAAAACQARAAAAAQAxAAAAGgAAAAAAAQBBAAAABQARAAAAAQAxAAAAGgAAAAAABgARAAAAAQAxAAAAGQAAAAAAAQBBAAAABgARAAAAAQAxAAAAGQAAAAAAAQBBAAAABgARAAAAGgAAAAAAAQBBAAAABQARAAAAGwAAAAAAAQBBAAAABAARAAAAHAAAAAAAAQBBAAAAAwARAAAAHQAAAAAAAQBBAAAAAgARAAAAkwAAAAAA"
+    },
+    {
+      "regionX": 94,
+      "regionY": 102,
+      "obstacleRleBase64": "ZwAAAAAAAQBRAAAAAQARAAAAHQAAAAAAAQBRAAAAAgARAAAAHAAAAAAAAQBRAAAAAwARAAAAAQAxAAAAGgAAAAAAAQBRAAAABQARAAAAAQAxAAAAGAAAAAAAAQBRAAAABwARAAAAFwAAAAAAAQBRAAAABQARAAAAAQAhAAAAAQBBAAAAAQARAAAAFgAAAAAAAQBRAAAABQARAAAAAQAhAAAAAQAAAAAAAQBRAAAAAQARAAAAAQAxAAAAFAAAAAAAAQBRAAAABQARAAAAAQAhAAAAAQBRAAAABAARAAAAFAAAAAAABAARAAAAAQAhAAAAAgAAAAAABQARAAAAAQAxAAAAEwAAAAAABAARAAAAAQAxAAAAAgAAAAAAAQBBAAAAAQARAAAAAQAhAAAAAQBBAAAAAgARAAAAAQAxAAAAEQAAAAAAAQBRAAAABQARAAAABgAAAAAAAQBBAAAAAwARAAAAAQAxAAAADgAAAAAAAQBRAAAABgARAAAACAAAAAAAAQBBAAAAAgARAAAAAQAxAAAADQAAAAAABwARAAAACQAAAAAAAQBBAAAAAgARAAAAAQAxAAAADAAAAAAAAgARAAAA"
+    },
+    {
+      "regionX": 95,
+      "regionY": 102,
+      "obstacleRleBase64": "AQARAAAAAQAhAAAADQAAAAAAAQBBAAAABQARAAAAAQAxAAAACAAAAAAAAQBBAAAAAQARAAAAAQAhAAAAEgAAAAAAAQBBAAAACAARAAAAAQAxAAAAAgAAAAAAAQBBAAAAGgAAAAAAAQBBAAAABAARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAgARAAAA4AAAAAAAAgARAAAAAQAxAAAAHQAAAAAABQARAAAAAQAxAAAAGwAAAAAAAQBBAAAABQARAAAAAQAxAAAAGgAAAAAABgARAAAAAQAxAAAAGAAAAAAAAQBRAAAABwARAAAAFwAAAAAA"
+    },
+    {
+      "regionX": 96,
+      "regionY": 102,
+      "obstacleRleBase64": "AwARAAAAAQAhAAAAAgAAAAAAAQBBAAAAAgARAAAAFwAAAAAAAwARAAAABAAAAAAAAQBBAAAAAQARAAAAFwAAAAAAAQBBAAAAAgARAAAAAQAxAAAABAAAAAAAAQARAAAAGAAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAwAAAAAAAQARAAAAAQAxAAAAGAAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAgAAAAAABAARAAAAAQAxAAAAFgAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQAAAAAACAARAAAAAQAxAAAAEwAAAAAAAQBBAAAADAARAAAAFAAAAAAAAQBBAAAACwARAAAAFAAAAAAAAQBRAAAACgARAAAAAQAhAAAAFAAAAAAACwARAAAAAQAxAAAAFAAAAAAABwARAAAAAQAhAAAAAQBBAAAAAwARAAAAAQAxAAAAFQAAAAAAAQBBAAAAAwARAAAAAQAhAAAAAgAAAAAAAQBBAAAAAwARAAAAFgAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAwAAAAAAAwARAAAAFwAAAAAAAQBBAAAAAwARAAAAAgAAAAAAAQARAAAAAQAhAAAAGQAAAAAAAwARAAAAAQAxAAAAAQAAAAAAAQARAAAAGQAAAAAAAQBRAAAABgARAAAAEAAAAAAA"
+    },
+    {
+      "regionX": 97,
+      "regionY": 102,
+      "obstacleRleBase64": "CAAAAAAAAQBRAAAABwARAAAAFwAAAAAAAQBRAAAACAARAAAAFgAAAAAAAQBRAAAABQARAAAAAQAhAAAAAQAAAAAAAQBBAAAAAQARAAAAEAAAAAAAAQARAAAAAQAxAAAAAwAAAAAAAQBRAAAABQARAAAAAQAhAAAAFAAAAAAACgARAAAAAQAhAAAAFwAAAAAAAQBBAAAABgARAAAAAQAhAAAAGAAAAAAAAQBRAAAABAARAAAAAQAhAAAAGQAAAAAAAQBRAAAABAARAAAAAQAhAAAAGQAAAAAABAARAAAAAQAhAAAAGgAAAAAAAQBRAAAAAwARAAAAAQAhAAAAGgAAAAAAAQBRAAAAAQARAAAAHQAAAAAAAQBRAAAAAgARAAAAHAAAAAAAAQBRAAAAAgARAAAAAQAhAAAAHAAAAAAAAgARAAAAAQAhAAAAHAAAAAAAAQBRAAAAAQARAAAAAQAhAAAAHQAAAAAAAgARAAAAHgAAAAAAAgARAAAAAwAAAAAA"
+    },
+    {
+      "regionX": 98,
+      "regionY": 102,
+      "obstacleRleBase64": "GwAAAAAAAgARAAAAHQAAAAAAAQBRAAAAAQARAAAAAQAhAAAAHQAAAAAAAgARAAAAHgAAAAAAAQARAAAAAQAhAAAAHgAAAAAAAwARAAAAHQAAAAAAAwARAAAAHQAAAAAAAQBBAAAAAgARAAAAAQAxAAAAHQAAAAAAAwARAAAAAQAxAAAAGwAAAAAAAQBRAAAABAARAAAAGwAAAAAAAwARAAAAAQAhAAAAHAAAAAAAAwARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAgARAAAAHgAAAAAAAQBBAAAAAQARAAAAAQAxAAAAHgAAAAAAAgARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAgARAAAAHgAAAAAAAQBBAAAAAQARAAAA"
+    },
+    {
+      "regionX": 100,
+      "regionY": 102,
+      "obstacleRleBase64": "wQEAAAAAAQBRAAAABgARAAAAAQAxAAAAFwAAAAAAAwARAAAAAQAhAAAACAARAAAAAQAxAAAAEwAAAAAA"
+    },
+    {
+      "regionX": 101,
+      "regionY": 102,
+      "obstacleRleBase64": "AwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAQAAAAAAAQBBAAAABQARAAAAAQAxAAAAEwAAAAAAAQBRAAAAAgARAAAAAQAhAAAABAAAAAAABgARAAAAAQAxAAAAEAAAAAAAAQBRAAAAAgARAAAAAQAhAAAABAAAAAAAAQBRAAAABwARAAAAAQAxAAAADwAAAAAAEgARAAAAAQAxAAAADQAAAAAACAARAAAAAQAhAAAAAQAAAAAAAQBBAAAAAwARAAAAAQAhAAAAAQBBAAAAAwARAAAAAQAxAAAAFwAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQAAAAAAAQBBAAAABQARAAAAFgAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQAAAAAABQARAAAAFwAAAAAAAQBBAAAACAARAAAAAQAxAAAAFwAAAAAAAQBBAAAACwARAAAAFQAAAAAAAQBBAAAACgARAAAAAQAxAAAAFwAAAAAAAQBBAAAABwARAAAAAgASAAAAAQAyAAAAFgAAAAAAAQBBAAAABgARAAAAAgASAAAAAwARAAAAFQAAAAAAAQBBAAAABQARAAAAAQAhAAAAAgAAAAAAAgARAAAAFgAAAAAAAQBBAAAABAARAAAAAgAAAAAAAQBRAAAAAgARAAAAFwAAAAAAAQBBAAAAAwARAAAAAQAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGAAAAAAAAQBBAAAABgARAAAAAQAxAAAA"
+    },
+    {
+      "regionX": 102,
+      "regionY": 102,
+      "obstacleRleBase64": "GgAAAAAAAQBBAAAABQARAAAAGwAAAAAABAARAAAAAQAhAAAAwAEAAAAA"
+    },
+    {
+      "regionX": 94,
+      "regionY": 103,
+      "obstacleRleBase64": "igAAAAAAAQBRAAAABgARAAAAAQAxAAAAEgAAAAAAAQBRAAAAAwARAAAAAQAxAAAAAQAAAAAAAgARAAAAAQAhAAAAAQBBAAAABQARAAAAEAAAAAAAAQBRAAAACAARAAAAAQAxAAAABAAAAAAAAQBBAAAAAQARAAAADwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAQBBAAAABgARAAAAAQAxAAAAAwAAAAAAAQBRAAAAAQARAAAADwAAAAAAAwARAAAAAgAAAAAAAQBBAAAABgARAAAAAQAxAAAAAQBRAAAAAwARAAAADwAAAAAAAwARAAAAAwAAAAAAAQBBAAAACQARAAAAAQAhAAAADwAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAwAAAAAABwARAAAAAQAhAAAAEgAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAgAAAAAABQARAAAAAQAhAAAAEQAAAAAAAgARAAAAAQAxAAAAAQAAAAAAAwARAAAAAQAxAAAAAQAAAAAABQARAAAAAQAxAAAAEQAAAAAACwARAAAAAQAhAAAAAQBBAAAAEgARAAAAAQAxAAAAAQAhAAAAAQAAAAAAAQBBAAAACAARAAAABwAAAAAAAQBBAAAAAwARAAAAAQAhAAAABgAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAwAAAAAAAQBBAAAABgARAAAAFAAAAAAAAQBBAAAA"
+    },
+    {
+      "regionX": 95,
+      "regionY": 103,
+      "obstacleRleBase64": "AQARAAAAAQAxAAAAAgAAAAAAAQBRAAAABgARAAAAFQAAAAAABwARAAAAAQAhAAAAGAAAAAAABQARAAAAAQAhAAAAGgAAAAAABAARAAAAAQAhAAAAmwEAAAAA"
+    },
+    {
+      "regionX": 96,
+      "regionY": 103,
+      "obstacleRleBase64": "nAEAAAAAAQBRAAAAAwARAAAAFwAAAAAAAQBRAAAACAARAAAADwAAAAAAAQBRAAAAEAARAAAADQAAAAAAAQBRAAAAAwARAAAAAQAhAAAABwAAAAAAAwARAAAAAQAhAAAAAQAAAAAAAQBBAAAAAQARAAAA"
+    },
+    {
+      "regionX": 97,
+      "regionY": 103,
+      "obstacleRleBase64": "CwAAAAAAAQBRAAAAAwARAAAAAQAhAAAACAAAAAAAAQBRAAAAAgARAAAAAQAhAAAADQAAAAAAAQBRAAAAAwARAAAAAQAhAAAACQAAAAAAAQBRAAAAAgARAAAAAQAhAAAABAAAAAAAAQBRAAAABwAAAAAAAQBRAAAAAwARAAAAAQAhAAAACwAAAAAAAwARAAAAAQAxAAAAAQBRAAAABAARAAAABgAAAAAAAQBRAAAAAgARAAAAAQAhAAAADQAAAAAABgARAAAAAQAhAAAABgAAAAAAAQBRAAAAAwARAAAAAQAhAAAAGgAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGgAAAAAAAQBRAAAAAwARAAAAAQAhAAAAGwAAAAAAAgARAAAAAQAhAAAAHQAAAAAAAQARAAAAAQAhAAAAHgAAAAAAAQAhAAAAvwAAAAAA"
+    },
+    {
+      "regionX": 98,
+      "regionY": 103,
+      "obstacleRleBase64": "wAEAAAAAAQAxAAAAHwAAAAAAAgARAAAAAQAxAAAAHQAAAAAA"
+    },
+    {
+      "regionX": 99,
+      "regionY": 103,
+      "obstacleRleBase64": "AQBBAAAAAwARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAwARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAgARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAgARAAAAHgAAAAAAAQBBAAAAAQARAAAAAQAxAAAADgAAAAAAAQBRAAAABAARAAAAAQAxAAAACgAAAAAAAwARAAAAAQAxAAAADAAAAAAAAgARAAAAAQAhAAAAAQBBAAAABQARAAAACAAAAAAAAQBBAAAAAwARAAAAAQAxAAAACgAAAAAAAgARAAAABQAAAAAAAQBBAAAAAQARAAAACgAAAAAAAQBBAAAAAwARAAAAAQAxAAAAAgAAAAAAAQBRAAAAAwARAAAAAgAAAAAAAgARAAAAAQAxAAAABAAAAAAAAQBRAAAAAQARAAAADAAAAAAAAQBBAAAACAARAAAAAQAxAAAAAQAAAAAAAwARAAAAAQAxAAAAAQAAAAAAAQBRAAAAAwARAAAAEgAAAAAAAQBBAAAACwARAAAAAQAhAAAAGAAAAAAAAQBBAAAABgARAAAAHQAAAAAAAQBBAAAAAgARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAgARAAAAHgAAAAAAAQBBAAAAAQARAAAAAQAxAAAAHgAAAAAAAgARAAAAHgAAAAAAAQBBAAAAAQARAAAA"
+    },
+    {
+      "regionX": 100,
+      "regionY": 103,
+      "obstacleRleBase64": "HgAAAAAAAQBRAAAAAQARAAAAHgAAAAAAAgARAAAAHgAAAAAAAgARAAAAHgAAAAAAAgARAAAAHQAAAAAAAQBRAAAAAgARAAAAGwAAAAAAAQBRAAAAAwARAAAAAQAhAAAAGQAAAAAAAQBRAAAAAwARAAAAAQAhAAAAGgAAAAAAAQBRAAAAAgARAAAAAQAhAAAAHAAAAAAAAgARAAAAAQAhAAAAHQAAAAAAAgARAAAAAQAxAAAAHQAAAAAAAQBBAAAABAARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAwARAAAAHQAAAAAAAQBBAAAAAgARAAAAAQAxAAAAHQAAAAAAAwARAAAAHAAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAQAAAAAA"
+    },
+    {
+      "regionX": 101,
+      "regionY": 103,
+      "obstacleRleBase64": "GQAAAAAAAQBRAAAAAwARAAAAAQAhAAAAGgAAAAAAAQBRAAAAAgARAAAAAQAhAAAAHAAAAAAAAgARAAAAAQAhAAAAHQAAAAAAAgARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAgARAAAAHgAAAAAAAQBBAAAAAQARAAAAAQAxAAAAHgAAAAAAAwARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAwARAAAAAQAxAAAACAAAAAAAAQBRAAAACQARAAAAAQAxAAAACgAAAAAAAQBBAAAAAgARAAAABAAAAAAAAQBRAAAABQARAAAAAQAhAAAAAwAAAAAABQARAAAAAQAxAAAACwAAAAAAAQBBAAAAAgAAAAAAAQBRAAAAAwARAAAAAQAhAAAABgAAAAAAAQBRAAAABgARAAAAAQAxAAAACwAAAAAABgARAAAABgAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAQAAAAAAAQBBAAAAAwARAAAACwAAAAAABgARAAAABgAAAAAAAgARAAAAAQAhAAAAAwAAAAAAAQBBAAAAAgARAAAACwAAAAAAAQAhAAAAAgAAAAAAAQBBAAAAAgARAAAABgAAAAAAAgARAAAAAQAxAAAABAAAAAAAAgARAAAAAQAxAAAADgAAAAAAAgARAAAABgAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAwAAAAAAAwARAAAAAQAxAAAADAAAAAAAAQBRAAAAAgARAAAABwAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAgAAAAAABAARAAAAAQAxAAAACAAAAAAA"
+    },
+    {
+      "regionX": 102,
+      "regionY": 103,
+      "obstacleRleBase64": "BQARAAAAAQAhAAAACAAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQAAAAAABgARAAAAFgAAAAAAAQBBAAAACQARAAAAFwAAAAAAAQBBAAAACAARAAAAGAAAAAAAAQBBAAAABwARAAAAAQAxAAAAGQAAAAAAAQBBAAAABgARAAAAAQAxAAAAGQAAAAAAAQBBAAAABgARAAAAAQAxAAAAGQAAAAAAAQBBAAAACgARAAAAFgAAAAAAAQBBAAAACQARAAAAFwAAAAAAAQBBAAAACAARAAAAGAAAAAAAAQBBAAAABQARAAAAAQAhAAAAGgAAAAAAAQBBAAAABAARAAAAAQAxAAAAAQBRAAAAHAAAAAAAAQBBAAAAAwARAAAAHQAAAAAAAQBBAAAAAQARAAAAAQAhAAAAYAAAAAAA"
+    },
+    {
+      "regionX": 94,
+      "regionY": 104,
+      "obstacleRleBase64": "wAEAAAAAAQARAAAAAQAxAAAAHgAAAAAAAgARAAAAAQAxAAAAHQAAAAAA"
+    },
+    {
+      "regionX": 95,
+      "regionY": 104,
+      "obstacleRleBase64": "AQBBAAAABAARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAgARAAAAHQAAAAAAAQBRAAAAAgARAAAAAQAxAAAAHAAAAAAABQARAAAAAQAxAAAAGgAAAAAABgARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAwARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAgARAAAAHQAAAAAAAQBRAAAAAgARAAAAHAAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGgAAAAAAAQBRAAAAAwARAAAAAQAhAAAAGgAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAHAAAAAAAAgARAAAAAQAhAAAAHAAAAAAA"
+    },
+    {
+      "regionX": 96,
+      "regionY": 104,
+      "obstacleRleBase64": "AQAAAAAAAgARAAAAHQAAAAAAAQBRAAAAAgARAAAAHQAAAAAAAgARAAAAAQAhAAAAHQAAAAAAAQBBAAAAAQARAAAAAQAxAAAAHgAAAAAAAwARAAAAHQAAAAAAAwARAAAAHQAAAAAAAwARAAAAHgAAAAAAAQBBAAAAAQARAAAAAQAxAAAAHgAAAAAAAgARAAAAHgAAAAAAAQBBAAAAAQARAAAAHgAAAAAAAQBRAAAAAQARAAAAHAAAAAAAAQBRAAAAAwARAAAAGwAAAAAAAwARAAAAAQAhAAAAHAAAAAAAAgARAAAAAQAhAAAAHQAAAAAAAgARAAAAHgAAAAAAAgARAAAAHgAAAAAA"
+    },
+    {
+      "regionX": 97,
+      "regionY": 104,
+      "obstacleRleBase64": "AgARAAAAHgAAAAAAAgARAAAAHgAAAAAAAQARAAAAAQAhAAAAvgEAAAAA"
+    },
+    {
+      "regionX": 100,
+      "regionY": 104,
+      "obstacleRleBase64": "AQARAAAAHwAAAAAAAQARAAAAHwAAAAAAAQARAAAAHwAAAAAAAQARAAAAHwAAAAAAAQAhAAAAfwEAAAAA"
+    },
+    {
+      "regionX": 101,
+      "regionY": 104,
+      "obstacleRleBase64": "AAEAAAAAAQARAAAAAQAxAAAAHgAAAAAAAgARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAgARAAAAAQAxAAAAHQAAAAAAAQBBAAAABAARAAAAHgAAAAAAAQBBAAAAAQARAAAAAQAxAAAAHgAAAAAAAgARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAwARAAAAAQAxAAAAHAAAAAAAAQBBAAAABAARAAAAFQAAAAAA"
+    },
+    {
+      "regionX": 102,
+      "regionY": 104,
+      "obstacleRleBase64": "BwAAAAAAAgARAAAAAQAhAAAAHQAAAAAAAgARAAAAAQAxAAAAHQAAAAAAAwARAAAAGwAAAAAAAQBRAAAAAwARAAAAAQAhAAAAGgAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGgAAAAAAAQBRAAAAAwARAAAAAQAhAAAAGQAAAAAABAARAAAAAQAhAAAAGwAAAAAABAARAAAAHAAAAAAAAQARAAAAAQAhAAAAAQBBAAAAAQARAAAAHgAAAAAAAQBRAAAAAQARAAAAHAAAAAAABAARAAAAHAAAAAAAAwARAAAAAQAhAAAAnAAAAAAA"
+    }
+  ],
+  "portals": [
+    {
+      "trapId": 426269026,
+      "code": "portal-to-tuyet-bao-dong-tang-1",
+      "spawnSource": "regionDat",
+      "scriptPath": "\\script\\Î÷±±±±Çø\\Ò©Íõ¹È\\Ñ©±ª¶´ËÄ²ã\\trap\\Ñ©±ª¶´ËÄ²ã1toÑ©±ª¶´Ò»²ã3.lua",
+      "action": "teleport",
+      "targetMapId": 145,
+      "targetMpsX": 50016,
+      "targetMpsY": 103840,
+      "targetFightMode": 1,
+      "triggerCells": [
+        {
+          "regionX": 102,
+          "regionY": 103,
+          "cellY": 25,
+          "startCellX": 2,
+          "cellCount": 2
+        },
+        {
+          "regionX": 102,
+          "regionY": 103,
+          "cellY": 26,
+          "startCellX": 2,
+          "cellCount": 2
+        },
+        {
+          "regionX": 102,
+          "regionY": 103,
+          "cellY": 27,
+          "startCellX": 3,
+          "cellCount": 3
+        },
+        {
+          "regionX": 102,
+          "regionY": 103,
+          "cellY": 28,
+          "startCellX": 4,
+          "cellCount": 2
+        },
+        {
+          "regionX": 102,
+          "regionY": 103,
+          "cellY": 29,
+          "startCellX": 5,
+          "cellCount": 1
+        }
+      ]
+    },
+    {
+      "trapId": 1644172024,
+      "code": "portal-to-tuyet-bao-dong-tang-8",
+      "spawnSource": "regionDat",
+      "scriptPath": "\\script\\Î÷±±±±Çø\\Ò©Íõ¹È\\Ñ©±ª¶´ËÄ²ã\\trap\\Ñ©±ª¶´ËÄ²ã4toÑ©±ª¶´°Ë²ã1.lua",
+      "action": "teleport",
+      "targetMapId": 152,
+      "targetMpsX": 53600,
+      "targetMpsY": 107680,
+      "targetFightMode": 1,
+      "triggerCells": [
+        {
+          "regionX": 99,
+          "regionY": 100,
+          "cellY": 9,
+          "startCellX": 7,
+          "cellCount": 2
+        },
+        {
+          "regionX": 99,
+          "regionY": 100,
+          "cellY": 10,
+          "startCellX": 6,
+          "cellCount": 3
+        },
+        {
+          "regionX": 99,
+          "regionY": 100,
+          "cellY": 11,
+          "startCellX": 6,
+          "cellCount": 2
+        },
+        {
+          "regionX": 99,
+          "regionY": 100,
+          "cellY": 12,
+          "startCellX": 6,
+          "cellCount": 1
+        },
+        {
+          "regionX": 99,
+          "regionY": 100,
+          "cellY": 13,
+          "startCellX": 6,
+          "cellCount": 1
+        }
+      ]
+    },
+    {
+      "trapId": 1658721959,
+      "code": "portal-to-tuyet-bao-dong-tang-3",
+      "spawnSource": "regionDat",
+      "scriptPath": "\\script\\Î÷±±±±Çø\\Ò©Íõ¹È\\Ñ©±ª¶´ËÄ²ã\\trap\\Ñ©±ª¶´ËÄ²ã2toÑ©±ª¶´Èý²ã1.lua",
+      "action": "teleport",
+      "targetMapId": 147,
+      "targetMpsX": 52160,
+      "targetMpsY": 106336,
+      "targetFightMode": 1,
+      "triggerCells": [
+        {
+          "regionX": 95,
+          "regionY": 101,
+          "cellY": 31,
+          "startCellX": 3,
+          "cellCount": 1
+        },
+        {
+          "regionX": 95,
+          "regionY": 102,
+          "cellY": 0,
+          "startCellX": 2,
+          "cellCount": 3
+        },
+        {
+          "regionX": 95,
+          "regionY": 102,
+          "cellY": 1,
+          "startCellX": 1,
+          "cellCount": 3
+        },
+        {
+          "regionX": 95,
+          "regionY": 102,
+          "cellY": 2,
+          "startCellX": 0,
+          "cellCount": 3
+        },
+        {
+          "regionX": 95,
+          "regionY": 102,
+          "cellY": 3,
+          "startCellX": 0,
+          "cellCount": 2
+        },
+        {
+          "regionX": 95,
+          "regionY": 102,
+          "cellY": 4,
+          "startCellX": 0,
+          "cellCount": 1
+        }
+      ]
+    },
+    {
+      "trapId": 2413907215,
+      "code": "portal-to-tuyet-bao-dong-tang-2",
+      "spawnSource": "regionDat",
+      "scriptPath": "\\script\\Î÷±±±±Çø\\Ò©Íõ¹È\\Ñ©±ª¶´ËÄ²ã\\trap\\Ñ©±ª¶´ËÄ²ã3toÑ©±ª¶´¶þ²ã1.lua",
+      "action": "teleport",
+      "targetMapId": 146,
+      "targetMpsX": 52160,
+      "targetMpsY": 106400,
+      "targetFightMode": 1,
+      "triggerCells": [
+        {
+          "regionX": 97,
+          "regionY": 101,
+          "cellY": 2,
+          "startCellX": 11,
+          "cellCount": 1
+        },
+        {
+          "regionX": 97,
+          "regionY": 101,
+          "cellY": 3,
+          "startCellX": 10,
+          "cellCount": 2
+        },
+        {
+          "regionX": 97,
+          "regionY": 101,
+          "cellY": 4,
+          "startCellX": 9,
+          "cellCount": 3
+        },
+        {
+          "regionX": 97,
+          "regionY": 101,
+          "cellY": 5,
+          "startCellX": 8,
+          "cellCount": 3
+        },
+        {
+          "regionX": 97,
+          "regionY": 101,
+          "cellY": 6,
+          "startCellX": 8,
+          "cellCount": 2
+        }
+      ]
+    }
+  ],
+  "spawnGroups": [
+    {
+      "npcTemplateId": 146,
+      "npcCode": "trung-nguyen-son-tac-dau-linh-146",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 67,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51968,
+          "mpsY": 105516
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 146,
+      "npcCode": "trung-nguyen-son-tac-dau-linh-146",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 68,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50324,
+          "mpsY": 104179
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 146,
+      "npcCode": "trung-nguyen-son-tac-dau-linh-146",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 68,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50470,
+          "mpsY": 104226
+        },
+        {
+          "mpsX": 51510,
+          "mpsY": 104389
+        },
+        {
+          "mpsX": 49012,
+          "mpsY": 105536
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 146,
+      "npcCode": "trung-nguyen-son-tac-dau-linh-146",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 68,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51592,
+          "mpsY": 104089
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 151,
+      "npcCode": "tay-nam-son-tac-1",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 61,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51746,
+          "mpsY": 103034
+        },
+        {
+          "mpsX": 51072,
+          "mpsY": 103648
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 151,
+      "npcCode": "tay-nam-son-tac-1",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 61,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49462,
+          "mpsY": 106476
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 151,
+      "npcCode": "tay-nam-son-tac-1",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 62,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51871,
+          "mpsY": 102865
+        },
+        {
+          "mpsX": 49076,
+          "mpsY": 105069
+        },
+        {
+          "mpsX": 50453,
+          "mpsY": 105158
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 151,
+      "npcCode": "tay-nam-son-tac-1",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 62,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51381,
+          "mpsY": 106214
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 151,
+      "npcCode": "tay-nam-son-tac-1",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 63,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52343,
+          "mpsY": 103161
+        },
+        {
+          "mpsX": 51740,
+          "mpsY": 103816
+        },
+        {
+          "mpsX": 49518,
+          "mpsY": 105155
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 151,
+      "npcCode": "tay-nam-son-tac-1",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 63,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49672,
+          "mpsY": 105076
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "trung-nguyen-son-tac-2",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 64,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52373,
+          "mpsY": 103003
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "trung-nguyen-son-tac-2",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 64,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52195,
+          "mpsY": 103456
+        },
+        {
+          "mpsX": 48876,
+          "mpsY": 105277
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "trung-nguyen-son-tac-2",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 65,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50016,
+          "mpsY": 103584
+        },
+        {
+          "mpsX": 51168,
+          "mpsY": 103520
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "trung-nguyen-son-tac-2",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 65,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50605,
+          "mpsY": 105171
+        },
+        {
+          "mpsX": 51810,
+          "mpsY": 105350
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "trung-nguyen-son-tac-2",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 65,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48704,
+          "mpsY": 106368
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "trung-nguyen-son-tac-2",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 65,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49504,
+          "mpsY": 106176
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "trung-nguyen-son-tac-2",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 66,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52106,
+          "mpsY": 103595
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "trung-nguyen-son-tac-2",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 66,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 48901,
+          "mpsY": 105046
+        },
+        {
+          "mpsX": 48840,
+          "mpsY": 106456
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "trung-nguyen-son-tac-2",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 66,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49113,
+          "mpsY": 105308
+        },
+        {
+          "mpsX": 49644,
+          "mpsY": 105356
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 162,
+      "npcCode": "trung-nguyen-son-tac-2",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 66,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51208,
+          "mpsY": 106189
+        }
+      ]
+    }
+  ]
+}

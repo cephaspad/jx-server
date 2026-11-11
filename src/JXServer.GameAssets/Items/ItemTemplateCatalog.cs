@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Frozen;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,14 +19,17 @@ namespace JXServer.GameAssets.Items;
 public sealed class ItemTemplateCatalog : IItemTemplateCatalog
 {
     private readonly FrozenDictionary<string, ItemTemplate> _itemsByCode;
+    private readonly FrozenDictionary<(ItemQualityKind Quality, int RowId), ItemTemplate> _itemsByQualityAndRowId;
     private readonly FrozenDictionary<(ItemGenreKind Genre, int Detail, int Particular, byte Level, ItemQualityKind Quality), ItemTemplate> _itemsByTuple;
-    private readonly FrozenDictionary<int, MagicAffixTemplate> _affixesById;
+    private readonly FrozenDictionary<(string Pool, int RowId), MagicAffixTemplate> _affixesByPoolAndId;
+    private readonly IReadOnlyList<MagicAffixTemplate> _blueAffixes;
     private readonly IReadOnlyList<MagicAffixTemplate> _allAffixes;
     private readonly FrozenDictionary<int, GroundObjectTemplate> _groundObjectsById;
+    private readonly ConcurrentDictionary<(bool IsSuffix, int Detail, int Particular, ElementSeries Series, int MaxLevel), IReadOnlyList<MagicAffixTemplate>> _candidateCache = new();
 
     public int ItemCount => _itemsByCode.Count;
 
-    public int MagicAffixCount => _affixesById.Count;
+    public int MagicAffixCount => _allAffixes.Count;
 
     public IReadOnlyCollection<ItemTemplate> AllItems => _itemsByCode.Values;
 
@@ -42,6 +46,7 @@ public sealed class ItemTemplateCatalog : IItemTemplateCatalog
         IReadOnlyList<MagicAffixTemplate> affixes;
         IReadOnlyList<GroundObjectTemplate> groundObjs;
         string sourceTier;
+        bool loadedFromBundle = false;
 
         if (GameAssetsSnapshotLoader.TryLoadBundle(options.Value, out GameAssetsSnapshotBundle? bundle, out sourceTier) &&
             bundle is not null &&
@@ -50,6 +55,7 @@ public sealed class ItemTemplateCatalog : IItemTemplateCatalog
             items = bundle.Items;
             affixes = bundle.MagicAffixes;
             groundObjs = bundle.GroundObjects;
+            loadedFromBundle = true;
         }
         else
         {
@@ -60,28 +66,42 @@ public sealed class ItemTemplateCatalog : IItemTemplateCatalog
         }
 
         var byCode = new Dictionary<string, ItemTemplate>(StringComparer.OrdinalIgnoreCase);
+        var byQualityAndRowId = new Dictionary<(ItemQualityKind, int), ItemTemplate>();
         var byTuple = new Dictionary<(ItemGenreKind, int, int, byte, ItemQualityKind), ItemTemplate>();
         foreach (ItemTemplate item in items)
         {
             byCode[item.Code] = item;
-            byTuple[(item.Genre, item.DetailType, item.ParticularType, item.Level, item.Quality)] = item;
+            if (item.Quality != ItemQualityKind.Normal || !byQualityAndRowId.ContainsKey((item.Quality, item.Id)))
+            {
+                byQualityAndRowId[(item.Quality, item.Id)] = item;
+            }
+
+            byTuple.TryAdd((item.Genre, item.DetailType, item.ParticularType, item.Level, item.Quality), item);
         }
 
-        foreach (ItemTemplate fallback in CreateDefaultItems())
+        if (!loadedFromBundle || items.Count < 50)
         {
-            byCode.TryAdd(fallback.Code, fallback);
-            byTuple.TryAdd((fallback.Genre, fallback.DetailType, fallback.ParticularType, fallback.Level, fallback.Quality), fallback);
+            foreach (ItemTemplate fallback in CreateDefaultItems())
+            {
+                byCode.TryAdd(fallback.Code, fallback);
+                byQualityAndRowId.TryAdd((fallback.Quality, fallback.Id), fallback);
+                byTuple.TryAdd((fallback.Genre, fallback.DetailType, fallback.ParticularType, fallback.Level, fallback.Quality), fallback);
+            }
         }
 
-        var affById = new Dictionary<int, MagicAffixTemplate>();
+        var affByPoolAndId = new Dictionary<(string Pool, int RowId), MagicAffixTemplate>();
         foreach (MagicAffixTemplate ma in affixes)
         {
-            affById[ma.Id] = ma;
+            string poolKey = NormalizePoolKey(ma.AffixPool);
+            affByPoolAndId[(poolKey, ma.Id)] = ma;
         }
 
-        foreach (MagicAffixTemplate fallbackAff in CreateDefaultMagicAffixes())
+        if (!loadedFromBundle || affixes.Count == 0)
         {
-            affById.TryAdd(fallbackAff.Id, fallbackAff);
+            foreach (MagicAffixTemplate fallbackAff in CreateDefaultMagicAffixes())
+            {
+                affByPoolAndId.TryAdd((NormalizePoolKey(fallbackAff.AffixPool), fallbackAff.Id), fallbackAff);
+            }
         }
 
         var goById = new Dictionary<int, GroundObjectTemplate>();
@@ -90,22 +110,54 @@ public sealed class ItemTemplateCatalog : IItemTemplateCatalog
             goById[go.Id] = go;
         }
 
-        foreach (GroundObjectTemplate fallbackGo in CreateDefaultGroundObjects())
+        if (!loadedFromBundle || groundObjs.Count == 0)
         {
-            goById.TryAdd(fallbackGo.Id, fallbackGo);
+            foreach (GroundObjectTemplate fallbackGo in CreateDefaultGroundObjects())
+            {
+                goById.TryAdd(fallbackGo.Id, fallbackGo);
+            }
         }
 
         _itemsByCode = byCode.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
+        _itemsByQualityAndRowId = byQualityAndRowId.ToFrozenDictionary();
         _itemsByTuple = byTuple.ToFrozenDictionary();
-        _affixesById = affById.ToFrozenDictionary();
-        _allAffixes = _affixesById.Values.OrderBy(a => a.Id).ToArray();
+        _affixesByPoolAndId = affByPoolAndId.ToFrozenDictionary();
+        _allAffixes = _affixesByPoolAndId.Values
+            .OrderBy(a => a.AffixPool, StringComparer.Ordinal)
+            .ThenBy(a => a.Id)
+            .ToArray();
+        _blueAffixes = _allAffixes
+            .Where(a => string.Equals(NormalizePoolKey(a.AffixPool), "bluerandom", StringComparison.Ordinal))
+            .OrderBy(a => a.Id)
+            .ToArray();
         _groundObjectsById = goById.ToFrozenDictionary();
 
-        GameAssetsLogMessages.LogItemCatalogLoaded(logger, _itemsByCode.Count, _affixesById.Count, sourceTier);
+        GameAssetsLogMessages.LogItemCatalogLoaded(logger, _itemsByCode.Count, _allAffixes.Count, sourceTier);
     }
 
-    public bool TryGetItemByCode(string code, out ItemTemplate? item) =>
-        _itemsByCode.TryGetValue(code, out item);
+    public bool TryGetItemByCode(string code, out ItemTemplate? item)
+    {
+        if (_itemsByCode.TryGetValue(code, out item))
+        {
+            return true;
+        }
+
+        if (string.Equals(code, "kim-sang-duoc", StringComparison.OrdinalIgnoreCase))
+        {
+            return _itemsByCode.TryGetValue("kim-sang-duoc-tieu", out item);
+        }
+
+        if (string.Equals(code, "ngung-than-dan", StringComparison.OrdinalIgnoreCase))
+        {
+            return _itemsByCode.TryGetValue("ngung-than-dan-tieu", out item);
+        }
+
+        item = null;
+        return false;
+    }
+
+    public bool TryGetItemByRowId(ItemQualityKind quality, int rowId, out ItemTemplate? item) =>
+        _itemsByQualityAndRowId.TryGetValue((quality, rowId), out item);
 
     public bool TryGetItem(
         ItemGenreKind genre,
@@ -120,8 +172,9 @@ public sealed class ItemTemplateCatalog : IItemTemplateCatalog
             return true;
         }
 
-        // Fallback to Level 1 of the same (Genre, DetailType, ParticularType) if exact level is not in catalog
-        return _itemsByTuple.TryGetValue((genre, detailType, particularType, 1, quality), out item);
+        // Fallback to Level 1 or Level 0 of the same (Genre, DetailType, ParticularType) if exact level is not in catalog
+        return _itemsByTuple.TryGetValue((genre, detailType, particularType, 1, quality), out item)
+            || _itemsByTuple.TryGetValue((genre, detailType, particularType, 0, quality), out item);
     }
 
     public IReadOnlyList<MagicAffixTemplate> GetCandidateMagicAffixes(
@@ -131,10 +184,23 @@ public sealed class ItemTemplateCatalog : IItemTemplateCatalog
         ElementSeries series,
         int maxLevel)
     {
-        var candidates = new List<MagicAffixTemplate>();
-        foreach (MagicAffixTemplate ma in _allAffixes)
+        (int normDetail, int normParticular) = NormalizeEquipBucket(equipDetailType, weaponParticularType);
+        if (normDetail < 0)
         {
-            if (ma.IsGoldenOnly || ma.IsSuffix != isSuffix || ma.Level > maxLevel)
+            return [];
+        }
+
+        int clampedLevel = Math.Clamp(maxLevel, 0, 30);
+        var key = (isSuffix, normDetail, normParticular, series, clampedLevel);
+        if (_candidateCache.TryGetValue(key, out IReadOnlyList<MagicAffixTemplate>? cached))
+        {
+            return cached;
+        }
+
+        var candidates = new List<MagicAffixTemplate>();
+        foreach (MagicAffixTemplate ma in _blueAffixes)
+        {
+            if (ma.IsGoldenOnly || ma.IsSuffix != isSuffix || ma.Level > clampedLevel)
             {
                 continue;
             }
@@ -144,7 +210,7 @@ public sealed class ItemTemplateCatalog : IItemTemplateCatalog
                 continue;
             }
 
-            int equipWeight = ma.WeightsByEquipPart.GetWeightForEquip(equipDetailType, weaponParticularType);
+            int equipWeight = ma.WeightsByEquipPart.GetWeightForEquip(normDetail, normParticular);
             int seriesWeight = ma.WeightsBySeries.GetWeight(series);
             if (equipWeight > 0 && seriesWeight > 0 && ma.DropWeight > 0)
             {
@@ -152,14 +218,28 @@ public sealed class ItemTemplateCatalog : IItemTemplateCatalog
             }
         }
 
-        return candidates;
+        IReadOnlyList<MagicAffixTemplate> frozen = candidates.ToArray();
+        _candidateCache.TryAdd(key, frozen);
+        return frozen;
     }
 
-    public bool TryGetMagicAffixById(int affixRowId, out MagicAffixTemplate? affix) =>
-        _affixesById.TryGetValue(affixRowId, out affix);
+    private static (int Detail, int Particular) NormalizeEquipBucket(int detailType, int particularType) =>
+        detailType switch
+        {
+            0 => (0, particularType is >= 0 and <= 5 ? particularType : 0),
+            1 => (1, particularType is >= 0 and <= 2 ? particularType : 0),
+            >= 2 and <= 10 => (detailType, 0),
+            _ => (-1, 0),
+        };
+
+    public bool TryGetMagicAffixById(int affixRowId, out MagicAffixTemplate? affix, string affixPool = "blueRandom") =>
+        _affixesByPoolAndId.TryGetValue((NormalizePoolKey(affixPool), affixRowId), out affix);
 
     public bool TryGetGroundObject(int objDataId, out GroundObjectTemplate? objTemplate) =>
         _groundObjectsById.TryGetValue(objDataId, out objTemplate);
+
+    private static string NormalizePoolKey(string? affixPool) =>
+        string.IsNullOrWhiteSpace(affixPool) ? "bluerandom" : affixPool.Trim().ToLowerInvariant();
 
     public static IReadOnlyList<ItemTemplate> CreateDefaultItems() =>
     [

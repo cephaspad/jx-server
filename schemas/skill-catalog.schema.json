@@ -3,7 +3,13 @@
   "$id": "https://jxserver.local/schemas/skill-catalog.schema.json",
   "title": "JXData Standard v1 - Skill & Missile Catalog",
   "type": "object",
-  "required": ["schemaVersion", "skills", "missiles"],
+  "required": ["schemaVersion"],
+  "anyOf": [
+    { "required": ["skills"] },
+    { "required": ["missiles"] },
+    { "required": ["weaponSkillMappings"] },
+    { "required": ["attributeConstRules"] }
+  ],
   "properties": {
     "$schema": { "type": "string" },
     "schemaVersion": { "type": "string", "const": "1.0.0" },
@@ -54,8 +60,8 @@
             "enum": ["both", "leftOnly", "rightOnly", "none"],
             "default": "both"
           },
-          "reqLevel": { "type": "integer", "minimum": 0, "default": 0 },
-          "maxLevel": { "type": "integer", "minimum": 1, "maximum": 64, "default": 20 },
+          "reqLevel": { "type": "integer", "minimum": -2, "default": 0 },
+          "maxLevel": { "type": "integer", "minimum": 0, "maximum": 64, "default": 20 },
           "equipLimit": { "type": "integer", "minimum": -2, "default": -2 },
           "horseLimit": { "type": "integer", "enum": [0, 1, 2], "default": 0 },
           "castRangeMps": { "type": "integer", "minimum": 0 },
@@ -111,14 +117,14 @@
             "properties": {
               "eventSkillLevel": { "type": "integer", "minimum": -1, "default": 0 },
               "onStartSkillId": { "type": "integer", "minimum": 0, "default": 0 },
-              "onStartMinParentLevel": { "type": "integer", "minimum": 1, "default": 1 },
+              "onStartMinParentLevel": { "type": "integer", "minimum": 0, "default": 0 },
               "onFlySkillId": { "type": "integer", "minimum": 0, "default": 0 },
               "onFlyIntervalFrames": { "type": "integer", "minimum": 0, "default": 0 },
-              "onFlyMinParentLevel": { "type": "integer", "minimum": 1, "default": 1 },
+              "onFlyMinParentLevel": { "type": "integer", "minimum": 0, "default": 0 },
               "onCollideSkillId": { "type": "integer", "minimum": 0, "default": 0 },
-              "onCollideMinParentLevel": { "type": "integer", "minimum": 1, "default": 1 },
+              "onCollideMinParentLevel": { "type": "integer", "minimum": 0, "default": 0 },
               "onVanishSkillId": { "type": "integer", "minimum": 0, "default": 0 },
-              "onVanishMinParentLevel": { "type": "integer", "minimum": 1, "default": 1 }
+              "onVanishMinParentLevel": { "type": "integer", "minimum": 0, "default": 0 }
             },
             "additionalProperties": false
           },
@@ -237,7 +243,8 @@
               "parabola",
               "singleLine",
               "rollBack",
-              "toss"
+              "toss",
+              "custom"
             ]
           },
           "followKind": {
@@ -250,8 +257,8 @@
           "heightMps": { "type": "integer", "minimum": 0, "default": 0 },
           "zSpeedMpsPerFrame": { "type": "integer", "default": 0 },
           "zAccelMpsPerFrame2": { "type": "integer", "default": 0 },
-          "lifeFrames": { "type": "integer", "minimum": 1 },
-          "hitRadiusMps": { "type": "integer", "minimum": 1 },
+          "lifeFrames": { "type": "integer", "minimum": 0 },
+          "hitRadiusMps": { "type": "integer", "minimum": 0 },
           "collideRadiusCells": { "type": "integer", "minimum": 0, "default": 1 },
           "damageRadiusCells": { "type": "integer", "minimum": 0, "default": 1 },
           "isRangeDamage": { "type": "boolean", "default": false },

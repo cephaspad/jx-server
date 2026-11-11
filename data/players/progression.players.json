@@ -1,0 +1,4429 @@
+{
+  "$schema": "../../schemas/player-template.schema.json",
+  "schemaVersion": "1.0.0",
+  "characterTemplates": [
+    {
+      "id": 0,
+      "code": "starter-metal-male",
+      "elementSeries": 0,
+      "gender": 0,
+      "baseStrength": 35,
+      "baseDexterity": 25,
+      "baseVitality": 25,
+      "baseEnergy": 15,
+      "baseLucky": 0,
+      "initialLifeMax": 204,
+      "initialManaMax": 16,
+      "initialStaminaMax": 100,
+      "starterSkills": [
+        {
+          "skillId": 53,
+          "skillCode": "cong-kich-vat-ly-53",
+          "level": 1
+        },
+        {
+          "skillId": 1,
+          "skillCode": "cong-kich-vat-ly-1",
+          "level": 1
+        },
+        {
+          "skillId": 2,
+          "skillCode": "cong-kich-vat-ly-gan",
+          "level": 1
+        },
+        {
+          "skillId": 229,
+          "skillCode": "cong-kich-con-bong",
+          "level": 1
+        },
+        {
+          "skillId": 230,
+          "skillCode": "cong-kich-song-chuy",
+          "level": 1
+        },
+        {
+          "skillId": 231,
+          "skillCode": "cong-kich-tay-khong",
+          "level": 1
+        },
+        {
+          "skillId": 232,
+          "skillCode": "song-daocong-kich",
+          "level": 1
+        }
+      ],
+      "starterItems": [
+        {
+          "itemCode": "kim-sang-duoc-tieu",
+          "container": "immediacy",
+          "gridX": 0,
+          "gridY": 0,
+          "stackCount": 5
+        },
+        {
+          "itemCode": "ngung-than-dan-tieu",
+          "container": "immediacy",
+          "gridX": 1,
+          "gridY": 0,
+          "stackCount": 5
+        },
+        {
+          "itemCode": "tho-dia-phu",
+          "container": "immediacy",
+          "gridX": 2,
+          "gridY": 0,
+          "stackCount": 1
+        },
+        {
+          "itemCode": "toan-dau-chuy",
+          "container": "equipRoom",
+          "gridX": 0,
+          "gridY": 0,
+          "stackCount": 1
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "code": "starter-metal-female",
+      "elementSeries": 0,
+      "gender": 1,
+      "baseStrength": 35,
+      "baseDexterity": 25,
+      "baseVitality": 25,
+      "baseEnergy": 15,
+      "baseLucky": 0,
+      "initialLifeMax": 204,
+      "initialManaMax": 16,
+      "initialStaminaMax": 100,
+      "starterSkills": [
+        {
+          "skillId": 53,
+          "skillCode": "cong-kich-vat-ly-53",
+          "level": 1
+        },
+        {
+          "skillId": 1,
+          "skillCode": "cong-kich-vat-ly-1",
+          "level": 1
+        },
+        {
+          "skillId": 2,
+          "skillCode": "cong-kich-vat-ly-gan",
+          "level": 1
+        },
+        {
+          "skillId": 229,
+          "skillCode": "cong-kich-con-bong",
+          "level": 1
+        },
+        {
+          "skillId": 230,
+          "skillCode": "cong-kich-song-chuy",
+          "level": 1
+        },
+        {
+          "skillId": 231,
+          "skillCode": "cong-kich-tay-khong",
+          "level": 1
+        },
+        {
+          "skillId": 232,
+          "skillCode": "song-daocong-kich",
+          "level": 1
+        }
+      ],
+      "starterItems": [
+        {
+          "itemCode": "kim-sang-duoc-tieu",
+          "container": "immediacy",
+          "gridX": 0,
+          "gridY": 0,
+          "stackCount": 5
+        },
+        {
+          "itemCode": "ngung-than-dan-tieu",
+          "container": "immediacy",
+          "gridX": 1,
+          "gridY": 0,
+          "stackCount": 5
+        },
+        {
+          "itemCode": "tho-dia-phu",
+          "container": "immediacy",
+          "gridX": 2,
+          "gridY": 0,
+          "stackCount": 1
+        },
+        {
+          "itemCode": "thiet-thuong",
+          "container": "equipRoom",
+          "gridX": 0,
+          "gridY": 0,
+          "stackCount": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "code": "starter-wood-male",
+      "elementSeries": 1,
+      "gender": 0,
+      "baseStrength": 20,
+      "baseDexterity": 35,
+      "baseVitality": 20,
+      "baseEnergy": 25,
+      "baseLucky": 0,
+      "initialLifeMax": 103,
+      "initialManaMax": 77,
+      "initialStaminaMax": 100,
+      "starterSkills": [
+        {
+          "skillId": 53,
+          "skillCode": "cong-kich-vat-ly-53",
+          "level": 1
+        },
+        {
+          "skillId": 1,
+          "skillCode": "cong-kich-vat-ly-1",
+          "level": 1
+        },
+        {
+          "skillId": 2,
+          "skillCode": "cong-kich-vat-ly-gan",
+          "level": 1
+        },
+        {
+          "skillId": 229,
+          "skillCode": "cong-kich-con-bong",
+          "level": 1
+        },
+        {
+          "skillId": 230,
+          "skillCode": "cong-kich-song-chuy",
+          "level": 1
+        },
+        {
+          "skillId": 231,
+          "skillCode": "cong-kich-tay-khong",
+          "level": 1
+        },
+        {
+          "skillId": 232,
+          "skillCode": "song-daocong-kich",
+          "level": 1
+        }
+      ],
+      "starterItems": [
+        {
+          "itemCode": "kim-sang-duoc-tieu",
+          "container": "immediacy",
+          "gridX": 0,
+          "gridY": 0,
+          "stackCount": 5
+        },
+        {
+          "itemCode": "ngung-than-dan-tieu",
+          "container": "immediacy",
+          "gridX": 1,
+          "gridY": 0,
+          "stackCount": 5
+        },
+        {
+          "itemCode": "tho-dia-phu",
+          "container": "immediacy",
+          "gridX": 2,
+          "gridY": 0,
+          "stackCount": 1
+        },
+        {
+          "itemCode": "phi-dao",
+          "container": "equipRoom",
+          "gridX": 0,
+          "gridY": 0,
+          "stackCount": 1
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "code": "starter-wood-female",
+      "elementSeries": 1,
+      "gender": 1,
+      "baseStrength": 20,
+      "baseDexterity": 35,
+      "baseVitality": 20,
+      "baseEnergy": 25,
+      "baseLucky": 0,
+      "initialLifeMax": 103,
+      "initialManaMax": 77,
+      "initialStaminaMax": 100,
+      "starterSkills": [
+        {
+          "skillId": 53,
+          "skillCode": "cong-kich-vat-ly-53",
+          "level": 1
+        },
+        {
+          "skillId": 1,
+          "skillCode": "cong-kich-vat-ly-1",
+          "level": 1
+        },
+        {
+          "skillId": 2,
+          "skillCode": "cong-kich-vat-ly-gan",
+          "level": 1
+        },
+        {
+          "skillId": 229,
+          "skillCode": "cong-kich-con-bong",
+          "level": 1
+        },
+        {
+          "skillId": 230,
+          "skillCode": "cong-kich-song-chuy",
+          "level": 1
+        },
+        {
+          "skillId": 231,
+          "skillCode": "cong-kich-tay-khong",
+          "level": 1
+        },
+        {
+          "skillId": 232,
+          "skillCode": "song-daocong-kich",
+          "level": 1
+        }
+      ],
+      "starterItems": [
+        {
+          "itemCode": "kim-sang-duoc-tieu",
+          "container": "immediacy",
+          "gridX": 0,
+          "gridY": 0,
+          "stackCount": 5
+        },
+        {
+          "itemCode": "ngung-than-dan-tieu",
+          "container": "immediacy",
+          "gridX": 1,
+          "gridY": 0,
+          "stackCount": 5
+        },
+        {
+          "itemCode": "tho-dia-phu",
+          "container": "immediacy",
+          "gridX": 2,
+          "gridY": 0,
+          "stackCount": 1
+        },
+        {
+          "itemCode": "tu-tien",
+          "container": "equipRoom",
+          "gridX": 0,
+          "gridY": 0,
+          "stackCount": 1
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "code": "starter-water-male",
+      "elementSeries": 2,
+      "gender": 0,
+      "baseStrength": 25,
+      "baseDexterity": 25,
+      "baseVitality": 25,
+      "baseEnergy": 25,
+      "baseLucky": 0,
+      "initialLifeMax": 100,
+      "initialManaMax": 200,
+      "initialStaminaMax": 100,
+      "starterSkills": [
+        {
+          "skillId": 53,
+          "skillCode": "cong-kich-vat-ly-53",
+          "level": 1
+        },
+        {
+          "skillId": 1,
+          "skillCode": "cong-kich-vat-ly-1",
+          "level": 1
+        },
+        {
+          "skillId": 2,
+          "skillCode": "cong-kich-vat-ly-gan",
+          "level": 1
+        }
+      ],
+      "starterItems": [
+        {
+          "itemCode": "kim-sang-duoc-tieu",
+          "container": "immediacy",
+          "gridX": 0,
+          "gridY": 0,
+          "stackCount": 5
+        },
+        {
+          "itemCode": "ngung-than-dan-tieu",
+          "container": "immediacy",
+          "gridX": 1,
+          "gridY": 0,
+          "stackCount": 5
+        },
+        {
+          "itemCode": "tho-dia-phu",
+          "container": "immediacy",
+          "gridX": 2,
+          "gridY": 0,
+          "stackCount": 1
+        },
+        {
+          "itemCode": "thiet-truy-thu",
+          "container": "equipRoom",
+          "gridX": 0,
+          "gridY": 0,
+          "stackCount": 1
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "code": "starter-water-female",
+      "elementSeries": 2,
+      "gender": 1,
+      "baseStrength": 25,
+      "baseDexterity": 25,
+      "baseVitality": 25,
+      "baseEnergy": 25,
+      "baseLucky": 0,
+      "initialLifeMax": 153,
+      "initialManaMax": 77,
+      "initialStaminaMax": 100,
+      "starterSkills": [
+        {
+          "skillId": 53,
+          "skillCode": "cong-kich-vat-ly-53",
+          "level": 1
+        },
+        {
+          "skillId": 1,
+          "skillCode": "cong-kich-vat-ly-1",
+          "level": 1
+        },
+        {
+          "skillId": 2,
+          "skillCode": "cong-kich-vat-ly-gan",
+          "level": 1
+        },
+        {
+          "skillId": 229,
+          "skillCode": "cong-kich-con-bong",
+          "level": 1
+        },
+        {
+          "skillId": 230,
+          "skillCode": "cong-kich-song-chuy",
+          "level": 1
+        },
+        {
+          "skillId": 231,
+          "skillCode": "cong-kich-tay-khong",
+          "level": 1
+        },
+        {
+          "skillId": 232,
+          "skillCode": "song-daocong-kich",
+          "level": 1
+        }
+      ],
+      "starterItems": [
+        {
+          "itemCode": "kim-sang-duoc-tieu",
+          "container": "immediacy",
+          "gridX": 0,
+          "gridY": 0,
+          "stackCount": 5
+        },
+        {
+          "itemCode": "ngung-than-dan-tieu",
+          "container": "immediacy",
+          "gridX": 1,
+          "gridY": 0,
+          "stackCount": 5
+        },
+        {
+          "itemCode": "tho-dia-phu",
+          "container": "immediacy",
+          "gridX": 2,
+          "gridY": 0,
+          "stackCount": 1
+        },
+        {
+          "itemCode": "nga-mi-thich",
+          "container": "equipRoom",
+          "gridX": 0,
+          "gridY": 0,
+          "stackCount": 1
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "code": "starter-fire-male",
+      "elementSeries": 3,
+      "gender": 0,
+      "baseStrength": 30,
+      "baseDexterity": 20,
+      "baseVitality": 30,
+      "baseEnergy": 20,
+      "baseLucky": 0,
+      "initialLifeMax": 213,
+      "initialManaMax": 41,
+      "initialStaminaMax": 100,
+      "starterSkills": [
+        {
+          "skillId": 53,
+          "skillCode": "cong-kich-vat-ly-53",
+          "level": 1
+        },
+        {
+          "skillId": 1,
+          "skillCode": "cong-kich-vat-ly-1",
+          "level": 1
+        },
+        {
+          "skillId": 2,
+          "skillCode": "cong-kich-vat-ly-gan",
+          "level": 1
+        },
+        {
+          "skillId": 229,
+          "skillCode": "cong-kich-con-bong",
+          "level": 1
+        },
+        {
+          "skillId": 230,
+          "skillCode": "cong-kich-song-chuy",
+          "level": 1
+        },
+        {
+          "skillId": 231,
+          "skillCode": "cong-kich-tay-khong",
+          "level": 1
+        },
+        {
+          "skillId": 232,
+          "skillCode": "song-daocong-kich",
+          "level": 1
+        }
+      ],
+      "starterItems": [
+        {
+          "itemCode": "kim-sang-duoc-tieu",
+          "container": "immediacy",
+          "gridX": 0,
+          "gridY": 0,
+          "stackCount": 5
+        },
+        {
+          "itemCode": "ngung-than-dan-tieu",
+          "container": "immediacy",
+          "gridX": 1,
+          "gridY": 0,
+          "stackCount": 5
+        },
+        {
+          "itemCode": "tho-dia-phu",
+          "container": "immediacy",
+          "gridX": 2,
+          "gridY": 0,
+          "stackCount": 1
+        },
+        {
+          "itemCode": "thieu-hoa-con",
+          "container": "equipRoom",
+          "gridX": 0,
+          "gridY": 0,
+          "stackCount": 1
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "code": "starter-fire-female",
+      "elementSeries": 3,
+      "gender": 1,
+      "baseStrength": 30,
+      "baseDexterity": 20,
+      "baseVitality": 30,
+      "baseEnergy": 20,
+      "baseLucky": 0,
+      "initialLifeMax": 213,
+      "initialManaMax": 41,
+      "initialStaminaMax": 100,
+      "starterSkills": [
+        {
+          "skillId": 53,
+          "skillCode": "cong-kich-vat-ly-53",
+          "level": 1
+        },
+        {
+          "skillId": 1,
+          "skillCode": "cong-kich-vat-ly-1",
+          "level": 1
+        },
+        {
+          "skillId": 2,
+          "skillCode": "cong-kich-vat-ly-gan",
+          "level": 1
+        },
+        {
+          "skillId": 229,
+          "skillCode": "cong-kich-con-bong",
+          "level": 1
+        },
+        {
+          "skillId": 230,
+          "skillCode": "cong-kich-song-chuy",
+          "level": 1
+        },
+        {
+          "skillId": 231,
+          "skillCode": "cong-kich-tay-khong",
+          "level": 1
+        },
+        {
+          "skillId": 232,
+          "skillCode": "song-daocong-kich",
+          "level": 1
+        }
+      ],
+      "starterItems": [
+        {
+          "itemCode": "kim-sang-duoc-tieu",
+          "container": "immediacy",
+          "gridX": 0,
+          "gridY": 0,
+          "stackCount": 5
+        },
+        {
+          "itemCode": "ngung-than-dan-tieu",
+          "container": "immediacy",
+          "gridX": 1,
+          "gridY": 0,
+          "stackCount": 5
+        },
+        {
+          "itemCode": "tho-dia-phu",
+          "container": "immediacy",
+          "gridX": 2,
+          "gridY": 0,
+          "stackCount": 1
+        },
+        {
+          "itemCode": "thiet-thuong",
+          "container": "equipRoom",
+          "gridX": 0,
+          "gridY": 0,
+          "stackCount": 1
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "code": "starter-earth-male",
+      "elementSeries": 4,
+      "gender": 0,
+      "baseStrength": 20,
+      "baseDexterity": 15,
+      "baseVitality": 25,
+      "baseEnergy": 40,
+      "baseLucky": 0,
+      "initialLifeMax": 76,
+      "initialManaMax": 163,
+      "initialStaminaMax": 100,
+      "starterSkills": [
+        {
+          "skillId": 53,
+          "skillCode": "cong-kich-vat-ly-53",
+          "level": 1
+        },
+        {
+          "skillId": 1,
+          "skillCode": "cong-kich-vat-ly-1",
+          "level": 1
+        },
+        {
+          "skillId": 2,
+          "skillCode": "cong-kich-vat-ly-gan",
+          "level": 1
+        },
+        {
+          "skillId": 229,
+          "skillCode": "cong-kich-con-bong",
+          "level": 1
+        },
+        {
+          "skillId": 230,
+          "skillCode": "cong-kich-song-chuy",
+          "level": 1
+        },
+        {
+          "skillId": 231,
+          "skillCode": "cong-kich-tay-khong",
+          "level": 1
+        },
+        {
+          "skillId": 232,
+          "skillCode": "song-daocong-kich",
+          "level": 1
+        }
+      ],
+      "starterItems": [
+        {
+          "itemCode": "kim-sang-duoc-tieu",
+          "container": "immediacy",
+          "gridX": 0,
+          "gridY": 0,
+          "stackCount": 5
+        },
+        {
+          "itemCode": "ngung-than-dan-tieu",
+          "container": "immediacy",
+          "gridX": 1,
+          "gridY": 0,
+          "stackCount": 5
+        },
+        {
+          "itemCode": "tho-dia-phu",
+          "container": "immediacy",
+          "gridX": 2,
+          "gridY": 0,
+          "stackCount": 1
+        },
+        {
+          "itemCode": "thiet-truy-thu",
+          "container": "equipRoom",
+          "gridX": 0,
+          "gridY": 0,
+          "stackCount": 1
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "code": "starter-earth-female",
+      "elementSeries": 4,
+      "gender": 1,
+      "baseStrength": 20,
+      "baseDexterity": 15,
+      "baseVitality": 25,
+      "baseEnergy": 40,
+      "baseLucky": 0,
+      "initialLifeMax": 76,
+      "initialManaMax": 163,
+      "initialStaminaMax": 100,
+      "starterSkills": [
+        {
+          "skillId": 53,
+          "skillCode": "cong-kich-vat-ly-53",
+          "level": 1
+        },
+        {
+          "skillId": 1,
+          "skillCode": "cong-kich-vat-ly-1",
+          "level": 1
+        },
+        {
+          "skillId": 2,
+          "skillCode": "cong-kich-vat-ly-gan",
+          "level": 1
+        },
+        {
+          "skillId": 229,
+          "skillCode": "cong-kich-con-bong",
+          "level": 1
+        },
+        {
+          "skillId": 230,
+          "skillCode": "cong-kich-song-chuy",
+          "level": 1
+        },
+        {
+          "skillId": 231,
+          "skillCode": "cong-kich-tay-khong",
+          "level": 1
+        },
+        {
+          "skillId": 232,
+          "skillCode": "song-daocong-kich",
+          "level": 1
+        }
+      ],
+      "starterItems": [
+        {
+          "itemCode": "kim-sang-duoc-tieu",
+          "container": "immediacy",
+          "gridX": 0,
+          "gridY": 0,
+          "stackCount": 5
+        },
+        {
+          "itemCode": "ngung-than-dan-tieu",
+          "container": "immediacy",
+          "gridX": 1,
+          "gridY": 0,
+          "stackCount": 5
+        },
+        {
+          "itemCode": "tho-dia-phu",
+          "container": "immediacy",
+          "gridX": 2,
+          "gridY": 0,
+          "stackCount": 1
+        },
+        {
+          "itemCode": "yeu-dao",
+          "container": "equipRoom",
+          "gridX": 0,
+          "gridY": 0,
+          "stackCount": 1
+        }
+      ]
+    }
+  ],
+  "seriesGrowthRules": [
+    {
+      "elementSeries": 0,
+      "code": "growth-metal",
+      "name": "hệ Kim",
+      "lifePerLevel": 4,
+      "manaPerLevel": 1,
+      "staminaMalePerLevel": 9,
+      "staminaFemalePerLevel": 8,
+      "lifePerVitality": 8,
+      "manaPerEnergy": 1,
+      "staminaPerVitality": 0,
+      "leadExpShare": 25,
+      "baseFireResist": -25,
+      "baseColdResist": 0,
+      "basePoisonResist": 25,
+      "baseLightResist": 0,
+      "basePhysicsResist": 0,
+      "staminaMaleBase": 180,
+      "staminaFemaleBase": 180,
+      "attributePointsPerLevel": 5,
+      "skillPointsPerLevel": 1
+    },
+    {
+      "elementSeries": 1,
+      "code": "growth-wood",
+      "name": "hệ Mộc",
+      "lifePerLevel": 3,
+      "manaPerLevel": 2,
+      "staminaMalePerLevel": 9,
+      "staminaFemalePerLevel": 8,
+      "lifePerVitality": 5,
+      "manaPerEnergy": 3,
+      "staminaPerVitality": 0,
+      "leadExpShare": 25,
+      "baseFireResist": 0,
+      "baseColdResist": 0,
+      "basePoisonResist": 0,
+      "baseLightResist": 25,
+      "basePhysicsResist": -15,
+      "staminaMaleBase": 180,
+      "staminaFemaleBase": 180,
+      "attributePointsPerLevel": 5,
+      "skillPointsPerLevel": 1
+    },
+    {
+      "elementSeries": 2,
+      "code": "growth-water",
+      "name": "hệ Thủy",
+      "lifePerLevel": 3,
+      "manaPerLevel": 2,
+      "staminaMalePerLevel": 9,
+      "staminaFemalePerLevel": 8,
+      "lifePerVitality": 6,
+      "manaPerEnergy": 3,
+      "staminaPerVitality": 0,
+      "leadExpShare": 25,
+      "baseFireResist": 25,
+      "baseColdResist": 0,
+      "basePoisonResist": 0,
+      "baseLightResist": -25,
+      "basePhysicsResist": 0,
+      "staminaMaleBase": 180,
+      "staminaFemaleBase": 180,
+      "attributePointsPerLevel": 5,
+      "skillPointsPerLevel": 1
+    },
+    {
+      "elementSeries": 3,
+      "code": "growth-fire",
+      "name": "hệ Hỏa",
+      "lifePerLevel": 3,
+      "manaPerLevel": 1,
+      "staminaMalePerLevel": 9,
+      "staminaFemalePerLevel": 8,
+      "lifePerVitality": 7,
+      "manaPerEnergy": 2,
+      "staminaPerVitality": 0,
+      "leadExpShare": 25,
+      "baseFireResist": 0,
+      "baseColdResist": -25,
+      "basePoisonResist": 0,
+      "baseLightResist": 0,
+      "basePhysicsResist": 15,
+      "staminaMaleBase": 180,
+      "staminaFemaleBase": 180,
+      "attributePointsPerLevel": 5,
+      "skillPointsPerLevel": 1
+    },
+    {
+      "elementSeries": 4,
+      "code": "growth-earth",
+      "name": "hệ Thổ",
+      "lifePerLevel": 1,
+      "manaPerLevel": 3,
+      "staminaMalePerLevel": 9,
+      "staminaFemalePerLevel": 8,
+      "lifePerVitality": 3,
+      "manaPerEnergy": 4,
+      "staminaPerVitality": 0,
+      "leadExpShare": 25,
+      "baseFireResist": 0,
+      "baseColdResist": 25,
+      "basePoisonResist": -25,
+      "baseLightResist": 0,
+      "basePhysicsResist": 0,
+      "staminaMaleBase": 180,
+      "staminaFemaleBase": 180,
+      "attributePointsPerLevel": 5,
+      "skillPointsPerLevel": 1
+    }
+  ],
+  "fiveElementsMatrix": {
+    "generates": [
+      2,
+      3,
+      1,
+      4,
+      0
+    ],
+    "conquers": [
+      1,
+      4,
+      3,
+      0,
+      2
+    ],
+    "conqueredDamageBonusPercent": 20,
+    "conqueredDamagePenaltyPercent": -20
+  },
+  "levelExpTable": [
+    {
+      "level": 1,
+      "expRequired": 100,
+      "leadExpRequired": 100
+    },
+    {
+      "level": 2,
+      "expRequired": 500,
+      "leadExpRequired": 1000
+    },
+    {
+      "level": 3,
+      "expRequired": 1100,
+      "leadExpRequired": 2500
+    },
+    {
+      "level": 4,
+      "expRequired": 1900,
+      "leadExpRequired": 5000
+    },
+    {
+      "level": 5,
+      "expRequired": 2900,
+      "leadExpRequired": 10000
+    },
+    {
+      "level": 6,
+      "expRequired": 4100,
+      "leadExpRequired": 18000
+    },
+    {
+      "level": 7,
+      "expRequired": 5500,
+      "leadExpRequired": 28000
+    },
+    {
+      "level": 8,
+      "expRequired": 7100,
+      "leadExpRequired": 43000
+    },
+    {
+      "level": 9,
+      "expRequired": 8900,
+      "leadExpRequired": 63000
+    },
+    {
+      "level": 10,
+      "expRequired": 10900,
+      "leadExpRequired": 93000
+    },
+    {
+      "level": 11,
+      "expRequired": 13100,
+      "leadExpRequired": 132600
+    },
+    {
+      "level": 12,
+      "expRequired": 15700,
+      "leadExpRequired": 177900
+    },
+    {
+      "level": 13,
+      "expRequired": 18700,
+      "leadExpRequired": 229400
+    },
+    {
+      "level": 14,
+      "expRequired": 22100,
+      "leadExpRequired": 287700
+    },
+    {
+      "level": 15,
+      "expRequired": 25900,
+      "leadExpRequired": 353300
+    },
+    {
+      "level": 16,
+      "expRequired": 30100,
+      "leadExpRequired": 426800
+    },
+    {
+      "level": 17,
+      "expRequired": 34700,
+      "leadExpRequired": 508800
+    },
+    {
+      "level": 18,
+      "expRequired": 39700,
+      "leadExpRequired": 599900
+    },
+    {
+      "level": 19,
+      "expRequired": 45100,
+      "leadExpRequired": 700900
+    },
+    {
+      "level": 20,
+      "expRequired": 50900,
+      "leadExpRequired": 812500
+    },
+    {
+      "level": 21,
+      "expRequired": 57100,
+      "leadExpRequired": 915100
+    },
+    {
+      "level": 22,
+      "expRequired": 63900,
+      "leadExpRequired": 1027900
+    },
+    {
+      "level": 23,
+      "expRequired": 71300,
+      "leadExpRequired": 1151800
+    },
+    {
+      "level": 24,
+      "expRequired": 79300,
+      "leadExpRequired": 1287500
+    },
+    {
+      "level": 25,
+      "expRequired": 87900,
+      "leadExpRequired": 1435900
+    },
+    {
+      "level": 26,
+      "expRequired": 97100,
+      "leadExpRequired": 1598000
+    },
+    {
+      "level": 27,
+      "expRequired": 106900,
+      "leadExpRequired": 1774800
+    },
+    {
+      "level": 28,
+      "expRequired": 117300,
+      "leadExpRequired": 1967300
+    },
+    {
+      "level": 29,
+      "expRequired": 128300,
+      "leadExpRequired": 2176600
+    },
+    {
+      "level": 30,
+      "expRequired": 139900,
+      "leadExpRequired": 2371500
+    },
+    {
+      "level": 31,
+      "expRequired": 152100,
+      "leadExpRequired": 2583000
+    },
+    {
+      "level": 32,
+      "expRequired": 165400,
+      "leadExpRequired": 2812200
+    },
+    {
+      "level": 33,
+      "expRequired": 179800,
+      "leadExpRequired": 3060400
+    },
+    {
+      "level": 34,
+      "expRequired": 195300,
+      "leadExpRequired": 3328900
+    },
+    {
+      "level": 35,
+      "expRequired": 211900,
+      "leadExpRequired": 3619100
+    },
+    {
+      "level": 36,
+      "expRequired": 229600,
+      "leadExpRequired": 3932500
+    },
+    {
+      "level": 37,
+      "expRequired": 248400,
+      "leadExpRequired": 4270700
+    },
+    {
+      "level": 38,
+      "expRequired": 268300,
+      "leadExpRequired": 4635500
+    },
+    {
+      "level": 39,
+      "expRequired": 289300,
+      "leadExpRequired": 5028600
+    },
+    {
+      "level": 40,
+      "expRequired": 311400,
+      "leadExpRequired": 5451900
+    },
+    {
+      "level": 41,
+      "expRequired": 334600,
+      "leadExpRequired": 5850500
+    },
+    {
+      "level": 42,
+      "expRequired": 360400,
+      "leadExpRequired": 6279300
+    },
+    {
+      "level": 43,
+      "expRequired": 388800,
+      "leadExpRequired": 6740300
+    },
+    {
+      "level": 44,
+      "expRequired": 419800,
+      "leadExpRequired": 7235600
+    },
+    {
+      "level": 45,
+      "expRequired": 453400,
+      "leadExpRequired": 7767500
+    },
+    {
+      "level": 46,
+      "expRequired": 489600,
+      "leadExpRequired": 8338400
+    },
+    {
+      "level": 47,
+      "expRequired": 528400,
+      "leadExpRequired": 8950800
+    },
+    {
+      "level": 48,
+      "expRequired": 569800,
+      "leadExpRequired": 9607500
+    },
+    {
+      "level": 49,
+      "expRequired": 613800,
+      "leadExpRequired": 10311400
+    },
+    {
+      "level": 50,
+      "expRequired": 660400,
+      "leadExpRequired": 11065600
+    },
+    {
+      "level": 51,
+      "expRequired": 709600,
+      "leadExpRequired": 11873400
+    },
+    {
+      "level": 52,
+      "expRequired": 766000,
+      "leadExpRequired": 12738200
+    },
+    {
+      "level": 53,
+      "expRequired": 829600,
+      "leadExpRequired": 13663700
+    },
+    {
+      "level": 54,
+      "expRequired": 900400,
+      "leadExpRequired": 14653800
+    },
+    {
+      "level": 55,
+      "expRequired": 978400,
+      "leadExpRequired": 15712700
+    },
+    {
+      "level": 56,
+      "expRequired": 1063600,
+      "leadExpRequired": 16844800
+    },
+    {
+      "level": 57,
+      "expRequired": 1156000,
+      "leadExpRequired": 18054700
+    },
+    {
+      "level": 58,
+      "expRequired": 1255600,
+      "leadExpRequired": 19347400
+    },
+    {
+      "level": 59,
+      "expRequired": 1362400,
+      "leadExpRequired": 20728100
+    },
+    {
+      "level": 60,
+      "expRequired": 1476400,
+      "leadExpRequired": 22101000
+    },
+    {
+      "level": 61,
+      "expRequired": 1597600,
+      "leadExpRequired": 23636400
+    },
+    {
+      "level": 62,
+      "expRequired": 1738200,
+      "leadExpRequired": 25353000
+    },
+    {
+      "level": 63,
+      "expRequired": 1898200,
+      "leadExpRequired": 27271700
+    },
+    {
+      "level": 64,
+      "expRequired": 2077600,
+      "leadExpRequired": 29415800
+    },
+    {
+      "level": 65,
+      "expRequired": 2276400,
+      "leadExpRequired": 31811200
+    },
+    {
+      "level": 66,
+      "expRequired": 2494600,
+      "leadExpRequired": 34486700
+    },
+    {
+      "level": 67,
+      "expRequired": 2732200,
+      "leadExpRequired": 37474300
+    },
+    {
+      "level": 68,
+      "expRequired": 2989200,
+      "leadExpRequired": 40809700
+    },
+    {
+      "level": 69,
+      "expRequired": 3265600,
+      "leadExpRequired": 44532600
+    },
+    {
+      "level": 70,
+      "expRequired": 3561400,
+      "leadExpRequired": 48687200
+    },
+    {
+      "level": 71,
+      "expRequired": 3876600,
+      "leadExpRequired": 53533200
+    },
+    {
+      "level": 72,
+      "expRequired": 4240200,
+      "leadExpRequired": 59184700
+    },
+    {
+      "level": 73,
+      "expRequired": 4652200,
+      "leadExpRequired": 65774100
+    },
+    {
+      "level": 74,
+      "expRequired": 5112600,
+      "leadExpRequired": 73455800
+    },
+    {
+      "level": 75,
+      "expRequired": 5621400,
+      "leadExpRequired": 82409100
+    },
+    {
+      "level": 76,
+      "expRequired": 6178600,
+      "leadExpRequired": 92842700
+    },
+    {
+      "level": 77,
+      "expRequired": 6784200,
+      "leadExpRequired": 104999200
+    },
+    {
+      "level": 78,
+      "expRequired": 7438200,
+      "leadExpRequired": 119160800
+    },
+    {
+      "level": 79,
+      "expRequired": 8140600,
+      "leadExpRequired": 135655400
+    },
+    {
+      "level": 80,
+      "expRequired": 8891400,
+      "leadExpRequired": 152943400
+    },
+    {
+      "level": 81,
+      "expRequired": 9690600,
+      "leadExpRequired": 173073200
+    },
+    {
+      "level": 82,
+      "expRequired": 10600800,
+      "leadExpRequired": 196508200
+    },
+    {
+      "level": 83,
+      "expRequired": 11622000,
+      "leadExpRequired": 223787100
+    },
+    {
+      "level": 84,
+      "expRequired": 12754200,
+      "leadExpRequired": 255535900
+    },
+    {
+      "level": 85,
+      "expRequired": 13997400,
+      "leadExpRequired": 292481600
+    },
+    {
+      "level": 86,
+      "expRequired": 15351600,
+      "leadExpRequired": 337338100
+    },
+    {
+      "level": 87,
+      "expRequired": 16816800,
+      "leadExpRequired": 391791800
+    },
+    {
+      "level": 88,
+      "expRequired": 18393000,
+      "leadExpRequired": 457887300
+    },
+    {
+      "level": 89,
+      "expRequired": 20080200,
+      "leadExpRequired": 538103200
+    },
+    {
+      "level": 90,
+      "expRequired": 21878400,
+      "leadExpRequired": 635443900
+    },
+    {
+      "level": 91,
+      "expRequired": 23787600,
+      "leadExpRequired": 753550600
+    },
+    {
+      "level": 92,
+      "expRequired": 25933000,
+      "leadExpRequired": 896836200
+    },
+    {
+      "level": 93,
+      "expRequired": 28314600,
+      "leadExpRequired": 1070647800
+    },
+    {
+      "level": 94,
+      "expRequired": 30932400,
+      "leadExpRequired": 1281464500
+    },
+    {
+      "level": 95,
+      "expRequired": 33786400,
+      "leadExpRequired": 1537135800
+    },
+    {
+      "level": 96,
+      "expRequired": 36876600,
+      "leadExpRequired": 1847170900
+    },
+    {
+      "level": 97,
+      "expRequired": 40203000,
+      "leadExpRequired": 2223088500
+    },
+    {
+      "level": 98,
+      "expRequired": 43765600,
+      "leadExpRequired": 2697829800
+    },
+    {
+      "level": 99,
+      "expRequired": 47564400,
+      "leadExpRequired": 3321291100
+    },
+    {
+      "level": 100,
+      "expRequired": 50000000,
+      "leadExpRequired": 4139977600
+    },
+    {
+      "level": 101,
+      "expRequired": 50000000
+    },
+    {
+      "level": 102,
+      "expRequired": 50000000
+    },
+    {
+      "level": 103,
+      "expRequired": 50000000
+    },
+    {
+      "level": 104,
+      "expRequired": 50000000
+    },
+    {
+      "level": 105,
+      "expRequired": 50000000
+    },
+    {
+      "level": 106,
+      "expRequired": 50000000
+    },
+    {
+      "level": 107,
+      "expRequired": 50000000
+    },
+    {
+      "level": 108,
+      "expRequired": 50000000
+    },
+    {
+      "level": 109,
+      "expRequired": 50000000
+    },
+    {
+      "level": 110,
+      "expRequired": 60000000
+    },
+    {
+      "level": 111,
+      "expRequired": 60000000
+    },
+    {
+      "level": 112,
+      "expRequired": 60000000
+    },
+    {
+      "level": 113,
+      "expRequired": 60000000
+    },
+    {
+      "level": 114,
+      "expRequired": 60000000
+    },
+    {
+      "level": 115,
+      "expRequired": 60000000
+    },
+    {
+      "level": 116,
+      "expRequired": 60000000
+    },
+    {
+      "level": 117,
+      "expRequired": 60000000
+    },
+    {
+      "level": 118,
+      "expRequired": 60000000
+    },
+    {
+      "level": 119,
+      "expRequired": 60000000
+    },
+    {
+      "level": 120,
+      "expRequired": 100000000
+    },
+    {
+      "level": 121,
+      "expRequired": 100000000
+    },
+    {
+      "level": 122,
+      "expRequired": 100000000
+    },
+    {
+      "level": 123,
+      "expRequired": 100000000
+    },
+    {
+      "level": 124,
+      "expRequired": 100000000
+    },
+    {
+      "level": 125,
+      "expRequired": 120000000
+    },
+    {
+      "level": 126,
+      "expRequired": 120000000
+    },
+    {
+      "level": 127,
+      "expRequired": 120000000
+    },
+    {
+      "level": 128,
+      "expRequired": 120000000
+    },
+    {
+      "level": 129,
+      "expRequired": 120000000
+    },
+    {
+      "level": 130,
+      "expRequired": 160000000
+    },
+    {
+      "level": 131,
+      "expRequired": 160000000
+    },
+    {
+      "level": 132,
+      "expRequired": 160000000
+    },
+    {
+      "level": 133,
+      "expRequired": 160000000
+    },
+    {
+      "level": 134,
+      "expRequired": 160000000
+    },
+    {
+      "level": 135,
+      "expRequired": 200000000
+    },
+    {
+      "level": 136,
+      "expRequired": 200000000
+    },
+    {
+      "level": 137,
+      "expRequired": 200000000
+    },
+    {
+      "level": 138,
+      "expRequired": 200000000
+    },
+    {
+      "level": 139,
+      "expRequired": 200000000
+    },
+    {
+      "level": 140,
+      "expRequired": 300000000
+    },
+    {
+      "level": 141,
+      "expRequired": 300000000
+    },
+    {
+      "level": 142,
+      "expRequired": 300000000
+    },
+    {
+      "level": 143,
+      "expRequired": 300000000
+    },
+    {
+      "level": 144,
+      "expRequired": 300000000
+    },
+    {
+      "level": 145,
+      "expRequired": 500000000
+    },
+    {
+      "level": 146,
+      "expRequired": 500000000
+    },
+    {
+      "level": 147,
+      "expRequired": 500000000
+    },
+    {
+      "level": 148,
+      "expRequired": 500000000
+    },
+    {
+      "level": 149,
+      "expRequired": 500000000
+    },
+    {
+      "level": 150,
+      "expRequired": 800000000
+    },
+    {
+      "level": 151,
+      "expRequired": 800000000
+    },
+    {
+      "level": 152,
+      "expRequired": 800000000
+    },
+    {
+      "level": 153,
+      "expRequired": 800000000
+    },
+    {
+      "level": 154,
+      "expRequired": 800000000
+    },
+    {
+      "level": 155,
+      "expRequired": 1200000000
+    },
+    {
+      "level": 156,
+      "expRequired": 1200000000
+    },
+    {
+      "level": 157,
+      "expRequired": 1200000000
+    },
+    {
+      "level": 158,
+      "expRequired": 1200000000
+    },
+    {
+      "level": 159,
+      "expRequired": 1200000000
+    },
+    {
+      "level": 160,
+      "expRequired": 1800000000
+    },
+    {
+      "level": 161,
+      "expRequired": 1800000000
+    },
+    {
+      "level": 162,
+      "expRequired": 1800000000
+    },
+    {
+      "level": 163,
+      "expRequired": 1800000000
+    },
+    {
+      "level": 164,
+      "expRequired": 1800000000
+    },
+    {
+      "level": 165,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 166,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 167,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 168,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 169,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 170,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 171,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 172,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 173,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 174,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 175,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 176,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 177,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 178,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 179,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 180,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 181,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 182,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 183,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 184,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 185,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 186,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 187,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 188,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 189,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 190,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 191,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 192,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 193,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 194,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 195,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 196,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 197,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 198,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 199,
+      "expRequired": 2000000000
+    },
+    {
+      "level": 200,
+      "expRequired": 2000000000
+    }
+  ],
+  "factions": [
+    {
+      "id": 0,
+      "code": "thieu-lam-phai",
+      "name": "Thiếu LÂm phái",
+      "elementSeries": 0,
+      "camp": 1,
+      "allowedGenders": [
+        0
+      ],
+      "titles": [
+        {
+          "rankId": 1,
+          "titleName": "Tảo địa TĂng"
+        },
+        {
+          "rankId": 2,
+          "titleName": "Hộ Viện Võ TĂng"
+        },
+        {
+          "rankId": 3,
+          "titleName": "Hộ Tự Kim Cang"
+        },
+        {
+          "rankId": 4,
+          "titleName": "Hộ Pháp La Hán"
+        },
+        {
+          "rankId": 5,
+          "titleName": "Truyền Kinh La Hán"
+        },
+        {
+          "rankId": 6,
+          "titleName": "Phục Ma ThiÊn VƯƠng"
+        },
+        {
+          "rankId": 62,
+          "titleName": "VÔ LƯợng Giải TÔn"
+        },
+        {
+          "rankId": 72,
+          "titleName": "Hộ Pháp TrƯởng Lão"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "code": "thien-vuong-bang",
+      "name": "ThiÊn VƯƠng Bang",
+      "elementSeries": 0,
+      "camp": 3,
+      "allowedGenders": [
+        0,
+        1
+      ],
+      "titles": [
+        {
+          "rankId": 7,
+          "titleName": "đạo đồng"
+        },
+        {
+          "rankId": 8,
+          "titleName": "Nhàn Tản đạo SƯ"
+        },
+        {
+          "rankId": 9,
+          "titleName": "Thanh Tu đạo SƯ"
+        },
+        {
+          "rankId": 10,
+          "titleName": "Tuần SƠn đạo NhÂn"
+        },
+        {
+          "rankId": 11,
+          "titleName": "Nhập Quan đạo NhÂn"
+        },
+        {
+          "rankId": 12,
+          "titleName": "ChƯởng Kinh đạo NhÂn"
+        },
+        {
+          "rankId": 63,
+          "titleName": "Huyền Võ Thần Thị"
+        },
+        {
+          "rankId": 73,
+          "titleName": "Huyền Võ ChÂn NhÂn"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "code": "duong-mon",
+      "name": "đƯờng MÔn",
+      "elementSeries": 1,
+      "camp": 3,
+      "allowedGenders": [
+        0,
+        1
+      ],
+      "titles": [
+        {
+          "rankId": 13,
+          "titleName": "Bố Y Ni"
+        },
+        {
+          "rankId": 14,
+          "titleName": "Vũ Y Ni"
+        },
+        {
+          "rankId": 15,
+          "titleName": "Cẩm Y Ni"
+        },
+        {
+          "rankId": 16,
+          "titleName": "Bạch LiÊn TiÊn Tử"
+        },
+        {
+          "rankId": 17,
+          "titleName": "Thanh LiÊn TiÊn Tử"
+        },
+        {
+          "rankId": 18,
+          "titleName": "Tản Hoa ThiÊn Nữ"
+        },
+        {
+          "rankId": 64,
+          "titleName": "Kim đỉnh Thánh Nữ"
+        },
+        {
+          "rankId": 74,
+          "titleName": "Thánh nữ"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "code": "ngu-doc-giao",
+      "name": "Ngũ độc Giáo",
+      "elementSeries": 1,
+      "camp": 2,
+      "allowedGenders": [
+        0,
+        1
+      ],
+      "titles": [
+        {
+          "rankId": 19,
+          "titleName": "Phất Trần đệ Tử"
+        },
+        {
+          "rankId": 20,
+          "titleName": "Phụng Kiếm đệ Tử"
+        },
+        {
+          "rankId": 21,
+          "titleName": "Tử Vi Hộ Pháp"
+        },
+        {
+          "rankId": 22,
+          "titleName": "Thái Vi Hộ Pháp"
+        },
+        {
+          "rankId": 23,
+          "titleName": "ThiÊn Vi Hộ Pháp"
+        },
+        {
+          "rankId": 24,
+          "titleName": "Thụ Phù ThiÊn TƯớng"
+        },
+        {
+          "rankId": 65,
+          "titleName": "TiÊn Phù ChÂn QuÂn"
+        },
+        {
+          "rankId": 75,
+          "titleName": "Hộ Phái ChÂn QuÂn"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "code": "nga-my-phai",
+      "name": "Nga My phái",
+      "elementSeries": 2,
+      "camp": 1,
+      "allowedGenders": [
+        1
+      ],
+      "titles": [
+        {
+          "rankId": 25,
+          "titleName": "Tạp dịch"
+        },
+        {
+          "rankId": 26,
+          "titleName": "Làng D"
+        },
+        {
+          "rankId": 27,
+          "titleName": "Hộ Viện"
+        },
+        {
+          "rankId": 28,
+          "titleName": "Giới Tiền Hộ Vệ"
+        },
+        {
+          "rankId": 29,
+          "titleName": "Nhập Các đệ Tử"
+        },
+        {
+          "rankId": 30,
+          "titleName": "Tỷ Lão MÔn NhÂn"
+        },
+        {
+          "rankId": 66,
+          "titleName": "ThiÊn Thủ Thần Vệ"
+        },
+        {
+          "rankId": 76,
+          "titleName": "Lục Các TrƯởng Lão"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "code": "thuy-yen-mon",
+      "name": "Thúy YÊn mÔn",
+      "elementSeries": 2,
+      "camp": 3,
+      "allowedGenders": [
+        1
+      ],
+      "titles": [
+        {
+          "rankId": 31,
+          "titleName": "Hoa Tì"
+        },
+        {
+          "rankId": 32,
+          "titleName": "Tam Phẩm Hoa Sứ"
+        },
+        {
+          "rankId": 33,
+          "titleName": "Nhị Phẩm Hoa Sứ"
+        },
+        {
+          "rankId": 34,
+          "titleName": "Nhất Phẩm Hoa Sứ"
+        },
+        {
+          "rankId": 35,
+          "titleName": "Hoa TiÊn"
+        },
+        {
+          "rankId": 36,
+          "titleName": "Hoa Tinh"
+        },
+        {
+          "rankId": 67,
+          "titleName": "Hoa Thần"
+        },
+        {
+          "rankId": 77,
+          "titleName": "Hoa Thần Sứ"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "code": "cai-bang",
+      "name": "Cái Bang",
+      "elementSeries": 3,
+      "camp": 1,
+      "allowedGenders": [
+        0,
+        1
+      ],
+      "titles": [
+        {
+          "rankId": 37,
+          "titleName": "VÔ đại đệ Tử"
+        },
+        {
+          "rankId": 38,
+          "titleName": "Chấp đại đệ Tử"
+        },
+        {
+          "rankId": 39,
+          "titleName": "Chấp Bát đệ Tử"
+        },
+        {
+          "rankId": 40,
+          "titleName": "Chấp Bổng đệ Tử"
+        },
+        {
+          "rankId": 41,
+          "titleName": "Long đầu"
+        },
+        {
+          "rankId": 42,
+          "titleName": "đại Long đầu"
+        },
+        {
+          "rankId": 68,
+          "titleName": "TiÊu Dao Thần Cái"
+        },
+        {
+          "rankId": 78,
+          "titleName": "Cửu đại TrƯởng Lão"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "code": "thien-nhan-giao",
+      "name": "ThiÊn Nhẫn Giáo",
+      "elementSeries": 3,
+      "camp": 2,
+      "allowedGenders": [
+        0,
+        1
+      ],
+      "titles": [
+        {
+          "rankId": 43,
+          "titleName": "Thị vệ"
+        },
+        {
+          "rankId": 44,
+          "titleName": "Thị vệ trƯởng"
+        },
+        {
+          "rankId": 45,
+          "titleName": "Thủ Trại Hãn TƯớng"
+        },
+        {
+          "rankId": 46,
+          "titleName": "ChƯởng đá đầu Lĩnh"
+        },
+        {
+          "rankId": 47,
+          "titleName": "Thủy đạo Thống Lĩnh"
+        },
+        {
+          "rankId": 48,
+          "titleName": "Hộ đảo TƯớng QuÂn"
+        },
+        {
+          "rankId": 69,
+          "titleName": "Kình ThiÊn NguyÊn Soái"
+        },
+        {
+          "rankId": 79,
+          "titleName": "Trấn Bang NguyÊn Soái"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "code": "vo-dang-phai",
+      "name": "Võ đang phái",
+      "elementSeries": 4,
+      "camp": 1,
+      "allowedGenders": [
+        0,
+        1
+      ],
+      "titles": [
+        {
+          "rankId": 49,
+          "titleName": "Ngũ độc đồng Tử"
+        },
+        {
+          "rankId": 50,
+          "titleName": "đoạt Hồn Tản NhÂn"
+        },
+        {
+          "rankId": 51,
+          "titleName": "ThÔi Mệnh Sứ Giả"
+        },
+        {
+          "rankId": 52,
+          "titleName": "Hắc ám DiÊm La"
+        },
+        {
+          "rankId": 53,
+          "titleName": "VÔ động La Sát"
+        },
+        {
+          "rankId": 54,
+          "titleName": "Co độc TÔn Giả"
+        },
+        {
+          "rankId": 70,
+          "titleName": "U Minh Quỷ Sứ"
+        },
+        {
+          "rankId": 80,
+          "titleName": "U Minh Quỷ VƯƠng"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "code": "con-lon-phai",
+      "name": "CÔn LÔn phái",
+      "elementSeries": 4,
+      "camp": 3,
+      "allowedGenders": [
+        0,
+        1
+      ],
+      "titles": [
+        {
+          "rankId": 55,
+          "titleName": "Sát Thủ"
+        },
+        {
+          "rankId": 56,
+          "titleName": "VÔ ảnh Sát Thủ"
+        },
+        {
+          "rankId": 57,
+          "titleName": "Tử Sĩ"
+        },
+        {
+          "rankId": 58,
+          "titleName": "U Minh Tử Sĩ"
+        },
+        {
+          "rankId": 59,
+          "titleName": "ChƯởng Kỳ Sứ"
+        },
+        {
+          "rankId": 60,
+          "titleName": "Hộ Giáo Sứ"
+        },
+        {
+          "rankId": 71,
+          "titleName": "Tát Mãn Pháp VƯƠng"
+        },
+        {
+          "rankId": 81,
+          "titleName": "Thánh Giáo TrƯởng Lão"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "code": "hoa-son-phai",
+      "name": "Hoa SƠn phái",
+      "elementSeries": 2,
+      "camp": 3,
+      "allowedGenders": [
+        0,
+        1
+      ]
+    }
+  ],
+  "starterVillages": [
+    {
+      "id": 0,
+      "code": "ba-lang-huyen",
+      "name": "Ba LĂng huyện",
+      "mapId": 53,
+      "defaultRevivalPointId": 19,
+      "revivalPoints": [
+        {
+          "revivalPointId": 19,
+          "mpsX": 52032,
+          "mpsY": 101696
+        }
+      ],
+      "description": "Một thị trấn nhỏ bÊn hồ động đình, là một nƠi an bình và nhàn nhã. DƯới sự lãnh Đạo của ThiÊn VƯƠng Bang, mọi ngƯời ở ĐÂy già trẻ lớn bé Đều tinh thÔng võ thuật, cuộc sống khá sung túc."
+    },
+    {
+      "id": 1,
+      "code": "giang-tan-thon",
+      "name": "Giang TÂn ThÔn",
+      "mapId": 20,
+      "defaultRevivalPointId": 10,
+      "revivalPoints": [
+        {
+          "revivalPointId": 10,
+          "mpsX": 113472,
+          "mpsY": 199232
+        },
+        {
+          "revivalPointId": 11,
+          "mpsX": 110656,
+          "mpsY": 197888
+        },
+        {
+          "revivalPointId": 12,
+          "mpsX": 108064,
+          "mpsY": 200512
+        }
+      ],
+      "description": "đÂy là một thÔn nhỏ ven sÔng, là một yếu Đạo giao thÔng trÊn sÔng TrƯờng Giang, các lữ quán và thƯyền lúc nào cũng Đầy ắp khách qua lại. Con ngƯời noi ĐÂy luÔn chú trọng nghĩa tình , Đạo lý, màu xanh của Đồng lúa và cÂy cối luÔn làm Đắm say lòng ngƯời."
+    },
+    {
+      "id": 2,
+      "code": "vinh-lac-tran",
+      "name": "Vĩnh Lạc trấn",
+      "mapId": 99,
+      "defaultRevivalPointId": 43,
+      "revivalPoints": [
+        {
+          "revivalPointId": 43,
+          "mpsX": 52160,
+          "mpsY": 102368
+        },
+        {
+          "revivalPointId": 44,
+          "mpsX": 52928,
+          "mpsY": 104608
+        }
+      ],
+      "description": "Là một trấn nhỏ bao bọc bởi rừng rậm và Đồi núi,nhƯng chúng khÔng che nổi ánh sáng Thái DƯƠng nÊn nƠi ĐÂy bốn mùa nắng nóng, thu hoạch khó khĂn. Thu nhập chính của vùng này chủ yếu dựa vào rừng và khai thác khoáng thạch."
+    },
+    {
+      "id": 3,
+      "code": "chu-tien-tran",
+      "name": "Chu TiÊn trấn",
+      "mapId": 100,
+      "defaultRevivalPointId": 45,
+      "revivalPoints": [
+        {
+          "revivalPointId": 45,
+          "mpsX": 51616,
+          "mpsY": 101920
+        },
+        {
+          "revivalPointId": 46,
+          "mpsX": 54496,
+          "mpsY": 102848
+        }
+      ],
+      "description": "Nếu Đã Đi du ngoạn thì khÔng thể khÔng ghé qua Chu TiÊn trấn, một nƠi nổi tiếng về những cảnh sắc Đắm say lòng ngƯời. KhÔng chỉ nhƯ vậy, nƯớc suối ở ĐÂy còn có thể chữa bệnh. Chu TiÊn trấn vì thế mà nổi danh xa gần."
+    },
+    {
+      "id": 4,
+      "code": "dao-huong-thon",
+      "name": "đạo HƯƠng thÔn",
+      "mapId": 101,
+      "defaultRevivalPointId": 47,
+      "revivalPoints": [
+        {
+          "revivalPointId": 47,
+          "mpsX": 54048,
+          "mpsY": 100896
+        },
+        {
+          "revivalPointId": 48,
+          "mpsX": 50976,
+          "mpsY": 104256
+        }
+      ],
+      "description": "đÂy là một thÔn trấn với hƠn nửa cÔng trình kiến trúc ĐƯợc xÂy dựng trÊn mặt nƯớc, rừng rậm, muÔn thú vÔ số. đÂy cũng là quÊ hƯƠng của lúa gạo và cá. NgƯời dÂn nƠi ĐÂy yÊu thích lao Động, Đời sống sung túc. đạo HƯƠng thÔn cũng nhờ Đó mà nổi danh."
+    },
+    {
+      "id": 5,
+      "code": "long-mon-tran",
+      "name": "Long MÔn trấn",
+      "mapId": 121,
+      "defaultRevivalPointId": 55,
+      "revivalPoints": [
+        {
+          "revivalPointId": 55,
+          "mpsX": 64000,
+          "mpsY": 143200
+        },
+        {
+          "revivalPointId": 56,
+          "mpsX": 61952,
+          "mpsY": 144416
+        }
+      ],
+      "description": "Là một trấn nhỏ gần Sa mạc, nƠi TÂy Bắc Trung nguyÊn, bốn mùa gió cát, Đời sống nghèo nàn. Nhờ là nƠi hẻo lánh nÊn cuộc sống bình yÊn. Gần trấn này là Hoàng Hà nguyÊn Đầu và DƯợc VƯƠng cốc, hai nƠi thần bí này Đã tạo cho nƠi ĐÂy một vẻ linh thiÊn bí hiểm."
+    },
+    {
+      "id": 6,
+      "code": "thach-co-tran",
+      "name": "Thạch Cổ trấn",
+      "mapId": 153,
+      "defaultRevivalPointId": 59,
+      "revivalPoints": [
+        {
+          "revivalPointId": 59,
+          "mpsX": 52256,
+          "mpsY": 103520
+        },
+        {
+          "revivalPointId": 60,
+          "mpsX": 52256,
+          "mpsY": 103520
+        }
+      ],
+      "description": "\"Thạch NhÂn Đối Thạch Cổ, Kim NgÂn vạn vạn vũ, thùy nhÂn Đắc kiến giả, khả mãi Lệ Giang phủ\", cÂu Đố này vĩnh viễn khÔng có lời giải, chính vì thế càng tĂng thÊm vẻ thần bí cho Thạch cổ trấn, một thÔn nhỏ bốn mùa phong thịnh gần nƯớc đại Lý."
+    },
+    {
+      "id": 7,
+      "code": "long-tuyen-thon",
+      "name": "Long Tuyền thÔn",
+      "mapId": 174,
+      "defaultRevivalPointId": 65,
+      "revivalPoints": [
+        {
+          "revivalPointId": 65,
+          "mpsX": 52960,
+          "mpsY": 105472
+        },
+        {
+          "revivalPointId": 66,
+          "mpsX": 51808,
+          "mpsY": 102208
+        }
+      ],
+      "description": "Long Tuyền thÔn nằm trong một vùng bình nguyÊn rộng lớn. Truyền thuyết kể rằng cá nƠi ĐÂy thƯờng hóa rồng bay Đi. Long Tuyền thÔn cảnh sắc diễm lệ, cuộc sống yÊn bình hạnh phúc, danh tiếng vang xa."
+    }
+  ],
+  "pkRules": {
+    "switchToPeaceCooldownFrames": 3240,
+    "maxPkValue": 10,
+    "penaltiesByPkValue": [
+      {
+        "pkValue": 0,
+        "expLossPerMil": 10,
+        "maxExpLoss": 500000,
+        "moneyDropPerMil": 50,
+        "bagItemDropPerMil": 0,
+        "equipDropPerMil": 0,
+        "durabilityLoss": 0
+      },
+      {
+        "pkValue": 1,
+        "expLossPerMil": 20,
+        "maxExpLoss": 500000,
+        "moneyDropPerMil": 100,
+        "bagItemDropPerMil": 50,
+        "equipDropPerMil": 0,
+        "durabilityLoss": 0
+      },
+      {
+        "pkValue": 2,
+        "expLossPerMil": 30,
+        "maxExpLoss": 500000,
+        "moneyDropPerMil": 300,
+        "bagItemDropPerMil": 100,
+        "equipDropPerMil": 0,
+        "durabilityLoss": 0
+      },
+      {
+        "pkValue": 3,
+        "expLossPerMil": 40,
+        "maxExpLoss": 500000,
+        "moneyDropPerMil": 500,
+        "bagItemDropPerMil": 150,
+        "equipDropPerMil": 0,
+        "durabilityLoss": 0
+      },
+      {
+        "pkValue": 4,
+        "expLossPerMil": 50,
+        "maxExpLoss": 500000,
+        "moneyDropPerMil": 500,
+        "bagItemDropPerMil": 200,
+        "equipDropPerMil": 0,
+        "durabilityLoss": 5
+      },
+      {
+        "pkValue": 5,
+        "expLossPerMil": 100,
+        "maxExpLoss": 500000,
+        "moneyDropPerMil": 500,
+        "bagItemDropPerMil": 300,
+        "equipDropPerMil": 50,
+        "durabilityLoss": 10
+      },
+      {
+        "pkValue": 6,
+        "expLossPerMil": 150,
+        "maxExpLoss": 500000,
+        "moneyDropPerMil": 600,
+        "bagItemDropPerMil": 400,
+        "equipDropPerMil": 100,
+        "durabilityLoss": 20
+      },
+      {
+        "pkValue": 7,
+        "expLossPerMil": 200,
+        "maxExpLoss": 500000,
+        "moneyDropPerMil": 700,
+        "bagItemDropPerMil": 500,
+        "equipDropPerMil": 200,
+        "durabilityLoss": 40
+      },
+      {
+        "pkValue": 8,
+        "expLossPerMil": 250,
+        "maxExpLoss": 500000,
+        "moneyDropPerMil": 800,
+        "bagItemDropPerMil": 600,
+        "equipDropPerMil": 400,
+        "durabilityLoss": 60
+      },
+      {
+        "pkValue": 9,
+        "expLossPerMil": 300,
+        "maxExpLoss": 500000,
+        "moneyDropPerMil": 900,
+        "bagItemDropPerMil": 700,
+        "equipDropPerMil": 800,
+        "durabilityLoss": 80
+      },
+      {
+        "pkValue": 10,
+        "expLossPerMil": 350,
+        "maxExpLoss": 500000,
+        "moneyDropPerMil": 1000,
+        "bagItemDropPerMil": 800,
+        "equipDropPerMil": 1000,
+        "durabilityLoss": 100
+      }
+    ]
+  },
+  "meridians": [
+    {
+      "id": 1,
+      "code": "doc-mach",
+      "name": "đốc Mạch",
+      "taskVariableId": 4001,
+      "acupoints": [
+        {
+          "level": 1,
+          "name": "Thừa Khấp",
+          "successRatePerTenThousand": 10000,
+          "fallbackLevel": 0,
+          "zhenYuanCost": 2000,
+          "huMaiDanCost": 1000,
+          "magicAffixIds": [
+            2897
+          ],
+          "description": "Ngoại cÔng"
+        },
+        {
+          "level": 2,
+          "name": "Thừa TƯƠng",
+          "successRatePerTenThousand": 10000,
+          "fallbackLevel": 0,
+          "zhenYuanCost": 1600,
+          "huMaiDanCost": 800,
+          "magicAffixIds": [
+            2905
+          ],
+          "description": "Nội cÔng"
+        },
+        {
+          "level": 3,
+          "name": "LiÊm Tuyền",
+          "successRatePerTenThousand": 8000,
+          "fallbackLevel": 1,
+          "zhenYuanCost": 1400,
+          "huMaiDanCost": 700,
+          "magicAffixIds": [
+            2914
+          ],
+          "description": "ThÂn pháp"
+        },
+        {
+          "level": 4,
+          "name": "ThiÊn đột",
+          "successRatePerTenThousand": 7500,
+          "fallbackLevel": 2,
+          "zhenYuanCost": 1200,
+          "huMaiDanCost": 600,
+          "magicAffixIds": [
+            2922
+          ],
+          "description": "Sức mạnh"
+        },
+        {
+          "level": 5,
+          "name": "Tuyền Ki",
+          "successRatePerTenThousand": 7000,
+          "fallbackLevel": 3,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2931
+          ],
+          "description": "Giới hạn sinh mệnh %"
+        },
+        {
+          "level": 6,
+          "name": "Hoa Cái",
+          "successRatePerTenThousand": 5000,
+          "fallbackLevel": 4,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2939
+          ],
+          "description": "Hiệu quả hồi phục sinh mệnh"
+        },
+        {
+          "level": 7,
+          "name": "Tử Cung",
+          "successRatePerTenThousand": 4500,
+          "fallbackLevel": 5,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2948
+          ],
+          "description": "Trị số cƯờng hóa ngũ hành"
+        },
+        {
+          "level": 8,
+          "name": "Ngọc đƯờng",
+          "successRatePerTenThousand": 4000,
+          "fallbackLevel": 6,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2956
+          ],
+          "description": "Trị số nhƯợc hóa ngũ hành"
+        },
+        {
+          "level": 9,
+          "name": "đãn Trung",
+          "successRatePerTenThousand": 3900,
+          "fallbackLevel": 7,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2965
+          ],
+          "description": "Toàn kháng"
+        },
+        {
+          "level": 10,
+          "name": "Trung đình",
+          "successRatePerTenThousand": 3800,
+          "fallbackLevel": 8,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2973
+          ],
+          "description": "Bỏ qua kháng tất cả"
+        },
+        {
+          "level": 11,
+          "name": "CƯu Vĩ",
+          "successRatePerTenThousand": 3700,
+          "fallbackLevel": 9,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2982
+          ],
+          "description": "TĂng lực sát thƯƠng"
+        },
+        {
+          "level": 12,
+          "name": "Cự Khuyết",
+          "successRatePerTenThousand": 3600,
+          "fallbackLevel": 10,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2990
+          ],
+          "description": "Bổ sung Đối với kỹ nĂng cÔng kích"
+        },
+        {
+          "level": 13,
+          "name": "ThƯợng Oản",
+          "successRatePerTenThousand": 3500,
+          "fallbackLevel": 11,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2999
+          ],
+          "description": "Trọng Kích"
+        },
+        {
+          "level": 14,
+          "name": "Trung Oản",
+          "successRatePerTenThousand": 3400,
+          "fallbackLevel": 12,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            3007
+          ],
+          "description": "Trọng Kích tuyệt Đối"
+        },
+        {
+          "level": 15,
+          "name": "Kiến Lí",
+          "successRatePerTenThousand": 3300,
+          "fallbackLevel": 13,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            3016
+          ],
+          "description": "Hóa Giải sát thƯƠng"
+        },
+        {
+          "level": 16,
+          "name": "Hạ Oản",
+          "successRatePerTenThousand": 3300,
+          "fallbackLevel": 14,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            3024
+          ],
+          "description": "Triệt tiÊu hóa giải sát thƯƠng"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "code": "nham-mach",
+      "name": "NhÂm Mạch",
+      "taskVariableId": 4002,
+      "acupoints": [
+        {
+          "level": 1,
+          "name": "Tiền đình",
+          "successRatePerTenThousand": 10000,
+          "fallbackLevel": 0,
+          "zhenYuanCost": 2000,
+          "huMaiDanCost": 1000,
+          "magicAffixIds": [
+            3009
+          ],
+          "description": "Hóa Giải sát thƯƠng"
+        },
+        {
+          "level": 2,
+          "name": "Bách Hội",
+          "successRatePerTenThousand": 10000,
+          "fallbackLevel": 0,
+          "zhenYuanCost": 1600,
+          "huMaiDanCost": 800,
+          "magicAffixIds": [
+            3017
+          ],
+          "description": "Triệt tiÊu hóa giải sát thƯƠng"
+        },
+        {
+          "level": 3,
+          "name": "Hậu đình",
+          "successRatePerTenThousand": 8000,
+          "fallbackLevel": 1,
+          "zhenYuanCost": 1400,
+          "huMaiDanCost": 700,
+          "magicAffixIds": [
+            2898
+          ],
+          "description": "Ngoại cÔng"
+        },
+        {
+          "level": 4,
+          "name": "CƯờng Gian",
+          "successRatePerTenThousand": 7500,
+          "fallbackLevel": 2,
+          "zhenYuanCost": 1200,
+          "huMaiDanCost": 600,
+          "magicAffixIds": [
+            2906
+          ],
+          "description": "Nội cÔng"
+        },
+        {
+          "level": 5,
+          "name": "Não Hộ",
+          "successRatePerTenThousand": 7000,
+          "fallbackLevel": 3,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2915
+          ],
+          "description": "ThÂn pháp"
+        },
+        {
+          "level": 6,
+          "name": "Phong Phủ",
+          "successRatePerTenThousand": 5000,
+          "fallbackLevel": 4,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2923
+          ],
+          "description": "Sức mạnh"
+        },
+        {
+          "level": 7,
+          "name": "Nha MÔn",
+          "successRatePerTenThousand": 4500,
+          "fallbackLevel": 5,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2932
+          ],
+          "description": "Giới hạn sinh mệnh %"
+        },
+        {
+          "level": 8,
+          "name": "đại Trùy",
+          "successRatePerTenThousand": 4000,
+          "fallbackLevel": 6,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2940
+          ],
+          "description": "Hiệu quả hồi phục sinh mệnh"
+        },
+        {
+          "level": 9,
+          "name": "Dao đạo",
+          "successRatePerTenThousand": 3900,
+          "fallbackLevel": 7,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2949
+          ],
+          "description": "Trị số cƯờng hóa ngũ hành"
+        },
+        {
+          "level": 10,
+          "name": "ThÂn Trụ",
+          "successRatePerTenThousand": 3800,
+          "fallbackLevel": 8,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2957
+          ],
+          "description": "Trị số nhƯợc hóa ngũ hành"
+        },
+        {
+          "level": 11,
+          "name": "Thần đạo",
+          "successRatePerTenThousand": 3700,
+          "fallbackLevel": 9,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2966
+          ],
+          "description": "Toàn kháng"
+        },
+        {
+          "level": 12,
+          "name": "Linh đài",
+          "successRatePerTenThousand": 3600,
+          "fallbackLevel": 10,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2974
+          ],
+          "description": "Bỏ qua kháng tất cả"
+        },
+        {
+          "level": 13,
+          "name": "Chí DƯƠng",
+          "successRatePerTenThousand": 3500,
+          "fallbackLevel": 11,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2983
+          ],
+          "description": "TĂng lực sát thƯƠng"
+        },
+        {
+          "level": 14,
+          "name": "CÂn Súc",
+          "successRatePerTenThousand": 3400,
+          "fallbackLevel": 12,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2991
+          ],
+          "description": "Bổ sung Đối với kỹ nĂng cÔng kích"
+        },
+        {
+          "level": 15,
+          "name": "Trung Xu",
+          "successRatePerTenThousand": 3300,
+          "fallbackLevel": 13,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            3000
+          ],
+          "description": "Trọng Kích"
+        },
+        {
+          "level": 16,
+          "name": "Tích Trung",
+          "successRatePerTenThousand": 3300,
+          "fallbackLevel": 14,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            3008
+          ],
+          "description": "Trọng Kích tuyệt Đối"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "code": "xung-mach",
+      "name": "Xung Mạch",
+      "taskVariableId": 4003,
+      "acupoints": [
+        {
+          "level": 1,
+          "name": "U MÔn",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 0,
+          "zhenYuanCost": 2000,
+          "huMaiDanCost": 1000,
+          "magicAffixIds": [
+            2993
+          ],
+          "description": "Trọng Kích"
+        },
+        {
+          "level": 2,
+          "name": "ThÔng Cốc",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 0,
+          "zhenYuanCost": 1600,
+          "huMaiDanCost": 800,
+          "magicAffixIds": [
+            3001
+          ],
+          "description": "Trọng Kích tuyệt Đối"
+        },
+        {
+          "level": 3,
+          "name": "âm đÔ",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 1,
+          "zhenYuanCost": 1400,
+          "huMaiDanCost": 700,
+          "magicAffixIds": [
+            3010
+          ],
+          "description": "Hóa Giải sát thƯƠng"
+        },
+        {
+          "level": 4,
+          "name": "Thạch Quan",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 2,
+          "zhenYuanCost": 1200,
+          "huMaiDanCost": 600,
+          "magicAffixIds": [
+            3018
+          ],
+          "description": "Triệt tiÊu hóa giải sát thƯƠng"
+        },
+        {
+          "level": 5,
+          "name": "ThƯƠng Khúc",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 3,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2899
+          ],
+          "description": "Ngoại cÔng"
+        },
+        {
+          "level": 6,
+          "name": "Khí Xung",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 4,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2907
+          ],
+          "description": "Nội cÔng"
+        },
+        {
+          "level": 7,
+          "name": "Manh Du",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 5,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2916
+          ],
+          "description": "ThÂn pháp"
+        },
+        {
+          "level": 8,
+          "name": "Trung Chú",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 6,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2924
+          ],
+          "description": "Sức mạnh"
+        },
+        {
+          "level": 9,
+          "name": "Tứ Mãn",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 7,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2933
+          ],
+          "description": "Giới hạn sinh mệnh %"
+        },
+        {
+          "level": 10,
+          "name": "Khí Huyệt",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 8,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2941
+          ],
+          "description": "Hiệu quả hồi phục sinh mệnh"
+        },
+        {
+          "level": 11,
+          "name": "đại Hách",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 9,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2950
+          ],
+          "description": "Trị số cƯờng hóa ngũ hành"
+        },
+        {
+          "level": 12,
+          "name": "Hoành Cốt",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 10,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2958
+          ],
+          "description": "Trị số nhƯợc hóa ngũ hành"
+        },
+        {
+          "level": 13,
+          "name": "Thái ất",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 11,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2967
+          ],
+          "description": "Toàn kháng"
+        },
+        {
+          "level": 14,
+          "name": "Quan MÔn",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 12,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2975
+          ],
+          "description": "Bỏ qua kháng tất cả"
+        },
+        {
+          "level": 15,
+          "name": "Quy Lai",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 13,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2984
+          ],
+          "description": "TĂng lực sát thƯƠng"
+        },
+        {
+          "level": 16,
+          "name": "Thủy đạo",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 14,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2992
+          ],
+          "description": "Bổ sung Đối với kỹ nĂng cÔng kích"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "code": "doi-mach",
+      "name": "đới Mạch",
+      "taskVariableId": 4004,
+      "acupoints": [
+        {
+          "level": 1,
+          "name": "Ngũ Xu",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 0,
+          "zhenYuanCost": 2000,
+          "huMaiDanCost": 1000,
+          "magicAffixIds": [
+            2977
+          ],
+          "description": "TĂng lực sát thƯƠng"
+        },
+        {
+          "level": 2,
+          "name": "ThiÊn Xung",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 0,
+          "zhenYuanCost": 1600,
+          "huMaiDanCost": 800,
+          "magicAffixIds": [
+            2985
+          ],
+          "description": "Bổ sung Đối với kỹ nĂng cÔng kích"
+        },
+        {
+          "level": 3,
+          "name": "Mục Song",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 1,
+          "zhenYuanCost": 1400,
+          "huMaiDanCost": 700,
+          "magicAffixIds": [
+            2994
+          ],
+          "description": "Trọng Kích"
+        },
+        {
+          "level": 4,
+          "name": "Thừa Linh",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 2,
+          "zhenYuanCost": 1200,
+          "huMaiDanCost": 600,
+          "magicAffixIds": [
+            3002
+          ],
+          "description": "Trọng Kích tuyệt Đối"
+        },
+        {
+          "level": 5,
+          "name": "Quang Minh",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 3,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            3011
+          ],
+          "description": "Hóa Giải sát thƯƠng"
+        },
+        {
+          "level": 6,
+          "name": "Huyền Chung",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 4,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            3019
+          ],
+          "description": "Triệt tiÊu hóa giải sát thƯƠng"
+        },
+        {
+          "level": 7,
+          "name": "Duy đạo",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 5,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2900
+          ],
+          "description": "Ngoại cÔng"
+        },
+        {
+          "level": 8,
+          "name": "Phù Bạch",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 6,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2908
+          ],
+          "description": "Nội cÔng"
+        },
+        {
+          "level": 9,
+          "name": "Hoàn Cốt",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 7,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2917
+          ],
+          "description": "ThÂn pháp"
+        },
+        {
+          "level": 10,
+          "name": "Bổn Thần",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 8,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2925
+          ],
+          "description": "Sức mạnh"
+        },
+        {
+          "level": 11,
+          "name": "DƯƠng Bạch",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 9,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2934
+          ],
+          "description": "Giới hạn sinh mệnh %"
+        },
+        {
+          "level": 12,
+          "name": "Chính Doanh",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 10,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2942
+          ],
+          "description": "Hiệu quả hồi phục sinh mệnh"
+        },
+        {
+          "level": 13,
+          "name": "Não KhÔng",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 11,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2951
+          ],
+          "description": "Trị số cƯờng hóa ngũ hành"
+        },
+        {
+          "level": 14,
+          "name": "Ngoại KhiÊu",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 12,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2959
+          ],
+          "description": "Trị số nhƯợc hóa ngũ hành"
+        },
+        {
+          "level": 15,
+          "name": "KhiÊu KhƯ",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 13,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2968
+          ],
+          "description": "Toàn kháng"
+        },
+        {
+          "level": 16,
+          "name": "DƯƠng Phụ",
+          "successRatePerTenThousand": 0,
+          "fallbackLevel": 14,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2976
+          ],
+          "description": "Bỏ qua kháng tất cả"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "code": "am-duy-mach",
+      "name": "âm Duy Mạch",
+      "taskVariableId": 4005,
+      "acupoints": [
+        {
+          "level": 1,
+          "name": "Tình Minh",
+          "successRatePerTenThousand": 10000,
+          "fallbackLevel": 0,
+          "zhenYuanCost": 2000,
+          "huMaiDanCost": 1000,
+          "magicAffixIds": [
+            2961
+          ],
+          "description": "Toàn kháng"
+        },
+        {
+          "level": 2,
+          "name": "NhÂn NghÊnh",
+          "successRatePerTenThousand": 10000,
+          "fallbackLevel": 0,
+          "zhenYuanCost": 1600,
+          "huMaiDanCost": 800,
+          "magicAffixIds": [
+            2969
+          ],
+          "description": "Bỏ qua kháng tất cả"
+        },
+        {
+          "level": 3,
+          "name": "Bồn Khuyết",
+          "successRatePerTenThousand": 8000,
+          "fallbackLevel": 1,
+          "zhenYuanCost": 1400,
+          "huMaiDanCost": 700,
+          "magicAffixIds": [
+            2978
+          ],
+          "description": "TĂng lực sát thƯƠng"
+        },
+        {
+          "level": 4,
+          "name": "Nhũ CĂn",
+          "successRatePerTenThousand": 7500,
+          "fallbackLevel": 2,
+          "zhenYuanCost": 1200,
+          "huMaiDanCost": 600,
+          "magicAffixIds": [
+            2986
+          ],
+          "description": "Bổ sung Đối với kỹ nĂng cÔng kích"
+        },
+        {
+          "level": 5,
+          "name": "Vị Kinh",
+          "successRatePerTenThousand": 7000,
+          "fallbackLevel": 3,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2995
+          ],
+          "description": "Trọng Kích"
+        },
+        {
+          "level": 6,
+          "name": "Thận Kinh",
+          "successRatePerTenThousand": 5000,
+          "fallbackLevel": 4,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            3003
+          ],
+          "description": "Trọng Kích tuyệt Đối"
+        },
+        {
+          "level": 7,
+          "name": "âm Cốc",
+          "successRatePerTenThousand": 4500,
+          "fallbackLevel": 5,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            3012
+          ],
+          "description": "Hóa Giải sát thƯƠng"
+        },
+        {
+          "level": 8,
+          "name": "Giao Tín",
+          "successRatePerTenThousand": 4000,
+          "fallbackLevel": 6,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            3020
+          ],
+          "description": "Triệt tiÊu hóa giải sát thƯƠng"
+        },
+        {
+          "level": 9,
+          "name": "Chiếu Hải",
+          "successRatePerTenThousand": 3900,
+          "fallbackLevel": 7,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2901
+          ],
+          "description": "Ngoại cÔng"
+        },
+        {
+          "level": 10,
+          "name": "NhiÊn Cốc",
+          "successRatePerTenThousand": 3800,
+          "fallbackLevel": 8,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2909
+          ],
+          "description": "Nội cÔng"
+        },
+        {
+          "level": 11,
+          "name": "Hoành Cốc",
+          "successRatePerTenThousand": 3700,
+          "fallbackLevel": 9,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2918
+          ],
+          "description": "ThÂn pháp"
+        },
+        {
+          "level": 12,
+          "name": "âm Khí Xung",
+          "successRatePerTenThousand": 3600,
+          "fallbackLevel": 10,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2926
+          ],
+          "description": "Sức mạnh"
+        },
+        {
+          "level": 13,
+          "name": "Bất Dung",
+          "successRatePerTenThousand": 3500,
+          "fallbackLevel": 11,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2935
+          ],
+          "description": "Giới hạn sinh mệnh %"
+        },
+        {
+          "level": 14,
+          "name": "LƯƠng MÔn",
+          "successRatePerTenThousand": 3400,
+          "fallbackLevel": 12,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2943
+          ],
+          "description": "Hiệu quả hồi phục sinh mệnh"
+        },
+        {
+          "level": 15,
+          "name": "Hoành Tì",
+          "successRatePerTenThousand": 3300,
+          "fallbackLevel": 13,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2952
+          ],
+          "description": "Trị số cƯờng hóa ngũ hành"
+        },
+        {
+          "level": 16,
+          "name": "Phong Long",
+          "successRatePerTenThousand": 3300,
+          "fallbackLevel": 14,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2960
+          ],
+          "description": "Trị số nhƯợc hóa ngũ hành"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "code": "duong-duy-mach",
+      "name": "DƯƠng Duy Mạch",
+      "taskVariableId": 4006,
+      "acupoints": [
+        {
+          "level": 1,
+          "name": "Phong Trì",
+          "successRatePerTenThousand": 10000,
+          "fallbackLevel": 0,
+          "zhenYuanCost": 2000,
+          "huMaiDanCost": 1000,
+          "magicAffixIds": [
+            2945
+          ],
+          "description": "Trị số cƯờng hóa ngũ hành"
+        },
+        {
+          "level": 2,
+          "name": "Tình Minh",
+          "successRatePerTenThousand": 10000,
+          "fallbackLevel": 0,
+          "zhenYuanCost": 1600,
+          "huMaiDanCost": 800,
+          "magicAffixIds": [
+            2953
+          ],
+          "description": "Trị số nhƯợc hóa ngũ hành"
+        },
+        {
+          "level": 3,
+          "name": "Thừa Khấp",
+          "successRatePerTenThousand": 8000,
+          "fallbackLevel": 1,
+          "zhenYuanCost": 1400,
+          "huMaiDanCost": 700,
+          "magicAffixIds": [
+            2962
+          ],
+          "description": "Toàn kháng"
+        },
+        {
+          "level": 4,
+          "name": "Cự LiÊu",
+          "successRatePerTenThousand": 7500,
+          "fallbackLevel": 2,
+          "zhenYuanCost": 1200,
+          "huMaiDanCost": 600,
+          "magicAffixIds": [
+            2970
+          ],
+          "description": "Bỏ qua kháng tất cả"
+        },
+        {
+          "level": 5,
+          "name": "địa ThƯƠng",
+          "successRatePerTenThousand": 7000,
+          "fallbackLevel": 3,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2979
+          ],
+          "description": "TĂng lực sát thƯƠng"
+        },
+        {
+          "level": 6,
+          "name": "ThiÊn LiÊu",
+          "successRatePerTenThousand": 5000,
+          "fallbackLevel": 4,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2987
+          ],
+          "description": "Bổ sung Đối với kỹ nĂng cÔng kích"
+        },
+        {
+          "level": 7,
+          "name": "Cự Cốt",
+          "successRatePerTenThousand": 4500,
+          "fallbackLevel": 5,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2996
+          ],
+          "description": "Trọng Kích"
+        },
+        {
+          "level": 8,
+          "name": "KiÊn LiÊu",
+          "successRatePerTenThousand": 4000,
+          "fallbackLevel": 6,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            3004
+          ],
+          "description": "Trọng Kích tuyệt Đối"
+        },
+        {
+          "level": 9,
+          "name": "Phụ DƯƠng",
+          "successRatePerTenThousand": 3900,
+          "fallbackLevel": 7,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            3013
+          ],
+          "description": "Hóa Giải sát thƯƠng"
+        },
+        {
+          "level": 10,
+          "name": "ThÂn Mạch",
+          "successRatePerTenThousand": 3800,
+          "fallbackLevel": 8,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            3021
+          ],
+          "description": "Triệt tiÊu hóa giải sát thƯƠng"
+        },
+        {
+          "level": 11,
+          "name": "Bộc Tham",
+          "successRatePerTenThousand": 3700,
+          "fallbackLevel": 9,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2902
+          ],
+          "description": "Ngoại cÔng"
+        },
+        {
+          "level": 12,
+          "name": "CƯ LiÊu",
+          "successRatePerTenThousand": 3600,
+          "fallbackLevel": 10,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2910
+          ],
+          "description": "Nội cÔng"
+        },
+        {
+          "level": 13,
+          "name": "Ngũ Xứ",
+          "successRatePerTenThousand": 3500,
+          "fallbackLevel": 11,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2919
+          ],
+          "description": "ThÂn pháp"
+        },
+        {
+          "level": 14,
+          "name": "Thừa Quang",
+          "successRatePerTenThousand": 3400,
+          "fallbackLevel": 12,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2927
+          ],
+          "description": "Sức mạnh"
+        },
+        {
+          "level": 15,
+          "name": "Lạc Tức",
+          "successRatePerTenThousand": 3300,
+          "fallbackLevel": 13,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2936
+          ],
+          "description": "Giới hạn sinh mệnh %"
+        },
+        {
+          "level": 16,
+          "name": "Thừa SƠn",
+          "successRatePerTenThousand": 3300,
+          "fallbackLevel": 14,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2944
+          ],
+          "description": "Hiệu quả hồi phục sinh mệnh"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "code": "am-khieu-mach",
+      "name": "âm KhiÊu Mạch",
+      "taskVariableId": 4007,
+      "acupoints": [
+        {
+          "level": 1,
+          "name": "Nội Quan",
+          "successRatePerTenThousand": 10000,
+          "fallbackLevel": 0,
+          "zhenYuanCost": 2000,
+          "huMaiDanCost": 1000,
+          "magicAffixIds": [
+            2929
+          ],
+          "description": "Giới hạn sinh mệnh %"
+        },
+        {
+          "level": 2,
+          "name": "LiÊm Tuyền",
+          "successRatePerTenThousand": 10000,
+          "fallbackLevel": 0,
+          "zhenYuanCost": 1600,
+          "huMaiDanCost": 800,
+          "magicAffixIds": [
+            2937
+          ],
+          "description": "Hiệu quả hồi phục sinh mệnh"
+        },
+        {
+          "level": 3,
+          "name": "ThiÊn đột",
+          "successRatePerTenThousand": 8000,
+          "fallbackLevel": 1,
+          "zhenYuanCost": 1400,
+          "huMaiDanCost": 700,
+          "magicAffixIds": [
+            2946
+          ],
+          "description": "Trị số cƯờng hóa ngũ hành"
+        },
+        {
+          "level": 4,
+          "name": "Kỳ MÔn",
+          "successRatePerTenThousand": 7500,
+          "fallbackLevel": 2,
+          "zhenYuanCost": 1200,
+          "huMaiDanCost": 600,
+          "magicAffixIds": [
+            2954
+          ],
+          "description": "Trị số nhƯợc hóa ngũ hành"
+        },
+        {
+          "level": 5,
+          "name": "Phúc Ai",
+          "successRatePerTenThousand": 7000,
+          "fallbackLevel": 3,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2963
+          ],
+          "description": "Toàn kháng"
+        },
+        {
+          "level": 6,
+          "name": "đại Hoành",
+          "successRatePerTenThousand": 5000,
+          "fallbackLevel": 4,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2971
+          ],
+          "description": "Bỏ qua kháng tất cả"
+        },
+        {
+          "level": 7,
+          "name": "Phủ Xá",
+          "successRatePerTenThousand": 4500,
+          "fallbackLevel": 5,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2980
+          ],
+          "description": "TĂng lực sát thƯƠng"
+        },
+        {
+          "level": 8,
+          "name": "Xung MÔn",
+          "successRatePerTenThousand": 4000,
+          "fallbackLevel": 6,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2988
+          ],
+          "description": "Bổ sung Đối với kỹ nĂng cÔng kích"
+        },
+        {
+          "level": 9,
+          "name": "Trúc TÂn",
+          "successRatePerTenThousand": 3900,
+          "fallbackLevel": 7,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2997
+          ],
+          "description": "Trọng Kích"
+        },
+        {
+          "level": 10,
+          "name": "Thiểu Xung",
+          "successRatePerTenThousand": 3800,
+          "fallbackLevel": 8,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            3005
+          ],
+          "description": "Trọng Kích tuyệt Đối"
+        },
+        {
+          "level": 11,
+          "name": "Thiểu Phủ",
+          "successRatePerTenThousand": 3700,
+          "fallbackLevel": 9,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            3014
+          ],
+          "description": "Hóa Giải sát thƯƠng"
+        },
+        {
+          "level": 12,
+          "name": "Thần MÔn",
+          "successRatePerTenThousand": 3600,
+          "fallbackLevel": 10,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            3022
+          ],
+          "description": "Triệt tiÊu hóa giải sát thƯƠng"
+        },
+        {
+          "level": 13,
+          "name": "Thủy PhÂn",
+          "successRatePerTenThousand": 3500,
+          "fallbackLevel": 11,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2903
+          ],
+          "description": "Ngoại cÔng"
+        },
+        {
+          "level": 14,
+          "name": "Khí Hải",
+          "successRatePerTenThousand": 3400,
+          "fallbackLevel": 12,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2911
+          ],
+          "description": "Nội cÔng"
+        },
+        {
+          "level": 15,
+          "name": "Trung Cực",
+          "successRatePerTenThousand": 3300,
+          "fallbackLevel": 13,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2920
+          ],
+          "description": "ThÂn pháp"
+        },
+        {
+          "level": 16,
+          "name": "Khúc Cốt",
+          "successRatePerTenThousand": 3300,
+          "fallbackLevel": 14,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2928
+          ],
+          "description": "Sức mạnh"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "code": "duong-khieu-mach",
+      "name": "DƯƠng KhiÊu Mạch",
+      "taskVariableId": 4008,
+      "acupoints": [
+        {
+          "level": 1,
+          "name": "Ngoại Quan",
+          "successRatePerTenThousand": 10000,
+          "fallbackLevel": 0,
+          "zhenYuanCost": 2000,
+          "huMaiDanCost": 1000,
+          "magicAffixIds": [
+            2913
+          ],
+          "description": "ThÂn pháp"
+        },
+        {
+          "level": 2,
+          "name": "á MÔn",
+          "successRatePerTenThousand": 10000,
+          "fallbackLevel": 0,
+          "zhenYuanCost": 1600,
+          "huMaiDanCost": 800,
+          "magicAffixIds": [
+            2921
+          ],
+          "description": "Sức mạnh"
+        },
+        {
+          "level": 3,
+          "name": "Phong Phủ",
+          "successRatePerTenThousand": 8000,
+          "fallbackLevel": 1,
+          "zhenYuanCost": 1400,
+          "huMaiDanCost": 700,
+          "magicAffixIds": [
+            2930
+          ],
+          "description": "Giới hạn sinh mệnh %"
+        },
+        {
+          "level": 4,
+          "name": "Phong Trì",
+          "successRatePerTenThousand": 7500,
+          "fallbackLevel": 2,
+          "zhenYuanCost": 1200,
+          "huMaiDanCost": 600,
+          "magicAffixIds": [
+            2938
+          ],
+          "description": "Hiệu quả hồi phục sinh mệnh"
+        },
+        {
+          "level": 5,
+          "name": "Não KhÔng",
+          "successRatePerTenThousand": 7000,
+          "fallbackLevel": 3,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2947
+          ],
+          "description": "Trị số cƯờng hóa ngũ hành"
+        },
+        {
+          "level": 6,
+          "name": "Thừa Linh",
+          "successRatePerTenThousand": 5000,
+          "fallbackLevel": 4,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2955
+          ],
+          "description": "Trị số nhƯợc hóa ngũ hành"
+        },
+        {
+          "level": 7,
+          "name": "Chính Doanh",
+          "successRatePerTenThousand": 4500,
+          "fallbackLevel": 5,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2964
+          ],
+          "description": "Toàn kháng"
+        },
+        {
+          "level": 8,
+          "name": "Mục Song",
+          "successRatePerTenThousand": 4000,
+          "fallbackLevel": 6,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2972
+          ],
+          "description": "Bỏ qua kháng tất cả"
+        },
+        {
+          "level": 9,
+          "name": "đầu LÂm Khấp",
+          "successRatePerTenThousand": 3900,
+          "fallbackLevel": 7,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2981
+          ],
+          "description": "TĂng lực sát thƯƠng"
+        },
+        {
+          "level": 10,
+          "name": "DƯƠng Bạch",
+          "successRatePerTenThousand": 3800,
+          "fallbackLevel": 8,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2989
+          ],
+          "description": "Bổ sung Đối với kỹ nĂng cÔng kích"
+        },
+        {
+          "level": 11,
+          "name": "Bổn Thần",
+          "successRatePerTenThousand": 3700,
+          "fallbackLevel": 9,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2998
+          ],
+          "description": "Trọng Kích"
+        },
+        {
+          "level": 12,
+          "name": "đầu Duy",
+          "successRatePerTenThousand": 3600,
+          "fallbackLevel": 10,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            3006
+          ],
+          "description": "Trọng Kích tuyệt Đối"
+        },
+        {
+          "level": 13,
+          "name": "KiÊn Tịnh",
+          "successRatePerTenThousand": 3500,
+          "fallbackLevel": 11,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            3015
+          ],
+          "description": "Hóa Giải sát thƯƠng"
+        },
+        {
+          "level": 14,
+          "name": "ThiÊn LiÊu",
+          "successRatePerTenThousand": 3400,
+          "fallbackLevel": 12,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            3023
+          ],
+          "description": "Triệt tiÊu hóa giải sát thƯƠng"
+        },
+        {
+          "level": 15,
+          "name": "Noãn Du",
+          "successRatePerTenThousand": 3300,
+          "fallbackLevel": 13,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2904
+          ],
+          "description": "Ngoại cÔng"
+        },
+        {
+          "level": 16,
+          "name": "DƯƠng Giao",
+          "successRatePerTenThousand": 3300,
+          "fallbackLevel": 14,
+          "zhenYuanCost": 1000,
+          "huMaiDanCost": 500,
+          "magicAffixIds": [
+            2912
+          ],
+          "description": "Nội cÔng"
+        }
+      ]
+    }
+  ],
+  "staminaRules": {
+    "normalRegenPerTick": 1,
+    "exerciseRunDrainPerTick": 1,
+    "fightRunDrainPerTick": 1,
+    "killRunDrainPerTick": 18,
+    "sitRegenPerMil": 10
+  },
+  "teamResistEffects": [
+    {
+      "memberSeries": 0,
+      "grantedResistType": "physics",
+      "bonusByTeammateSeries": [
+        3,
+        3,
+        10,
+        3,
+        3
+      ]
+    },
+    {
+      "memberSeries": 1,
+      "grantedResistType": "poison",
+      "bonusByTeammateSeries": [
+        3,
+        3,
+        3,
+        10,
+        3
+      ]
+    },
+    {
+      "memberSeries": 2,
+      "grantedResistType": "cold",
+      "bonusByTeammateSeries": [
+        3,
+        10,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "memberSeries": 3,
+      "grantedResistType": "fire",
+      "bonusByTeammateSeries": [
+        3,
+        3,
+        3,
+        3,
+        10
+      ]
+    },
+    {
+      "memberSeries": 4,
+      "grantedResistType": "light",
+      "bonusByTeammateSeries": [
+        10,
+        3,
+        3,
+        3,
+        3
+      ]
+    }
+  ],
+  "tongConfig": {
+    "levels": [
+      {
+        "level": 0,
+        "workshopUpperLevel": 10,
+        "maxWorkshopCount": 8,
+        "weeklyBuildUpper": 6720000,
+        "upgradeFund": 1,
+        "upgradeWorkshopCount": 0,
+        "upgradeHiWorkshopCount": 0,
+        "upgradeHiWorkshopLevel": 0
+      },
+      {
+        "level": 1,
+        "workshopUpperLevel": 10,
+        "maxWorkshopCount": 8,
+        "weeklyBuildUpper": 6720000,
+        "upgradeFund": 2,
+        "upgradeWorkshopCount": 3,
+        "upgradeHiWorkshopCount": 3,
+        "upgradeHiWorkshopLevel": 3
+      },
+      {
+        "level": 2,
+        "workshopUpperLevel": 10,
+        "maxWorkshopCount": 8,
+        "weeklyBuildUpper": 13440000,
+        "upgradeFund": 3,
+        "upgradeWorkshopCount": 3,
+        "upgradeHiWorkshopCount": 3,
+        "upgradeHiWorkshopLevel": 6
+      },
+      {
+        "level": 3,
+        "workshopUpperLevel": 10,
+        "maxWorkshopCount": 8,
+        "weeklyBuildUpper": 20160000,
+        "upgradeFund": 4,
+        "upgradeWorkshopCount": 4,
+        "upgradeHiWorkshopCount": 3,
+        "upgradeHiWorkshopLevel": 8
+      },
+      {
+        "level": 4,
+        "workshopUpperLevel": 10,
+        "maxWorkshopCount": 8,
+        "weeklyBuildUpper": 33600000,
+        "upgradeFund": 5,
+        "upgradeWorkshopCount": 5,
+        "upgradeHiWorkshopCount": 3,
+        "upgradeHiWorkshopLevel": 9
+      },
+      {
+        "level": 5,
+        "workshopUpperLevel": 10,
+        "maxWorkshopCount": 8,
+        "weeklyBuildUpper": 50400000,
+        "upgradeFund": 0,
+        "upgradeWorkshopCount": 0,
+        "upgradeHiWorkshopCount": 0,
+        "upgradeHiWorkshopLevel": 0
+      }
+    ],
+    "workshops": [
+      {
+        "id": 1,
+        "code": "khu-binh-giap",
+        "name": "Khu Binh giáp",
+        "costCoefficient": 1.4,
+        "description": "Trấn bang chi thạch giúp tĂng cao xác suất thành cÔng khi luyện Đá thuộc tính, chế tạo trang bị tím và trang bị hoàng kim.",
+        "scriptPath": "\\script\\tong\\workshop\\ws_bingjia.lua"
+      },
+      {
+        "id": 2,
+        "code": "khu-thien-cong",
+        "name": "Khu ThiÊn CÔng",
+        "costCoefficient": 1,
+        "description": "Kỹ nĂng sửa chữa khÔng những giúp giảm chi phí sửa mà còn có thể giúp gia cố trang bị.",
+        "scriptPath": "\\script\\tong\\workshop\\ws_tiangong.lua"
+      },
+      {
+        "id": 3,
+        "code": "khu-mat-na",
+        "name": "Khu Mặt nạ",
+        "costCoefficient": 1.2,
+        "description": "Mặt nạ phỏng chế theo mặt nạ của Dị Dung Thuật Sỹ, và cũng có thể dùng Điểm cống hiến Để Đổi.",
+        "scriptPath": "\\script\\tong\\workshop\\ws_mianju.lua"
+      },
+      {
+        "id": 4,
+        "code": "khu-luyen-tap",
+        "name": "Khu Luyện tập",
+        "costCoefficient": 1,
+        "description": "Có thể giúp nhÂn ĐÔi kinh nghiệm.",
+        "scriptPath": "\\script\\tong\\workshop\\ws_shilian.lua"
+      },
+      {
+        "id": 5,
+        "code": "khu-thien-y",
+        "name": "Khu ThiÊn ý",
+        "costCoefficient": 0.8,
+        "description": "Chế tạo các lệnh bài nhiệm vụ, sau khi sử dụng sẽ ngẫu nhiÊn tiếp nhận các nhiệm vụ.",
+        "scriptPath": "\\script\\tong\\workshop\\ws_tianyi.lua"
+      },
+      {
+        "id": 6,
+        "code": "khu-le-vat",
+        "name": "Khu Lễ vật",
+        "costCoefficient": 1,
+        "description": "PhÂn phát thần bí hồng bao và lễ phẩm cho bang chúng.",
+        "scriptPath": "\\script\\tong\\workshop\\ws_liwu.lua"
+      },
+      {
+        "id": 7,
+        "code": "khu-hoat-dong",
+        "name": "Khu hoạt Động",
+        "costCoefficient": 0.6,
+        "description": "Tổ chức các hoạt Động thú vị cho bang chúng. <enter><color=orange>Hoạt Động chiÊu mộ Đệ tử<enter>Hoạt Động Đánh niÊn thú<color>",
+        "scriptPath": "\\script\\tong\\workshop\\ws_huodong.lua"
+      }
+    ],
+    "stunts": [
+      {
+        "id": 1,
+        "code": "phung-hoang-an",
+        "name": "Phụng Hoàng ấn",
+        "skillId": 739,
+        "maxMembers": 300,
+        "maxCountPerMember": 2,
+        "cycleWeeks": 4,
+        "weeklyMaintenanceCost": 6000,
+        "rightLimit": 2,
+        "description": "\"Phụng hoàng ấn là loại Đá hiếm tại chốn thÂm sƠn, dùng Để chế tạo trang bị, có thể giúp nÂng cao xác suất thành cÔng.\""
+      },
+      {
+        "id": 2,
+        "code": "luyen-vo-hon",
+        "name": "Luyện võ hồn",
+        "skillId": 740,
+        "maxMembers": 300,
+        "maxCountPerMember": 5,
+        "cycleWeeks": 4,
+        "weeklyMaintenanceCost": 6000,
+        "rightLimit": 2,
+        "description": "\"Một kỹ nghệ tạo tác, có thể giúp tĂng thÊm 40 Điểm Độ bền trÊn trang bị, giúp cho trang bị trở nÊn cứng cáp hƠn.\""
+      },
+      {
+        "id": 3,
+        "code": "vo-song-sat-tran",
+        "name": "VÔ Song Sát Trận",
+        "skillId": 741,
+        "maxMembers": 10,
+        "maxCountPerMember": 2,
+        "cycleWeeks": 4,
+        "weeklyMaintenanceCost": 6000,
+        "rightLimit": 1,
+        "description": "Kỳ binh trận pháp ghi lại trong Võ Mộc Di ThƯ. Sau khi phát Động có thể khiến cho những thành viÊn bang hội trong phạm vi nhất Định giảm ĐƯợc trị PK."
+      },
+      {
+        "id": 4,
+        "code": "dao-chu-tien",
+        "name": "đào Chu Tiền",
+        "skillId": 742,
+        "maxMembers": 300,
+        "maxCountPerMember": 1,
+        "cycleWeeks": 4,
+        "weeklyMaintenanceCost": 6000,
+        "rightLimit": 2,
+        "description": "Sau khi sẽ khiến cho Boss và Thủy tặc Đầu lĩnh trÊn Độ thuyền rớt ấn Sát Giả nhiều hƠn."
+      },
+      {
+        "id": 5,
+        "code": "vo-than-tu-phuc",
+        "name": "Võ thần tứ phúc",
+        "skillId": 743,
+        "maxMembers": 2,
+        "maxCountPerMember": 2,
+        "cycleWeeks": 4,
+        "weeklyMaintenanceCost": 6000,
+        "rightLimit": 1,
+        "description": "\"Sau khi nhận ĐƯợc Võ Thần Tứ Phúc, trong vòng 2 giờ sẽ ĐƯợc nhÂn ĐÔi phần thƯởng khi tham gia Tống Kim, nhiệm vụ tín sứ, thách thức thời gian, võ lÂm liÊn Đấu, nhiệm vụ Dã Tẩu, đÊm huy hoàng.\""
+      },
+      {
+        "id": 6,
+        "code": "linh-sam-luc",
+        "name": "Linh SÂm Lực",
+        "skillId": 744,
+        "maxMembers": 2,
+        "maxCountPerMember": 2,
+        "cycleWeeks": 4,
+        "weeklyMaintenanceCost": 6000,
+        "rightLimit": 1,
+        "description": "Sau khi nhận ĐƯợc Linh SÂm Lực"
+      },
+      {
+        "id": 7,
+        "code": "hoang-kim-lenh",
+        "name": "Hoàng Kim Lệnh",
+        "skillId": 745,
+        "maxMembers": 2,
+        "maxCountPerMember": 2,
+        "cycleWeeks": 4,
+        "weeklyMaintenanceCost": 6000,
+        "rightLimit": 1,
+        "description": "\"Lệnh bài Hoàng Kim, dùng Để gọi ra các võ sỹ thần bí. Sau khi Đánh bại võ sỹ sẽ nhận ĐƯợc bảo tàng mà hắn Đang canh giữ.\""
+      }
+    ]
+  }
+}

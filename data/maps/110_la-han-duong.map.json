@@ -1,0 +1,192 @@
+{
+  "$schema": "../../schemas/map.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": 110,
+  "code": "la-han-duong",
+  "name": "La Hán đƯờng",
+  "mapType": "Field",
+  "mapRules": {
+    "defaultFightMode": 1,
+    "allowPk": true,
+    "forbidHeartTeleport": false
+  },
+  "regionBounds": {
+    "leftRegionX": 99,
+    "topRegionY": 99,
+    "rightRegionX": 101,
+    "bottomRegionY": 100
+  },
+  "regions": [
+    {
+      "regionX": 99,
+      "regionY": 99,
+      "obstacleRleBase64": "OwAAAAAAAQBRAAAAAgARAAAAHAAAAAAAAQBRAAAAAwARAAAAAQAxAAAAGgAAAAAAAQBRAAAABQARAAAAAQAxAAAAGAAAAAAAAQBRAAAAAwARAAAAAQAhAAAAAQBBAAAAAgARAAAAFwAAAAAAAQBRAAAAAwARAAAAAQAhAAAAAgAAAAAAAQBBAAAAAQARAAAAFgAAAAAAAQBRAAAABAARAAAAAwAAAAAAAQBRAAAAAQARAAAAFQAAAAAAAQBRAAAABQARAAAAAwAAAAAAAgARAAAAFAAAAAAAAQBRAAAABgARAAAAAwAAAAAAAgARAAAAEwAAAAAAAQBRAAAABwARAAAAFwAAAAAAAQBRAAAABgARAAAAAQAhAAAAFwAAAAAAAQBRAAAABwARAAAAFwAAAAAAAQBRAAAABgARAAAAAQAhAAAAFwAAAAAAAQBRAAAACwARAAAAAQAxAAAAEgAAAAAAAQBRAAAADQARAAAAAQAxAAAAEAAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAQBBAAAACwARAAAAAwAAAAAA"
+    },
+    {
+      "regionX": 100,
+      "regionY": 99,
+      "obstacleRleBase64": "DAAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAgAAAAAAAQBBAAAACgARAAAADgAAAAAAAQBRAAAAAgARAAAAAQAhAAAABAAAAAAAAQBBAAAACQARAAAADQAAAAAAAQBRAAAAAgARAAAAAQAhAAAABgAAAAAACQARAAAADQAAAAAAAwARAAAABwAAAAAAAQBBAAAABwARAAAAAQAhAAAADQAAAAAAAwARAAAACAAAAAAAAQBBAAAABAARAAAAAQAhAAAADwAAAAAAAwARAAAAAQAxAAAACAAAAAAAAQBBAAAAAwARAAAAEAAAAAAAAQBBAAAAAwARAAAAAQAxAAAAAQBRAAAAAgARAAAAGQAAAAAAAQBBAAAABgARAAAAGgAAAAAAAQBBAAAABQARAAAAGwAAAAAAAQBBAAAABAARAAAAHAAAAAAAAQBBAAAAAwARAAAAAQAxAAAAHAAAAAAAAQBBAAAAAwARAAAAAQAxAAAAHAAAAAAAAQBBAAAAAwARAAAAAQAxAAAAHAAAAAAAAQBBAAAABwARAAAAGQAAAAAAAQBBAAAABgARAAAABAAAAAAAAQBRAAAAAgARAAAAEwAAAAAAAQBBAAAABAARAAAAAQAhAAAAAwAAAAAAAQBRAAAAAwARAAAA"
+    },
+    {
+      "regionX": 101,
+      "regionY": 99,
+      "obstacleRleBase64": "FAAAAAAAAQBBAAAAAwARAAAAAQAxAAAAAQAAAAAABAARAAAAAQAhAAAAFgAAAAAAAQBBAAAABwARAAAAAQAhAAAAGAAAAAAAAQBBAAAABgARAAAAGgAAAAAAAQBBAAAABAARAAAAAQAhAAAAHAAAAAAAAQBBAAAAAgARAAAAHgAAAAAAAQBBAAAAAQARAAAARAEAAAAA"
+    },
+    {
+      "regionX": 99,
+      "regionY": 100,
+      "obstacleRleBase64": "gAAAAAAAAQAxAAAAHwAAAAAAAQARAAAAAQAxAAAAHgAAAAAAAgARAAAAAQAxAAAAHQAAAAAAAwARAAAAAQAxAAAAHAAAAAAABAARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAgARAAAAAQAxAAAAHQAAAAAAAwARAAAAAQAxAAAAHAAAAAAABAARAAAAAQAxAAAAGwAAAAAABQARAAAAAQAxAAAAGgAAAAAAAQBBAAAABQARAAAAAQAxAAAAGgAAAAAAAQBBAAAABQARAAAAHgAAAAAAAQBBAAAAAQARAAAAAQAxAAAAFQAAAAAA"
+    },
+    {
+      "regionX": 100,
+      "regionY": 100,
+      "obstacleRleBase64": "CQAAAAAAAgARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAgARAAAAHQAAAAAAAQBRAAAAAgARAAAAHAAAAAAAAQBRAAAAAgARAAAAAQAhAAAAHAAAAAAAAwARAAAAHQAAAAAAAwARAAAAHQAAAAAAAwARAAAAHAAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGwAAAAAAAwARAAAAAQAhAAAAHAAAAAAAAgARAAAAAQAhAAAAHQAAAAAA"
+    }
+  ],
+  "portals": [
+    {
+      "trapId": 1960941275,
+      "code": "portal-to-108-la-han-tran",
+      "spawnSource": "regionDat",
+      "scriptPath": "\\script\\ÖÐÔ­±±Çø\\ÉÙÁÖÅÉ\\ÂÞººÌÃ\\trap\\ÂÞººÌÃtoÒ»°ÙÁã°ËÂÞººÕó.lua",
+      "action": "teleport",
+      "targetMapId": 114,
+      "targetMpsX": 47968,
+      "targetMpsY": 105984,
+      "targetFightMode": 1,
+      "triggerCells": [
+        {
+          "regionX": 99,
+          "regionY": 99,
+          "cellY": 22,
+          "startCellX": 11,
+          "cellCount": 1
+        },
+        {
+          "regionX": 99,
+          "regionY": 99,
+          "cellY": 23,
+          "startCellX": 10,
+          "cellCount": 3
+        },
+        {
+          "regionX": 99,
+          "regionY": 99,
+          "cellY": 24,
+          "startCellX": 11,
+          "cellCount": 3
+        },
+        {
+          "regionX": 99,
+          "regionY": 99,
+          "cellY": 25,
+          "startCellX": 12,
+          "cellCount": 2
+        },
+        {
+          "regionX": 99,
+          "regionY": 99,
+          "cellY": 26,
+          "startCellX": 13,
+          "cellCount": 1
+        }
+      ]
+    },
+    {
+      "trapId": 3960637390,
+      "code": "portal-to-thieu-lam-phai",
+      "spawnSource": "regionDat",
+      "scriptPath": "\\script\\ÖÐÔ­±±Çø\\ÉÙÁÖÅÉ\\ÂÞººÌÃ\\trap\\ÂÞººÌÃtoÉÙÁÖÅÉ.lua",
+      "action": "teleport",
+      "targetMapId": 103,
+      "targetMpsX": 51808,
+      "targetMpsY": 98528,
+      "targetFightMode": 1,
+      "triggerCells": [
+        {
+          "regionX": 100,
+          "regionY": 100,
+          "cellY": 1,
+          "startCellX": 13,
+          "cellCount": 1
+        },
+        {
+          "regionX": 100,
+          "regionY": 100,
+          "cellY": 2,
+          "startCellX": 12,
+          "cellCount": 2
+        },
+        {
+          "regionX": 100,
+          "regionY": 100,
+          "cellY": 3,
+          "startCellX": 11,
+          "cellCount": 2
+        },
+        {
+          "regionX": 100,
+          "regionY": 100,
+          "cellY": 4,
+          "startCellX": 10,
+          "cellCount": 2
+        },
+        {
+          "regionX": 100,
+          "regionY": 100,
+          "cellY": 5,
+          "startCellX": 9,
+          "cellCount": 2
+        },
+        {
+          "regionX": 100,
+          "regionY": 100,
+          "cellY": 6,
+          "startCellX": 8,
+          "cellCount": 2
+        },
+        {
+          "regionX": 100,
+          "regionY": 100,
+          "cellY": 7,
+          "startCellX": 7,
+          "cellCount": 2
+        },
+        {
+          "regionX": 100,
+          "regionY": 100,
+          "cellY": 8,
+          "startCellX": 6,
+          "cellCount": 2
+        },
+        {
+          "regionX": 100,
+          "regionY": 100,
+          "cellY": 9,
+          "startCellX": 6,
+          "cellCount": 1
+        }
+      ]
+    }
+  ],
+  "spawnGroups": [
+    {
+      "npcTemplateId": 70,
+      "npcCode": "la-han-duong-dau-toa",
+      "spawnSource": "regionDat",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "respawnFrames": 0,
+      "scriptPath": "\\script\\中原北区\\少林派\\罗汉堂\\npc\\路人_玄难.lua",
+      "spawns": [
+        {
+          "mpsX": 51373,
+          "mpsY": 102249
+        }
+      ]
+    }
+  ]
+}

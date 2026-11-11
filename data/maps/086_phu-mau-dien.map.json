@@ -1,0 +1,161 @@
+{
+  "$schema": "../../schemas/map.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": 86,
+  "code": "phu-mau-dien",
+  "name": "Phụ Mẫu Điện",
+  "mapType": "Field",
+  "worldMapPos": {
+    "x": 396,
+    "y": 357
+  },
+  "mapRules": {
+    "defaultFightMode": 1,
+    "allowPk": true,
+    "forbidHeartTeleport": false
+  },
+  "regionBounds": {
+    "leftRegionX": 98,
+    "topRegionY": 98,
+    "rightRegionX": 101,
+    "bottomRegionY": 100
+  },
+  "regions": [
+    {
+      "regionX": 98,
+      "regionY": 99,
+      "obstacleRleBase64": "0QEUAAAAAQBRAAAAAwARAAAAHAAUAAAABAARAAAACwAUAAAA"
+    },
+    {
+      "regionX": 99,
+      "regionY": 99,
+      "obstacleRleBase64": "EAAUAAAAAQBRAAAABAARAAAAAQAxAAAAGQAUAAAAAQBRAAAAAgARAAAAAQAhAAAAAQBBAAAAAgARAAAAAQAxAAAAFwAUAAAAAQBRAAAAAgARAAAAAQAhAAAAAgAAAAAAAQBBAAAAAgARAAAAAQAxAAAAFQAUAAAAAQBRAAAAAwARAAAABAAAAAAAAwARAAAAAQAxAAAAEwAUAAAAAQBRAAAAAwARAAAAAQAhAAAABAAAAAAABAARAAAAAQAxAAAAEQAUAAAAAQBRAAAABAARAAAABQAAAAAAAQBBAAAABAARAAAAAQAxAAAADwAUAAAAAQBRAAAABQARAAAABgAAAAAAAQBBAAAABAARAAAAAQAxAAAADQAUAAAAAQBRAAAABgARAAAAAQAxAAAAAwAAAAAAAgARAAAAAQAxAAAAAQBBAAAABAARAAAAAQAxAAAACwAUAAAAAQBRAAAABQARAAAAAwAUAAAAAwAAAAAAAwARAAAAAQAAAAAAAQBBAAAABAARAAAAAQAxAAAACQAUAAAAAQBRAAAABQARAAAAAQAhAAAAAQBEAAAAAgAUAAAAAwAAAAAAAwARAAAABAAAAAAAAwARAAAAAQAxAAAABwAUAAAAAQBRAAAABQARAAAAAQAhAAAABwAAAAAAAgAUAAAAAQAkAAAABAAAAAAABAARAAAAAQAxAAAABQAUAAAAAQBRAAAABQARAAAAAQAhAAAAAgAAAAAAAgAUAAAABAAAAAAAAgAUAAAABQAAAAAAAQBBAAAABAARAAAABAAUAAAAAQBRAAAABQARAAAAAQAhAAAAAwAAAAAAAgAUAAAADAAAAAAAAQBBAAAAAwARAAAAAwAUAAAAAQBRAAAABQARAAAAAQAhAAAABgAAAAAAAQBUAAAAAQAUAAAAAQA0AAAABwAAAAAAAgARAAAAAQAAAAAAAQBBAAAACAARAAAAAQAhAAAABAAAAAAAAgAUAAAAAwAAAAAAAwAUAAAABwAAAAAAAgARAAAAAgAAAAAAAQBBAAAABwARAAAABQAAAAAAAgAUAAAADQAAAAAAAQBBAAAAAQARAAAAAwAAAAAAAQBBAAAA"
+    },
+    {
+      "regionX": 100,
+      "regionY": 99,
+      "obstacleRleBase64": "AQBBAAAABQARAAAAAQAxAAAABwAAAAAAAgAUAAAAEAAAAAAAAQAUAAAAAQBBAAAABgARAAAAAQAxAAAABQAAAAAAAgAUAAAAEAAAAAAAAgAUAAAAAQBBAAAACQARAAAAAQAxAAAABwAAAAAAAQBRAAAAAgARAAAAAQAxAAAACAAAAAAABAAUAAAAAQBBAAAACAARAAAABwAAAAAABAARAAAACAAAAAAABQAUAAAAAQBBAAAABgARAAAAAQAhAAAAEwAAAAAABgAUAAAAAQBBAAAABQARAAAAFAAAAAAABwAUAAAAAQBBAAAABAARAAAAAQAxAAAAEgAAAAAAAQBRAAAACAAUAAAAAQBBAAAACAARAAAAAQAxAAAADAAAAAAAAQBRAAAAAQARAAAACQAUAAAAAQBBAAAACAARAAAACwAAAAAAAQBRAAAAAgARAAAACgAUAAAAAQBBAAAABwARAAAACgAAAAAAAQBRAAAAAwARAAAACwAUAAAAAQBBAAAABQARAAAAAQAhAAAACgAAAAAAAwARAAAAAQAhAAAADAAUAAAAAQBBAAAABAARAAAAAQAxAAAACQAAAAAAAQBRAAAAAgARAAAAAQAhAAAADgAUAAAAAQBBAAAABAARAAAAAQAxAAAABwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAEAAUAAAAAQBBAAAACAARAAAAAgAAAAAAAQBRAAAAAgARAAAAAQAhAAAAEgAUAAAAAQBBAAAABwARAAAAAQAxAAAAAQBRAAAAAgARAAAAAQAhAAAAFAAUAAAAAQBBAAAACQARAAAAAQAhAAAABQAUAAAA"
+    },
+    {
+      "regionX": 101,
+      "regionY": 99,
+      "obstacleRleBase64": "EQAUAAAAAQBBAAAABwARAAAAAQAhAAAAGAAUAAAABAARAAAAAQAhAAAAGwAUAAAAAQBBAAAAAwARAAAAHgAUAAAAAQBBAAAAAQARAAAAigEUAAAA"
+    },
+    {
+      "regionX": 99,
+      "regionY": 100,
+      "obstacleRleBase64": "YAEUAAAAAQARAAAAAQAxAAAAHgAUAAAAAgARAAAAAQAxAAAAHQAUAAAAAwARAAAAAQAxAAAAHAAUAAAABAARAAAAAQAxAAAAGwAUAAAABQARAAAAAQAxAAAAGgAUAAAA"
+    },
+    {
+      "regionX": 100,
+      "regionY": 100,
+      "obstacleRleBase64": "AQAAAAAAAQBBAAAABAARAAAAGgAUAAAAAgAAAAAABAARAAAAGgAUAAAAAQAAAAAAAQBRAAAAAwARAAAAAQAhAAAAGgAUAAAABAARAAAAAQAhAAAAGwAUAAAAAQBBAAAAAwARAAAAHAAUAAAAAQBRAAAAAwARAAAAHAAUAAAAAwARAAAAAQAhAAAAHAAUAAAAAgARAAAAAQAhAAAAHQAUAAAAAQARAAAAAQAhAAAAHgAUAAAAAQAhAAAA3wAUAAAA"
+    }
+  ],
+  "portals": [
+    {
+      "trapId": 3620099571,
+      "code": "portal-to-vo-dang-phai",
+      "spawnSource": "regionDat",
+      "scriptPath": "\\script\\ÖÐÔ­ÄÏÇø\\Îäµ±ÅÉ\\¸¸Ä¸µî\\trap\\¸¸Ä¸µîtoÎäµ±ÅÉ.lua",
+      "action": "teleport",
+      "targetMapId": 81,
+      "targetMpsX": 52000,
+      "targetMpsY": 99328,
+      "targetFightMode": 1,
+      "triggerCells": [
+        {
+          "regionX": 100,
+          "regionY": 99,
+          "cellY": 25,
+          "startCellX": 11,
+          "cellCount": 3
+        },
+        {
+          "regionX": 100,
+          "regionY": 99,
+          "cellY": 26,
+          "startCellX": 10,
+          "cellCount": 4
+        },
+        {
+          "regionX": 100,
+          "regionY": 99,
+          "cellY": 27,
+          "startCellX": 9,
+          "cellCount": 4
+        },
+        {
+          "regionX": 100,
+          "regionY": 99,
+          "cellY": 28,
+          "startCellX": 8,
+          "cellCount": 4
+        },
+        {
+          "regionX": 100,
+          "regionY": 99,
+          "cellY": 29,
+          "startCellX": 7,
+          "cellCount": 3
+        },
+        {
+          "regionX": 100,
+          "regionY": 99,
+          "cellY": 30,
+          "startCellX": 6,
+          "cellCount": 4
+        },
+        {
+          "regionX": 100,
+          "regionY": 99,
+          "cellY": 31,
+          "startCellX": 5,
+          "cellCount": 4
+        },
+        {
+          "regionX": 100,
+          "regionY": 100,
+          "cellY": 0,
+          "startCellX": 5,
+          "cellCount": 3
+        },
+        {
+          "regionX": 100,
+          "regionY": 100,
+          "cellY": 1,
+          "startCellX": 5,
+          "cellCount": 2
+        },
+        {
+          "regionX": 100,
+          "regionY": 100,
+          "cellY": 2,
+          "startCellX": 5,
+          "cellCount": 1
+        }
+      ]
+    }
+  ],
+  "spawnGroups": [
+    {
+      "npcTemplateId": 79,
+      "npcCode": "vo-dang-ho-phap-dao-thach-mon",
+      "spawnSource": "regionDat",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "respawnFrames": 0,
+      "scriptPath": "\\script\\中原南区\\武当派\\父母殿\\npc\\wdnpc04\\wdnpc04.lua",
+      "spawns": [
+        {
+          "mpsX": 51323,
+          "mpsY": 101900,
+          "dirIndex": 63
+        }
+      ]
+    }
+  ]
+}

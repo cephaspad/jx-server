@@ -4,6 +4,7 @@ using JXServer.GameAssets.Items;
 using JXServer.GameAssets.LootTables;
 using JXServer.GameAssets.NpcTemplates;
 using JXServer.GameAssets.PlayerTemplates;
+using JXServer.GameAssets.Shops;
 using JXServer.GameAssets.Skills;
 using JXServer.GameAssets.WorldMaps;
 using Microsoft.Extensions.Configuration;
@@ -48,6 +49,7 @@ public static class GameAssetsServiceCollectionExtensions
         services.AddSingleton<ITrapScriptCatalog, TrapScriptCatalog>();
         services.AddSingleton<IMapCatalog, MapCatalog>();
         services.AddSingleton<IPlayerTemplateCatalog, PlayerTemplateCatalog>();
+        services.AddSingleton<IShopCatalog, ShopCatalog>();
 
         return services;
     }

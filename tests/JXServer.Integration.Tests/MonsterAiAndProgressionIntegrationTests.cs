@@ -41,6 +41,7 @@ public sealed class MonsterAiAndProgressionIntegrationTests
                 p.Experience = 95;
                 p.WeaponMinDamage = 500;
                 p.WeaponMaxDamage = 600;
+                p.BonusAttackRating = 1000;
                 player = p;
             }
         }
@@ -52,6 +53,11 @@ public sealed class MonsterAiAndProgressionIntegrationTests
         worker.RegionGrid.RemoveNpc(monster, monster.RegionX, monster.RegionY);
         monster.MpsX = player!.CurrentMpsX + 32;
         monster.MpsY = player.CurrentMpsY;
+        monster.TargetMpsX = monster.MpsX;
+        monster.TargetMpsY = monster.MpsY;
+        monster.Doing = EntityDoingPosture.Stand;
+        monster.AiState = MonsterAiStateKind.IdlePatrol;
+        monster.NextAiActionTick = long.MaxValue;
         worker.RegionGrid.AddNpc(monster);
         monster.CurLife = 10;
         monster.ExpReward = 50;

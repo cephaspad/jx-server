@@ -108,10 +108,32 @@ public sealed class PlayerTemplateCatalog : IPlayerTemplateCatalog
             : CreateDefaultLevelExpTable();
 
         if (GameAssetsSnapshotLoader.TryLoadBundle(cfg, out GameAssetsSnapshotBundle? bundle, out _) &&
-            bundle is not null &&
-            bundle.DefaultStarterItems.Count > 0)
+            bundle is not null)
         {
-            _defaultStarterItems = bundle.DefaultStarterItems;
+            if (bundle.CharacterTemplates.Count > 0)
+            {
+                _templates = bundle.CharacterTemplates.ToFrozenDictionary(t => (t.Series, t.Gender));
+            }
+
+            if (bundle.StarterVillages.Count > 0)
+            {
+                _starterVillages = bundle.StarterVillages.ToFrozenDictionary(v => v.MapId);
+            }
+
+            if (bundle.SeriesGrowthRules.Count > 0)
+            {
+                _growthRules = bundle.SeriesGrowthRules.ToFrozenDictionary(g => g.Series);
+            }
+
+            if (bundle.LevelExpTable.Count > 0)
+            {
+                _levelExpTable = bundle.LevelExpTable.ToArray();
+            }
+
+            if (bundle.DefaultStarterItems.Count > 0)
+            {
+                _defaultStarterItems = bundle.DefaultStarterItems;
+            }
         }
 
         _prohibitedNameRules = LoadRoleNameFilterRules(cfg.GatewayRootPath, serverRoot);
@@ -312,10 +334,10 @@ public sealed class PlayerTemplateCatalog : IPlayerTemplateCatalog
             ElementSeries series = (ElementSeries)Math.Clamp(i - 1, 0, 4);
             int lifePerLevel = ParseInt(cols, 1, 10);
             int staminaPerLevel = ParseInt(cols, 2, 4);
-            int manaPerLevel = ParseInt(cols, 3, 5);
-            int lifePerVit = ParseInt(cols, 4, 5);
-            int stamPerVit = ParseInt(cols, 5, 2);
-            int manaPerEng = ParseInt(cols, 6, 3);
+            int manaPerLevel = ParseInt(cols, 4, 5);
+            int lifePerVit = ParseInt(cols, 5, 5);
+            int stamPerVit = ParseInt(cols, 6, 2);
+            int manaPerEng = ParseInt(cols, 7, 3);
 
             rules[series] = new PlayerSeriesGrowthRuleTemplate(
                 series,

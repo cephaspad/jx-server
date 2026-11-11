@@ -1,0 +1,280 @@
+{
+  "reportVersion": "1.0.0",
+  "generatedAtUtc": "2026-11-11T05:33:41.3506996+00:00",
+  "overallPassed": true,
+  "totalErrorAndMismatchCount": 0,
+  "layer1_fileManifest": {
+    "unaccountedFileCount": 0,
+    "countsByCategory": {
+      "migrated": 212,
+      "legacyBackupOrDuplicate": 301,
+      "clientVisualAudioUiOnly": 99,
+      "dynamicRuntimeMissionOrTaskScriptConfig": 1559
+    },
+    "unaccountedFiles": []
+  },
+  "layer2_recordCounts": {
+    "domainCount": 40,
+    "rowMismatchCount": 0,
+    "mismatches": [],
+    "tables": [
+      {
+        "domainTable": "affixes.total",
+        "legacyCount": 7133,
+        "exportedCount": 7133,
+        "matched": true
+      },
+      {
+        "domainTable": "items.consumablesAndScripts",
+        "legacyCount": 6446,
+        "exportedCount": 6446,
+        "matched": true
+      },
+      {
+        "domainTable": "items.craftingRecipes",
+        "legacyCount": 1297,
+        "exportedCount": 1297,
+        "matched": true
+      },
+      {
+        "domainTable": "items.equipmentSets",
+        "legacyCount": 921,
+        "exportedCount": 921,
+        "matched": true
+      },
+      {
+        "domainTable": "items.goldenEquipment",
+        "legacyCount": 7148,
+        "exportedCount": 7148,
+        "matched": true
+      },
+      {
+        "domainTable": "items.groundObjects",
+        "legacyCount": 477,
+        "exportedCount": 477,
+        "matched": true
+      },
+      {
+        "domainTable": "items.normalEquipment",
+        "legacyCount": 2196,
+        "exportedCount": 2196,
+        "matched": true
+      },
+      {
+        "domainTable": "items.platinaEquipment",
+        "legacyCount": 8783,
+        "exportedCount": 8783,
+        "matched": true
+      },
+      {
+        "domainTable": "loot.droprateTables",
+        "legacyCount": 150,
+        "exportedCount": 150,
+        "matched": true
+      },
+      {
+        "domainTable": "maps.exportedMaps",
+        "legacyCount": 136,
+        "exportedCount": 136,
+        "matched": true
+      },
+      {
+        "domainTable": "maps.obstacleRegions",
+        "legacyCount": 27259,
+        "exportedCount": 27259,
+        "matched": true
+      },
+      {
+        "domainTable": "maps.regionNpcs",
+        "legacyCount": 18868,
+        "exportedCount": 18868,
+        "matched": true
+      },
+      {
+        "domainTable": "maps.regionObjects",
+        "legacyCount": 162,
+        "exportedCount": 162,
+        "matched": true
+      },
+      {
+        "domainTable": "maps.trapSpans",
+        "legacyCount": 3162,
+        "exportedCount": 3162,
+        "matched": true
+      },
+      {
+        "domainTable": "npcs.eventAutoExecPlacements",
+        "legacyCount": 22,
+        "exportedCount": 22,
+        "matched": true
+      },
+      {
+        "domainTable": "npcs.globalAutoExecPlacements",
+        "legacyCount": 3765,
+        "exportedCount": 3765,
+        "matched": true
+      },
+      {
+        "domainTable": "npcs.goldenTemplates",
+        "legacyCount": 16,
+        "exportedCount": 16,
+        "matched": true
+      },
+      {
+        "domainTable": "npcs.partnerAptitudeModes",
+        "legacyCount": 2,
+        "exportedCount": 2,
+        "matched": true
+      },
+      {
+        "domainTable": "npcs.partnerLevelExp",
+        "legacyCount": 100,
+        "exportedCount": 100,
+        "matched": true
+      },
+      {
+        "domainTable": "npcs.partnerSkillRequirements",
+        "legacyCount": 53,
+        "exportedCount": 53,
+        "matched": true
+      },
+      {
+        "domainTable": "npcs.templates",
+        "legacyCount": 2540,
+        "exportedCount": 2540,
+        "matched": true
+      },
+      {
+        "domainTable": "players.characterTemplates",
+        "legacyCount": 10,
+        "exportedCount": 10,
+        "matched": true
+      },
+      {
+        "domainTable": "players.factionTitles",
+        "legacyCount": 80,
+        "exportedCount": 80,
+        "matched": true
+      },
+      {
+        "domainTable": "players.factions",
+        "legacyCount": 11,
+        "exportedCount": 11,
+        "matched": true
+      },
+      {
+        "domainTable": "players.levelExpTable",
+        "legacyCount": 200,
+        "exportedCount": 200,
+        "matched": true
+      },
+      {
+        "domainTable": "players.levelLeadExpTable",
+        "legacyCount": 100,
+        "exportedCount": 100,
+        "matched": true
+      },
+      {
+        "domainTable": "players.meridianAcupoints",
+        "legacyCount": 128,
+        "exportedCount": 128,
+        "matched": true
+      },
+      {
+        "domainTable": "players.meridians",
+        "legacyCount": 8,
+        "exportedCount": 8,
+        "matched": true
+      },
+      {
+        "domainTable": "players.pkRules",
+        "legacyCount": 11,
+        "exportedCount": 11,
+        "matched": true
+      },
+      {
+        "domainTable": "players.seriesGrowthRules",
+        "legacyCount": 5,
+        "exportedCount": 5,
+        "matched": true
+      },
+      {
+        "domainTable": "players.starterVillages",
+        "legacyCount": 8,
+        "exportedCount": 8,
+        "matched": true
+      },
+      {
+        "domainTable": "players.teamResistEffects",
+        "legacyCount": 5,
+        "exportedCount": 5,
+        "matched": true
+      },
+      {
+        "domainTable": "players.tongLevels",
+        "legacyCount": 6,
+        "exportedCount": 6,
+        "matched": true
+      },
+      {
+        "domainTable": "players.tongStunts",
+        "legacyCount": 7,
+        "exportedCount": 7,
+        "matched": true
+      },
+      {
+        "domainTable": "players.tongWorkshops",
+        "legacyCount": 7,
+        "exportedCount": 7,
+        "matched": true
+      },
+      {
+        "domainTable": "shops.buysell",
+        "legacyCount": 179,
+        "exportedCount": 179,
+        "matched": true
+      },
+      {
+        "domainTable": "shops.goodsCatalog",
+        "legacyCount": 2159,
+        "exportedCount": 2159,
+        "matched": true
+      },
+      {
+        "domainTable": "skills.baseAndFactions",
+        "legacyCount": 1436,
+        "exportedCount": 1436,
+        "matched": true
+      },
+      {
+        "domainTable": "skills.missiles",
+        "legacyCount": 554,
+        "exportedCount": 554,
+        "matched": true
+      },
+      {
+        "domainTable": "skills.weaponSkillMappings",
+        "legacyCount": 32,
+        "exportedCount": 32,
+        "matched": true
+      }
+    ]
+  },
+  "layer3_valueEquivalence": {
+    "valueMismatchCount": 0,
+    "summary": {
+      "verifiedRegions": 27672,
+      "verifiedObstacleCells": 14168064,
+      "verifiedTrapSpans": 3162,
+      "verifiedRegionNpcs": 18868,
+      "verifiedRegionObjects": 162,
+      "verifiedGoldenAndPlatinaFixedAffixSlots": 76133
+    },
+    "mismatches": []
+  },
+  "layer4_schemaAndForeignKeys": {
+    "validatedJsonFileCount": 150,
+    "schemaAndFkErrorCount": 0,
+    "errors": []
+  }
+}

@@ -1,0 +1,906 @@
+{
+  "$schema": "../../schemas/map.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": 145,
+  "code": "tuyet-bao-dong-tang-1",
+  "name": "Tuyết Báo Động tầng 1",
+  "mapType": "Field",
+  "mapRules": {
+    "defaultFightMode": 1,
+    "allowPk": true,
+    "forbidHeartTeleport": false,
+    "normalLootTableCode": "npcdroprate30",
+    "goldenLootTableCode": "goldennpc-golden-lv40",
+    "autoGoldenNpcRate": 2000,
+    "goldenType": 13,
+    "npcAutoSeries": {
+      "enabled": true,
+      "metalWeight": 0,
+      "woodWeight": 20,
+      "waterWeight": 80,
+      "fireWeight": 0,
+      "earthWeight": 0
+    }
+  },
+  "regionBounds": {
+    "leftRegionX": 93,
+    "topRegionY": 99,
+    "rightRegionX": 105,
+    "bottomRegionY": 105
+  },
+  "regions": [
+    {
+      "regionX": 99,
+      "regionY": 99,
+      "obstacleRleBase64": "XwEAAAAAAQBRAAAAHgAAAAAAAQBRAAAAAQARAAAAHQAAAAAAAQBRAAAAAgARAAAAHAAAAAAAAQBRAAAAAwARAAAAHAAAAAAABAARAAAAHAAAAAAABAARAAAA"
+    },
+    {
+      "regionX": 100,
+      "regionY": 99,
+      "obstacleRleBase64": "HAAAAAAABAARAAAAGwAAAAAAAwARAAAAAQAhAAAAAQBBAAAAGwAAAAAAAQARAAAAAQAhAAAAowEAAAAA"
+    },
+    {
+      "regionX": 101,
+      "regionY": 99,
+      "obstacleRleBase64": "3wAAAAAAAQBRAAAAHgAAAAAAAQBRAAAAAQARAAAAHQAAAAAAAQBRAAAAAgARAAAAGgAAAAAAAQBRAAAABQARAAAAGQAAAAAAAQBRAAAABgARAAAAGAAAAAAAAQBRAAAABwARAAAAFwAAAAAAAQBRAAAACAARAAAAFwAAAAAAAgARAAAAAQAhAAAAAgAAAAAAAQBBAAAAAwARAAAAFwAAAAAAAgARAAAABAAAAAAAAQBBAAAAAgARAAAAFwAAAAAAAgARAAAAAQAxAAAABAAAAAAAAQBBAAAAAQARAAAA"
+    },
+    {
+      "regionX": 102,
+      "regionY": 99,
+      "obstacleRleBase64": "FwAAAAAAAQBBAAAAAgARAAAAAQAxAAAABAAAAAAAAQARAAAAGAAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAwAAAAAAAQARAAAAGQAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQAAAAAAAQBRAAAAAQARAAAAGgAAAAAAAQBBAAAABQARAAAAGwAAAAAAAQBBAAAABAARAAAAHAAAAAAAAQBBAAAAAwARAAAAHgAAAAAAAQBBAAAAAQARAAAAHwAAAAAAAQBBAAAAAAEAAAAA"
+    },
+    {
+      "regionX": 97,
+      "regionY": 100,
+      "obstacleRleBase64": "PwAAAAAAAQBRAAAAHgAAAAAAAQBRAAAAAQARAAAAHQAAAAAAAQBRAAAAAgARAAAAHAAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAgAAAAAAAQBRAAAAGAAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAQAAAAAAAQBRAAAAAgARAAAAGAAAAAAAAwARAAAAAQAxAAAAAQBRAAAAAwARAAAAGAAAAAAAAQBBAAAABQARAAAAAgASAAAAGQAAAAAABQARAAAAAgASAAAAGQAAAAAABQARAAAAAgASAAAAGQAAAAAABwARAAAAGQAAAAAAAQBBAAAAAwARAAAAAQAhAAAAAQBBAAAAAQARAAAAGgAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQAAAAAAAQARAAAA"
+    },
+    {
+      "regionX": 98,
+      "regionY": 100,
+      "obstacleRleBase64": "GwAAAAAAAQBBAAAAAgARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAgARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAgARAAAAHgAAAAAAAQBBAAAAAQARAAAASgEAAAAAAQBRAAAAAgARAAAAAQAxAAAAEQAAAAAAAQARAAAACQAAAAAAAQBRAAAABAARAAAAAQAxAAAAEAAAAAAAAQARAAAA"
+    },
+    {
+      "regionX": 99,
+      "regionY": 100,
+      "obstacleRleBase64": "BwAAAAAAAQBRAAAABwARAAAAAQAxAAAAAgAAAAAAAQBRAAAAAwARAAAACQAAAAAAAQARAAAABgAAAAAAAQBRAAAADQARAAAAAQAhAAAACgAAAAAAAQARAAAAAQAAAAAAEQARAAAAAQAhAAAADAAAAAAAAQARAAAABQAAAAAACQARAAAAAQAhAAAAAQBBAAAAAgARAAAADQAAAAAAAQARAAAABAAAAAAAAQBRAAAABgARAAAAAQAhAAAABAAAAAAAAQBBAAAAAQARAAAAAQAxAAAADAAAAAAAAQARAAAABAAAAAAABgARAAAAAQAhAAAABgAAAAAAAgARAAAAAQAxAAAACwAAAAAAAQBBAAAAAwAAAAAAAQBRAAAABQARAAAAAQAhAAAABwAAAAAAAwARAAAADgAAAAAAAQBRAAAABgARAAAACAAAAAAAAwARAAAAAQAxAAAADAAAAAAAAQBRAAAABwARAAAACAAAAAAABAARAAAAAQAxAAAACgAAAAAAAQBRAAAABwARAAAAAQAhAAAACAAAAAAABQARAAAAAQAxAAAACQAAAAAABwARAAAAAQAhAAAACgAAAAAAAQBBAAAABgARAAAAAQAxAAAABgAAAAAABwARAAAAAQAxAAAADQAAAAAAAQBBAAAAEgARAAAAFAAAAAAAAQBBAAAAAgARAAAAAQAhAAAACAARAAAAGAAAAAAABQARAAAAAQAhAAAAGgAAAAAABQARAAAAGwAAAAAA"
+    },
+    {
+      "regionX": 100,
+      "regionY": 100,
+      "obstacleRleBase64": "BQARAAAAAQAxAAAAGgAAAAAABgARAAAAAQAxAAAAGQAAAAAAAQBBAAAABgARAAAAAQAxAAAAGQAAAAAAAQBBAAAABgARAAAAAQAxAAAAGQAAAAAAAQBBAAAABwARAAAAAQAxAAAAGAAAAAAAAQBBAAAABwARAAAAAQAxAAAAGAAAAAAAAwARAAAAAQAhAAAAAQBBAAAAAwARAAAAAQAxAAAAFwAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQAAAAAAAQBBAAAAAwARAAAAAQAxAAAAFwAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQAAAAAAAQBBAAAAAwARAAAAAQAxAAAAFwAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAgAAAAAAAwARAAAAGAAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQBRAAAAAwARAAAAAQAxAAAAGAAAAAAAAQBBAAAABwARAAAAGQAAAAAAAQBBAAAABgARAAAAGQAAAAAAAQBRAAAABAARAAAAAQAhAAAAGQAAAAAAAQBRAAAABQARAAAAGQAAAAAAAQBRAAAABgARAAAAEgAAAAAA"
+    },
+    {
+      "regionX": 101,
+      "regionY": 100,
+      "obstacleRleBase64": "BgAAAAAAAQBRAAAABgARAAAAAQAhAAAAFwAAAAAAAQBRAAAABAARAAAAAgAUAAAAAQAkAAAAFgAAAAAAAQBRAAAABgARAAAAAgAUAAAAFgAAAAAAAQBRAAAABwARAAAAAQAhAAAAFgAAAAAAAQBRAAAABQARAAAAAQAhAAAAGAAAAAAAAQBRAAAABgARAAAAGQAAAAAABgARAAAAAQAhAAAAGQAAAAAABQARAAAAAQAhAAAAGgAAAAAABAARAAAAAQAhAAAAGwAAAAAAAwARAAAAAQAhAAAAHAAAAAAAAgARAAAAAQAhAAAAHQAAAAAAAgARAAAAHgAAAAAAAgARAAAAHgAAAAAAAgARAAAAHgAAAAAAAgARAAAAHQAAAAAAAQBRAAAAAgARAAAAGwAAAAAAAQBRAAAAAgARAAAA"
+    },
+    {
+      "regionX": 102,
+      "regionY": 100,
+      "obstacleRleBase64": "AgARAAAAGwAAAAAABQARAAAAGgAAAAAAAQBRAAAABQARAAAAAQAxAAAAFwAAAAAAAQBRAAAABAARAAAAAQAhAAAAAwARAAAAFAAAAAAAAQBRAAAABgARAAAAAQAhAAAAAQAAAAAAAwARAAAAAQAxAAAAEgAAAAAAAQBRAAAABgARAAAAAQAhAAAAAgAAAAAABAARAAAAAQAxAAAADwAAAAAAAQBRAAAABgARAAAAAQAhAAAABAAAAAAABQARAAAAAQAxAAAADQAAAAAAAQBRAAAABQARAAAAAQAhAAAABgAAAAAABwARAAAAAQAxAAAACQAAAAAAAQBRAAAABgARAAAAAQAhAAAABwAAAAAAAQBBAAAACAARAAAAAQAxAAAABgAAAAAAAQBRAAAABQARAAAAAQAhAAAACgAAAAAAAQBBAAAACQARAAAAAQAxAAAAAwAAAAAABgARAAAAAQAhAAAADAAAAAAAAQBBAAAACQARAAAAAQAxAAAAAQAAAAAAAQBRAAAABQARAAAAAQAhAAAADgAAAAAAAQBBAAAABAARAAAAAQAhAAAAAQBBAAAACQARAAAAAQAhAAAAEAAAAAAAAQBBAAAAAwARAAAAAQAxAAAAAgAAAAAAAQBBAAAABwARAAAAAQAxAAAAEgAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAgAAAAAACwARAAAAAQAxAAAADwAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQBRAAAABgARAAAAAQAhAAAAAQBBAAAABAARAAAAEAAAAAAAAQBBAAAABwARAAAAAQAhAAAABAAAAAAAAQBBAAAAAgARAAAACAAAAAAA"
+    },
+    {
+      "regionX": 103,
+      "regionY": 100,
+      "obstacleRleBase64": "CQAAAAAAAQBBAAAABQARAAAAAQAhAAAABQAAAAAAAQBRAAAAAgARAAAAEgAAAAAAAQBBAAAABAARAAAAAQAxAAAAAQBRAAAABwARAAAAEwAAAAAAAQBBAAAACAARAAAAAQAhAAAAqwEAAAAA"
+    },
+    {
+      "regionX": 94,
+      "regionY": 101,
+      "obstacleRleBase64": "fwEAAAAAAQBRAAAAHwAAAAAAAQARAAAAHgAAAAAAAQBRAAAAAQARAAAAHQAAAAAAAQBRAAAAAgARAAAAHAAAAAAAAQBRAAAAAwARAAAA"
+    },
+    {
+      "regionX": 95,
+      "regionY": 101,
+      "obstacleRleBase64": "GwAAAAAAAQBRAAAABAARAAAAGgAAAAAAAQBRAAAABQARAAAAGQAAAAAAAQBRAAAABgARAAAAFwAAAAAAAQBRAAAABwARAAAAAQAhAAAAFgAAAAAAAQBRAAAABwARAAAAAQAhAAAAFgAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAQBBAAAABAARAAAAFgAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAgAAAAAABAARAAAAFgAAAAAAAwARAAAAAgAAAAAAAQBRAAAAAwARAAAAAQAhAAAAFgAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQBRAAAABAARAAAAGAAAAAAAAQBBAAAABwARAAAAGQAAAAAAAQBBAAAAAwARAAAAAQAhAAAAAQBBAAAAAQARAAAAAQAxAAAAGQAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQBRAAAABAARAAAAGAAAAAAAAQBBAAAABwARAAAAGQAAAAAAAQBBAAAABAARAAAAAQAhAAAAGwAAAAAAAQBBAAAAAwARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAgARAAAAAQAxAAAA"
+    },
+    {
+      "regionX": 96,
+      "regionY": 101,
+      "obstacleRleBase64": "HQAAAAAAAQBBAAAAAgARAAAAHgAAAAAAAQBBAAAAAQARAAAACgEAAAAAAQBRAAAAAQARAAAAHQAAAAAAAQBRAAAAAgARAAAAHAAAAAAAAQBRAAAAAwARAAAAGwAAAAAAAQBRAAAABAARAAAAGgAAAAAAAQBRAAAABQARAAAAGQAAAAAABwARAAAAAQAxAAAAEwAAAAAA"
+    },
+    {
+      "regionX": 97,
+      "regionY": 101,
+      "obstacleRleBase64": "BAAAAAAAAQBRAAAACAARAAAAEwAAAAAAAQARAAAAAQAxAAAAAQAAAAAAAQBRAAAACQARAAAAAQAxAAAAEgAAAAAACAARAAAAAQAhAAAAAQAAAAAAAQBBAAAAAwARAAAAEgAAAAAACAARAAAAAwAAAAAAAwARAAAAAQAxAAAADQAAAAAAAQBRAAAAAwARAAAAAQAAAAAAAQBBAAAABQARAAAAAQAhAAAAAwAAAAAAAQBBAAAAAwARAAAAAQAxAAAADAAAAAAABAARAAAAAQAAAAAAAQBRAAAABAARAAAAAQAhAAAABQAAAAAAAQBBAAAAAwARAAAADAAAAAAAAgARAAAAAQAhAAAAAQAAAAAAAQBRAAAABQARAAAABwAAAAAAAwARAAAAAQAxAAAACwAAAAAAAgARAAAAAQAxAAAAAQAAAAAAAwARAAAAAQAhAAAACQAAAAAAAQBBAAAACwARAAAAAQAxAAAAAgAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAgARAAAAAQAhAAAAEAAAAAAAAQBBAAAACAARAAAAAQAxAAAABAARAAAAAQAhAAAAFgAAAAAAAQBBAAAACAARAAAAGwAAAAAAAQBBAAAAAgARAAAAAQAhAAAAAQASAAAAHwAAAAAAAQASAAAAAQAyAAAAHgAAAAAAAwARAAAAAQAxAAAAHAAAAAAABQARAAAAAQAxAAAAGgAAAAAABgARAAAAAQAxAAAAGQAAAAAA"
+    },
+    {
+      "regionX": 98,
+      "regionY": 101,
+      "obstacleRleBase64": "AQAAAAAAAQBBAAAABwARAAAAAQAxAAAAFwAAAAAAAQBRAAAACwARAAAAEwAAAAAABgARAAAAAQAhAAAAAwAAAAAAAwARAAAAAQAxAAAAEgAAAAAABQARAAAAAQAhAAAAAwAAAAAAAQBRAAAABAARAAAAAQAxAAAAEgAAAAAABAARAAAAAQAxAAAAAgAAAAAAAQBRAAAABgARAAAAAQAxAAAAEQAAAAAADwARAAAAAQAxAAAAEAAAAAAABgARAAAAAQAhAAAAAgAAAAAAAQBBAAAABgARAAAAAQAxAAAAGQAAAAAABwARAAAAFwAAAAAAAQBRAAAACAARAAAAEgAAAAAAAQBRAAAADQARAAAAEQAAAAAAAQBRAAAABwARAAAAAQAhAAAAAgAAAAAAAQBBAAAAAwARAAAAEAAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAQAAAAAABAARAAAAAQAxAAAAAwAAAAAAAwARAAAADwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAgAAAAAABQARAAAAAQAxAAAAAQAAAAAAAQBRAAAAAwARAAAADgAAAAAAAQBRAAAAAwARAAAAAQAxAAAAAQAAAAAAAQBRAAAACwARAAAADgAAAAAADwARAAAAAQAhAAAAEAAAAAAAAQARAAAAAQAhAAAABwARAAAAAQAhAAAAAQAAAAAAAQBBAAAAAQARAAAAAQAhAAAAEgAAAAAA"
+    },
+    {
+      "regionX": 99,
+      "regionY": 101,
+      "obstacleRleBase64": "BwARAAAAAQAhAAAAGAAAAAAABwARAAAAAQAxAAAAGAAAAAAACAARAAAAGAAAAAAAAwARAAAAAQAhAAAAAQAAAAAAAQBBAAAAAgARAAAAGAAAAAAAAgARAAAAAQAhAAAAAwAAAAAAAgARAAAAGAAAAAAAAgARAAAAAQAxAAAAAwAAAAAAAgARAAAAGAAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAgAAAAAAAgARAAAAAQAxAAAAGAAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQAAAAAAAwARAAAAAQAxAAAAGAAAAAAAAQBBAAAABwARAAAAGQAAAAAAAQBBAAAABgARAAAAFgAAAAAAAQBRAAAAAQARAAAAAQAxAAAAAQBRAAAABAARAAAAAQAhAAAAFwAAAAAABwARAAAAAQAhAAAAmAAAAAAA"
+    },
+    {
+      "regionX": 100,
+      "regionY": 101,
+      "obstacleRleBase64": "awAAAAAAAgARAAAAHgAAAAAAAgARAAAAHgAAAAAAAgARAAAAHgAAAAAAAgARAAAA8gAAAAAAAQBRAAAAGgAAAAAAAQBRAAAABQARAAAAGAAAAAAAAQBRAAAABwARAAAA"
+    },
+    {
+      "regionX": 101,
+      "regionY": 101,
+      "obstacleRleBase64": "FQAAAAAAAQBRAAAABwARAAAAAQAhAAAAFQAAAAAAAQBRAAAABwARAAAAAQAhAAAAFgAAAAAAAQBRAAAABgARAAAAAQAhAAAAFgAAAAAAAQBRAAAABgARAAAAAQAhAAAAFwAAAAAAAQBRAAAABQARAAAAAQAhAAAAFwAAAAAAAQBRAAAABQARAAAAAQAhAAAAGAAAAAAAAQBRAAAABQARAAAAAQAhAAAAFwAAAAAAAQBRAAAABgARAAAAAQAhAAAAFwAAAAAAAQBRAAAABAARAAAAAQAhAAAAGAAAAAAAAQBRAAAABQARAAAAAQAhAAAAGAAAAAAAAQBRAAAABAARAAAAAQAhAAAAGAAAAAAAAQBRAAAABQARAAAAAQAhAAAAFwAAAAAAAQBRAAAABQARAAAAAQAhAAAAGAAAAAAAAQBRAAAABgARAAAAGAAAAAAABQARAAAAAQAhAAAAGgAAAAAAAwARAAAAAQAhAAAAHAAAAAAA"
+    },
+    {
+      "regionX": 102,
+      "regionY": 101,
+      "obstacleRleBase64": "AgARAAAAAQAhAAAAHQAAAAAAAQAhAAAA3wEAAAAA"
+    },
+    {
+      "regionX": 94,
+      "regionY": 102,
+      "obstacleRleBase64": "PwAAAAAAAQBRAAAAHgAAAAAAAQBRAAAAAQARAAAABwAAAAAAAQBRAAAAAQARAAAAFAAAAAAAAQBRAAAAAgARAAAABgAAAAAAAQBRAAAAAgARAAAAEwAAAAAAAQBRAAAAAgARAAAAAQAhAAAABQAAAAAAAQBRAAAAAwARAAAAEgAAAAAAAQBRAAAABAARAAAABAAAAAAAAQBRAAAABAARAAAAAQAxAAAAEAAAAAAAAQBRAAAABQARAAAAAwAAAAAAAQBRAAAABgARAAAAAQAxAAAAAwAAAAAAAQBRAAAAAgARAAAACQAAAAAABgARAAAAAgAAAAAAAQBRAAAADQARAAAAAQAhAAAACQAAAAAABgARAAAAAQAAAAAAAQBRAAAACgARAAAAAQAhAAAADAAAAAAAAQBRAAAABgARAAAAAQBRAAAABQARAAAAAQAhAAAABQARAAAAAQAxAAAADAAAAAAAAgARAAAAAQAhAAAAAwARAAAAAQAhAAAABAARAAAAAQAhAAAAAgAAAAAABgARAAAADAAAAAAABQARAAAAAQAhAAAAAQAAAAAABAARAAAAAQAxAAAAAgAAAAAAAQBBAAAAAQARAAAAAQAhAAAAAQBBAAAAAgARAAAAAQAxAAAACwAAAAAAAQBBAAAAAwARAAAAAQAhAAAAAgAAAAAABQARAAAABgAAAAAAAQBBAAAAAwARAAAAAQAxAAAACgAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAgAAAAAABQARAAAABwAAAAAAAQBBAAAAAwARAAAAAQAxAAAACgAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQAAAAAABAARAAAAAQAhAAAACAAAAAAAAQBBAAAAAwARAAAAAQAxAAAACgAAAAAABAARAAAA"
+    },
+    {
+      "regionX": 95,
+      "regionY": 102,
+      "obstacleRleBase64": "AQARAAAAAQAhAAAADAAAAAAABwARAAAAAQAxAAAAAQAAAAAAAQBRAAAACAARAAAAAQAhAAAADwAAAAAAAQBBAAAADwARAAAAIAEAAAAAAgARAAAAAQAxAAAAHQAAAAAABQARAAAAAQAxAAAAHAAAAAAAAQBBAAAABAARAAAAAQAxAAAAGgAAAAAAAQBRAAAABgARAAAAAQAxAAAAFgAAAAAAAQBRAAAACQARAAAAAQAxAAAAFQAAAAAA"
+    },
+    {
+      "regionX": 96,
+      "regionY": 102,
+      "obstacleRleBase64": "CwARAAAAAQAxAAAAFAAAAAAAAQAhAAAAAwAAAAAAAQBBAAAABwARAAAAGQAAAAAAAQBBAAAABgARAAAAGgAAAAAAAQBBAAAABQARAAAAAQAxAAAAGgAAAAAAAQBBAAAABQARAAAAAQAxAAAAGgAAAAAABwARAAAAGAAAAAAAAQBRAAAABwARAAAAGAAAAAAAAgARAAAAAQAhAAAAAQAAAAAAAQBBAAAAAwARAAAAAQAxAAAAFwAAAAAAAgARAAAABAAAAAAAAQBBAAAAAgARAAAAFwAAAAAAAgARAAAAAQAxAAAABAAAAAAAAgARAAAAFwAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAwAAAAAAAgARAAAAGAAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAgAAAAAAAgARAAAAGQAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQAAAAAAAgARAAAAGgAAAAAAAQBBAAAABQARAAAAGgAAAAAAAQBRAAAABAARAAAAAQAhAAAAGQAAAAAAAQBRAAAABQARAAAAEQAAAAAA"
+    },
+    {
+      "regionX": 97,
+      "regionY": 102,
+      "obstacleRleBase64": "CAAAAAAAAQBRAAAABQARAAAAAQAhAAAAGAAAAAAAAQBRAAAABQARAAAAAQAhAAAAGAAAAAAAAQBRAAAABQARAAAAAQAhAAAAEwAAAAAAAQARAAAAAQAxAAAAAwAAAAAAAQBRAAAABQARAAAAAQAhAAAAFAAAAAAACwARAAAAFwAAAAAAAQBBAAAABgARAAAAAQAhAAAAFwAAAAAABwARAAAAAQAhAAAAGAAAAAAABgARAAAAAQAhAAAAGAAAAAAABAARAAAAAQAhAAAAGgAAAAAAAQBRAAAAAwARAAAAAQAhAAAAGgAAAAAAAQBRAAAAAQARAAAAHQAAAAAAAQBRAAAAAgARAAAAHAAAAAAAAQBRAAAAAwARAAAAGwAAAAAABQARAAAAGgAAAAAAAQBRAAAAAQARAAAAAQAhAAAAAQBBAAAAAQARAAAAAQAhAAAAGgAAAAAAAgARAAAAAQAAAAAAAQBRAAAAAQARAAAAGwAAAAAAAQBBAAAABAARAAAAAQAAAAAA"
+    },
+    {
+      "regionX": 98,
+      "regionY": 102,
+      "obstacleRleBase64": "GwAAAAAABAARAAAAGwAAAAAAAQBRAAAABAARAAAAGgAAAAAABgARAAAAGgAAAAAAAQBBAAAAAQARAAAAAQAhAAAAAQBBAAAAAgARAAAAGwAAAAAAAQARAAAAAQAxAAAAAQBRAAAAAgARAAAAGwAAAAAABQARAAAAGwAAAAAABQARAAAAGwAAAAAABQARAAAAGwAAAAAAAQBBAAAABAARAAAAAQAxAAAAGwAAAAAAAQBBAAAABAARAAAAHAAAAAAABAARAAAAHAAAAAAABAARAAAAHAAAAAAABAARAAAAHAAAAAAAAQBBAAAAAwARAAAAHQAAAAAAAQBBAAAAAgARAAAAHgAAAAAAAQBBAAAAAQARAAAA"
+    },
+    {
+      "regionX": 100,
+      "regionY": 102,
+      "obstacleRleBase64": "oAEAAAAAAgARAAAAAQAxAAAAHQAAAAAACAARAAAAAQAxAAAAFwAAAAAADAARAAAAAQAxAAAAEwAAAAAA"
+    },
+    {
+      "regionX": 101,
+      "regionY": 102,
+      "obstacleRleBase64": "AwAAAAAAAwARAAAAAQAhAAAAAQBBAAAABwARAAAAAQAxAAAAEgAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAgAAAAAAAQARAAAAAQAhAAAABgARAAAAAQAxAAAAEAAAAAAAAQBRAAAAAgARAAAAAQAhAAAABAAAAAAAAQBRAAAABwARAAAAAQAxAAAADwAAAAAAAwARAAAAAQAxAAAAAQAAAAAAAQBRAAAADAARAAAAAQAxAAAADQAAAAAACAARAAAAAQAhAAAAAQAAAAAAAQBBAAAAAwARAAAAAQAhAAAAAQBBAAAAAwARAAAAAQAxAAAAFwAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAgAAAAAAAQBBAAAAAgARAAAAAQAxAAAAFwAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQAAAAAAAQBRAAAAAwARAAAAAQAxAAAAFwAAAAAAAQBBAAAACAARAAAAAQAxAAAAFwAAAAAAAQBBAAAACAARAAAAAQAxAAAAFwAAAAAAAQBBAAAACQARAAAAAQAxAAAAGAAAAAAAAQBBAAAADAARAAAAFAAAAAAAAQBBAAAACwARAAAAFQAAAAAAAQBBAAAABwARAAAAAQAhAAAAAgARAAAAFgAAAAAAAQBBAAAABAARAAAAAQAhAAAAAQAAAAAAAQBRAAAAAgARAAAAFwAAAAAAAQBBAAAAAwARAAAAAQAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGAAAAAAAAQBBAAAABgARAAAAAQAxAAAA"
+    },
+    {
+      "regionX": 102,
+      "regionY": 102,
+      "obstacleRleBase64": "GQAAAAAAAQBBAAAABgARAAAAGgAAAAAAAQBBAAAABAARAAAAAQAhAAAAwAEAAAAA"
+    },
+    {
+      "regionX": 93,
+      "regionY": 103,
+      "obstacleRleBase64": "qAEAAAAAAQBRAAAAAwARAAAAAQAxAAAAGgAAAAAAAQBRAAAACAARAAAAFwAAAAAAAwARAAAAAQAhAAAAAgAAAAAAAQBBAAAAAgARAAAAEAAAAAAA"
+    },
+    {
+      "regionX": 94,
+      "regionY": 103,
+      "obstacleRleBase64": "AQBRAAAAAwARAAAAAQAxAAAAAgAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAwAAAAAAAgARAAAAEAAAAAAABQARAAAAAwAAAAAAAwARAAAAAQAxAAAAAQAAAAAAAQBRAAAAAgARAAAAEAAAAAAAAQARAAAAAQAhAAAAAQAAAAAAAQBBAAAADAARAAAAAQAxAAAADwAAAAAAAQAhAAAAAgAAAAAAAQBRAAAADQARAAAAEQAAAAAAAQBRAAAAAgARAAAAAQAhAAAABQAAAAAAAQBBAAAABQARAAAADwAAAAAABQARAAAACAAAAAAAAQBBAAAAAwARAAAADwAAAAAABQARAAAACQAAAAAAAwARAAAADwAAAAAABQARAAAACQAAAAAAAQBBAAAAAgARAAAAAQAxAAAADgAAAAAABQARAAAACgAAAAAAAwARAAAADgAAAAAABQARAAAACgAAAAAAAwARAAAADgAAAAAAAQBBAAAAAgARAAAAAQAhAAAACwAAAAAAAwARAAAAAQAxAAAADgAAAAAAAgARAAAADAAAAAAABAARAAAAAQAxAAAADQAAAAAAAgARAAAADAAAAAAAAQBBAAAABAARAAAAAQAxAAAADAAAAAAAAgARAAAADQAAAAAADgARAAAAAQAxAAAAAgBRAAAAAgARAAAADgAAAAAAAQBBAAAAEQARAAAAGwAAAAAAAQBBAAAAAQARAAAA"
+    },
+    {
+      "regionX": 95,
+      "regionY": 103,
+      "obstacleRleBase64": "AwARAAAAHQAAAAAAAQARAAAAAQAhAAAA3AEAAAAAAQBRAAAAAQARAAAA"
+    },
+    {
+      "regionX": 96,
+      "regionY": 103,
+      "obstacleRleBase64": "HQAAAAAAAQBRAAAAAgARAAAAHAAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGwAAAAAABQARAAAAGgAAAAAAAQBRAAAABQARAAAAGQAAAAAAAQBRAAAABgARAAAAFwAAAAAAAQBRAAAABgARAAAAAQAhAAAAFwAAAAAAAQBRAAAABQARAAAAAQAhAAAAFwAAAAAAAQBRAAAABgARAAAAAQAhAAAAFwAAAAAAAQBRAAAABgARAAAAAQAhAAAAFwAAAAAAAQBRAAAABwARAAAAAQAxAAAAFgAAAAAAAQBRAAAACQARAAAAFAAAAAAAAQBRAAAABgARAAAAAQAhAAAAFwAAAAAABwARAAAAAQAhAAAAFwAAAAAAAQBRAAAABgARAAAAAQAhAAAAFwAAAAAAAQBRAAAABQARAAAAAQAhAAAAGAAAAAAAAQBRAAAABQARAAAAAQAhAAAADgAAAAAA"
+    },
+    {
+      "regionX": 97,
+      "regionY": 103,
+      "obstacleRleBase64": "CgAAAAAAAQBRAAAABQARAAAAAQAhAAAAGAAAAAAAAQBRAAAABQARAAAAAQAhAAAAFwAAAAAAAQBRAAAABgARAAAAAQAhAAAAFwAAAAAABgARAAAAAQAhAAAAGAAAAAAAAQBRAAAABQARAAAAAQAhAAAAFwAAAAAAAQBRAAAABQARAAAAAQAhAAAAGAAAAAAAAQBRAAAABQARAAAAAQAhAAAAFwAAAAAAAQBRAAAABQARAAAAAQAhAAAAGQAAAAAABQARAAAAAQAhAAAAGgAAAAAABAARAAAAAQAhAAAAGwAAAAAAAwARAAAAAQAhAAAAHAAAAAAAAgARAAAAAQAhAAAAHQAAAAAAAQAhAAAAfwAAAAAA"
+    },
+    {
+      "regionX": 98,
+      "regionY": 103,
+      "obstacleRleBase64": "IAEAAAAAAQAxAAAAHwAAAAAAAQARAAAAHwAAAAAAAQARAAAAHwAAAAAAAQARAAAAHwAAAAAAAQARAAAAAQAxAAAAHgAAAAAAAgARAAAAAQAxAAAAHQAAAAAAAwARAAAAAQAxAAAAHAAAAAAA"
+    },
+    {
+      "regionX": 99,
+      "regionY": 103,
+      "obstacleRleBase64": "AQBBAAAABAARAAAAAQAxAAAAGwAAAAAAAQBBAAAABAARAAAAAQAxAAAAHAAAAAAAAQBBAAAABAARAAAAAQAxAAAAGwAAAAAABQARAAAAAQAxAAAAGwAAAAAAAQBBAAAABQARAAAAAQAxAAAAGgAAAAAAAQBBAAAABgARAAAAGwAAAAAAAQBBAAAABAARAAAAAQAxAAAAHAAAAAAABQARAAAAGwAAAAAABQARAAAAAQAxAAAAGgAAAAAAAQBBAAAABQARAAAAGwAAAAAAAQBBAAAABAARAAAAHAAAAAAABgARAAAAGgAAAAAAAQBBAAAABQARAAAAGwAAAAAABQARAAAAGwAAAAAAAQBBAAAABAARAAAAHAAAAAAABAARAAAAAQAxAAAADQAAAAAA"
+    },
+    {
+      "regionX": 100,
+      "regionY": 103,
+      "obstacleRleBase64": "DgAAAAAABQARAAAAGwAAAAAABQARAAAAGwAAAAAABQARAAAAAQAxAAAAGgAAAAAAAQBBAAAABQARAAAAGwAAAAAAAQBBAAAABAARAAAAAQAxAAAAGwAAAAAAAQBBAAAABAARAAAAAQAxAAAAHQAAAAAAAQBBAAAABAARAAAAHAAAAAAAAQBBAAAAAwARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAwARAAAAAQAxAAAAHAAAAAAABQARAAAAAQAxAAAAGgAAAAAAAQBBAAAABgARAAAAAQAxAAAAGwAAAAAAAQBBAAAABQARAAAAHAAAAAAABAARAAAAHAAAAAAABAARAAAAHAAAAAAABAARAAAAGwAAAAAAAQBRAAAABAARAAAA"
+    },
+    {
+      "regionX": 101,
+      "regionY": 103,
+      "obstacleRleBase64": "GQAAAAAAAQBRAAAABQARAAAAAQAhAAAAGAAAAAAAAQBRAAAABQARAAAAAQAhAAAAGQAAAAAABAARAAAAAQAhAAAAGwAAAAAABAARAAAAHAAAAAAAAQBBAAAAAwARAAAAAQAxAAAAHAAAAAAABQARAAAAAQAxAAAAGgAAAAAAAQBBAAAABQARAAAAAQAxAAAAGwAAAAAAAQBBAAAABAARAAAABgAAAAAAAQBRAAAACwARAAAAAQAxAAAACQAAAAAAAQBBAAAAAwARAAAABAAAAAAAAQBRAAAABgARAAAAAQAhAAAAAgAAAAAABwARAAAACQAAAAAAAQBBAAAACgARAAAAAQAhAAAAAwAAAAAAAQBRAAAABwARAAAACwAAAAAABwARAAAAAQAhAAAABAAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAQAAAAAAAQBBAAAAAwARAAAACwAAAAAABgARAAAAAQAhAAAABQAAAAAAAgARAAAAAQAhAAAAAwAAAAAAAQBBAAAAAgARAAAACwAAAAAAAQAhAAAAAgAAAAAAAQBBAAAAAgARAAAABgAAAAAAAgARAAAAAQAxAAAABAAAAAAAAgARAAAAAQAxAAAADgAAAAAAAgARAAAABgAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAwAAAAAAAwARAAAADQAAAAAAAQBRAAAAAgARAAAABwAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAgAAAAAAAwARAAAACgAAAAAA"
+    },
+    {
+      "regionX": 102,
+      "regionY": 103,
+      "obstacleRleBase64": "BQARAAAAAQAhAAAACAAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQAAAAAAAwARAAAAGQAAAAAAAQBBAAAABgARAAAAAQAxAAAAGQAAAAAAAQBBAAAABgARAAAAAQAxAAAAGQAAAAAAAQBBAAAABgARAAAAAQAxAAAAGgAAAAAAAQBBAAAABgARAAAAAQAxAAAAGQAAAAAABwARAAAAAQAxAAAAGQAAAAAAAQBBAAAACgARAAAAFgAAAAAAAQBBAAAACQARAAAAFwAAAAAAAQBBAAAABQARAAAAAQAhAAAAGgAAAAAAAQBBAAAABAARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQBRAAAAHAAAAAAAAQBBAAAAAwARAAAAHQAAAAAAAQBBAAAAAQARAAAAAQAhAAAAYAAAAAAA"
+    },
+    {
+      "regionX": 94,
+      "regionY": 104,
+      "obstacleRleBase64": "gAEAAAAAAQARAAAAHwAAAAAAAQARAAAAHwAAAAAAAQARAAAAAQAxAAAAHgAAAAAABQARAAAAGwAAAAAA"
+    },
+    {
+      "regionX": 95,
+      "regionY": 104,
+      "obstacleRleBase64": "AQBBAAAABAARAAAAAQAxAAAAGwAAAAAAAQBBAAAABAARAAAAAQAxAAAAGwAAAAAABgARAAAAAQAxAAAAGQAAAAAACAARAAAAAQAxAAAAGgAAAAAAAQBBAAAABQARAAAAAQAxAAAAGwAAAAAAAQBBAAAABAARAAAAAQAxAAAAAwAAAAAAAQBRAAAAAgARAAAAFgAAAAAAAQBBAAAAAwARAAAAAQAxAAAAAQAAAAAAAQBRAAAAAgARAAAAAQAhAAAAFgAAAAAAAQBRAAAACAARAAAAFgAAAAAAAQBRAAAACQARAAAAFQAAAAAACAARAAAAAQAhAAAAFgAAAAAAAQBRAAAABQARAAAAAQAhAAAAAQBBAAAAAQARAAAAAQAxAAAAFAAAAAAAAQBRAAAABgARAAAAAQAhAAAAAgAAAAAAAgARAAAAEwAAAAAAAQBRAAAABQARAAAAAQAhAAAABAAAAAAAAQBBAAAAAQARAAAAEgAAAAAAAQBRAAAABQARAAAAAQAhAAAAFwAAAAAAAQBRAAAABgARAAAAAQAhAAAAGAAAAAAABQARAAAAAQAhAAAAGgAAAAAA"
+    },
+    {
+      "regionX": 96,
+      "regionY": 104,
+      "obstacleRleBase64": "AQAhAAAAAwARAAAAAQAhAAAAGwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAHAAAAAAAAgARAAAAAQAhAAAAHQAAAAAAAQARAAAAAQAhAAAAHgAAAAAAAQARAAAAfwEAAAAA"
+    },
+    {
+      "regionX": 100,
+      "regionY": 104,
+      "obstacleRleBase64": "QAEAAAAAAQARAAAAHwAAAAAAAQARAAAAAgAAAAAAAQBRAAAAAgARAAAAGgAAAAAAAQARAAAAAQAxAAAAAQBRAAAAAgARAAAAAQAhAAAAGgAAAAAABAARAAAAAQAhAAAAGwAAAAAAAwARAAAAAQAhAAAAHAAAAAAAAwARAAAAAQAxAAAAHAAAAAAA"
+    },
+    {
+      "regionX": 101,
+      "regionY": 104,
+      "obstacleRleBase64": "AQAAAAAAAQBBAAAAAwARAAAA2wAAAAAAAQAxAAAAHwAAAAAAAgARAAAAAQAxAAAAHQAAAAAAAwARAAAAAQAxAAAAHAAAAAAAAQBBAAAAAwARAAAAAQAxAAAAHAAAAAAAAQBBAAAAAwARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAgARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAwARAAAAAQAxAAAAHAAAAAAAAQBBAAAAAwARAAAAAQAxAAAAGwAAAAAAAQBRAAAABAARAAAAFgAAAAAA"
+    },
+    {
+      "regionX": 102,
+      "regionY": 104,
+      "obstacleRleBase64": "BAAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAQBBAAAAAQARAAAAAQAxAAAAGQAAAAAAAgARAAAAAQAhAAAAAgAAAAAAAgARAAAAGQAAAAAAAgARAAAAAgAAAAAAAQBRAAAAAgARAAAAGAAAAAAAAQBRAAAABgARAAAAAQAhAAAAFwAAAAAAAQBRAAAABQARAAAAAQAhAAAAFwAAAAAAAQBRAAAABQARAAAAAQAhAAAAGQAAAAAABQARAAAAAQAhAAAAGgAAAAAABAARAAAAAQAhAAAAGwAAAAAAAQBBAAAAAwARAAAAHgAAAAAAAgARAAAAHAAAAAAABAARAAAAHAAAAAAAAwARAAAAAQAhAAAAnAAAAAAA"
+    }
+  ],
+  "portals": [
+    {
+      "trapId": 1163895241,
+      "code": "portal-to-tuyet-bao-dong-tang-4",
+      "spawnSource": "regionDat",
+      "scriptPath": "\\script\\Î÷±±±±Çø\\Ò©Íõ¹È\\Ñ©±ª¶´Ò»²ã\\trap\\Ñ©±ª¶´Ò»²ã3toÑ©±ª¶´ËÄ²ã1.lua",
+      "action": "teleport",
+      "targetMapId": 148,
+      "targetMpsX": 52160,
+      "targetMpsY": 106368,
+      "targetFightMode": 1,
+      "triggerCells": [
+        {
+          "regionX": 97,
+          "regionY": 101,
+          "cellY": 7,
+          "startCellX": 4,
+          "cellCount": 3
+        },
+        {
+          "regionX": 97,
+          "regionY": 101,
+          "cellY": 8,
+          "startCellX": 3,
+          "cellCount": 3
+        },
+        {
+          "regionX": 97,
+          "regionY": 101,
+          "cellY": 9,
+          "startCellX": 2,
+          "cellCount": 3
+        },
+        {
+          "regionX": 97,
+          "regionY": 101,
+          "cellY": 10,
+          "startCellX": 2,
+          "cellCount": 2
+        },
+        {
+          "regionX": 97,
+          "regionY": 101,
+          "cellY": 11,
+          "startCellX": 2,
+          "cellCount": 1
+        }
+      ]
+    },
+    {
+      "trapId": 1987304569,
+      "code": "portal-to-tuyet-bao-dong-tang-2",
+      "spawnSource": "regionDat",
+      "scriptPath": "\\script\\Î÷±±±±Çø\\Ò©Íõ¹È\\Ñ©±ª¶´Ò»²ã\\trap\\Ñ©±ª¶´Ò»²ã2toÑ©±ª¶´¶þ²ã1.lua",
+      "action": "teleport",
+      "targetMapId": 146,
+      "targetMpsX": 52160,
+      "targetMpsY": 106400,
+      "targetFightMode": 1,
+      "triggerCells": [
+        {
+          "regionX": 99,
+          "regionY": 100,
+          "cellY": 9,
+          "startCellX": 6,
+          "cellCount": 2
+        },
+        {
+          "regionX": 99,
+          "regionY": 100,
+          "cellY": 10,
+          "startCellX": 5,
+          "cellCount": 3
+        },
+        {
+          "regionX": 99,
+          "regionY": 100,
+          "cellY": 11,
+          "startCellX": 4,
+          "cellCount": 3
+        },
+        {
+          "regionX": 99,
+          "regionY": 100,
+          "cellY": 12,
+          "startCellX": 3,
+          "cellCount": 3
+        },
+        {
+          "regionX": 99,
+          "regionY": 100,
+          "cellY": 13,
+          "startCellX": 3,
+          "cellCount": 2
+        }
+      ]
+    },
+    {
+      "trapId": 3637206221,
+      "code": "portal-to-map-140",
+      "spawnSource": "regionDat",
+      "scriptPath": "\\script\\Î÷±±±±Çø\\Ò©Íõ¹È\\Ñ©±ª¶´Ò»²ã\\trap\\Ñ©±ª¶´Ò»²ã1toÒ©Íõ¹È1.lua",
+      "action": "teleport",
+      "targetMapId": 140,
+      "targetMpsX": 73856,
+      "targetMpsY": 103136,
+      "targetFightMode": 1,
+      "triggerCells": [
+        {
+          "regionX": 102,
+          "regionY": 103,
+          "cellY": 23,
+          "startCellX": 0,
+          "cellCount": 2
+        },
+        {
+          "regionX": 102,
+          "regionY": 103,
+          "cellY": 24,
+          "startCellX": 1,
+          "cellCount": 2
+        },
+        {
+          "regionX": 102,
+          "regionY": 103,
+          "cellY": 25,
+          "startCellX": 2,
+          "cellCount": 2
+        },
+        {
+          "regionX": 102,
+          "regionY": 103,
+          "cellY": 26,
+          "startCellX": 3,
+          "cellCount": 2
+        },
+        {
+          "regionX": 102,
+          "regionY": 103,
+          "cellY": 27,
+          "startCellX": 4,
+          "cellCount": 2
+        },
+        {
+          "regionX": 102,
+          "regionY": 103,
+          "cellY": 28,
+          "startCellX": 4,
+          "cellCount": 2
+        }
+      ]
+    },
+    {
+      "trapId": 3958565280,
+      "code": "portal-to-tuyet-bao-dong-tang-8",
+      "spawnSource": "regionDat",
+      "scriptPath": "\\script\\Î÷±±±±Çø\\Ò©Íõ¹È\\Ñ©±ª¶´Ò»²ã\\trap\\Ñ©±ª¶´Ò»²ã4toÑ©±ª¶´°Ë²ã1.lua",
+      "action": "teleport",
+      "targetMapId": 152,
+      "targetMpsX": 53600,
+      "targetMpsY": 107680,
+      "targetFightMode": 1,
+      "triggerCells": [
+        {
+          "regionX": 95,
+          "regionY": 101,
+          "cellY": 30,
+          "startCellX": 4,
+          "cellCount": 1
+        },
+        {
+          "regionX": 95,
+          "regionY": 101,
+          "cellY": 31,
+          "startCellX": 3,
+          "cellCount": 2
+        },
+        {
+          "regionX": 94,
+          "regionY": 102,
+          "cellY": 3,
+          "startCellX": 15,
+          "cellCount": 1
+        },
+        {
+          "regionX": 95,
+          "regionY": 102,
+          "cellY": 0,
+          "startCellX": 2,
+          "cellCount": 3
+        },
+        {
+          "regionX": 95,
+          "regionY": 102,
+          "cellY": 1,
+          "startCellX": 1,
+          "cellCount": 3
+        },
+        {
+          "regionX": 95,
+          "regionY": 102,
+          "cellY": 2,
+          "startCellX": 0,
+          "cellCount": 3
+        },
+        {
+          "regionX": 95,
+          "regionY": 102,
+          "cellY": 3,
+          "startCellX": 0,
+          "cellCount": 2
+        },
+        {
+          "regionX": 95,
+          "regionY": 102,
+          "cellY": 4,
+          "startCellX": 0,
+          "cellCount": 1
+        }
+      ]
+    }
+  ],
+  "spawnGroups": [
+    {
+      "npcTemplateId": 3,
+      "npcCode": "kim-tien-bao",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 31,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51254,
+          "mpsY": 104439
+        },
+        {
+          "mpsX": 48905,
+          "mpsY": 105242
+        },
+        {
+          "mpsX": 50976,
+          "mpsY": 105600
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 3,
+      "npcCode": "kim-tien-bao",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 31,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49408,
+          "mpsY": 105984
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 3,
+      "npcCode": "kim-tien-bao",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 32,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52373,
+          "mpsY": 102972
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 3,
+      "npcCode": "kim-tien-bao",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 32,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50377,
+          "mpsY": 104232
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 3,
+      "npcCode": "kim-tien-bao",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 32,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51680,
+          "mpsY": 104160
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 3,
+      "npcCode": "kim-tien-bao",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 32,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49833,
+          "mpsY": 105124
+        },
+        {
+          "mpsX": 48461,
+          "mpsY": 105762
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 3,
+      "npcCode": "kim-tien-bao",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 33,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51872,
+          "mpsY": 102752
+        },
+        {
+          "mpsX": 51790,
+          "mpsY": 105882
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 3,
+      "npcCode": "kim-tien-bao",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 33,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51200,
+          "mpsY": 104030
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 3,
+      "npcCode": "kim-tien-bao",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 33,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50613,
+          "mpsY": 104587
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 3,
+      "npcCode": "kim-tien-bao",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 39,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "isSpecialNpc": true,
+      "nameOverride": "花斑豹",
+      "scriptPath": "\\script\\西北北区\\药王谷\\雪豹洞一层\\npc\\战斗_kll30_雪豹.lua",
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51505,
+          "mpsY": 105371
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 4,
+      "npcCode": "tuyet-bao",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 34,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51616,
+          "mpsY": 103096
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 4,
+      "npcCode": "tuyet-bao",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 34,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51808,
+          "mpsY": 103712
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 4,
+      "npcCode": "tuyet-bao",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 34,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49344,
+          "mpsY": 105056
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 4,
+      "npcCode": "tuyet-bao",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 35,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49312,
+          "mpsY": 105542
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 4,
+      "npcCode": "tuyet-bao",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 35,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51264,
+          "mpsY": 105856
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 4,
+      "npcCode": "tuyet-bao",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 36,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51361,
+          "mpsY": 103321
+        },
+        {
+          "mpsX": 52146,
+          "mpsY": 102705
+        },
+        {
+          "mpsX": 51181,
+          "mpsY": 105003
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 4,
+      "npcCode": "tuyet-bao",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 39,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "isSpecialNpc": true,
+      "nameOverride": "文豹",
+      "scriptPath": "\\script\\西北北区\\药王谷\\雪豹洞一层\\npc\\战斗_kll30_雪豹.lua",
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49129,
+          "mpsY": 105369
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 9,
+      "npcCode": "ho-ly",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 37,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50240,
+          "mpsY": 105056
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 9,
+      "npcCode": "ho-ly",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 38,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51936,
+          "mpsY": 105888
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 9,
+      "npcCode": "ho-ly",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 39,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "isSpecialNpc": true,
+      "nameOverride": "赤狐",
+      "scriptPath": "\\script\\西北北区\\药王谷\\雪豹洞一层\\npc\\战斗_kll30_雪豹.lua",
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 52192,
+          "mpsY": 103200
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 9,
+      "npcCode": "ho-ly",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 39,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51488,
+          "mpsY": 104704
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 9,
+      "npcCode": "ho-ly",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 39,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 49760,
+          "mpsY": 105536
+        }
+      ]
+    }
+  ]
+}

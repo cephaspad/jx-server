@@ -141,7 +141,7 @@ public static class CombatDamageCalculator
         ArgumentNullException.ThrowIfNull(attacker);
         ArgumentNullException.ThrowIfNull(skill);
 
-        int clampedLevel = Math.Clamp(skillLevel, 1, Math.Max(1, skill.MaxLevel));
+        int clampedLevel = Math.Clamp(skillLevel, 1, 64);
         int basePhysMin = attacker.WeaponMinDamage > 0
             ? attacker.WeaponMinDamage + attacker.BonusPhysicsDamage
             : Math.Max(2, attacker.EffectiveStrength / CombatConsts.UnarmedStrengthDivisor) + attacker.BonusPhysicsDamage;
@@ -173,46 +173,55 @@ public static class CombatDamageCalculator
             int p2 = eff.Param2?.Evaluate(clampedLevel) ?? p0;
 
             string code = eff.AttributeCode ?? string.Empty;
-            if (code.Contains("physics_damage_v", StringComparison.OrdinalIgnoreCase))
+            if (code.Contains("physics_damage_v", StringComparison.OrdinalIgnoreCase) ||
+                code.Contains("physicsdamage_v", StringComparison.OrdinalIgnoreCase))
             {
                 physMin += p0;
                 physMax += Math.Max(p0, p2);
             }
-            else if (code.Contains("physics_damage_p", StringComparison.OrdinalIgnoreCase))
+            else if (code.Contains("physics_damage_p", StringComparison.OrdinalIgnoreCase) ||
+                     code.Contains("physicsenhance_p", StringComparison.OrdinalIgnoreCase) ||
+                     code.Contains("addphysicsdamage_p", StringComparison.OrdinalIgnoreCase))
             {
                 physMin += (basePhysMin * p0) / 100;
                 physMax += (basePhysMax * Math.Max(p0, p2)) / 100;
             }
-            else if (code.Contains("cold_damage_v", StringComparison.OrdinalIgnoreCase))
+            else if (code.Contains("cold_damage_v", StringComparison.OrdinalIgnoreCase) ||
+                     code.Contains("colddamage_v", StringComparison.OrdinalIgnoreCase))
             {
                 coldMin += p0;
                 coldMax += Math.Max(p0, p2);
                 coldDur = Math.Max(coldDur, p1 > 0 ? p1 : 36);
             }
-            else if (code.Contains("fire_damage_v", StringComparison.OrdinalIgnoreCase))
+            else if (code.Contains("fire_damage_v", StringComparison.OrdinalIgnoreCase) ||
+                     code.Contains("firedamage_v", StringComparison.OrdinalIgnoreCase))
             {
                 fireMin += p0;
                 fireMax += Math.Max(p0, p2);
             }
             else if (code.Contains("lighting_damage_v", StringComparison.OrdinalIgnoreCase) ||
-                     code.Contains("light_damage_v", StringComparison.OrdinalIgnoreCase))
+                     code.Contains("light_damage_v", StringComparison.OrdinalIgnoreCase) ||
+                     code.Contains("lightingdamage_v", StringComparison.OrdinalIgnoreCase))
             {
                 lightMin += p0;
                 lightMax += Math.Max(p0, p2);
                 lightDur = Math.Max(lightDur, p1 > 0 ? p1 : 18);
             }
-            else if (code.Contains("poison_damage_v", StringComparison.OrdinalIgnoreCase))
+            else if (code.Contains("poison_damage_v", StringComparison.OrdinalIgnoreCase) ||
+                     code.Contains("poisondamage_v", StringComparison.OrdinalIgnoreCase))
             {
                 poisonDmg += Math.Max(1, p0);
                 poisonDur = Math.Max(poisonDur, p1 > 0 ? p1 : 90);
                 poisonInterval = p2 > 0 ? p2 : 18;
             }
-            else if (code.Contains("magic_damage_v", StringComparison.OrdinalIgnoreCase))
+            else if (code.Contains("magic_damage_v", StringComparison.OrdinalIgnoreCase) ||
+                     code.Contains("magicdamage_v", StringComparison.OrdinalIgnoreCase))
             {
                 magicMin += p0;
                 magicMax += Math.Max(p0, p2);
             }
-            else if (code.Contains("attackrating_p", StringComparison.OrdinalIgnoreCase))
+            else if (code.Contains("attackrating_p", StringComparison.OrdinalIgnoreCase) ||
+                     code.Contains("attackratingenhance_p", StringComparison.OrdinalIgnoreCase))
             {
                 arPercentBonus += p0;
             }
@@ -288,7 +297,7 @@ public static class CombatDamageCalculator
                 MagicMaxDamage: 0);
         }
 
-        int clampedLevel = Math.Clamp(skillLevel, 1, Math.Max(1, skill.MaxLevel));
+        int clampedLevel = Math.Clamp(skillLevel, 1, 64);
         int physMin = skill.IsPhysical ? attacker.PhysicsMinDamage : 0;
         int physMax = skill.IsPhysical ? Math.Max(attacker.PhysicsMinDamage, attacker.PhysicsMaxDamage) : 0;
         int coldMin = 0;
@@ -312,36 +321,42 @@ public static class CombatDamageCalculator
             int p2 = eff.Param2?.Evaluate(clampedLevel) ?? p0;
 
             string code = eff.AttributeCode ?? string.Empty;
-            if (code.Contains("physics_damage_v", StringComparison.OrdinalIgnoreCase))
+            if (code.Contains("physics_damage_v", StringComparison.OrdinalIgnoreCase) ||
+                code.Contains("physicsdamage_v", StringComparison.OrdinalIgnoreCase))
             {
                 physMin += p0;
                 physMax += Math.Max(p0, p2);
             }
-            else if (code.Contains("cold_damage_v", StringComparison.OrdinalIgnoreCase))
+            else if (code.Contains("cold_damage_v", StringComparison.OrdinalIgnoreCase) ||
+                     code.Contains("colddamage_v", StringComparison.OrdinalIgnoreCase))
             {
                 coldMin += p0;
                 coldMax += Math.Max(p0, p2);
                 coldDur = Math.Max(coldDur, p1 > 0 ? p1 : 36);
             }
-            else if (code.Contains("fire_damage_v", StringComparison.OrdinalIgnoreCase))
+            else if (code.Contains("fire_damage_v", StringComparison.OrdinalIgnoreCase) ||
+                     code.Contains("firedamage_v", StringComparison.OrdinalIgnoreCase))
             {
                 fireMin += p0;
                 fireMax += Math.Max(p0, p2);
             }
             else if (code.Contains("lighting_damage_v", StringComparison.OrdinalIgnoreCase) ||
-                     code.Contains("light_damage_v", StringComparison.OrdinalIgnoreCase))
+                     code.Contains("light_damage_v", StringComparison.OrdinalIgnoreCase) ||
+                     code.Contains("lightingdamage_v", StringComparison.OrdinalIgnoreCase))
             {
                 lightMin += p0;
                 lightMax += Math.Max(p0, p2);
                 lightDur = Math.Max(lightDur, p1 > 0 ? p1 : 18);
             }
-            else if (code.Contains("poison_damage_v", StringComparison.OrdinalIgnoreCase))
+            else if (code.Contains("poison_damage_v", StringComparison.OrdinalIgnoreCase) ||
+                     code.Contains("poisondamage_v", StringComparison.OrdinalIgnoreCase))
             {
                 poisonDmg += Math.Max(1, p0);
                 poisonDur = Math.Max(poisonDur, p1 > 0 ? p1 : 90);
                 poisonInterval = p2 > 0 ? p2 : 18;
             }
-            else if (code.Contains("magic_damage_v", StringComparison.OrdinalIgnoreCase))
+            else if (code.Contains("magic_damage_v", StringComparison.OrdinalIgnoreCase) ||
+                     code.Contains("magicdamage_v", StringComparison.OrdinalIgnoreCase))
             {
                 magicMin += p0;
                 magicMax += Math.Max(p0, p2);

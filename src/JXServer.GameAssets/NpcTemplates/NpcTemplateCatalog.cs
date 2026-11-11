@@ -31,6 +31,19 @@ public sealed partial class NpcTemplateCatalog : INpcTemplateCatalog
         ArgumentNullException.ThrowIfNull(options);
         ArgumentNullException.ThrowIfNull(logger);
 
+        if (options.Value.PreferBinarySnapshots &&
+            GameAssetsSnapshotLoader.TryLoadBundle(options.Value, out GameAssetsSnapshotBundle? preferredBundle, out string preferredTier) &&
+            preferredBundle is not null &&
+            preferredBundle.NpcTemplates.Count > 0)
+        {
+            _templates = preferredBundle.NpcTemplates.ToFrozenDictionary(x => x.TemplateId);
+            _autoExecSpawnsByMap = preferredBundle.AutoExecSpawns
+                .GroupBy(x => x.MapId)
+                .ToFrozenDictionary(g => g.Key, g => (IReadOnlyList<StaticNpcSpawnTemplate>)g.ToArray());
+            GameAssetsLogMessages.LogNpcTemplatesLoaded(logger, _templates.Count, preferredTier, preferredBundle.AutoExecSpawns.Count);
+            return;
+        }
+
         string serverRoot = options.Value.ServerRootPath;
         string npcsTxtPath = Path.Combine(serverRoot, "settings", "npcs.txt");
         if (!File.Exists(npcsTxtPath))
@@ -110,21 +123,22 @@ public sealed partial class NpcTemplateCatalog : INpcTemplateCatalog
         int activeRadiusCol = FindColumnIndex(headers, "ActiveRadius", fallback: 33);
         int visionRadiusCol = FindColumnIndex(headers, "VisionRadius", fallback: 34);
 
-        // Row 0 is headers; Row 1 is baseline defaults; Row 2+ map to 0-based nTemplateID = lineIdx - 2
-        int templateId = 0;
-        for (int lineIdx = 2; lineIdx < lines.Length; lineIdx++)
+        // Row 0 is headers; Row 1 (KTabFile Row 2) is BOTH nNpcTemplateId = 0 ("Đông Bắc Hổ") AND baseline defaults for empty cells in Row 2+
+        string[] defaultCols = lines[1].Split('\t');
+        for (int lineIdx = 1; lineIdx < lines.Length; lineIdx++)
         {
             string line = lines[lineIdx];
-            if (string.IsNullOrEmpty(line))
+            if (lineIdx == lines.Length - 1 && string.IsNullOrEmpty(line))
             {
                 continue;
             }
 
+            int templateId = lineIdx - 1;
             string[] cols = line.Split('\t');
-            string rawName = GetCol(cols, nameCol).Trim();
+            string rawName = GetColOrInherit(cols, defaultCols, nameCol, lineIdx, inheritName: false).Trim();
             string displayName = string.IsNullOrWhiteSpace(rawName) ? $"NPC #{templateId}" : rawName;
 
-            int kindVal = ParseIntOrDefault(GetCol(cols, kindCol), 0);
+            int kindVal = ParseIntOrDefault(GetColOrInherit(cols, defaultCols, kindCol, lineIdx), 0);
             EntityKind kind = kindVal switch
             {
                 1 => EntityKind.Player,
@@ -133,22 +147,22 @@ public sealed partial class NpcTemplateCatalog : INpcTemplateCatalog
                 _ => EntityKind.Monster,
             };
 
-            int campVal = ParseIntOrDefault(GetCol(cols, campCol), 0);
+            int campVal = ParseIntOrDefault(GetColOrInherit(cols, defaultCols, campCol, lineIdx), 0);
             EntityCamp camp = Enum.IsDefined(typeof(EntityCamp), (byte)campVal)
                 ? (EntityCamp)campVal
                 : EntityCamp.Begin;
 
-            int seriesVal = ParseIntOrDefault(GetCol(cols, seriesCol), 0);
+            int seriesVal = ParseIntOrDefault(GetColOrInherit(cols, defaultCols, seriesCol, lineIdx), 0);
             ElementSeries series = Enum.IsDefined(typeof(ElementSeries), (byte)seriesVal)
                 ? (ElementSeries)seriesVal
                 : ElementSeries.Metal;
 
-            int walkSpeed = Math.Clamp(ParseIntOrDefault(GetCol(cols, walkSpeedCol), 10), 1, 64);
-            int runSpeed = Math.Clamp(ParseIntOrDefault(GetCol(cols, runSpeedCol), 20), 1, 64);
-            int baseLife = Math.Max(100, ParseIntOrDefault(GetCol(cols, lifeParamCol), 500));
-            int baseExp = Math.Max(20, ParseIntOrDefault(GetCol(cols, expParamCol), 80));
-            int activeRadius = Math.Clamp(ParseIntOrDefault(GetCol(cols, activeRadiusCol), 400), 128, 2048);
-            int visionRadius = Math.Clamp(ParseIntOrDefault(GetCol(cols, visionRadiusCol), 320), 96, 1024);
+            int walkSpeed = Math.Clamp(ParseIntOrDefault(GetColOrInherit(cols, defaultCols, walkSpeedCol, lineIdx), 10), 1, 64);
+            int runSpeed = Math.Clamp(ParseIntOrDefault(GetColOrInherit(cols, defaultCols, runSpeedCol, lineIdx), 20), 1, 64);
+            int baseLife = Math.Max(100, ParseIntOrDefault(GetColOrInherit(cols, defaultCols, lifeParamCol, lineIdx), 500));
+            int baseExp = Math.Max(20, ParseIntOrDefault(GetColOrInherit(cols, defaultCols, expParamCol, lineIdx), 80));
+            int activeRadius = Math.Clamp(ParseIntOrDefault(GetColOrInherit(cols, defaultCols, activeRadiusCol, lineIdx), 400), 128, 2048);
+            int visionRadius = Math.Clamp(ParseIntOrDefault(GetColOrInherit(cols, defaultCols, visionRadiusCol, lineIdx), 320), 96, 1024);
 
             result[templateId] = new NpcTemplate(
                 templateId,
@@ -175,8 +189,6 @@ public sealed partial class NpcTemplateCatalog : INpcTemplateCatalog
                 Skills: [new NpcSkillSlotTemplate(29, 1, 100)],
                 AiConfig: new NpcAiConfigTemplate(3, 0, 0, 0, 36),
                 CombatScaling: new NpcCombatScalingTemplate());
-
-            templateId++;
         }
 
         return result;
@@ -245,6 +257,17 @@ public sealed partial class NpcTemplateCatalog : INpcTemplateCatalog
 
     private static string GetCol(string[] cols, int index) =>
         (uint)index < (uint)cols.Length ? cols[index] : string.Empty;
+
+    private static string GetColOrInherit(string[] cols, string[] defaultCols, int index, int lineIdx, bool inheritName = true)
+    {
+        string cell = GetCol(cols, index);
+        if (!string.IsNullOrEmpty(cell) || lineIdx <= 1 || !inheritName)
+        {
+            return cell;
+        }
+
+        return GetCol(defaultCols, index);
+    }
 
     private static int ParseIntOrDefault(string text, int defaultValue) =>
         int.TryParse(text.Trim(), out int val) ? val : defaultValue;

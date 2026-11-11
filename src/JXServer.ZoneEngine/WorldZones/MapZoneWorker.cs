@@ -1455,7 +1455,7 @@ public sealed class MapZoneWorker
 
         SkillDamagePayload damagePayload = CombatDamageCalculator.BuildPlayerSkillDamagePayload(caster, skill, learnedLevel);
 
-        if (skill.MissileId > 0)
+        if (skill.MissileId > 0 && !skill.IsMelee)
         {
             MissileTemplate? missileTpl = null;
             if (_missileTemplateCatalog is null || !_missileTemplateCatalog.TryGetMissile(skill.MissileId, out missileTpl) || missileTpl is null)
@@ -2113,20 +2113,34 @@ public sealed class MapZoneWorker
         foreach (ItemBaseAttributeTemplate baseAttr in item.Template.BaseAttributes)
         {
             string code = baseAttr.AttributeCode ?? string.Empty;
-            int totalAmount = Math.Max(10, baseAttr.MinValue);
             int durationFrames = Math.Max(9, baseAttr.DurationFrames > 0 ? baseAttr.DurationFrames : 90);
             int ticks = Math.Max(1, durationFrames / 9);
+            int totalAmount = Math.Max(10, baseAttr.MinValue);
             int regenPerTick = Math.Max(1, totalAmount / ticks);
 
-            if (string.Equals(code, "life_v", StringComparison.OrdinalIgnoreCase) ||
-                string.Equals(code, "lifereplenish_v", StringComparison.OrdinalIgnoreCase))
+            if (string.Equals(code, "lifepotion_v", StringComparison.OrdinalIgnoreCase))
+            {
+                player.MedicineLifeRegenPerTick = Math.Max(1, baseAttr.MinValue);
+                player.MedicineLifeRemainingFrames += durationFrames;
+                appliedFromTemplate = true;
+            }
+            else if (string.Equals(code, "manapotion_v", StringComparison.OrdinalIgnoreCase))
+            {
+                player.MedicineManaRegenPerTick = Math.Max(1, baseAttr.MinValue);
+                player.MedicineManaRemainingFrames += durationFrames;
+                appliedFromTemplate = true;
+            }
+            else if (string.Equals(code, "life_v", StringComparison.OrdinalIgnoreCase) ||
+                     string.Equals(code, "lifereplenish_v", StringComparison.OrdinalIgnoreCase) ||
+                     string.Equals(code, "restore_life_v", StringComparison.OrdinalIgnoreCase))
             {
                 player.MedicineLifeRegenPerTick = regenPerTick;
                 player.MedicineLifeRemainingFrames += durationFrames;
                 appliedFromTemplate = true;
             }
             else if (string.Equals(code, "mana_v", StringComparison.OrdinalIgnoreCase) ||
-                     string.Equals(code, "manareplenish_v", StringComparison.OrdinalIgnoreCase))
+                     string.Equals(code, "manareplenish_v", StringComparison.OrdinalIgnoreCase) ||
+                     string.Equals(code, "restore_mana_v", StringComparison.OrdinalIgnoreCase))
             {
                 player.MedicineManaRegenPerTick = regenPerTick;
                 player.MedicineManaRemainingFrames += durationFrames;

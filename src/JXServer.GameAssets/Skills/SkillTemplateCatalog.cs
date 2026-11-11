@@ -50,13 +50,16 @@ public sealed class SkillTemplateCatalog : ISkillTemplateCatalog
             byCode[s.Code] = s;
         }
 
-        // Ensure canonical baseline combat skills exist even in minimal test fixtures
-        foreach (SkillTemplate fallback in CreateDefaultSkills())
+        // Ensure canonical baseline combat skills exist in minimal test fixtures
+        if (skills.Count < 50)
         {
-            if (!byId.ContainsKey(fallback.Id))
+            foreach (SkillTemplate fallback in CreateDefaultSkills())
             {
-                byId[fallback.Id] = fallback;
-                byCode.TryAdd(fallback.Code, fallback);
+                if (!byId.ContainsKey(fallback.Id))
+                {
+                    byId[fallback.Id] = fallback;
+                    byCode.TryAdd(fallback.Code, fallback);
+                }
             }
         }
 

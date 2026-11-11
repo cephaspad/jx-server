@@ -1,0 +1,429 @@
+{
+  "$schema": "../../schemas/map.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": 151,
+  "code": "tuyet-bao-dong-tang-7",
+  "name": "Tuyết Báo Động tầng 7",
+  "mapType": "Field",
+  "mapRules": {
+    "defaultFightMode": 1,
+    "allowPk": true,
+    "forbidHeartTeleport": false,
+    "normalLootTableCode": "npcdroprate80",
+    "goldenLootTableCode": "goldennpc-golden-lv40",
+    "autoGoldenNpcRate": 2000,
+    "goldenType": 13,
+    "npcAutoLevel": {
+      "enabled": true,
+      "minLevel": 85,
+      "maxLevel": 85
+    },
+    "npcAutoSeries": {
+      "enabled": true,
+      "metalWeight": 0,
+      "woodWeight": 30,
+      "waterWeight": 60,
+      "fireWeight": 10,
+      "earthWeight": 0
+    }
+  },
+  "regionBounds": {
+    "leftRegionX": 97,
+    "topRegionY": 99,
+    "rightRegionX": 101,
+    "bottomRegionY": 101
+  },
+  "regions": [
+    {
+      "regionX": 98,
+      "regionY": 99,
+      "obstacleRleBase64": "fwAAAAAAAQBRAAAAHgAAAAAAAQBRAAAAAQARAAAAHQAAAAAAAQBRAAAAAgARAAAAHAAAAAAAAQBRAAAAAwARAAAAFwAAAAAAAQBRAAAAAgARAAAAAQAxAAAAAQBRAAAABAARAAAAFgAAAAAAAQBRAAAACQARAAAAFQAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAQBBAAAABQARAAAAAQAhAAAAFAAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAgAAAAAAAwARAAAAAQAhAAAAFQAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAwAAAAAAAwARAAAAFQAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAwAAAAAAAQBRAAAAAwARAAAAFAAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAgAAAAAAAQBRAAAAAwARAAAAAQAhAAAAFQAAAAAAAwARAAAAAgAAAAAAAQBRAAAAAwARAAAAAQAhAAAAFgAAAAAABwARAAAAAQAhAAAABwAAAAAA"
+    },
+    {
+      "regionX": 99,
+      "regionY": 99,
+      "obstacleRleBase64": "EQAAAAAABgARAAAAAQAhAAAAGAAAAAAAAQBRAAAABgARAAAAGAAAAAAAAQBRAAAABwARAAAAGAAAAAAAAgARAAAAAQAhAAAAAgAAAAAAAQBBAAAAAgARAAAAGAAAAAAAAgARAAAAAQAxAAAAAwAAAAAAAQBBAAAAAQARAAAAGAAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAwAAAAAAAQARAAAAGQAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAgAAAAAAAQARAAAAGgAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQAAAAAAAQARAAAAGwAAAAAABQARAAAAGgAAAAAAAQBRAAAABQARAAAAGQAAAAAAAQBRAAAABgARAAAAGAAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAQBBAAAAAwARAAAAGAAAAAAAAgARAAAAAQAhAAAAAgAAAAAAAQBBAAAAAgARAAAAGAAAAAAAAgARAAAABAAAAAAAAQBBAAAAAQARAAAAGAAAAAAAAgARAAAAAQAxAAAABAAAAAAAAQARAAAAAQAxAAAAFwAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAgAAAAAAAQBRAAAABAARAAAAAQAxAAAABQAAAAAA"
+    },
+    {
+      "regionX": 100,
+      "regionY": 99,
+      "obstacleRleBase64": "EAAAAAAAAQBBAAAACgARAAAAAQAxAAAAFQAAAAAADAARAAAAAQAxAAAAEgAAAAAAAQBRAAAADwARAAAAEAAAAAAACwARAAAAAQAhAAAAAQAAAAAAAwARAAAAEQAAAAAAAQBBAAAACAARAAAAAQAhAAAAAQAAAAAAAQBRAAAAAwARAAAAEwAAAAAAAQBBAAAADAARAAAAFAAAAAAADAARAAAAFAAAAAAABQARAAAAAQAhAAAAAwAAAAAAAQBBAAAAAgARAAAAHgAAAAAAAQBBAAAAAQARAAAAHwAAAAAAAQBBAAAAwAAAAAAA"
+    },
+    {
+      "regionX": 97,
+      "regionY": 100,
+      "obstacleRleBase64": "7AAAAAAAAQBRAAAAAgARAAAAAQAxAAAAGwAAAAAAAQBRAAAACAARAAAABAAAAAAAAQBRAAAABAARAAAAAQAxAAAACQAAAAAAAQBRAAAABQARAAAAAQAhAAAAAgAAAAAAAQBBAAAAAwARAAAAAwAAAAAAAQBRAAAACAARAAAABgAAAAAAAQBRAAAABgARAAAAAQAxAAAABAAAAAAAAgARAAAAAwAAAAAAAgARAAAAAQAhAAAABAAAAAAAAQBBAAAAAQARAAAABQAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAQBBAAAABAARAAAAAQAxAAAAAgAAAAAAAQBRAAAAAgARAAAAAwAAAAAAAgARAAAAAQAxAAAABAAAAAAAAQBRAAAAAQARAAAABAAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAQAAAAAAAQBRAAAABQARAAAAAQAxAAAAAQBRAAAAAwARAAAAAQAxAAAAAgAAAAAAAwARAAAAAQAxAAAAAQAAAAAAAQBRAAAAAwARAAAAAwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAgAAAAAAFwARAAAAAgAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAgAAAAAAAQBRAAAACAARAAAAAQAhAAAABwAAAAAAAQBBAAAAAgARAAAAAQAhAAAABAAAAAAAAQBRAAAAAgARAAAAAQAhAAAAAgAAAAAAAQBRAAAAAwARAAAAAQAhAAAAAgAAAAAAAQBBAAAAAgARAAAACQAAAAAAAgARAAAAAQAxAAAAAwAAAAAA"
+    },
+    {
+      "regionX": 98,
+      "regionY": 100,
+      "obstacleRleBase64": "AQAAAAAAAwARAAAAAgAAAAAAAQBRAAAAAwARAAAAAQAhAAAADwAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAwAAAAAAAwARAAAAAQAxAAAAAQBRAAAAAwARAAAAAQAhAAAAEQAAAAAAAQBBAAAAAwARAAAAAQAxAAAAAQBRAAAABwARAAAAAQAhAAAAFAAAAAAAAQBBAAAACAARAAAAAQAhAAAAFwAAAAAAAQBBAAAABQARAAAAAQAhAAAAGwAAAAAABAARAAAAHAAAAAAAAwARAAAAAQAhAAAAHAAAAAAAAgARAAAAAQAhAAAAHQAAAAAAAQARAAAAAQAhAAAA/gAAAAAA"
+    },
+    {
+      "regionX": 100,
+      "regionY": 100,
+      "obstacleRleBase64": "QAAAAAAAAQAxAAAAHwAAAAAAAQARAAAAAQAxAAAAHgAAAAAAAgARAAAAAQAxAAAAHQAAAAAABAARAAAAAQAxAAAAGwAAAAAAAQAhAAAAAQBBAAAAAwARAAAAAQAxAAAAFwAAAAAAAQBRAAAAAgARAAAAAQAxAAAAAgAAAAAAAQBBAAAAAwARAAAAFgAAAAAAAgARAAAAAQAhAAAAAQARAAAAAQAxAAAAAgAAAAAAAQBBAAAAAgARAAAAAQAxAAAAFQAAAAAAAQARAAAAAQAhAAAAAQAAAAAAAgARAAAAAQAxAAAAAQAAAAAAAQBRAAAAAwARAAAAAQAxAAAAFAAAAAAAAQARAAAAAQAxAAAAAQAAAAAAAQBBAAAACAARAAAAAQAxAAAAEwAAAAAAAgARAAAAAQAxAAAAAQAAAAAAAQBBAAAACAARAAAAEwAAAAAAAQBBAAAAAgARAAAAAgAAAAAAAwARAAAAAQAhAAAAAQAAAAAAAQBBAAAAAgARAAAAFAAAAAAAAgARAAAAAgAAAAAAAwARAAAAAwAAAAAAAQBBAAAAAQARAAAAEwAAAAAAAQBRAAAAAQARAAAAAQAhAAAAAgAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAwAAAAAAAQARAAAAEwAAAAAAAgARAAAABAAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAgAAAAAAAQARAAAAEwAAAAAAAQARAAAAAQAhAAAAAQAAAAAA"
+    },
+    {
+      "regionX": 101,
+      "regionY": 100,
+      "obstacleRleBase64": "BAAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQAAAAAAAQARAAAAEwAAAAAAAQARAAAAAQAxAAAABgAAAAAAAQBBAAAABAARAAAAAQAxAAAAEQAAAAAAAQBRAAAAAgARAAAABwAAAAAAAQBBAAAABAARAAAAAQAxAAAADwAAAAAAAQBRAAAAAgARAAAAAQAhAAAACAAAAAAAAQBBAAAABQARAAAAAQAxAAAACwAAAAAAAQBRAAAAAwARAAAAAQAhAAAACgAAAAAAAQBBAAAABQARAAAAAQAxAAAABgAAAAAABgARAAAAAQAhAAAADQAAAAAAAQBBAAAACQARAAAAAQAxAAAAAQBRAAAABAARAAAAAQAhAAAAEAAAAAAAAQBBAAAADgARAAAAAQAxAAAAEQAAAAAAAQBBAAAABQARAAAAAQAhAAAACAARAAAAEgAAAAAAAQBBAAAABwARAAAAAQAhAAAAAQAAAAAAAQBBAAAAAwARAAAAEwAAAAAAAQBBAAAABQARAAAAAQAhAAAABAAAAAAAAgARAAAAFAAAAAAAAQBBAAAAAwARAAAAAQAhAAAABAAAAAAAAQBRAAAAAgARAAAAFQAAAAAACwARAAAAFQAAAAAABwARAAAAAQAhAAAAaQAAAAAA"
+    },
+    {
+      "regionX": 98,
+      "regionY": 101,
+      "obstacleRleBase64": "QAAAAAAAAQAxAAAAHwAAAAAAAgARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAgARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAwARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAwARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAgARAAAAHgAAAAAAAgARAAAAAQAxAAAAHQAAAAAAAwARAAAAAQAxAAAAHAAAAAAABAARAAAAHAAAAAAABAARAAAAHAAAAAAAAwARAAAAAQAhAAAAGwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGgAAAAAAAQBRAAAAAwARAAAAAQAhAAAABwAAAAAAAQBRAAAAAgARAAAAAQAxAAAADwAAAAAAAQBRAAAAAgARAAAAAQAhAAAACAAAAAAAAQBRAAAABwARAAAAAQAxAAAACQAAAAAA"
+    },
+    {
+      "regionX": 99,
+      "regionY": 101,
+      "obstacleRleBase64": "AgAAAAAAAgARAAAAAQAhAAAACQAAAAAAAgARAAAAAQAhAAAAAQAAAAAAAQBBAAAABAARAAAACwAAAAAAAgARAAAAAQAxAAAACQAAAAAAAgARAAAAAQAxAAAABAAAAAAAAQBBAAAAAQARAAAAAQAxAAAACgAAAAAAAQBBAAAAAwARAAAAAQAxAAAABwAAAAAAAwARAAAAAQAxAAAAAwAAAAAAAQBRAAAAAgARAAAADAAAAAAAAQBBAAAADQARAAAAAQAxAAAAAQBRAAAAAwARAAAAAQAhAAAAFQAAAAAAAQBBAAAACAARAAAAAQAhAAAAGAAAAAAAAQBBAAAABQARAAAAAQAhAAAAHAAAAAAAAwARAAAAHQAAAAAAAgARAAAAAQAhAAAAHQAAAAAAAgARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAgARAAAAAQAxAAAAHQAAAAAAAQBBAAAABAARAAAAHgAAAAAAAQBBAAAAAQARAAAAHwAAAAAAAQARAAAAHgAAAAAAAQBRAAAAAQARAAAAHQAAAAAAAQBRAAAAAgARAAAAGwAAAAAABAARAAAAAQAhAAAACAAAAAAA"
+    },
+    {
+      "regionX": 100,
+      "regionY": 101,
+      "obstacleRleBase64": "EwAAAAAABAARAAAAGwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGQAAAAAAAQBRAAAABAARAAAAAQAhAAAAGAAAAAAAAQBRAAAAAwARAAAAAQAhAAAAFQAAAAAAAQBRAAAAAwARAAAAAQAxAAAAAQBRAAAAAgARAAAAAQAhAAAAEQAAAAAADQARAAAAAQAhAAAAMgEAAAAA"
+    }
+  ],
+  "portals": [
+    {
+      "trapId": 2201846993,
+      "code": "portal-to-tuyet-bao-dong-tang-8",
+      "spawnSource": "regionDat",
+      "scriptPath": "\\script\\Î÷±±±±Çø\\Ò©Íõ¹È\\Ñ©±ª¶´Æß²ã\\trap\\Ñ©±ª¶´Æß²ã1toÑ©±ª¶´°Ë²ã2.lua",
+      "action": "teleport",
+      "targetMapId": 152,
+      "targetMpsX": 50048,
+      "targetMpsY": 103840,
+      "targetFightMode": 1,
+      "triggerCells": [
+        {
+          "regionX": 101,
+          "regionY": 100,
+          "cellY": 11,
+          "startCellX": 0,
+          "cellCount": 2
+        },
+        {
+          "regionX": 101,
+          "regionY": 100,
+          "cellY": 12,
+          "startCellX": 0,
+          "cellCount": 3
+        },
+        {
+          "regionX": 101,
+          "regionY": 100,
+          "cellY": 13,
+          "startCellX": 1,
+          "cellCount": 2
+        },
+        {
+          "regionX": 101,
+          "regionY": 100,
+          "cellY": 14,
+          "startCellX": 2,
+          "cellCount": 2
+        },
+        {
+          "regionX": 101,
+          "regionY": 100,
+          "cellY": 15,
+          "startCellX": 3,
+          "cellCount": 2
+        },
+        {
+          "regionX": 101,
+          "regionY": 100,
+          "cellY": 16,
+          "startCellX": 4,
+          "cellCount": 1
+        }
+      ]
+    }
+  ],
+  "spawnGroups": [
+    {
+      "npcTemplateId": 143,
+      "npcCode": "dong-bac-son-tac-dau-linh",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 87,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50455,
+          "mpsY": 103493
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 143,
+      "npcCode": "dong-bac-son-tac-dau-linh",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 88,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50926,
+          "mpsY": 102986
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 143,
+      "npcCode": "dong-bac-son-tac-dau-linh",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 89,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51069,
+          "mpsY": 102928
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "hoa-bac-son-tac-1",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 81,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50197,
+          "mpsY": 102996
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "hoa-bac-son-tac-1",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 82,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50525,
+          "mpsY": 102471
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "hoa-bac-son-tac-1",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 83,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51136,
+          "mpsY": 102250
+        },
+        {
+          "mpsX": 50952,
+          "mpsY": 103221
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "hoa-bac-son-tac-1",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 83,
+      "series": 3,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51067,
+          "mpsY": 103221
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "hoa-bac-son-tac-1",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 83,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51016,
+          "mpsY": 103384
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 159,
+      "npcCode": "hoa-bac-son-tac-1",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 83,
+      "series": 4,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51118,
+          "mpsY": 103961
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 166,
+      "npcCode": "son-tac-04",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 84,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50960,
+          "mpsY": 102715
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 166,
+      "npcCode": "son-tac-04",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 85,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50641,
+          "mpsY": 102400
+        },
+        {
+          "mpsX": 51246,
+          "mpsY": 103017
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 166,
+      "npcCode": "son-tac-04",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 85,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50596,
+          "mpsY": 103541
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 166,
+      "npcCode": "son-tac-04",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 86,
+      "series": 0,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 50235,
+          "mpsY": 102855
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 166,
+      "npcCode": "son-tac-04",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 86,
+      "series": 1,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51149,
+          "mpsY": 102447
+        },
+        {
+          "mpsX": 50837,
+          "mpsY": 102977
+        }
+      ]
+    },
+    {
+      "npcTemplateId": 166,
+      "npcCode": "son-tac-04",
+      "spawnSource": "regionDat",
+      "entityKind": "Monster",
+      "level": 86,
+      "series": 2,
+      "camp": 5,
+      "fightMode": 1,
+      "respawnFrames": 85,
+      "lootTableCode": "default-monster-loot",
+      "spawns": [
+        {
+          "mpsX": 51242,
+          "mpsY": 103872
+        }
+      ]
+    }
+  ]
+}

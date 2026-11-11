@@ -389,37 +389,51 @@ public sealed class PlayerInventoryGrid
         {
             string code = req.RequirementCode ?? string.Empty;
             int minVal = req.MinValue;
-            if (string.Equals(code, "level", StringComparison.OrdinalIgnoreCase) && player.Level < minVal)
+            if ((string.Equals(code, "level", StringComparison.OrdinalIgnoreCase) ||
+                 string.Equals(code, "requirelevel", StringComparison.OrdinalIgnoreCase)) &&
+                player.Level < minVal)
             {
                 return false;
             }
 
-            if (string.Equals(code, "strength", StringComparison.OrdinalIgnoreCase) && player.EffectiveStrength < minVal)
+            if ((string.Equals(code, "strength", StringComparison.OrdinalIgnoreCase) ||
+                 string.Equals(code, "requirestr", StringComparison.OrdinalIgnoreCase)) &&
+                player.EffectiveStrength < minVal)
             {
                 return false;
             }
 
-            if (string.Equals(code, "dexterity", StringComparison.OrdinalIgnoreCase) && player.EffectiveDexterity < minVal)
+            if ((string.Equals(code, "dexterity", StringComparison.OrdinalIgnoreCase) ||
+                 string.Equals(code, "requiredex", StringComparison.OrdinalIgnoreCase)) &&
+                player.EffectiveDexterity < minVal)
             {
                 return false;
             }
 
-            if (string.Equals(code, "vitality", StringComparison.OrdinalIgnoreCase) && player.EffectiveVitality < minVal)
+            if ((string.Equals(code, "vitality", StringComparison.OrdinalIgnoreCase) ||
+                 string.Equals(code, "requirevit", StringComparison.OrdinalIgnoreCase)) &&
+                player.EffectiveVitality < minVal)
             {
                 return false;
             }
 
-            if (string.Equals(code, "energy", StringComparison.OrdinalIgnoreCase) && player.EffectiveEnergy < minVal)
+            if ((string.Equals(code, "energy", StringComparison.OrdinalIgnoreCase) ||
+                 string.Equals(code, "requireeng", StringComparison.OrdinalIgnoreCase)) &&
+                player.EffectiveEnergy < minVal)
             {
                 return false;
             }
 
-            if (string.Equals(code, "gender", StringComparison.OrdinalIgnoreCase) && (int)player.Gender != minVal)
+            if ((string.Equals(code, "gender", StringComparison.OrdinalIgnoreCase) ||
+                 string.Equals(code, "requiresex", StringComparison.OrdinalIgnoreCase)) &&
+                (int)player.Gender != minVal)
             {
                 return false;
             }
 
-            if (string.Equals(code, "series", StringComparison.OrdinalIgnoreCase) && (int)player.Series != minVal)
+            if ((string.Equals(code, "series", StringComparison.OrdinalIgnoreCase) ||
+                 string.Equals(code, "requireseries", StringComparison.OrdinalIgnoreCase)) &&
+                (int)player.Series != minVal)
             {
                 return false;
             }
@@ -663,17 +677,27 @@ public sealed class PlayerInventoryGrid
     private static void ApplyBaseAttributeToPlayer(PlayerZoneState player, ItemBaseAttributeTemplate baseAttr)
     {
         string code = baseAttr.AttributeCode ?? string.Empty;
-        if (string.Equals(code, "damage_v", StringComparison.OrdinalIgnoreCase) ||
-            string.Equals(code, "physics_damage_v", StringComparison.OrdinalIgnoreCase))
+        if (string.Equals(code, "weapondamagemin_v", StringComparison.OrdinalIgnoreCase))
+        {
+            player.WeaponMinDamage += Math.Max(0, baseAttr.MinValue);
+        }
+        else if (string.Equals(code, "weapondamagemax_v", StringComparison.OrdinalIgnoreCase))
+        {
+            player.WeaponMaxDamage += Math.Max(0, baseAttr.MaxValue);
+        }
+        else if (string.Equals(code, "damage_v", StringComparison.OrdinalIgnoreCase) ||
+                 string.Equals(code, "physics_damage_v", StringComparison.OrdinalIgnoreCase))
         {
             player.WeaponMinDamage += Math.Max(0, baseAttr.MinValue);
             player.WeaponMaxDamage += Math.Max(baseAttr.MinValue, baseAttr.MaxValue);
         }
-        else if (string.Equals(code, "attackrating_v", StringComparison.OrdinalIgnoreCase))
+        else if (string.Equals(code, "attackrating_v", StringComparison.OrdinalIgnoreCase) ||
+                 string.Equals(code, "attackratingenhance_v", StringComparison.OrdinalIgnoreCase))
         {
             player.BonusAttackRating += baseAttr.MinValue;
         }
-        else if (string.Equals(code, "defense_v", StringComparison.OrdinalIgnoreCase))
+        else if (string.Equals(code, "defense_v", StringComparison.OrdinalIgnoreCase) ||
+                 string.Equals(code, "armordefense_v", StringComparison.OrdinalIgnoreCase))
         {
             player.BonusDefense += baseAttr.MinValue;
         }

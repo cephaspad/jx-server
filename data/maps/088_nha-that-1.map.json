@@ -1,0 +1,26 @@
+{
+  "$schema": "../../schemas/map.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": 88,
+  "code": "nha-that-1",
+  "name": "Nhã thất 1",
+  "mapType": "Field",
+  "worldMapPos": {
+    "x": 396,
+    "y": 357
+  },
+  "mapRules": {
+    "defaultFightMode": 1,
+    "allowPk": true,
+    "forbidHeartTeleport": false
+  },
+  "regionBounds": {
+    "leftRegionX": 0,
+    "topRegionY": 0,
+    "rightRegionX": 0,
+    "bottomRegionY": 0
+  },
+  "regions": [],
+  "portals": [],
+  "spawnGroups": []
+}

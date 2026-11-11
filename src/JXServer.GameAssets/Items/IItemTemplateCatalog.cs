@@ -21,6 +21,8 @@ public interface IItemTemplateCatalog
 
     bool TryGetItemByCode(string code, out ItemTemplate? item);
 
+    bool TryGetItemByRowId(ItemQualityKind quality, int rowId, out ItemTemplate? item);
+
     bool TryGetItem(
         ItemGenreKind genre,
         int detailType,
@@ -36,7 +38,7 @@ public interface IItemTemplateCatalog
         ElementSeries series,
         int maxLevel);
 
-    bool TryGetMagicAffixById(int affixRowId, out MagicAffixTemplate? affix);
+    bool TryGetMagicAffixById(int affixRowId, out MagicAffixTemplate? affix, string affixPool = "blueRandom");
 
     bool TryGetGroundObject(int objDataId, out GroundObjectTemplate? objTemplate);
 }

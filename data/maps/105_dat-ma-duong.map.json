@@ -1,0 +1,192 @@
+{
+  "$schema": "../../schemas/map.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": 105,
+  "code": "dat-ma-duong",
+  "name": "đạt Ma đƯờng",
+  "mapType": "Field",
+  "mapRules": {
+    "defaultFightMode": 1,
+    "allowPk": true,
+    "forbidHeartTeleport": false
+  },
+  "regionBounds": {
+    "leftRegionX": 99,
+    "topRegionY": 99,
+    "rightRegionX": 101,
+    "bottomRegionY": 100
+  },
+  "regions": [
+    {
+      "regionX": 99,
+      "regionY": 99,
+      "obstacleRleBase64": "FwAAAAAAAQBRAAAAAwARAAAAGwAAAAAAAQBRAAAABAARAAAAAQAxAAAAGQAAAAAAAQBRAAAABgARAAAAAQAxAAAAFwAAAAAAAQBRAAAACQARAAAAAQAxAAAAFAAAAAAAAQBRAAAACwARAAAAAQAxAAAAEgAAAAAAAQBRAAAAAwARAAAAAQAhAAAAAQBBAAAAAgARAAAAAQAhAAAAAQBBAAAABAARAAAAEQAAAAAAAQBRAAAAAwARAAAAAQAhAAAAAgAAAAAAAgARAAAABAAAAAAAAQBBAAAAAQARAAAAEAAAAAAAAQBRAAAAAwARAAAAAQAhAAAACgAAAAAAAQBBAAAADwAAAAAAAQBRAAAAAwARAAAAAQAhAAAAGgAAAAAAAQBRAAAAAwARAAAAAQAhAAAAGgAAAAAAAQBRAAAABAARAAAAGgAAAAAAAQBRAAAABQARAAAAGQAAAAAAAQBRAAAAAwARAAAAAQAhAAAAAwAAAAAAAgARAAAAFQAAAAAAAQBRAAAAAwARAAAAAQAhAAAABAAAAAAAAgARAAAAFAAAAAAAAQBRAAAAAwARAAAAAQAhAAAAGgAAAAAAAQBRAAAAAwARAAAAAQAhAAAAEwAAAAAA"
+    },
+    {
+      "regionX": 100,
+      "regionY": 99,
+      "obstacleRleBase64": "BwAAAAAAAQBRAAAABAARAAAAAQAxAAAAGgAAAAAABgARAAAABQAAAAAAAgARAAAAAQAxAAAAEgAAAAAABgARAAAABAAAAAAAAQBRAAAAAwARAAAAAQAxAAAAEQAAAAAABQARAAAAAQAhAAAAAwAAAAAAAQBRAAAABgARAAAAAQAxAAAADwAAAAAAAQBBAAAAAwARAAAAAQAhAAAAAwAAAAAAAQBRAAAACAARAAAAAQAxAAAADwAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAwAAAAAAAgARAAAAAQAhAAAAAQBBAAAABgARAAAAAQAxAAAADwAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAgAAAAAAAgARAAAAAgAAAAAAAQBBAAAABgARAAAAAgAAAAAAAgARAAAADAAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQAAAAAAAgARAAAAAQAxAAAAAgAAAAAAAQBBAAAABQARAAAAAgAAAAAAAgARAAAADQAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQBBAAAAAgARAAAAAQAxAAAAAgAAAAAABAARAAAAAQAhAAAAEgAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQBBAAAAAgARAAAAAQAxAAAAAQBRAAAAAgARAAAAAQAhAAAABwAAAAAAAQBRAAAADQAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQBBAAAABAARAAAAAQAhAAAABwAAAAAAAQBRAAAAAQARAAAADgAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQBBAAAAAgARAAAAAQAhAAAABwAAAAAAAQBRAAAAAgARAAAADwAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAwAAAAAAAgARAAAABAAAAAAAAQBRAAAAAgARAAAAAQAhAAAAEAAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAgAAAAAAAgARAAAAAQAxAAAAAgAAAAAAAQBRAAAAAgARAAAAAQAhAAAAEgAAAAAAAQBBAAAAAgARAAAAAQAxAAAAAQAAAAAAAwARAAAAAQAAAAAAAQBRAAAAAgARAAAAAQAhAAAAFAAAAAAAAQBBAAAACQARAAAAAQAhAAAAAwAAAAAA"
+    },
+    {
+      "regionX": 101,
+      "regionY": 99,
+      "obstacleRleBase64": "EwAAAAAAAQBBAAAAAwARAAAAAQAhAAAAAwARAAAAAQAhAAAAGAAAAAAAAQBBAAAABQARAAAAAQAhAAAAGgAAAAAAAQBBAAAAAwARAAAAAQAhAAAAHAAAAAAAAQBBAAAAAgARAAAAHgAAAAAAAQBBAAAAAQARAAAAZwEAAAAA"
+    },
+    {
+      "regionX": 99,
+      "regionY": 100,
+      "obstacleRleBase64": "oAAAAAAAAQAxAAAAHwAAAAAAAQARAAAAAQAxAAAAHgAAAAAAAgARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAgARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAgARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAgARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAgARAAAAAQAxAAAAHQAAAAAAAQBBAAAAAgARAAAAAQAxAAAAHQAAAAAAAwARAAAAHAAAAAAABAARAAAAAQAxAAAAHQAAAAAAAwARAAAAAQAxAAAAFgAAAAAA"
+    },
+    {
+      "regionX": 100,
+      "regionY": 100,
+      "obstacleRleBase64": "BQAAAAAABQARAAAAGwAAAAAABQARAAAAGwAAAAAABAARAAAAAQAhAAAAGwAAAAAAAwARAAAAAQAhAAAAGwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAGwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAHAAAAAAAAgARAAAAAQAhAAAAHQAAAAAAAQARAAAAAQAhAAAAHgAAAAAAAQAhAAAAnwAAAAAA"
+    }
+  ],
+  "portals": [
+    {
+      "trapId": 565498668,
+      "code": "portal-to-thieu-lam-phai",
+      "spawnSource": "regionDat",
+      "scriptPath": "\\script\\ÖÐÔ­±±Çø\\ÉÙÁÖÅÉ\\´ïÄ¦ÌÃ\\trap\\´ïÄ¦ÌÃtoÉÙÁÖÅÉ.lua",
+      "action": "teleport",
+      "targetMapId": 103,
+      "targetMpsX": 53984,
+      "targetMpsY": 96736,
+      "targetFightMode": 1,
+      "triggerCells": [
+        {
+          "regionX": 99,
+          "regionY": 99,
+          "cellY": 30,
+          "startCellX": 5,
+          "cellCount": 2
+        },
+        {
+          "regionX": 99,
+          "regionY": 99,
+          "cellY": 31,
+          "startCellX": 6,
+          "cellCount": 2
+        },
+        {
+          "regionX": 99,
+          "regionY": 100,
+          "cellY": 0,
+          "startCellX": 7,
+          "cellCount": 2
+        },
+        {
+          "regionX": 99,
+          "regionY": 100,
+          "cellY": 1,
+          "startCellX": 8,
+          "cellCount": 2
+        },
+        {
+          "regionX": 99,
+          "regionY": 100,
+          "cellY": 2,
+          "startCellX": 9,
+          "cellCount": 2
+        },
+        {
+          "regionX": 99,
+          "regionY": 100,
+          "cellY": 3,
+          "startCellX": 10,
+          "cellCount": 2
+        },
+        {
+          "regionX": 99,
+          "regionY": 100,
+          "cellY": 4,
+          "startCellX": 11,
+          "cellCount": 2
+        },
+        {
+          "regionX": 99,
+          "regionY": 100,
+          "cellY": 5,
+          "startCellX": 12,
+          "cellCount": 2
+        },
+        {
+          "regionX": 99,
+          "regionY": 100,
+          "cellY": 6,
+          "startCellX": 13,
+          "cellCount": 1
+        }
+      ]
+    },
+    {
+      "trapId": 2734603287,
+      "code": "portal-to-moc-nhan-hang",
+      "spawnSource": "regionDat",
+      "scriptPath": "\\script\\ÖÐÔ­±±Çø\\ÉÙÁÖÅÉ\\´ïÄ¦ÌÃ\\trap\\´ïÄ¦ÌÃtoÄ¾ÈËÏï.lua",
+      "action": "teleport",
+      "targetMapId": 111,
+      "targetMpsX": 50560,
+      "targetMpsY": 109344,
+      "targetFightMode": 1,
+      "triggerCells": [
+        {
+          "regionX": 100,
+          "regionY": 99,
+          "cellY": 12,
+          "startCellX": 6,
+          "cellCount": 2
+        },
+        {
+          "regionX": 100,
+          "regionY": 99,
+          "cellY": 13,
+          "startCellX": 6,
+          "cellCount": 2
+        },
+        {
+          "regionX": 100,
+          "regionY": 99,
+          "cellY": 14,
+          "startCellX": 6,
+          "cellCount": 2
+        },
+        {
+          "regionX": 100,
+          "regionY": 99,
+          "cellY": 15,
+          "startCellX": 6,
+          "cellCount": 2
+        },
+        {
+          "regionX": 100,
+          "regionY": 99,
+          "cellY": 16,
+          "startCellX": 6,
+          "cellCount": 2
+        }
+      ]
+    }
+  ],
+  "spawnGroups": [
+    {
+      "npcTemplateId": 68,
+      "npcCode": "dat-ma-vien-dau-toa",
+      "spawnSource": "regionDat",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "respawnFrames": 0,
+      "scriptPath": "\\script\\中原北区\\少林派\\达摩堂\\npc\\路人_玄悲.lua",
+      "spawns": [
+        {
+          "mpsX": 51284,
+          "mpsY": 102118
+        }
+      ]
+    }
+  ]
+}

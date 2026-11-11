@@ -1,0 +1,101 @@
+{
+  "$schema": "../../schemas/map.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": 109,
+  "code": "phuong-truong-thien-phong",
+  "name": "PhƯƠng trƯợng Thiền phòng",
+  "mapType": "Field",
+  "mapRules": {
+    "defaultFightMode": 1,
+    "allowPk": true,
+    "forbidHeartTeleport": false
+  },
+  "regionBounds": {
+    "leftRegionX": 99,
+    "topRegionY": 98,
+    "rightRegionX": 100,
+    "bottomRegionY": 99
+  },
+  "regions": [
+    {
+      "regionX": 99,
+      "regionY": 99,
+      "obstacleRleBase64": "CwAAAAAAAQBRAAAAAgARAAAAHAAAAAAAAQBRAAAAAwARAAAAGwAAAAAAAQBRAAAABAARAAAAAQAxAAAAGQAAAAAAAQBRAAAABgARAAAAAQAxAAAAFwAAAAAAAQBRAAAACAARAAAAAQAxAAAAFQAAAAAAAQBRAAAACgARAAAAAQAxAAAAEwAAAAAAAQBRAAAADAARAAAAAQAxAAAAEQAAAAAAAQBRAAAAEAARAAAAAQAxAAAADQAAAAAAAQBRAAAADAARAAAAAQAhAAAAAgAAAAAAAQBBAAAAAgARAAAAAQAxAAAACwAAAAAAAQBRAAAABgARAAAAAQAhAAAAAgAAAAAAAQBBAAAAAgARAAAAAQAhAAAABAAAAAAAAQBBAAAAAgARAAAAAQAxAAAACQAAAAAAAQBRAAAABwARAAAADAAAAAAAAQBBAAAAAgARAAAAAQAxAAAACAAAAAAABgARAAAAAQAhAAAADgAAAAAAAQBBAAAAAgARAAAACAAAAAAABgARAAAAAQAxAAAADwAAAAAAAgARAAAACAAAAAAAAQBBAAAAAwARAAAAAwAUAAAABgAAAAAAAQBRAAAAAQARAAAAAQAxAAAABgAAAAAAAgARAAAAAQAxAAAACAAAAAAAAQBBAAAAAwARAAAAAgAUAAAAAQA0AAAABQAAAAAAAwARAAAABgAAAAAAAwARAAAAAQAxAAAACAAAAAAAAQBBAAAAAwARAAAAAQAUAAAAAQARAAAAAQAxAAAABAAAAAAAAwARAAAABwAAAAAAAQBBAAAAAgARAAAAAQAxAAAABAAAAAAA"
+    },
+    {
+      "regionX": 100,
+      "regionY": 99,
+      "obstacleRleBase64": "BAAAAAAAAQBBAAAABQARAAAADgAAAAAAAQBRAAAAAwARAAAAAQAxAAAACAAAAAAAAQBBAAAABAARAAAADQAAAAAAAQBRAAAABQARAAAAAQAxAAAACAAAAAAAAQBBAAAAAwARAAAAAQAxAAAACwAAAAAAAQBRAAAABwARAAAACQAAAAAAAQBBAAAABAARAAAAAQAxAAAACQAAAAAACAARAAAACgAAAAAAAQBBAAAABAARAAAAAQAxAAAACAAAAAAABwARAAAAAQAhAAAACwAAAAAAAQBBAAAABAARAAAAAQAxAAAACAAAAAAAAQBBAAAABAARAAAAAQAhAAAADQAAAAAAAQBBAAAABAARAAAAAQAxAAAACAAAAAAAAwARAAAAAQAhAAAADwAAAAAAAQBBAAAABAARAAAABwAAAAAAAQBRAAAAAgARAAAAAQAhAAAAEQAAAAAAAQBBAAAAAwARAAAAAQAxAAAABQAAAAAAAQBRAAAAAgARAAAAAQAhAAAAEwAAAAAAAQBBAAAAAwARAAAAAQAxAAAAAQAAAAAAAQBRAAAABAARAAAAAQAhAAAAFQAAAAAAAQBBAAAACAARAAAAAQAhAAAAFwAAAAAAAQBBAAAABwARAAAAGQAAAAAAAQBBAAAABAARAAAAAQAhAAAAGwAAAAAAAQBBAAAAAwARAAAASwAAAAAA"
+    }
+  ],
+  "portals": [
+    {
+      "trapId": 428445738,
+      "code": "portal-to-thieu-lam-phai",
+      "spawnSource": "regionDat",
+      "scriptPath": "\\script\\ÖÐÔ­±±Çø\\ÉÙÁÖÅÉ\\·½ÕÉìøÊÒ\\trap\\·½ÕÉìøÊÒtoÉÙÁÖÅÉ.lua",
+      "action": "teleport",
+      "targetMapId": 103,
+      "targetMpsX": 58912,
+      "targetMpsY": 94592,
+      "targetFightMode": 1,
+      "triggerCells": [
+        {
+          "regionX": 99,
+          "regionY": 99,
+          "cellY": 19,
+          "startCellX": 8,
+          "cellCount": 1
+        },
+        {
+          "regionX": 99,
+          "regionY": 99,
+          "cellY": 20,
+          "startCellX": 8,
+          "cellCount": 2
+        },
+        {
+          "regionX": 99,
+          "regionY": 99,
+          "cellY": 21,
+          "startCellX": 9,
+          "cellCount": 2
+        },
+        {
+          "regionX": 99,
+          "regionY": 99,
+          "cellY": 22,
+          "startCellX": 10,
+          "cellCount": 2
+        },
+        {
+          "regionX": 99,
+          "regionY": 99,
+          "cellY": 23,
+          "startCellX": 11,
+          "cellCount": 2
+        }
+      ]
+    }
+  ],
+  "spawnGroups": [
+    {
+      "npcTemplateId": 64,
+      "npcCode": "thieu-lam-phuong-truong",
+      "spawnSource": "regionDat",
+      "entityKind": "DialogNpc",
+      "level": 1,
+      "series": 0,
+      "camp": 6,
+      "fightMode": 0,
+      "respawnFrames": 0,
+      "scriptPath": "\\script\\中原北区\\少林派\\方丈禅室\\npc\\路人_方丈玄因.lua",
+      "spawns": [
+        {
+          "mpsX": 51271,
+          "mpsY": 101738
+        }
+      ]
+    }
+  ]
+}

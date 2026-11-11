@@ -3,6 +3,7 @@ using JXServer.GameAssets.Items;
 using JXServer.GameAssets.LootTables;
 using JXServer.GameAssets.NpcTemplates;
 using JXServer.GameAssets.PlayerTemplates;
+using JXServer.GameAssets.Shops;
 using JXServer.GameAssets.Skills;
 using JXServer.GameAssets.WorldMaps;
 using MemoryPack;
@@ -31,4 +32,5 @@ public sealed partial record GameAssetsSnapshotBundle(
     IReadOnlyList<long> LevelExpTable,
     IReadOnlyList<StarterItemTemplate> DefaultStarterItems,
     IReadOnlyList<MapDescriptor> MapDescriptors,
-    IReadOnlyList<PortalTrapBindingTemplate> PortalTrapBindings);
+    IReadOnlyList<PortalTrapBindingTemplate> PortalTrapBindings,
+    IReadOnlyList<ShopTemplate>? Shops = null);

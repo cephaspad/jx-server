@@ -32,13 +32,13 @@ public sealed class NpcAssetLoadingTests
 
         Assert.True(npcCatalog.Count > 1000);
 
-        // Template 382 in settings/npcs.txt is DialogNpc ("Nữ trung niên 3"), Template 43 is Monster ("Bò cạp")
-        Assert.True(npcCatalog.TryGetTemplate(382, out NpcTemplate? dialogTemplate));
+        // Template 383 in settings/npcs.txt is DialogNpc ("Nữ trung niên 3"), Template 44 is Monster ("Bò cạp")
+        Assert.True(npcCatalog.TryGetTemplate(383, out NpcTemplate? dialogTemplate));
         Assert.NotNull(dialogTemplate);
         Assert.Equal(EntityKind.DialogNpc, dialogTemplate.Kind);
         Assert.Contains("Nữ trung", dialogTemplate.Name, StringComparison.OrdinalIgnoreCase);
 
-        Assert.True(npcCatalog.TryGetTemplate(43, out NpcTemplate? scorpionTemplate));
+        Assert.True(npcCatalog.TryGetTemplate(44, out NpcTemplate? scorpionTemplate));
         Assert.NotNull(scorpionTemplate);
         Assert.Equal(EntityKind.Monster, scorpionTemplate.Kind);
         Assert.Contains("Bò cạp", scorpionTemplate.Name, StringComparison.OrdinalIgnoreCase);
@@ -71,7 +71,7 @@ public sealed class NpcAssetLoadingTests
 
         // Verify both Dialog NPCs and Monsters are spawned with Vietnamese names
         Assert.Contains(spawns53, s => s.Kind == EntityKind.DialogNpc && s.DisplayName.Contains("Thần Tiên Tỷ Tỷ", StringComparison.OrdinalIgnoreCase));
-        Assert.Contains(spawns53, s => s.Kind == EntityKind.Monster && s.DisplayName.Contains("Bò cạp", StringComparison.OrdinalIgnoreCase) && s.Level >= 1);
+        Assert.Contains(spawns53, s => s.Kind == EntityKind.Monster && s.DisplayName.Contains("Heo trắng", StringComparison.OrdinalIgnoreCase) && s.Level >= 1);
 
         // Verify Map 53 has trap regions in Region_S.dat Section 1 whose TrapIds resolve in TrapScriptCatalog
         Assert.True(mapCatalog.TryGetMapDescriptor(53, out MapDescriptor? map53));

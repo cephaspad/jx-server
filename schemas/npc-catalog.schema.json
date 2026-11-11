@@ -1,9 +1,15 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://jxserver.local/schemas/npc-catalog.schema.json",
-  "title": "JXData Standard v1 - NPC & Monster Archetype Catalog",
+  "title": "JXData Standard v1 - NPC, Monster Archetype & World Placement Catalog",
   "type": "object",
-  "required": ["schemaVersion", "npcs"],
+  "required": ["schemaVersion"],
+  "anyOf": [
+    { "required": ["npcs"] },
+    { "required": ["worldSpawnGroups"] },
+    { "required": ["goldenNpcTemplates"] },
+    { "required": ["partnerConfig"] }
+  ],
   "properties": {
     "$schema": { "type": "string" },
     "schemaVersion": { "type": "string", "const": "1.0.0" },
@@ -18,11 +24,11 @@
           "name": { "type": "string", "minLength": 1 },
           "entityKind": { "type": "string", "enum": ["Monster", "DialogNpc", "Partner", "Player"] },
           "defaultCamp": { "type": "integer", "minimum": 0 },
-          "elementSeries": { "type": "integer", "minimum": -1, "maximum": 4 },
+          "elementSeries": { "type": "integer", "minimum": -1, "maximum": 5 },
           "walkSpeedMpsPerFrame": { "type": "integer", "minimum": 0 },
           "runSpeedMpsPerFrame": { "type": "integer", "minimum": 0 },
-          "attackSpeedFrames": { "type": "integer", "minimum": 1, "default": 18 },
-          "castSpeedFrames": { "type": "integer", "minimum": 1, "default": 18 },
+          "attackSpeedFrames": { "type": "integer", "minimum": 0, "default": 18 },
+          "castSpeedFrames": { "type": "integer", "minimum": 0, "default": 18 },
           "hitRecoverFrames": { "type": "integer", "minimum": 0, "default": 12 },
           "attackRadiusMps": { "type": "integer", "minimum": 0, "default": 64 },
           "activeRadiusMps": { "type": "integer", "minimum": 0, "default": 256 },
@@ -131,13 +137,150 @@
               "lifeWeight": { "type": "number", "minimum": 0 },
               "attackWeight": { "type": "number", "minimum": 0 },
               "defenseWeight": { "type": "number", "minimum": 0 },
-              "attackRatingWeight": { "type": "number", "minimum": 0 }
+              "attackRatingWeight": { "type": "number", "minimum": 0 },
+              "weights": {
+                "type": "array",
+                "items": { "type": "integer", "minimum": 0 }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "skillRequirements": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["skillBookId", "baseLevel", "levelIncrement", "seriesLimit", "skillId"],
+            "properties": {
+              "skillBookId": { "type": "integer", "minimum": 0 },
+              "baseLevel": { "type": "integer", "minimum": 1 },
+              "levelIncrement": { "type": "integer", "minimum": 0 },
+              "seriesLimit": { "type": "integer", "minimum": -1, "maximum": 5 },
+              "skillId": { "type": "integer", "minimum": 1 }
             },
             "additionalProperties": false
           }
         }
       },
       "additionalProperties": false
+    },
+    "goldenNpcTemplates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "code", "name"],
+        "properties": {
+          "id": { "type": "integer", "minimum": 1 },
+          "code": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "name": { "type": "string", "minLength": 1 },
+          "expMultiplierPercent": { "type": "integer", "minimum": 0, "default": 100 },
+          "lifeMultiplierPercent": { "type": "integer", "minimum": 0, "default": 100 },
+          "lifeReplenishBonus": { "type": "integer", "default": 0 },
+          "attackRatingMultiplierPercent": { "type": "integer", "minimum": 0, "default": 100 },
+          "defenseMultiplierPercent": { "type": "integer", "minimum": 0, "default": 100 },
+          "minDamageMultiplierPercent": { "type": "integer", "minimum": 0, "default": 100 },
+          "maxDamageMultiplierPercent": { "type": "integer", "minimum": 0, "default": 100 },
+          "treasureDropMultiplier": { "type": "integer", "minimum": 0, "default": 1 },
+          "walkSpeedBonus": { "type": "integer", "default": 0 },
+          "runSpeedBonus": { "type": "integer", "default": 0 },
+          "attackSpeedBonus": { "type": "integer", "default": 0 },
+          "castSpeedBonus": { "type": "integer", "default": 0 },
+          "fireResistBonus": { "type": "integer", "default": 0 },
+          "coldResistBonus": { "type": "integer", "default": 0 },
+          "lightResistBonus": { "type": "integer", "default": 0 },
+          "poisonResistBonus": { "type": "integer", "default": 0 },
+          "physicsResistBonus": { "type": "integer", "default": 0 }
+        },
+        "additionalProperties": true
+      }
+    },
+    "worldSpawnGroups": {
+      "type": "array",
+      "description": "Cross-map Global Functional NPCs (global-spawns.npcs.json) and Feature/Event-gated NPCs (event-spawns.npcs.json) extracted from autoexec.lua and feature init scripts.",
+      "items": {
+        "type": "object",
+        "required": ["code", "name", "spawnCategory", "npcTemplateId", "placements"],
+        "properties": {
+          "code": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "name": { "type": "string", "minLength": 1 },
+          "spawnCategory": {
+            "type": "string",
+            "enum": ["globalPermanent", "eventOrFeature"]
+          },
+          "featureFlag": {
+            "type": "string",
+            "description": "Feature or seasonal event toggle required to spawn this group (e.g. CFG_ThatThanhDaiChien, CFG_NhiemVuLongNgu, CFG_SpringFestival)."
+          },
+          "enabledByDefault": { "type": "boolean", "default": true },
+          "npcTemplateId": { "type": "integer", "minimum": 0 },
+          "npcCode": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "entityKind": { "type": "string", "enum": ["Monster", "DialogNpc", "Partner"], "default": "DialogNpc" },
+          "level": { "type": "integer", "minimum": 1, "default": 80 },
+          "series": { "type": "integer", "minimum": -1, "maximum": 5, "default": -1 },
+          "camp": { "type": "integer", "minimum": 0, "default": 4 },
+          "fightMode": { "type": "integer", "enum": [0, 1], "default": 0 },
+          "scriptCode": { "type": "string" },
+          "scriptPath": { "type": "string" },
+          "placements": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["mapId", "mpsX", "mpsY"],
+              "properties": {
+                "mapId": { "type": "integer", "minimum": 1 },
+                "mapCode": { "type": "string" },
+                "mpsX": { "type": "integer", "minimum": 0 },
+                "mpsY": { "type": "integer", "minimum": 0 },
+                "nameOverride": { "type": "string" },
+                "scriptPathOverride": { "type": "string" }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "worldPortals": {
+      "type": "array",
+      "description": "Dynamic startup traps added via AddMapTrap in autoexec.lua and feature scripts.",
+      "items": {
+        "type": "object",
+        "required": ["code", "spawnCategory", "mapId", "scriptPath", "points"],
+        "properties": {
+          "code": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "spawnCategory": {
+            "type": "string",
+            "enum": ["globalPermanent", "eventOrFeature"]
+          },
+          "featureFlag": { "type": "string" },
+          "enabledByDefault": { "type": "boolean", "default": true },
+          "mapId": { "type": "integer", "minimum": 1 },
+          "mapCode": { "type": "string" },
+          "scriptCode": { "type": "string" },
+          "scriptPath": { "type": "string" },
+          "action": { "type": "string", "enum": ["toggleFightMode", "teleport", "randomTeleport", "customScript", "unmapped"], "default": "customScript" },
+          "targetMapId": { "type": "integer", "minimum": 0, "default": 0 },
+          "targetMpsX": { "type": "integer", "minimum": 0, "default": 0 },
+          "targetMpsY": { "type": "integer", "minimum": 0, "default": 0 },
+          "targetFightMode": { "type": "integer", "enum": [0, 1], "default": 0 },
+          "points": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["mpsX", "mpsY"],
+              "properties": {
+                "mpsX": { "type": "integer", "minimum": 0 },
+                "mpsY": { "type": "integer", "minimum": 0 }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
     }
   },
   "$defs": {
