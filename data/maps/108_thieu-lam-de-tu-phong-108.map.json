@@ -3,7 +3,7 @@
   "schemaVersion": "1.0.0",
   "id": 108,
   "code": "thieu-lam-de-tu-phong-108",
-  "name": "Thiếu LÂm đệ tử phòng",
+  "name": "Thiếu Lâm Đệ tử phòng",
   "mapType": "Field",
   "mapRules": {
     "defaultFightMode": 1,

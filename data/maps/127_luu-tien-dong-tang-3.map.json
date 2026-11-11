@@ -3,7 +3,7 @@
   "schemaVersion": "1.0.0",
   "id": 127,
   "code": "luu-tien-dong-tang-3",
-  "name": "LƯu TiÊn Động tầng 3",
+  "name": "Lưu Tiên động tầng 3",
   "mapType": "Field",
   "mapRules": {
     "defaultFightMode": 1,
@@ -506,7 +506,7 @@
       "targetMpsX": 50752,
       "targetMpsY": 102944,
       "targetFightMode": 1,
-      "deniedMessage": "Bạn nhìn thấy một cƠ quan, trÊn có khắc mấy dòng chữ:",
+      "deniedMessage": "Bạn nhìn thấy một cơ quan, trên có khắc mấy dòng chữ:",
       "triggerCells": [
         {
           "regionX": 101,
@@ -631,7 +631,7 @@
       "targetMpsX": 51424,
       "targetMpsY": 95008,
       "targetFightMode": 1,
-      "deniedMessage": "Bạn nhìn thấy một cƠ quan, trÊn có khắc mấy dòng chữ:",
+      "deniedMessage": "Bạn nhìn thấy một cơ quan, trên có khắc mấy dòng chữ:",
       "triggerCells": [
         {
           "regionX": 110,
@@ -708,7 +708,7 @@
       "targetMpsX": 50752,
       "targetMpsY": 102944,
       "targetFightMode": 1,
-      "deniedMessage": "Bạn nhìn thấy một cƠ quan, trÊn có khắc mấy dòng chữ:",
+      "deniedMessage": "Bạn nhìn thấy một cơ quan, trên có khắc mấy dòng chữ:",
       "triggerCells": [
         {
           "regionX": 106,

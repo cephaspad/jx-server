@@ -3,7 +3,7 @@
   "schemaVersion": "1.0.0",
   "id": 53,
   "code": "ba-lang-huyen",
-  "name": "Ba LĂng huyện",
+  "name": "Ba Lăng huyện",
   "mapType": "Country",
   "worldMapPos": {
     "x": 351,
@@ -3504,7 +3504,7 @@
       "minLevel": 5,
       "bounceMpsX": 57856,
       "bounceMpsY": 110592,
-      "deniedMessage": "Phía trƯớc nguy hiểm! Xin hãy quay về rèn luyện thÊm!",
+      "deniedMessage": "Phía trước nguy hiểm! Xin hãy quay về rèn luyện thêm!",
       "triggerCells": [
         {
           "regionX": 113,
@@ -3668,7 +3668,7 @@
       "minLevel": 5,
       "bounceMpsX": 42816,
       "bounceMpsY": 107296,
-      "deniedMessage": "Phía trƯớc nguy hiểm! Xin hãy quay về rèn luyện thÊm!",
+      "deniedMessage": "Phía trước nguy hiểm! Xin hãy quay về rèn luyện thêm!",
       "triggerCells": [
         {
           "regionX": 83,
@@ -3839,7 +3839,7 @@
       "minLevel": 5,
       "bounceMpsX": 42688,
       "bounceMpsY": 105792,
-      "deniedMessage": "Phía trƯớc nguy hiểm! Xin hãy quay về rèn luyện thÊm!",
+      "deniedMessage": "Phía trước nguy hiểm! Xin hãy quay về rèn luyện thêm!",
       "triggerCells": [
         {
           "regionX": 83,

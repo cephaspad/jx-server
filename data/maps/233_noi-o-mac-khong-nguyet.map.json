@@ -3,7 +3,7 @@
   "schemaVersion": "1.0.0",
   "id": 233,
   "code": "noi-o-mac-khong-nguyet",
-  "name": "NƠi ở Mạc KhÔng Nguyệt",
+  "name": "Nơi ở Mạc Không Nguyệt",
   "mapType": "Field",
   "mapRules": {
     "defaultFightMode": 1,
@@ -59,7 +59,7 @@
       "targetMpsX": 45216,
       "targetMpsY": 95712,
       "targetFightMode": 0,
-      "deniedMessage": "Cút mau! đừng Để ta gặp lại thấy ngƯƠi Đó!",
+      "deniedMessage": "Cút mau! Đừng để ta gặp lại thấy ngươi đó!",
       "triggerCells": [
         {
           "regionX": 99,

@@ -1,17 +1,14 @@
 using System;
+using System.Collections.Frozen;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
 using JXServer.DataExporter.Legacy;
-using JXServer.GameAssets.Archives;
-using JXServer.GameAssets.Configuration;
 using JXServer.GameAssets.WorldMaps;
 using JXServer.Primitives.Encodings;
 using JXServer.Primitives.WorldZones;
-using Microsoft.Extensions.Logging.Abstractions;
-using Microsoft.Extensions.Options;
 
 namespace JXServer.DataExporter.Exporters;
 
@@ -115,9 +112,7 @@ public sealed class MapDataExporter
         HashSet<int> forbidHeartIds = LoadForbidHeartMapIds(serverRootPath);
         XPackArchiveReader? pak = OpenMapsPak(serverRootPath);
 
-        var trapCatalog = new TrapScriptCatalog(
-            Options.Create(new GameAssetsOptions { ServerRootPath = serverRootPath }),
-            NullLogger<TrapScriptCatalog>.Instance);
+        FrozenDictionary<uint, PortalTrapBindingTemplate> trapBindings = LegacyTrapScriptScanner.ScanServerRoot(serverRootPath);
 
         int exportedMaps = 0;
         int legacyObstacleRegions = 0;
@@ -216,7 +211,7 @@ public sealed class MapDataExporter
                 }
             }
 
-            List<Dictionary<string, object?>> portals = BuildPortals(trapSpansByTrapId, trapCatalog, registry, ref exportedTrapSpans);
+            List<Dictionary<string, object?>> portals = BuildPortals(trapSpansByTrapId, trapBindings, registry, ref exportedTrapSpans);
             List<Dictionary<string, object?>> spawnGroups = BuildSpawnGroups(regionNpcs, registry, ref exportedRegionNpcs);
             List<Dictionary<string, object?>> mapObjects = BuildMapObjects(regionObjs, registry, ref exportedRegionObjs);
 
@@ -270,7 +265,7 @@ public sealed class MapDataExporter
 
     private static List<Dictionary<string, object?>> BuildPortals(
         Dictionary<uint, List<ParsedTrapCellSpan>> trapSpansByTrapId,
-        TrapScriptCatalog trapCatalog,
+        FrozenDictionary<uint, PortalTrapBindingTemplate> trapBindings,
         ExportCatalogRegistry registry,
         ref int exportedTrapSpans)
     {
@@ -303,7 +298,7 @@ public sealed class MapDataExporter
             };
 
             string baseSlug;
-            if (trapCatalog.TryGetTrapBinding(trapId, out PortalTrapBindingTemplate? b) && b is not null)
+            if (trapBindings.TryGetValue(trapId, out PortalTrapBindingTemplate? b) && b is not null)
             {
                 if (!string.IsNullOrWhiteSpace(b.ScriptPath))
                 {

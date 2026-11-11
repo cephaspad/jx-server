@@ -3,7 +3,7 @@
   "schemaVersion": "1.0.0",
   "id": 146,
   "code": "tuyet-bao-dong-tang-2",
-  "name": "Tuyết Báo Động tầng 2",
+  "name": "Tuyết Báo động tầng 2",
   "mapType": "Field",
   "mapRules": {
     "defaultFightMode": 1,

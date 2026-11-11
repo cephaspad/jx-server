@@ -4,7 +4,7 @@
   "worldSpawnGroups": [
     {
       "code": "y-mao-dinh-che-dai-su",
-      "name": "Y mão Định chế Đại sƯ",
+      "name": "Y mão định chế đại sư",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 950,
@@ -25,7 +25,7 @@
     },
     {
       "code": "y-mao-dinh-che-tro-thu",
-      "name": "Y mão Định chế trợ thủ",
+      "name": "Y mão định chế trợ thủ",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 950,
@@ -46,7 +46,7 @@
     },
     {
       "code": "ruong-chua-do",
-      "name": "RƯƠng chứa Đồ",
+      "name": "Rương chứa đồ",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 625,
@@ -88,7 +88,7 @@
     },
     {
       "code": "than-bi-thuong-nhan-lieu-at",
-      "name": "Thần bí thƯƠng nhÂn Liễu ất",
+      "name": "Thần bí thương nhân Liễu ất",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 2149,
@@ -176,7 +176,7 @@
     },
     {
       "code": "tieu-tran",
-      "name": "TiÊu Trấn",
+      "name": "Tiêu Trấn",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 842,
@@ -328,7 +328,7 @@
     },
     {
       "code": "thuong-thien-su",
-      "name": "ThƯởng thiện sứ",
+      "name": "Thưởng thiện sứ",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 310,
@@ -350,7 +350,7 @@
     },
     {
       "code": "than-bi-thiet-tuong",
-      "name": "Thần bí  thiết tƯợng",
+      "name": "Thần bí  thiết tượng",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 387,
@@ -424,7 +424,7 @@
     },
     {
       "code": "nguoi-huong-dan-bang-hoi",
-      "name": "NgƯời hƯớng dẫn bang hội",
+      "name": "Người hướng dẫn bang hội",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 1783,
@@ -482,7 +482,7 @@
     },
     {
       "code": "hoang-bao-cau",
-      "name": "Hoàng Bảo CÂu",
+      "name": "Hoàng Bảo Câu",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 2535,
@@ -553,7 +553,7 @@
     },
     {
       "code": "duoc-su-than-bi",
-      "name": "DƯợc SƯ Thần Bí",
+      "name": "Dược Sư Thần Bí",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 121,
@@ -575,7 +575,7 @@
     },
     {
       "code": "nong-dan-dao-dao-hoa",
-      "name": "NÔng DÂn đảo đào Hoa",
+      "name": "Nông Dân Đảo Đào Hoa",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 277,
@@ -619,7 +619,7 @@
     },
     {
       "code": "than-tien-ty-ty",
-      "name": "Thần TiÊn Tỷ Tỷ",
+      "name": "Thần Tiên Tỷ Tỷ",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 1393,
@@ -641,7 +641,7 @@
     },
     {
       "code": "thao-duoc-ty-ty",
-      "name": "Thảo DƯợc Tỷ Tỷ",
+      "name": "Thảo Dược Tỷ Tỷ",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 403,
@@ -663,7 +663,7 @@
     },
     {
       "code": "cong-trang-quan",
-      "name": "CÔng Trạng Quan",
+      "name": "Công Trạng Quan",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 373,
@@ -707,7 +707,7 @@
     },
     {
       "code": "tuy-tien",
-      "name": "Túy TiÊn",
+      "name": "Túy Tiên",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 212,
@@ -751,7 +751,7 @@
     },
     {
       "code": "hoa-van-ta-than",
-      "name": "Hỏa VÂn Tà Thần",
+      "name": "Hỏa Vân Tà Thần",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 321,
@@ -772,7 +772,7 @@
     },
     {
       "code": "thuong-nhan-vo-danh",
-      "name": "ThƯƠng NhÂn VÔ Danh",
+      "name": "Thương Nhân Vô Danh",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 2445,
@@ -794,7 +794,7 @@
     },
     {
       "code": "tho-ren-vo-song",
-      "name": "Thợ Rèn VÔ Song",
+      "name": "Thợ Rèn Vô Song",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 201,
@@ -816,7 +816,7 @@
     },
     {
       "code": "thuong-nhan-trang-bi",
-      "name": "ThƯƠng NhÂn Trang Bị",
+      "name": "Thương Nhân Trang Bị",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 389,
@@ -838,7 +838,7 @@
     },
     {
       "code": "tho-luyen-do-xanh",
-      "name": "Thợ Luyện đồ Xanh",
+      "name": "Thợ Luyện Đồ Xanh",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 387,
@@ -860,7 +860,7 @@
     },
     {
       "code": "tieu-dao-tu",
-      "name": "TiÊu Dao Tử",
+      "name": "Tiêu Dao Tử",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 2537,
@@ -992,7 +992,7 @@
     },
     {
       "code": "co-giao-lien-chien-thang",
-      "name": "CÔ Giao LiÊn Chiến Thắng",
+      "name": "Cô Giao Liên Chiến Thắng",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 85,
@@ -1036,7 +1036,7 @@
     },
     {
       "code": "nguoi-dep-dan-hoa",
-      "name": "NgƯời Đẹp dÂn hoa",
+      "name": "Người đẹp dân hoa",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 88,
@@ -1058,7 +1058,7 @@
     },
     {
       "code": "bac-thay-chay-dua",
-      "name": "Bậc Thầy Chạy đua",
+      "name": "Bậc Thầy Chạy Đua",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 89,
@@ -1101,7 +1101,7 @@
     },
     {
       "code": "hang-nga-tien-tu",
-      "name": "Hằng Nga TiÊn Tử",
+      "name": "Hằng Nga Tiên Tử",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 1456,
@@ -1122,7 +1122,7 @@
     },
     {
       "code": "tuu-duoc-su",
-      "name": "Tửu DƯợc SƯ",
+      "name": "Tửu Dược Sư",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 1213,
@@ -1143,7 +1143,7 @@
     },
     {
       "code": "thien-su-giang-sinh",
-      "name": "ThiÊn Sứ Giáng Sinh",
+      "name": "Thiên Sứ Giáng Sinh",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 1328,
@@ -1164,7 +1164,7 @@
     },
     {
       "code": "bao-tin-minh-chau",
-      "name": "Bảo Tín Minh ChÂu",
+      "name": "Bảo Tín Minh Châu",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 227,
@@ -1531,7 +1531,7 @@
     },
     {
       "code": "quai-nhan-coc-52",
-      "name": "Quái nhÂn cốc",
+      "name": "Quái nhân cốc",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 534,
@@ -1611,7 +1611,7 @@
     },
     {
       "code": "quai-nhan-coc-53",
-      "name": "Quái nhÂn cốc",
+      "name": "Quái nhân cốc",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 535,
@@ -1686,7 +1686,7 @@
     },
     {
       "code": "quai-nhan-coc-54",
-      "name": "Quái nhÂn cốc",
+      "name": "Quái nhân cốc",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 536,
@@ -1761,7 +1761,7 @@
     },
     {
       "code": "quai-nhan-coc-55",
-      "name": "Quái nhÂn cốc",
+      "name": "Quái nhân cốc",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 537,
@@ -1836,7 +1836,7 @@
     },
     {
       "code": "quai-nhan-coc-56",
-      "name": "Quái nhÂn cốc",
+      "name": "Quái nhân cốc",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 538,
@@ -1911,7 +1911,7 @@
     },
     {
       "code": "noi-cac-thuong-thu-57",
-      "name": "Nội các thƯợng thƯ",
+      "name": "Nội các thượng thư",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 1434,
@@ -1932,7 +1932,7 @@
     },
     {
       "code": "noi-cac-thuong-thu-58",
-      "name": "Nội các thƯợng thƯ",
+      "name": "Nội các thượng thư",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 1435,
@@ -1953,7 +1953,7 @@
     },
     {
       "code": "thac-bat-hoai-xuyen",
-      "name": "Thác Bạt Hoài XuyÊn",
+      "name": "Thác Bạt Hoài Xuyên",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 697,
@@ -1974,7 +1974,7 @@
     },
     {
       "code": "luu-uan-co",
-      "name": "LƯu Uẩn Cổ",
+      "name": "Lưu Uẩn Cổ",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 698,
@@ -2083,7 +2083,7 @@
     },
     {
       "code": "phan-nhu-long",
-      "name": "Phan NhƯ Long",
+      "name": "Phan Như Long",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 671,
@@ -2104,7 +2104,7 @@
     },
     {
       "code": "du-tuong-tan",
-      "name": "Du TƯƠng TÂn",
+      "name": "Du Tương Tân",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 672,
@@ -2146,7 +2146,7 @@
     },
     {
       "code": "ngao-van-tong",
-      "name": "Ngạo VÂn TÔng",
+      "name": "Ngạo Vân Tông",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 660,
@@ -2189,7 +2189,7 @@
     },
     {
       "code": "lieu-nam-van",
-      "name": "Liễu Nam VÂn",
+      "name": "Liễu Nam Vân",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 661,
@@ -2210,7 +2210,7 @@
     },
     {
       "code": "ha-hoa-dao-bich-ngoc",
-      "name": "Hà Hoa Đạo Bích Ngọc",
+      "name": "Hà Hoa đạo Bích Ngọc",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 675,
@@ -2231,7 +2231,7 @@
     },
     {
       "code": "ha-hoa-dao-nhu-yen",
-      "name": "Hà Hoa Đạo NhƯ YÊn",
+      "name": "Hà Hoa đạo Như Yên",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 675,
@@ -2252,7 +2252,7 @@
     },
     {
       "code": "ha-hoa-dao-tang-mong",
-      "name": "Hà Hoa Đạo TĂng Mộng",
+      "name": "Hà Hoa đạo Tăng Mộng",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 675,
@@ -2273,7 +2273,7 @@
     },
     {
       "code": "tu-dien-ma-vuong-long-truy-vu",
-      "name": "Tử diện Ma VƯƠng Long Truy vũ",
+      "name": "Tử diện Ma Vương Long Truy vũ",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 676,
@@ -2294,7 +2294,7 @@
     },
     {
       "code": "nhan-vat-vo-lam-lau-hoang-thien",
-      "name": "(NhÂn vật võ lÂm) LÂu Hoàng ThiÊn",
+      "name": "(Nhân vật võ lâm) Lâu Hoàng Thiên",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 670,
@@ -2316,7 +2316,7 @@
     },
     {
       "code": "nhan-vat-vo-lam-tan-thoi-phong",
-      "name": "(NhÂn vật võ lÂm) Tần Thời Phong",
+      "name": "(Nhân vật võ lâm) Tần Thời Phong",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 670,
@@ -2338,7 +2338,7 @@
     },
     {
       "code": "nhan-vat-vo-lam-lam-chien",
-      "name": "(NhÂn vật võ lÂm) Lam Chiến",
+      "name": "(Nhân vật võ lâm) Lam Chiến",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 670,
@@ -2360,7 +2360,7 @@
     },
     {
       "code": "nhan-vat-vo-lam-doan-song-dong",
-      "name": "(NhÂn vật võ lÂm) Doãn Song đồng",
+      "name": "(Nhân vật võ lâm) Doãn Song Đồng",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 670,
@@ -2382,7 +2382,7 @@
     },
     {
       "code": "nhan-vat-vo-lam-phi-lanh",
-      "name": "(NhÂn vật võ lÂm) Phí Lãnh",
+      "name": "(Nhân vật võ lâm) Phí Lãnh",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 670,
@@ -2404,7 +2404,7 @@
     },
     {
       "code": "trieu-thien-bang-chu-lo-truong-thien",
-      "name": "Triều ThiÊn bang chủ Lộ TrƯờng ThiÊn",
+      "name": "Triều Thiên bang chủ Lộ Trường Thiên",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 669,
@@ -2526,7 +2526,7 @@
     },
     {
       "code": "cong-tu-tieu",
-      "name": "CÔng Tử Tiếu",
+      "name": "Công Tử Tiếu",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 649,
@@ -2547,7 +2547,7 @@
     },
     {
       "code": "ninh-tuong-quan",
-      "name": "Ninh tƯớng quÂn",
+      "name": "Ninh tướng quân",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 678,
@@ -2589,7 +2589,7 @@
     },
     {
       "code": "gioi-luu-phong",
-      "name": "Giới LƯu Phong",
+      "name": "Giới Lưu Phong",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 653,
@@ -2610,7 +2610,7 @@
     },
     {
       "code": "lu-thien-tuong",
-      "name": "LƯ Thiện TƯợng",
+      "name": "Lư Thiện Tượng",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 679,
@@ -2631,7 +2631,7 @@
     },
     {
       "code": "tu-dao-hiep",
-      "name": "Tử đao Hiệp",
+      "name": "Tử Đao Hiệp",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 654,
@@ -2673,7 +2673,7 @@
     },
     {
       "code": "oan-doc",
-      "name": "Oán độc",
+      "name": "Oán Độc",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 655,
@@ -2694,7 +2694,7 @@
     },
     {
       "code": "han-ngu-ong-92",
-      "name": "Hàn NgƯ ông",
+      "name": "Hàn Ngư Ông",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 681,
@@ -2715,7 +2715,7 @@
     },
     {
       "code": "nguoi-than-bi",
-      "name": "NgƯời thần bí",
+      "name": "Người thần bí",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 667,
@@ -2737,7 +2737,7 @@
     },
     {
       "code": "khong-tich-dai-su-94",
-      "name": "KhÔng tịch Đại sƯ",
+      "name": "Không tịch đại sư",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 666,
@@ -2780,7 +2780,7 @@
     },
     {
       "code": "ha-vo-tha",
-      "name": "Hạ VÔ Thả",
+      "name": "Hạ Vô Thả",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 650,
@@ -2802,7 +2802,7 @@
     },
     {
       "code": "khong-tich-dai-su-97",
-      "name": "KhÔng tịch Đại sƯ",
+      "name": "Không tịch đại sư",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 665,
@@ -2824,7 +2824,7 @@
     },
     {
       "code": "han-ngu-ong-98",
-      "name": "Hàn NgƯ ông",
+      "name": "Hàn Ngư Ông",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 677,
@@ -2954,7 +2954,7 @@
     },
     {
       "code": "doan-moc-thanh",
-      "name": "đoan Mộc Thanh",
+      "name": "Đoan Mộc Thanh",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 718,
@@ -2975,7 +2975,7 @@
     },
     {
       "code": "thai-cong-cong",
-      "name": "Thái CÔng CÔng",
+      "name": "Thái Công Công",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 714,
@@ -3018,7 +3018,7 @@
     },
     {
       "code": "tieu-su",
-      "name": "TiÊu sƯ",
+      "name": "Tiêu sư",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 719,
@@ -3061,7 +3061,7 @@
     },
     {
       "code": "pho-loi-thu",
-      "name": "Phó LÔi ThƯ",
+      "name": "Phó Lôi Thư",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 715,
@@ -3082,7 +3082,7 @@
     },
     {
       "code": "tieu-vo-thuong",
-      "name": "Tiếu VÔ ThƯờng",
+      "name": "Tiếu Vô Thường",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 717,
@@ -3104,7 +3104,7 @@
     },
     {
       "code": "do-dai-nhan",
-      "name": "đồ đại nhÂn",
+      "name": "Đồ Đại nhân",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 721,
@@ -3125,7 +3125,7 @@
     },
     {
       "code": "lieu-dinh",
-      "name": "LiÊu định",
+      "name": "Liêu Định",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 694,
@@ -3147,7 +3147,7 @@
     },
     {
       "code": "bat-tinh-nhan-si",
-      "name": "Bất Tỉnh NhÂn Sĩ",
+      "name": "Bất Tỉnh Nhân Sĩ",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 306,
@@ -3168,7 +3168,7 @@
     },
     {
       "code": "tay-son-tieu-nhi",
-      "name": "TÂy SƠn Tiểu Nhị",
+      "name": "Tây Sơn Tiểu Nhị",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 242,
@@ -3189,7 +3189,7 @@
     },
     {
       "code": "nguyet-luong-tho",
-      "name": "Nguyệt LƯợng Thỏ",
+      "name": "Nguyệt Lượng Thỏ",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 750,
@@ -3231,7 +3231,7 @@
     },
     {
       "code": "cau-tan-thien-ha-doc-co-khach",
-      "name": "CÂu Tẫn ThiÊn hạ độc CÔ Khách",
+      "name": "Câu Tẫn Thiên hạ Độc Cô Khách",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 307,
@@ -3252,7 +3252,7 @@
     },
     {
       "code": "bien-thanh-lang-tu",
-      "name": "BiÊn Thành Lãng Tử",
+      "name": "Biên Thành Lãng Tử",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 77,
@@ -3357,7 +3357,7 @@
     },
     {
       "code": "ho-tro-tan-thu",
-      "name": "Hỗ Trợ TÂn Thủ",
+      "name": "Hỗ Trợ Tân Thủ",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 1867,
@@ -3422,7 +3422,7 @@
     },
     {
       "code": "tieu-thien-ngao",
-      "name": "TiÊu ThiÊn Ngạo",
+      "name": "Tiêu Thiên Ngạo",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 770,
@@ -3464,7 +3464,7 @@
     },
     {
       "code": "tat-vuu-phong",
-      "name": "Tất VƯu Phóng",
+      "name": "Tất Vưu Phóng",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 772,
@@ -3506,7 +3506,7 @@
     },
     {
       "code": "bo-hieu-tran",
-      "name": "Bộ HiÊu Trần",
+      "name": "Bộ Hiêu Trần",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 770,
@@ -3632,7 +3632,7 @@
     },
     {
       "code": "truong-lanh-son",
-      "name": "TrƯợng Lãnh sƠn",
+      "name": "Trượng Lãnh sơn",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 772,
@@ -3653,7 +3653,7 @@
     },
     {
       "code": "tieu-kiem-tuyet",
-      "name": "TiÊu Kiếm Tuyết",
+      "name": "Tiêu Kiếm Tuyết",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 761,
@@ -3697,7 +3697,7 @@
     },
     {
       "code": "chuong-bat-phuong",
-      "name": "ChƯởng Bát PhƯƠng",
+      "name": "Chưởng Bát Phương",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 771,
@@ -3741,7 +3741,7 @@
     },
     {
       "code": "tu-do-tuyet-chuy",
-      "name": "TƯ đồ Tuyệt Chủy",
+      "name": "Tư Đồ Tuyệt Chủy",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 761,
@@ -3762,7 +3762,7 @@
     },
     {
       "code": "thuong-quan-lang",
-      "name": "ThƯợng Quan Lãng",
+      "name": "Thượng Quan Lãng",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 770,
@@ -3783,7 +3783,7 @@
     },
     {
       "code": "duong-thanh-an",
-      "name": "DƯƠng Thanh ẩn",
+      "name": "Dương Thanh ẩn",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 771,
@@ -3804,7 +3804,7 @@
     },
     {
       "code": "nguy-chiem-than",
-      "name": "Ngụy ChiÊm ThÂn",
+      "name": "Ngụy Chiêm Thân",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 772,
@@ -3825,7 +3825,7 @@
     },
     {
       "code": "dao-doat-thu",
-      "name": "đào đoạt Thu",
+      "name": "Đào Đoạt Thu",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 762,
@@ -3846,7 +3846,7 @@
     },
     {
       "code": "xa-ba-dong",
-      "name": "Xà Bá đÔng",
+      "name": "Xà Bá Đông",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 773,
@@ -3867,7 +3867,7 @@
     },
     {
       "code": "luong-tu-nam",
-      "name": "LƯƠng TƯ Nam",
+      "name": "Lương Tư Nam",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 774,
@@ -3909,7 +3909,7 @@
     },
     {
       "code": "kieu-dinh-thien",
-      "name": "Kiều đỉnh ThiÊn",
+      "name": "Kiều Đỉnh Thiên",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 776,
@@ -3930,7 +3930,7 @@
     },
     {
       "code": "trong-vo-cap",
-      "name": "Trọng VÔ Cấp",
+      "name": "Trọng Vô Cấp",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 762,
@@ -3972,7 +3972,7 @@
     },
     {
       "code": "dinh-van-duc",
-      "name": "đinh VĂn Dục",
+      "name": "Đinh Văn Dục",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 774,
@@ -4035,7 +4035,7 @@
     },
     {
       "code": "phuong-duc-viem",
-      "name": "PhƯƠng Dực ViÊm",
+      "name": "Phương Dực Viêm",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 762,
@@ -4056,7 +4056,7 @@
     },
     {
       "code": "ninh-tam-cuong",
-      "name": "Ninh TÂm Cuồng",
+      "name": "Ninh Tâm Cuồng",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 773,
@@ -4119,7 +4119,7 @@
     },
     {
       "code": "quan-vo-yem",
-      "name": "Quản VÔ Yếm",
+      "name": "Quản Vô Yếm",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 776,
@@ -4140,7 +4140,7 @@
     },
     {
       "code": "diep-vinh-an",
-      "name": "Diệp Vĩnh ân",
+      "name": "Diệp Vĩnh Ân",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 762,
@@ -4161,7 +4161,7 @@
     },
     {
       "code": "au-chi-phong",
-      "name": "âu chí Phong",
+      "name": "Âu chí Phong",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 773,
@@ -4182,7 +4182,7 @@
     },
     {
       "code": "doc-co-hiep",
-      "name": "độc CÔ Hiệp",
+      "name": "Độc Cô Hiệp",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 774,
@@ -4224,7 +4224,7 @@
     },
     {
       "code": "nghe-dai-chu",
-      "name": "NghÊ đại Chu",
+      "name": "Nghê Đại Chu",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 776,
@@ -4308,7 +4308,7 @@
     },
     {
       "code": "lo-thuong-nhan",
-      "name": "Lộ ThƯợng NhÂn",
+      "name": "Lộ Thượng Nhân",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 779,
@@ -4329,7 +4329,7 @@
     },
     {
       "code": "nham-tong-hoanh",
-      "name": "Nhậm TÔng Hoành",
+      "name": "Nhậm Tông Hoành",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 780,
@@ -4413,7 +4413,7 @@
     },
     {
       "code": "dieu-dich-dao",
-      "name": "điÊu Dịch đao",
+      "name": "Điêu Dịch Đao",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 778,
@@ -4434,7 +4434,7 @@
     },
     {
       "code": "do-tan-sinh",
-      "name": "đồ Tàn Sinh",
+      "name": "Đồ Tàn Sinh",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 779,
@@ -4455,7 +4455,7 @@
     },
     {
       "code": "bang-vo-tinh",
-      "name": "Bàng VÔ Tĩnh",
+      "name": "Bàng Vô Tĩnh",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 780,
@@ -4476,7 +4476,7 @@
     },
     {
       "code": "ly-hoa-do",
-      "name": "Lý Hoa độ",
+      "name": "Lý Hoa Độ",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 781,
@@ -4519,7 +4519,7 @@
     },
     {
       "code": "nguy-nhan-tu",
-      "name": "Nguy NhÂn Tử",
+      "name": "Nguy Nhân Tử",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 777,
@@ -4541,7 +4541,7 @@
     },
     {
       "code": "co-vien-khe",
-      "name": "Cố Viễn KhÊ",
+      "name": "Cố Viễn Khê",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 778,
@@ -4585,7 +4585,7 @@
     },
     {
       "code": "diem-tu-huu",
-      "name": "DiÊm Tự Hữu",
+      "name": "Diêm Tự Hữu",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 780,
@@ -4606,7 +4606,7 @@
     },
     {
       "code": "dam-thien-boc",
-      "name": "đàm ThiÊn Bộc",
+      "name": "Đàm Thiên Bộc",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 781,
@@ -4669,7 +4669,7 @@
     },
     {
       "code": "manh-dap-hong",
-      "name": "Mạnh đạp Hồng",
+      "name": "Mạnh Đạp Hồng",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 764,
@@ -4690,7 +4690,7 @@
     },
     {
       "code": "an-tuc-han",
-      "name": "ân  Tức Hận",
+      "name": "Ân  Tức Hận",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 782,
@@ -4711,7 +4711,7 @@
     },
     {
       "code": "hoac-thanh-suong",
-      "name": "Hoắc Thanh SƯƠng",
+      "name": "Hoắc Thanh Sương",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 783,
@@ -4732,7 +4732,7 @@
     },
     {
       "code": "mien-tu-dao",
-      "name": "MiÊn TƯ đạo",
+      "name": "Miên Tư Đạo",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 784,
@@ -4816,7 +4816,7 @@
     },
     {
       "code": "duong-nghia-chi",
-      "name": "đƯờng Nghĩa Chi",
+      "name": "Đường Nghĩa Chi",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 764,
@@ -4837,7 +4837,7 @@
     },
     {
       "code": "lau-vi-thien",
-      "name": "LÂu Vi Thiện",
+      "name": "Lâu Vi Thiện",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 782,
@@ -4879,7 +4879,7 @@
     },
     {
       "code": "su-tieu-son",
-      "name": "Sử TiÊu sƠn",
+      "name": "Sử Tiêu sơn",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 784,
@@ -4900,7 +4900,7 @@
     },
     {
       "code": "tay-mon-vo-gioi",
-      "name": "TÂy MÔn VÔ Giới",
+      "name": "Tây Môn Vô Giới",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 785,
@@ -4942,7 +4942,7 @@
     },
     {
       "code": "loi-huyen-khach",
-      "name": "LÔi Huyễn Khách",
+      "name": "Lôi Huyễn Khách",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 787,
@@ -5026,7 +5026,7 @@
     },
     {
       "code": "duong-diem-quan",
-      "name": "DƯƠng Diễm QuÂn",
+      "name": "Dương Diễm Quân",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 784,
@@ -5047,7 +5047,7 @@
     },
     {
       "code": "du-tieu-cuong",
-      "name": "Du TiÊu CƯờng",
+      "name": "Du Tiêu Cường",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 785,
@@ -5068,7 +5068,7 @@
     },
     {
       "code": "co-du-tau",
-      "name": "CÔ Dự  Tẩu",
+      "name": "Cô Dự  Tẩu",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 786,
@@ -5089,7 +5089,7 @@
     },
     {
       "code": "uong-the-thuy",
-      "name": "UÔng  Thệ Thủy",
+      "name": "Uông  Thệ Thủy",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 765,
@@ -5110,7 +5110,7 @@
     },
     {
       "code": "yen-luu-sanh",
-      "name": "Yến LƯu  Sanh",
+      "name": "Yến Lưu  Sanh",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 788,
@@ -5131,7 +5131,7 @@
     },
     {
       "code": "tang-thuong-hai",
-      "name": "Tang ThƯƠng Hải",
+      "name": "Tang Thương Hải",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 789,
@@ -5195,7 +5195,7 @@
     },
     {
       "code": "hau-yen-tan",
-      "name": "Hậu Yến TÂn",
+      "name": "Hậu Yến Tân",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 792,
@@ -5282,7 +5282,7 @@
     },
     {
       "code": "thuong-quan-chat",
-      "name": "ThƯợng Quan Chất",
+      "name": "Thượng Quan Chất",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 765,
@@ -5324,7 +5324,7 @@
     },
     {
       "code": "tuong-huyen-vien",
-      "name": "TƯởng Huyền Viễn",
+      "name": "Tưởng Huyền Viễn",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 789,
@@ -5367,7 +5367,7 @@
     },
     {
       "code": "lo-quan-bac",
-      "name": "LÔ Quán Bắc",
+      "name": "Lô Quán Bắc",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 791,
@@ -5411,7 +5411,7 @@
     },
     {
       "code": "tung-vo-anh",
-      "name": "Tùng VÔ ảnh",
+      "name": "Tùng Vô ảnh",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 793,
@@ -5433,7 +5433,7 @@
     },
     {
       "code": "tien-the-thanh",
-      "name": "Tiễn ThÊ Thanh",
+      "name": "Tiễn Thê Thanh",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 794,
@@ -5454,7 +5454,7 @@
     },
     {
       "code": "bach-thuong-nham",
-      "name": "Bạch ThƯƠng Nham",
+      "name": "Bạch Thương Nham",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 765,
@@ -5475,7 +5475,7 @@
     },
     {
       "code": "bien-luu-thien",
-      "name": "Biện LƯu Thiện",
+      "name": "Biện Lưu Thiện",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 788,
@@ -5539,7 +5539,7 @@
     },
     {
       "code": "tao-nhan-phu",
-      "name": "Tào NhÂn  Phủ",
+      "name": "Tào Nhân  Phủ",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 795,
@@ -5583,7 +5583,7 @@
     },
     {
       "code": "dang-an-khue",
-      "name": "đặng An KhuÊ",
+      "name": "Đặng An Khuê",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 797,
@@ -5605,7 +5605,7 @@
     },
     {
       "code": "ung-tieu-phong",
-      "name": "ứng  TiÊu Phong",
+      "name": "ứng  Tiêu Phong",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 798,
@@ -5627,7 +5627,7 @@
     },
     {
       "code": "thuong-trieu-suong",
-      "name": "ThƯƠng Triều SƯƠng",
+      "name": "Thương Triều Sương",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 799,
@@ -5671,7 +5671,7 @@
     },
     {
       "code": "pho-khau-tu",
-      "name": "Phó KhÂu Tu",
+      "name": "Phó Khâu Tu",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 801,
@@ -5715,7 +5715,7 @@
     },
     {
       "code": "co-thanh-duong",
-      "name": "Cổ Thanh DƯƠng",
+      "name": "Cổ Thanh Dương",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 766,
@@ -5737,7 +5737,7 @@
     },
     {
       "code": "quan-thien-van",
-      "name": "Quan ThiÊn Vấn",
+      "name": "Quan Thiên Vấn",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 795,
@@ -5781,7 +5781,7 @@
     },
     {
       "code": "to-co-ngam",
-      "name": "TÔ Cổ NgÂm",
+      "name": "Tô Cổ Ngâm",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 797,
@@ -5886,7 +5886,7 @@
     },
     {
       "code": "khuong-tu-dao",
-      "name": "KhƯƠng Tự Dao",
+      "name": "Khương Tự Dao",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 802,
@@ -5907,7 +5907,7 @@
     },
     {
       "code": "khong-dong-nhan",
-      "name": "Khổng Dong NhÂn",
+      "name": "Khổng Dong Nhân",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 766,
@@ -5928,7 +5928,7 @@
     },
     {
       "code": "lang-tan-trung",
-      "name": "LĂng Tận Trung",
+      "name": "Lăng Tận Trung",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 795,
@@ -6033,7 +6033,7 @@
     },
     {
       "code": "co-vo-thuong",
-      "name": "CÔ VÔ ThƯờng",
+      "name": "Cô Vô Thường",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 806,
@@ -6075,7 +6075,7 @@
     },
     {
       "code": "thi-dai-thieu",
-      "name": "Thi đại Thiếu",
+      "name": "Thi Đại Thiếu",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 808,
@@ -6096,7 +6096,7 @@
     },
     {
       "code": "ton-van-buu",
-      "name": "TÔn VĂn BƯu",
+      "name": "Tôn Văn Bưu",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 809,
@@ -6117,7 +6117,7 @@
     },
     {
       "code": "dong-bat-phuc",
-      "name": "đồng Bất Phục",
+      "name": "Đồng Bất Phục",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 810,
@@ -6138,7 +6138,7 @@
     },
     {
       "code": "duong-bac-van",
-      "name": "đƯờng Bác VĂn",
+      "name": "Đường Bác Văn",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 811,
@@ -6159,7 +6159,7 @@
     },
     {
       "code": "dao-dao-chu",
-      "name": "đào đảo Chủ",
+      "name": "Đào Đảo Chủ",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 767,
@@ -6180,7 +6180,7 @@
     },
     {
       "code": "dien-vo-dao",
-      "name": "điền VÔ đạo",
+      "name": "Điền Vô Đạo",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 803,
@@ -6201,7 +6201,7 @@
     },
     {
       "code": "vien-niem-tich",
-      "name": "ViÊn Niệm Tịch",
+      "name": "Viên Niệm Tịch",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 804,
@@ -6243,7 +6243,7 @@
     },
     {
       "code": "chuong-nguyen-sung",
-      "name": "ChƯƠng NguyÊn Sùng",
+      "name": "Chương Nguyên Sùng",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 806,
@@ -6285,7 +6285,7 @@
     },
     {
       "code": "vu-cuu-do",
-      "name": "Vu Cửu  đồ",
+      "name": "Vu Cửu  Đồ",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 808,
@@ -6306,7 +6306,7 @@
     },
     {
       "code": "vien-thien-tho",
-      "name": "ViÊn ThiÊn Thọ",
+      "name": "Viên Thiên Thọ",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 809,
@@ -6327,7 +6327,7 @@
     },
     {
       "code": "nhac-thuong-con",
-      "name": "Nhạc ThƯợng CÔn",
+      "name": "Nhạc Thượng Côn",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 810,
@@ -6348,7 +6348,7 @@
     },
     {
       "code": "chiem-phuc-van",
-      "name": "ChiÊm Phúc VÂn",
+      "name": "Chiêm Phúc Vân",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 811,
@@ -6369,7 +6369,7 @@
     },
     {
       "code": "co-gioi-nhan",
-      "name": "Cổ Giới NhÂn",
+      "name": "Cổ Giới Nhân",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 768,
@@ -6457,7 +6457,7 @@
     },
     {
       "code": "cam-chinh-co",
-      "name": "Cam Chính CÔ",
+      "name": "Cam Chính Cô",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 815,
@@ -6499,7 +6499,7 @@
     },
     {
       "code": "duong-phong-dat",
-      "name": "DƯƠng Phong Dật",
+      "name": "Dương Phong Dật",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 817,
@@ -6562,7 +6562,7 @@
     },
     {
       "code": "ve-bien-thanh",
-      "name": "Vệ BiÊn Thành",
+      "name": "Vệ Biên Thành",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 820,
@@ -6583,7 +6583,7 @@
     },
     {
       "code": "co-thu-dang",
-      "name": "Cố Thủ đằng",
+      "name": "Cố Thủ Đằng",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 768,
@@ -6604,7 +6604,7 @@
     },
     {
       "code": "chu-cat-kinh-hong",
-      "name": "ChƯ Cát Kinh Hồng",
+      "name": "Chư Cát Kinh Hồng",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 812,
@@ -6646,7 +6646,7 @@
     },
     {
       "code": "lien-kinh-thai",
-      "name": "LiÊn Kinh Thái",
+      "name": "Liên Kinh Thái",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 814,
@@ -6667,7 +6667,7 @@
     },
     {
       "code": "bao-triet-son",
-      "name": "Bảo Triệt SƠn",
+      "name": "Bảo Triệt Sơn",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 815,
@@ -6709,7 +6709,7 @@
     },
     {
       "code": "tru-thien-man",
-      "name": "Trử ThiÊn Mẫn",
+      "name": "Trử Thiên Mẫn",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 817,
@@ -6730,7 +6730,7 @@
     },
     {
       "code": "doan-lang-nguyet",
-      "name": "đoạn LĂng Nguyệt",
+      "name": "Đoạn Lăng Nguyệt",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 820,
@@ -6772,7 +6772,7 @@
     },
     {
       "code": "nham-thuong-khung",
-      "name": "NhÂm ThƯƠng Khung",
+      "name": "Nhâm Thương Khung",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 818,
@@ -6815,7 +6815,7 @@
     },
     {
       "code": "hoan-nhan-vo-lai",
-      "name": "Hoàn Nhan VÔ Lại",
+      "name": "Hoàn Nhan Vô Lại",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 824,
@@ -6837,7 +6837,7 @@
     },
     {
       "code": "dai-cao",
-      "name": "đại Cao",
+      "name": "Đại Cao",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 824,
@@ -6881,7 +6881,7 @@
     },
     {
       "code": "dai-moc",
-      "name": "đại Mộc",
+      "name": "Đại Mộc",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 824,
@@ -6925,7 +6925,7 @@
     },
     {
       "code": "dai-manh",
-      "name": "đại  Mãnh",
+      "name": "Đại  Mãnh",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 824,
@@ -6947,7 +6947,7 @@
     },
     {
       "code": "dai-hac",
-      "name": "đại Hắc",
+      "name": "Đại Hắc",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 824,
@@ -6969,7 +6969,7 @@
     },
     {
       "code": "hoan-nhan-nien",
-      "name": "Hoàn Nhan NiÊn",
+      "name": "Hoàn Nhan Niên",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 824,
@@ -6991,7 +6991,7 @@
     },
     {
       "code": "dai-vu",
-      "name": "đại Vũ",
+      "name": "Đại Vũ",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 824,
@@ -7013,7 +7013,7 @@
     },
     {
       "code": "dai-binh-truong",
-      "name": "đại Bính TrƯƠng",
+      "name": "Đại Bính Trương",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 824,
@@ -7057,7 +7057,7 @@
     },
     {
       "code": "dai-lap-pham",
-      "name": "đại  Lập Phẩm",
+      "name": "Đại  Lập Phẩm",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 824,
@@ -7101,7 +7101,7 @@
     },
     {
       "code": "dai-tri",
-      "name": "đại Trì",
+      "name": "Đại Trì",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 824,
@@ -7123,7 +7123,7 @@
     },
     {
       "code": "dai-thien",
-      "name": "đại Thiện",
+      "name": "Đại Thiện",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 827,
@@ -7145,7 +7145,7 @@
     },
     {
       "code": "dai-phuong",
-      "name": "đại PhƯờng",
+      "name": "Đại Phường",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 827,
@@ -7189,7 +7189,7 @@
     },
     {
       "code": "dai-dieu",
-      "name": "đại Diệu",
+      "name": "Đại Diệu",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 827,
@@ -7211,7 +7211,7 @@
     },
     {
       "code": "hoan-nhan-dan",
-      "name": "Hoàn Nhan đan",
+      "name": "Hoàn Nhan Đan",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 827,
@@ -7255,7 +7255,7 @@
     },
     {
       "code": "dai-co",
-      "name": "đại Cổ",
+      "name": "Đại Cổ",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 827,
@@ -7321,7 +7321,7 @@
     },
     {
       "code": "hoan-nhan-thuan",
-      "name": "Hoàn Nhan ThuÂn",
+      "name": "Hoàn Nhan Thuân",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 827,
@@ -7343,7 +7343,7 @@
     },
     {
       "code": "dai-nan",
-      "name": "đại Nan",
+      "name": "Đại Nan",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 827,
@@ -7365,7 +7365,7 @@
     },
     {
       "code": "dai-lai",
-      "name": "đại Lại",
+      "name": "Đại Lại",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 827,
@@ -7387,7 +7387,7 @@
     },
     {
       "code": "hoan-nhan-hoa-nghieu",
-      "name": "Hoàn Nhan Hòa NghiÊu",
+      "name": "Hoàn Nhan Hòa Nghiêu",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 827,
@@ -7453,7 +7453,7 @@
     },
     {
       "code": "da-ta-cham",
-      "name": "Dã Tà ChÂm",
+      "name": "Dã Tà Châm",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 830,
@@ -7475,7 +7475,7 @@
     },
     {
       "code": "dai-tu",
-      "name": "đại Từ",
+      "name": "Đại Từ",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 830,
@@ -7497,7 +7497,7 @@
     },
     {
       "code": "dai-quan",
-      "name": "đại QuÂn",
+      "name": "Đại Quân",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 830,
@@ -7519,7 +7519,7 @@
     },
     {
       "code": "dai-kho",
-      "name": "đại Khố",
+      "name": "Đại Khố",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 830,
@@ -7563,7 +7563,7 @@
     },
     {
       "code": "da-nang",
-      "name": "Dã NĂng",
+      "name": "Dã Năng",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 830,
@@ -7585,7 +7585,7 @@
     },
     {
       "code": "hoan-nhan-pha-quan",
-      "name": "Hoàn Nhan Phá QuÂn",
+      "name": "Hoàn Nhan Phá Quân",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 830,
@@ -7629,7 +7629,7 @@
     },
     {
       "code": "dai-niet",
-      "name": "đại Niết",
+      "name": "Đại Niết",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 830,
@@ -7695,7 +7695,7 @@
     },
     {
       "code": "da-bon",
-      "name": "Dã BÔn",
+      "name": "Dã Bôn",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 830,
@@ -7717,7 +7717,7 @@
     },
     {
       "code": "dai-cu",
-      "name": "đại Cú",
+      "name": "Đại Cú",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 830,
@@ -7761,7 +7761,7 @@
     },
     {
       "code": "dai-khau",
-      "name": "đại Khấu",
+      "name": "Đại Khấu",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 830,
@@ -7783,7 +7783,7 @@
     },
     {
       "code": "dao-yeu-lam-quan-thanh",
-      "name": "Đao yÊu lÂm quan thành",
+      "name": "đao yêu lâm quan thành",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 833,
@@ -7804,7 +7804,7 @@
     },
     {
       "code": "dao-yeu-ly-vinh-binh",
-      "name": "Đao yÊu lý vĩnh bình",
+      "name": "đao yêu lý vĩnh bình",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 833,
@@ -7825,7 +7825,7 @@
     },
     {
       "code": "dao-yeu-nhac-thanh",
-      "name": "Đao yÊu nhạc thành",
+      "name": "đao yêu nhạc thành",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 833,
@@ -7846,7 +7846,7 @@
     },
     {
       "code": "dao-yeu-bach-su-luong",
-      "name": "Đao yÊu bạch sử lƯợng",
+      "name": "đao yêu bạch sử lượng",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 833,
@@ -7867,7 +7867,7 @@
     },
     {
       "code": "dao-yeu-vuong-xung-dong",
-      "name": "Đao yÊu vƯƠng xứng ĐÔng",
+      "name": "đao yêu vương xứng đông",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 833,
@@ -7888,7 +7888,7 @@
     },
     {
       "code": "dao-yeu-ly-thang",
-      "name": "Đao yÊu lý thắng",
+      "name": "đao yêu lý thắng",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 833,
@@ -7909,7 +7909,7 @@
     },
     {
       "code": "dao-yeu-phuong-van-loi",
-      "name": "Đao yÊu phƯƠng vạn lỗi",
+      "name": "đao yêu phương vạn lỗi",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 833,
@@ -7930,7 +7930,7 @@
     },
     {
       "code": "dao-yeu-ngu-bang",
-      "name": "Đao yÊu ngũ bằng",
+      "name": "đao yêu ngũ bằng",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 833,
@@ -7951,7 +7951,7 @@
     },
     {
       "code": "dao-yeu-kim-canh-tay",
-      "name": "Đao yÊu kim cánh tay",
+      "name": "đao yêu kim cánh tay",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 833,
@@ -7972,7 +7972,7 @@
     },
     {
       "code": "dao-yeu-son-loi",
-      "name": "Đao yÊu sƠn lÔi",
+      "name": "đao yêu sơn lôi",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 833,
@@ -7993,7 +7993,7 @@
     },
     {
       "code": "dao-yeu-thuong-ba-dao",
-      "name": "Đao yÊu thƯờng ba Đao",
+      "name": "đao yêu thường ba đao",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 833,
@@ -8014,7 +8014,7 @@
     },
     {
       "code": "dao-yeu-nuoc-thuong-phieu",
-      "name": "Đao yÊu nƯớc thƯợng phiÊu",
+      "name": "đao yêu nước thượng phiêu",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 833,
@@ -8035,7 +8035,7 @@
     },
     {
       "code": "dao-yeu-lua-luong",
-      "name": "Đao yÊu lửa lƯợng",
+      "name": "đao yêu lửa lượng",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 833,
@@ -8056,7 +8056,7 @@
     },
     {
       "code": "dao-yeu-ly-ba-chan",
-      "name": "Đao yÊu lý ba chÂn",
+      "name": "đao yêu lý ba chân",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 833,
@@ -8077,7 +8077,7 @@
     },
     {
       "code": "dao-yeu-to-ki",
-      "name": "Đao yÊu tờ ki",
+      "name": "đao yêu tờ ki",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 833,
@@ -8098,7 +8098,7 @@
     },
     {
       "code": "dao-yeu-tan-sinh-lam",
-      "name": "Đao yÊu tần sinh lÂm",
+      "name": "đao yêu tần sinh lâm",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 833,
@@ -8119,7 +8119,7 @@
     },
     {
       "code": "dao-yeu-co-ung",
-      "name": "Đao yÊu cổ Ưng",
+      "name": "đao yêu cổ ưng",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 833,
@@ -8140,7 +8140,7 @@
     },
     {
       "code": "dao-yeu-te-vuong-kieu",
-      "name": "Đao yÊu Tề vƯƠng kiều",
+      "name": "đao yêu Tề vương kiều",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 833,
@@ -8161,7 +8161,7 @@
     },
     {
       "code": "dao-yeu-nhiet-doc",
-      "name": "Đao yÊu nhiệt Độc",
+      "name": "đao yêu nhiệt độc",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 833,
@@ -8182,7 +8182,7 @@
     },
     {
       "code": "dao-yeu-ngo-tay-lan",
-      "name": "Đao yÊu ngÔ tÂy lan",
+      "name": "đao yêu ngô tây lan",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 833,
@@ -8203,7 +8203,7 @@
     },
     {
       "code": "dao-yeu-ho-thuong-phong",
-      "name": "Đao yÊu hồ thƯợng phong",
+      "name": "đao yêu hồ thượng phong",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 836,
@@ -8224,7 +8224,7 @@
     },
     {
       "code": "dao-yeu-vuong-khuong-luong",
-      "name": "Đao yÊu vƯƠng khuÔng lƯợng",
+      "name": "đao yêu vương khuông lượng",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 836,
@@ -8245,7 +8245,7 @@
     },
     {
       "code": "dao-yeu-bao-dam",
-      "name": "Đao yÊu báo Đảm",
+      "name": "đao yêu báo đảm",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 836,
@@ -8266,7 +8266,7 @@
     },
     {
       "code": "dao-yeu-hung-tam",
-      "name": "Đao yÊu hùng tÂm",
+      "name": "đao yêu hùng tâm",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 836,
@@ -8287,7 +8287,7 @@
     },
     {
       "code": "dao-yeu-ho-trao",
-      "name": "Đao yÊu hổ trảo",
+      "name": "đao yêu hổ trảo",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 836,
@@ -8308,7 +8308,7 @@
     },
     {
       "code": "dao-yeu-huyet-mieu",
-      "name": "Đao yÊu huyết miÊu",
+      "name": "đao yêu huyết miêu",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 836,
@@ -8329,7 +8329,7 @@
     },
     {
       "code": "dao-yeu-ngan-cham",
-      "name": "Đao yÊu ngÂn chÂm",
+      "name": "đao yêu ngân châm",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 836,
@@ -8350,7 +8350,7 @@
     },
     {
       "code": "dao-yeu-van-ap",
-      "name": "Đao yÊu vĂn áp",
+      "name": "đao yêu văn áp",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 836,
@@ -8371,7 +8371,7 @@
     },
     {
       "code": "dao-yeu-dong-quyen",
-      "name": "Đao yÊu Đồng quyển",
+      "name": "đao yêu đồng quyển",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 836,
@@ -8392,7 +8392,7 @@
     },
     {
       "code": "dao-yeu-thiem-dien-dao",
-      "name": "Đao yÊu thiểm Điện Đao",
+      "name": "đao yêu thiểm điện đao",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 836,
@@ -8413,7 +8413,7 @@
     },
     {
       "code": "dao-yeu-thuan",
-      "name": "đao YÊu  Thuấn",
+      "name": "Đao Yêu  Thuấn",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 836,
@@ -8434,7 +8434,7 @@
     },
     {
       "code": "dao-yeu-phi-hoa",
-      "name": "Đao yÊu phi hỏa",
+      "name": "đao yêu phi hỏa",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 836,
@@ -8455,7 +8455,7 @@
     },
     {
       "code": "dao-yeu-cap-dien",
-      "name": "Đao yÊu cấp Điện",
+      "name": "đao yêu cấp điện",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 836,
@@ -8476,7 +8476,7 @@
     },
     {
       "code": "dao-yeu-nghiem-liet-phong",
-      "name": "Đao yÊu nghiÊm liệt phong",
+      "name": "đao yêu nghiêm liệt phong",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 836,
@@ -8497,7 +8497,7 @@
     },
     {
       "code": "dao-yeu-dien-van-canh",
-      "name": "Đao yÊu Điền vĂn cánh",
+      "name": "đao yêu điền văn cánh",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 836,
@@ -8518,7 +8518,7 @@
     },
     {
       "code": "dao-yeu-nien-ca-tai",
-      "name": "Đao yÊu niÊn cá tài",
+      "name": "đao yêu niên cá tài",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 836,
@@ -8539,7 +8539,7 @@
     },
     {
       "code": "dao-yeu-ly-vi",
-      "name": "Đao yÊu lý vĩ",
+      "name": "đao yêu lý vĩ",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 836,
@@ -8560,7 +8560,7 @@
     },
     {
       "code": "dao-yeu-nhac-trung-ky",
-      "name": "Đao yÊu nhạc trung kỳ",
+      "name": "đao yêu nhạc trung kỳ",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 836,
@@ -8581,7 +8581,7 @@
     },
     {
       "code": "dao-yeu-tao-ngan",
-      "name": "Đao yÊu tào ngÂn",
+      "name": "đao yêu tào ngân",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 836,
@@ -8602,7 +8602,7 @@
     },
     {
       "code": "dao-yeu-lam-do",
-      "name": "Đao yÊu lam Độ",
+      "name": "đao yêu lam độ",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 836,
@@ -8623,7 +8623,7 @@
     },
     {
       "code": "dao-yeu-te-da-tuyet",
-      "name": "Đao yÊu tề dạ tuyết",
+      "name": "đao yêu tề dạ tuyết",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 839,
@@ -8645,7 +8645,7 @@
     },
     {
       "code": "dao-yeu-dao-da-huong",
-      "name": "Đao yÊu Đạo dạ hƯƠng",
+      "name": "đao yêu đạo dạ hương",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 839,
@@ -8667,7 +8667,7 @@
     },
     {
       "code": "dao-yeu-truc-qua-luong",
-      "name": "Đao yÊu trúc qua lƯợng",
+      "name": "đao yêu trúc qua lượng",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 839,
@@ -8689,7 +8689,7 @@
     },
     {
       "code": "dao-yeu-hieu-cau",
-      "name": "Đao yÊu hiểu cÂu",
+      "name": "đao yêu hiểu câu",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 839,
@@ -8711,7 +8711,7 @@
     },
     {
       "code": "dao-yeu-khau-van-niem",
-      "name": "Đao yÊu khấu vạn niệm",
+      "name": "đao yêu khấu vạn niệm",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 839,
@@ -8733,7 +8733,7 @@
     },
     {
       "code": "dao-yeu-phan-nhat-thien",
-      "name": "Đao yÊu phần nhật thiÊn",
+      "name": "đao yêu phần nhật thiên",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 839,
@@ -8755,7 +8755,7 @@
     },
     {
       "code": "dao-yeu-ngan-thoi",
-      "name": "Đao yÊu ngÂn thối",
+      "name": "đao yêu ngân thối",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 839,
@@ -8777,7 +8777,7 @@
     },
     {
       "code": "dao-yeu-thiet-oan",
-      "name": "Đao yÊu thiết oản",
+      "name": "đao yêu thiết oản",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 839,
@@ -8799,7 +8799,7 @@
     },
     {
       "code": "dao-yeu-loi-van",
-      "name": "Đao yÊu lÔi vÂn",
+      "name": "đao yêu lôi vân",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 839,
@@ -8821,7 +8821,7 @@
     },
     {
       "code": "dao-yeu-tai-chu",
-      "name": "Đao yÊu tài chu",
+      "name": "đao yêu tài chu",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 839,
@@ -8843,7 +8843,7 @@
     },
     {
       "code": "dao-yeu-bat-con",
-      "name": "Đao yÊu bát cÔn",
+      "name": "đao yêu bát côn",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 839,
@@ -8865,7 +8865,7 @@
     },
     {
       "code": "dao-yeu-ly-van-dao",
-      "name": "Đao yÊu lý vấn Đào",
+      "name": "đao yêu lý vấn đào",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 839,
@@ -8887,7 +8887,7 @@
     },
     {
       "code": "dao-yeu-giang-ly-phien",
-      "name": "Đao yÊu giang lý phiÊn",
+      "name": "đao yêu giang lý phiên",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 839,
@@ -8909,7 +8909,7 @@
     },
     {
       "code": "dao-yeu-anh",
-      "name": "đao YÊu Anh",
+      "name": "Đao Yêu Anh",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 839,
@@ -8931,7 +8931,7 @@
     },
     {
       "code": "dao-yeu-boi-co",
-      "name": "Đao yÊu bÔi cổ",
+      "name": "đao yêu bôi cổ",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 839,
@@ -8953,7 +8953,7 @@
     },
     {
       "code": "dao-yeu-tao-boi",
-      "name": "Đao yÊu tào bối",
+      "name": "đao yêu tào bối",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 839,
@@ -8975,7 +8975,7 @@
     },
     {
       "code": "dao-yeu-ha-tich-son",
-      "name": "Đao yÊu hà tích sƠn",
+      "name": "đao yêu hà tích sơn",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 839,
@@ -8997,7 +8997,7 @@
     },
     {
       "code": "dao-yeu-nham-thien-du",
-      "name": "Đao yÊu nhÂm thiÊn du",
+      "name": "đao yêu nhâm thiên du",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 839,
@@ -9019,7 +9019,7 @@
     },
     {
       "code": "dao-yeu-o-giang-thai",
-      "name": "Đao yÊu Ô giang thải",
+      "name": "đao yêu ô giang thải",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 839,
@@ -9041,7 +9041,7 @@
     },
     {
       "code": "dao-yeu-luu-cuong-buu",
-      "name": "Đao yÊu lƯu cƯƠng bƯu",
+      "name": "đao yêu lưu cương bưu",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 839,
@@ -9063,7 +9063,7 @@
     },
     {
       "code": "bao-ruong-388",
-      "name": "Bảo RƯƠng",
+      "name": "Bảo Rương",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 844,
@@ -9579,7 +9579,7 @@
     },
     {
       "code": "bao-ruong-389",
-      "name": "Bảo RƯƠng",
+      "name": "Bảo Rương",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 844,
@@ -10095,7 +10095,7 @@
     },
     {
       "code": "bao-ruong-1",
-      "name": "Bảo RƯƠng 1",
+      "name": "Bảo Rương 1",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 844,
@@ -10117,7 +10117,7 @@
     },
     {
       "code": "bao-ruong-2",
-      "name": "Bảo RƯƠng 2",
+      "name": "Bảo Rương 2",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 844,
@@ -10139,7 +10139,7 @@
     },
     {
       "code": "bao-ruong-3",
-      "name": "Bảo RƯƠng 3",
+      "name": "Bảo Rương 3",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 844,
@@ -10161,7 +10161,7 @@
     },
     {
       "code": "bao-ruong-4",
-      "name": "Bảo RƯƠng 4",
+      "name": "Bảo Rương 4",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 844,
@@ -10183,7 +10183,7 @@
     },
     {
       "code": "bao-ruong-5",
-      "name": "Bảo RƯƠng 5",
+      "name": "Bảo Rương 5",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 844,
@@ -10205,7 +10205,7 @@
     },
     {
       "code": "bao-ruong-6",
-      "name": "Bảo RƯƠng 6",
+      "name": "Bảo Rương 6",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 844,
@@ -10227,7 +10227,7 @@
     },
     {
       "code": "bao-ruong-7",
-      "name": "Bảo RƯƠng 7",
+      "name": "Bảo Rương 7",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 844,
@@ -10249,7 +10249,7 @@
     },
     {
       "code": "bao-ruong-8",
-      "name": "Bảo RƯƠng 8",
+      "name": "Bảo Rương 8",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 844,
@@ -10271,7 +10271,7 @@
     },
     {
       "code": "bao-ruong-9",
-      "name": "Bảo RƯƠng 9",
+      "name": "Bảo Rương 9",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 844,
@@ -10491,7 +10491,7 @@
     },
     {
       "code": "bieu-tuong-trinh-sat-408",
-      "name": "Biểu TƯợng Trinh Sát",
+      "name": "Biểu Tượng Trinh Sát",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 821,
@@ -10807,7 +10807,7 @@
     },
     {
       "code": "bieu-tuong-trinh-sat-409",
-      "name": "Biểu TƯợng Trinh Sát",
+      "name": "Biểu Tượng Trinh Sát",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 821,
@@ -11123,7 +11123,7 @@
     },
     {
       "code": "bieu-tuong-trinh-sat-410",
-      "name": "Biểu TƯợng Trinh Sát",
+      "name": "Biểu Tượng Trinh Sát",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 821,
@@ -15897,7 +15897,7 @@
     },
     {
       "code": "son-than-mieu-dao-thu-414",
-      "name": "SƠn Thần Miếu đao Thủ",
+      "name": "Sơn Thần Miếu Đao Thủ",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 835,
@@ -18393,7 +18393,7 @@
     },
     {
       "code": "son-than-mieu-dao-thu-415",
-      "name": "SƠn Thần Miếu đao Thủ",
+      "name": "Sơn Thần Miếu Đao Thủ",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 838,
@@ -20889,7 +20889,7 @@
     },
     {
       "code": "son-than-mieu-dao-thu-416",
-      "name": "SƠn Thần Miếu đao Thủ",
+      "name": "Sơn Thần Miếu Đao Thủ",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 841,
@@ -23881,7 +23881,7 @@
     },
     {
       "code": "de-tu-hoang-kiem",
-      "name": "đệ Tử Hoàng Kiếm",
+      "name": "Đệ Tử Hoàng Kiếm",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 946,
@@ -23927,7 +23927,7 @@
     },
     {
       "code": "lo-thanh",
-      "name": "LÔ Thanh",
+      "name": "Lô Thanh",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 947,
@@ -23993,7 +23993,7 @@
     },
     {
       "code": "duong-nh",
-      "name": "đƯờng ?nh",
+      "name": "Đường ?nh",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 950,
@@ -24037,7 +24037,7 @@
     },
     {
       "code": "thu-sinh-mac-tieu-phong",
-      "name": "ThƯ Sinh Mạc Tiếu Phong",
+      "name": "Thư Sinh Mạc Tiếu Phong",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 952,
@@ -24059,7 +24059,7 @@
     },
     {
       "code": "nguu-man-man",
-      "name": "NgƯu Mãn Mãn",
+      "name": "Ngưu Mãn Mãn",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 953,
@@ -24081,7 +24081,7 @@
     },
     {
       "code": "cong-tu-tieu-dinh",
-      "name": "CÔng Tử Tiểu đinh",
+      "name": "Công Tử Tiểu Đinh",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 954,
@@ -24103,7 +24103,7 @@
     },
     {
       "code": "van-tuoc-nhi",
-      "name": "VÂn TƯớc Nhi",
+      "name": "Vân Tước Nhi",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 955,
@@ -24125,7 +24125,7 @@
     },
     {
       "code": "duong-thu-y",
-      "name": "đƯờng ThƯ Y",
+      "name": "Đường Thư Y",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 956,
@@ -24147,7 +24147,7 @@
     },
     {
       "code": "van-trung-ky-quan-nhan-1",
-      "name": "VÂn Trung Kỵ Quan NhÂn 1",
+      "name": "Vân Trung Kỵ Quan Nhân 1",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 957,
@@ -24169,7 +24169,7 @@
     },
     {
       "code": "van-trung-ky-quan-nhan-2",
-      "name": "VÂn Trung Kỵ Quan NhÂn 2",
+      "name": "Vân Trung Kỵ Quan Nhân 2",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 957,
@@ -24191,7 +24191,7 @@
     },
     {
       "code": "van-trung-ky-quan-nhan-3",
-      "name": "VÂn Trung Kỵ Quan NhÂn 3",
+      "name": "Vân Trung Kỵ Quan Nhân 3",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 957,
@@ -24213,7 +24213,7 @@
     },
     {
       "code": "van-trung-ky-quan-nhan-4",
-      "name": "VÂn Trung Kỵ Quan NhÂn 4",
+      "name": "Vân Trung Kỵ Quan Nhân 4",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 957,
@@ -24257,7 +24257,7 @@
     },
     {
       "code": "nam-de-tu-mon-than-khuc-van",
-      "name": "Nam Đệ tử MÔn Thần Khúc Vạn",
+      "name": "Nam đệ tử Môn Thần Khúc Vạn",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 1040,
@@ -24279,7 +24279,7 @@
     },
     {
       "code": "nu-de-tu-ta-thanh-nhi",
-      "name": "Nữ Đệ tử Tạ Thanh Nhi",
+      "name": "Nữ đệ tử Tạ Thanh Nhi",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 1041,
@@ -24301,7 +24301,7 @@
     },
     {
       "code": "kiem-hoang-so-khi-thien",
-      "name": "Kiếm Hoàng Sở Khi ThiÊn",
+      "name": "Kiếm Hoàng Sở Khi Thiên",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 974,
@@ -24322,7 +24322,7 @@
     },
     {
       "code": "tinh-nhac-su-thai",
-      "name": "Tĩnh Nhạc SƯ Thái",
+      "name": "Tĩnh Nhạc Sư Thái",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 1053,
@@ -24343,7 +24343,7 @@
     },
     {
       "code": "khai-toa-nhan-437",
-      "name": "Khai Tỏa NhÂn",
+      "name": "Khai Tỏa Nhân",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 1066,
@@ -24364,7 +24364,7 @@
     },
     {
       "code": "khai-toa-nhan-438",
-      "name": "Khai Tỏa NhÂn",
+      "name": "Khai Tỏa Nhân",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 1066,
@@ -24385,7 +24385,7 @@
     },
     {
       "code": "di-toc-dao-khach",
-      "name": "Dị Tộc đao Khách",
+      "name": "Dị Tộc Đao Khách",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 1052,
@@ -24442,7 +24442,7 @@
     },
     {
       "code": "vuong-nhat",
-      "name": "VƯƠng Nhất",
+      "name": "Vương Nhất",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 324,
@@ -24463,7 +24463,7 @@
     },
     {
       "code": "dinh-loi",
-      "name": "đinh Lợi",
+      "name": "Đinh Lợi",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 378,
@@ -24484,7 +24484,7 @@
     },
     {
       "code": "hac-sat-de-tu",
-      "name": "Hắc Sát đệ Tử",
+      "name": "Hắc Sát Đệ Tử",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 1039,
@@ -24620,7 +24620,7 @@
     },
     {
       "code": "luu-khieu-khoat",
-      "name": "LƯu Khiếu Khoát",
+      "name": "Lưu Khiếu Khoát",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 960,
@@ -24641,7 +24641,7 @@
     },
     {
       "code": "luong-mieu-mieu",
-      "name": "LƯƠng MiÊu MiÊu",
+      "name": "Lương Miêu Miêu",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 961,
@@ -24683,7 +24683,7 @@
     },
     {
       "code": "boi-cong-tu",
-      "name": "Bội CÔng Tử",
+      "name": "Bội Công Tử",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 963,
@@ -24704,7 +24704,7 @@
     },
     {
       "code": "duong-ngu",
-      "name": "đƯờng NgƯ",
+      "name": "Đường Ngư",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 964,
@@ -24725,7 +24725,7 @@
     },
     {
       "code": "son-tac-huu-trai-chu",
-      "name": "SƠn Tặc Hữu Trại Chủ",
+      "name": "Sơn Tặc Hữu Trại Chủ",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 1054,
@@ -24746,7 +24746,7 @@
     },
     {
       "code": "son-tac-ta-trai-chu",
-      "name": "SƠn Tặc Tả Trại Chủ",
+      "name": "Sơn Tặc Tả Trại Chủ",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 1054,
@@ -24767,7 +24767,7 @@
     },
     {
       "code": "son-tac-vuong",
-      "name": "SƠn Tặc VƯƠng",
+      "name": "Sơn Tặc Vương",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 1055,
@@ -24824,7 +24824,7 @@
     },
     {
       "code": "nhat-pham-duong-dai-dao-tuong-quan",
-      "name": "Nhất Phẩm đƯờng đái đao TƯớng QuÂn",
+      "name": "Nhất Phẩm Đường Đái Đao Tướng Quân",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 1079,
@@ -24855,7 +24855,7 @@
     },
     {
       "code": "luyen-cong-sa-dai",
-      "name": "Luyện CÔng Sa đại",
+      "name": "Luyện Công Sa Đại",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 415,
@@ -24991,7 +24991,7 @@
     },
     {
       "code": "than-bi-son-tac-455",
-      "name": "Thần Bí SƠn Tặc",
+      "name": "Thần Bí Sơn Tặc",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 413,
@@ -25247,7 +25247,7 @@
     },
     {
       "code": "than-bi-son-tac-456",
-      "name": "Thần Bí SƠn Tặc",
+      "name": "Thần Bí Sơn Tặc",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 1049,
@@ -26744,7 +26744,7 @@
     },
     {
       "code": "tay-ha-nhat-pham-duong-thuong-ky-binh",
-      "name": "TÂy Hạ Nhất Phẩm đƯờng ThƯƠng Kỵ Binh",
+      "name": "Tây Hạ Nhất Phẩm Đường Thương Kỵ Binh",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 1050,
@@ -27470,7 +27470,7 @@
     },
     {
       "code": "tay-ha-nhat-pham-duong-cung-ky-binh",
-      "name": "TÂy Hạ Nhất Phẩm đƯờng Cung Kỵ Binh",
+      "name": "Tây Hạ Nhất Phẩm Đường Cung Kỵ Binh",
       "spawnCategory": "globalPermanent",
       "enabledByDefault": true,
       "npcTemplateId": 1048,

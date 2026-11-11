@@ -3,7 +3,7 @@
   "schemaVersion": "1.0.0",
   "id": 125,
   "code": "luu-tien-dong-tang-1",
-  "name": "LƯu TiÊn Động tầng 1",
+  "name": "Lưu Tiên động tầng 1",
   "mapType": "Field",
   "mapRules": {
     "defaultFightMode": 1,
@@ -601,7 +601,7 @@
       "targetMpsX": 47456,
       "targetMpsY": 97248,
       "targetFightMode": 1,
-      "deniedMessage": "Bạn nhìn thấy một cƠ quan, trÊn có khắc mấy dòng chữ:",
+      "deniedMessage": "Bạn nhìn thấy một cơ quan, trên có khắc mấy dòng chữ:",
       "triggerCells": [
         {
           "regionX": 100,
@@ -657,7 +657,7 @@
       "targetMpsX": 47456,
       "targetMpsY": 97248,
       "targetFightMode": 1,
-      "deniedMessage": "Bạn nhìn thấy một cƠ quan, trÊn có khắc mấy dòng chữ:",
+      "deniedMessage": "Bạn nhìn thấy một cơ quan, trên có khắc mấy dòng chữ:",
       "triggerCells": [
         {
           "regionX": 105,
@@ -775,7 +775,7 @@
       "targetMpsX": 47456,
       "targetMpsY": 97248,
       "targetFightMode": 1,
-      "deniedMessage": "Bạn nhìn thấy một cƠ quan, trÊn có khắc mấy dòng chữ:",
+      "deniedMessage": "Bạn nhìn thấy một cơ quan, trên có khắc mấy dòng chữ:",
       "triggerCells": [
         {
           "regionX": 99,

@@ -3,7 +3,7 @@
   "schemaVersion": "1.0.0",
   "id": 418,
   "code": "thuyen-rong-so-cap-3",
-  "name": "Thuyền Rồng sƠ cấp (3)",
+  "name": "Thuyền Rồng sơ cấp (3)",
   "mapType": "Field",
   "mapRules": {
     "defaultFightMode": 1,

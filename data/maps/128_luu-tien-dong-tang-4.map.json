@@ -3,7 +3,7 @@
   "schemaVersion": "1.0.0",
   "id": 128,
   "code": "luu-tien-dong-tang-4",
-  "name": "LƯu TiÊn Động tầng 4",
+  "name": "Lưu Tiên động tầng 4",
   "mapType": "Field",
   "mapRules": {
     "defaultFightMode": 1,
@@ -401,7 +401,7 @@
       "targetMpsX": 51104,
       "targetMpsY": 102784,
       "targetFightMode": 1,
-      "deniedMessage": "Bạn nhìn thấy một cƠ quan, trÊn có khắc mấy dòng chữ:",
+      "deniedMessage": "Bạn nhìn thấy một cơ quan, trên có khắc mấy dòng chữ:",
       "triggerCells": [
         {
           "regionX": 94,
@@ -471,7 +471,7 @@
       "targetMpsX": 54208,
       "targetMpsY": 100576,
       "targetFightMode": 1,
-      "deniedMessage": "Bạn nhìn thấy một cƠ quan, trÊn có khắc mấy dòng chữ:",
+      "deniedMessage": "Bạn nhìn thấy một cơ quan, trên có khắc mấy dòng chữ:",
       "triggerCells": [
         {
           "regionX": 94,

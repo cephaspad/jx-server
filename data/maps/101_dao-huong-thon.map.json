@@ -3,7 +3,7 @@
   "schemaVersion": "1.0.0",
   "id": 101,
   "code": "dao-huong-thon",
-  "name": "đạo HƯƠng thÔn",
+  "name": "Đạo Hương thôn",
   "mapType": "Country",
   "worldMapPos": {
     "x": 501,
@@ -3589,7 +3589,7 @@
       "minLevel": 5,
       "bounceMpsX": 61152,
       "bounceMpsY": 102752,
-      "deniedMessage": "Phía trƯớc nguy hiểm! Xin hãy quay về rèn luyện thÊm!",
+      "deniedMessage": "Phía trước nguy hiểm! Xin hãy quay về rèn luyện thêm!",
       "triggerCells": [
         {
           "regionX": 119,
@@ -4983,7 +4983,7 @@
       "minLevel": 5,
       "bounceMpsX": 42720,
       "bounceMpsY": 108704,
-      "deniedMessage": "Phía trƯớc nguy hiểm! Xin hãy quay về rèn luyện thÊm!",
+      "deniedMessage": "Phía trước nguy hiểm! Xin hãy quay về rèn luyện thêm!",
       "triggerCells": [
         {
           "regionX": 83,

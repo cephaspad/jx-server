@@ -4,7 +4,7 @@
   "worldSpawnGroups": [
     {
       "code": "cfg-defaultseasonalscript-nguoi-tiep-dan-thien-tri-mat-canh",
-      "name": "NgƯời tiếp dẫn ThiÊn Trì Mật Cảnh",
+      "name": "Người tiếp dẫn Thiên Trì Mật Cảnh",
       "spawnCategory": "eventOrFeature",
       "enabledByDefault": false,
       "npcTemplateId": 312,
@@ -26,7 +26,7 @@
     },
     {
       "code": "cfg-defaultseasonalscript-be-nguyet-my-nhan",
-      "name": "Bế Nguyệt Mỹ NhÂn",
+      "name": "Bế Nguyệt Mỹ Nhân",
       "spawnCategory": "eventOrFeature",
       "enabledByDefault": false,
       "npcTemplateId": 383,
@@ -55,7 +55,7 @@
     },
     {
       "code": "cfg-defaultseasonalscript-tiep-dau-cong-thanh-chien",
-      "name": "Tiếp đầu CÔng Thành Chiến",
+      "name": "Tiếp Đầu Công Thành Chiến",
       "spawnCategory": "eventOrFeature",
       "enabledByDefault": false,
       "npcTemplateId": 950,
@@ -109,7 +109,7 @@
     },
     {
       "code": "cfg-defaultseasonalscript-chu-duoc-diem",
-      "name": "Chủ dƯợc Điếm",
+      "name": "Chủ dược điếm",
       "spawnCategory": "eventOrFeature",
       "enabledByDefault": false,
       "npcTemplateId": 389,
@@ -136,7 +136,7 @@
     },
     {
       "code": "cfg-defaultseasonalscript-binh-binh-co-nuong-5",
-      "name": "Bình Bình CÔ NƯƠng",
+      "name": "Bình Bình Cô Nương",
       "spawnCategory": "eventOrFeature",
       "enabledByDefault": false,
       "npcTemplateId": 1321,
@@ -173,7 +173,7 @@
     },
     {
       "code": "cfg-defaultseasonalscript-binh-binh-co-nuong-6",
-      "name": "Bình Bình CÔ NƯƠng",
+      "name": "Bình Bình Cô Nương",
       "spawnCategory": "eventOrFeature",
       "enabledByDefault": false,
       "npcTemplateId": 1320,
@@ -205,7 +205,7 @@
     },
     {
       "code": "cfg-defaultseasonalscript-viem-de-bao-tang",
-      "name": "ViÊm  Đế bảo tàng",
+      "name": "Viêm  đế bảo tàng",
       "spawnCategory": "eventOrFeature",
       "enabledByDefault": false,
       "npcTemplateId": 1320,
@@ -227,7 +227,7 @@
     },
     {
       "code": "cfg-defaultseasonalscript-duoc-thuong",
-      "name": "DƯợc thƯƠng",
+      "name": "Dược thương",
       "spawnCategory": "eventOrFeature",
       "enabledByDefault": false,
       "npcTemplateId": 389,

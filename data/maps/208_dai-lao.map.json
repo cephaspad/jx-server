@@ -3,7 +3,7 @@
   "schemaVersion": "1.0.0",
   "id": 208,
   "code": "dai-lao",
-  "name": "đại lao",
+  "name": "Đại lao",
   "mapType": "Field",
   "mapRules": {
     "defaultFightMode": 1,

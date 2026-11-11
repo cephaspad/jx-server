@@ -3,7 +3,7 @@
   "schemaVersion": "1.0.0",
   "id": 103,
   "code": "thieu-lam-phai",
-  "name": "Thiếu LÂm phái",
+  "name": "Thiếu Lâm phái",
   "mapType": "Tong",
   "worldMapPos": {
     "x": 370,
@@ -5854,7 +5854,7 @@
       "targetMpsX": 53600,
       "targetMpsY": 107552,
       "targetFightMode": 1,
-      "deniedMessage": "TrƯớc Thạch mÔn có khắc mấy hàng chữ: Muốn vào mật thất, phải trả lời 3 cÂu hỏi dƯới ĐÂy!",
+      "deniedMessage": "Trước Thạch môn có khắc mấy hàng chữ: Muốn vào mật thất, phải trả lời 3 câu hỏi dưới đây!",
       "triggerCells": [
         {
           "regionX": 84,

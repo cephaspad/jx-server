@@ -3,7 +3,7 @@
   "schemaVersion": "1.0.0",
   "id": 109,
   "code": "phuong-truong-thien-phong",
-  "name": "PhƯƠng trƯợng Thiền phòng",
+  "name": "Phương trượng Thiền phòng",
   "mapType": "Field",
   "mapRules": {
     "defaultFightMode": 1,

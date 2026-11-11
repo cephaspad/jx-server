@@ -3,7 +3,7 @@
   "schemaVersion": "1.0.0",
   "id": 585,
   "code": "khu-vuc-hoat-dong-dip-xuan",
-  "name": "Khu vực hoạt Động dịp xuÂn",
+  "name": "Khu vực hoạt động dịp xuân",
   "mapType": "Field",
   "mapRules": {
     "defaultFightMode": 1,

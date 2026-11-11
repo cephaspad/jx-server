@@ -322,10 +322,10 @@ public static class HybridLegacyTextDecoder
             return true;
         }
 
-        // Zero ASCII letters: only valid in Vietnamese for 1-byte interjections or 2-byte words starting with Đ/đ (0xAE/0xA7)
+        // Zero ASCII letters: only valid in Vietnamese for 1-byte interjections or 2-byte words starting with Đ/đ (0xA7/0xAE)
         if (asciiLetterCount == 0 && highCount >= 2)
         {
-            return highCount == 2 && (raw[0] == 0xAE || raw[0] == 0xA7);
+            return highCount == 2 && (raw[0] == 0xA7 || raw[0] == 0xAE);
         }
 
         return true;

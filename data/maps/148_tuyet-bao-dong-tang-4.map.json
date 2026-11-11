@@ -3,7 +3,7 @@
   "schemaVersion": "1.0.0",
   "id": 148,
   "code": "tuyet-bao-dong-tang-4",
-  "name": "Tuyết Báo Động tầng 4",
+  "name": "Tuyết Báo động tầng 4",
   "mapType": "Field",
   "mapRules": {
     "defaultFightMode": 1,

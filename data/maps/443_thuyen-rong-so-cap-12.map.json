@@ -3,7 +3,7 @@
   "schemaVersion": "1.0.0",
   "id": 443,
   "code": "thuyen-rong-so-cap-12",
-  "name": "Thuyền Rồng sƠ cấp (12)",
+  "name": "Thuyền Rồng sơ cấp (12)",
   "mapType": "Field",
   "mapRules": {
     "defaultFightMode": 1,

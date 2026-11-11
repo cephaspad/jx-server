@@ -3,7 +3,7 @@
   "schemaVersion": "1.0.0",
   "id": 152,
   "code": "tuyet-bao-dong-tang-8",
-  "name": "Tuyết Báo Động tầng 8",
+  "name": "Tuyết Báo động tầng 8",
   "mapType": "Field",
   "mapRules": {
     "defaultFightMode": 1,

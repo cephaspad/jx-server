@@ -3,7 +3,7 @@
   "schemaVersion": "1.0.0",
   "id": 468,
   "code": "thach-thuc-thoi-gian-so-cap-5",
-  "name": "Thách thức thời gian (SƠ cấp 5)",
+  "name": "Thách thức thời gian (Sơ cấp 5)",
   "mapType": "Field",
   "mapRules": {
     "defaultFightMode": 1,

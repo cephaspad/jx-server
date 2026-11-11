@@ -3,7 +3,7 @@
   "schemaVersion": "1.0.0",
   "id": 149,
   "code": "tuyet-bao-dong-tang-5",
-  "name": "Tuyết Báo Động tầng 5",
+  "name": "Tuyết Báo động tầng 5",
   "mapType": "Field",
   "mapRules": {
     "defaultFightMode": 1,

@@ -3,7 +3,7 @@
   "schemaVersion": "1.0.0",
   "id": 129,
   "code": "luu-tien-dong-tang-5",
-  "name": "LƯu TiÊn Động tầng 5",
+  "name": "Lưu Tiên động tầng 5",
   "mapType": "Field",
   "mapRules": {
     "defaultFightMode": 1,
@@ -655,7 +655,7 @@
       "targetMpsX": 49504,
       "targetMpsY": 100576,
       "targetFightMode": 1,
-      "deniedMessage": "Bạn nhìn thấy một cƠ quan, trÊn có khắc mấy dòng chữ:",
+      "deniedMessage": "Bạn nhìn thấy một cơ quan, trên có khắc mấy dòng chữ:",
       "triggerCells": [
         {
           "regionX": 102,

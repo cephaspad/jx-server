@@ -1829,7 +1829,7 @@
     {
       "id": 0,
       "code": "thieu-lam-phai",
-      "name": "Thiếu LÂm phái",
+      "name": "Thiếu Lâm phái",
       "elementSeries": 0,
       "camp": 1,
       "allowedGenders": [
@@ -1838,11 +1838,11 @@
       "titles": [
         {
           "rankId": 1,
-          "titleName": "Tảo địa TĂng"
+          "titleName": "Tảo Địa Tăng"
         },
         {
           "rankId": 2,
-          "titleName": "Hộ Viện Võ TĂng"
+          "titleName": "Hộ Viện Võ Tăng"
         },
         {
           "rankId": 3,
@@ -1858,22 +1858,22 @@
         },
         {
           "rankId": 6,
-          "titleName": "Phục Ma ThiÊn VƯƠng"
+          "titleName": "Phục Ma Thiên Vương"
         },
         {
           "rankId": 62,
-          "titleName": "VÔ LƯợng Giải TÔn"
+          "titleName": "Vô Lượng Giải Tôn"
         },
         {
           "rankId": 72,
-          "titleName": "Hộ Pháp TrƯởng Lão"
+          "titleName": "Hộ Pháp Trưởng Lão"
         }
       ]
     },
     {
       "id": 1,
       "code": "thien-vuong-bang",
-      "name": "ThiÊn VƯƠng Bang",
+      "name": "Thiên Vương Bang",
       "elementSeries": 0,
       "camp": 3,
       "allowedGenders": [
@@ -1883,27 +1883,27 @@
       "titles": [
         {
           "rankId": 7,
-          "titleName": "đạo đồng"
+          "titleName": "Đạo Đồng"
         },
         {
           "rankId": 8,
-          "titleName": "Nhàn Tản đạo SƯ"
+          "titleName": "Nhàn Tản Đạo Sư"
         },
         {
           "rankId": 9,
-          "titleName": "Thanh Tu đạo SƯ"
+          "titleName": "Thanh Tu Đạo Sư"
         },
         {
           "rankId": 10,
-          "titleName": "Tuần SƠn đạo NhÂn"
+          "titleName": "Tuần Sơn Đạo Nhân"
         },
         {
           "rankId": 11,
-          "titleName": "Nhập Quan đạo NhÂn"
+          "titleName": "Nhập Quan Đạo Nhân"
         },
         {
           "rankId": 12,
-          "titleName": "ChƯởng Kinh đạo NhÂn"
+          "titleName": "Chưởng Kinh Đạo Nhân"
         },
         {
           "rankId": 63,
@@ -1911,14 +1911,14 @@
         },
         {
           "rankId": 73,
-          "titleName": "Huyền Võ ChÂn NhÂn"
+          "titleName": "Huyền Võ Chân Nhân"
         }
       ]
     },
     {
       "id": 2,
       "code": "duong-mon",
-      "name": "đƯờng MÔn",
+      "name": "Đường Môn",
       "elementSeries": 1,
       "camp": 3,
       "allowedGenders": [
@@ -1940,19 +1940,19 @@
         },
         {
           "rankId": 16,
-          "titleName": "Bạch LiÊn TiÊn Tử"
+          "titleName": "Bạch Liên Tiên Tử"
         },
         {
           "rankId": 17,
-          "titleName": "Thanh LiÊn TiÊn Tử"
+          "titleName": "Thanh Liên Tiên Tử"
         },
         {
           "rankId": 18,
-          "titleName": "Tản Hoa ThiÊn Nữ"
+          "titleName": "Tản Hoa Thiên Nữ"
         },
         {
           "rankId": 64,
-          "titleName": "Kim đỉnh Thánh Nữ"
+          "titleName": "Kim Đỉnh Thánh Nữ"
         },
         {
           "rankId": 74,
@@ -1963,7 +1963,7 @@
     {
       "id": 3,
       "code": "ngu-doc-giao",
-      "name": "Ngũ độc Giáo",
+      "name": "Ngũ Độc Giáo",
       "elementSeries": 1,
       "camp": 2,
       "allowedGenders": [
@@ -1973,11 +1973,11 @@
       "titles": [
         {
           "rankId": 19,
-          "titleName": "Phất Trần đệ Tử"
+          "titleName": "Phất Trần Đệ Tử"
         },
         {
           "rankId": 20,
-          "titleName": "Phụng Kiếm đệ Tử"
+          "titleName": "Phụng Kiếm Đệ Tử"
         },
         {
           "rankId": 21,
@@ -1989,19 +1989,19 @@
         },
         {
           "rankId": 23,
-          "titleName": "ThiÊn Vi Hộ Pháp"
+          "titleName": "Thiên Vi Hộ Pháp"
         },
         {
           "rankId": 24,
-          "titleName": "Thụ Phù ThiÊn TƯớng"
+          "titleName": "Thụ Phù Thiên Tướng"
         },
         {
           "rankId": 65,
-          "titleName": "TiÊn Phù ChÂn QuÂn"
+          "titleName": "Tiên Phù Chân Quân"
         },
         {
           "rankId": 75,
-          "titleName": "Hộ Phái ChÂn QuÂn"
+          "titleName": "Hộ Phái Chân Quân"
         }
       ]
     },
@@ -2033,26 +2033,26 @@
         },
         {
           "rankId": 29,
-          "titleName": "Nhập Các đệ Tử"
+          "titleName": "Nhập Các Đệ Tử"
         },
         {
           "rankId": 30,
-          "titleName": "Tỷ Lão MÔn NhÂn"
+          "titleName": "Tỷ Lão Môn Nhân"
         },
         {
           "rankId": 66,
-          "titleName": "ThiÊn Thủ Thần Vệ"
+          "titleName": "Thiên Thủ Thần Vệ"
         },
         {
           "rankId": 76,
-          "titleName": "Lục Các TrƯởng Lão"
+          "titleName": "Lục Các Trưởng Lão"
         }
       ]
     },
     {
       "id": 5,
       "code": "thuy-yen-mon",
-      "name": "Thúy YÊn mÔn",
+      "name": "Thúy Yên môn",
       "elementSeries": 2,
       "camp": 3,
       "allowedGenders": [
@@ -2077,7 +2077,7 @@
         },
         {
           "rankId": 35,
-          "titleName": "Hoa TiÊn"
+          "titleName": "Hoa Tiên"
         },
         {
           "rankId": 36,
@@ -2106,42 +2106,42 @@
       "titles": [
         {
           "rankId": 37,
-          "titleName": "VÔ đại đệ Tử"
+          "titleName": "Vô Đại Đệ Tử"
         },
         {
           "rankId": 38,
-          "titleName": "Chấp đại đệ Tử"
+          "titleName": "Chấp Đại Đệ Tử"
         },
         {
           "rankId": 39,
-          "titleName": "Chấp Bát đệ Tử"
+          "titleName": "Chấp Bát Đệ Tử"
         },
         {
           "rankId": 40,
-          "titleName": "Chấp Bổng đệ Tử"
+          "titleName": "Chấp Bổng Đệ Tử"
         },
         {
           "rankId": 41,
-          "titleName": "Long đầu"
+          "titleName": "Long Đầu"
         },
         {
           "rankId": 42,
-          "titleName": "đại Long đầu"
+          "titleName": "Đại Long Đầu"
         },
         {
           "rankId": 68,
-          "titleName": "TiÊu Dao Thần Cái"
+          "titleName": "Tiêu Dao Thần Cái"
         },
         {
           "rankId": 78,
-          "titleName": "Cửu đại TrƯởng Lão"
+          "titleName": "Cửu Đại Trưởng Lão"
         }
       ]
     },
     {
       "id": 7,
       "code": "thien-nhan-giao",
-      "name": "ThiÊn Nhẫn Giáo",
+      "name": "Thiên Nhẫn Giáo",
       "elementSeries": 3,
       "camp": 2,
       "allowedGenders": [
@@ -2155,38 +2155,38 @@
         },
         {
           "rankId": 44,
-          "titleName": "Thị vệ trƯởng"
+          "titleName": "Thị vệ trưởng"
         },
         {
           "rankId": 45,
-          "titleName": "Thủ Trại Hãn TƯớng"
+          "titleName": "Thủ Trại Hãn Tướng"
         },
         {
           "rankId": 46,
-          "titleName": "ChƯởng đá đầu Lĩnh"
+          "titleName": "Chưởng Đá Đầu Lĩnh"
         },
         {
           "rankId": 47,
-          "titleName": "Thủy đạo Thống Lĩnh"
+          "titleName": "Thủy Đạo Thống Lĩnh"
         },
         {
           "rankId": 48,
-          "titleName": "Hộ đảo TƯớng QuÂn"
+          "titleName": "Hộ Đảo Tướng Quân"
         },
         {
           "rankId": 69,
-          "titleName": "Kình ThiÊn NguyÊn Soái"
+          "titleName": "Kình Thiên Nguyên Soái"
         },
         {
           "rankId": 79,
-          "titleName": "Trấn Bang NguyÊn Soái"
+          "titleName": "Trấn Bang Nguyên Soái"
         }
       ]
     },
     {
       "id": 8,
       "code": "vo-dang-phai",
-      "name": "Võ đang phái",
+      "name": "Võ Đang phái",
       "elementSeries": 4,
       "camp": 1,
       "allowedGenders": [
@@ -2196,27 +2196,27 @@
       "titles": [
         {
           "rankId": 49,
-          "titleName": "Ngũ độc đồng Tử"
+          "titleName": "Ngũ Độc Đồng Tử"
         },
         {
           "rankId": 50,
-          "titleName": "đoạt Hồn Tản NhÂn"
+          "titleName": "Đoạt Hồn Tản Nhân"
         },
         {
           "rankId": 51,
-          "titleName": "ThÔi Mệnh Sứ Giả"
+          "titleName": "Thôi Mệnh Sứ Giả"
         },
         {
           "rankId": 52,
-          "titleName": "Hắc ám DiÊm La"
+          "titleName": "Hắc ám Diêm La"
         },
         {
           "rankId": 53,
-          "titleName": "VÔ động La Sát"
+          "titleName": "Vô Động La Sát"
         },
         {
           "rankId": 54,
-          "titleName": "Co độc TÔn Giả"
+          "titleName": "Co Độc Tôn Giả"
         },
         {
           "rankId": 70,
@@ -2224,14 +2224,14 @@
         },
         {
           "rankId": 80,
-          "titleName": "U Minh Quỷ VƯƠng"
+          "titleName": "U Minh Quỷ Vương"
         }
       ]
     },
     {
       "id": 9,
       "code": "con-lon-phai",
-      "name": "CÔn LÔn phái",
+      "name": "Côn Lôn phái",
       "elementSeries": 4,
       "camp": 3,
       "allowedGenders": [
@@ -2245,7 +2245,7 @@
         },
         {
           "rankId": 56,
-          "titleName": "VÔ ảnh Sát Thủ"
+          "titleName": "Vô ảnh Sát Thủ"
         },
         {
           "rankId": 57,
@@ -2257,7 +2257,7 @@
         },
         {
           "rankId": 59,
-          "titleName": "ChƯởng Kỳ Sứ"
+          "titleName": "Chưởng Kỳ Sứ"
         },
         {
           "rankId": 60,
@@ -2265,18 +2265,18 @@
         },
         {
           "rankId": 71,
-          "titleName": "Tát Mãn Pháp VƯƠng"
+          "titleName": "Tát Mãn Pháp Vương"
         },
         {
           "rankId": 81,
-          "titleName": "Thánh Giáo TrƯởng Lão"
+          "titleName": "Thánh Giáo Trưởng Lão"
         }
       ]
     },
     {
       "id": 10,
       "code": "hoa-son-phai",
-      "name": "Hoa SƠn phái",
+      "name": "Hoa Sơn phái",
       "elementSeries": 2,
       "camp": 3,
       "allowedGenders": [
@@ -2289,7 +2289,7 @@
     {
       "id": 0,
       "code": "ba-lang-huyen",
-      "name": "Ba LĂng huyện",
+      "name": "Ba Lăng huyện",
       "mapId": 53,
       "defaultRevivalPointId": 19,
       "revivalPoints": [
@@ -2299,12 +2299,12 @@
           "mpsY": 101696
         }
       ],
-      "description": "Một thị trấn nhỏ bÊn hồ động đình, là một nƠi an bình và nhàn nhã. DƯới sự lãnh Đạo của ThiÊn VƯƠng Bang, mọi ngƯời ở ĐÂy già trẻ lớn bé Đều tinh thÔng võ thuật, cuộc sống khá sung túc."
+      "description": "Một thị trấn nhỏ bên hồ Động Đình, là một nơi an bình và nhàn nhã. Dưới sự lãnh đạo của Thiên Vương Bang, mọi người ở đây già trẻ lớn bé đều tinh thông võ thuật, cuộc sống khá sung túc."
     },
     {
       "id": 1,
       "code": "giang-tan-thon",
-      "name": "Giang TÂn ThÔn",
+      "name": "Giang Tân Thôn",
       "mapId": 20,
       "defaultRevivalPointId": 10,
       "revivalPoints": [
@@ -2324,7 +2324,7 @@
           "mpsY": 200512
         }
       ],
-      "description": "đÂy là một thÔn nhỏ ven sÔng, là một yếu Đạo giao thÔng trÊn sÔng TrƯờng Giang, các lữ quán và thƯyền lúc nào cũng Đầy ắp khách qua lại. Con ngƯời noi ĐÂy luÔn chú trọng nghĩa tình , Đạo lý, màu xanh của Đồng lúa và cÂy cối luÔn làm Đắm say lòng ngƯời."
+      "description": "Đây là một thôn nhỏ ven sông, là một yếu đạo giao thông trên sông Trường Giang, các lữ quán và thưyền lúc nào cũng đầy ắp khách qua lại. Con người noi đây luôn chú trọng nghĩa tình , đạo lý, màu xanh của đồng lúa và cây cối luôn làm đắm say lòng người."
     },
     {
       "id": 2,
@@ -2344,12 +2344,12 @@
           "mpsY": 104608
         }
       ],
-      "description": "Là một trấn nhỏ bao bọc bởi rừng rậm và Đồi núi,nhƯng chúng khÔng che nổi ánh sáng Thái DƯƠng nÊn nƠi ĐÂy bốn mùa nắng nóng, thu hoạch khó khĂn. Thu nhập chính của vùng này chủ yếu dựa vào rừng và khai thác khoáng thạch."
+      "description": "Là một trấn nhỏ bao bọc bởi rừng rậm và đồi núi,nhưng chúng không che nổi ánh sáng Thái Dương nên nơi đây bốn mùa nắng nóng, thu hoạch khó khăn. Thu nhập chính của vùng này chủ yếu dựa vào rừng và khai thác khoáng thạch."
     },
     {
       "id": 3,
       "code": "chu-tien-tran",
-      "name": "Chu TiÊn trấn",
+      "name": "Chu Tiên trấn",
       "mapId": 100,
       "defaultRevivalPointId": 45,
       "revivalPoints": [
@@ -2364,12 +2364,12 @@
           "mpsY": 102848
         }
       ],
-      "description": "Nếu Đã Đi du ngoạn thì khÔng thể khÔng ghé qua Chu TiÊn trấn, một nƠi nổi tiếng về những cảnh sắc Đắm say lòng ngƯời. KhÔng chỉ nhƯ vậy, nƯớc suối ở ĐÂy còn có thể chữa bệnh. Chu TiÊn trấn vì thế mà nổi danh xa gần."
+      "description": "Nếu đã đi du ngoạn thì không thể không ghé qua Chu Tiên trấn, một nơi nổi tiếng về những cảnh sắc đắm say lòng người. Không chỉ như vậy, nước suối ở đây còn có thể chữa bệnh. Chu Tiên trấn vì thế mà nổi danh xa gần."
     },
     {
       "id": 4,
       "code": "dao-huong-thon",
-      "name": "đạo HƯƠng thÔn",
+      "name": "Đạo Hương thôn",
       "mapId": 101,
       "defaultRevivalPointId": 47,
       "revivalPoints": [
@@ -2384,12 +2384,12 @@
           "mpsY": 104256
         }
       ],
-      "description": "đÂy là một thÔn trấn với hƠn nửa cÔng trình kiến trúc ĐƯợc xÂy dựng trÊn mặt nƯớc, rừng rậm, muÔn thú vÔ số. đÂy cũng là quÊ hƯƠng của lúa gạo và cá. NgƯời dÂn nƠi ĐÂy yÊu thích lao Động, Đời sống sung túc. đạo HƯƠng thÔn cũng nhờ Đó mà nổi danh."
+      "description": "Đây là một thôn trấn với hơn nửa công trình kiến trúc được xây dựng trên mặt nước, rừng rậm, muôn thú vô số. Đây cũng là quê hương của lúa gạo và cá. Người dân nơi đây yêu thích lao động, đời sống sung túc. Đạo Hương thôn cũng nhờ đó mà nổi danh."
     },
     {
       "id": 5,
       "code": "long-mon-tran",
-      "name": "Long MÔn trấn",
+      "name": "Long Môn trấn",
       "mapId": 121,
       "defaultRevivalPointId": 55,
       "revivalPoints": [
@@ -2404,7 +2404,7 @@
           "mpsY": 144416
         }
       ],
-      "description": "Là một trấn nhỏ gần Sa mạc, nƠi TÂy Bắc Trung nguyÊn, bốn mùa gió cát, Đời sống nghèo nàn. Nhờ là nƠi hẻo lánh nÊn cuộc sống bình yÊn. Gần trấn này là Hoàng Hà nguyÊn Đầu và DƯợc VƯƠng cốc, hai nƠi thần bí này Đã tạo cho nƠi ĐÂy một vẻ linh thiÊn bí hiểm."
+      "description": "Là một trấn nhỏ gần Sa mạc, nơi Tây Bắc Trung nguyên, bốn mùa gió cát, đời sống nghèo nàn. Nhờ là nơi hẻo lánh nên cuộc sống bình yên. Gần trấn này là Hoàng Hà nguyên đầu và Dược Vương cốc, hai nơi thần bí này đã tạo cho nơi đây một vẻ linh thiên bí hiểm."
     },
     {
       "id": 6,
@@ -2424,12 +2424,12 @@
           "mpsY": 103520
         }
       ],
-      "description": "\"Thạch NhÂn Đối Thạch Cổ, Kim NgÂn vạn vạn vũ, thùy nhÂn Đắc kiến giả, khả mãi Lệ Giang phủ\", cÂu Đố này vĩnh viễn khÔng có lời giải, chính vì thế càng tĂng thÊm vẻ thần bí cho Thạch cổ trấn, một thÔn nhỏ bốn mùa phong thịnh gần nƯớc đại Lý."
+      "description": "\"Thạch Nhân đối Thạch Cổ, Kim Ngân vạn vạn vũ, thùy nhân đắc kiến giả, khả mãi Lệ Giang phủ\", câu đố này vĩnh viễn không có lời giải, chính vì thế càng tăng thêm vẻ thần bí cho Thạch cổ trấn, một thôn nhỏ bốn mùa phong thịnh gần nước Đại Lý."
     },
     {
       "id": 7,
       "code": "long-tuyen-thon",
-      "name": "Long Tuyền thÔn",
+      "name": "Long Tuyền thôn",
       "mapId": 174,
       "defaultRevivalPointId": 65,
       "revivalPoints": [
@@ -2444,7 +2444,7 @@
           "mpsY": 102208
         }
       ],
-      "description": "Long Tuyền thÔn nằm trong một vùng bình nguyÊn rộng lớn. Truyền thuyết kể rằng cá nƠi ĐÂy thƯờng hóa rồng bay Đi. Long Tuyền thÔn cảnh sắc diễm lệ, cuộc sống yÊn bình hạnh phúc, danh tiếng vang xa."
+      "description": "Long Tuyền thôn nằm trong một vùng bình nguyên rộng lớn. Truyền thuyết kể rằng cá nơi đây thường hóa rồng bay đi. Long Tuyền thôn cảnh sắc diễm lệ, cuộc sống yên bình hạnh phúc, danh tiếng vang xa."
     }
   ],
   "pkRules": {
@@ -2556,7 +2556,7 @@
     {
       "id": 1,
       "code": "doc-mach",
-      "name": "đốc Mạch",
+      "name": "Đốc Mạch",
       "taskVariableId": 4001,
       "acupoints": [
         {
@@ -2569,11 +2569,11 @@
           "magicAffixIds": [
             2897
           ],
-          "description": "Ngoại cÔng"
+          "description": "Ngoại công"
         },
         {
           "level": 2,
-          "name": "Thừa TƯƠng",
+          "name": "Thừa Tương",
           "successRatePerTenThousand": 10000,
           "fallbackLevel": 0,
           "zhenYuanCost": 1600,
@@ -2581,11 +2581,11 @@
           "magicAffixIds": [
             2905
           ],
-          "description": "Nội cÔng"
+          "description": "Nội công"
         },
         {
           "level": 3,
-          "name": "LiÊm Tuyền",
+          "name": "Liêm Tuyền",
           "successRatePerTenThousand": 8000,
           "fallbackLevel": 1,
           "zhenYuanCost": 1400,
@@ -2593,11 +2593,11 @@
           "magicAffixIds": [
             2914
           ],
-          "description": "ThÂn pháp"
+          "description": "Thân pháp"
         },
         {
           "level": 4,
-          "name": "ThiÊn đột",
+          "name": "Thiên Đột",
           "successRatePerTenThousand": 7500,
           "fallbackLevel": 2,
           "zhenYuanCost": 1200,
@@ -2641,11 +2641,11 @@
           "magicAffixIds": [
             2948
           ],
-          "description": "Trị số cƯờng hóa ngũ hành"
+          "description": "Trị số cường hóa ngũ hành"
         },
         {
           "level": 8,
-          "name": "Ngọc đƯờng",
+          "name": "Ngọc Đường",
           "successRatePerTenThousand": 4000,
           "fallbackLevel": 6,
           "zhenYuanCost": 1000,
@@ -2653,11 +2653,11 @@
           "magicAffixIds": [
             2956
           ],
-          "description": "Trị số nhƯợc hóa ngũ hành"
+          "description": "Trị số nhược hóa ngũ hành"
         },
         {
           "level": 9,
-          "name": "đãn Trung",
+          "name": "Đãn Trung",
           "successRatePerTenThousand": 3900,
           "fallbackLevel": 7,
           "zhenYuanCost": 1000,
@@ -2669,7 +2669,7 @@
         },
         {
           "level": 10,
-          "name": "Trung đình",
+          "name": "Trung Đình",
           "successRatePerTenThousand": 3800,
           "fallbackLevel": 8,
           "zhenYuanCost": 1000,
@@ -2681,7 +2681,7 @@
         },
         {
           "level": 11,
-          "name": "CƯu Vĩ",
+          "name": "Cưu Vĩ",
           "successRatePerTenThousand": 3700,
           "fallbackLevel": 9,
           "zhenYuanCost": 1000,
@@ -2689,7 +2689,7 @@
           "magicAffixIds": [
             2982
           ],
-          "description": "TĂng lực sát thƯƠng"
+          "description": "Tăng lực sát thương"
         },
         {
           "level": 12,
@@ -2701,11 +2701,11 @@
           "magicAffixIds": [
             2990
           ],
-          "description": "Bổ sung Đối với kỹ nĂng cÔng kích"
+          "description": "Bổ sung đối với kỹ năng công kích"
         },
         {
           "level": 13,
-          "name": "ThƯợng Oản",
+          "name": "Thượng Oản",
           "successRatePerTenThousand": 3500,
           "fallbackLevel": 11,
           "zhenYuanCost": 1000,
@@ -2725,7 +2725,7 @@
           "magicAffixIds": [
             3007
           ],
-          "description": "Trọng Kích tuyệt Đối"
+          "description": "Trọng Kích tuyệt đối"
         },
         {
           "level": 15,
@@ -2737,7 +2737,7 @@
           "magicAffixIds": [
             3016
           ],
-          "description": "Hóa Giải sát thƯƠng"
+          "description": "Hóa Giải sát thương"
         },
         {
           "level": 16,
@@ -2749,19 +2749,19 @@
           "magicAffixIds": [
             3024
           ],
-          "description": "Triệt tiÊu hóa giải sát thƯƠng"
+          "description": "Triệt tiêu hóa giải sát thương"
         }
       ]
     },
     {
       "id": 2,
       "code": "nham-mach",
-      "name": "NhÂm Mạch",
+      "name": "Nhâm Mạch",
       "taskVariableId": 4002,
       "acupoints": [
         {
           "level": 1,
-          "name": "Tiền đình",
+          "name": "Tiền Đình",
           "successRatePerTenThousand": 10000,
           "fallbackLevel": 0,
           "zhenYuanCost": 2000,
@@ -2769,7 +2769,7 @@
           "magicAffixIds": [
             3009
           ],
-          "description": "Hóa Giải sát thƯƠng"
+          "description": "Hóa Giải sát thương"
         },
         {
           "level": 2,
@@ -2781,11 +2781,11 @@
           "magicAffixIds": [
             3017
           ],
-          "description": "Triệt tiÊu hóa giải sát thƯƠng"
+          "description": "Triệt tiêu hóa giải sát thương"
         },
         {
           "level": 3,
-          "name": "Hậu đình",
+          "name": "Hậu Đình",
           "successRatePerTenThousand": 8000,
           "fallbackLevel": 1,
           "zhenYuanCost": 1400,
@@ -2793,11 +2793,11 @@
           "magicAffixIds": [
             2898
           ],
-          "description": "Ngoại cÔng"
+          "description": "Ngoại công"
         },
         {
           "level": 4,
-          "name": "CƯờng Gian",
+          "name": "Cường Gian",
           "successRatePerTenThousand": 7500,
           "fallbackLevel": 2,
           "zhenYuanCost": 1200,
@@ -2805,7 +2805,7 @@
           "magicAffixIds": [
             2906
           ],
-          "description": "Nội cÔng"
+          "description": "Nội công"
         },
         {
           "level": 5,
@@ -2817,7 +2817,7 @@
           "magicAffixIds": [
             2915
           ],
-          "description": "ThÂn pháp"
+          "description": "Thân pháp"
         },
         {
           "level": 6,
@@ -2833,7 +2833,7 @@
         },
         {
           "level": 7,
-          "name": "Nha MÔn",
+          "name": "Nha Môn",
           "successRatePerTenThousand": 4500,
           "fallbackLevel": 5,
           "zhenYuanCost": 1000,
@@ -2845,7 +2845,7 @@
         },
         {
           "level": 8,
-          "name": "đại Trùy",
+          "name": "Đại Trùy",
           "successRatePerTenThousand": 4000,
           "fallbackLevel": 6,
           "zhenYuanCost": 1000,
@@ -2857,7 +2857,7 @@
         },
         {
           "level": 9,
-          "name": "Dao đạo",
+          "name": "Dao Đạo",
           "successRatePerTenThousand": 3900,
           "fallbackLevel": 7,
           "zhenYuanCost": 1000,
@@ -2865,11 +2865,11 @@
           "magicAffixIds": [
             2949
           ],
-          "description": "Trị số cƯờng hóa ngũ hành"
+          "description": "Trị số cường hóa ngũ hành"
         },
         {
           "level": 10,
-          "name": "ThÂn Trụ",
+          "name": "Thân Trụ",
           "successRatePerTenThousand": 3800,
           "fallbackLevel": 8,
           "zhenYuanCost": 1000,
@@ -2877,11 +2877,11 @@
           "magicAffixIds": [
             2957
           ],
-          "description": "Trị số nhƯợc hóa ngũ hành"
+          "description": "Trị số nhược hóa ngũ hành"
         },
         {
           "level": 11,
-          "name": "Thần đạo",
+          "name": "Thần Đạo",
           "successRatePerTenThousand": 3700,
           "fallbackLevel": 9,
           "zhenYuanCost": 1000,
@@ -2893,7 +2893,7 @@
         },
         {
           "level": 12,
-          "name": "Linh đài",
+          "name": "Linh Đài",
           "successRatePerTenThousand": 3600,
           "fallbackLevel": 10,
           "zhenYuanCost": 1000,
@@ -2905,7 +2905,7 @@
         },
         {
           "level": 13,
-          "name": "Chí DƯƠng",
+          "name": "Chí Dương",
           "successRatePerTenThousand": 3500,
           "fallbackLevel": 11,
           "zhenYuanCost": 1000,
@@ -2913,11 +2913,11 @@
           "magicAffixIds": [
             2983
           ],
-          "description": "TĂng lực sát thƯƠng"
+          "description": "Tăng lực sát thương"
         },
         {
           "level": 14,
-          "name": "CÂn Súc",
+          "name": "Cân Súc",
           "successRatePerTenThousand": 3400,
           "fallbackLevel": 12,
           "zhenYuanCost": 1000,
@@ -2925,7 +2925,7 @@
           "magicAffixIds": [
             2991
           ],
-          "description": "Bổ sung Đối với kỹ nĂng cÔng kích"
+          "description": "Bổ sung đối với kỹ năng công kích"
         },
         {
           "level": 15,
@@ -2949,7 +2949,7 @@
           "magicAffixIds": [
             3008
           ],
-          "description": "Trọng Kích tuyệt Đối"
+          "description": "Trọng Kích tuyệt đối"
         }
       ]
     },
@@ -2961,7 +2961,7 @@
       "acupoints": [
         {
           "level": 1,
-          "name": "U MÔn",
+          "name": "U Môn",
           "successRatePerTenThousand": 0,
           "fallbackLevel": 0,
           "zhenYuanCost": 2000,
@@ -2973,7 +2973,7 @@
         },
         {
           "level": 2,
-          "name": "ThÔng Cốc",
+          "name": "Thông Cốc",
           "successRatePerTenThousand": 0,
           "fallbackLevel": 0,
           "zhenYuanCost": 1600,
@@ -2981,11 +2981,11 @@
           "magicAffixIds": [
             3001
           ],
-          "description": "Trọng Kích tuyệt Đối"
+          "description": "Trọng Kích tuyệt đối"
         },
         {
           "level": 3,
-          "name": "âm đÔ",
+          "name": "Âm Đô",
           "successRatePerTenThousand": 0,
           "fallbackLevel": 1,
           "zhenYuanCost": 1400,
@@ -2993,7 +2993,7 @@
           "magicAffixIds": [
             3010
           ],
-          "description": "Hóa Giải sát thƯƠng"
+          "description": "Hóa Giải sát thương"
         },
         {
           "level": 4,
@@ -3005,11 +3005,11 @@
           "magicAffixIds": [
             3018
           ],
-          "description": "Triệt tiÊu hóa giải sát thƯƠng"
+          "description": "Triệt tiêu hóa giải sát thương"
         },
         {
           "level": 5,
-          "name": "ThƯƠng Khúc",
+          "name": "Thương Khúc",
           "successRatePerTenThousand": 0,
           "fallbackLevel": 3,
           "zhenYuanCost": 1000,
@@ -3017,7 +3017,7 @@
           "magicAffixIds": [
             2899
           ],
-          "description": "Ngoại cÔng"
+          "description": "Ngoại công"
         },
         {
           "level": 6,
@@ -3029,7 +3029,7 @@
           "magicAffixIds": [
             2907
           ],
-          "description": "Nội cÔng"
+          "description": "Nội công"
         },
         {
           "level": 7,
@@ -3041,7 +3041,7 @@
           "magicAffixIds": [
             2916
           ],
-          "description": "ThÂn pháp"
+          "description": "Thân pháp"
         },
         {
           "level": 8,
@@ -3081,7 +3081,7 @@
         },
         {
           "level": 11,
-          "name": "đại Hách",
+          "name": "Đại Hách",
           "successRatePerTenThousand": 0,
           "fallbackLevel": 9,
           "zhenYuanCost": 1000,
@@ -3089,7 +3089,7 @@
           "magicAffixIds": [
             2950
           ],
-          "description": "Trị số cƯờng hóa ngũ hành"
+          "description": "Trị số cường hóa ngũ hành"
         },
         {
           "level": 12,
@@ -3101,7 +3101,7 @@
           "magicAffixIds": [
             2958
           ],
-          "description": "Trị số nhƯợc hóa ngũ hành"
+          "description": "Trị số nhược hóa ngũ hành"
         },
         {
           "level": 13,
@@ -3117,7 +3117,7 @@
         },
         {
           "level": 14,
-          "name": "Quan MÔn",
+          "name": "Quan Môn",
           "successRatePerTenThousand": 0,
           "fallbackLevel": 12,
           "zhenYuanCost": 1000,
@@ -3137,11 +3137,11 @@
           "magicAffixIds": [
             2984
           ],
-          "description": "TĂng lực sát thƯƠng"
+          "description": "Tăng lực sát thương"
         },
         {
           "level": 16,
-          "name": "Thủy đạo",
+          "name": "Thủy Đạo",
           "successRatePerTenThousand": 0,
           "fallbackLevel": 14,
           "zhenYuanCost": 1000,
@@ -3149,14 +3149,14 @@
           "magicAffixIds": [
             2992
           ],
-          "description": "Bổ sung Đối với kỹ nĂng cÔng kích"
+          "description": "Bổ sung đối với kỹ năng công kích"
         }
       ]
     },
     {
       "id": 4,
       "code": "doi-mach",
-      "name": "đới Mạch",
+      "name": "Đới Mạch",
       "taskVariableId": 4004,
       "acupoints": [
         {
@@ -3169,11 +3169,11 @@
           "magicAffixIds": [
             2977
           ],
-          "description": "TĂng lực sát thƯƠng"
+          "description": "Tăng lực sát thương"
         },
         {
           "level": 2,
-          "name": "ThiÊn Xung",
+          "name": "Thiên Xung",
           "successRatePerTenThousand": 0,
           "fallbackLevel": 0,
           "zhenYuanCost": 1600,
@@ -3181,7 +3181,7 @@
           "magicAffixIds": [
             2985
           ],
-          "description": "Bổ sung Đối với kỹ nĂng cÔng kích"
+          "description": "Bổ sung đối với kỹ năng công kích"
         },
         {
           "level": 3,
@@ -3205,7 +3205,7 @@
           "magicAffixIds": [
             3002
           ],
-          "description": "Trọng Kích tuyệt Đối"
+          "description": "Trọng Kích tuyệt đối"
         },
         {
           "level": 5,
@@ -3217,7 +3217,7 @@
           "magicAffixIds": [
             3011
           ],
-          "description": "Hóa Giải sát thƯƠng"
+          "description": "Hóa Giải sát thương"
         },
         {
           "level": 6,
@@ -3229,11 +3229,11 @@
           "magicAffixIds": [
             3019
           ],
-          "description": "Triệt tiÊu hóa giải sát thƯƠng"
+          "description": "Triệt tiêu hóa giải sát thương"
         },
         {
           "level": 7,
-          "name": "Duy đạo",
+          "name": "Duy Đạo",
           "successRatePerTenThousand": 0,
           "fallbackLevel": 5,
           "zhenYuanCost": 1000,
@@ -3241,7 +3241,7 @@
           "magicAffixIds": [
             2900
           ],
-          "description": "Ngoại cÔng"
+          "description": "Ngoại công"
         },
         {
           "level": 8,
@@ -3253,7 +3253,7 @@
           "magicAffixIds": [
             2908
           ],
-          "description": "Nội cÔng"
+          "description": "Nội công"
         },
         {
           "level": 9,
@@ -3265,7 +3265,7 @@
           "magicAffixIds": [
             2917
           ],
-          "description": "ThÂn pháp"
+          "description": "Thân pháp"
         },
         {
           "level": 10,
@@ -3281,7 +3281,7 @@
         },
         {
           "level": 11,
-          "name": "DƯƠng Bạch",
+          "name": "Dương Bạch",
           "successRatePerTenThousand": 0,
           "fallbackLevel": 9,
           "zhenYuanCost": 1000,
@@ -3305,7 +3305,7 @@
         },
         {
           "level": 13,
-          "name": "Não KhÔng",
+          "name": "Não Không",
           "successRatePerTenThousand": 0,
           "fallbackLevel": 11,
           "zhenYuanCost": 1000,
@@ -3313,11 +3313,11 @@
           "magicAffixIds": [
             2951
           ],
-          "description": "Trị số cƯờng hóa ngũ hành"
+          "description": "Trị số cường hóa ngũ hành"
         },
         {
           "level": 14,
-          "name": "Ngoại KhiÊu",
+          "name": "Ngoại Khiêu",
           "successRatePerTenThousand": 0,
           "fallbackLevel": 12,
           "zhenYuanCost": 1000,
@@ -3325,11 +3325,11 @@
           "magicAffixIds": [
             2959
           ],
-          "description": "Trị số nhƯợc hóa ngũ hành"
+          "description": "Trị số nhược hóa ngũ hành"
         },
         {
           "level": 15,
-          "name": "KhiÊu KhƯ",
+          "name": "Khiêu Khư",
           "successRatePerTenThousand": 0,
           "fallbackLevel": 13,
           "zhenYuanCost": 1000,
@@ -3341,7 +3341,7 @@
         },
         {
           "level": 16,
-          "name": "DƯƠng Phụ",
+          "name": "Dương Phụ",
           "successRatePerTenThousand": 0,
           "fallbackLevel": 14,
           "zhenYuanCost": 1000,
@@ -3356,7 +3356,7 @@
     {
       "id": 5,
       "code": "am-duy-mach",
-      "name": "âm Duy Mạch",
+      "name": "Âm Duy Mạch",
       "taskVariableId": 4005,
       "acupoints": [
         {
@@ -3373,7 +3373,7 @@
         },
         {
           "level": 2,
-          "name": "NhÂn NghÊnh",
+          "name": "Nhân Nghênh",
           "successRatePerTenThousand": 10000,
           "fallbackLevel": 0,
           "zhenYuanCost": 1600,
@@ -3393,11 +3393,11 @@
           "magicAffixIds": [
             2978
           ],
-          "description": "TĂng lực sát thƯƠng"
+          "description": "Tăng lực sát thương"
         },
         {
           "level": 4,
-          "name": "Nhũ CĂn",
+          "name": "Nhũ Căn",
           "successRatePerTenThousand": 7500,
           "fallbackLevel": 2,
           "zhenYuanCost": 1200,
@@ -3405,7 +3405,7 @@
           "magicAffixIds": [
             2986
           ],
-          "description": "Bổ sung Đối với kỹ nĂng cÔng kích"
+          "description": "Bổ sung đối với kỹ năng công kích"
         },
         {
           "level": 5,
@@ -3429,11 +3429,11 @@
           "magicAffixIds": [
             3003
           ],
-          "description": "Trọng Kích tuyệt Đối"
+          "description": "Trọng Kích tuyệt đối"
         },
         {
           "level": 7,
-          "name": "âm Cốc",
+          "name": "Âm Cốc",
           "successRatePerTenThousand": 4500,
           "fallbackLevel": 5,
           "zhenYuanCost": 1000,
@@ -3441,7 +3441,7 @@
           "magicAffixIds": [
             3012
           ],
-          "description": "Hóa Giải sát thƯƠng"
+          "description": "Hóa Giải sát thương"
         },
         {
           "level": 8,
@@ -3453,7 +3453,7 @@
           "magicAffixIds": [
             3020
           ],
-          "description": "Triệt tiÊu hóa giải sát thƯƠng"
+          "description": "Triệt tiêu hóa giải sát thương"
         },
         {
           "level": 9,
@@ -3465,11 +3465,11 @@
           "magicAffixIds": [
             2901
           ],
-          "description": "Ngoại cÔng"
+          "description": "Ngoại công"
         },
         {
           "level": 10,
-          "name": "NhiÊn Cốc",
+          "name": "Nhiên Cốc",
           "successRatePerTenThousand": 3800,
           "fallbackLevel": 8,
           "zhenYuanCost": 1000,
@@ -3477,7 +3477,7 @@
           "magicAffixIds": [
             2909
           ],
-          "description": "Nội cÔng"
+          "description": "Nội công"
         },
         {
           "level": 11,
@@ -3489,11 +3489,11 @@
           "magicAffixIds": [
             2918
           ],
-          "description": "ThÂn pháp"
+          "description": "Thân pháp"
         },
         {
           "level": 12,
-          "name": "âm Khí Xung",
+          "name": "Âm Khí Xung",
           "successRatePerTenThousand": 3600,
           "fallbackLevel": 10,
           "zhenYuanCost": 1000,
@@ -3517,7 +3517,7 @@
         },
         {
           "level": 14,
-          "name": "LƯƠng MÔn",
+          "name": "Lương Môn",
           "successRatePerTenThousand": 3400,
           "fallbackLevel": 12,
           "zhenYuanCost": 1000,
@@ -3537,7 +3537,7 @@
           "magicAffixIds": [
             2952
           ],
-          "description": "Trị số cƯờng hóa ngũ hành"
+          "description": "Trị số cường hóa ngũ hành"
         },
         {
           "level": 16,
@@ -3549,14 +3549,14 @@
           "magicAffixIds": [
             2960
           ],
-          "description": "Trị số nhƯợc hóa ngũ hành"
+          "description": "Trị số nhược hóa ngũ hành"
         }
       ]
     },
     {
       "id": 6,
       "code": "duong-duy-mach",
-      "name": "DƯƠng Duy Mạch",
+      "name": "Dương Duy Mạch",
       "taskVariableId": 4006,
       "acupoints": [
         {
@@ -3569,7 +3569,7 @@
           "magicAffixIds": [
             2945
           ],
-          "description": "Trị số cƯờng hóa ngũ hành"
+          "description": "Trị số cường hóa ngũ hành"
         },
         {
           "level": 2,
@@ -3581,7 +3581,7 @@
           "magicAffixIds": [
             2953
           ],
-          "description": "Trị số nhƯợc hóa ngũ hành"
+          "description": "Trị số nhược hóa ngũ hành"
         },
         {
           "level": 3,
@@ -3597,7 +3597,7 @@
         },
         {
           "level": 4,
-          "name": "Cự LiÊu",
+          "name": "Cự Liêu",
           "successRatePerTenThousand": 7500,
           "fallbackLevel": 2,
           "zhenYuanCost": 1200,
@@ -3609,7 +3609,7 @@
         },
         {
           "level": 5,
-          "name": "địa ThƯƠng",
+          "name": "Địa Thương",
           "successRatePerTenThousand": 7000,
           "fallbackLevel": 3,
           "zhenYuanCost": 1000,
@@ -3617,11 +3617,11 @@
           "magicAffixIds": [
             2979
           ],
-          "description": "TĂng lực sát thƯƠng"
+          "description": "Tăng lực sát thương"
         },
         {
           "level": 6,
-          "name": "ThiÊn LiÊu",
+          "name": "Thiên Liêu",
           "successRatePerTenThousand": 5000,
           "fallbackLevel": 4,
           "zhenYuanCost": 1000,
@@ -3629,7 +3629,7 @@
           "magicAffixIds": [
             2987
           ],
-          "description": "Bổ sung Đối với kỹ nĂng cÔng kích"
+          "description": "Bổ sung đối với kỹ năng công kích"
         },
         {
           "level": 7,
@@ -3645,7 +3645,7 @@
         },
         {
           "level": 8,
-          "name": "KiÊn LiÊu",
+          "name": "Kiên Liêu",
           "successRatePerTenThousand": 4000,
           "fallbackLevel": 6,
           "zhenYuanCost": 1000,
@@ -3653,11 +3653,11 @@
           "magicAffixIds": [
             3004
           ],
-          "description": "Trọng Kích tuyệt Đối"
+          "description": "Trọng Kích tuyệt đối"
         },
         {
           "level": 9,
-          "name": "Phụ DƯƠng",
+          "name": "Phụ Dương",
           "successRatePerTenThousand": 3900,
           "fallbackLevel": 7,
           "zhenYuanCost": 1000,
@@ -3665,11 +3665,11 @@
           "magicAffixIds": [
             3013
           ],
-          "description": "Hóa Giải sát thƯƠng"
+          "description": "Hóa Giải sát thương"
         },
         {
           "level": 10,
-          "name": "ThÂn Mạch",
+          "name": "Thân Mạch",
           "successRatePerTenThousand": 3800,
           "fallbackLevel": 8,
           "zhenYuanCost": 1000,
@@ -3677,7 +3677,7 @@
           "magicAffixIds": [
             3021
           ],
-          "description": "Triệt tiÊu hóa giải sát thƯƠng"
+          "description": "Triệt tiêu hóa giải sát thương"
         },
         {
           "level": 11,
@@ -3689,11 +3689,11 @@
           "magicAffixIds": [
             2902
           ],
-          "description": "Ngoại cÔng"
+          "description": "Ngoại công"
         },
         {
           "level": 12,
-          "name": "CƯ LiÊu",
+          "name": "Cư Liêu",
           "successRatePerTenThousand": 3600,
           "fallbackLevel": 10,
           "zhenYuanCost": 1000,
@@ -3701,7 +3701,7 @@
           "magicAffixIds": [
             2910
           ],
-          "description": "Nội cÔng"
+          "description": "Nội công"
         },
         {
           "level": 13,
@@ -3713,7 +3713,7 @@
           "magicAffixIds": [
             2919
           ],
-          "description": "ThÂn pháp"
+          "description": "Thân pháp"
         },
         {
           "level": 14,
@@ -3741,7 +3741,7 @@
         },
         {
           "level": 16,
-          "name": "Thừa SƠn",
+          "name": "Thừa Sơn",
           "successRatePerTenThousand": 3300,
           "fallbackLevel": 14,
           "zhenYuanCost": 1000,
@@ -3756,7 +3756,7 @@
     {
       "id": 7,
       "code": "am-khieu-mach",
-      "name": "âm KhiÊu Mạch",
+      "name": "Âm Khiêu Mạch",
       "taskVariableId": 4007,
       "acupoints": [
         {
@@ -3773,7 +3773,7 @@
         },
         {
           "level": 2,
-          "name": "LiÊm Tuyền",
+          "name": "Liêm Tuyền",
           "successRatePerTenThousand": 10000,
           "fallbackLevel": 0,
           "zhenYuanCost": 1600,
@@ -3785,7 +3785,7 @@
         },
         {
           "level": 3,
-          "name": "ThiÊn đột",
+          "name": "Thiên Đột",
           "successRatePerTenThousand": 8000,
           "fallbackLevel": 1,
           "zhenYuanCost": 1400,
@@ -3793,11 +3793,11 @@
           "magicAffixIds": [
             2946
           ],
-          "description": "Trị số cƯờng hóa ngũ hành"
+          "description": "Trị số cường hóa ngũ hành"
         },
         {
           "level": 4,
-          "name": "Kỳ MÔn",
+          "name": "Kỳ Môn",
           "successRatePerTenThousand": 7500,
           "fallbackLevel": 2,
           "zhenYuanCost": 1200,
@@ -3805,7 +3805,7 @@
           "magicAffixIds": [
             2954
           ],
-          "description": "Trị số nhƯợc hóa ngũ hành"
+          "description": "Trị số nhược hóa ngũ hành"
         },
         {
           "level": 5,
@@ -3821,7 +3821,7 @@
         },
         {
           "level": 6,
-          "name": "đại Hoành",
+          "name": "Đại Hoành",
           "successRatePerTenThousand": 5000,
           "fallbackLevel": 4,
           "zhenYuanCost": 1000,
@@ -3841,11 +3841,11 @@
           "magicAffixIds": [
             2980
           ],
-          "description": "TĂng lực sát thƯƠng"
+          "description": "Tăng lực sát thương"
         },
         {
           "level": 8,
-          "name": "Xung MÔn",
+          "name": "Xung Môn",
           "successRatePerTenThousand": 4000,
           "fallbackLevel": 6,
           "zhenYuanCost": 1000,
@@ -3853,11 +3853,11 @@
           "magicAffixIds": [
             2988
           ],
-          "description": "Bổ sung Đối với kỹ nĂng cÔng kích"
+          "description": "Bổ sung đối với kỹ năng công kích"
         },
         {
           "level": 9,
-          "name": "Trúc TÂn",
+          "name": "Trúc Tân",
           "successRatePerTenThousand": 3900,
           "fallbackLevel": 7,
           "zhenYuanCost": 1000,
@@ -3877,7 +3877,7 @@
           "magicAffixIds": [
             3005
           ],
-          "description": "Trọng Kích tuyệt Đối"
+          "description": "Trọng Kích tuyệt đối"
         },
         {
           "level": 11,
@@ -3889,11 +3889,11 @@
           "magicAffixIds": [
             3014
           ],
-          "description": "Hóa Giải sát thƯƠng"
+          "description": "Hóa Giải sát thương"
         },
         {
           "level": 12,
-          "name": "Thần MÔn",
+          "name": "Thần Môn",
           "successRatePerTenThousand": 3600,
           "fallbackLevel": 10,
           "zhenYuanCost": 1000,
@@ -3901,11 +3901,11 @@
           "magicAffixIds": [
             3022
           ],
-          "description": "Triệt tiÊu hóa giải sát thƯƠng"
+          "description": "Triệt tiêu hóa giải sát thương"
         },
         {
           "level": 13,
-          "name": "Thủy PhÂn",
+          "name": "Thủy Phân",
           "successRatePerTenThousand": 3500,
           "fallbackLevel": 11,
           "zhenYuanCost": 1000,
@@ -3913,7 +3913,7 @@
           "magicAffixIds": [
             2903
           ],
-          "description": "Ngoại cÔng"
+          "description": "Ngoại công"
         },
         {
           "level": 14,
@@ -3925,7 +3925,7 @@
           "magicAffixIds": [
             2911
           ],
-          "description": "Nội cÔng"
+          "description": "Nội công"
         },
         {
           "level": 15,
@@ -3937,7 +3937,7 @@
           "magicAffixIds": [
             2920
           ],
-          "description": "ThÂn pháp"
+          "description": "Thân pháp"
         },
         {
           "level": 16,
@@ -3956,7 +3956,7 @@
     {
       "id": 8,
       "code": "duong-khieu-mach",
-      "name": "DƯƠng KhiÊu Mạch",
+      "name": "Dương Khiêu Mạch",
       "taskVariableId": 4008,
       "acupoints": [
         {
@@ -3969,11 +3969,11 @@
           "magicAffixIds": [
             2913
           ],
-          "description": "ThÂn pháp"
+          "description": "Thân pháp"
         },
         {
           "level": 2,
-          "name": "á MÔn",
+          "name": "á Môn",
           "successRatePerTenThousand": 10000,
           "fallbackLevel": 0,
           "zhenYuanCost": 1600,
@@ -4009,7 +4009,7 @@
         },
         {
           "level": 5,
-          "name": "Não KhÔng",
+          "name": "Não Không",
           "successRatePerTenThousand": 7000,
           "fallbackLevel": 3,
           "zhenYuanCost": 1000,
@@ -4017,7 +4017,7 @@
           "magicAffixIds": [
             2947
           ],
-          "description": "Trị số cƯờng hóa ngũ hành"
+          "description": "Trị số cường hóa ngũ hành"
         },
         {
           "level": 6,
@@ -4029,7 +4029,7 @@
           "magicAffixIds": [
             2955
           ],
-          "description": "Trị số nhƯợc hóa ngũ hành"
+          "description": "Trị số nhược hóa ngũ hành"
         },
         {
           "level": 7,
@@ -4057,7 +4057,7 @@
         },
         {
           "level": 9,
-          "name": "đầu LÂm Khấp",
+          "name": "Đầu Lâm Khấp",
           "successRatePerTenThousand": 3900,
           "fallbackLevel": 7,
           "zhenYuanCost": 1000,
@@ -4065,11 +4065,11 @@
           "magicAffixIds": [
             2981
           ],
-          "description": "TĂng lực sát thƯƠng"
+          "description": "Tăng lực sát thương"
         },
         {
           "level": 10,
-          "name": "DƯƠng Bạch",
+          "name": "Dương Bạch",
           "successRatePerTenThousand": 3800,
           "fallbackLevel": 8,
           "zhenYuanCost": 1000,
@@ -4077,7 +4077,7 @@
           "magicAffixIds": [
             2989
           ],
-          "description": "Bổ sung Đối với kỹ nĂng cÔng kích"
+          "description": "Bổ sung đối với kỹ năng công kích"
         },
         {
           "level": 11,
@@ -4093,7 +4093,7 @@
         },
         {
           "level": 12,
-          "name": "đầu Duy",
+          "name": "Đầu Duy",
           "successRatePerTenThousand": 3600,
           "fallbackLevel": 10,
           "zhenYuanCost": 1000,
@@ -4101,11 +4101,11 @@
           "magicAffixIds": [
             3006
           ],
-          "description": "Trọng Kích tuyệt Đối"
+          "description": "Trọng Kích tuyệt đối"
         },
         {
           "level": 13,
-          "name": "KiÊn Tịnh",
+          "name": "Kiên Tịnh",
           "successRatePerTenThousand": 3500,
           "fallbackLevel": 11,
           "zhenYuanCost": 1000,
@@ -4113,11 +4113,11 @@
           "magicAffixIds": [
             3015
           ],
-          "description": "Hóa Giải sát thƯƠng"
+          "description": "Hóa Giải sát thương"
         },
         {
           "level": 14,
-          "name": "ThiÊn LiÊu",
+          "name": "Thiên Liêu",
           "successRatePerTenThousand": 3400,
           "fallbackLevel": 12,
           "zhenYuanCost": 1000,
@@ -4125,7 +4125,7 @@
           "magicAffixIds": [
             3023
           ],
-          "description": "Triệt tiÊu hóa giải sát thƯƠng"
+          "description": "Triệt tiêu hóa giải sát thương"
         },
         {
           "level": 15,
@@ -4137,11 +4137,11 @@
           "magicAffixIds": [
             2904
           ],
-          "description": "Ngoại cÔng"
+          "description": "Ngoại công"
         },
         {
           "level": 16,
-          "name": "DƯƠng Giao",
+          "name": "Dương Giao",
           "successRatePerTenThousand": 3300,
           "fallbackLevel": 14,
           "zhenYuanCost": 1000,
@@ -4149,7 +4149,7 @@
           "magicAffixIds": [
             2912
           ],
-          "description": "Nội cÔng"
+          "description": "Nội công"
         }
       ]
     }
@@ -4287,15 +4287,15 @@
         "code": "khu-binh-giap",
         "name": "Khu Binh giáp",
         "costCoefficient": 1.4,
-        "description": "Trấn bang chi thạch giúp tĂng cao xác suất thành cÔng khi luyện Đá thuộc tính, chế tạo trang bị tím và trang bị hoàng kim.",
+        "description": "Trấn bang chi thạch giúp tăng cao xác suất thành công khi luyện đá thuộc tính, chế tạo trang bị tím và trang bị hoàng kim.",
         "scriptPath": "\\script\\tong\\workshop\\ws_bingjia.lua"
       },
       {
         "id": 2,
         "code": "khu-thien-cong",
-        "name": "Khu ThiÊn CÔng",
+        "name": "Khu Thiên Công",
         "costCoefficient": 1,
-        "description": "Kỹ nĂng sửa chữa khÔng những giúp giảm chi phí sửa mà còn có thể giúp gia cố trang bị.",
+        "description": "Kỹ năng sửa chữa không những giúp giảm chi phí sửa mà còn có thể giúp gia cố trang bị.",
         "scriptPath": "\\script\\tong\\workshop\\ws_tiangong.lua"
       },
       {
@@ -4303,7 +4303,7 @@
         "code": "khu-mat-na",
         "name": "Khu Mặt nạ",
         "costCoefficient": 1.2,
-        "description": "Mặt nạ phỏng chế theo mặt nạ của Dị Dung Thuật Sỹ, và cũng có thể dùng Điểm cống hiến Để Đổi.",
+        "description": "Mặt nạ phỏng chế theo mặt nạ của Dị Dung Thuật Sỹ, và cũng có thể dùng điểm cống hiến để đổi.",
         "scriptPath": "\\script\\tong\\workshop\\ws_mianju.lua"
       },
       {
@@ -4311,15 +4311,15 @@
         "code": "khu-luyen-tap",
         "name": "Khu Luyện tập",
         "costCoefficient": 1,
-        "description": "Có thể giúp nhÂn ĐÔi kinh nghiệm.",
+        "description": "Có thể giúp nhân đôi kinh nghiệm.",
         "scriptPath": "\\script\\tong\\workshop\\ws_shilian.lua"
       },
       {
         "id": 5,
         "code": "khu-thien-y",
-        "name": "Khu ThiÊn ý",
+        "name": "Khu Thiên ý",
         "costCoefficient": 0.8,
-        "description": "Chế tạo các lệnh bài nhiệm vụ, sau khi sử dụng sẽ ngẫu nhiÊn tiếp nhận các nhiệm vụ.",
+        "description": "Chế tạo các lệnh bài nhiệm vụ, sau khi sử dụng sẽ ngẫu nhiên tiếp nhận các nhiệm vụ.",
         "scriptPath": "\\script\\tong\\workshop\\ws_tianyi.lua"
       },
       {
@@ -4327,15 +4327,15 @@
         "code": "khu-le-vat",
         "name": "Khu Lễ vật",
         "costCoefficient": 1,
-        "description": "PhÂn phát thần bí hồng bao và lễ phẩm cho bang chúng.",
+        "description": "Phân phát thần bí hồng bao và lễ phẩm cho bang chúng.",
         "scriptPath": "\\script\\tong\\workshop\\ws_liwu.lua"
       },
       {
         "id": 7,
         "code": "khu-hoat-dong",
-        "name": "Khu hoạt Động",
+        "name": "Khu hoạt động",
         "costCoefficient": 0.6,
-        "description": "Tổ chức các hoạt Động thú vị cho bang chúng. <enter><color=orange>Hoạt Động chiÊu mộ Đệ tử<enter>Hoạt Động Đánh niÊn thú<color>",
+        "description": "Tổ chức các hoạt động thú vị cho bang chúng. <enter><color=orange>Hoạt động chiêu mộ đệ tử<enter>Hoạt động đánh niên thú<color>",
         "scriptPath": "\\script\\tong\\workshop\\ws_huodong.lua"
       }
     ],
@@ -4350,7 +4350,7 @@
         "cycleWeeks": 4,
         "weeklyMaintenanceCost": 6000,
         "rightLimit": 2,
-        "description": "\"Phụng hoàng ấn là loại Đá hiếm tại chốn thÂm sƠn, dùng Để chế tạo trang bị, có thể giúp nÂng cao xác suất thành cÔng.\""
+        "description": "\"Phụng hoàng ấn là loại đá hiếm tại chốn thâm sơn, dùng để chế tạo trang bị, có thể giúp nâng cao xác suất thành công.\""
       },
       {
         "id": 2,
@@ -4362,31 +4362,31 @@
         "cycleWeeks": 4,
         "weeklyMaintenanceCost": 6000,
         "rightLimit": 2,
-        "description": "\"Một kỹ nghệ tạo tác, có thể giúp tĂng thÊm 40 Điểm Độ bền trÊn trang bị, giúp cho trang bị trở nÊn cứng cáp hƠn.\""
+        "description": "\"Một kỹ nghệ tạo tác, có thể giúp tăng thêm 40 điểm độ bền trên trang bị, giúp cho trang bị trở nên cứng cáp hơn.\""
       },
       {
         "id": 3,
         "code": "vo-song-sat-tran",
-        "name": "VÔ Song Sát Trận",
+        "name": "Vô Song Sát Trận",
         "skillId": 741,
         "maxMembers": 10,
         "maxCountPerMember": 2,
         "cycleWeeks": 4,
         "weeklyMaintenanceCost": 6000,
         "rightLimit": 1,
-        "description": "Kỳ binh trận pháp ghi lại trong Võ Mộc Di ThƯ. Sau khi phát Động có thể khiến cho những thành viÊn bang hội trong phạm vi nhất Định giảm ĐƯợc trị PK."
+        "description": "Kỳ binh trận pháp ghi lại trong Võ Mộc Di Thư. Sau khi phát động có thể khiến cho những thành viên bang hội trong phạm vi nhất định giảm được trị PK."
       },
       {
         "id": 4,
         "code": "dao-chu-tien",
-        "name": "đào Chu Tiền",
+        "name": "Đào Chu Tiền",
         "skillId": 742,
         "maxMembers": 300,
         "maxCountPerMember": 1,
         "cycleWeeks": 4,
         "weeklyMaintenanceCost": 6000,
         "rightLimit": 2,
-        "description": "Sau khi sẽ khiến cho Boss và Thủy tặc Đầu lĩnh trÊn Độ thuyền rớt ấn Sát Giả nhiều hƠn."
+        "description": "Sau khi sẽ khiến cho Boss và Thủy tặc đầu lĩnh trên độ thuyền rớt ấn Sát Giả nhiều hơn."
       },
       {
         "id": 5,
@@ -4398,19 +4398,19 @@
         "cycleWeeks": 4,
         "weeklyMaintenanceCost": 6000,
         "rightLimit": 1,
-        "description": "\"Sau khi nhận ĐƯợc Võ Thần Tứ Phúc, trong vòng 2 giờ sẽ ĐƯợc nhÂn ĐÔi phần thƯởng khi tham gia Tống Kim, nhiệm vụ tín sứ, thách thức thời gian, võ lÂm liÊn Đấu, nhiệm vụ Dã Tẩu, đÊm huy hoàng.\""
+        "description": "\"Sau khi nhận được Võ Thần Tứ Phúc, trong vòng 2 giờ sẽ được nhân đôi phần thưởng khi tham gia Tống Kim, nhiệm vụ tín sứ, thách thức thời gian, võ lâm liên đấu, nhiệm vụ Dã Tẩu, Đêm huy hoàng.\""
       },
       {
         "id": 6,
         "code": "linh-sam-luc",
-        "name": "Linh SÂm Lực",
+        "name": "Linh Sâm Lực",
         "skillId": 744,
         "maxMembers": 2,
         "maxCountPerMember": 2,
         "cycleWeeks": 4,
         "weeklyMaintenanceCost": 6000,
         "rightLimit": 1,
-        "description": "Sau khi nhận ĐƯợc Linh SÂm Lực"
+        "description": "Sau khi nhận được Linh Sâm Lực"
       },
       {
         "id": 7,
@@ -4422,7 +4422,7 @@
         "cycleWeeks": 4,
         "weeklyMaintenanceCost": 6000,
         "rightLimit": 1,
-        "description": "\"Lệnh bài Hoàng Kim, dùng Để gọi ra các võ sỹ thần bí. Sau khi Đánh bại võ sỹ sẽ nhận ĐƯợc bảo tàng mà hắn Đang canh giữ.\""
+        "description": "\"Lệnh bài Hoàng Kim, dùng để gọi ra các võ sỹ thần bí. Sau khi đánh bại võ sỹ sẽ nhận được bảo tàng mà hắn đang canh giữ.\""
       }
     ]
   }

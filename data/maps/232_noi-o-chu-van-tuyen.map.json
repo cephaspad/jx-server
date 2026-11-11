@@ -3,7 +3,7 @@
   "schemaVersion": "1.0.0",
   "id": 232,
   "code": "noi-o-chu-van-tuyen",
-  "name": "NƠi ở Chu VÂn Tuyền",
+  "name": "Nơi ở Chu Vân Tuyền",
   "mapType": "Field",
   "mapRules": {
     "defaultFightMode": 1,
@@ -64,7 +64,7 @@
       "targetMpsX": 62432,
       "targetMpsY": 95648,
       "targetFightMode": 1,
-      "deniedMessage": "Bạn mau chóng Đi xuống núi, phía sau vẫn vang lÊn tiếng chửi mắng của LÔi Quyết: 'Tiểu tử thối! đừng có chạy'!",
+      "deniedMessage": "Bạn mau chóng đi xuống núi, phía sau vẫn vang lên tiếng chửi mắng của Lôi Quyết: 'Tiểu tử thối! Đừng có chạy'!",
       "triggerCells": [
         {
           "regionX": 100,

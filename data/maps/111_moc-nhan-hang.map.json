@@ -3,7 +3,7 @@
   "schemaVersion": "1.0.0",
   "id": 111,
   "code": "moc-nhan-hang",
-  "name": "Mộc NhÂn Hạng",
+  "name": "Mộc Nhân Hạng",
   "mapType": "Field",
   "mapRules": {
     "defaultFightMode": 1,

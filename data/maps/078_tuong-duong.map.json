@@ -3,7 +3,7 @@
   "schemaVersion": "1.0.0",
   "id": 78,
   "code": "tuong-duong",
-  "name": "TƯƠng DƯƠng",
+  "name": "Tương Dương",
   "mapType": "City",
   "worldMapPos": {
     "x": 421,
@@ -3396,7 +3396,7 @@
       "targetMpsY": 101696,
       "targetFightMode": 0,
       "minLevel": 40,
-      "deniedMessage": "Chiến trƯờng Tống Kim gian khổ khốc liệt, ngƯƠi chƯa Đạt Đến cấp 40 hãy về luyện thÊm rồi hãy tính.",
+      "deniedMessage": "Chiến trường Tống Kim gian khổ khốc liệt, ngươi chưa đạt đến cấp 40 hãy về luyện thêm rồi hãy tính.",
       "triggerCells": [
         {
           "regionX": 110,

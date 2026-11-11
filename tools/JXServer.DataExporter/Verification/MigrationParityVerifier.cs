@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text.Json;
 using JXServer.DataExporter.Exporters;
 using JXServer.DataExporter.Legacy;
-using JXServer.GameAssets.Archives;
 using JXServer.GameAssets.WorldMaps;
 
 namespace JXServer.DataExporter.Verification;

@@ -3,7 +3,7 @@
   "schemaVersion": "1.0.0",
   "id": 123,
   "code": "lao-ho-dong",
-  "name": "Lão Hổ Động",
+  "name": "Lão Hổ động",
   "mapType": "Field",
   "mapRules": {
     "defaultFightMode": 1,

@@ -5,7 +5,7 @@
     {
       "id": 1,
       "code": "tu-tuong-dong-quy",
-      "name": "Tứ TƯợng đồng Quy",
+      "name": "Tứ Tượng Đồng Quy",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -155,7 +155,7 @@
     {
       "id": 6,
       "code": "phong-van-dot-khoi",
-      "name": "Phong VÂn đột Khởi",
+      "name": "Phong Vân Đột Khởi",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -215,7 +215,7 @@
     {
       "id": 8,
       "code": "vu-da-le-hoa",
-      "name": "Vũ đả LÊ Hoa",
+      "name": "Vũ Đả Lê Hoa",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -245,7 +245,7 @@
     {
       "id": 9,
       "code": "muc-da-luu-tinh-a",
-      "name": "Mục Dã LƯu Tinh a",
+      "name": "Mục Dã Lưu Tinh a",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -335,7 +335,7 @@
     {
       "id": 12,
       "code": "phu-van-tan-tuyet",
-      "name": "Phù VÂn Tán Tuyết",
+      "name": "Phù Vân Tán Tuyết",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -425,7 +425,7 @@
     {
       "id": 15,
       "code": "tan-loi-chu-15",
-      "name": "Tấn LÔi Chú",
+      "name": "Tấn Lôi Chú",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -455,7 +455,7 @@
     {
       "id": 16,
       "code": "cuong-phong-sau-dien",
-      "name": "Cuồng Phong Sậu điện",
+      "name": "Cuồng Phong Sậu Điện",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -485,7 +485,7 @@
     {
       "id": 17,
       "code": "cuong-loi-chan-dia",
-      "name": "Cuồng LÔi Chấn địa",
+      "name": "Cuồng Lôi Chấn Địa",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -515,7 +515,7 @@
     {
       "id": 18,
       "code": "ngu-loi-chanh-phap",
-      "name": "Ngũ LÔi Chánh Pháp",
+      "name": "Ngũ Lôi Chánh Pháp",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -635,7 +635,7 @@
     {
       "id": 22,
       "code": "khi-tam-phu",
-      "name": "Khí TÂm phù",
+      "name": "Khí Tâm phù",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -665,7 +665,7 @@
     {
       "id": 23,
       "code": "tue-nguyet-vo-tinh-phu",
-      "name": "Tuế Nguyệt VÔ Tình phù",
+      "name": "Tuế Nguyệt Vô Tình phù",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -695,7 +695,7 @@
     {
       "id": 24,
       "code": "no-loi-chi",
-      "name": "Nộ LÔi Chỉ",
+      "name": "Nộ Lôi Chỉ",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -725,7 +725,7 @@
     {
       "id": 25,
       "code": "thuong-hai-minh-nguyet",
-      "name": "ThƯƠng Hải Minh Nguyệt",
+      "name": "Thương Hải Minh Nguyệt",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -755,7 +755,7 @@
     {
       "id": 26,
       "code": "thien-te-tan-loi",
-      "name": "ThiÊn Tế Tấn LÔi",
+      "name": "Thiên Tế Tấn Lôi",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -785,7 +785,7 @@
     {
       "id": 27,
       "code": "huyen-nhat-vo-tuong",
-      "name": "Huyền Nhất VÔ TƯợng",
+      "name": "Huyền Nhất Vô Tượng",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -845,7 +845,7 @@
     {
       "id": 29,
       "code": "vo-nga-vo-kiem",
-      "name": "VÔ Ngã VÔ Kiếm",
+      "name": "Vô Ngã Vô Kiếm",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -875,7 +875,7 @@
     {
       "id": 30,
       "code": "doc-sa-chuong",
-      "name": "độc Sa chƯởng",
+      "name": "Độc Sa chưởng",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -905,7 +905,7 @@
     {
       "id": 31,
       "code": "huyet-dao-doc-sat",
-      "name": "Huyết đao độc Sát",
+      "name": "Huyết Đao Độc Sát",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -935,7 +935,7 @@
     {
       "id": 32,
       "code": "kho-lau-tac-dan",
-      "name": "KhÔ LÂu Tạc đạn",
+      "name": "Khô Lâu Tạc Đạn",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -965,7 +965,7 @@
     {
       "id": 33,
       "code": "cuu-am-bach-cot-trao",
-      "name": "Cửu âm Bạch Cốt Trảo",
+      "name": "Cửu Âm Bạch Cốt Trảo",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -995,7 +995,7 @@
     {
       "id": 34,
       "code": "cap-mo-cong",
-      "name": "Cáp MÔ cÔng",
+      "name": "Cáp Mô công",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -1025,7 +1025,7 @@
     {
       "id": 35,
       "code": "tich-lich-don",
-      "name": "Tích Lịch ĐƠn",
+      "name": "Tích Lịch đơn",
       "moveKind": "parabola",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -1055,7 +1055,7 @@
     {
       "id": 36,
       "code": "thien-la-dia-vong-36",
-      "name": "ThiÊn La địa Võng",
+      "name": "Thiên La Địa Võng",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -1085,7 +1085,7 @@
     {
       "id": 37,
       "code": "truy-tam-tien",
-      "name": "Truy TÂm Tiễn",
+      "name": "Truy Tâm Tiễn",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -1115,7 +1115,7 @@
     {
       "id": 38,
       "code": "man-thien-hoa-vu",
-      "name": "Mạn ThiÊn Hoa Vũ",
+      "name": "Mạn Thiên Hoa Vũ",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -1175,7 +1175,7 @@
     {
       "id": 40,
       "code": "hoa-dia-loi",
-      "name": "Hỏa địa LÔi",
+      "name": "Hỏa Địa Lôi",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -1205,7 +1205,7 @@
     {
       "id": 41,
       "code": "dien-dia-loi",
-      "name": "điện địa LÔi",
+      "name": "Điện Địa Lôi",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -1235,7 +1235,7 @@
     {
       "id": 42,
       "code": "bang-dia-loi",
-      "name": "BĂng địa LÔi",
+      "name": "Băng Địa Lôi",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -1265,7 +1265,7 @@
     {
       "id": 43,
       "code": "doc-dia-loi",
-      "name": "độc địa LÔi",
+      "name": "Độc Địa Lôi",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -1295,7 +1295,7 @@
     {
       "id": 44,
       "code": "dau-thach-van-lo",
-      "name": "đầu Thạch Vấn Lộ",
+      "name": "Đầu Thạch Vấn Lộ",
       "moveKind": "parabola",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -1325,7 +1325,7 @@
     {
       "id": 45,
       "code": "dien-mon-thac-bat",
-      "name": "DiÊn MÔn Thác Bát",
+      "name": "Diên Môn Thác Bát",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -1355,7 +1355,7 @@
     {
       "id": 46,
       "code": "kien-nhan-than-thu",
-      "name": "Kiến NhÂn Thần Thủ",
+      "name": "Kiến Nhân Thần Thủ",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -1385,7 +1385,7 @@
     {
       "id": 47,
       "code": "bong-da-ac-cau",
-      "name": "Bổng đả ác Cẩu",
+      "name": "Bổng Đả ác Cẩu",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -1445,7 +1445,7 @@
     {
       "id": 49,
       "code": "co-moc-don-loi",
-      "name": "CÔ Mộc độn LÔi",
+      "name": "Cô Mộc Độn Lôi",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -1475,7 +1475,7 @@
     {
       "id": 50,
       "code": "bon-luu-dao-hai",
-      "name": "BÔn LƯu đáo Hải",
+      "name": "Bôn Lưu Đáo Hải",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -1505,7 +1505,7 @@
     {
       "id": 51,
       "code": "khue-moc-tinh-chieu",
-      "name": "KhuÊ Mộc Tinh Chiếu",
+      "name": "Khuê Mộc Tinh Chiếu",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -1535,7 +1535,7 @@
     {
       "id": 52,
       "code": "kim-o-anh-tuyet",
-      "name": "Kim ô ánh Tuyết",
+      "name": "Kim Ô ánh Tuyết",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -1595,7 +1595,7 @@
     {
       "id": 54,
       "code": "tan-duong-nhu-huyet",
-      "name": "Tàn DƯƠng NhƯ Huyết",
+      "name": "Tàn Dương Như Huyết",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -1625,7 +1625,7 @@
     {
       "id": 55,
       "code": "thoi-son-dien-hai",
-      "name": "ThÔi sƠn  điền Hải",
+      "name": "Thôi sơn  Điền Hải",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -1655,7 +1655,7 @@
     {
       "id": 56,
       "code": "liet-hoa-tinh-thien",
-      "name": "Liệt Hỏa Tình ThiÊn",
+      "name": "Liệt Hỏa Tình Thiên",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -1685,7 +1685,7 @@
     {
       "id": 57,
       "code": "don-chi-liet-diem",
-      "name": "đƠn Chỉ Liệt Diệm",
+      "name": "Đơn Chỉ Liệt Diệm",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -1715,7 +1715,7 @@
     {
       "id": 58,
       "code": "that-thuong-than-quyen-58",
-      "name": "Thất ThƯƠng Thần Quyền",
+      "name": "Thất Thương Thần Quyền",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -1805,7 +1805,7 @@
     {
       "id": 61,
       "code": "ma-ha-vo-luong",
-      "name": "Ma Ha VÔ LƯợng",
+      "name": "Ma Ha Vô Lượng",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -1835,7 +1835,7 @@
     {
       "id": 62,
       "code": "su-tu-hong-62",
-      "name": "SƯ Tử Hống",
+      "name": "Sư Tử Hống",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -1865,7 +1865,7 @@
     {
       "id": 63,
       "code": "cong-kich-vat-ly-63",
-      "name": "CÔng kích vật lý",
+      "name": "Công kích vật lý",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -1895,7 +1895,7 @@
     {
       "id": 64,
       "code": "cong-kich-vat-ly-64",
-      "name": "CÔng kích vật lý",
+      "name": "Công kích vật lý",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -1925,7 +1925,7 @@
     {
       "id": 65,
       "code": "cong-kich-vat-ly-gan",
-      "name": "CÔng kích vật lý gần",
+      "name": "Công kích vật lý gần",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -1985,7 +1985,7 @@
     {
       "id": 67,
       "code": "thien-la-dia-vong-67",
-      "name": "ThiÊn La địa võng",
+      "name": "Thiên La Địa võng",
       "moveKind": "follow",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -2015,7 +2015,7 @@
     {
       "id": 68,
       "code": "phieu-tuyet-xuyen-van",
-      "name": "PhiÊu Tuyết XuyÊn VÂn",
+      "name": "Phiêu Tuyết Xuyên Vân",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -2045,7 +2045,7 @@
     {
       "id": 69,
       "code": "thau-thien-hoan-nhat",
-      "name": "ThÂu ThiÊn Hoán Nhật",
+      "name": "Thâu Thiên Hoán Nhật",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -2075,7 +2075,7 @@
     {
       "id": 70,
       "code": "ta-luc-da-luc",
-      "name": "Tá Lực đả Lực",
+      "name": "Tá Lực Đả Lực",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -2105,7 +2105,7 @@
     {
       "id": 71,
       "code": "hap-tinh-dai-phap",
-      "name": "Hấp Tinh đại Pháp",
+      "name": "Hấp Tinh Đại Pháp",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -2135,7 +2135,7 @@
     {
       "id": 72,
       "code": "hang-van-quyet",
-      "name": "Hàng VÂn Quyết",
+      "name": "Hàng Vân Quyết",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -2165,7 +2165,7 @@
     {
       "id": 73,
       "code": "kinh-loi-tram",
-      "name": "Kinh LÔi Trảm",
+      "name": "Kinh Lôi Trảm",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -2255,7 +2255,7 @@
     {
       "id": 76,
       "code": "dinh-vi-dong-doi-trong-khu-vuc",
-      "name": "định vị Đồng Đội trong khu vực",
+      "name": "Định vị đồng đội trong khu vực",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -2285,7 +2285,7 @@
     {
       "id": 77,
       "code": "dinh-vi-doi-phuong-trong-khu-vuc",
-      "name": "định vị Đối phƯƠng trong khu vực",
+      "name": "Định vị đối phương trong khu vực",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -2435,7 +2435,7 @@
     {
       "id": 82,
       "code": "that-thuong-than-quyen-82",
-      "name": "Thất ThƯƠng Thần Quyền",
+      "name": "Thất Thương Thần Quyền",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -2465,7 +2465,7 @@
     {
       "id": 83,
       "code": "kiem-phi-kinh-thien",
-      "name": "Kiếm Phi Kinh ThiÊn",
+      "name": "Kiếm Phi Kinh Thiên",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -2495,7 +2495,7 @@
     {
       "id": 84,
       "code": "dien-ba",
-      "name": "điện ba",
+      "name": "Điện ba",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -2525,7 +2525,7 @@
     {
       "id": 85,
       "code": "thien-la-dia-vongphi-dao",
-      "name": "ThiÊn La địa VõngPhi đao",
+      "name": "Thiên La Địa VõngPhi Đao",
       "moveKind": "random",
       "followKind": "missile",
       "collideFollowTarget": false,
@@ -2585,7 +2585,7 @@
     {
       "id": 87,
       "code": "da",
-      "name": "đá",
+      "name": "Đá",
       "moveKind": "parabola",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -2615,7 +2615,7 @@
     {
       "id": 88,
       "code": "long",
-      "name": "LÔng",
+      "name": "Lông",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -2645,7 +2645,7 @@
     {
       "id": 89,
       "code": "1-dum-long",
-      "name": "1 dúm lÔng",
+      "name": "1 dúm lông",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -2675,7 +2675,7 @@
     {
       "id": 90,
       "code": "nuoc-mieng",
-      "name": "NƯớc miếng",
+      "name": "Nước miếng",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -2705,7 +2705,7 @@
     {
       "id": 91,
       "code": "nuoc-doc",
-      "name": "NƯớc Độc",
+      "name": "Nước độc",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -2735,7 +2735,7 @@
     {
       "id": 92,
       "code": "vong-tron-ho-tro-dong-doi-92",
-      "name": "Vòng tròn hỗ trợ Đồng Đội",
+      "name": "Vòng tròn hỗ trợ đồng đội",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -2765,7 +2765,7 @@
     {
       "id": 93,
       "code": "ban-ten",
-      "name": "Bắn tÊn",
+      "name": "Bắn tên",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -2795,7 +2795,7 @@
     {
       "id": 94,
       "code": "vong-tron-gay-sat-thuong",
-      "name": "Vòng tròn gÂy sát thƯƠng",
+      "name": "Vòng tròn gây sát thương",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -2825,7 +2825,7 @@
     {
       "id": 95,
       "code": "nhan-kiem-hop-nhat-11",
-      "name": "NhÂn Kiếm Hợp Nhất 11",
+      "name": "Nhân Kiếm Hợp Nhất 11",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -2855,7 +2855,7 @@
     {
       "id": 96,
       "code": "bao-vu-le-hoa-96",
-      "name": "Bạo Vũ LÊ Hoa",
+      "name": "Bạo Vũ Lê Hoa",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -2885,7 +2885,7 @@
     {
       "id": 97,
       "code": "cong-kich-con-bong",
-      "name": "CÔng kích CÔn bổng",
+      "name": "Công kích Côn bổng",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -2915,7 +2915,7 @@
     {
       "id": 98,
       "code": "cong-kich-song-chuy",
-      "name": "CÔng kích Song chùy",
+      "name": "Công kích Song chùy",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -2945,7 +2945,7 @@
     {
       "id": 99,
       "code": "cong-kich-tay-khong",
-      "name": "CÔng kích tay khÔng",
+      "name": "Công kích tay không",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -2975,7 +2975,7 @@
     {
       "id": 100,
       "code": "song-daocong-kich",
-      "name": "Song ĐaocÔng kích",
+      "name": "Song đaocông kích",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -3005,7 +3005,7 @@
     {
       "id": 101,
       "code": "tu-tuong-dong-quy-trung-tam",
-      "name": "Tứ TƯợng đồng Quy (trung tÂm)",
+      "name": "Tứ Tượng Đồng Quy (trung tâm)",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -3035,7 +3035,7 @@
     {
       "id": 102,
       "code": "ma-ha-vo-luong-npc",
-      "name": "Ma Ha VÔ LƯợng npc",
+      "name": "Ma Ha Vô Lượng npc",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -3095,7 +3095,7 @@
     {
       "id": 104,
       "code": "don-chi-liet-diem-npc",
-      "name": "đƠn Chỉ Liệt Diệm npc",
+      "name": "Đơn Chỉ Liệt Diệm npc",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -3125,7 +3125,7 @@
     {
       "id": 105,
       "code": "thien-la-dia-vong-npc",
-      "name": "ThiÊn la địa võng  npc",
+      "name": "Thiên la Địa võng  npc",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -3155,7 +3155,7 @@
     {
       "id": 106,
       "code": "tieu-ly-phi-dao-106",
-      "name": "Tiểu Lý Phi đao",
+      "name": "Tiểu Lý Phi Đao",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -3185,7 +3185,7 @@
     {
       "id": 107,
       "code": "tieu-ly-phi-dao-107",
-      "name": "Tiểu Lý Phi đao",
+      "name": "Tiểu Lý Phi Đao",
       "moveKind": "line64",
       "followKind": "npc",
       "collideFollowTarget": true,
@@ -3245,7 +3245,7 @@
     {
       "id": 109,
       "code": "su-tu-hong-109",
-      "name": "SƯ Tử Hống",
+      "name": "Sư Tử Hống",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -3305,7 +3305,7 @@
     {
       "id": 111,
       "code": "bang-tam-trai-anh",
-      "name": "BĂng TÂm Trái ảnh",
+      "name": "Băng Tâm Trái ảnh",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -3335,7 +3335,7 @@
     {
       "id": 112,
       "code": "dap-tuyet-vo-ngan",
-      "name": "đạp Tuyết VÔ NgÂn",
+      "name": "Đạp Tuyết Vô Ngân",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -3395,7 +3395,7 @@
     {
       "id": 114,
       "code": "hoat-bat-luu-thu",
-      "name": "Hoạt Bất LƯu Thủ",
+      "name": "Hoạt Bất Lưu Thủ",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -3425,7 +3425,7 @@
     {
       "id": 115,
       "code": "thanh-am-phan-xuong",
-      "name": "Thanh âm Phạn XƯớng",
+      "name": "Thanh Âm Phạn Xướng",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -3455,7 +3455,7 @@
     {
       "id": 116,
       "code": "doat-hon-tieu",
-      "name": "đoạt Hồn TiÊu",
+      "name": "Đoạt Hồn Tiêu",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -3695,7 +3695,7 @@
     {
       "id": 124,
       "code": "hoa-hong-tren-mat-dat",
-      "name": "Hoa Hồng trÊn mặt Đất",
+      "name": "Hoa Hồng trên mặt đất",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -3725,7 +3725,7 @@
     {
       "id": 125,
       "code": "vong-tron-ho-tro-dong-doi-125",
-      "name": "Vòng tròn hỗ trợ Đồng Đội",
+      "name": "Vòng tròn hỗ trợ đồng đội",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -3755,7 +3755,7 @@
     {
       "id": 126,
       "code": "bao-vu-le-hoa-126",
-      "name": "Bạo Vũ LÊ Hoa",
+      "name": "Bạo Vũ Lê Hoa",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -3785,7 +3785,7 @@
     {
       "id": 127,
       "code": "doc-thich-cot-127",
-      "name": "độc Thích Cốt",
+      "name": "Độc Thích Cốt",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -3815,7 +3815,7 @@
     {
       "id": 128,
       "code": "doc-thich-cot-128",
-      "name": "độc Thích Cốt",
+      "name": "Độc Thích Cốt",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -3845,7 +3845,7 @@
     {
       "id": 129,
       "code": "dau-thach-dan-vat-ly",
-      "name": "đầu Thạch Đan (Vật lý)",
+      "name": "Đầu Thạch đan (Vật lý)",
       "moveKind": "parabola",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -3875,7 +3875,7 @@
     {
       "id": 130,
       "code": "dan-cong-thanh",
-      "name": "đạn cÔng thành",
+      "name": "Đạn công thành",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -3905,7 +3905,7 @@
     {
       "id": 131,
       "code": "dau-thach-dan-hoa",
-      "name": "đầu Thạch Đan (Hỏa)",
+      "name": "Đầu Thạch đan (Hỏa)",
       "moveKind": "parabola",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -3935,7 +3935,7 @@
     {
       "id": 132,
       "code": "dau-thach-dan-bang",
-      "name": "đầu Thạch Đan (BĂng)",
+      "name": "Đầu Thạch đan (Băng)",
       "moveKind": "parabola",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -3965,7 +3965,7 @@
     {
       "id": 133,
       "code": "dau-thach-dan-doc",
-      "name": "đầu Thạch Đan (độc )",
+      "name": "Đầu Thạch đan (Độc )",
       "moveKind": "parabola",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -4055,7 +4055,7 @@
     {
       "id": 136,
       "code": "vo-tuong-tram",
-      "name": "VÔ TƯớng Trảm",
+      "name": "Vô Tướng Trảm",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -4085,7 +4085,7 @@
     {
       "id": 137,
       "code": "vong-tron-ho-tro-dong-doi-137",
-      "name": "Vòng tròn hỗ trợ Đồng Đội",
+      "name": "Vòng tròn hỗ trợ đồng đội",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -4115,7 +4115,7 @@
     {
       "id": 138,
       "code": "pha-thien-tram",
-      "name": "Phá ThiÊn Trảm",
+      "name": "Phá Thiên Trảm",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -4265,7 +4265,7 @@
     {
       "id": 143,
       "code": "tam-nga-te-tuyet-than",
-      "name": "Tam Nga Tề Tuyết #ThÂn",
+      "name": "Tam Nga Tề Tuyết #Thân",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -4295,7 +4295,7 @@
     {
       "id": 144,
       "code": "kim-dinh-phat-quang",
-      "name": "Kim đỉnh Phật Quang",
+      "name": "Kim Đỉnh Phật Quang",
       "moveKind": "follow",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -4325,7 +4325,7 @@
     {
       "id": 145,
       "code": "thien-phat-thien-diep",
-      "name": "ThiÊn Phật ThiÊn Diệp",
+      "name": "Thiên Phật Thiên Diệp",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -4355,7 +4355,7 @@
     {
       "id": 146,
       "code": "bang-tung-vo-anh",
-      "name": "BĂng Tung VÔ ảnh",
+      "name": "Băng Tung Vô ảnh",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -4385,7 +4385,7 @@
     {
       "id": 147,
       "code": "bang-tam-tien-tu",
-      "name": "BĂng TÂm TiÊn Tử",
+      "name": "Băng Tâm Tiên Tử",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -4415,7 +4415,7 @@
     {
       "id": 148,
       "code": "phong-tuyet-bang-thien",
-      "name": "Phong Tuyết BĂng ThiÊn",
+      "name": "Phong Tuyết Băng Thiên",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -4475,7 +4475,7 @@
     {
       "id": 150,
       "code": "ngan-dao-xa-nguyet",
-      "name": "NgÂn đao Xạ Nguyệt",
+      "name": "Ngân Đao Xạ Nguyệt",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -4505,7 +4505,7 @@
     {
       "id": 151,
       "code": "tan-hoa-tieu",
-      "name": "Tán Hoa TiÊu",
+      "name": "Tán Hoa Tiêu",
       "moveKind": "custom",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -4565,7 +4565,7 @@
     {
       "id": 153,
       "code": "xuyen-tam-thich-153",
-      "name": "XuyÊn TÂm Thích",
+      "name": "Xuyên Tâm Thích",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -4595,7 +4595,7 @@
     {
       "id": 154,
       "code": "xuyen-tam-thich-154",
-      "name": "XuyÊn TÂm Thích",
+      "name": "Xuyên Tâm Thích",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -4625,7 +4625,7 @@
     {
       "id": 155,
       "code": "han-bang-thich-155",
-      "name": "Hàn BĂng Thích",
+      "name": "Hàn Băng Thích",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -4655,7 +4655,7 @@
     {
       "id": 156,
       "code": "han-bang-thich-156",
-      "name": "Hàn BĂng Thích",
+      "name": "Hàn Băng Thích",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -4685,7 +4685,7 @@
     {
       "id": 157,
       "code": "dia-diem-hoa-157",
-      "name": "địa Diệm Hỏa",
+      "name": "Địa Diệm Hỏa",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -4715,7 +4715,7 @@
     {
       "id": 158,
       "code": "dia-diem-hoa-158",
-      "name": "địa Diệm Hỏa",
+      "name": "Địa Diệm Hỏa",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -4745,7 +4745,7 @@
     {
       "id": 159,
       "code": "loi-kich-thuat-159",
-      "name": "LÔi Kích Thuật",
+      "name": "Lôi Kích Thuật",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -4775,7 +4775,7 @@
     {
       "id": 160,
       "code": "loi-kich-thuat-160",
-      "name": "LÔi Kích Thuật",
+      "name": "Lôi Kích Thuật",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -4865,7 +4865,7 @@
     {
       "id": 163,
       "code": "am-phong-thuc-cot",
-      "name": "âm Phong Thực Cốt",
+      "name": "Âm Phong Thực Cốt",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -4895,7 +4895,7 @@
     {
       "id": 164,
       "code": "thien-cuong-doc-thu",
-      "name": "ThiÊn CƯƠng độc Thủ",
+      "name": "Thiên Cương Độc Thủ",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -4925,7 +4925,7 @@
     {
       "id": 165,
       "code": "huyen-am-tram",
-      "name": "Huyền âm Trảm",
+      "name": "Huyền Âm Trảm",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -4955,7 +4955,7 @@
     {
       "id": 166,
       "code": "phi-long-tai-thien-166",
-      "name": "Phi Long Tại ThiÊn",
+      "name": "Phi Long Tại Thiên",
       "moveKind": "follow",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -4985,7 +4985,7 @@
     {
       "id": 167,
       "code": "long-chien-u-da",
-      "name": "Long Chiến ư Dã",
+      "name": "Long Chiến Ư Dã",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -5015,7 +5015,7 @@
     {
       "id": 168,
       "code": "thien-ha-vo-cau",
-      "name": "ThiÊn Hạ VÔ Cẩu",
+      "name": "Thiên Hạ Vô Cẩu",
       "moveKind": "follow",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -5045,7 +5045,7 @@
     {
       "id": 169,
       "code": "van-long-kich-169",
-      "name": "VÂn Long Kích",
+      "name": "Vân Long Kích",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -5105,7 +5105,7 @@
     {
       "id": 171,
       "code": "thien-ngoai-luu-tinh",
-      "name": "ThiÊn Ngoại LƯu Tinh",
+      "name": "Thiên Ngoại Lưu Tinh",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -5135,7 +5135,7 @@
     {
       "id": 172,
       "code": "thien-dia-vo-cuc-172",
-      "name": "ThiÊn địa VÔ Cực",
+      "name": "Thiên Địa Vô Cực",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -5165,7 +5165,7 @@
     {
       "id": 173,
       "code": "thien-dia-vo-cuc-173",
-      "name": "ThiÊn địa VÔ Cực",
+      "name": "Thiên Địa Vô Cực",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -5195,7 +5195,7 @@
     {
       "id": 174,
       "code": "thien-dia-vo-cuc-174",
-      "name": "ThiÊn địa VÔ Cực",
+      "name": "Thiên Địa Vô Cực",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -5225,7 +5225,7 @@
     {
       "id": 175,
       "code": "nhan-kiem-hop-nhat-175",
-      "name": "NhÂn Kiếm Hợp Nhất",
+      "name": "Nhân Kiếm Hợp Nhất",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -5285,7 +5285,7 @@
     {
       "id": 177,
       "code": "nhan-kiem-hop-nhat-177",
-      "name": "NhÂn Kiếm Hợp Nhất",
+      "name": "Nhân Kiếm Hợp Nhất",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -5315,7 +5315,7 @@
     {
       "id": 178,
       "code": "ngao-tuyet-tieu-phong",
-      "name": "Ngạo Tuyết TiÊu Phong",
+      "name": "Ngạo Tuyết Tiêu Phong",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -5345,7 +5345,7 @@
     {
       "id": 179,
       "code": "khieu-phong-tam-lien-kich",
-      "name": "Khiếu Phong Tam LiÊn Kích",
+      "name": "Khiếu Phong Tam Liên Kích",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -5405,7 +5405,7 @@
     {
       "id": 181,
       "code": "loi-dong-cuu-thien",
-      "name": "LÔi Động Cửu ThiÊn",
+      "name": "Lôi động Cửu Thiên",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -5435,7 +5435,7 @@
     {
       "id": 182,
       "code": "thien-dia-vo-cuc-no-loi-chi",
-      "name": "ThiÊn địa VÔ Cực Nộ LÔi Chỉ",
+      "name": "Thiên Địa Vô Cực Nộ Lôi Chỉ",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -5465,7 +5465,7 @@
     {
       "id": 183,
       "code": "minh-nguyet-vo-tam",
-      "name": "Minh Nguyệt VÔ TÂm",
+      "name": "Minh Nguyệt Vô Tâm",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -5495,7 +5495,7 @@
     {
       "id": 184,
       "code": "van-long-kich-184",
-      "name": "VÂn Long Kích",
+      "name": "Vân Long Kích",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -5525,7 +5525,7 @@
     {
       "id": 185,
       "code": "ma-viem-tai-thien",
-      "name": "Ma ViÊm Tại ThiÊn",
+      "name": "Ma Viêm Tại Thiên",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -5555,7 +5555,7 @@
     {
       "id": 186,
       "code": "phong-suong-toai-anh",
-      "name": "Phong SƯƠng Toái ảnh",
+      "name": "Phong Sương Toái ảnh",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -5585,7 +5585,7 @@
     {
       "id": 187,
       "code": "bang-tam-ngoc-lang",
-      "name": "BĂng TÂm Ngọc LĂng",
+      "name": "Băng Tâm Ngọc Lăng",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -5615,7 +5615,7 @@
     {
       "id": 188,
       "code": "bang-tam-tuyet-lien",
-      "name": "BĂng TÂm Tuyết LiÊn",
+      "name": "Băng Tâm Tuyết Liên",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -5675,7 +5675,7 @@
     {
       "id": 190,
       "code": "bach-doc-xuyen-tam",
-      "name": "Bách độc XuyÊn TÂm",
+      "name": "Bách Độc Xuyên Tâm",
       "moveKind": "circle",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -5705,7 +5705,7 @@
     {
       "id": 191,
       "code": "thoi-song-vong-nguyet-191",
-      "name": "ThÔi Song Vọng Nguyệt",
+      "name": "Thôi Song Vọng Nguyệt",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -5765,7 +5765,7 @@
     {
       "id": 193,
       "code": "binh-dia-ham-loi",
-      "name": "Bình địa Hám LÔi",
+      "name": "Bình Địa Hám Lôi",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -5795,7 +5795,7 @@
     {
       "id": 194,
       "code": "truy-phong-doc-cat",
-      "name": "Truy Phong độc Cát",
+      "name": "Truy Phong Độc Cát",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -5825,7 +5825,7 @@
     {
       "id": 195,
       "code": "tiem-long-tai-uyen",
-      "name": "Tiềm Long Tại UyÊn",
+      "name": "Tiềm Long Tại Uyên",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -5855,7 +5855,7 @@
     {
       "id": 196,
       "code": "phong-quyen-tan-tuyet-anh-dong",
-      "name": "Phong Quyển Tàn Tuyết (ảnh Động)",
+      "name": "Phong Quyển Tàn Tuyết (ảnh động)",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -5885,7 +5885,7 @@
     {
       "id": 197,
       "code": "tan-loi-chu-197",
-      "name": "Tấn LÔi Chú",
+      "name": "Tấn Lôi Chú",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -5915,7 +5915,7 @@
     {
       "id": 198,
       "code": "npc-danh-xa-kim-198",
-      "name": "NPC Đánh xa (Kim)",
+      "name": "NPC đánh xa (Kim)",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -5945,7 +5945,7 @@
     {
       "id": 199,
       "code": "npc-danh-xa-kim-199",
-      "name": "NPC Đánh xa (Kim)",
+      "name": "NPC đánh xa (Kim)",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -5975,7 +5975,7 @@
     {
       "id": 200,
       "code": "npc-danh-xa-thuy",
-      "name": "NPC Đánh xa (thủy)",
+      "name": "NPC đánh xa (thủy)",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -6005,7 +6005,7 @@
     {
       "id": 201,
       "code": "npc-danh-xa-hoa",
-      "name": "NPC Đánh xa (hỏa)",
+      "name": "NPC đánh xa (hỏa)",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -6035,7 +6035,7 @@
     {
       "id": 202,
       "code": "npc-danh-xa-tho",
-      "name": "NPC Đánh xa (thổ)",
+      "name": "NPC đánh xa (thổ)",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -6065,7 +6065,7 @@
     {
       "id": 203,
       "code": "npc-chien-dau",
-      "name": "npc chiến Đấu",
+      "name": "npc chiến đấu",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -6095,7 +6095,7 @@
     {
       "id": 204,
       "code": "doc-thich-cot-204",
-      "name": "độc Thích Cốt",
+      "name": "Độc Thích Cốt",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -6125,7 +6125,7 @@
     {
       "id": 205,
       "code": "hon-me-toan-bo",
-      "name": "HÔn mÊ toàn bộ",
+      "name": "Hôn mê toàn bộ",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -6155,7 +6155,7 @@
     {
       "id": 206,
       "code": "dong-bang-toan-bo",
-      "name": "Đóng bĂng toàn bộ",
+      "name": "đóng băng toàn bộ",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -6185,7 +6185,7 @@
     {
       "id": 207,
       "code": "trung-doc-toan-bo",
-      "name": "trúng Độc toàn bộ",
+      "name": "trúng độc toàn bộ",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -6245,7 +6245,7 @@
     {
       "id": 209,
       "code": "ngan-cau-thiet-hoach",
-      "name": "NgÂn CÂu Thiết Hoạch",
+      "name": "Ngân Câu Thiết Hoạch",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -6275,7 +6275,7 @@
     {
       "id": 210,
       "code": "hai-thien-nhat-tuyen",
-      "name": "Hải ThiÊn Nhất Tuyến",
+      "name": "Hải Thiên Nhất Tuyến",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -6305,7 +6305,7 @@
     {
       "id": 211,
       "code": "pha-khong-tram-anh",
-      "name": "Phá KhÔng Trảm ảnh",
+      "name": "Phá Không Trảm ảnh",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -6395,7 +6395,7 @@
     {
       "id": 214,
       "code": "thien-thu-van-doc",
-      "name": "ThiÊn Thù Vạn độc",
+      "name": "Thiên Thù Vạn Độc",
       "moveKind": "custom",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -6455,7 +6455,7 @@
     {
       "id": 216,
       "code": "co-yen-truc-van",
-      "name": "CÔ YÊn Trục VÂn",
+      "name": "Cô Yên Trục Vân",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -6515,7 +6515,7 @@
     {
       "id": 218,
       "code": "van-lieu-phieu-phong-218",
-      "name": "Vạn Liễu PhiÊu Phong",
+      "name": "Vạn Liễu Phiêu Phong",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -6575,7 +6575,7 @@
     {
       "id": 220,
       "code": "suong-da-tien-tung-220",
-      "name": "SƯƠng Dã TiÊn Tung",
+      "name": "Sương Dã Tiên Tung",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -6605,7 +6605,7 @@
     {
       "id": 221,
       "code": "viem-long-chi-bao",
-      "name": "ViÊm Long Chi Bào",
+      "name": "Viêm Long Chi Bào",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -6635,7 +6635,7 @@
     {
       "id": 222,
       "code": "trieu-duong-liet-diem",
-      "name": "Triều DƯƠng Liệt Diệm",
+      "name": "Triều Dương Liệt Diệm",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -6665,7 +6665,7 @@
     {
       "id": 223,
       "code": "nhu-nhat-trung-thien",
-      "name": "NhƯ Nhật Trung ThiÊn",
+      "name": "Như Nhật Trung Thiên",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -6695,7 +6695,7 @@
     {
       "id": 224,
       "code": "xi-khong-hoa-vu",
-      "name": "Xí KhÔng Hỏa Vũ",
+      "name": "Xí Không Hỏa Vũ",
       "moveKind": "follow",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -6725,7 +6725,7 @@
     {
       "id": 225,
       "code": "hon-nguyen-can-khon",
-      "name": "Hỗn NguyÊn Càn KhÔn",
+      "name": "Hỗn Nguyên Càn Khôn",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -6755,7 +6755,7 @@
     {
       "id": 226,
       "code": "truong-ha-lac-nhat",
-      "name": "TrƯờng Hà Lạc Nhật",
+      "name": "Trường Hà Lạc Nhật",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -6785,7 +6785,7 @@
     {
       "id": 227,
       "code": "tat-phong-tan-loi-227",
-      "name": "Tật Phong Tấn LÔi",
+      "name": "Tật Phong Tấn Lôi",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -6815,7 +6815,7 @@
     {
       "id": 228,
       "code": "vo-anh-kiem-quyet",
-      "name": "VÔ ảnh Kiếm Quyết",
+      "name": "Vô ảnh Kiếm Quyết",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -6845,7 +6845,7 @@
     {
       "id": 229,
       "code": "hoa-khi-diep-vu",
-      "name": "Hoa Khí điệp Vũ",
+      "name": "Hoa Khí Điệp Vũ",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -6875,7 +6875,7 @@
     {
       "id": 230,
       "code": "luu-quang-phi-vu",
-      "name": "LƯu Quang Phi Vũ",
+      "name": "Lưu Quang Phi Vũ",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -6905,7 +6905,7 @@
     {
       "id": 231,
       "code": "hoan-bi-chi-than",
-      "name": "Hoàn Bỉ Chi ThÂn",
+      "name": "Hoàn Bỉ Chi Thân",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -6935,7 +6935,7 @@
     {
       "id": 232,
       "code": "dao-hanh-nghich-thi",
-      "name": "đảo Hành Nghịch Thi",
+      "name": "Đảo Hành Nghịch Thi",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -6965,7 +6965,7 @@
     {
       "id": 233,
       "code": "dong-hanh-chu-thuat-hoa",
-      "name": "đồng hành Chú thuật Hỏa",
+      "name": "Đồng hành Chú thuật Hỏa",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -6995,7 +6995,7 @@
     {
       "id": 234,
       "code": "dong-hanh-chu-thuat-thuy",
-      "name": "đồng hành Chú thuật Thủy",
+      "name": "Đồng hành Chú thuật Thủy",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -7025,7 +7025,7 @@
     {
       "id": 235,
       "code": "dong-hanh-chu-thuat-tho",
-      "name": "đồng hành Chú thuật Thổ",
+      "name": "Đồng hành Chú thuật Thổ",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -7085,7 +7085,7 @@
     {
       "id": 237,
       "code": "nuu-chuyen-can-khon",
-      "name": "Nữu Chuyển Càn KhÔn",
+      "name": "Nữu Chuyển Càn Khôn",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -7115,7 +7115,7 @@
     {
       "id": 238,
       "code": "van-lieu-phieu-phong-238",
-      "name": "Vạn Liễu PhiÊu Phong",
+      "name": "Vạn Liễu Phiêu Phong",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -7145,7 +7145,7 @@
     {
       "id": 239,
       "code": "suong-da-tien-tung-239",
-      "name": "SƯƠng Dã TiÊn Tung",
+      "name": "Sương Dã Tiên Tung",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -7175,7 +7175,7 @@
     {
       "id": 240,
       "code": "nam-minh-tam-doan-kich",
-      "name": "Nam Minh Tam đoạn Kích",
+      "name": "Nam Minh Tam Đoạn Kích",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -7205,7 +7205,7 @@
     {
       "id": 241,
       "code": "tat-phong-tan-loi-241",
-      "name": "Tật Phong Tấn LÔi",
+      "name": "Tật Phong Tấn Lôi",
       "moveKind": "custom",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -7235,7 +7235,7 @@
     {
       "id": 242,
       "code": "dong-hanh-chu-thuat-kim",
-      "name": "đồng hành Chú thuật Kim",
+      "name": "Đồng hành Chú thuật Kim",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -7265,7 +7265,7 @@
     {
       "id": 243,
       "code": "dong-hanh-chu-thuat-moc",
-      "name": "đồng hành Chú thuật Mộc",
+      "name": "Đồng hành Chú thuật Mộc",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -7565,7 +7565,7 @@
     {
       "id": 253,
       "code": "hoa-hong-tren-dat",
-      "name": "Hoa hồng trÊn Đất",
+      "name": "Hoa hồng trên đất",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -7745,7 +7745,7 @@
     {
       "id": 259,
       "code": "hoa-tuyet-tren-dat",
-      "name": "Hoa tuyết trÊn Đất",
+      "name": "Hoa tuyết trên đất",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -7805,7 +7805,7 @@
     {
       "id": 261,
       "code": "ben-trai",
-      "name": "bÊn trái",
+      "name": "bên trái",
       "moveKind": "helix",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -7835,7 +7835,7 @@
     {
       "id": 262,
       "code": "ben-phai",
-      "name": "bÊn phải",
+      "name": "bên phải",
       "moveKind": "helix",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -7865,7 +7865,7 @@
     {
       "id": 263,
       "code": "hoa-hong-roi-rung",
-      "name": "Hoa hồng rƠi rụng",
+      "name": "Hoa hồng rơi rụng",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -7895,7 +7895,7 @@
     {
       "id": 264,
       "code": "hoa-hong-xanh-roi-rung",
-      "name": "Hoa hồng xanh rƠi rụng",
+      "name": "Hoa hồng xanh rơi rụng",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -7925,7 +7925,7 @@
     {
       "id": 265,
       "code": "hoa-hong-do-roi-rung-265",
-      "name": "Hoa hồng Đỏ rƠi rụng",
+      "name": "Hoa hồng đỏ rơi rụng",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -7955,7 +7955,7 @@
     {
       "id": 266,
       "code": "hoa-hong-do-roi-rung-266",
-      "name": "Hoa hồng Đỏ rƠi rụng",
+      "name": "Hoa hồng đỏ rơi rụng",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -8045,7 +8045,7 @@
     {
       "id": 269,
       "code": "phao-trung-thien",
-      "name": "Pháo Trung ThiÊn",
+      "name": "Pháo Trung Thiên",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -8105,7 +8105,7 @@
     {
       "id": 271,
       "code": "vat-pham-trong-nhung-ngay-xuan",
-      "name": "Vật phẩm trong những ngày xuÂn",
+      "name": "Vật phẩm trong những ngày xuân",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -8135,7 +8135,7 @@
     {
       "id": 272,
       "code": "nem-trung-do",
-      "name": "Ném trùng Đỏ",
+      "name": "Ném trùng đỏ",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -8165,7 +8165,7 @@
     {
       "id": 273,
       "code": "khu-vuc-doi-phuong",
-      "name": "Khu vực Đối phƯƠng",
+      "name": "Khu vực đối phương",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -8195,7 +8195,7 @@
     {
       "id": 274,
       "code": "khu-vuc-dong-doi",
-      "name": "Khu vực Đồng Đội",
+      "name": "Khu vực đồng đội",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -8225,7 +8225,7 @@
     {
       "id": 275,
       "code": "mot-vien",
-      "name": "một viÊn",
+      "name": "một viên",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -8255,7 +8255,7 @@
     {
       "id": 276,
       "code": "ky-nang-phu-su-tu-hong",
-      "name": "Kỹ nĂng phụ - SƯ Tử Hống",
+      "name": "Kỹ năng phụ - Sư Tử Hống",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -8495,7 +8495,7 @@
     {
       "id": 284,
       "code": "doan-hon-thich",
-      "name": "đoạn Hồn Thích",
+      "name": "Đoạn Hồn Thích",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -8675,7 +8675,7 @@
     {
       "id": 290,
       "code": "thuc-phuoc-chu",
-      "name": "Thúc PhƯợc Chú",
+      "name": "Thúc Phược Chú",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -8705,7 +8705,7 @@
     {
       "id": 291,
       "code": "ky-nang-xuan-nguu",
-      "name": "Kỹ nĂng XuÂn NgƯu",
+      "name": "Kỹ năng Xuân Ngưu",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -8765,7 +8765,7 @@
     {
       "id": 293,
       "code": "dai-xuan-nguu-tat-sat-ky",
-      "name": "đại XuÂn NgƯu Tất Sát Kỹ",
+      "name": "Đại Xuân Ngưu Tất Sát Kỹ",
       "moveKind": "helix",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -8825,7 +8825,7 @@
     {
       "id": 295,
       "code": "thai-nguu-tat-sat-ky",
-      "name": "Thái NgƯu Tất Sát Kỹ",
+      "name": "Thái Ngưu Tất Sát Kỹ",
       "moveKind": "circle",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -9515,7 +9515,7 @@
     {
       "id": 318,
       "code": "diet-toi-do-sanh",
-      "name": "Diệt Tội độ Sanh",
+      "name": "Diệt Tội Độ Sanh",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -9545,7 +9545,7 @@
     {
       "id": 319,
       "code": "van-de-quy-nhat",
-      "name": "Vạn đế Quy Nhất",
+      "name": "Vạn Đế Quy Nhất",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -9635,7 +9635,7 @@
     {
       "id": 322,
       "code": "ba-vuong-tam-kim",
-      "name": "Bá VƯƠng Tạm Kim",
+      "name": "Bá Vương Tạm Kim",
       "moveKind": "helix",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -9665,7 +9665,7 @@
     {
       "id": 323,
       "code": "luu-phong-hoi-tuyet",
-      "name": "LƯu Phong Hồi Tuyết",
+      "name": "Lưu Phong Hồi Tuyết",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -9695,7 +9695,7 @@
     {
       "id": 324,
       "code": "tu-vi-bang-hoa",
-      "name": "Tử Vi BĂng Hoa",
+      "name": "Tử Vi Băng Hoa",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -9755,7 +9755,7 @@
     {
       "id": 326,
       "code": "bang-tuoc-loan-tuyet",
-      "name": "BĂng TƯớc Loạn Tuyết",
+      "name": "Băng Tước Loạn Tuyết",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -9815,7 +9815,7 @@
     {
       "id": 328,
       "code": "hinh-tieu-cot-lap",
-      "name": "Hình TiÊu Cốt Lập",
+      "name": "Hình Tiêu Cốt Lập",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -9875,7 +9875,7 @@
     {
       "id": 330,
       "code": "hao-hung-tram-dia-liet",
-      "name": "Hào Hùng Trảm địa Liệt",
+      "name": "Hào Hùng Trảm Địa Liệt",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -9905,7 +9905,7 @@
     {
       "id": 331,
       "code": "truy-tam-toa-menh",
-      "name": "Truy TÂm Tỏa Mệnh",
+      "name": "Truy Tâm Tỏa Mệnh",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -9935,7 +9935,7 @@
     {
       "id": 332,
       "code": "tan-hoa-thien-nu",
-      "name": "Tản Hoa ThiÊn Nữ",
+      "name": "Tản Hoa Thiên Nữ",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -9965,7 +9965,7 @@
     {
       "id": 333,
       "code": "can-khon-nhat-trich",
-      "name": "Càn KhÔn Nhất Trịch",
+      "name": "Càn Khôn Nhất Trịch",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -10115,7 +10115,7 @@
     {
       "id": 338,
       "code": "tat-hoa-lieu-nguyen",
-      "name": "Tật Hỏa Liệu NguyÊn",
+      "name": "Tật Hỏa Liệu Nguyên",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -10265,7 +10265,7 @@
     {
       "id": 343,
       "code": "loi-dien-cuu-khieu",
-      "name": "LÔi điện Cửu Khiếu",
+      "name": "Lôi Điện Cửu Khiếu",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -11645,7 +11645,7 @@
     {
       "id": 389,
       "code": "vong-tron-ho-tro-dong-doi-389",
-      "name": "Vòng tròn hỗ trợ Đồng Đội",
+      "name": "Vòng tròn hỗ trợ đồng đội",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -11705,7 +11705,7 @@
     {
       "id": 391,
       "code": "han-bang-thich-391",
-      "name": "Hàn BĂng Thích",
+      "name": "Hàn Băng Thích",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -11735,7 +11735,7 @@
     {
       "id": 392,
       "code": "loi-kich-thuat-392",
-      "name": "LÔi Kích Thuật",
+      "name": "Lôi Kích Thuật",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -11765,7 +11765,7 @@
     {
       "id": 393,
       "code": "dia-diem-hoa-393",
-      "name": "địa Diệm Hỏa",
+      "name": "Địa Diệm Hỏa",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -11825,7 +11825,7 @@
     {
       "id": 395,
       "code": "trang-suc-dia-loi-bao-tac",
-      "name": "Trang Sức địa LÔi Bạo Tạc",
+      "name": "Trang Sức Địa Lôi Bạo Tạc",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -12365,7 +12365,7 @@
     {
       "id": 413,
       "code": "kim-nhan-hoanh-khong",
-      "name": "Kim Nhạn Hoành KhÔng",
+      "name": "Kim Nhạn Hoành Không",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -12395,7 +12395,7 @@
     {
       "id": 414,
       "code": "thien-than-dao-huyen",
-      "name": "ThiÊn ThÂn đảo Huyền",
+      "name": "Thiên Thân Đảo Huyền",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -12515,7 +12515,7 @@
     {
       "id": 418,
       "code": "doat-menh-lien-hoan-tam-tien-kiem",
-      "name": "đoạt Mệnh LiÊn Hoàn Tam TiÊn Kiếm",
+      "name": "Đoạt Mệnh Liên Hoàn Tam Tiên Kiếm",
       "moveKind": "follow",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -12545,7 +12545,7 @@
     {
       "id": 419,
       "code": "kiem-khi-vo-cap",
-      "name": "Kiếm Khí VÔ Cấp",
+      "name": "Kiếm Khí Vô Cấp",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -12665,7 +12665,7 @@
     {
       "id": 423,
       "code": "ma-van-kiem-khi",
-      "name": "Ma VÂn Kiếm Khí",
+      "name": "Ma Vân Kiếm Khí",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -12785,7 +12785,7 @@
     {
       "id": 427,
       "code": "thanh-van-tong-sang",
-      "name": "Thanh VÂn Tống Sảng",
+      "name": "Thanh Vân Tống Sảng",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -12935,7 +12935,7 @@
     {
       "id": 432,
       "code": "boss-ma-ha-vo-luong",
-      "name": "Boss Ma Ha VÔ LƯợng",
+      "name": "Boss Ma Ha Vô Lượng",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -13085,7 +13085,7 @@
     {
       "id": 437,
       "code": "boss-bong-da-ac-cau",
-      "name": "Boss Bổng đả ác Cẩu",
+      "name": "Boss Bổng Đả ác Cẩu",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -13115,7 +13115,7 @@
     {
       "id": 438,
       "code": "boss-liet-hoa-tinh-thien",
-      "name": "Boss Liệt Hỏa Tình ThiÊn",
+      "name": "Boss Liệt Hỏa Tình Thiên",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -13145,7 +13145,7 @@
     {
       "id": 439,
       "code": "boss-vo-nga-vo-kiem",
-      "name": "Boss VÔ Ngã VÔ Kiếm",
+      "name": "Boss Vô Ngã Vô Kiếm",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -13175,7 +13175,7 @@
     {
       "id": 440,
       "code": "boss-ngu-loi-chanh-phap",
-      "name": "Boss Ngũ LÔi Chánh Pháp",
+      "name": "Boss Ngũ Lôi Chánh Pháp",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -13235,7 +13235,7 @@
     {
       "id": 442,
       "code": "thoi-song-vong-nguyet-442",
-      "name": "ThÔi Song Vọng Nguyệt",
+      "name": "Thôi Song Vọng Nguyệt",
       "moveKind": "follow",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -13265,7 +13265,7 @@
     {
       "id": 443,
       "code": "tuyet-dinh-phi-long",
-      "name": "Tuyệt đỉnh Phi Long",
+      "name": "Tuyệt Đỉnh Phi Long",
       "moveKind": "follow",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -13295,7 +13295,7 @@
     {
       "id": 444,
       "code": "thien-ha-vo-cau-new",
-      "name": "ThiÊn Hạ VÔ Cẩu New",
+      "name": "Thiên Hạ Vô Cẩu New",
       "moveKind": "follow",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -13325,7 +13325,7 @@
     {
       "id": 445,
       "code": "110-thien-dia-1",
-      "name": "110 ThiÊn địa (1)",
+      "name": "110 Thiên Địa (1)",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -13355,7 +13355,7 @@
     {
       "id": 446,
       "code": "110-thien-dia-2",
-      "name": "110 ThiÊn địa (2)",
+      "name": "110 Thiên Địa (2)",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -13385,7 +13385,7 @@
     {
       "id": 447,
       "code": "110-thien-dia-3",
-      "name": "110 ThiÊn địa (3)",
+      "name": "110 Thiên Địa (3)",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -13415,7 +13415,7 @@
     {
       "id": 448,
       "code": "110-nhan-kiem-1",
-      "name": "110 NhÂn Kiếm (1)",
+      "name": "110 Nhân Kiếm (1)",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -13445,7 +13445,7 @@
     {
       "id": 449,
       "code": "110-nhan-kiem-2",
-      "name": "110 NhÂn Kiếm (2)",
+      "name": "110 Nhân Kiếm (2)",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -13475,7 +13475,7 @@
     {
       "id": 450,
       "code": "110-nhan-kiem-3",
-      "name": "110 NhÂn Kiếm (3)",
+      "name": "110 Nhân Kiếm (3)",
       "moveKind": "random",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -13505,7 +13505,7 @@
     {
       "id": 451,
       "code": "110-thien-ngoai-lt-1",
-      "name": "110 ThiÊn ngoại LT (1)",
+      "name": "110 Thiên ngoại LT (1)",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -13535,7 +13535,7 @@
     {
       "id": 452,
       "code": "110-thien-ngoai-lt-2",
-      "name": "110 ThiÊn ngoại LT (2)",
+      "name": "110 Thiên ngoại LT (2)",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -13565,7 +13565,7 @@
     {
       "id": 453,
       "code": "110-van-long-kich",
-      "name": "110  VÂn Long Kích",
+      "name": "110  Vân Long Kích",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -13595,7 +13595,7 @@
     {
       "id": 454,
       "code": "110-phong-suong-1",
-      "name": "110 Phong SƯƠng (1)",
+      "name": "110 Phong Sương (1)",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -13625,7 +13625,7 @@
     {
       "id": 455,
       "code": "110-phong-suong-2",
-      "name": "110 Phong SƯƠng (2)",
+      "name": "110 Phong Sương (2)",
       "moveKind": "follow",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -13655,7 +13655,7 @@
     {
       "id": 456,
       "code": "110-phong-suong-3",
-      "name": "110 Phong SƯƠng (3)",
+      "name": "110 Phong Sương (3)",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -13775,7 +13775,7 @@
     {
       "id": 460,
       "code": "110-bang-tung-vo-anh-ty-1",
-      "name": "110 BĂng tung vÔ ảnh TY(1)",
+      "name": "110 Băng tung vô ảnh TY(1)",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -13805,7 +13805,7 @@
     {
       "id": 461,
       "code": "110-tia-bang-ty-2",
-      "name": "110 Tia bĂng TY (2)",
+      "name": "110 Tia băng TY (2)",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -13835,7 +13835,7 @@
     {
       "id": 462,
       "code": "110-3-tien-1",
-      "name": "110  3 TiÊn (1)",
+      "name": "110  3 Tiên (1)",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -13865,7 +13865,7 @@
     {
       "id": 463,
       "code": "110-3-tien-2",
-      "name": "110  3 TiÊn (2)",
+      "name": "110  3 Tiên (2)",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -13985,7 +13985,7 @@
     {
       "id": 467,
       "code": "van-kiem-quy-tong-1",
-      "name": "Vạn kiếm Quy TÔng(1)",
+      "name": "Vạn kiếm Quy Tông(1)",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -14015,7 +14015,7 @@
     {
       "id": 468,
       "code": "van-kiem-quy-tong-2",
-      "name": "Vạn kiếm Quy TÔng(2)",
+      "name": "Vạn kiếm Quy Tông(2)",
       "moveKind": "circle",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -14045,7 +14045,7 @@
     {
       "id": 469,
       "code": "dat-ma-do-gaing-2",
-      "name": "đạt ma Độ gaing (2)",
+      "name": "Đạt ma độ gaing (2)",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -14075,7 +14075,7 @@
     {
       "id": 470,
       "code": "dat-ma-do-gaing-3",
-      "name": "đạt ma Độ gaing (3)",
+      "name": "Đạt ma độ gaing (3)",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -14105,7 +14105,7 @@
     {
       "id": 471,
       "code": "thien-ngoai-phi-tien-1-2-3",
-      "name": "ThiÊn ngoại Phi tiÊn (1)(2)(3)",
+      "name": "Thiên ngoại Phi tiên (1)(2)(3)",
       "moveKind": "follow",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -14135,7 +14135,7 @@
     {
       "id": 472,
       "code": "le-hoa-2",
-      "name": "LÊ Hoa (2)",
+      "name": "Lê Hoa (2)",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -14225,7 +14225,7 @@
     {
       "id": 475,
       "code": "hoanh-tao-thien-quan",
-      "name": "Hoành Tảo ThiÊn QuÂn",
+      "name": "Hoành Tảo Thiên Quân",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -14255,7 +14255,7 @@
     {
       "id": 476,
       "code": "huyen-am-tram-2",
-      "name": "Huyền âm Trảm(2)",
+      "name": "Huyền Âm Trảm(2)",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -14285,7 +14285,7 @@
     {
       "id": 477,
       "code": "huyen-am-tram-3",
-      "name": "Huyền âm Trảm(3)",
+      "name": "Huyền Âm Trảm(3)",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -14315,7 +14315,7 @@
     {
       "id": 478,
       "code": "am-phong-thuc-cot-2-478",
-      "name": "âm Phong Thực Cốt (2)",
+      "name": "Âm Phong Thực Cốt (2)",
       "moveKind": "custom",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -14405,7 +14405,7 @@
     {
       "id": 481,
       "code": "loi-dong-cuu-thien-1",
-      "name": "LÔi Động Cửu ThiÊn (1)",
+      "name": "Lôi động Cửu Thiên (1)",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -14435,7 +14435,7 @@
     {
       "id": 484,
       "code": "loi-dong-cuu-thien-2",
-      "name": "LÔi Động Cửu ThiÊn (2)",
+      "name": "Lôi động Cửu Thiên (2)",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -14465,7 +14465,7 @@
     {
       "id": 483,
       "code": "loi-dong-cuu-thien-3",
-      "name": "LÔi Động Cửu ThiÊn (3)",
+      "name": "Lôi động Cửu Thiên (3)",
       "moveKind": "line64",
       "followKind": "npc",
       "collideFollowTarget": true,
@@ -14495,7 +14495,7 @@
     {
       "id": 485,
       "code": "ngao-tuyet-tieu-phong-2",
-      "name": "Ngạo Tuyết TiÊu Phong (2)",
+      "name": "Ngạo Tuyết Tiêu Phong (2)",
       "moveKind": "custom",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -14525,7 +14525,7 @@
     {
       "id": 486,
       "code": "thuong-co-thien-thach-1",
-      "name": "ThƯợng Cổ ThiÊn Thạch (1)",
+      "name": "Thượng Cổ Thiên Thạch (1)",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -14555,7 +14555,7 @@
     {
       "id": 487,
       "code": "thuong-co-thien-thach-2",
-      "name": "ThƯợng Cổ ThiÊn Thạch (2)",
+      "name": "Thượng Cổ Thiên Thạch (2)",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -14585,7 +14585,7 @@
     {
       "id": 488,
       "code": "thuong-co-thien-thach-3",
-      "name": "ThƯợng Cổ ThiÊn Thạch (3)",
+      "name": "Thượng Cổ Thiên Thạch (3)",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -14645,7 +14645,7 @@
     {
       "id": 490,
       "code": "pha-thien-tram-2",
-      "name": "Phá ThiÊn Trảm (2)",
+      "name": "Phá Thiên Trảm (2)",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -14675,7 +14675,7 @@
     {
       "id": 491,
       "code": "thien-hoa-giang-long-tran-1",
-      "name": "ThiÊn Hoả Giáng Long Trận (1)",
+      "name": "Thiên Hoả Giáng Long Trận (1)",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -14705,7 +14705,7 @@
     {
       "id": 492,
       "code": "thien-hoa-giang-long-tran-2",
-      "name": "ThiÊn Hoả Giáng Long Trận (2)",
+      "name": "Thiên Hoả Giáng Long Trận (2)",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -14735,7 +14735,7 @@
     {
       "id": 493,
       "code": "thien-hoa-giang-long-tran-3",
-      "name": "ThiÊn Hoả Giáng Long Trận (3)",
+      "name": "Thiên Hoả Giáng Long Trận (3)",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -14765,7 +14765,7 @@
     {
       "id": 494,
       "code": "thien-hoa-giang-long-tran-4",
-      "name": "ThiÊn Hoả Giáng Long Trận (4)",
+      "name": "Thiên Hoả Giáng Long Trận (4)",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -14975,7 +14975,7 @@
     {
       "id": 506,
       "code": "phi-long-tai-thien-506",
-      "name": "Phi Long Tại ThiÊn",
+      "name": "Phi Long Tại Thiên",
       "moveKind": "follow",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -15035,7 +15035,7 @@
     {
       "id": 508,
       "code": "thoi-than-chu",
-      "name": "ThÔi ThÂn Chú",
+      "name": "Thôi Thân Chú",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -15095,7 +15095,7 @@
     {
       "id": 510,
       "code": "tram-tam-chu",
-      "name": "Trảm TÂm Chú",
+      "name": "Trảm Tâm Chú",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -15335,7 +15335,7 @@
     {
       "id": 518,
       "code": "loi-dong",
-      "name": "LÔi động",
+      "name": "Lôi Động",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -15365,7 +15365,7 @@
     {
       "id": 519,
       "code": "thap-phuong",
-      "name": "Thập PhƯƠng",
+      "name": "Thập Phương",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -15575,7 +15575,7 @@
     {
       "id": 526,
       "code": "luu-tinh-thach",
-      "name": "LƯu Tinh Thạch",
+      "name": "Lưu Tinh Thạch",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -15605,7 +15605,7 @@
     {
       "id": 527,
       "code": "bang-tuyet-dan",
-      "name": "BĂng Tuyết Đạn",
+      "name": "Băng Tuyết đạn",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -15665,7 +15665,7 @@
     {
       "id": 529,
       "code": "thien-phong-dia-nhan",
-      "name": "ThiÊn Phong địa Nhận",
+      "name": "Thiên Phong Địa Nhận",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -15695,7 +15695,7 @@
     {
       "id": 530,
       "code": "phong-lam-hoa-son",
-      "name": "Phong lÂm hỏa sƠn",
+      "name": "Phong lâm hỏa sơn",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -15725,7 +15725,7 @@
     {
       "id": 531,
       "code": "han-dia-loi",
-      "name": "Hạn địa LÔi",
+      "name": "Hạn Địa Lôi",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -15755,7 +15755,7 @@
     {
       "id": 532,
       "code": "thiet-ma-bang-qua",
-      "name": "Thiết Mã BĂng Qua",
+      "name": "Thiết Mã Băng Qua",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -15785,7 +15785,7 @@
     {
       "id": 533,
       "code": "phong-van-loi-dong",
-      "name": "Phong VÂn LÔi động",
+      "name": "Phong Vân Lôi Động",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -15815,7 +15815,7 @@
     {
       "id": 534,
       "code": "thien-bang-dia-liet",
-      "name": "ThiÊn BĂng địa Liệt",
+      "name": "Thiên Băng Địa Liệt",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -15845,7 +15845,7 @@
     {
       "id": 535,
       "code": "bang-phong-bao",
-      "name": "BĂng Phong Bạo",
+      "name": "Băng Phong Bạo",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -15905,7 +15905,7 @@
     {
       "id": 538,
       "code": "khai-son-tram",
-      "name": "Khai sƠn trảm",
+      "name": "Khai sơn trảm",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -15965,7 +15965,7 @@
     {
       "id": 540,
       "code": "dien-quang-tram",
-      "name": "điện Quang Trảm",
+      "name": "Điện Quang Trảm",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -15995,7 +15995,7 @@
     {
       "id": 541,
       "code": "hoanh-khong-tram",
-      "name": "Hoành KhÔng Trảm",
+      "name": "Hoành Không Trảm",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -16025,7 +16025,7 @@
     {
       "id": 542,
       "code": "tam-dau-luc-thu",
-      "name": "Tam đầu Lục Thủ",
+      "name": "Tam Đầu Lục Thủ",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -16055,7 +16055,7 @@
     {
       "id": 543,
       "code": "huyen-bang-tram",
-      "name": "Huyền BĂng trảm",
+      "name": "Huyền Băng trảm",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -16115,7 +16115,7 @@
     {
       "id": 545,
       "code": "lien-hoan-tram",
-      "name": "LiÊn Hoàn Trảm",
+      "name": "Liên Hoàn Trảm",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -16145,7 +16145,7 @@
     {
       "id": 546,
       "code": "lac-dia-tram",
-      "name": "Lạc địa Trảm",
+      "name": "Lạc Địa Trảm",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -16175,7 +16175,7 @@
     {
       "id": 547,
       "code": "thien-quan-tram",
-      "name": "ThiÊn QuÂn Trảm",
+      "name": "Thiên Quân Trảm",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -16355,7 +16355,7 @@
     {
       "id": 553,
       "code": "loi-dong-1",
-      "name": "LÔi động 1",
+      "name": "Lôi Động 1",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -16385,7 +16385,7 @@
     {
       "id": 554,
       "code": "loi-dong-2",
-      "name": "LÔi động 2",
+      "name": "Lôi Động 2",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -16415,7 +16415,7 @@
     {
       "id": 555,
       "code": "loi-dong-3",
-      "name": "LÔi động 3",
+      "name": "Lôi Động 3",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -16445,7 +16445,7 @@
     {
       "id": 556,
       "code": "am-phong-thuc-cot-1",
-      "name": "âm Phong Thực Cốt 1",
+      "name": "Âm Phong Thực Cốt 1",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -16475,7 +16475,7 @@
     {
       "id": 557,
       "code": "am-phong-thuc-cot-2-557",
-      "name": "âm Phong Thực Cốt (2)",
+      "name": "Âm Phong Thực Cốt (2)",
       "moveKind": "custom",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -16505,7 +16505,7 @@
     {
       "id": 558,
       "code": "am-phong-thuc-cot-3",
-      "name": "âm Phong Thực Cốt 3",
+      "name": "Âm Phong Thực Cốt 3",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": false,
@@ -16535,7 +16535,7 @@
     {
       "id": 559,
       "code": "special-phuong-1",
-      "name": "special phƯợng (1)",
+      "name": "special phượng (1)",
       "moveKind": "stand",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -16565,7 +16565,7 @@
     {
       "id": 560,
       "code": "special-phuong-2",
-      "name": "special phƯợng (2)",
+      "name": "special phượng (2)",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,
@@ -16595,7 +16595,7 @@
     {
       "id": 561,
       "code": "ngan-dao-xa-nguyet-tram",
-      "name": "NgÂn đao Xạ Nguyệt Trảm",
+      "name": "Ngân Đao Xạ Nguyệt Trảm",
       "moveKind": "line64",
       "followKind": "none",
       "collideFollowTarget": true,

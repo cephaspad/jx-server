@@ -3,7 +3,7 @@
   "schemaVersion": "1.0.0",
   "id": 209,
   "code": "dien-vo-truong",
-  "name": "Diễn võ trƯờng",
+  "name": "Diễn võ trường",
   "mapType": "Field",
   "mapRules": {
     "defaultFightMode": 1,

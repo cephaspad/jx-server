@@ -3,7 +3,7 @@
   "schemaVersion": "1.0.0",
   "id": 126,
   "code": "luu-tien-dong-tang-2",
-  "name": "LƯu TiÊn Động tầng 2",
+  "name": "Lưu Tiên động tầng 2",
   "mapType": "Field",
   "mapRules": {
     "defaultFightMode": 1,
@@ -591,7 +591,7 @@
       "targetMpsX": 53696,
       "targetMpsY": 95712,
       "targetFightMode": 1,
-      "deniedMessage": "Bạn nhìn thấy một cƠ quan, trÊn có khắc mấy dòng chữ:",
+      "deniedMessage": "Bạn nhìn thấy một cơ quan, trên có khắc mấy dòng chữ:",
       "triggerCells": [
         {
           "regionX": 104,
@@ -771,7 +771,7 @@
       "targetMpsX": 51648,
       "targetMpsY": 98656,
       "targetFightMode": 1,
-      "deniedMessage": "Bạn nhìn thấy một cƠ quan, trÊn có khắc mấy dòng chữ:",
+      "deniedMessage": "Bạn nhìn thấy một cơ quan, trên có khắc mấy dòng chữ:",
       "triggerCells": [
         {
           "regionX": 93,

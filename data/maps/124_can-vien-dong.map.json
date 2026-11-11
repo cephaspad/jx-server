@@ -3,7 +3,7 @@
   "schemaVersion": "1.0.0",
   "id": 124,
   "code": "can-vien-dong",
-  "name": "Cán ViÊn Động",
+  "name": "Cán Viên động",
   "mapType": "Field",
   "mapRules": {
     "defaultFightMode": 1,
