@@ -43,4 +43,6 @@ public sealed record CharacterDto(
     PlayerPkMode PkState = PlayerPkMode.Peace,
     sbyte PkValue = 0,
     ushort ActiveAuraSkillId = 0,
-    IReadOnlyList<CharacterItemDto>? Items = null);
+    IReadOnlyList<CharacterItemDto>? Items = null,
+    IReadOnlyDictionary<ushort, int>? TaskValues = null,
+    string? RepositoryPasswordHash = null);

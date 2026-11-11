@@ -29,13 +29,18 @@ public sealed class GroundObjectTickSystem
 
     private readonly Dictionary<int, GroundObjectSlot> _objectsById = [];
     private readonly List<GroundObjectSlot> _expiredBuffer = new(32);
-    private readonly Random _random = new();
+    private readonly Random _random;
     private int _nextObjId = 1;
     private uint _nextDroppedItemId = 500000;
 
     public int ActiveGroundObjectCount => _objectsById.Count;
 
     public IReadOnlyDictionary<int, GroundObjectSlot> ObjectsById => _objectsById;
+
+    public GroundObjectTickSystem(int? randomSeed = null)
+    {
+        _random = randomSeed.HasValue ? new Random(randomSeed.Value) : new Random();
+    }
 
     public bool TryGetGroundObject(int objId, out GroundObjectSlot? slot) =>
         _objectsById.TryGetValue(objId, out slot);
@@ -339,6 +344,8 @@ public sealed class GroundObjectTickSystem
             ? entry.ElementSeries
             : (ElementSeries)_random.Next(0, 5);
 
+        uint seedOverride = (uint)_random.Next(1, int.MaxValue);
+
         if (!string.IsNullOrWhiteSpace(entry.ItemCode))
         {
             return itemGenerator.GenerateFromItemCode(
@@ -346,6 +353,7 @@ public sealed class GroundObjectTickSystem
                 seriesOverride: series,
                 levelOverride: itemLevel,
                 luck: killerLuck,
+                randomSeedOverride: seedOverride,
                 rollBlueAffixes: rollBlue);
         }
 
@@ -364,7 +372,8 @@ public sealed class GroundObjectTickSystem
                 series,
                 itemLevel,
                 thresholds,
-                killerLuck);
+                killerLuck,
+                randomSeedOverride: seedOverride);
         }
 
         if (genre == ItemGenreKind.TownPortal)

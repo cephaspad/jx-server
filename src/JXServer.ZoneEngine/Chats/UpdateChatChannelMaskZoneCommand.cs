@@ -8,4 +8,7 @@ namespace JXServer.ZoneEngine.Chats;
 public sealed record UpdateChatChannelMaskZoneCommand(
     Guid CharacterId,
     long LeaseEpoch,
-    uint SubscribedChannelMask) : IZoneCommand;
+    uint SubscribedChannelMask) : IZoneCommand
+{
+    public Guid? FaultIsolationCharacterId => CharacterId;
+}

@@ -36,8 +36,18 @@ public sealed class CharacterItem
         ItemBindState bindState = ItemBindState.Unbound,
         uint expireTimeUnixSeconds = 0,
         string? creatorName = null,
-        IEnumerable<ItemMagicAttributeValue>? magicAttributes = null)
+        IEnumerable<ItemMagicAttributeValue>? magicAttributes = null,
+        bool isBroken = false,
+        byte enchaseLevel = 0)
     {
+        if (enchaseLevel > ItemConsts.MaxEnchaseLevel)
+        {
+            throw new ArgumentOutOfRangeException(
+                nameof(enchaseLevel),
+                enchaseLevel,
+                $"EnchaseLevel must be between 0 and {ItemConsts.MaxEnchaseLevel}.");
+        }
+
         Id = id;
         CharacterId = characterId;
         Genre = genre;
@@ -58,6 +68,8 @@ public sealed class CharacterItem
         BindState = bindState;
         ExpireTimeUnixSeconds = expireTimeUnixSeconds;
         CreatorName = creatorName ?? string.Empty;
+        IsBroken = isBroken || (maxDurability > 0 && currentDurability == 0);
+        EnchaseLevel = enchaseLevel;
 
         if (magicAttributes is not null)
         {
@@ -105,5 +117,41 @@ public sealed class CharacterItem
 
     public string CreatorName { get; private set; }
 
+    public bool IsBroken { get; private set; }
+
+    public byte EnchaseLevel { get; private set; }
+
     public IReadOnlyList<ItemMagicAttributeValue> MagicAttributes => _magicAttributes;
+
+    public void SetBroken(bool isBroken)
+    {
+        IsBroken = isBroken;
+    }
+
+    public void SetDurability(ushort currentDurability, ushort? maxDurability = null)
+    {
+        if (maxDurability.HasValue)
+        {
+            MaxDurability = maxDurability.Value;
+        }
+
+        CurrentDurability = currentDurability;
+        if (MaxDurability > 0 && currentDurability == 0)
+        {
+            IsBroken = true;
+        }
+    }
+
+    public void SetEnchaseLevel(byte enchaseLevel)
+    {
+        if (enchaseLevel > ItemConsts.MaxEnchaseLevel)
+        {
+            throw new ArgumentOutOfRangeException(
+                nameof(enchaseLevel),
+                enchaseLevel,
+                $"EnchaseLevel must be between 0 and {ItemConsts.MaxEnchaseLevel}.");
+        }
+
+        EnchaseLevel = enchaseLevel;
+    }
 }

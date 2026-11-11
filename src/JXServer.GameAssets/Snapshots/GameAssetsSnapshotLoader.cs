@@ -1194,7 +1194,7 @@ public static class GameAssetsSnapshotLoader
         string scriptPath = GetString(p, "scriptPath", string.Empty);
         if (trapId == 0u && !string.IsNullOrWhiteSpace(scriptPath))
         {
-            trapId = Archives.PakFilePathHasher.ComputeHash(scriptPath);
+            trapId = ComputePakHash(scriptPath);
         }
 
         string actionStr = GetString(p, "action", "teleport");
@@ -1405,4 +1405,27 @@ public static class GameAssetsSnapshotLoader
         el.TryGetProperty(name, out JsonElement p) && p.ValueKind == JsonValueKind.String
             ? (p.GetString() ?? fallback)
             : fallback;
+
+    private static uint ComputePakHash(string gbkPath)
+    {
+        ReadOnlySpan<byte> rawPathBytes = JXServer.Primitives.Encodings.GbkEncoding.EncodeBytes(gbkPath);
+        uint id = 0;
+        for (int i = 0; i < rawPathBytes.Length && rawPathBytes[i] != 0; i++)
+        {
+            byte c = rawPathBytes[i];
+            if (c is >= (byte)'A' and <= (byte)'Z')
+            {
+                c = (byte)(c + 0x20);
+            }
+            else if (c == (byte)'/')
+            {
+                c = (byte)'\\';
+            }
+
+            int signedChar = (sbyte)c;
+            id = unchecked(((id + (uint)((i + 1) * signedChar)) % 0x8000000Bu) * 0xFFFFFFEFu);
+        }
+
+        return id ^ 0x12345678u;
+    }
 }

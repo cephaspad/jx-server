@@ -1,5 +1,6 @@
 using JXServer.Domain.Accounts;
 using JXServer.Domain.Characters;
+using JXServer.Infrastructure.Characters;
 using JXServer.Primitives.Accounts;
 using JXServer.Primitives.Characters;
 using Microsoft.EntityFrameworkCore;
@@ -94,6 +95,19 @@ public sealed class JXServerDbContext : DbContext
             builder.Property(x => x.ConcurrencyStamp)
                 .IsConcurrencyToken();
 
+            builder.Property(x => x.RepositoryPasswordHash)
+                .IsRequired(false)
+                .HasMaxLength(AccountConsts.PasswordMd5HexLength);
+
+            builder.Property<Dictionary<ushort, int>>("_taskValues")
+                .HasColumnName("TaskValuesJson")
+                .IsRequired()
+                .HasDefaultValueSql("'{}'")
+                .HasConversion(
+                    v => TaskValuesJsonSerializer.Serialize(v),
+                    v => TaskValuesJsonSerializer.Deserialize(v))
+                .Metadata.SetValueComparer(TaskValuesJsonSerializer.Comparer);
+
             builder.OwnsMany(x => x.Skills, skillBuilder =>
             {
                 skillBuilder.ToTable("CharacterSkills");
@@ -125,6 +139,14 @@ public sealed class JXServerDbContext : DbContext
             builder.Property(x => x.CreatorName)
                 .IsRequired()
                 .HasMaxLength(CharacterConsts.FixedRoleNameBufferSize);
+
+            builder.Property(x => x.IsBroken)
+                .IsRequired()
+                .HasDefaultValue(false);
+
+            builder.Property(x => x.EnchaseLevel)
+                .IsRequired()
+                .HasDefaultValue((byte)0);
 
             builder.OwnsMany(x => x.MagicAttributes, attrBuilder =>
             {

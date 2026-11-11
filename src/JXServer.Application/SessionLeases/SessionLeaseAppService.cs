@@ -214,7 +214,15 @@ public sealed class SessionLeaseAppService : ISessionLeaseAppService
         try
         {
             DateTimeOffset nowUtc = _timeProvider.GetUtcNow();
-            if (input.CharacterSnapshot is { } snap)
+            SessionLease? lease = await _sessionLeaseRepository.FindByAccountIdAsync(input.AccountId, cancellationToken);
+
+            bool persistSnapshot = input.CharacterSnapshot is not null && (
+                input.LeaseEpoch == 0 ||
+                (lease is not null && lease.LeaseEpoch == input.LeaseEpoch) ||
+                (lease is not null && lease.LeaseEpoch == input.LeaseEpoch + 1 && lease.State == SessionLeaseState.GatewayAuthenticated && lease.ActiveCharacterId is null)
+            );
+
+            if (persistSnapshot && input.CharacterSnapshot is { } snap)
             {
                 Character? character = await _characterRepository.FindAsync(snap.CharacterId, cancellationToken);
                 if (character is not null && character.AccountId == input.AccountId)
@@ -224,7 +232,6 @@ public sealed class SessionLeaseAppService : ISessionLeaseAppService
                 }
             }
 
-            SessionLease? lease = await _sessionLeaseRepository.FindByAccountIdAsync(input.AccountId, cancellationToken);
             if (lease is not null && lease.LeaseEpoch == input.LeaseEpoch)
             {
                 if (input.OnlyIfGatewayAuthenticated && lease.State != SessionLeaseState.GatewayAuthenticated)
@@ -311,8 +318,12 @@ public sealed class SessionLeaseAppService : ISessionLeaseAppService
                         .ToArray(),
                     i.BindState,
                     i.ExpireTimeUnixSeconds,
-                    i.CreatorName))
-                .ToArray());
+                    i.CreatorName,
+                    i.IsBroken,
+                    i.EnchaseLevel))
+                .ToArray(),
+            character.TaskValues,
+            character.RepositoryPasswordHash);
 
     private static WorldHandoffTicketDto CreateDeniedTicket(
         Guid accountId,

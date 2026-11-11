@@ -1,4 +1,5 @@
 using JXServer.ZoneEngine.PlayerSessions;
+using JXServer.ZoneEngine.WorldZones;
 using Microsoft.Extensions.Logging;
 
 namespace JXServer.ZoneEngine.Logging;
@@ -105,4 +106,51 @@ public static partial class ZoneEngineLogMessages
         Guid characterId,
         int skillId,
         string reason);
+
+    [LoggerMessage(
+        EventId = 3009,
+        Level = LogLevel.Warning,
+        Message = "Dropped unregistered zone command '{CommandType}' on Map {MapId} at Frame {CurrentFrame} (CharacterId={CharacterId}).")]
+    public static partial void LogUnhandledZoneCommand(
+        ILogger logger,
+        string commandType,
+        ushort mapId,
+        long currentFrame,
+        Guid? characterId);
+
+    [LoggerMessage(
+        EventId = 3010,
+        Level = LogLevel.Error,
+        Message = "Unhandled exception in handler for command '{CommandType}' on Map {MapId} at Frame {CurrentFrame} (CharacterId={CharacterId}).")]
+    public static partial void LogZoneCommandFaulted(
+        ILogger logger,
+        Exception exception,
+        string commandType,
+        ushort mapId,
+        long currentFrame,
+        Guid? characterId);
+
+    [LoggerMessage(
+        EventId = 3011,
+        Level = LogLevel.Error,
+        Message = "Unhandled exception in tick system '{SystemName}' (Phase={Phase}) on Map {MapId} at Frame {CurrentFrame}.")]
+    public static partial void LogZoneTickSystemFaulted(
+        ILogger logger,
+        Exception exception,
+        string systemName,
+        ZoneTickPhase phase,
+        ushort mapId,
+        long currentFrame);
+
+    [LoggerMessage(
+        EventId = 3012,
+        Level = LogLevel.Error,
+        Message = "Unhandled exception cleaning up feature slot '{SlotType}' for CharacterId={CharacterId} on Map {MapId} (Reason={Reason}).")]
+    public static partial void LogPlayerFeatureSlotCleanupFaulted(
+        ILogger logger,
+        Exception exception,
+        string slotType,
+        Guid characterId,
+        ushort mapId,
+        PlayerDetachReason reason);
 }

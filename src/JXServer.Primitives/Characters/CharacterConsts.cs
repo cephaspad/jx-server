@@ -15,4 +15,6 @@ public static class CharacterConsts
     public const byte NoFactionId = 0xFF;
     public const int DefaultSpawnMapId = 53;
     public const int DefaultRevivalPointId = 19;
+    public const ushort MinTaskId = 0;
+    public const ushort MaxTaskId = ushort.MaxValue;
 }

@@ -15,4 +15,9 @@ public sealed class ZoneEngineOptions
     public int HeartbeatIntervalSeconds { get; set; } = SessionLeaseConsts.DefaultHeartbeatIntervalSeconds;
 
     public int HeartbeatTimeoutSeconds { get; set; } = SessionLeaseConsts.DefaultHeartbeatTimeoutSeconds;
+
+    /// <summary>
+    /// Optional master random seed for reproducible deterministic simulation testing (<c>FR-007</c>).
+    /// </summary>
+    public int? RandomSeed { get; set; }
 }

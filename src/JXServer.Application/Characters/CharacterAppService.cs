@@ -227,7 +227,9 @@ public sealed class CharacterAppService : ICharacterAppService
             snap.Skills is null &&
             snap.Items is null &&
             snap.InventoryMoney is null &&
-            snap.PkState is null)
+            snap.PkState is null &&
+            snap.TaskValues is null &&
+            !snap.UpdateRepositoryPasswordHash)
         {
             character.UpdateWorldSnapshot(
                 snap.MapId,
@@ -273,7 +275,9 @@ public sealed class CharacterAppService : ICharacterAppService
                 m.Value0,
                 m.Value1,
                 m.Value2,
-                m.EnchaseLevel)))).ToList();
+                m.EnchaseLevel)),
+            i.IsBroken,
+            i.EnchaseLevel)).ToList();
 
         character.UpdateWorldSnapshot(
             snap.MapId,
@@ -301,6 +305,9 @@ public sealed class CharacterAppService : ICharacterAppService
             snap.ActiveAuraSkillId ?? character.ActiveAuraSkillId,
             mappedSkills,
             mappedItems,
-            nowUtc);
+            nowUtc,
+            snap.TaskValues,
+            snap.RepositoryPasswordHash,
+            snap.UpdateRepositoryPasswordHash);
     }
 }

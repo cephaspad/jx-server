@@ -40,7 +40,9 @@ public sealed class PlayerItemSlot
 
     public ushort MaxDurability { get; set; }
 
-    public bool IsBroken => MaxDurability > 0 && CurrentDurability == 0;
+    public bool IsBroken { get; set; }
+
+    public byte EnchaseLevel { get; set; }
 
     public ushort StackCount { get; set; }
 
@@ -108,7 +110,9 @@ public sealed class PlayerItemSlot
         IReadOnlyList<ItemMagicAttributeSlot>? magicAttributes = null,
         ItemBindState bindState = ItemBindState.Unbound,
         uint expireTimeUnixSeconds = 0,
-        string? creatorName = null)
+        string? creatorName = null,
+        bool isBroken = false,
+        byte enchaseLevel = 0)
     {
         ArgumentNullException.ThrowIfNull(template);
 
@@ -126,6 +130,8 @@ public sealed class PlayerItemSlot
         Luck = luck;
         CurrentDurability = currentDurability;
         MaxDurability = maxDurability;
+        IsBroken = isBroken || (maxDurability > 0 && currentDurability == 0);
+        EnchaseLevel = enchaseLevel;
         StackCount = Math.Max((ushort)1, stackCount);
         ContainerPlace = containerPlace;
         GridX = gridX;
@@ -217,6 +223,22 @@ public sealed class PlayerItemSlot
             MagicAttributes: affixes,
             BindState: BindState,
             ExpireTimeUnixSeconds: ExpireTimeUnixSeconds,
-            CreatorName: CreatorName);
+            CreatorName: CreatorName,
+            IsBroken: IsBroken,
+            EnchaseLevel: EnchaseLevel);
+    }
+
+    public void SetDurability(ushort currentDurability, ushort? maxDurability = null)
+    {
+        if (maxDurability.HasValue)
+        {
+            MaxDurability = maxDurability.Value;
+        }
+
+        CurrentDurability = currentDurability;
+        if (MaxDurability > 0 && currentDurability == 0)
+        {
+            IsBroken = true;
+        }
     }
 }

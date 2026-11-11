@@ -1,7 +1,15 @@
+using JXServer.Contracts.Characters;
+using JXServer.GameAssets.Items;
+using JXServer.GameAssets.LootTables;
+using JXServer.GameAssets.NpcTemplates;
+using JXServer.GameAssets.PlayerTemplates;
+using JXServer.GameAssets.Skills;
+using JXServer.GameAssets.WorldMaps;
 using JXServer.ZoneEngine.Configuration;
 using JXServer.ZoneEngine.WorldZones;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Options;
 
 namespace JXServer.ZoneEngine;
@@ -28,10 +36,39 @@ public static class ZoneEngineServiceCollectionExtensions
             optionsBuilder.Configure(configureOptions);
         }
 
+        services.TryAddSingleton<ZoneAssetServices>(static sp => new ZoneAssetServices
+        {
+            MapCatalog = sp.GetService<IMapCatalog>(),
+            NpcTemplateCatalog = sp.GetService<INpcTemplateCatalog>(),
+            TrapScriptCatalog = sp.GetService<ITrapScriptCatalog>(),
+            CharacterAppService = sp.GetService<ICharacterAppService>(),
+            ClusterRouter = sp.GetService<IZoneClusterRouter>(),
+            SkillTemplateCatalog = sp.GetService<ISkillTemplateCatalog>(),
+            MissileTemplateCatalog = sp.GetService<IMissileTemplateCatalog>(),
+            PlayerTemplateCatalog = sp.GetService<IPlayerTemplateCatalog>(),
+            ItemTemplateCatalog = sp.GetService<IItemTemplateCatalog>(),
+            LootTableCatalog = sp.GetService<ILootTableCatalog>(),
+            ItemGenerator = sp.GetService<ItemGenerator>(),
+        });
+
+        services.AddZoneModule<CoreZoneModule>();
+        services.AddZoneModule<Chats.ChatZoneModule>();
+
+        services.TryAddSingleton<ZoneExtensionRegistry>(static sp =>
+            ZoneExtensionRegistry.Create(sp.GetServices<IZoneModule>()));
+
         services.AddSingleton<ZoneClusterRouter>();
         services.AddSingleton<IZoneClusterRouter>(static sp => sp.GetRequiredService<ZoneClusterRouter>());
         services.AddHostedService<ZoneEngineHostedService>();
 
+        return services;
+    }
+
+    public static IServiceCollection AddZoneModule<TModule>(this IServiceCollection services)
+        where TModule : class, IZoneModule
+    {
+        ArgumentNullException.ThrowIfNull(services);
+        services.TryAddEnumerable(ServiceDescriptor.Singleton<IZoneModule, TModule>());
         return services;
     }
 }

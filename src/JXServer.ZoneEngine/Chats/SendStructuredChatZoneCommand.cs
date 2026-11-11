@@ -12,4 +12,7 @@ public sealed record SendStructuredChatZoneCommand(
     ChatChannelKind Channel,
     uint TargetNpcId,
     string TargetOrPrefixUtf8,
-    string MessageUtf8) : IZoneCommand;
+    string MessageUtf8) : IZoneCommand
+{
+    public Guid? FaultIsolationCharacterId => SenderCharacterId;
+}

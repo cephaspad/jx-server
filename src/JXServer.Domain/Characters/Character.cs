@@ -1,5 +1,6 @@
 using JXServer.Primitives.Characters;
 using JXServer.Primitives.Combat;
+using JXServer.Primitives.Encodings;
 using JXServer.Primitives.ErrorCodes;
 
 namespace JXServer.Domain.Characters;
@@ -11,6 +12,7 @@ public sealed class Character
 {
     private readonly List<CharacterSkillValue> _skills = [];
     private readonly List<CharacterItem> _items = [];
+    private readonly Dictionary<ushort, int> _taskValues = [];
 
     public Guid Id { get; private set; }
 
@@ -98,6 +100,14 @@ public sealed class Character
 
     public IReadOnlyList<CharacterItem> Items => _items;
 
+    public IReadOnlyDictionary<ushort, int> TaskValues => _taskValues;
+
+    /// <summary>
+    /// Optional 32-character uppercase hexadecimal MD5 digest protecting the character's storage repository box.
+    /// <see langword="null"/> indicates no password is set (repository unlocked).
+    /// </summary>
+    public string? RepositoryPasswordHash { get; private set; }
+
     public DateTimeOffset CreatedAtUtc { get; private set; }
 
     public DateTimeOffset UpdatedAtUtc { get; private set; }
@@ -130,7 +140,9 @@ public sealed class Character
         ushort maxStamina,
         IEnumerable<CharacterSkillValue>? starterSkills = null,
         DateTimeOffset? createdAtUtc = null,
-        IEnumerable<CharacterItem>? starterItems = null)
+        IEnumerable<CharacterItem>? starterItems = null,
+        IEnumerable<KeyValuePair<ushort, int>>? starterTaskValues = null,
+        string? repositoryPasswordHash = null)
     {
         if (id == Guid.Empty)
         {
@@ -219,10 +231,96 @@ public sealed class Character
                 _items.Add(item);
             }
         }
+
+        if (starterTaskValues is not null)
+        {
+            ReplaceTaskValues(starterTaskValues);
+        }
+
+        if (repositoryPasswordHash is not null)
+        {
+            SetRepositoryPasswordHash(repositoryPasswordHash);
+        }
     }
 
     public static string NormalizeRoleName(string roleName) =>
         (roleName ?? string.Empty).TrimEnd('\0').Trim().ToUpperInvariant();
+
+    /// <summary>
+    /// Returns the persisted value for <paramref name="taskId"/> (<c>0..65535</c>), or <c>0</c> if unset.
+    /// </summary>
+    public int GetTaskValue(ushort taskId) =>
+        _taskValues.GetValueOrDefault(taskId, 0);
+
+    /// <summary>
+    /// Sets <paramref name="taskId"/> to <paramref name="value"/>. Setting <c>0</c> removes the key so sparse storage
+    /// never accumulates zero-valued entries.
+    /// </summary>
+    public void SetTaskValue(ushort taskId, int value)
+    {
+        if (value == 0)
+        {
+            _taskValues.Remove(taskId);
+        }
+        else
+        {
+            _taskValues[taskId] = value;
+        }
+
+        ConcurrencyStamp = Guid.NewGuid();
+    }
+
+    public void ReplaceTaskValues(IEnumerable<KeyValuePair<ushort, int>>? values)
+    {
+        _taskValues.Clear();
+        if (values is not null)
+        {
+            foreach ((ushort taskId, int val) in values)
+            {
+                if (val != 0)
+                {
+                    _taskValues[taskId] = val;
+                }
+            }
+        }
+
+        ConcurrencyStamp = Guid.NewGuid();
+    }
+
+    /// <summary>
+    /// Sets or clears the normalized repository password digest.
+    /// Null or whitespace clears the lock (<see langword="null"/>). Any non-empty input MUST already be a valid
+    /// 32-character hexadecimal MD5 digest; raw cleartext or malformed strings throw <see cref="BusinessException"/>.
+    /// </summary>
+    public void SetRepositoryPasswordHash(string? normalizedMd5Hex)
+    {
+        ReadOnlySpan<char> trimmed = (normalizedMd5Hex ?? string.Empty).AsSpan().TrimEnd('\0').Trim();
+        if (trimmed.IsEmpty)
+        {
+            RepositoryPasswordHash = null;
+            ConcurrencyStamp = Guid.NewGuid();
+            return;
+        }
+
+        if (!KsgPasswordHasher.IsHexDigest32(trimmed))
+        {
+            throw new BusinessException(
+                JXServerErrorCodes.CharacterInvalidRepositoryCredential,
+                "RepositoryPasswordHash must be null/empty or a valid 32-character hexadecimal MD5 digest.");
+        }
+
+        RepositoryPasswordHash = trimmed.ToString().ToUpperInvariant();
+        ConcurrencyStamp = Guid.NewGuid();
+    }
+
+    public void SetRepositoryPasswordFromPlaintext(ReadOnlySpan<char> plaintextPassword)
+    {
+        ReadOnlySpan<char> trimmed = plaintextPassword.TrimEnd('\0').Trim();
+        SetRepositoryPasswordHash(trimmed.IsEmpty ? null : KsgPasswordHasher.HashPlaintext(trimmed));
+    }
+
+    public bool VerifyRepositoryPassword(ReadOnlySpan<char> candidatePasswordOrHash) =>
+        RepositoryPasswordHash is null || KsgPasswordHasher.Verify(RepositoryPasswordHash, candidatePasswordOrHash);
 
     public void UpdateWorldSnapshot(
         ushort mapId,
@@ -269,7 +367,10 @@ public sealed class Character
         ushort activeAuraSkillId,
         IEnumerable<CharacterSkillValue>? skills,
         IEnumerable<CharacterItem>? items,
-        DateTimeOffset? updatedAtUtc = null)
+        DateTimeOffset? updatedAtUtc = null,
+        IEnumerable<KeyValuePair<ushort, int>>? taskValues = null,
+        string? repositoryPasswordHash = null,
+        bool updateRepositoryPasswordHash = false)
     {
         MapId = mapId;
         MapMpsX = mpsX;
@@ -305,6 +406,16 @@ public sealed class Character
         {
             _items.Clear();
             _items.AddRange(items);
+        }
+
+        if (taskValues is not null)
+        {
+            ReplaceTaskValues(taskValues);
+        }
+
+        if (updateRepositoryPasswordHash)
+        {
+            SetRepositoryPasswordHash(repositoryPasswordHash);
         }
 
         UpdatedAtUtc = updatedAtUtc ?? DateTimeOffset.UtcNow;

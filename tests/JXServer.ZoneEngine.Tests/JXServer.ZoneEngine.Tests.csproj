@@ -7,7 +7,10 @@
     <ProjectReference Include="..\..\src\JXServer.Primitives\JXServer.Primitives.csproj" />
     <ProjectReference Include="..\..\src\JXServer.GameAssets\JXServer.GameAssets.csproj" />
     <ProjectReference Include="..\..\src\JXServer.Contracts\JXServer.Contracts.csproj" />
+    <ProjectReference Include="..\..\src\JXServer.Domain\JXServer.Domain.csproj" />
+    <ProjectReference Include="..\..\src\JXServer.Infrastructure\JXServer.Infrastructure.csproj" />
     <ProjectReference Include="..\..\src\JXServer.ZoneEngine\JXServer.ZoneEngine.csproj" />
+    <ProjectReference Include="..\..\tools\JXServer.DataExporter\JXServer.DataExporter.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" />

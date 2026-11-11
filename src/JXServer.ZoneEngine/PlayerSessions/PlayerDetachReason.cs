@@ -8,5 +8,6 @@ public enum PlayerDetachReason : byte
     CleanLogout = 0,
     SocketClosed = 1,
     HeartbeatTimeout = 2,
-    LeaseSuperseded = 3
+    LeaseSuperseded = 3,
+    MapTransferred = 4,
 }

@@ -113,6 +113,24 @@ public static class Tcvn3Encoding
         return count;
     }
 
+    private static (byte Code, char Unicode)[] GetMappings() =>
+    [
+        (0xA1, 'Ă'), (0xA2, 'Â'), (0xA3, 'Ê'), (0xA4, 'Ô'), (0xA5, 'Ơ'), (0xA6, 'Ư'), (0xA7, 'Đ'),
+        (0xA8, 'ă'), (0xA9, 'â'), (0xAA, 'ê'), (0xAB, 'ô'), (0xAC, 'ơ'), (0xAD, 'ư'), (0xAE, 'đ'),
+        (0xB5, 'à'), (0xB6, 'ả'), (0xB7, 'ã'), (0xB8, 'á'), (0xB9, 'ạ'),
+        (0xBB, 'ằ'), (0xBC, 'ẳ'), (0xBD, 'ẵ'), (0xBE, 'ắ'), (0xC6, 'ặ'),
+        (0xC7, 'ầ'), (0xC8, 'ẩ'), (0xC9, 'ẫ'), (0xCA, 'ấ'), (0xCB, 'ậ'),
+        (0xCC, 'è'), (0xCE, 'ẻ'), (0xCF, 'ẽ'), (0xD0, 'é'), (0xD1, 'ẹ'),
+        (0xD2, 'ề'), (0xD3, 'ể'), (0xD4, 'ễ'), (0xD5, 'ế'), (0xD6, 'ệ'),
+        (0xD7, 'ì'), (0xD8, 'ỉ'), (0xDC, 'ĩ'), (0xDD, 'í'), (0xDE, 'ị'),
+        (0xDF, 'ò'), (0xE1, 'ỏ'), (0xE2, 'õ'), (0xE3, 'ó'), (0xE4, 'ọ'),
+        (0xE5, 'ồ'), (0xE6, 'ổ'), (0xE7, 'ỗ'), (0xE8, 'ố'), (0xE9, 'ộ'),
+        (0xEA, 'ờ'), (0xEB, 'ở'), (0xEC, 'ỡ'), (0xED, 'ớ'), (0xEE, 'ợ'),
+        (0xEF, 'ù'), (0xF1, 'ủ'), (0xF2, 'ũ'), (0xF3, 'ú'), (0xF4, 'ụ'),
+        (0xF5, 'ừ'), (0xF6, 'ử'), (0xF7, 'ữ'), (0xF8, 'ứ'), (0xF9, 'ự'),
+        (0xFA, 'ỳ'), (0xFB, 'ỷ'), (0xFC, 'ỹ'), (0xFD, 'ý'), (0xFE, 'ỵ')
+    ];
+
     private static char[] CreateByteToCharTable()
     {
         char[] table = new char[256];
@@ -121,25 +139,7 @@ public static class Tcvn3Encoding
             table[i] = (char)i;
         }
 
-        (byte Code, char Unicode)[] mappings =
-        [
-            (0xA1, 'ă'), (0xA2, 'â'), (0xA3, 'ê'), (0xA4, 'ô'), (0xA5, 'ơ'), (0xA6, 'ư'), (0xA7, 'đ'),
-            (0xA8, 'Ă'), (0xA9, 'Â'), (0xAA, 'Ê'), (0xAB, 'Ô'), (0xAC, 'Ơ'), (0xAD, 'Ư'), (0xAE, 'Đ'),
-            (0xB5, 'à'), (0xB6, 'ả'), (0xB7, 'ã'), (0xB8, 'á'), (0xB9, 'ạ'),
-            (0xBB, 'ằ'), (0xBC, 'ẳ'), (0xBD, 'ẵ'), (0xBE, 'ắ'), (0xC6, 'ặ'),
-            (0xC7, 'ầ'), (0xC8, 'ẩ'), (0xC9, 'ẫ'), (0xCA, 'ấ'), (0xCB, 'ậ'),
-            (0xCC, 'è'), (0xCE, 'ẻ'), (0xCF, 'ẽ'), (0xD0, 'é'), (0xD1, 'ẹ'),
-            (0xD2, 'ề'), (0xD3, 'ể'), (0xD4, 'ễ'), (0xD5, 'ế'), (0xD6, 'ệ'),
-            (0xD7, 'ì'), (0xD8, 'ỉ'), (0xDC, 'ĩ'), (0xDD, 'í'), (0xDE, 'ị'),
-            (0xDF, 'ò'), (0xE1, 'ỏ'), (0xE2, 'õ'), (0xE3, 'ó'), (0xE4, 'ọ'),
-            (0xE5, 'ồ'), (0xE6, 'ổ'), (0xE7, 'ỗ'), (0xE8, 'ố'), (0xE9, 'ộ'),
-            (0xEA, 'ờ'), (0xEB, 'ở'), (0xEC, 'ỡ'), (0xED, 'ớ'), (0xEE, 'ợ'),
-            (0xEF, 'ù'), (0xF1, 'ủ'), (0xF2, 'ũ'), (0xF3, 'ú'), (0xF4, 'ụ'),
-            (0xF5, 'ừ'), (0xF6, 'ử'), (0xF7, 'ữ'), (0xF8, 'ứ'), (0xF9, 'ự'),
-            (0xFA, 'ỳ'), (0xFB, 'ỷ'), (0xFC, 'ỹ'), (0xFD, 'ý'), (0xFE, 'ỵ')
-        ];
-
-        foreach (var (code, unicode) in mappings)
+        foreach (var (code, unicode) in GetMappings())
         {
             table[code] = unicode;
         }
@@ -150,13 +150,9 @@ public static class Tcvn3Encoding
     private static FrozenDictionary<char, byte> CreateCharToByteMap()
     {
         var dict = new Dictionary<char, byte>();
-        for (int i = 0x80; i < 256; i++)
+        foreach (var (code, unicode) in GetMappings())
         {
-            char ch = ByteToCharTable[i];
-            if (ch != (char)i)
-            {
-                dict[ch] = (byte)i;
-            }
+            dict[unicode] = code;
         }
 
         return dict.ToFrozenDictionary();

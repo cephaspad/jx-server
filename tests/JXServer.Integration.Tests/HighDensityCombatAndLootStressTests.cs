@@ -210,7 +210,7 @@ public sealed class HighDensityCombatAndLootStressTests : IPlayerOutboundSink, I
         Assert.True(p99Ms < 15.0, $"Expected p99 combat tick duration < 15ms, actual was {p99Ms:F3}ms.");
     }
 
-    void IPlayerOutboundSink.SendInitialWorldSyncBurst(
+    void IWorldOutboundSink.SendInitialWorldSyncBurst(
         PlayerZoneState playerState,
         string mapNameUnicode,
         uint currentFrameTick,
@@ -218,21 +218,21 @@ public sealed class HighDensityCombatAndLootStressTests : IPlayerOutboundSink, I
     {
     }
 
-    void IPlayerOutboundSink.SendActiveWorldConfirmation(PlayerZoneState playerState)
+    void IWorldOutboundSink.SendActiveWorldConfirmation(PlayerZoneState playerState)
     {
     }
 
-    void IPlayerOutboundSink.SendItemSync(in PlayerItemSyncSnapshot snapshot) => _itemSyncCount++;
+    void IInventoryOutboundSink.SendItemSync(in PlayerItemSyncSnapshot snapshot) => _itemSyncCount++;
 
-    void IPlayerOutboundSink.SendServerPing(uint serverTimestamp)
+    void IWorldOutboundSink.SendServerPing(uint serverTimestamp)
     {
     }
 
-    void IPlayerOutboundSink.SendServerPingReply(uint echoedClientTimestamp)
+    void IWorldOutboundSink.SendServerPingReply(uint echoedClientTimestamp)
     {
     }
 
-    void IPlayerOutboundSink.Disconnect(PlayerDetachReason reason)
+    void IWorldOutboundSink.Disconnect(PlayerDetachReason reason)
     {
     }
 

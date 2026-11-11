@@ -26,4 +26,6 @@ public sealed record class CharacterItemDto(
     IReadOnlyList<CharacterItemMagicAttributeDto> MagicAttributes,
     ItemBindState BindState = ItemBindState.Unbound,
     uint ExpireTimeUnixSeconds = 0,
-    string? CreatorName = null);
+    string? CreatorName = null,
+    bool IsBroken = false,
+    byte EnchaseLevel = 0);

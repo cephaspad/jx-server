@@ -5,4 +5,9 @@ namespace JXServer.ZoneEngine.WorldZones;
 /// </summary>
 public interface IZoneCommand
 {
+    /// <summary>
+    /// Optional character identifier associated with this command for structured fault-isolation logging (<c>FR-006</c>).
+    /// Player-scoped command records override or expose <c>CharacterId</c> here; system/account commands return <see langword="null"/>.
+    /// </summary>
+    Guid? FaultIsolationCharacterId => null;
 }

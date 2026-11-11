@@ -8,4 +8,7 @@ namespace JXServer.ZoneEngine.Chats;
 public sealed record SendNearbyTalkZoneCommand(
     Guid SenderCharacterId,
     long LeaseEpoch,
-    string MessageUtf8) : IZoneCommand;
+    string MessageUtf8) : IZoneCommand
+{
+    public Guid? FaultIsolationCharacterId => SenderCharacterId;
+}

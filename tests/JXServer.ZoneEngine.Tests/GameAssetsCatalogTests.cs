@@ -1,4 +1,4 @@
-using JXServer.GameAssets.Archives;
+using JXServer.DataExporter.Legacy;
 using JXServer.GameAssets.Configuration;
 using JXServer.GameAssets.PlayerTemplates;
 using JXServer.GameAssets.WorldMaps;

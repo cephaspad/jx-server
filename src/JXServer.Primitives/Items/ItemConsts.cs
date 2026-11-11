@@ -13,4 +13,5 @@ public static class ItemConsts
     public const int DefaultGroundObjectLifeFrames = 1080;
     public const int DefaultLootOwnerProtectionFrames = 180;
     public const int MaxGroundPickupDistanceMps = 192;
+    public const byte MaxEnchaseLevel = 10;
 }

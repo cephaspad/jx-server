@@ -99,7 +99,7 @@ public sealed class EfCoreCharacterRepository : ICharacterRepository
         foreach (CharacterItem item in character.Items)
         {
             var cloned = new CharacterItem(
-                Guid.NewGuid(),
+                item.Id == Guid.Empty ? Guid.NewGuid() : item.Id,
                 character.Id,
                 item.Genre,
                 item.DetailType,
@@ -119,7 +119,9 @@ public sealed class EfCoreCharacterRepository : ICharacterRepository
                 item.BindState,
                 item.ExpireTimeUnixSeconds,
                 item.CreatorName,
-                item.MagicAttributes);
+                item.MagicAttributes,
+                item.IsBroken,
+                item.EnchaseLevel);
             freshItems.Add(cloned);
             await dbContext.CharacterItems.AddAsync(cloned, cancellationToken);
         }
@@ -150,7 +152,10 @@ public sealed class EfCoreCharacterRepository : ICharacterRepository
             character.ActiveAuraSkillId,
             character.Skills,
             freshItems,
-            character.UpdatedAtUtc);
+            character.UpdatedAtUtc,
+            character.TaskValues,
+            character.RepositoryPasswordHash,
+            updateRepositoryPasswordHash: true);
 
         await dbContext.SaveChangesAsync(cancellationToken);
         return existing;

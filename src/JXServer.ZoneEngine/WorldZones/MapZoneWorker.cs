@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using System.Text;
 using System.Threading.Channels;
 using JXServer.Contracts.Characters;
@@ -9,11 +10,9 @@ using JXServer.GameAssets.PlayerTemplates;
 using JXServer.GameAssets.Skills;
 using JXServer.GameAssets.WorldMaps;
 using JXServer.Primitives.Characters;
-using JXServer.Primitives.Chats;
 using JXServer.Primitives.Combat;
 using JXServer.Primitives.Items;
 using JXServer.Primitives.WorldZones;
-using JXServer.ZoneEngine.Chats;
 using JXServer.ZoneEngine.Combat;
 using JXServer.ZoneEngine.Configuration;
 using JXServer.ZoneEngine.Items;
@@ -28,7 +27,7 @@ namespace JXServer.ZoneEngine.WorldZones;
 /// <summary>
 /// Single-threaded 18-Hz (`55.5ms`) map zone worker managing spatial <c>3x3</c> region AOI, static NPCs,
 /// obstacle-validated movement, Five-Elements combat &amp; 64-direction projectiles, portal trap transitions,
-/// multi-channel chat, and session heartbeats.
+/// and session heartbeats.
 /// </summary>
 public sealed class MapZoneWorker
 {
@@ -56,20 +55,31 @@ public sealed class MapZoneWorker
     private readonly Dictionary<Guid, PlayerZoneState> _playersByCharacterId = [];
     private readonly Dictionary<uint, PlayerZoneState> _playersByNpcId = [];
     private readonly Dictionary<uint, NpcZoneState> _npcsById = [];
-    private readonly MissileSimulationTickSystem _missileSystem = new();
-    private readonly MonsterAiTickSystem _monsterAiSystem = new();
-    private readonly GroundObjectTickSystem _groundObjectSystem = new();
-    private readonly Random _random = new();
+    private readonly MissileSimulationTickSystem _missileSystem;
+    private readonly MonsterAiTickSystem _monsterAiSystem;
+    private readonly GroundObjectTickSystem _groundObjectSystem;
+    private readonly Random _random;
+    private readonly ZoneAssetServices _assets;
+    private readonly ZoneExtensionRegistry _extensionRegistry;
+    private readonly ZoneExecutionContext _executionContext;
+    private readonly IReadOnlyList<IZoneTickSystem> _registeredTickSystems;
+    private readonly IZoneTickSystem[] _registeredTickSystemsArray;
 
     private uint _nextStaticNpcId = 1;
     private uint _nextRuntimePlayerNpcId = 10000;
     private long _currentFrameTick;
 
+    public MapDescriptor MapDescriptor => _mapDescriptor;
+
     public ushort MapId => _mapDescriptor.MapId;
 
     public string MapNameUnicode => _mapDescriptor.MapNameUnicode;
 
-    public long CurrentFrameTick => Interlocked.Read(ref _currentFrameTick);
+    public long CurrentFrameTick
+    {
+        get => Interlocked.Read(ref _currentFrameTick);
+        internal set => Interlocked.Exchange(ref _currentFrameTick, value);
+    }
 
     public int ActivePlayerCount => _playersByCharacterId.Count;
 
@@ -79,11 +89,58 @@ public sealed class MapZoneWorker
 
     public int ActiveGroundObjectCount => _groundObjectSystem.ActiveGroundObjectCount;
 
+    public ZoneEngineOptions Options => _options;
+
+    public TimeProvider TimeProvider => _timeProvider;
+
+    public ILogger Logger => _logger;
+
+    public Random Random => _random;
+
+    public ISessionLeaseAppService SessionLeaseAppService => _sessionLeaseAppService;
+
+    public ZoneAssetServices Assets => _assets;
+
+    public MissileSimulationTickSystem MissileSystem => _missileSystem;
+
+    public MonsterAiTickSystem MonsterAiSystem => _monsterAiSystem;
+
     public GroundObjectTickSystem GroundObjectSystem => _groundObjectSystem;
 
     public SpatialRegionGrid RegionGrid => _regionGrid;
 
+    public IReadOnlyDictionary<Guid, PlayerZoneState> PlayersByCharacterId => _playersByCharacterId;
+
+    public IReadOnlyDictionary<uint, PlayerZoneState> PlayersByNpcId => _playersByNpcId;
+
     public IReadOnlyDictionary<uint, NpcZoneState> StaticNpcs => _npcsById;
+
+    public bool TryGetPlayer(Guid characterId, [NotNullWhen(true)] out PlayerZoneState? player) =>
+        _playersByCharacterId.TryGetValue(characterId, out player);
+
+    public bool TryGetPlayerByNpcId(uint runtimeNpcId, [NotNullWhen(true)] out PlayerZoneState? player) =>
+        _playersByNpcId.TryGetValue(runtimeNpcId, out player);
+
+    public bool TryGetStaticNpc(uint npcId, [NotNullWhen(true)] out NpcZoneState? npc) =>
+        _npcsById.TryGetValue(npcId, out npc);
+
+    public UpdateCharacterWorldSnapshotDto BuildCharacterWorldSnapshot(PlayerZoneState state) =>
+        BuildWorldSnapshotDto(state, state.MapId, state.CurrentMpsX, state.CurrentMpsY, state.FightMode);
+
+    public ValueTask DetachPlayerAsync(
+        Guid characterId,
+        PlayerDetachReason reason,
+        bool persistSnapshot = true,
+        bool sendDisconnect = false,
+        CancellationToken cancellationToken = default)
+    {
+        if (_playersByCharacterId.TryGetValue(characterId, out PlayerZoneState? state))
+        {
+            return DetachAndPersistAsync(state, reason, cancellationToken, persistSnapshot, sendDisconnect);
+        }
+
+        return ValueTask.CompletedTask;
+    }
 
     public MapZoneWorker(
         MapDescriptor mapDescriptor,
@@ -101,7 +158,9 @@ public sealed class MapZoneWorker
         IPlayerTemplateCatalog? playerTemplateCatalog = null,
         IItemTemplateCatalog? itemTemplateCatalog = null,
         ILootTableCatalog? lootTableCatalog = null,
-        ItemGenerator? itemGenerator = null)
+        ItemGenerator? itemGenerator = null,
+        ZoneExtensionRegistry? extensionRegistry = null,
+        ZoneAssetServices? assetServices = null)
     {
         ArgumentNullException.ThrowIfNull(mapDescriptor);
         ArgumentNullException.ThrowIfNull(sessionLeaseAppService);
@@ -125,6 +184,46 @@ public sealed class MapZoneWorker
         _itemTemplateCatalog = itemTemplateCatalog;
         _lootTableCatalog = lootTableCatalog;
         _itemGenerator = itemGenerator ?? (itemTemplateCatalog is not null ? new ItemGenerator(itemTemplateCatalog) : null);
+
+        if (options.RandomSeed.HasValue)
+        {
+            int zoneSeed = unchecked((options.RandomSeed.Value * 397) ^ mapDescriptor.MapId);
+            _random = new Random(zoneSeed);
+            int monsterAiSeed = _random.Next();
+            int missileSeed = _random.Next();
+            int groundObjectSeed = _random.Next();
+            _monsterAiSystem = new MonsterAiTickSystem(monsterAiSeed);
+            _missileSystem = new MissileSimulationTickSystem(CombatConsts.MaxActiveMissilesPerZone, missileSeed);
+            _groundObjectSystem = new GroundObjectTickSystem(groundObjectSeed);
+        }
+        else
+        {
+            _random = new Random();
+            _monsterAiSystem = new MonsterAiTickSystem();
+            _missileSystem = new MissileSimulationTickSystem(CombatConsts.MaxActiveMissilesPerZone);
+            _groundObjectSystem = new GroundObjectTickSystem();
+        }
+
+        _assets = assetServices ?? new ZoneAssetServices
+        {
+            MapCatalog = mapCatalog,
+            NpcTemplateCatalog = npcTemplateCatalog,
+            TrapScriptCatalog = trapScriptCatalog,
+            CharacterAppService = characterAppService,
+            ClusterRouter = clusterRouter,
+            SkillTemplateCatalog = skillTemplateCatalog,
+            MissileTemplateCatalog = missileTemplateCatalog,
+            PlayerTemplateCatalog = playerTemplateCatalog,
+            ItemTemplateCatalog = itemTemplateCatalog,
+            LootTableCatalog = lootTableCatalog,
+            ItemGenerator = _itemGenerator,
+        };
+
+        _extensionRegistry = extensionRegistry ?? ZoneExtensionRegistry.CreateDefault();
+        _executionContext = new ZoneExecutionContext(this);
+        _registeredTickSystems = _extensionRegistry.CreateTickSystems(_executionContext);
+        _registeredTickSystemsArray = _registeredTickSystems.ToArray();
+
         _commandChannel = Channel.CreateUnbounded<IZoneCommand>(new UnboundedChannelOptions
         {
             SingleReader = true,
@@ -146,14 +245,80 @@ public sealed class MapZoneWorker
     /// </summary>
     public async ValueTask StepSingleTickAsync(CancellationToken cancellationToken = default)
     {
+        cancellationToken.ThrowIfCancellationRequested();
         long tick = Interlocked.Increment(ref _currentFrameTick);
 
         while (_commandChannel.Reader.TryRead(out IZoneCommand? cmd))
         {
-            await ProcessCommandAsync(cmd, tick, cancellationToken);
+            if (_extensionRegistry.TryGetCommandRoute(cmd.GetType(), out ZoneCommandRoute route))
+            {
+                try
+                {
+                    ValueTask vt = route.InvokeAsync(cmd, _executionContext, cancellationToken);
+                    if (!vt.IsCompletedSuccessfully)
+                    {
+                        await vt;
+                    }
+                }
+                catch (OperationCanceledException) when (cancellationToken.IsCancellationRequested)
+                {
+                    throw;
+                }
+                catch (Exception ex)
+                {
+                    Guid? faultCharId = ExtractCharacterId(cmd);
+                    ZoneEngineLogMessages.LogZoneCommandFaulted(
+                        _logger,
+                        ex,
+                        cmd.GetType().Name,
+                        _mapDescriptor.MapId,
+                        tick,
+                        faultCharId);
+                }
+            }
+            else
+            {
+                Guid? faultCharId = ExtractCharacterId(cmd);
+                ZoneEngineLogMessages.LogUnhandledZoneCommand(
+                    _logger,
+                    cmd.GetType().Name,
+                    _mapDescriptor.MapId,
+                    tick,
+                    faultCharId);
+            }
         }
 
-        ProcessStatusEffectsTick();
+        IZoneTickSystem[] systems = _registeredTickSystemsArray;
+        for (int i = 0; i < systems.Length; i++)
+        {
+            IZoneTickSystem system = systems[i];
+            try
+            {
+                ValueTask vt = system.StepTickAsync(_executionContext, cancellationToken);
+                if (!vt.IsCompletedSuccessfully)
+                {
+                    await vt;
+                }
+            }
+            catch (OperationCanceledException) when (cancellationToken.IsCancellationRequested)
+            {
+                throw;
+            }
+            catch (Exception ex)
+            {
+                ZoneEngineLogMessages.LogZoneTickSystemFaulted(
+                    _logger,
+                    ex,
+                    system.Name,
+                    system.Phase,
+                    _mapDescriptor.MapId,
+                    tick);
+            }
+        }
+    }
+
+    internal void StepMonsterAiTick(long tick)
+    {
         _monsterAiSystem.StepTick(
             tick,
             _mapDescriptor.MapId,
@@ -168,6 +333,10 @@ public sealed class MapZoneWorker
             BroadcastNpcCompactSyncToAoi,
             OnNpcCastSkill,
             ApplyDamageToPlayer);
+    }
+
+    internal void StepMissilesTick()
+    {
         _missileSystem.StepTick(
             _mapDescriptor.MapId,
             _mapCatalog,
@@ -176,13 +345,49 @@ public sealed class MapZoneWorker
             _npcsById,
             OnMissileHitPlayer,
             OnMissileHitNpc);
+    }
+
+    internal void StepGroundObjectsTick(long tick)
+    {
         _groundObjectSystem.StepTick(
             tick,
             _regionGrid,
             _playersByCharacterId,
             BroadcastGroundObjectRemoveToAoi);
-        await ProcessMovementAndPostureTickAsync(tick, cancellationToken);
-        await ProcessHeartbeatsAsync(tick, cancellationToken);
+    }
+
+    private static Guid? ExtractCharacterId(IZoneCommand command)
+    {
+        if (command.FaultIsolationCharacterId.HasValue)
+        {
+            return command.FaultIsolationCharacterId.Value;
+        }
+
+        return command switch
+        {
+            AttachPlayerZoneCommand c => c.Character.Id,
+            AttachTransferredPlayerZoneCommand c => c.Player.CharacterId,
+            CompletePlayerSyncZoneCommand c => c.CharacterId,
+            DetachPlayerZoneCommand c => c.CharacterId,
+            JumpPlayerZoneCommand c => c.CharacterId,
+            MovePlayerZoneCommand c => c.CharacterId,
+            ProcessPlayerPingZoneCommand c => c.CharacterId,
+            RequestEntitySyncZoneCommand c => c.RequesterCharacterId,
+            TogglePlayerSitZoneCommand c => c.CharacterId,
+            CastSkillZoneCommand c => c.CharacterId,
+            ChangeAuraSkillZoneCommand c => c.CharacterId,
+            ChangePkModeZoneCommand c => c.CharacterId,
+            AllocateBaseAttributeZoneCommand c => c.CharacterId,
+            AllocateSkillPointZoneCommand c => c.CharacterId,
+            RevivePlayerZoneCommand c => c.CharacterId,
+            DivideInventoryItemZoneCommand c => c.CharacterId,
+            DropInventoryItemZoneCommand c => c.CharacterId,
+            MoveInventoryItemZoneCommand c => c.CharacterId,
+            PickupGroundObjectZoneCommand c => c.CharacterId,
+            RequestGroundObjectSyncZoneCommand c => c.CharacterId,
+            UseInventoryItemZoneCommand c => c.CharacterId,
+            _ => null
+        };
     }
 
     /// <summary>
@@ -265,113 +470,7 @@ public sealed class MapZoneWorker
             _mapDescriptor.MapNameUnicode);
     }
 
-    private async ValueTask ProcessCommandAsync(IZoneCommand command, long tick, CancellationToken cancellationToken)
-    {
-        switch (command)
-        {
-            case AttachPlayerZoneCommand attach:
-                await HandleAttachPlayerAsync(attach, tick, cancellationToken);
-                break;
-
-            case AttachTransferredPlayerZoneCommand transfer:
-                HandleAttachTransferredPlayer(transfer, tick);
-                break;
-
-            case CompletePlayerSyncZoneCommand syncEnd:
-                HandleCompletePlayerSync(syncEnd, tick);
-                break;
-
-            case RequestEntitySyncZoneCommand requestEntity:
-                HandleRequestEntitySync(requestEntity);
-                break;
-
-            case MovePlayerZoneCommand move:
-                await HandleMovePlayerAsync(move, tick, cancellationToken);
-                break;
-
-            case JumpPlayerZoneCommand jump:
-                await HandleJumpPlayerAsync(jump, tick, cancellationToken);
-                break;
-
-            case TogglePlayerSitZoneCommand sit:
-                HandleTogglePlayerSit(sit, tick);
-                break;
-
-            case UpdateChatChannelMaskZoneCommand chatMask:
-                HandleUpdateChatChannelMask(chatMask);
-                break;
-
-            case SendNearbyTalkZoneCommand talk:
-                HandleSendNearbyTalk(talk);
-                break;
-
-            case SendStructuredChatZoneCommand chat:
-                HandleSendStructuredChat(chat);
-                break;
-
-            case DeliverClusterChatZoneCommand clusterChat:
-                HandleDeliverClusterChat(clusterChat);
-                break;
-
-            case ProcessPlayerPingZoneCommand ping:
-                await HandleProcessPlayerPingAsync(ping, tick, cancellationToken);
-                break;
-
-            case CastSkillZoneCommand castSkill:
-                HandleCastSkill(castSkill, tick);
-                break;
-
-            case ChangeAuraSkillZoneCommand changeAura:
-                HandleChangeAuraSkill(changeAura, tick);
-                break;
-
-            case ChangePkModeZoneCommand changePk:
-                HandleChangePkMode(changePk, tick);
-                break;
-
-            case AllocateBaseAttributeZoneCommand allocateAttr:
-                HandleAllocateBaseAttribute(allocateAttr, tick);
-                break;
-
-            case AllocateSkillPointZoneCommand allocateSkill:
-                HandleAllocateSkillPoint(allocateSkill, tick);
-                break;
-
-            case RevivePlayerZoneCommand revivePlayer:
-                await HandleRevivePlayerAsync(revivePlayer, tick, cancellationToken);
-                break;
-
-            case RequestGroundObjectSyncZoneCommand reqObj:
-                HandleRequestGroundObjectSync(reqObj, tick);
-                break;
-
-            case PickupGroundObjectZoneCommand pickupObj:
-                HandlePickupGroundObject(pickupObj, tick);
-                break;
-
-            case MoveInventoryItemZoneCommand moveItem:
-                HandleMoveInventoryItem(moveItem, tick);
-                break;
-
-            case UseInventoryItemZoneCommand useItem:
-                await HandleUseInventoryItemAsync(useItem, tick, cancellationToken);
-                break;
-
-            case DropInventoryItemZoneCommand dropItem:
-                HandleDropInventoryItem(dropItem, tick);
-                break;
-
-            case DivideInventoryItemZoneCommand divideItem:
-                HandleDivideInventoryItem(divideItem, tick);
-                break;
-
-            case DetachPlayerZoneCommand detach:
-                await HandleDetachPlayerAsync(detach, cancellationToken);
-                break;
-        }
-    }
-
-    private async ValueTask HandleAttachPlayerAsync(
+    internal async ValueTask HandleAttachPlayerAsync(
         AttachPlayerZoneCommand cmd,
         long tick,
         CancellationToken cancellationToken)
@@ -425,6 +524,11 @@ public sealed class MapZoneWorker
         state.PkValue = dto.PkValue;
         state.RevivalMapId = dto.RevivalMapId;
         state.RevivalPointId = dto.RevivalPointId;
+        if (dto.TaskValues is not null)
+        {
+            state.ReplaceTaskValues(dto.TaskValues);
+        }
+        state.RepositoryPasswordHash = dto.RepositoryPasswordHash;
 
         state.SetLearnedSkill(1, 1);
         state.SetLearnedSkill(53, 1);
@@ -465,7 +569,7 @@ public sealed class MapZoneWorker
         state.OutboundSink.SendInitialWorldSyncBurst(state, _mapDescriptor.MapNameUnicode, (uint)tick, dto.Skills);
     }
 
-    private void HandleAttachTransferredPlayer(AttachTransferredPlayerZoneCommand cmd, long tick)
+    internal void HandleAttachTransferredPlayer(AttachTransferredPlayerZoneCommand cmd, long tick)
     {
         PlayerZoneState state = cmd.Player;
         if (_playersByCharacterId.TryGetValue(state.CharacterId, out PlayerZoneState? existing) &&
@@ -498,7 +602,7 @@ public sealed class MapZoneWorker
         SynchronizeFullAoiForEnteringPlayer(state);
     }
 
-    private void HandleCompletePlayerSync(CompletePlayerSyncZoneCommand cmd, long tick)
+    internal void HandleCompletePlayerSync(CompletePlayerSyncZoneCommand cmd, long tick)
     {
         if (!_playersByCharacterId.TryGetValue(cmd.CharacterId, out PlayerZoneState? state) ||
             state.LeaseEpoch != cmd.LeaseEpoch)
@@ -525,7 +629,7 @@ public sealed class MapZoneWorker
         SynchronizeFullAoiForEnteringPlayer(state);
     }
 
-    private void HandleRequestEntitySync(RequestEntitySyncZoneCommand cmd)
+    internal void HandleRequestEntitySync(RequestEntitySyncZoneCommand cmd)
     {
         if (!_playersByCharacterId.TryGetValue(cmd.RequesterCharacterId, out PlayerZoneState? requester) ||
             requester.LeaseEpoch != cmd.LeaseEpoch)
@@ -547,7 +651,7 @@ public sealed class MapZoneWorker
         }
     }
 
-    private async ValueTask HandleMovePlayerAsync(
+    internal async ValueTask HandleMovePlayerAsync(
         MovePlayerZoneCommand cmd,
         long tick,
         CancellationToken cancellationToken)
@@ -616,7 +720,7 @@ public sealed class MapZoneWorker
         _ = cancellationToken;
     }
 
-    private async ValueTask HandleJumpPlayerAsync(
+    internal async ValueTask HandleJumpPlayerAsync(
         JumpPlayerZoneCommand cmd,
         long tick,
         CancellationToken cancellationToken)
@@ -660,7 +764,7 @@ public sealed class MapZoneWorker
         await EvaluatePlayerTrapAsync(state, cancellationToken);
     }
 
-    private void HandleTogglePlayerSit(TogglePlayerSitZoneCommand cmd, long tick)
+    internal void HandleTogglePlayerSit(TogglePlayerSitZoneCommand cmd, long tick)
     {
         if (!_playersByCharacterId.TryGetValue(cmd.CharacterId, out PlayerZoneState? state) ||
             state.LeaseEpoch != cmd.LeaseEpoch ||
@@ -697,136 +801,7 @@ public sealed class MapZoneWorker
         }
     }
 
-    private void HandleUpdateChatChannelMask(UpdateChatChannelMaskZoneCommand cmd)
-    {
-        if (_playersByCharacterId.TryGetValue(cmd.CharacterId, out PlayerZoneState? state) &&
-            state.LeaseEpoch == cmd.LeaseEpoch)
-        {
-            state.SubscribedChatChannelMask = cmd.SubscribedChannelMask;
-        }
-    }
-
-    private void HandleSendNearbyTalk(SendNearbyTalkZoneCommand cmd)
-    {
-        if (!_playersByCharacterId.TryGetValue(cmd.SenderCharacterId, out PlayerZoneState? sender) ||
-            sender.LeaseEpoch != cmd.LeaseEpoch ||
-            string.IsNullOrWhiteSpace(cmd.MessageUtf8))
-        {
-            return;
-        }
-
-        SpatialRegionSlot[] buffer = new SpatialRegionSlot[9];
-        int regionCount = _regionGrid.GetSurroundingRegions(sender.RegionX, sender.RegionY, buffer);
-        for (int i = 0; i < regionCount; i++)
-        {
-            List<PlayerZoneState> players = buffer[i].Players;
-            for (int pIdx = 0; pIdx < players.Count; pIdx++)
-            {
-                players[pIdx].OutboundSink.SendPlayerTalkBroadcast(sender.RuntimeNpcId, cmd.MessageUtf8);
-            }
-        }
-    }
-
-    private void HandleSendStructuredChat(SendStructuredChatZoneCommand cmd)
-    {
-        if (!_playersByCharacterId.TryGetValue(cmd.SenderCharacterId, out PlayerZoneState? sender) ||
-            sender.LeaseEpoch != cmd.LeaseEpoch ||
-            string.IsNullOrWhiteSpace(cmd.MessageUtf8))
-        {
-            return;
-        }
-
-        if (cmd.Channel is ChatChannelKind.Nearby or ChatChannelKind.Screen)
-        {
-            uint channelBit = 1u << (int)cmd.Channel;
-            SpatialRegionSlot[] buffer = new SpatialRegionSlot[9];
-            int regionCount = _regionGrid.GetSurroundingRegions(sender.RegionX, sender.RegionY, buffer);
-            for (int i = 0; i < regionCount; i++)
-            {
-                List<PlayerZoneState> players = buffer[i].Players;
-                for (int pIdx = 0; pIdx < players.Count; pIdx++)
-                {
-                    PlayerZoneState recipient = players[pIdx];
-                    if ((recipient.SubscribedChatChannelMask & channelBit) != 0)
-                    {
-                        recipient.OutboundSink.SendChatMessage(sender.RuntimeNpcId, sender.RoleNameUnicode, cmd.MessageUtf8);
-                    }
-                }
-            }
-
-            return;
-        }
-
-        var clusterChat = new DeliverClusterChatZoneCommand(
-            SenderNpcId: sender.RuntimeNpcId,
-            SenderNameUtf8: sender.RoleNameUnicode,
-            Channel: cmd.Channel,
-            TargetNpcId: cmd.TargetNpcId,
-            TargetRoleNameUtf8: cmd.TargetOrPrefixUtf8 ?? string.Empty,
-            SenderFactionId: sender.CurrentFactionId,
-            MessageUtf8: cmd.MessageUtf8);
-
-        if (_clusterRouter is not null)
-        {
-            _clusterRouter.RouteClusterChat(clusterChat);
-        }
-        else
-        {
-            HandleDeliverClusterChat(clusterChat);
-        }
-    }
-
-    private void HandleDeliverClusterChat(DeliverClusterChatZoneCommand cmd)
-    {
-        if (_playersByCharacterId.Count == 0 || string.IsNullOrWhiteSpace(cmd.MessageUtf8))
-        {
-            return;
-        }
-
-        if (cmd.Channel == ChatChannelKind.System)
-        {
-            foreach (PlayerZoneState recipient in _playersByCharacterId.Values)
-            {
-                recipient.OutboundSink.SendSystemMessage(cmd.MessageUtf8);
-            }
-
-            return;
-        }
-
-        uint channelBit = 1u << (int)cmd.Channel;
-        string normalizedTargetName = NormalizeRoleName(cmd.TargetRoleNameUtf8);
-        string normalizedSenderName = NormalizeRoleName(cmd.SenderNameUtf8);
-
-        foreach (PlayerZoneState recipient in _playersByCharacterId.Values)
-        {
-            if ((recipient.SubscribedChatChannelMask & channelBit) == 0)
-            {
-                continue;
-            }
-
-            bool deliver = cmd.Channel switch
-            {
-                ChatChannelKind.World or ChatChannelKind.All => true,
-                ChatChannelKind.PrivateWhisper =>
-                    (cmd.TargetNpcId != 0 && recipient.RuntimeNpcId == cmd.TargetNpcId) ||
-                    (!string.IsNullOrEmpty(normalizedTargetName) &&
-                     string.Equals(NormalizeRoleName(recipient.RoleNameUnicode), normalizedTargetName, StringComparison.Ordinal)) ||
-                    string.Equals(NormalizeRoleName(recipient.RoleNameUnicode), normalizedSenderName, StringComparison.Ordinal),
-                ChatChannelKind.Faction =>
-                    cmd.SenderFactionId != CharacterConsts.NoFactionId &&
-                    recipient.CurrentFactionId == cmd.SenderFactionId,
-                ChatChannelKind.Team or ChatChannelKind.Tong => true,
-                _ => false,
-            };
-
-            if (deliver)
-            {
-                recipient.OutboundSink.SendChatMessage(cmd.SenderNpcId, cmd.SenderNameUtf8, cmd.MessageUtf8);
-            }
-        }
-    }
-
-    private async ValueTask ProcessMovementAndPostureTickAsync(long tick, CancellationToken cancellationToken)
+    internal async ValueTask ProcessMovementAndPostureTickAsync(long tick, CancellationToken cancellationToken)
     {
         if (_playersByCharacterId.Count == 0)
         {
@@ -1222,14 +1197,15 @@ public sealed class MapZoneWorker
         return id;
     }
 
-    private void RemovePlayerFromZoneMemory(PlayerZoneState state)
+    private void RemovePlayerFromZoneMemory(PlayerZoneState state, PlayerDetachReason reason = PlayerDetachReason.CleanLogout)
     {
+        state.DetachAllFeatureSlots(_executionContext, reason);
         _playersByCharacterId.Remove(state.CharacterId);
         _playersByNpcId.Remove(state.RuntimeNpcId);
         _regionGrid.RemovePlayer(state, state.RegionX, state.RegionY);
     }
 
-    private async ValueTask HandleProcessPlayerPingAsync(
+    internal async ValueTask HandleProcessPlayerPingAsync(
         ProcessPlayerPingZoneCommand cmd,
         long tick,
         CancellationToken cancellationToken)
@@ -1245,7 +1221,7 @@ public sealed class MapZoneWorker
         _ = await _sessionLeaseAppService.RecordHeartbeatAsync(state.AccountId, state.LeaseEpoch, cancellationToken);
     }
 
-    private void HandleCastSkill(CastSkillZoneCommand cmd, long tick)
+    internal void HandleCastSkill(CastSkillZoneCommand cmd, long tick)
     {
         if (!_playersByCharacterId.TryGetValue(cmd.CharacterId, out PlayerZoneState? caster) ||
             caster.LeaseEpoch != cmd.LeaseEpoch ||
@@ -1774,7 +1750,7 @@ public sealed class MapZoneWorker
             droppedObjects.Count);
     }
 
-    private void HandleRequestGroundObjectSync(RequestGroundObjectSyncZoneCommand cmd, long tick)
+    internal void HandleRequestGroundObjectSync(RequestGroundObjectSyncZoneCommand cmd, long tick)
     {
         if (!_playersByCharacterId.TryGetValue(cmd.CharacterId, out PlayerZoneState? player) ||
             player.LeaseEpoch != cmd.LeaseEpoch ||
@@ -1791,7 +1767,7 @@ public sealed class MapZoneWorker
         }
     }
 
-    private void HandlePickupGroundObject(PickupGroundObjectZoneCommand cmd, long tick)
+    internal void HandlePickupGroundObject(PickupGroundObjectZoneCommand cmd, long tick)
     {
         if (!_playersByCharacterId.TryGetValue(cmd.CharacterId, out PlayerZoneState? player) ||
             player.LeaseEpoch != cmd.LeaseEpoch ||
@@ -1866,7 +1842,7 @@ public sealed class MapZoneWorker
         }
     }
 
-    private void HandleMoveInventoryItem(MoveInventoryItemZoneCommand cmd, long tick)
+    internal void HandleMoveInventoryItem(MoveInventoryItemZoneCommand cmd, long tick)
     {
         if (!_playersByCharacterId.TryGetValue(cmd.CharacterId, out PlayerZoneState? player) ||
             player.LeaseEpoch != cmd.LeaseEpoch ||
@@ -1906,7 +1882,7 @@ public sealed class MapZoneWorker
         player.OutboundSink.SendItemAutoMoveUnlock();
     }
 
-    private async ValueTask HandleUseInventoryItemAsync(
+    internal async ValueTask HandleUseInventoryItemAsync(
         UseInventoryItemZoneCommand cmd,
         long tick,
         CancellationToken cancellationToken)
@@ -1947,7 +1923,7 @@ public sealed class MapZoneWorker
         }
     }
 
-    private void HandleDropInventoryItem(DropInventoryItemZoneCommand cmd, long tick)
+    internal void HandleDropInventoryItem(DropInventoryItemZoneCommand cmd, long tick)
     {
         if (!_playersByCharacterId.TryGetValue(cmd.CharacterId, out PlayerZoneState? player) ||
             player.LeaseEpoch != cmd.LeaseEpoch ||
@@ -2016,7 +1992,7 @@ public sealed class MapZoneWorker
         }
     }
 
-    private void HandleDivideInventoryItem(DivideInventoryItemZoneCommand cmd, long tick)
+    internal void HandleDivideInventoryItem(DivideInventoryItemZoneCommand cmd, long tick)
     {
         if (!_playersByCharacterId.TryGetValue(cmd.CharacterId, out PlayerZoneState? player) ||
             player.LeaseEpoch != cmd.LeaseEpoch ||
@@ -2298,7 +2274,9 @@ public sealed class MapZoneWorker
             magicAttributes: affixes,
             bindState: dto.BindState,
             expireTimeUnixSeconds: dto.ExpireTimeUnixSeconds,
-            creatorName: dto.CreatorName);
+            creatorName: dto.CreatorName,
+            isBroken: dto.IsBroken,
+            enchaseLevel: dto.EnchaseLevel);
     }
 
     private void BroadcastGroundObjectAddToAoi(GroundObjectSlot obj)
@@ -2406,7 +2384,7 @@ public sealed class MapZoneWorker
         }
     }
 
-    private void HandleAllocateBaseAttribute(AllocateBaseAttributeZoneCommand cmd, long tick)
+    internal void HandleAllocateBaseAttribute(AllocateBaseAttributeZoneCommand cmd, long tick)
     {
         if (!_playersByCharacterId.TryGetValue(cmd.CharacterId, out PlayerZoneState? player) ||
             player.LeaseEpoch != cmd.LeaseEpoch ||
@@ -2472,7 +2450,7 @@ public sealed class MapZoneWorker
             player.UnallocatedAttributePoints);
     }
 
-    private void HandleAllocateSkillPoint(AllocateSkillPointZoneCommand cmd, long tick)
+    internal void HandleAllocateSkillPoint(AllocateSkillPointZoneCommand cmd, long tick)
     {
         if (!_playersByCharacterId.TryGetValue(cmd.CharacterId, out PlayerZoneState? player) ||
             player.LeaseEpoch != cmd.LeaseEpoch ||
@@ -2514,7 +2492,7 @@ public sealed class MapZoneWorker
             (short)player.UnallocatedSkillPoints);
     }
 
-    private async ValueTask HandleRevivePlayerAsync(
+    internal async ValueTask HandleRevivePlayerAsync(
         RevivePlayerZoneCommand cmd,
         long tick,
         CancellationToken cancellationToken)
@@ -2634,7 +2612,7 @@ public sealed class MapZoneWorker
         }
     }
 
-    private void HandleChangeAuraSkill(ChangeAuraSkillZoneCommand cmd, long tick)
+    internal void HandleChangeAuraSkill(ChangeAuraSkillZoneCommand cmd, long tick)
     {
         if (!_playersByCharacterId.TryGetValue(cmd.CharacterId, out PlayerZoneState? player) ||
             player.LeaseEpoch != cmd.LeaseEpoch ||
@@ -2666,7 +2644,7 @@ public sealed class MapZoneWorker
         player.ActiveAuraSkillId = cmd.AuraSkillId;
     }
 
-    private void HandleChangePkMode(ChangePkModeZoneCommand cmd, long tick)
+    internal void HandleChangePkMode(ChangePkModeZoneCommand cmd, long tick)
     {
         if (!_playersByCharacterId.TryGetValue(cmd.CharacterId, out PlayerZoneState? player) ||
             player.LeaseEpoch != cmd.LeaseEpoch ||
@@ -2697,7 +2675,7 @@ public sealed class MapZoneWorker
         player.OutboundSink.SendPkNormalFlagSync((byte)player.PkState);
     }
 
-    private void ProcessStatusEffectsTick()
+    internal void ProcessStatusEffectsTick()
     {
         foreach (PlayerZoneState player in _playersByCharacterId.Values)
         {
@@ -2830,7 +2808,7 @@ public sealed class MapZoneWorker
         }
     }
 
-    private async ValueTask HandleDetachPlayerAsync(
+    internal async ValueTask HandleDetachPlayerAsync(
         DetachPlayerZoneCommand cmd,
         CancellationToken cancellationToken)
     {
@@ -2848,7 +2826,7 @@ public sealed class MapZoneWorker
         }
     }
 
-    private async ValueTask ProcessHeartbeatsAsync(long tick, CancellationToken cancellationToken)
+    internal async ValueTask ProcessHeartbeatsAsync(long tick, CancellationToken cancellationToken)
     {
         if (_playersByCharacterId.Count == 0)
         {
@@ -2891,9 +2869,11 @@ public sealed class MapZoneWorker
     private async ValueTask DetachAndPersistAsync(
         PlayerZoneState state,
         PlayerDetachReason reason,
-        CancellationToken cancellationToken)
+        CancellationToken cancellationToken,
+        bool persistSnapshot = true,
+        bool sendDisconnect = false)
     {
-        RemovePlayerFromZoneMemory(state);
+        RemovePlayerFromZoneMemory(state, reason);
 
         ZoneEngineLogMessages.LogPlayerDetached(
             _logger,
@@ -2904,18 +2884,21 @@ public sealed class MapZoneWorker
             state.MapId,
             reason);
 
-        UpdateCharacterWorldSnapshotDto snapshot = BuildWorldSnapshotDto(
-            state,
-            state.MapId,
-            state.CurrentMpsX,
-            state.CurrentMpsY,
-            state.FightMode);
+        if (persistSnapshot)
+        {
+            UpdateCharacterWorldSnapshotDto snapshot = BuildWorldSnapshotDto(
+                state,
+                state.MapId,
+                state.CurrentMpsX,
+                state.CurrentMpsY,
+                state.FightMode);
 
-        await _sessionLeaseAppService.CompleteLogoutOrEvictAsync(
-            new ReleaseSessionLeaseInput(state.AccountId, state.LeaseEpoch, snapshot),
-            cancellationToken);
+            await _sessionLeaseAppService.CompleteLogoutOrEvictAsync(
+                new ReleaseSessionLeaseInput(state.AccountId, state.LeaseEpoch, snapshot),
+                cancellationToken);
+        }
 
-        if (reason is PlayerDetachReason.HeartbeatTimeout or PlayerDetachReason.LeaseSuperseded)
+        if (sendDisconnect || reason is PlayerDetachReason.HeartbeatTimeout or PlayerDetachReason.LeaseSuperseded)
         {
             state.OutboundSink.Disconnect(reason);
         }
@@ -2965,11 +2948,9 @@ public sealed class MapZoneWorker
             PkValue: state.PkValue,
             ActiveAuraSkillId: (ushort)Math.Clamp(state.ActiveAuraSkillId, 0, ushort.MaxValue),
             Skills: skills,
-            Items: state.Inventory.ToCharacterItemDtos());
+            Items: state.Inventory.ToCharacterItemDtos(),
+            TaskValues: state.ExportTaskValuesSnapshot(),
+            RepositoryPasswordHash: state.RepositoryPasswordHash,
+            UpdateRepositoryPasswordHash: true);
     }
-
-    private static string NormalizeRoleName(string value) =>
-        string.IsNullOrWhiteSpace(value)
-            ? string.Empty
-            : value.Trim().Normalize(NormalizationForm.FormC);
 }

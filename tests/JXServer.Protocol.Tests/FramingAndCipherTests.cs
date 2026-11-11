@@ -145,4 +145,39 @@ public sealed class FramingAndCipherTests
         Assert.True(ProtocolSizeTable.IsValidGameServerC2SPayload(decoded2));
         Assert.Equal(0, fullSeq.Length);
     }
+
+    [Fact]
+    public void Tcvn3Encoding_ShouldMapStandardUpperAndLowerVietnameseCodePoints()
+    {
+        byte[] upperBytes = [0xA1, 0xA2, 0xA3, 0xA4, 0xA5, 0xA6, 0xA7];
+        byte[] lowerBytes = [0xA8, 0xA9, 0xAA, 0xAB, 0xAC, 0xAD, 0xAE];
+
+        Assert.Equal("ĂÂÊÔƠƯĐ", Tcvn3Encoding.DecodeNullTerminated(upperBytes));
+        Assert.Equal("ăâêôơưđ", Tcvn3Encoding.DecodeNullTerminated(lowerBytes));
+        Assert.Equal(upperBytes, Tcvn3Encoding.EncodeBytes("ĂÂÊÔƠƯĐ"));
+        Assert.Equal(lowerBytes, Tcvn3Encoding.EncodeBytes("ăâêôơưđ"));
+
+        // Verify 'ý' (0xFD, which collides with Unicode U+00FD) round-trips cleanly
+        byte[] yAcute = [0xFD];
+        Assert.Equal("ý", Tcvn3Encoding.DecodeNullTerminated(yAcute));
+        Assert.Equal(yAcute, Tcvn3Encoding.EncodeBytes("ý"));
+
+        // Verify real-world legacy strings from npcs.txt and yunchihead.lua
+        byte[] dongBacHo = [0xA7, 0xAB, (byte)'n', (byte)'g', (byte)' ', (byte)'B', 0xBE, (byte)'c', (byte)' ', (byte)'h', 0xE6];
+        Assert.Equal("Đông Bắc hổ", Tcvn3Encoding.DecodeNullTerminated(dongBacHo));
+        Assert.Equal(dongBacHo, Tcvn3Encoding.EncodeBytes("Đông Bắc hổ"));
+
+        byte[] thienTriNpc =
+        [
+            (byte)'N', (byte)'g', 0xAD, 0xEA, (byte)'i', (byte)' ',
+            (byte)'t', (byte)'i', 0xD5, (byte)'p', (byte)' ',
+            (byte)'d', 0xC9, (byte)'n', (byte)' ',
+            (byte)'T', (byte)'h', (byte)'i', 0xAA, (byte)'n', (byte)' ',
+            (byte)'T', (byte)'r', 0xD7, (byte)' ',
+            (byte)'M', 0xCB, (byte)'t', (byte)' ',
+            (byte)'C', 0xB6, (byte)'n', (byte)'h',
+        ];
+        Assert.Equal("Người tiếp dẫn Thiên Trì Mật Cảnh", Tcvn3Encoding.DecodeNullTerminated(thienTriNpc));
+        Assert.Equal(thienTriNpc, Tcvn3Encoding.EncodeBytes("Người tiếp dẫn Thiên Trì Mật Cảnh"));
+    }
 }

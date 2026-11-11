@@ -15,6 +15,7 @@ public static class JXServerErrorCodes
     public const string CharacterNameProhibited = "JXServer:Character:0003";
     public const string CharacterInvalidStarterVillage = "JXServer:Character:0004";
     public const string CharacterNotFound = "JXServer:Character:0005";
+    public const string CharacterInvalidRepositoryCredential = "JXServer:Character:0006";
 
     public const string SessionHandoffTicketInvalidOrExpired = "JXServer:Session:0001";
     public const string SessionEpochSuperseded = "JXServer:Session:0002";

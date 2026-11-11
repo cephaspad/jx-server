@@ -33,4 +33,7 @@ public sealed record UpdateCharacterWorldSnapshotDto(
     sbyte? PkValue = null,
     ushort? ActiveAuraSkillId = null,
     IReadOnlyList<CharacterSkillDto>? Skills = null,
-    IReadOnlyList<CharacterItemDto>? Items = null);
+    IReadOnlyList<CharacterItemDto>? Items = null,
+    IReadOnlyDictionary<ushort, int>? TaskValues = null,
+    string? RepositoryPasswordHash = null,
+    bool UpdateRepositoryPasswordHash = false);

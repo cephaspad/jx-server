@@ -38,13 +38,29 @@ public sealed class ZoneClusterRouter : IZoneClusterRouter
         IPlayerTemplateCatalog? playerTemplateCatalog = null,
         IItemTemplateCatalog? itemTemplateCatalog = null,
         ILootTableCatalog? lootTableCatalog = null,
-        ItemGenerator? itemGenerator = null)
+        ItemGenerator? itemGenerator = null,
+        ZoneExtensionRegistry? extensionRegistry = null)
     {
         ArgumentNullException.ThrowIfNull(mapCatalog);
         ArgumentNullException.ThrowIfNull(sessionLeaseAppService);
         ArgumentNullException.ThrowIfNull(options);
         ArgumentNullException.ThrowIfNull(timeProvider);
         ArgumentNullException.ThrowIfNull(logger);
+
+        var resolvedAssets = new ZoneAssetServices
+        {
+            MapCatalog = mapCatalog,
+            NpcTemplateCatalog = npcTemplateCatalog,
+            TrapScriptCatalog = trapScriptCatalog,
+            CharacterAppService = characterAppService,
+            ClusterRouter = this,
+            SkillTemplateCatalog = skillTemplateCatalog,
+            MissileTemplateCatalog = missileTemplateCatalog,
+            PlayerTemplateCatalog = playerTemplateCatalog,
+            ItemTemplateCatalog = itemTemplateCatalog,
+            LootTableCatalog = lootTableCatalog,
+            ItemGenerator = itemGenerator,
+        };
 
         ZoneEngineOptions cfg = options.Value;
         var dict = new Dictionary<ushort, MapZoneWorker>();
@@ -66,7 +82,9 @@ public sealed class ZoneClusterRouter : IZoneClusterRouter
                 playerTemplateCatalog,
                 itemTemplateCatalog,
                 lootTableCatalog,
-                itemGenerator);
+                itemGenerator,
+                extensionRegistry,
+                resolvedAssets);
         }
 
         _workersByMapId = dict.ToFrozenDictionary();

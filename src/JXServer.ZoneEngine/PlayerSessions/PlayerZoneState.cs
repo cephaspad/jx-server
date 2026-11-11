@@ -1,11 +1,14 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using JXServer.Primitives.Characters;
 using JXServer.Primitives.Chats;
 using JXServer.Primitives.Combat;
 using JXServer.Primitives.WorldZones;
 using JXServer.ZoneEngine.Combat;
 using JXServer.ZoneEngine.Items;
+using JXServer.ZoneEngine.Logging;
+using JXServer.ZoneEngine.WorldZones;
 
 namespace JXServer.ZoneEngine.PlayerSessions;
 
@@ -17,6 +20,8 @@ public sealed class PlayerZoneState
 {
     private readonly Dictionary<int, ushort> _learnedSkills = [];
     private readonly Dictionary<int, long> _skillReadyTickBySkillId = [];
+    private readonly Dictionary<ushort, int> _taskValues = [];
+    private IPlayerFeatureSlot?[] _featureSlots = [];
 
     public uint RuntimeNpcId { get; set; }
 
@@ -181,6 +186,52 @@ public sealed class PlayerZoneState
     public IReadOnlyDictionary<int, ushort> LearnedSkills => _learnedSkills;
 
     public IPlayerOutboundSink OutboundSink { get; }
+    public IWorldOutboundSink WorldSink { get; }
+    public ICombatOutboundSink CombatSink { get; }
+    public IInventoryOutboundSink InventorySink { get; }
+    public IChatOutboundSink ChatSink { get; }
+
+    public TSink? GetOptionalOutboundSink<TSink>() where TSink : class =>
+        OutboundSink.TryGetOutboundSink<TSink>(out TSink? sink) ? sink : null;
+
+    public bool TryGetOptionalOutboundSink<TSink>([NotNullWhen(true)] out TSink? sink) where TSink : class =>
+        OutboundSink.TryGetOutboundSink(out sink);
+
+    public IReadOnlyDictionary<ushort, int> TaskValues => _taskValues;
+
+    public string? RepositoryPasswordHash { get; set; }
+
+    public int GetTaskValue(ushort taskId) =>
+        _taskValues.GetValueOrDefault(taskId, 0);
+
+    public void SetTaskValue(ushort taskId, int value)
+    {
+        if (value == 0)
+        {
+            _taskValues.Remove(taskId);
+        }
+        else
+        {
+            _taskValues[taskId] = value;
+        }
+    }
+
+    public void ReplaceTaskValues(IEnumerable<KeyValuePair<ushort, int>>? values)
+    {
+        _taskValues.Clear();
+        if (values is not null)
+        {
+            foreach ((ushort taskId, int val) in values)
+            {
+                if (val != 0)
+                {
+                    _taskValues[taskId] = val;
+                }
+            }
+        }
+    }
+
+    public Dictionary<ushort, int> ExportTaskValuesSnapshot() => new(_taskValues);
 
     public int EffectiveStrength => Strength + BonusStrength;
 
@@ -276,6 +327,10 @@ public sealed class PlayerZoneState
         LastPingReceivedTick = initialTick;
         LastSitRegenTick = initialTick;
         OutboundSink = outboundSink;
+        WorldSink = outboundSink.TryGetOutboundSink<IWorldOutboundSink>(out var ws) ? ws : NoOpWorldOutboundSink.Instance;
+        CombatSink = outboundSink.TryGetOutboundSink<ICombatOutboundSink>(out var cs) ? cs : NoOpCombatOutboundSink.Instance;
+        InventorySink = outboundSink.TryGetOutboundSink<IInventoryOutboundSink>(out var isink) ? isink : NoOpInventoryOutboundSink.Instance;
+        ChatSink = outboundSink.TryGetOutboundSink<IChatOutboundSink>(out var chs) ? chs : NoOpChatOutboundSink.Instance;
     }
 
     public void SetLearnedSkill(int skillId, ushort level)
@@ -312,5 +367,86 @@ public sealed class PlayerZoneState
             Kind: EntityKind.Player,
             IsSpecialNpc: false,
             NameUtf8: RoleNameUnicode);
+    }
+
+    public TSlot GetOrCreateFeatureSlot<TSlot>(PlayerFeatureSlotKey<TSlot> key, Func<TSlot> factory)
+        where TSlot : class, IPlayerFeatureSlot
+    {
+        ArgumentNullException.ThrowIfNull(key);
+        ArgumentNullException.ThrowIfNull(factory);
+
+        EnsureFeatureSlotCapacity(key.Index);
+        if (_featureSlots[key.Index] is TSlot existing)
+        {
+            return existing;
+        }
+
+        TSlot created = factory();
+        _featureSlots[key.Index] = created;
+        return created;
+    }
+
+    public bool TryGetFeatureSlot<TSlot>(PlayerFeatureSlotKey<TSlot> key, [NotNullWhen(true)] out TSlot? slot)
+        where TSlot : class, IPlayerFeatureSlot
+    {
+        ArgumentNullException.ThrowIfNull(key);
+        if (key.Index < _featureSlots.Length && _featureSlots[key.Index] is TSlot matched)
+        {
+            slot = matched;
+            return true;
+        }
+
+        slot = null;
+        return false;
+    }
+
+    public bool RemoveFeatureSlot<TSlot>(PlayerFeatureSlotKey<TSlot> key, [NotNullWhen(true)] out TSlot? removedSlot)
+        where TSlot : class, IPlayerFeatureSlot
+    {
+        ArgumentNullException.ThrowIfNull(key);
+        if (key.Index < _featureSlots.Length && _featureSlots[key.Index] is TSlot matched)
+        {
+            _featureSlots[key.Index] = null;
+            removedSlot = matched;
+            return true;
+        }
+
+        removedSlot = null;
+        return false;
+    }
+
+    public void DetachAllFeatureSlots(ZoneExecutionContext context, PlayerDetachReason reason)
+    {
+        for (int i = 0; i < _featureSlots.Length; i++)
+        {
+            IPlayerFeatureSlot? slot = _featureSlots[i];
+            if (slot is not null)
+            {
+                _featureSlots[i] = null;
+                try
+                {
+                    slot.OnPlayerDetached(this, context, reason);
+                }
+                catch (Exception ex)
+                {
+                    ZoneEngineLogMessages.LogPlayerFeatureSlotCleanupFaulted(
+                        context.Logger,
+                        ex,
+                        slot.GetType().Name,
+                        CharacterId,
+                        context.MapId,
+                        reason);
+                }
+            }
+        }
+    }
+
+    private void EnsureFeatureSlotCapacity(int requiredIndex)
+    {
+        if (requiredIndex >= _featureSlots.Length)
+        {
+            int newSize = Math.Max(requiredIndex + 1, Math.Max(4, _featureSlots.Length * 2));
+            Array.Resize(ref _featureSlots, newSize);
+        }
     }
 }
